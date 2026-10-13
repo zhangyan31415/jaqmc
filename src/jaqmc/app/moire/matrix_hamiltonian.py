@@ -19,6 +19,7 @@ from jaqmc.utils.wiring import runtime_dep
 from .data import MoireData
 from .hamiltonian import (
     _build_exchanged_orbitals,
+    _orbitals_to_det_weights,
     compute_operator_derivative_ratio,
     compute_operator_ratio,
 )
@@ -149,6 +150,84 @@ class MatrixContinuumObservable(PerWalkerEstimator):
     def reduce(self, walker_stats: Mapping[str, Any]) -> dict[str, Any]:
         """Return means and separate real/imaginary component variances."""
         return complex_mean_reduce(walker_stats)
+
+
+@configurable_dataclass
+class MatrixContinuumSecondMoment(MatrixContinuumObservable):
+    r"""Local estimator of squared extensive internal one-body sums.
+
+    For each configured Hermitian matrix A, evaluate
+    :math:`(\sum_i A_i)^2 \Psi / \Psi`. This includes the same-electron
+    :math:`A_i^2` term and both orders of every distinct-electron pair.
+    It is not the square of the one-body local estimator.
+
+    If ``normalize_by_electron`` is true, divide by N squared. Set it to
+    false for extensive moments. For Pauli spin matrices, the sum of the
+    three extensive second moments divided by four is S squared in units
+    of hbar squared. ``sum_output_key`` optionally records their scaled sum
+    on each walker, retaining component covariances during error reduction.
+    """
+
+    sum_output_key: str | None = None
+    sum_scale: float = 1.0
+
+    def init(self, data: MoireData, rngs: PRNGKey) -> None:
+        """Validate operators and the optional combined output.
+
+        Raises:
+            ValueError: If the combined output conflicts or the scale is nonfinite.
+        """
+        super().init(data, rngs)
+        if self.sum_output_key in self.output_keys:
+            raise ValueError("Combined output key must differ from component keys.")
+        if not bool(jnp.isfinite(self.sum_scale)):
+            raise ValueError("Combined output scale must be finite.")
+
+    def evaluate_single_walker(
+        self,
+        params: Params,
+        data: MoireData,
+        prev_walker_stats: Mapping[str, Any],
+        state: None,
+        rngs: PRNGKey,
+    ) -> tuple[dict[str, Any], None]:
+        """Evaluate same-electron and distinct-electron operator products.
+
+        Returns:
+            Configured squared-sum local estimators and an empty state.
+
+        Raises:
+            ValueError: If the wavefunction internal dimensions differ.
+        """
+        del prev_walker_stats, rngs
+        components, amplitudes, identity = self.f_internal_components(params, data)
+        matrices = self._operator_matrices
+        if components.shape[0] != matrices.shape[-1]:
+            raise ValueError("Wavefunction component count does not match operators.")
+        if amplitudes.shape[-1] != matrices.shape[-1]:
+            raise ValueError(
+                "Internal-coordinate amplitude count does not match operators."
+            )
+        transformed = jnp.einsum("ia,oab,bdij->odij", amplitudes, matrices, components)
+        weights, inverse = _orbitals_to_det_weights(identity)
+        # Each determinant's two-row replacement ratio is a 2x2 minor
+        # of transformed @ inverse. Summing ordered distinct pairs gives
+        # trace(T)^2 - trace(T @ T); the diagonal terms cancel exactly.
+        transfer = jnp.einsum("odij,djk->odik", transformed, inverse)
+        traces = jnp.trace(transfer, axis1=-2, axis2=-1)
+        pair_ratios = traces**2 - jnp.einsum("odij,odji->od", transfer, transfer)
+        pair_values = jnp.sum(pair_ratios * weights[None, :], axis=-1)
+        squared = jnp.einsum("oab,obc->oac", matrices, matrices)
+        same_orbitals = jnp.einsum("ia,oab,bdij->odij", amplitudes, squared, components)
+        values = pair_values + jnp.sum(
+            compute_operator_ratio(identity, same_orbitals), axis=-1
+        )
+        if self.normalize_by_electron:
+            values = values / data.positions.shape[0] ** 2
+        result = {key: values[index] for index, key in enumerate(self.output_keys)}
+        if self.sum_output_key is not None:
+            result[self.sum_output_key] = self.sum_scale * jnp.sum(values)
+        return result, state
 
 
 def _scaled_operator_numerator_fn(
