@@ -8,10 +8,17 @@ import numpy as np
 import pytest
 from jax import numpy as jnp
 
+from jaqmc.app.moire.matrix_hamiltonian import (
+    MatrixContinuumDifferential,
+    MatrixContinuumPotential,
+)
+from jaqmc.app.moire.model import MatrixContinuumModel
 from jaqmc.app.moire.workflow import (
     MoireJointMCMCSampler,
     MoireTrainWorkflow,
     configure_system,
+    load_continuum_model,
+    make_estimators,
 )
 from jaqmc.estimator.total_energy import TotalEnergy
 from jaqmc.utils.config import ConfigManager
@@ -61,6 +68,55 @@ def test_singlephase_requires_spin_channels_divisible_by_kmesh(tmp_path: Path):
 
     with pytest.raises(ValueError, match="divisible by nk=9"):
         configure_system(ConfigManager(cfg))
+
+
+def test_continuum_model_path_configures_generic_workflow(tmp_path: Path):
+    model = MatrixContinuumModel(
+        momentum_powers=np.asarray([[0, 0], [2, 0]]),
+        momentum_matrices=np.asarray(
+            [
+                np.diag([0.1, 0.2, 0.3]),
+                np.diag([1.0, 1.5, 2.0]),
+            ]
+        ),
+        fourier_vectors=np.asarray([[0.1, 0.0]]),
+        fourier_matrices=np.asarray(
+            [[[0.01, 0.0, 0.0], [0.0, 0.02, 0.0], [0.0, 0.0, 0.03]]]
+        ),
+        basis_labels=("a", "b", "c"),
+        energy_unit="eV",
+        length_unit="angstrom",
+    )
+    model_path = tmp_path / "model.npz"
+    model.save(model_path)
+    cfg = _base_config(tmp_path)
+    cfg["continuum_model"] = {"path": str(model_path)}
+    cfg["estimators"] = {"enabled": {"coulomb": False}}
+    manager = ConfigManager(cfg)
+
+    system, wf = configure_system(manager)
+    converted = load_continuum_model(manager, system)
+    assert converted is not None
+    estimators = make_estimators(
+        manager,
+        wf,
+        system,
+        continuum_model=converted,
+    )
+
+    assert wf.nlayers == 3
+    assert converted.energy_unit == "meV"
+    assert converted.length_unit == "dimensionless"
+    assert set(estimators) == {
+        "matrix_potential",
+        "matrix_differential",
+        "total",
+    }
+    assert isinstance(estimators["matrix_potential"], MatrixContinuumPotential)
+    assert isinstance(estimators["matrix_differential"], MatrixContinuumDifferential)
+    assert "kinetic" not in estimators
+    assert "soc" not in estimators
+    assert "moire_potential" not in estimators
 
 
 def test_joint_proposal_moves_positions_and_spin_coords_together():

@@ -500,6 +500,24 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
         """
         return self.apply(params, data, method=self.get_layer_components)  # type: ignore
 
+    def internal_components(
+        self, params: Params, data: MoireData
+    ) -> tuple[jnp.ndarray, jnp.ndarray, jnp.ndarray]:
+        """Evaluate generic internal-component orbitals and amplitudes.
+
+        This is the material-independent alias used by matrix continuum
+        Hamiltonians. Legacy layer models continue to use
+        :meth:`layer_components`.
+
+        Args:
+            params: The wavefunction parameters.
+            data: Electron positions and sampled internal coordinate.
+
+        Returns:
+            Tuple ``(components, amplitudes, identity_orbitals)``.
+        """
+        return self.layer_components(params, data)
+
     def orbitals(self, params: Params, data: MoireData) -> jnp.ndarray:
         """Evaluates the orbital matrix for the given parameters and data.
 

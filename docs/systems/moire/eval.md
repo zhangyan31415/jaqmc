@@ -87,6 +87,12 @@ flags control which terms are included; each also defaults to `true`:
 - `estimators.enabled.moire_potential`
 - `estimators.enabled.soc`
 
+When `continuum_model.path` is set, evaluation loads the same canonical NPZ
+model as training and instead uses `estimators.enabled.matrix_potential`,
+`estimators.enabled.matrix_differential`, and the optional Coulomb component.
+The model path and `system.moire_lattice_constant_nm` must match the training
+configuration.
+
 `TotalEnergy` is added by the workflow, automatically sums the enabled
 `energy:`-prefixed components, and is not object-configurable. The workflow also
 constructs `CoulombInteractionEnergy`, `MoirePotential`, and `MoireSOC`

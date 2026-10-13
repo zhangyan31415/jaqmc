@@ -31,6 +31,11 @@ from jaqmc.workflow.vmc import VMCWorkflow
 from .config import MoireConfig
 from .data import data_init
 from .hamiltonian import CoulombInteractionEnergy, MoirePotential, MoireSOC
+from .matrix_hamiltonian import (
+    MatrixContinuumDifferential,
+    MatrixContinuumPotential,
+)
+from .model import MatrixContinuumModel
 from .wavefunction import MoireWavefunction
 
 
@@ -88,18 +93,37 @@ class MoireJointMCMCSampler(MCMCSampler):
         self.sampling_proposal = proposal
 
 
-def configure_system(
+def load_continuum_model(
     cfg: ConfigManagerLike,
-) -> tuple[MoireConfig, MoireWavefunction]:
-    """Build the shared system objects for moire workflows.
+    system_config: MoireConfig,
+) -> MatrixContinuumModel | None:
+    """Load and convert the configured high-throughput continuum model.
 
     Returns:
-        Tuple of (system_config, wavefunction).
+        Model in meV and dimensionless simulation coordinates, or ``None`` when
+        ``continuum_model.path`` is empty.
+    """
+    model_path = cfg.get("continuum_model.path", "")
+    if not model_path:
+        return None
+    return MatrixContinuumModel.load(model_path).to_dimensionless(
+        system_config.moire_lattice_constant_nm
+    )
+
+
+def _configure_system_and_model(
+    cfg: ConfigManagerLike,
+) -> tuple[MoireConfig, MoireWavefunction, MatrixContinuumModel | None]:
+    """Build shared system, wavefunction, and optional continuum model.
+
+    Returns:
+        Tuple of system configuration, wavefunction, and optional converted model.
 
     Raises:
         TypeError: If the wavefunction does not implement MoireWavefunction.
     """
     system_config: MoireConfig = cfg.get_module("system", "jaqmc.app.moire.config")
+    continuum_model = load_continuum_model(cfg, system_config)
 
     wf = cfg.get_module("wf", "jaqmc.app.moire.wavefunction")
     if not isinstance(wf, Wavefunction) or not isinstance(wf, MoireWavefunction):
@@ -110,7 +134,23 @@ def configure_system(
     wf.primitive_lattice = jnp.asarray(system_config.lattice_vectors)
     wf.simulation_lattice = jnp.asarray(system_config.supercell_lattice)
     wf.twist = jnp.asarray(system_config.twist)
+    if continuum_model is not None:
+        wf.nlayers = continuum_model.internal_dim
     wf.configure_phase_inputs(system_config)
+    return system_config, wf, continuum_model
+
+
+def configure_system(
+    cfg: ConfigManagerLike,
+) -> tuple[MoireConfig, MoireWavefunction]:
+    """Build the shared system objects for moire workflows.
+
+    Returns:
+        Tuple of ``(system_config, wavefunction)``. When
+        ``continuum_model.path`` is configured, the model determines the
+        wavefunction's internal component count.
+    """
+    system_config, wf, _ = _configure_system_and_model(cfg)
     return system_config, wf
 
 
@@ -120,12 +160,46 @@ def make_estimators(
     system_config: MoireConfig,
     *,
     always_enable_energy: bool = False,
+    continuum_model: MatrixContinuumModel | None = None,
 ) -> dict[str, EstimatorLike]:
     estimators: dict[str, EstimatorLike] = {}
     layer_components_fn = wf.layer_components
     moire_lattice = jnp.asarray(system_config.moire_lattice_vectors)
 
     if always_enable_energy or cfg.get("estimators.enabled.energy", True):
+        if continuum_model is not None:
+            components = []
+            if cfg.get("estimators.enabled.matrix_potential", True):
+                estimators["matrix_potential"] = cfg.get(
+                    "estimators.energy.matrix_potential",
+                    MatrixContinuumPotential(
+                        f_internal_components=wf.internal_components,
+                        constant_matrix=jnp.asarray(continuum_model.constant_matrix),
+                        fourier_vectors=jnp.asarray(continuum_model.fourier_vectors),
+                        fourier_matrices=jnp.asarray(continuum_model.fourier_matrices),
+                    ),
+                )
+                components.append("energy:matrix_potential")
+            powers, matrices = continuum_model.differential_terms
+            if len(powers) and cfg.get("estimators.enabled.matrix_differential", True):
+                estimators["matrix_differential"] = cfg.get(
+                    "estimators.energy.matrix_differential",
+                    MatrixContinuumDifferential(
+                        f_internal_components=wf.internal_components,
+                        momentum_powers=jnp.asarray(powers),
+                        momentum_matrices=jnp.asarray(matrices),
+                    ),
+                )
+                components.append("energy:matrix_differential")
+            if cfg.get("estimators.enabled.coulomb", True):
+                estimators["coulomb"] = CoulombInteractionEnergy(
+                    supercell_lattice=jnp.asarray(system_config.supercell_lattice),
+                    coulomb_prefactor_mev=system_config.coulomb_prefactor_mev,
+                )
+                components.append("energy:coulomb")
+            estimators["total"] = TotalEnergy(components=components)
+            return estimators
+
         # Shared factor mapping the dimensionless valley-momentum kinetic
         # operator to meV; used by both the kinetic and SOC estimators.
         kinetic_prefactor = (
@@ -199,7 +273,7 @@ class MoireTrainWorkflow(VMCWorkflow):
 
     def __init__(self, cfg: ConfigManager) -> None:
         super().__init__(cfg)
-        system_config, wf = configure_system(cfg)
+        system_config, wf, continuum_model = _configure_system_and_model(cfg)
         self.wf = wf
         self.data_init = partial(data_init, system_config)
         sampler = cfg.get("sampler", MoireJointMCMCSampler)
@@ -211,7 +285,13 @@ class MoireTrainWorkflow(VMCWorkflow):
         # (or the optimizer itself) via train.optim.*.
         train.configure_optimizer(default=KFACOptimizer, f_log_psi=wf.logpsi)
         train.configure_estimators(
-            **make_estimators(cfg, wf, system_config, always_enable_energy=True)
+            **make_estimators(
+                cfg,
+                wf,
+                system_config,
+                always_enable_energy=True,
+                continuum_model=continuum_model,
+            )
         )
         train.configure_loss_grads(LossAndGrad, f_log_psi=wf.logpsi)
         self.train_stage = train.build()
@@ -222,7 +302,7 @@ class MoireEvalWorkflow(EvaluationWorkflow):
 
     def __init__(self, cfg: ConfigManager) -> None:
         super().__init__(cfg)
-        system_config, wf = configure_system(cfg)
+        system_config, wf, continuum_model = _configure_system_and_model(cfg)
         self.wf = wf
         self.data_init = partial(data_init, system_config)
         evaluation = EvaluationWorkStage.builder(cfg, wf, name="evaluation")
@@ -231,5 +311,12 @@ class MoireEvalWorkflow(EvaluationWorkflow):
         evaluation.configure_sample_plan(
             wf.logpsi, {("positions", "spin_coords"): sampler}
         )
-        evaluation.configure_estimators(**make_estimators(cfg, wf, system_config))
+        evaluation.configure_estimators(
+            **make_estimators(
+                cfg,
+                wf,
+                system_config,
+                continuum_model=continuum_model,
+            )
+        )
         self.evaluation_stage = evaluation.build()

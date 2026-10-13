@@ -43,6 +43,31 @@ background and the meaning of each parameter.
    :prefix: system
 ```
 
+## Generic continuum model (`continuum_model.path`)
+
+Set `continuum_model.path` to a canonical matrix-continuum NPZ file to run a
+material-independent model:
+
+```yaml
+continuum_model:
+  path: /path/to/material-model.npz
+
+estimators:
+  enabled:
+    coulomb: true
+```
+
+The archive stores momentum-polynomial matrices, one-sided Fourier matrix
+coefficients, internal-basis labels, and explicit energy/length units. At load
+time, coefficients are converted to meV and to the dimensionless spatial units
+defined by `system.moire_lattice_constant_nm`. The archive's `internal_dim`
+sets the wavefunction component count automatically.
+
+Use `MatrixContinuumModel.from_fitted_terms(...)` to normalize fitted coordinate
+axes, `MatrixContinuumModel.canonical_q_vectors(...)` to convert validation
+plane-wave lists from `k-Q` to the canonical `k+Q` convention, and
+`MatrixContinuumModel.save(...)` to write the NPZ file.
+
 (moire-train-wf)=
 ## Wavefunction (`wf.*`)
 
@@ -214,6 +239,16 @@ component flags control which terms are included; each defaults to `true`:
 - `estimators.enabled.coulomb`
 - `estimators.enabled.moire_potential`
 - `estimators.enabled.soc`
+
+When `continuum_model.path` is set, the material-specific kinetic, moire
+potential, and SOC components are replaced by:
+
+- `estimators.enabled.matrix_potential`
+- `estimators.enabled.matrix_differential`
+- `estimators.enabled.coulomb`
+
+The first two are built directly from the NPZ model. The Coulomb term remains
+optional and uses the existing 2D Ewald estimator.
 
 `TotalEnergy` is added by the workflow, automatically sums the enabled
 `energy:`-prefixed components, and is not object-configurable. The workflow also
