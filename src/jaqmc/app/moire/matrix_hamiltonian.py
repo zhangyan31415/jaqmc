@@ -4,6 +4,7 @@
 """Estimators for material-independent matrix continuum Hamiltonians."""
 
 from collections.abc import Callable, Mapping
+from dataclasses import field
 from typing import Any
 
 import jax
@@ -25,6 +26,125 @@ from .hamiltonian import (
 type InternalComponentsFn = Callable[
     [Params, MoireData], tuple[jnp.ndarray, jnp.ndarray, jnp.ndarray]
 ]
+
+
+@configurable_dataclass
+class MatrixContinuumObservable(PerWalkerEstimator):
+    r"""Local estimators for constant one-body internal-space operators.
+
+    For each configured matrix :math:`A_\alpha`, this estimator evaluates
+
+    .. math::
+
+        \frac{1}{N}\sum_i
+        \frac{A_\alpha^{(i)}\Psi}{\Psi}.
+
+    All operators share one internal-component wavefunction evaluation. This is
+    useful for layer, orbital, spin, valley, or other finite-basis
+    polarizations. Complex matrices are configured as separate real and
+    imaginary arrays so they remain portable in YAML.
+
+    Args:
+        operator_matrices_real: Real parts with shape
+            ``(n_operators, n_internal, n_internal)``.
+        operator_matrices_imag: Optional imaginary parts with the same shape.
+        output_keys: Statistic key for each operator.
+        normalize_by_electron: Divide each extensive one-body sum by the
+            electron count.
+        f_internal_components: Function returning ``(component_orbitals,
+            amplitudes, identity_orbitals)``.
+    """
+
+    operator_matrices_real: list = field(default_factory=list)
+    operator_matrices_imag: list = field(default_factory=list)
+    output_keys: list[str] = field(default_factory=list)
+    normalize_by_electron: bool = True
+    f_internal_components: InternalComponentsFn = runtime_dep()
+
+    def init(self, data: MoireData, rngs: PRNGKey) -> None:
+        """Validate and assemble the configured Hermitian operators.
+
+        Raises:
+            ValueError: If operator arrays or output keys are invalid.
+        """
+        del data, rngs
+        real = jnp.asarray(self.operator_matrices_real)
+        imag = (
+            jnp.asarray(self.operator_matrices_imag)
+            if len(self.operator_matrices_imag)
+            else jnp.zeros_like(real)
+        )
+        if real.ndim != 3 or real.shape[1] != real.shape[2]:
+            raise ValueError(
+                "operator_matrices_real must have shape "
+                "(n_operators, n_internal, n_internal)."
+            )
+        if imag.shape != real.shape:
+            raise ValueError(
+                "operator_matrices_imag must have the same shape as "
+                "operator_matrices_real."
+            )
+        if len(self.output_keys) != real.shape[0]:
+            raise ValueError(
+                "output_keys must contain one key per internal operator matrix."
+            )
+        if len(set(self.output_keys)) != len(self.output_keys):
+            raise ValueError("output_keys must be unique.")
+        matrices = real + 1j * imag
+        if not bool(jnp.all(jnp.isfinite(matrices))):
+            raise ValueError("Internal observable matrices must be finite.")
+        if not bool(jnp.allclose(matrices, matrices.conj().swapaxes(-1, -2))):
+            raise ValueError("Internal observable matrices must be Hermitian.")
+        self._operator_matrices = matrices
+        return None
+
+    def evaluate_single_walker(
+        self,
+        params: Params,
+        data: MoireData,
+        prev_walker_stats: Mapping[str, Any],
+        state: None,
+        rngs: PRNGKey,
+    ) -> tuple[dict[str, Any], None]:
+        """Evaluate all configured internal one-body observables.
+
+        Returns:
+            Mapping from configured output keys to local estimator values.
+
+        Raises:
+            ValueError: If wavefunction and operator internal dimensions differ.
+        """
+        del prev_walker_stats, rngs
+        component_orbitals, amplitudes, identity_orbitals = self.f_internal_components(
+            params, data
+        )
+        n_internal = self._operator_matrices.shape[1]
+        if component_orbitals.shape[0] != n_internal:
+            raise ValueError(
+                "Wavefunction component count does not match the internal "
+                f"observable matrices: {component_orbitals.shape[0]} != {n_internal}."
+            )
+        if amplitudes.shape[-1] != n_internal:
+            raise ValueError(
+                "Internal-coordinate amplitude count does not match the internal "
+                f"observable matrices: {amplitudes.shape[-1]} != {n_internal}."
+            )
+
+        operator_orbitals = jnp.einsum(
+            "ia,oab,bdij->odij",
+            amplitudes,
+            self._operator_matrices,
+            component_orbitals,
+        )
+        values = jnp.sum(
+            compute_operator_ratio(identity_orbitals, operator_orbitals), axis=-1
+        )
+        if self.normalize_by_electron:
+            values = values / data.positions.shape[0]
+        return {
+            output_key: values[index]
+            for index, output_key in enumerate(self.output_keys)
+        }, state
 
 
 def _scaled_operator_numerator_fn(

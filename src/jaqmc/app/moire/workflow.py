@@ -162,7 +162,15 @@ def make_estimators(
     always_enable_energy: bool = False,
     continuum_model: MatrixContinuumModel | None = None,
 ) -> dict[str, EstimatorLike]:
-    estimators: dict[str, EstimatorLike] = {}
+    internal_observables = cfg.get_collection(
+        "estimators.internal_observables",
+        defaults={},
+        context={"f_internal_components": wf.internal_components},
+    )
+    estimators: dict[str, EstimatorLike] = {
+        f"internal_observable:{name}": estimator
+        for name, estimator in internal_observables.items()
+    }
     layer_components_fn = wf.layer_components
     moire_lattice = jnp.asarray(system_config.moire_lattice_vectors)
 

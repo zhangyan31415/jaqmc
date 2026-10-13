@@ -9,6 +9,7 @@ from jax import numpy as jnp
 from jaqmc.app.moire.data import MoireData
 from jaqmc.app.moire.matrix_hamiltonian import (
     MatrixContinuumDifferential,
+    MatrixContinuumObservable,
     MatrixContinuumPotential,
 )
 
@@ -94,6 +95,70 @@ def test_matrix_continuum_potential_rejects_component_mismatch():
 
     with pytest.raises(ValueError, match="component count"):
         estimator.evaluate_single_walker({}, data, {}, None, jax.random.PRNGKey(1))
+
+
+def test_matrix_continuum_observable_matches_direct_row_replacement():
+    component_orbitals, components = _component_fixture()
+    data = MoireData(
+        positions=jnp.asarray([[0.2, -0.1], [0.45, 0.3]]),
+        spin_coords=jnp.asarray([0.25, 1.1]),
+    )
+    matrices = jnp.asarray(
+        [
+            [[1.0, 0.0], [0.0, -1.0]],
+            [[0.0, 1.0 - 0.2j], [1.0 + 0.2j, 0.0]],
+        ]
+    )
+    estimator = MatrixContinuumObservable(
+        f_internal_components=components,
+        operator_matrices_real=matrices.real.tolist(),
+        operator_matrices_imag=matrices.imag.tolist(),
+        output_keys=["observable:internal_z", "observable:internal_mix"],
+    )
+    estimator.init(data, jax.random.PRNGKey(0))
+
+    stats, _ = estimator.evaluate_single_walker(
+        {}, data, {}, None, jax.random.PRNGKey(1)
+    )
+
+    _, amplitudes, identity = components({}, data)
+    psi = jnp.linalg.det(identity[0])
+    expected = []
+    for matrix in matrices:
+        value = 0.0j
+        for electron in range(2):
+            transformed_row = jnp.einsum(
+                "a,ab,bj->j",
+                amplitudes[electron],
+                matrix,
+                component_orbitals[:, 0, electron],
+            )
+            numerator = jnp.linalg.det(identity[0].at[electron].set(transformed_row))
+            value += numerator / psi
+        expected.append(value / len(data.positions))
+
+    np.testing.assert_allclose(
+        stats["observable:internal_z"], expected[0], rtol=1e-6, atol=1e-6
+    )
+    np.testing.assert_allclose(
+        stats["observable:internal_mix"], expected[1], rtol=1e-6, atol=1e-6
+    )
+
+
+def test_matrix_continuum_observable_rejects_nonhermitian_matrix():
+    _, components = _component_fixture()
+    data = MoireData(
+        positions=jnp.zeros((2, 2)),
+        spin_coords=jnp.zeros((2,)),
+    )
+    estimator = MatrixContinuumObservable(
+        f_internal_components=components,
+        operator_matrices_real=[[[0.0, 1.0], [0.0, 0.0]]],
+        output_keys=["observable:invalid"],
+    )
+
+    with pytest.raises(ValueError, match="Hermitian"):
+        estimator.init(data, jax.random.PRNGKey(0))
 
 
 def _differential_components(params, data):

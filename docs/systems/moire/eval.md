@@ -93,6 +93,29 @@ model as training and instead uses `estimators.enabled.matrix_potential`,
 The model path and `system.moire_lattice_constant_nm` must match the training
 configuration.
 
+Constant one-body operators in the model's internal basis can be evaluated
+through the `estimators.internal_observables` module collection. Multiple
+operators should be grouped into one `MatrixContinuumObservable` so their
+layer, orbital, spin, valley, or other polarizations share one wavefunction
+evaluation. Matrices are normalized per electron by default. Complex operators
+use separate real and imaginary arrays:
+
+```yaml
+estimators:
+  internal_observables:
+    polarizations:
+      module: jaqmc.app.moire.matrix_hamiltonian:MatrixContinuumObservable
+      operator_matrices_real:
+        - [[1.0, 0.0], [0.0, -1.0]]
+        - [[0.0, 1.0], [1.0, 0.0]]
+      operator_matrices_imag:
+        - [[0.0, 0.0], [0.0, 0.0]]
+        - [[0.0, 0.0], [0.0, 0.0]]
+      output_keys:
+        - observable:internal_z
+        - observable:internal_x
+```
+
 `TotalEnergy` is added by the workflow, automatically sums the enabled
 `energy:`-prefixed components, and is not object-configurable. The workflow also
 constructs `CoulombInteractionEnergy`, `MoirePotential`, and `MoireSOC`

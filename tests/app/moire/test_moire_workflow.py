@@ -10,6 +10,7 @@ from jax import numpy as jnp
 
 from jaqmc.app.moire.matrix_hamiltonian import (
     MatrixContinuumDifferential,
+    MatrixContinuumObservable,
     MatrixContinuumPotential,
 )
 from jaqmc.app.moire.model import MatrixContinuumModel
@@ -117,6 +118,39 @@ def test_continuum_model_path_configures_generic_workflow(tmp_path: Path):
     assert "kinetic" not in estimators
     assert "soc" not in estimators
     assert "moire_potential" not in estimators
+
+
+def test_internal_observable_collection_is_wired_from_config(tmp_path: Path):
+    cfg = _base_config(tmp_path)
+    cfg.pop("workflow")
+    cfg["estimators"] = {
+        "enabled": {"energy": False},
+        "internal_observables": {
+            "polarizations": {
+                "module": (
+                    "jaqmc.app.moire.matrix_hamiltonian:MatrixContinuumObservable"
+                ),
+                "operator_matrices_real": [
+                    [[1.0, 0.0], [0.0, -1.0]],
+                    [[0.0, 1.0], [1.0, 0.0]],
+                ],
+                "output_keys": [
+                    "observable:internal_z",
+                    "observable:internal_x",
+                ],
+            }
+        },
+    }
+    manager = ConfigManager(cfg)
+    system, wf = configure_system(manager)
+
+    estimators = make_estimators(manager, wf, system)
+
+    assert set(estimators) == {"internal_observable:polarizations"}
+    observable = estimators["internal_observable:polarizations"]
+    assert isinstance(observable, MatrixContinuumObservable)
+    assert observable.f_internal_components == wf.internal_components
+    manager.finalize()
 
 
 def test_joint_proposal_moves_positions_and_spin_coords_together():
