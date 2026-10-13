@@ -21,6 +21,7 @@ from jaqmc.app.moire.workflow import (
     load_continuum_model,
     make_estimators,
 )
+from jaqmc.estimator.structure_factor import PeriodicStructureFactor
 from jaqmc.estimator.total_energy import TotalEnergy
 from jaqmc.utils.config import ConfigManager
 from jaqmc.writer.console import FieldSpec
@@ -120,7 +121,7 @@ def test_continuum_model_path_configures_generic_workflow(tmp_path: Path):
     assert "moire_potential" not in estimators
 
 
-def test_internal_observable_collection_is_wired_from_config(tmp_path: Path):
+def test_observable_collections_are_wired_from_config(tmp_path: Path):
     cfg = _base_config(tmp_path)
     cfg.pop("workflow")
     cfg["estimators"] = {
@@ -140,16 +141,29 @@ def test_internal_observable_collection_is_wired_from_config(tmp_path: Path):
                 ],
             }
         },
+        "periodic_observables": {
+            "charge_order": {
+                "module": "jaqmc.estimator.structure_factor:PeriodicStructureFactor",
+                "reciprocal_indices": [[1, 0], [0, 1], [1, 1]],
+            }
+        },
     }
     manager = ConfigManager(cfg)
     system, wf = configure_system(manager)
 
     estimators = make_estimators(manager, wf, system)
 
-    assert set(estimators) == {"internal_observable:polarizations"}
+    assert set(estimators) == {
+        "internal_observable:polarizations",
+        "periodic_observable:charge_order",
+    }
     observable = estimators["internal_observable:polarizations"]
     assert isinstance(observable, MatrixContinuumObservable)
     assert observable.f_internal_components == wf.internal_components
+    structure_factor = estimators["periodic_observable:charge_order"]
+    assert isinstance(structure_factor, PeriodicStructureFactor)
+    np.testing.assert_allclose(structure_factor.lattice, system.supercell_lattice)
+    assert structure_factor.data_field == "positions"
     manager.finalize()
 
 

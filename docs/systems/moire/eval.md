@@ -116,6 +116,27 @@ estimators:
         - observable:internal_x
 ```
 
+Periodic position observables use the parallel
+`estimators.periodic_observables` collection. For example, this evaluates
+charge structure factors at three integer combinations of the simulation-cell
+reciprocal basis:
+
+```yaml
+estimators:
+  periodic_observables:
+    charge_order:
+      module: jaqmc.estimator.structure_factor:PeriodicStructureFactor
+      reciprocal_indices:
+        - [1, 0]
+        - [0, 1]
+        - [1, 1]
+```
+
+The output contains `observable:structure_factor` for
+$S(\mathbf q)=|\rho(\mathbf q)|^2/N$ and `observable:density_mode` for the
+complex normalized mode $\rho(\mathbf q)/N$. The zero reciprocal vector is
+rejected because it only produces the trivial value $S(0)=N$.
+
 `TotalEnergy` is added by the workflow, automatically sums the enabled
 `energy:`-prefixed components, and is not object-configurable. The workflow also
 constructs `CoulombInteractionEnergy`, `MoirePotential`, and `MoireSOC`

@@ -167,10 +167,24 @@ def make_estimators(
         defaults={},
         context={"f_internal_components": wf.internal_components},
     )
+    periodic_observables = cfg.get_collection(
+        "estimators.periodic_observables",
+        defaults={},
+        context={
+            "lattice": jnp.asarray(system_config.supercell_lattice),
+            "data_field": "positions",
+        },
+    )
     estimators: dict[str, EstimatorLike] = {
         f"internal_observable:{name}": estimator
         for name, estimator in internal_observables.items()
     }
+    estimators.update(
+        {
+            f"periodic_observable:{name}": estimator
+            for name, estimator in periodic_observables.items()
+        }
+    )
     layer_components_fn = wf.layer_components
     moire_lattice = jnp.asarray(system_config.moire_lattice_vectors)
 
