@@ -188,3 +188,47 @@ def test_non_symmetric_supercell_kpts_fold_to_supercell_gamma():
         np.round(np.asarray(supercell_frac)),
         atol=1e-6,
     )
+
+
+@pytest.mark.parametrize("phase_mode", ["singlephase", "multiphase"])
+def test_initial_internal_filter_changes_only_initial_parameters(phase_mode):
+    kwargs = _wavefunction_kwargs(phase_mode=phase_mode)
+    plain = MoireWavefunction(**kwargs)
+    matrix = np.asarray([[0.55, -0.45j], [0.45j, 0.55]])
+    biased = MoireWavefunction(
+        **kwargs,
+        initial_internal_transform_real=matrix.real.tolist(),
+        initial_internal_transform_imag=matrix.imag.tolist(),
+    )
+    data, rng = _make_data(seed=9), jax.random.PRNGKey(13)
+    base_params = plain.init_params(data, rng)
+    biased_params = biased.init_params(data, rng)
+    base_components, _, _ = plain.internal_components(base_params, data)
+    transformed, _, _ = plain.internal_components(biased_params, data)
+    np.testing.assert_allclose(
+        transformed,
+        np.einsum("ab,bdij->adij", matrix, base_components),
+        rtol=1e-5,
+        atol=1e-6,
+    )
+    np.testing.assert_allclose(
+        plain.orbitals(biased_params, data),
+        biased.orbitals(biased_params, data),
+        rtol=1e-6,
+        atol=1e-6,
+    )
+    np.testing.assert_allclose(
+        plain.internal_components(base_params, data)[0],
+        base_components,
+        rtol=0,
+        atol=0,
+    )
+
+
+@pytest.mark.parametrize("matrix", [[[1.0]], [[1.0, 0.0], [0.0, 0.0]]])
+def test_initial_internal_filter_rejects_invalid_or_rank_deficient_matrix(matrix):
+    wf = MoireWavefunction(
+        **_wavefunction_kwargs(), initial_internal_transform_real=matrix
+    )
+    with pytest.raises(ValueError, match=r"shape|rank"):
+        wf.init_params(_make_data(), jax.random.PRNGKey(13))

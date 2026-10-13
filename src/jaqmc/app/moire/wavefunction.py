@@ -4,14 +4,15 @@
 
 import math
 from dataclasses import field
-from typing import Literal
+from typing import Any, Literal, cast
 
 import jax
 import numpy as np
 from flax import linen as nn
+from flax.core import unfreeze
 from jax import numpy as jnp
 
-from jaqmc.array_types import Params
+from jaqmc.array_types import Params, PRNGKey
 from jaqmc.geometry.pbc import DistanceType, SymmetryType
 from jaqmc.utils.supercell import (
     get_reciprocal_vectors,
@@ -179,6 +180,10 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
             summed with symmetric layer phases. Defaults to ``2``.
         distance_type: Method to compute periodic distances.
         sym_type: Symmetry type for features.
+        initial_internal_transform_real: Optional square matrix applied only
+            to newly initialized internal orbital heads. A full-rank filter
+            can favor an initial polarization without constraining training.
+        initial_internal_transform_imag: Imaginary part of the initial matrix.
     """
 
     nspins: tuple[int, int] = runtime_dep()
@@ -200,6 +205,63 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
     nlayers: int = 2
     distance_type: DistanceType = DistanceType.tri
     sym_type: SymmetryType = SymmetryType.minimal
+    initial_internal_transform_real: list[list[float]] = field(default_factory=list)
+    initial_internal_transform_imag: list[list[float]] = field(default_factory=list)
+
+    def init_params(self, data: MoireData, rngs: PRNGKey) -> Params:
+        """Initialize optional internal bias through the orbital-head parameters.
+
+        The transformation acts on the component index before the internal
+        coordinate amplitudes are contracted. It is not part of the forward
+        pass; restoring the resulting parameters into an unbiased wavefunction
+        gives exactly the same state.
+
+        Returns:
+            Initial parameters, with all internal components still trainable.
+
+        Raises:
+            ValueError: If the initial transformation has invalid shape or values.
+        """
+        params = super().init_params(data, rngs)
+        if not self.initial_internal_transform_real:
+            if self.initial_internal_transform_imag:
+                raise ValueError("An imaginary initial transform requires a real part.")
+            return params
+        real = np.asarray(self.initial_internal_transform_real)
+        imag = (
+            np.asarray(self.initial_internal_transform_imag)
+            if self.initial_internal_transform_imag
+            else np.zeros_like(real)
+        )
+        if real.shape != (self.nlayers, self.nlayers) or imag.shape != real.shape:
+            raise ValueError(
+                "Initial internal transform must have shape (nlayers, nlayers)."
+            )
+        matrix = real + 1j * imag
+        if not np.all(np.isfinite(matrix)):
+            raise ValueError("Initial internal transform must be finite.")
+        if np.linalg.matrix_rank(matrix) < self.nlayers:
+            raise ValueError("Initial internal transform must have full rank.")
+        variables = unfreeze(cast(Any, params))
+        heads = variables["params"]
+        components = [
+            jax.tree.map(
+                lambda r, i: r + 1j * i,
+                heads[f"real_orbital_layer_{index + 1}"],
+                heads[f"imag_orbital_layer_{index + 1}"],
+            )
+            for index in range(self.nlayers)
+        ]
+        for index in range(self.nlayers):
+            mixed = jax.tree.map(
+                lambda *parts: jnp.einsum(
+                    "b,b...->...", jnp.asarray(matrix[index]), jnp.stack(parts)
+                ),
+                *components,
+            )
+            heads[f"real_orbital_layer_{index + 1}"] = jax.tree.map(jnp.real, mixed)
+            heads[f"imag_orbital_layer_{index + 1}"] = jax.tree.map(jnp.imag, mixed)
+        return variables
 
     def setup(self) -> None:
         """Validates the phase mode and builds the wavefunction layers.

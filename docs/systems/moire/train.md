@@ -86,6 +86,15 @@ reciprocal fractional coordinates:
 See <project:index.md> for background on continuous spin, phase modes, and
 translation projection.
 
+For independent initial-state comparisons, set
+`wf.initial_internal_transform_real` and, if needed,
+`wf.initial_internal_transform_imag` to a finite full-rank matrix in the
+model's internal basis. It mixes the newly initialized complex orbital heads
+once; all components remain trainable and the forward ansatz is unchanged.
+For a two-component basis, `[[1, 0], [0, 0.1]]` favors the first component
+without removing the second. These options do not transform restored
+checkpoint parameters.
+
 ```{eval-rst}
 .. config-defaults:: jaqmc.app.moire.wavefunction.MoireWavefunction
    :prefix: wf
