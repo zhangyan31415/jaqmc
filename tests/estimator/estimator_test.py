@@ -15,7 +15,7 @@ from jaqmc.estimator import (
     FunctionEstimator,
     PerWalkerEstimator,
 )
-from jaqmc.estimator.base import mean_reduce
+from jaqmc.estimator.base import complex_mean_reduce, mean_reduce
 
 
 def _dummy_evaluate(params, data, stats, state, rngs):
@@ -146,3 +146,15 @@ def test_mean_reduce_variance_stays_accurate_far_from_zero():
     got = mean_reduce({"energy": values})["energy_var"]
     ref = np.var(np.asarray(values, dtype=np.float64))
     np.testing.assert_allclose(got, ref, rtol=1e-5, atol=0)
+
+
+def test_complex_reduce_avoids_negative_pseudo_variance():
+    values = jnp.asarray([1 + 3j, 3 - 3j])
+    reduced = jax.jit(complex_mean_reduce)(
+        {"polarization": values, "structure": jnp.asarray([1.0, 3.0])}
+    )
+    assert "polarization_var" not in reduced
+    assert reduced["polarization"] == pytest.approx(2.0)
+    assert reduced["polarization_real_var"] == pytest.approx(1.0)
+    assert reduced["polarization_imag_var"] == pytest.approx(9.0)
+    assert reduced["structure_var"] == pytest.approx(1.0)

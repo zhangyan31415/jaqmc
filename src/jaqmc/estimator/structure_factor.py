@@ -11,7 +11,7 @@ from jax import numpy as jnp
 
 from jaqmc.array_types import Params, PRNGKey
 from jaqmc.data import Data
-from jaqmc.estimator.base import PerWalkerEstimator
+from jaqmc.estimator.base import PerWalkerEstimator, complex_mean_reduce
 from jaqmc.utils.config import configurable_dataclass
 from jaqmc.utils.supercell import get_reciprocal_vectors
 from jaqmc.utils.wiring import runtime_dep
@@ -102,3 +102,7 @@ class PeriodicStructureFactor(PerWalkerEstimator):
             self.structure_factor_key: jnp.abs(density) ** 2 / nelec,
             self.density_mode_key: density / nelec,
         }, state
+
+    def reduce(self, walker_stats: Mapping[str, Any]) -> dict[str, Any]:
+        """Return structure statistics and separate complex-mode variances."""
+        return complex_mean_reduce(walker_stats)

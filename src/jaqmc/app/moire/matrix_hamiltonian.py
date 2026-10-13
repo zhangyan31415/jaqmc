@@ -11,7 +11,7 @@ import jax
 from jax import numpy as jnp
 
 from jaqmc.array_types import Params, PRNGKey
-from jaqmc.estimator.base import PerWalkerEstimator
+from jaqmc.estimator.base import PerWalkerEstimator, complex_mean_reduce
 from jaqmc.utils import parallel_jax
 from jaqmc.utils.config import configurable_dataclass
 from jaqmc.utils.wiring import runtime_dep
@@ -145,6 +145,10 @@ class MatrixContinuumObservable(PerWalkerEstimator):
             output_key: values[index]
             for index, output_key in enumerate(self.output_keys)
         }, state
+
+    def reduce(self, walker_stats: Mapping[str, Any]) -> dict[str, Any]:
+        """Return means and separate real/imaginary component variances."""
+        return complex_mean_reduce(walker_stats)
 
 
 def _scaled_operator_numerator_fn(

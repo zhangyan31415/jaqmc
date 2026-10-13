@@ -53,6 +53,30 @@ def mean_reduce(
     return stats
 
 
+def complex_mean_reduce(walker_stats: Mapping[str, Any]) -> dict[str, Any]:
+    """Keep complex means and compute real and imaginary variances separately.
+
+    Complex local estimators need not be real for individual walkers, even for
+    Hermitian operators. Squaring complex deviations gives a pseudo-variance
+    that may be negative; it is not a sampling uncertainty. This reducer
+    preserves the original mean key and adds ``_real`` / ``_imag`` means and
+    nonnegative variances. Real-valued inputs use the ordinary key convention.
+    Error bars still require blocking the per-step series.
+
+    Returns:
+        Step means and component variances over walkers.
+    """
+    stats = {}
+    for key, value in walker_stats.items():
+        if jnp.iscomplexobj(value):
+            stats.update(mean_reduce({key: value}, include_variance=False))
+            stats.update(mean_reduce({f"{key}_real": value.real}))
+            stats.update(mean_reduce({f"{key}_imag": value.imag}))
+        else:
+            stats.update(mean_reduce({key: value}))
+    return stats
+
+
 @configurable_dataclass
 class Estimator[DataT: Data](ABC):
     """Base estimator with default no-op implementations.
