@@ -1,0 +1,2637 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-17T02:01:30.240074+08:00",
+  "description": "Unmodified MoTe2 AA rigid and cell-relaxed VASP structures; OpenMX input geometry cross-checks",
+  "source_root": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA",
+  "summary": {
+    "structure_files": 52,
+    "rigid_files": 27,
+    "relaxed_files": 25,
+    "angles": 26,
+    "bytes": 13562835,
+    "openmx_cases": 15,
+    "openmx_inputs": 30,
+    "inputs_with_match": 30
+  },
+  "structures": [
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.08455",
+      "kind": "rigid",
+      "filename": "1.08455.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/1.08455.vasp",
+      "bytes": 1040078,
+      "sha256": "2388496b73611c9e2af1b39a6e2b4d4368b9e48ed55f5437d03e1b4dc179df54",
+      "atoms": 16746,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        5582,
+        11164
+      ],
+      "cell_angstrom": [
+        [
+          186.42990485441945,
+          0.0,
+          0.0
+        ],
+        [
+          93.21495242720971,
+          161.4530336290431,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          25.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.08455/rigid/1.08455.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.20286",
+      "kind": "rigid",
+      "filename": "1.20286.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/1.20286.vasp",
+      "bytes": 840024,
+      "sha256": "de68f5aa4a880fab561eac52ecab639e002a3102e830f4e3f3bf33a988e9a0e2",
+      "atoms": 13614,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        4538,
+        9076
+      ],
+      "cell_angstrom": [
+        [
+          169.83710656885137,
+          -1.23e-14,
+          0.0
+        ],
+        [
+          -84.9185532865743,
+          147.08324879511076,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.20286/rigid/1.20286.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.29719",
+      "kind": "rigid",
+      "filename": "1.29719.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/1.29719.vasp",
+      "bytes": 721243,
+      "sha256": "3f74203bd8377db59c4aeee8a25fa71c5e6208e53354627ab491592bdf59f08d",
+      "atoms": 11706,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        3902,
+        7804
+      ],
+      "cell_angstrom": [
+        [
+          157.48531700020763,
+          -3.5e-15,
+          0.0
+        ],
+        [
+          -78.74265850209618,
+          136.38628524637542,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.29719/rigid/1.29719.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.40758",
+      "kind": "rigid",
+      "filename": "1.40758.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/1.40758.vasp",
+      "bytes": 611570,
+      "sha256": "05925cf0f521a7b7f3ccad7d79766f24bee93d2f8ddd84b9c4820b284ead86ab",
+      "atoms": 9942,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        3314,
+        6628
+      ],
+      "cell_angstrom": [
+        [
+          145.13352743156392,
+          1.24e-14,
+          0.0
+        ],
+        [
+          -72.56676371761807,
+          125.6893216976401,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.40758/rigid/1.40758.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.47013",
+      "kind": "rigid",
+      "filename": "1.47013.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/1.47013.vasp",
+      "bytes": 560142,
+      "sha256": "e937b8e3dbd429e064b9db31ae0f569fd510aefae4644215e38bc68940164a3a",
+      "atoms": 9114,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        3038,
+        6076
+      ],
+      "cell_angstrom": [
+        [
+          138.95763264724204,
+          1.19e-14,
+          0.0
+        ],
+        [
+          -69.478816325379,
+          120.34083992327241,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.47013/rigid/1.47013.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.53850",
+      "kind": "rigid",
+      "filename": "1.53850.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/1.53850.vasp",
+      "bytes": 510995,
+      "sha256": "8ddbd4c1dbf36cf96d4b1104d091c5070513e89c5f179bbbc7745b8eae018f5d",
+      "atoms": 8322,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        2774,
+        5548
+      ],
+      "cell_angstrom": [
+        [
+          132.78173786292018,
+          1.41e-14,
+          0.0
+        ],
+        [
+          -66.39086893313994,
+          114.99235814890477,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.53850/rigid/1.53850.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.61354",
+      "kind": "rigid",
+      "filename": "1.61354.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/1.61354.vasp",
+      "bytes": 464127,
+      "sha256": "4dc5bef3f2ada96bfec2bcbca8329d586dc8dd8be84b8693413a6684291817b3",
+      "atoms": 7566,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        2522,
+        5044
+      ],
+      "cell_angstrom": [
+        [
+          126.6058430785983,
+          1.22e-14,
+          0.0
+        ],
+        [
+          -63.302921540900854,
+          109.64387637453707,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.61354/rigid/1.61354.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.69627",
+      "kind": "rigid",
+      "filename": "1.69627.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/1.69627.vasp",
+      "bytes": 419534,
+      "sha256": "cd524a2d0bbb27df491320530072ef7a4ab456cc2b7bd8f805be31bb332fdae0",
+      "atoms": 6846,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        2282,
+        4564
+      ],
+      "cell_angstrom": [
+        [
+          120.42994829427644,
+          1.6e-15,
+          0.0
+        ],
+        [
+          -60.214974148661774,
+          104.29539460016944,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.69627/rigid/1.69627.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.78795",
+      "kind": "rigid",
+      "filename": "1.78795.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/1.78795.vasp",
+      "bytes": 377283,
+      "sha256": "17466a2038b8f253c076e140ce00f9ef06b7cd2e64b281020430471292c43519",
+      "atoms": 6162,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        2054,
+        4108
+      ],
+      "cell_angstrom": [
+        [
+          114.25405350995456,
+          -2e-16,
+          0.0
+        ],
+        [
+          -57.127026756422715,
+          98.94691282580177,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.78795/rigid/1.78795.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.89010",
+      "kind": "rigid",
+      "filename": "1.89010.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/1.89010.vasp",
+      "bytes": 337552,
+      "sha256": "37447ece5edcfa1200cf18eb003afd776288f733e27dab9db98fc01486919e1b",
+      "atoms": 5514,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        1838,
+        3676
+      ],
+      "cell_angstrom": [
+        [
+          108.07815872563272,
+          3.3e-15,
+          0.0
+        ],
+        [
+          -54.03907936418365,
+          93.59843105143412,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.89010/rigid/1.89010.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.00463",
+      "kind": "rigid",
+      "filename": "2.00463.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/2.00463.vasp",
+      "bytes": 300067,
+      "sha256": "15d4a576c4f5df805b1b2c39943ad088eab96e28db324ff807cef954e115ff79",
+      "atoms": 4902,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        1634,
+        3268
+      ],
+      "cell_angstrom": [
+        [
+          101.90226394131085,
+          8.6e-15,
+          0.0
+        ],
+        [
+          -50.9511319719446,
+          88.24994927706645,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.00463/rigid/2.00463.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.13393",
+      "kind": "rigid",
+      "filename": "2.13393.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/2.13393.vasp",
+      "bytes": 264815,
+      "sha256": "cf3a61936a778855648bda4175802726392d2e5f17439a0b89fb9475e0d6b246",
+      "atoms": 4326,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        1442,
+        2884
+      ],
+      "cell_angstrom": [
+        [
+          95.72636915698895,
+          5e-15,
+          0.0
+        ],
+        [
+          -47.86318457970554,
+          82.9014675026988,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.13393/rigid/2.13393.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.28106",
+      "kind": "rigid",
+      "filename": "2.28106.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/2.28106.vasp",
+      "bytes": 231773,
+      "sha256": "0648f8b73b42adf549e7b079bec8d0db4d2b43e6ca4b07962bb155fa39cad5de",
+      "atoms": 3786,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        1262,
+        2524
+      ],
+      "cell_angstrom": [
+        [
+          89.5504743726671,
+          -3.9e-15,
+          0.0
+        ],
+        [
+          -44.77523718746645,
+          77.55298572833114,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.28106/rigid/2.28106.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.44998",
+      "kind": "rigid",
+      "filename": "2.44998.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/2.44998.vasp",
+      "bytes": 200929,
+      "sha256": "2529babbb11ed9adffd12a9976903b6fb615c5543794e133dd083b1a19d619ba",
+      "atoms": 3282,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        1094,
+        2188
+      ],
+      "cell_angstrom": [
+        [
+          83.37457958834521,
+          -4e-16,
+          0.0
+        ],
+        [
+          -41.687289795227386,
+          72.20450395396347,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.44998/rigid/2.44998.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.64591",
+      "kind": "rigid",
+      "filename": "2.64591.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/2.64591.vasp",
+      "bytes": 172293,
+      "sha256": "f1fb82424634acd84ede71b71bfee606fa9a24b77b558d5aaf367dfe9c0fead6",
+      "atoms": 2814,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        938,
+        1876
+      ],
+      "cell_angstrom": [
+        [
+          77.19868480402336,
+          4.9e-15,
+          0.0
+        ],
+        [
+          -38.59934240298832,
+          66.8560221795958,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.64591/rigid/2.64591.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.87589",
+      "kind": "rigid",
+      "filename": "2.87589.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/2.87589.vasp",
+      "bytes": 145863,
+      "sha256": "545f0bf3835bb2e35ed83cd66b3861b6b097420c9ce68ebd6b2f5007fff8e4e3",
+      "atoms": 2382,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        794,
+        1588
+      ],
+      "cell_angstrom": [
+        [
+          71.02279001970149,
+          1.3e-15,
+          0.0
+        ],
+        [
+          -35.51139501074926,
+          61.507540405228134,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.87589/rigid/2.87589.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "3.14966",
+      "kind": "rigid",
+      "filename": "3.14966.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/3.14966.vasp",
+      "bytes": 121637,
+      "sha256": "ec17c53d69d2889a31df942ae759aa407abbb992150c3062e526d9d7da2b5b5e",
+      "atoms": 1986,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        662,
+        1324
+      ],
+      "cell_angstrom": [
+        [
+          64.84689523537962,
+          3.1e-15,
+          0.0
+        ],
+        [
+          -32.4234476185102,
+          56.15905863086047,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/3.14966/rigid/3.14966.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "3.48101",
+      "kind": "rigid",
+      "filename": "3.48101.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/3.48101.vasp",
+      "bytes": 99617,
+      "sha256": "73eba6a9ebe91b5c337ad3e649b3d04fa49c5d06aa1a13c83a901b18e55f4888",
+      "atoms": 1626,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        542,
+        1084
+      ],
+      "cell_angstrom": [
+        [
+          58.67100045105775,
+          3e-16,
+          0.0
+        ],
+        [
+          -29.335500226271122,
+          50.81057685649281,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/3.48101/rigid/3.48101.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "3.89024",
+      "kind": "rigid",
+      "filename": "3.89024.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/3.89024.vasp",
+      "bytes": 79801,
+      "sha256": "4a423f0a998956035d42e4c30b526820c78df9385629e9f349ef9ed2c27b2e3d",
+      "atoms": 1302,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        434,
+        868
+      ],
+      "cell_angstrom": [
+        [
+          52.49510566673588,
+          1.2e-15,
+          0.0
+        ],
+        [
+          -26.247552834032057,
+          45.462095082125145,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/3.89024/rigid/3.89024.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "4.40846",
+      "kind": "rigid",
+      "filename": "4.40846.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/4.40846.vasp",
+      "bytes": 62191,
+      "sha256": "39f9807641fb153690481274b6d97baaf576e356422d52b133db402b70a68751",
+      "atoms": 1014,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        338,
+        676
+      ],
+      "cell_angstrom": [
+        [
+          46.31921088241401,
+          -1.5e-15,
+          0.0
+        ],
+        [
+          -23.15960544179299,
+          40.113613307757475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/4.40846/rigid/4.40846.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "5.08585",
+      "kind": "rigid",
+      "filename": "5.08585.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/5.08585.vasp",
+      "bytes": 46785,
+      "sha256": "aaee23b2323afd86df256679f2eec9316fb3976de294a3ff1ca63048145a30c5",
+      "atoms": 762,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        254,
+        508
+      ],
+      "cell_angstrom": [
+        [
+          40.14331609809214,
+          -7e-16,
+          0.0
+        ],
+        [
+          -20.071658049553925,
+          34.76513153338981,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/5.08585/rigid/5.08585.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "6.00898",
+      "kind": "rigid",
+      "filename": "6.00898.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/6.00898.vasp",
+      "bytes": 33585,
+      "sha256": "6dec6d544c90238d954727c7229264fb3bb889a59c61f6778dbd7be58e9782fa",
+      "atoms": 546,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        182,
+        364
+      ],
+      "cell_angstrom": [
+        [
+          33.967421313770274,
+          2e-16,
+          0.0
+        ],
+        [
+          -16.98371065731486,
+          29.41664975902215,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/6.00898/rigid/6.00898.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "6.00898",
+      "kind": "rigid",
+      "filename": "6.00898_.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/6.00898_.vasp",
+      "bytes": 33585,
+      "sha256": "6dec6d544c90238d954727c7229264fb3bb889a59c61f6778dbd7be58e9782fa",
+      "atoms": 546,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        182,
+        364
+      ],
+      "cell_angstrom": [
+        [
+          33.967421313770274,
+          2e-16,
+          0.0
+        ],
+        [
+          -16.98371065731486,
+          29.41664975902215,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/6.00898/rigid/6.00898_.vasp",
+      "same_content_as": "MoTe2/AA/6.00898/rigid/6.00898.vasp"
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "7.34099",
+      "kind": "rigid",
+      "filename": "7.34099.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/7.34099.vasp",
+      "bytes": 22590,
+      "sha256": "eb8595d394730afbb8e711fc70c09677cb1f2946a326787f6f58d034f4fa830b",
+      "atoms": 366,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        122,
+        244
+      ],
+      "cell_angstrom": [
+        [
+          27.791526529448404,
+          1.3e-15,
+          0.0
+        ],
+        [
+          -13.895763265075798,
+          24.068167984654487,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/7.34099/rigid/7.34099.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "9.43001",
+      "kind": "rigid",
+      "filename": "9.43001.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/9.43001.vasp",
+      "bytes": 13800,
+      "sha256": "c6a90b0288f38b4c774419395027e6efbc9768dc9f11df59117fe0f514f76539",
+      "atoms": 222,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        74,
+        148
+      ],
+      "cell_angstrom": [
+        [
+          21.61563174512654,
+          3e-16,
+          0.0
+        ],
+        [
+          -10.807815872836729,
+          18.719686210286824,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/9.43001/rigid/9.43001.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "13.17355",
+      "kind": "rigid",
+      "filename": "13.17355.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/13.17355.vasp",
+      "bytes": 7212,
+      "sha256": "ef91021228579cc023f1680b4c4944e933a6a95fa7abb767b5c4d7257ab2d634",
+      "atoms": 114,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        38,
+        76
+      ],
+      "cell_angstrom": [
+        [
+          15.439736960804666,
+          -1.5e-15,
+          0.0
+        ],
+        [
+          -7.719868480597662,
+          13.371204435919159,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/13.17355/rigid/13.17355.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "21.78679",
+      "kind": "rigid",
+      "filename": "21.78679.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures/21.78679.vasp",
+      "bytes": 2820,
+      "sha256": "0c13562cf4cec5cb0b803ba7d1c763e3cbcb49d81b0d534ebf41d971a95122ae",
+      "atoms": 42,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        14,
+        28
+      ],
+      "cell_angstrom": [
+        [
+          9.2638421764828,
+          -5e-16,
+          0.0
+        ],
+        [
+          -4.631921088358597,
+          8.022722661551496,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/21.78679/rigid/21.78679.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.29719",
+      "kind": "relaxed_cell",
+      "filename": "1.29719_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/1.29719_relaxed.vasp",
+      "bytes": 721044,
+      "sha256": "a327b054ae84f80ab448d8c765f67f5711021eafa8dbfb389c1fba7ef09b2efd",
+      "atoms": 11706,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        3902,
+        7804
+      ],
+      "cell_angstrom": [
+        [
+          155.28443091366933,
+          -1.019109287e-07,
+          0.0
+        ],
+        [
+          -77.64221554705601,
+          134.48026208001986,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.29719/relaxed_cell/1.29719_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.40758",
+      "kind": "relaxed_cell",
+      "filename": "1.40758_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/1.40758_relaxed.vasp",
+      "bytes": 611402,
+      "sha256": "51d18a15f1dfa679e2b847e65f220c501a04baa955b46fedae29ea39591ce529",
+      "atoms": 9942,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        3314,
+        6628
+      ],
+      "cell_angstrom": [
+        [
+          143.10605039208596,
+          3.276964826e-07,
+          0.0
+        ],
+        [
+          -71.55302491405988,
+          123.93347526849185,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.40758/relaxed_cell/1.40758_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.47013",
+      "kind": "relaxed_cell",
+      "filename": "1.47013_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/1.47013_relaxed.vasp",
+      "bytes": 560006,
+      "sha256": "0efbb004fe0fe676ef564bbc93d908cf4ad11fe0f9780b9607cd629dece68638",
+      "atoms": 9114,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        3038,
+        6076
+      ],
+      "cell_angstrom": [
+        [
+          137.01845536020735,
+          2.980034637e-07,
+          0.0
+        ],
+        [
+          -68.50922742375853,
+          118.66146268228529,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.47013/relaxed_cell/1.47013_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.53850",
+      "kind": "relaxed_cell",
+      "filename": "1.53850_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/1.53850_relaxed.vasp",
+      "bytes": 510876,
+      "sha256": "64663f6c8801f5eeb7a60ef2d9d663d0e2a1fa21355d7e0920ab45dfe27f9cf7",
+      "atoms": 8322,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        2774,
+        5548
+      ],
+      "cell_angstrom": [
+        [
+          130.92916111895576,
+          6.37050974e-08,
+          0.0
+        ],
+        [
+          -65.46458050596407,
+          113.38797974082078,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.53850/relaxed_cell/1.53850_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.61354",
+      "kind": "relaxed_cell",
+      "filename": "1.61354_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/1.61354_relaxed.vasp",
+      "bytes": 464013,
+      "sha256": "7ba1835168fe24400f98c8f9dd2828877601c3f846deec7ec53579fef0476fec",
+      "atoms": 7566,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        2522,
+        5044
+      ],
+      "cell_angstrom": [
+        [
+          124.83903449250316,
+          2.5273378e-09,
+          0.0
+        ],
+        [
+          -62.41951724564238,
+          108.11377481498745,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.61354/relaxed_cell/1.61354_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.69627",
+      "kind": "relaxed_cell",
+      "filename": "1.69627_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/1.69627_relaxed.vasp",
+      "bytes": 419434,
+      "sha256": "eac974424929e2f4bd1e78d14f6b96426aa04ef0b5bde33f2c6051efe68dd815",
+      "atoms": 6846,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        2282,
+        4564
+      ],
+      "cell_angstrom": [
+        [
+          118.74931734194965,
+          2.33971538e-08,
+          0.0
+        ],
+        [
+          -59.37465865221377,
+          102.83992441505416,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.69627/relaxed_cell/1.69627_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.78795",
+      "kind": "relaxed_cell",
+      "filename": "1.78795_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/1.78795_relaxed.vasp",
+      "bytes": 377255,
+      "sha256": "738ad9d1059b524f27d43a4dff1ab529cd423164ff93b80fc9423f834a51eec7",
+      "atoms": 6162,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        2054,
+        4108
+      ],
+      "cell_angstrom": [
+        [
+          112.66013265578111,
+          2.826551835e-07,
+          0.0
+        ],
+        [
+          -56.330066084528795,
+          97.56653824510606,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.78795/relaxed_cell/1.78795_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "1.89010",
+      "kind": "relaxed_cell",
+      "filename": "1.89010_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/1.89010_relaxed.vasp",
+      "bytes": 337538,
+      "sha256": "9ec1b64dfca3c8e7a0da3d24d110a78588ec3400474100e951747d6a8ed41083",
+      "atoms": 5514,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        1838,
+        3676
+      ],
+      "cell_angstrom": [
+        [
+          106.57017981902,
+          -4.67180906e-08,
+          0.0
+        ],
+        [
+          -53.28508995131826,
+          92.29248208774816,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/1.89010/relaxed_cell/1.89010_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.00463",
+      "kind": "relaxed_cell",
+      "filename": "2.00463_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/2.00463_relaxed.vasp",
+      "bytes": 300065,
+      "sha256": "d5685b7500d468fe6f20bf5611f725fd49037ebbd7a16a0bc9823feca85fab42",
+      "atoms": 4902,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        1634,
+        3268
+      ],
+      "cell_angstrom": [
+        [
+          100.48070334617503,
+          -3.3971083e-08,
+          0.0
+        ],
+        [
+          -50.24035170377944,
+          87.01884053022876,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.00463/relaxed_cell/2.00463_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.13393",
+      "kind": "relaxed_cell",
+      "filename": "2.13393_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/2.13393_relaxed.vasp",
+      "bytes": 264815,
+      "sha256": "1ec3f1b15fe59e53cf100e0f8c1100e2b0ecf2fe56593480110f1f23fcfab536",
+      "atoms": 4326,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        1442,
+        2884
+      ],
+      "cell_angstrom": [
+        [
+          94.3931214789792,
+          -1.391173435e-07,
+          0.0
+        ],
+        [
+          -47.196560861162446,
+          81.74684075762343,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.13393/relaxed_cell/2.13393_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.28106",
+      "kind": "relaxed_cell",
+      "filename": "2.28106_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/2.28106_relaxed.vasp",
+      "bytes": 231772,
+      "sha256": "9f48dcf9c5ddbad18ed83d0a32ccd04bacfa38aba168759c2fe4da1c7fde1702",
+      "atoms": 3786,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        1262,
+        2524
+      ],
+      "cell_angstrom": [
+        [
+          88.3023165418,
+          1.386840259e-07,
+          0.0
+        ],
+        [
+          -44.15115815191314,
+          76.47204935108557,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.28106/relaxed_cell/2.28106_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.44998",
+      "kind": "relaxed_cell",
+      "filename": "2.44998_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/2.44998_relaxed.vasp",
+      "bytes": 200929,
+      "sha256": "4aae400f6f0cbdfc526c912d44aab8675b726651462d7410baafc22273767b88",
+      "atoms": 3282,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        1094,
+        2188
+      ],
+      "cell_angstrom": [
+        [
+          82.2123659895694,
+          3.00447361e-08,
+          0.0
+        ],
+        [
+          -41.10618296980489,
+          71.19799829596651,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.44998/relaxed_cell/2.44998_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.64591",
+      "kind": "relaxed_cell",
+      "filename": "2.64591_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/2.64591_relaxed.vasp",
+      "bytes": 172293,
+      "sha256": "57b7f14a3455a1ca57ccd1bd6e0087fbb9fdc66075ce672db21deb6a1b03cc62",
+      "atoms": 2814,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        938,
+        1876
+      ],
+      "cell_angstrom": [
+        [
+          76.12147762408459,
+          -2.13422807e-08,
+          0.0
+        ],
+        [
+          -38.06073883148844,
+          65.92313416661848,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.64591/relaxed_cell/2.64591_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "2.87589",
+      "kind": "relaxed_cell",
+      "filename": "2.87589_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/2.87589_relaxed.vasp",
+      "bytes": 145862,
+      "sha256": "a9b2e1e3861a063cce8a9882263fecfc51f2008007c63d407bdb59f4c2f9f80d",
+      "atoms": 2382,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        794,
+        1588
+      ],
+      "cell_angstrom": [
+        [
+          70.0316606405163,
+          6.70842386e-08,
+          0.0
+        ],
+        [
+          -35.01583026304776,
+          60.64919650515767,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/2.87589/relaxed_cell/2.87589_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "3.14966",
+      "kind": "relaxed_cell",
+      "filename": "3.14966_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/3.14966_relaxed.vasp",
+      "bytes": 121637,
+      "sha256": "758d58c017847075964e01296327c8c12c21e1aca6fdaa00419ed0f3f98c8f5e",
+      "atoms": 1986,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        662,
+        1324
+      ],
+      "cell_angstrom": [
+        [
+          63.94224942435538,
+          -8.03254685e-08,
+          0.0
+        ],
+        [
+          -31.971124782550596,
+          55.37561245405737,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/3.14966/relaxed_cell/3.14966_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "3.48101",
+      "kind": "relaxed_cell",
+      "filename": "3.48101_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/3.48101_relaxed.vasp",
+      "bytes": 99617,
+      "sha256": "551a2fc8a9593780495ea42e8809d87cc61e763208d7d70ec80bfbe9ee515c70",
+      "atoms": 1626,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        542,
+        1084
+      ],
+      "cell_angstrom": [
+        [
+          57.85133826112406,
+          1.923183988e-07,
+          0.0
+        ],
+        [
+          -28.925668964741305,
+          50.10072907793845,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/3.48101/relaxed_cell/3.48101_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "3.89024",
+      "kind": "relaxed_cell",
+      "filename": "3.89024_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/3.89024_relaxed.vasp",
+      "bytes": 79800,
+      "sha256": "7dd766c607e34b14c7781ab383124283ae9430fd4289128df86d15ba66d2b0c6",
+      "atoms": 1302,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        434,
+        868
+      ],
+      "cell_angstrom": [
+        [
+          51.761869551826614,
+          -2.522725127e-07,
+          0.0
+        ],
+        [
+          -25.880934995042754,
+          44.827093951686194,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/3.89024/relaxed_cell/3.89024_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "4.40846",
+      "kind": "relaxed_cell",
+      "filename": "4.40846_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/4.40846_relaxed.vasp",
+      "bytes": 62190,
+      "sha256": "bb1ddfb28c8b4ec4bc89dcbc83ce98e0e017a74b557da8b2a7eb88a5b76a11c8",
+      "atoms": 1014,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        338,
+        676
+      ],
+      "cell_angstrom": [
+        [
+          45.673724758447555,
+          -2.193143443e-07,
+          0.0
+        ],
+        [
+          -22.83686256973345,
+          39.554604677761596,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/4.40846/relaxed_cell/4.40846_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "5.08585",
+      "kind": "relaxed_cell",
+      "filename": "5.08585_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/5.08585_relaxed.vasp",
+      "bytes": 46785,
+      "sha256": "26516eebcec934272701343482e8e3ef969c83bca87a6c7bc6dd98603a91932a",
+      "atoms": 762,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        254,
+        508
+      ],
+      "cell_angstrom": [
+        [
+          39.58811975376743,
+          -1.798003161e-07,
+          0.0
+        ],
+        [
+          -19.79406003309621,
+          34.284317943632274,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/5.08585/relaxed_cell/5.08585_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "6.00898",
+      "kind": "relaxed_cell",
+      "filename": "6.00898__relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/6.00898__relaxed.vasp",
+      "bytes": 33585,
+      "sha256": "3a366156d60b297daf12a1cd1a3c5d77e85214964b75c0ee9f4f9f0ff1f0d96a",
+      "atoms": 546,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        182,
+        364
+      ],
+      "cell_angstrom": [
+        [
+          33.5065345410211,
+          2.35951701e-08,
+          0.0
+        ],
+        [
+          -16.753267250500482,
+          29.017510395161036,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/6.00898/relaxed_cell/6.00898__relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "6.00898",
+      "kind": "relaxed_cell",
+      "filename": "6.00898_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/6.00898_relaxed.vasp",
+      "bytes": 33585,
+      "sha256": "6579f4fbccda24c7b6f7cebef88f3326cca94905608987c8484f5cb354b67202",
+      "atoms": 546,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        182,
+        364
+      ],
+      "cell_angstrom": [
+        [
+          33.50646530878241,
+          -1.250486178e-07,
+          0.0
+        ],
+        [
+          -16.753232762686476,
+          29.017450501810604,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/6.00898/relaxed_cell/6.00898_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "7.34099",
+      "kind": "relaxed_cell",
+      "filename": "7.34099_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/7.34099_relaxed.vasp",
+      "bytes": 22589,
+      "sha256": "d9535020b423ef8411fe8e0f36ab1cb44236cc308c12142f73a8f0e3e59e0e87",
+      "atoms": 366,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        122,
+        244
+      ],
+      "cell_angstrom": [
+        [
+          27.429995920868894,
+          9.63845931e-08,
+          0.0
+        ],
+        [
+          -13.714997877310026,
+          23.755073615551446,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/7.34099/relaxed_cell/7.34099_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "9.43001",
+      "kind": "relaxed_cell",
+      "filename": "9.43001_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/9.43001_relaxed.vasp",
+      "bytes": 13800,
+      "sha256": "fcf012e5c10f96a4119ca654eae4fd9dfc44a0be2b28a6d9502d98cb56bfc736",
+      "atoms": 222,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        74,
+        148
+      ],
+      "cell_angstrom": [
+        [
+          21.360007288379773,
+          9.13545328e-08,
+          0.0
+        ],
+        [
+          -10.680003565344807,
+          18.498308567198972,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/9.43001/relaxed_cell/9.43001_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "13.17355",
+      "kind": "relaxed_cell",
+      "filename": "13.17355_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/13.17355_relaxed.vasp",
+      "bytes": 7212,
+      "sha256": "1df21e39f961d7b9ed105e1fd7e8370986c6e9edf9e1e3bbf964b1dc81a12b89",
+      "atoms": 114,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        38,
+        76
+      ],
+      "cell_angstrom": [
+        [
+          15.304860440010476,
+          1.409517231e-07,
+          0.0
+        ],
+        [
+          -7.652430098130773,
+          13.254397562986366,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/13.17355/relaxed_cell/13.17355_relaxed.vasp",
+      "same_content_as": ""
+    },
+    {
+      "material": "MoTe2",
+      "stacking": "AA",
+      "angle_deg": "21.78679",
+      "kind": "relaxed_cell",
+      "filename": "21.78679_relaxed.vasp",
+      "source": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/2.relaxed_structures_cell_relaxed/21.78679_relaxed.vasp",
+      "bytes": 2820,
+      "sha256": "41f27131d13a08e7fc18f3b3b104dd8f594af6155d1c98e7e1d9de9268a6b081",
+      "atoms": 42,
+      "species": [
+        "Mo",
+        "Te"
+      ],
+      "counts": [
+        14,
+        28
+      ],
+      "cell_angstrom": [
+        [
+          9.288412786219624,
+          1.89370564e-08,
+          0.0
+        ],
+        [
+          -4.644206376827193,
+          8.044001297179122,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          27.0
+        ]
+      ],
+      "path": "MoTe2/AA/21.78679/relaxed_cell/21.78679_relaxed.vasp",
+      "same_content_as": ""
+    }
+  ],
+  "openmx_geometry_tolerance_A": 1e-07,
+  "openmx": [
+    {
+      "case": "3_9.43",
+      "angle_deg": "9.43001",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/3_9.43/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "9.43001_relaxed.vasp",
+          "max_cell_difference_A": 4.546720000000143e-11,
+          "max_position_difference_A": 4.993694346921984e-11,
+          "path": "MoTe2/AA/9.43001/relaxed_cell/9.43001_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "9.43001_relaxed.vasp",
+          "max_cell_difference_A": 4.546720000000143e-11,
+          "max_position_difference_A": 4.993694346921984e-11
+        }
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "angle_deg": "9.43001",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/3_9.43/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "9.43001_relaxed.vasp",
+          "max_cell_difference_A": 4.546720000000143e-11,
+          "max_position_difference_A": 4.993694346921984e-11,
+          "path": "MoTe2/AA/9.43001/relaxed_cell/9.43001_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "9.43001_relaxed.vasp",
+          "max_cell_difference_A": 4.546720000000143e-11,
+          "max_position_difference_A": 4.993694346921984e-11
+        }
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "angle_deg": "7.34099",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/4_7.34/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "7.34099_relaxed.vasp",
+          "max_cell_difference_A": 4.8554937848166446e-11,
+          "max_position_difference_A": 4.9883652764037834e-11,
+          "path": "MoTe2/AA/7.34099/relaxed_cell/7.34099_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "7.34099_relaxed.vasp",
+          "max_cell_difference_A": 4.8554937848166446e-11,
+          "max_position_difference_A": 4.9883652764037834e-11
+        }
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "angle_deg": "7.34099",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/4_7.34/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "7.34099_relaxed.vasp",
+          "max_cell_difference_A": 4.8554937848166446e-11,
+          "max_position_difference_A": 4.9883652764037834e-11,
+          "path": "MoTe2/AA/7.34099/relaxed_cell/7.34099_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "7.34099_relaxed.vasp",
+          "max_cell_difference_A": 4.8554937848166446e-11,
+          "max_position_difference_A": 4.9883652764037834e-11
+        }
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "angle_deg": "6.00898",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/5_6.01/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "6.00898__relaxed.vasp",
+          "max_cell_difference_A": 3.8962610915405094e-11,
+          "max_position_difference_A": 4.999378688808065e-11,
+          "path": "MoTe2/AA/6.00898/relaxed_cell/6.00898__relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "6.00898__relaxed.vasp",
+          "max_cell_difference_A": 3.8962610915405094e-11,
+          "max_position_difference_A": 4.999378688808065e-11
+        },
+        {
+          "filename": "6.00898_relaxed.vasp",
+          "max_cell_difference_A": 6.923221759080889e-05,
+          "max_position_difference_A": 0.0020063294707917123
+        }
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "angle_deg": "6.00898",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/5_6.01/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "6.00898__relaxed.vasp",
+          "max_cell_difference_A": 3.8962610915405094e-11,
+          "max_position_difference_A": 4.999378688808065e-11,
+          "path": "MoTe2/AA/6.00898/relaxed_cell/6.00898__relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "6.00898__relaxed.vasp",
+          "max_cell_difference_A": 3.8962610915405094e-11,
+          "max_position_difference_A": 4.999378688808065e-11
+        },
+        {
+          "filename": "6.00898_relaxed.vasp",
+          "max_cell_difference_A": 6.923221759080889e-05,
+          "max_position_difference_A": 0.0020063294707917123
+        }
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "angle_deg": "5.08585",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/6_5.09/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "5.08585_relaxed.vasp",
+          "max_cell_difference_A": 3.257127900724299e-11,
+          "max_position_difference_A": 4.994760161025624e-11,
+          "path": "MoTe2/AA/5.08585/relaxed_cell/5.08585_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "5.08585_relaxed.vasp",
+          "max_cell_difference_A": 3.257127900724299e-11,
+          "max_position_difference_A": 4.994760161025624e-11
+        }
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "angle_deg": "5.08585",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/6_5.09/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "5.08585_relaxed.vasp",
+          "max_cell_difference_A": 3.257127900724299e-11,
+          "max_position_difference_A": 4.994760161025624e-11,
+          "path": "MoTe2/AA/5.08585/relaxed_cell/5.08585_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "5.08585_relaxed.vasp",
+          "max_cell_difference_A": 3.257127900724299e-11,
+          "max_position_difference_A": 4.994760161025624e-11
+        }
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "angle_deg": "4.40846",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/7_4.41/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "4.40846_relaxed.vasp",
+          "max_cell_difference_A": 4.7556625304423505e-11,
+          "max_position_difference_A": 4.9955595216033544e-11,
+          "path": "MoTe2/AA/4.40846/relaxed_cell/4.40846_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "4.40846_relaxed.vasp",
+          "max_cell_difference_A": 4.7556625304423505e-11,
+          "max_position_difference_A": 4.9955595216033544e-11
+        }
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "angle_deg": "4.40846",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/7_4.41/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "4.40846_relaxed.vasp",
+          "max_cell_difference_A": 4.7556625304423505e-11,
+          "max_position_difference_A": 4.9955595216033544e-11,
+          "path": "MoTe2/AA/4.40846/relaxed_cell/4.40846_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "4.40846_relaxed.vasp",
+          "max_cell_difference_A": 4.7556625304423505e-11,
+          "max_position_difference_A": 4.9955595216033544e-11
+        }
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "angle_deg": "3.89024",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/8_3.89/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "3.89024_relaxed.vasp",
+          "max_cell_difference_A": 4.275335641068523e-11,
+          "max_position_difference_A": 4.999023417440185e-11,
+          "path": "MoTe2/AA/3.89024/relaxed_cell/3.89024_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "3.89024_relaxed.vasp",
+          "max_cell_difference_A": 4.275335641068523e-11,
+          "max_position_difference_A": 4.999023417440185e-11
+        }
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "angle_deg": "3.89024",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/8_3.89/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "3.89024_relaxed.vasp",
+          "max_cell_difference_A": 4.275335641068523e-11,
+          "max_position_difference_A": 4.999023417440185e-11,
+          "path": "MoTe2/AA/3.89024/relaxed_cell/3.89024_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "3.89024_relaxed.vasp",
+          "max_cell_difference_A": 4.275335641068523e-11,
+          "max_position_difference_A": 4.999023417440185e-11
+        }
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "angle_deg": "3.48101",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/9_3.48/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "3.48101_relaxed.vasp",
+          "max_cell_difference_A": 4.1303849229734624e-11,
+          "max_position_difference_A": 4.999733960175945e-11,
+          "path": "MoTe2/AA/3.48101/relaxed_cell/3.48101_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "3.48101_relaxed.vasp",
+          "max_cell_difference_A": 4.1303849229734624e-11,
+          "max_position_difference_A": 4.999733960175945e-11
+        }
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "angle_deg": "3.48101",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/9_3.48/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "3.48101_relaxed.vasp",
+          "max_cell_difference_A": 4.1303849229734624e-11,
+          "max_position_difference_A": 4.999733960175945e-11,
+          "path": "MoTe2/AA/3.48101/relaxed_cell/3.48101_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "3.48101_relaxed.vasp",
+          "max_cell_difference_A": 4.1303849229734624e-11,
+          "max_position_difference_A": 4.999733960175945e-11
+        }
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "angle_deg": "3.14966",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/10_3.15/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "3.14966_relaxed.vasp",
+          "max_cell_difference_A": 4.9404036417399766e-11,
+          "max_position_difference_A": 4.999378688808065e-11,
+          "path": "MoTe2/AA/3.14966/relaxed_cell/3.14966_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "3.14966_relaxed.vasp",
+          "max_cell_difference_A": 4.9404036417399766e-11,
+          "max_position_difference_A": 4.999378688808065e-11
+        }
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "angle_deg": "3.14966",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/10_3.15/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "3.14966_relaxed.vasp",
+          "max_cell_difference_A": 4.9404036417399766e-11,
+          "max_position_difference_A": 4.999378688808065e-11,
+          "path": "MoTe2/AA/3.14966/relaxed_cell/3.14966_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "3.14966_relaxed.vasp",
+          "max_cell_difference_A": 4.9404036417399766e-11,
+          "max_position_difference_A": 4.999378688808065e-11
+        }
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "angle_deg": "2.87589",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/11_2.88/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "2.87589_relaxed.vasp",
+          "max_cell_difference_A": 4.7762682697793934e-11,
+          "max_position_difference_A": 4.999733960175945e-11,
+          "path": "MoTe2/AA/2.87589/relaxed_cell/2.87589_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "2.87589_relaxed.vasp",
+          "max_cell_difference_A": 4.7762682697793934e-11,
+          "max_position_difference_A": 4.999733960175945e-11
+        }
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "angle_deg": "2.87589",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/11_2.88/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "2.87589_relaxed.vasp",
+          "max_cell_difference_A": 4.7762682697793934e-11,
+          "max_position_difference_A": 4.999733960175945e-11,
+          "path": "MoTe2/AA/2.87589/relaxed_cell/2.87589_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "2.87589_relaxed.vasp",
+          "max_cell_difference_A": 4.7762682697793934e-11,
+          "max_position_difference_A": 4.999733960175945e-11
+        }
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "angle_deg": "2.64591",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/12_2.65/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "2.64591_relaxed.vasp",
+          "max_cell_difference_A": 4.228069999999979e-11,
+          "max_position_difference_A": 4.999023417440185e-11,
+          "path": "MoTe2/AA/2.64591/relaxed_cell/2.64591_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "2.64591_relaxed.vasp",
+          "max_cell_difference_A": 4.228069999999979e-11,
+          "max_position_difference_A": 4.999023417440185e-11
+        }
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "angle_deg": "2.64591",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/12_2.65/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "2.64591_relaxed.vasp",
+          "max_cell_difference_A": 4.228069999999979e-11,
+          "max_position_difference_A": 4.999023417440185e-11,
+          "path": "MoTe2/AA/2.64591/relaxed_cell/2.64591_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "2.64591_relaxed.vasp",
+          "max_cell_difference_A": 4.228069999999979e-11,
+          "max_position_difference_A": 4.999023417440185e-11
+        }
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "angle_deg": "2.44998",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/13_2.45/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "2.44998_relaxed.vasp",
+          "max_cell_difference_A": 4.4736100000001644e-11,
+          "max_position_difference_A": 4.999733960175945e-11,
+          "path": "MoTe2/AA/2.44998/relaxed_cell/2.44998_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "2.44998_relaxed.vasp",
+          "max_cell_difference_A": 4.4736100000001644e-11,
+          "max_position_difference_A": 4.999733960175945e-11
+        }
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "angle_deg": "2.44998",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/13_2.45/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "2.44998_relaxed.vasp",
+          "max_cell_difference_A": 4.4736100000001644e-11,
+          "max_position_difference_A": 4.999733960175945e-11,
+          "path": "MoTe2/AA/2.44998/relaxed_cell/2.44998_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "2.44998_relaxed.vasp",
+          "max_cell_difference_A": 4.4736100000001644e-11,
+          "max_position_difference_A": 4.999733960175945e-11
+        }
+      ]
+    },
+    {
+      "case": "14_2.28",
+      "angle_deg": "2.28106",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/14_2.28/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "2.28106_relaxed.vasp",
+          "max_cell_difference_A": 1.5974099999998306e-11,
+          "max_position_difference_A": 4.999911595859885e-11,
+          "path": "MoTe2/AA/2.28106/relaxed_cell/2.28106_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "2.28106_relaxed.vasp",
+          "max_cell_difference_A": 1.5974099999998306e-11,
+          "max_position_difference_A": 4.999911595859885e-11
+        }
+      ]
+    },
+    {
+      "case": "14_2.28",
+      "angle_deg": "2.28106",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/14_2.28/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "2.28106_relaxed.vasp",
+          "max_cell_difference_A": 1.5974099999998306e-11,
+          "max_position_difference_A": 4.999911595859885e-11,
+          "path": "MoTe2/AA/2.28106/relaxed_cell/2.28106_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "2.28106_relaxed.vasp",
+          "max_cell_difference_A": 1.5974099999998306e-11,
+          "max_position_difference_A": 4.999911595859885e-11
+        }
+      ]
+    },
+    {
+      "case": "15_2.13",
+      "angle_deg": "2.13393",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/15_2.13/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "2.13393_relaxed.vasp",
+          "max_cell_difference_A": 3.7552183584921295e-11,
+          "max_position_difference_A": 4.999733960175945e-11,
+          "path": "MoTe2/AA/2.13393/relaxed_cell/2.13393_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "2.13393_relaxed.vasp",
+          "max_cell_difference_A": 3.7552183584921295e-11,
+          "max_position_difference_A": 4.999733960175945e-11
+        }
+      ]
+    },
+    {
+      "case": "15_2.13",
+      "angle_deg": "2.13393",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/15_2.13/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "2.13393_relaxed.vasp",
+          "max_cell_difference_A": 3.7552183584921295e-11,
+          "max_position_difference_A": 4.999733960175945e-11,
+          "path": "MoTe2/AA/2.13393/relaxed_cell/2.13393_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "2.13393_relaxed.vasp",
+          "max_cell_difference_A": 3.7552183584921295e-11,
+          "max_position_difference_A": 4.999733960175945e-11
+        }
+      ]
+    },
+    {
+      "case": "18_1.79",
+      "angle_deg": "1.78795",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/18_1.79/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "1.78795_relaxed.vasp",
+          "max_cell_difference_A": 4.4816499999994186e-11,
+          "max_position_difference_A": 4.999556324492005e-11,
+          "path": "MoTe2/AA/1.78795/relaxed_cell/1.78795_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "1.78795_relaxed.vasp",
+          "max_cell_difference_A": 4.4816499999994186e-11,
+          "max_position_difference_A": 4.999556324492005e-11
+        }
+      ]
+    },
+    {
+      "case": "18_1.79",
+      "angle_deg": "1.78795",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/18_1.79/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "1.78795_relaxed.vasp",
+          "max_cell_difference_A": 4.4816499999994186e-11,
+          "max_position_difference_A": 4.999556324492005e-11,
+          "path": "MoTe2/AA/1.78795/relaxed_cell/1.78795_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "1.78795_relaxed.vasp",
+          "max_cell_difference_A": 4.4816499999994186e-11,
+          "max_position_difference_A": 4.999556324492005e-11
+        }
+      ]
+    },
+    {
+      "case": "19_1.70",
+      "angle_deg": "1.69627",
+      "spin_mode": "soc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/19_1.70/soc/openmx.dat",
+      "matches": [
+        {
+          "filename": "1.69627_relaxed.vasp",
+          "max_cell_difference_A": 4.96527263749158e-11,
+          "max_position_difference_A": 4.999378688808065e-11,
+          "path": "MoTe2/AA/1.69627/relaxed_cell/1.69627_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "1.69627_relaxed.vasp",
+          "max_cell_difference_A": 4.96527263749158e-11,
+          "max_position_difference_A": 4.999378688808065e-11
+        }
+      ]
+    },
+    {
+      "case": "19_1.70",
+      "angle_deg": "1.69627",
+      "spin_mode": "nsoc",
+      "source_input": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed/19_1.70/nsoc/openmx.dat",
+      "matches": [
+        {
+          "filename": "1.69627_relaxed.vasp",
+          "max_cell_difference_A": 4.96527263749158e-11,
+          "max_position_difference_A": 4.999378688808065e-11,
+          "path": "MoTe2/AA/1.69627/relaxed_cell/1.69627_relaxed.vasp"
+        }
+      ],
+      "candidate_differences": [
+        {
+          "filename": "1.69627_relaxed.vasp",
+          "max_cell_difference_A": 4.96527263749158e-11,
+          "max_position_difference_A": 4.999378688808065e-11
+        }
+      ]
+    }
+  ]
+}

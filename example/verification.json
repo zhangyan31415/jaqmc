@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-10-17T02:01:51.422368+08:00",
+  "status": "passed",
+  "structure_files": 52,
+  "angle_directories": 26,
+  "rigid_files": 27,
+  "relaxed_files": 25,
+  "all_destination_and_source_sha256_match": true,
+  "index_records": 52,
+  "openmx_geometry_inputs_matched": 30,
+  "openmx_cases": 15,
+  "python": "/data/work/zy/software/research-lab/10_nqs/.venv/bin/python"
+}
