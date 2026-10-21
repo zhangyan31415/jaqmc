@@ -1,0 +1,13 @@
+# Standalone source-checkout experiment, Python 3.12.7 tested.
+# Install a matching JAX GPU build separately (README); CPU JAX can run checks.
+# These versions reproduce the numerical runtime used to develop the example.
+jax==0.11.2
+jaxlib==0.11.2
+flax==0.12.10
+numpy==2.5.3
+scipy==1.18.1
+optax==0.2.8
+pyserde==0.33.1
+PyYAML>=6
+pygments>=2.19
+matplotlib>=3.9
