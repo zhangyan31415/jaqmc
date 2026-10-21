@@ -326,33 +326,32 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
         r"""Derive phase inputs from the resolved moire system.
 
         Set the phase mode, k-points, translations, and default COM momentum.
+        The singlephase construction requires an integer number of complete
+        folded k-point meshes in every physical-spin channel. A total integer
+        filling with fractionally occupied spin channels therefore uses the
+        multiphase construction, just like an ordinary fractional filling.
 
         Args:
             system_config: Resolved moire system configuration providing filling
                 and supercell geometry inputs.
 
-        Raises:
-            ValueError: If singlephase integer filling is incompatible with the
-                configured spin channels.
         """
         lattice_area = abs(np.linalg.det(np.asarray(system_config.lattice_vectors)))
         moire_area = abs(np.linalg.det(np.asarray(system_config.moire_lattice_vectors)))
         filling = system_config.nelec / (
             system_config.scale * lattice_area / moire_area
         )
-        self.phase_mode = (
-            "singlephase" if math.isclose(filling, round(filling)) else "multiphase"
-        )
-
         S = jnp.asarray(system_config.supercell_matrix)
         nk = system_config.scale
         kpts = get_supercell_kpts_in_first_bz(S, self.primitive_lattice)
+        complete_spin_meshes = all(nspin % nk == 0 for nspin in self.nspins)
+        self.phase_mode = (
+            "singlephase"
+            if math.isclose(filling, round(filling)) and complete_spin_meshes
+            else "multiphase"
+        )
+
         if self.phase_mode == "singlephase":
-            if any(nspin % nk != 0 for nspin in self.nspins):
-                raise ValueError(
-                    "singlephase integer filling requires each spin channel to be "
-                    f"divisible by nk={nk}, got electron_spins={self.nspins}."
-                )
             original_nspins = tuple(nspin // nk for nspin in self.nspins)
             # Each spin channel repeats the folded kmesh once per primitive electron.
             self.singlephase_klists = (

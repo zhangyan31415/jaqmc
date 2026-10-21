@@ -288,7 +288,8 @@ from the simulation lattice and `system.dielectric_constant` /
 `MoirePotential` evaluates the layer-pseudospin moire potential
 $\Delta_b, \Delta_t, \Delta_T$. The workflow derives it from
 `system.moire_lattice_vectors`, `system.electron_spins`, `system.v1_mev`,
-`system.phi1_deg`, and `system.omega1_mev`; it is not object-configurable.
+`system.phi1_deg`, `system.omega1_mev`, `system.v2_mev`, and
+`system.omega2_mev`; it is not object-configurable.
 
 ### Valley-momentum shift / SOC
 

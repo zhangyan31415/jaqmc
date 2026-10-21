@@ -102,10 +102,12 @@ dimensionless simulation units and rescale by prefactors derived from
 (kinetic $\propto \text{Ha}/L^2$, Coulomb $\propto \text{Ha}/(\epsilon L)$).
 
 ```{note}
-The model is fixed by only the first-harmonic terms above, parameterized by $V$,
-$\omega$, $\delta$, $m$, and $\epsilon$ (exposed as `v1_mev`, `omega1_mev`,
-`phi1_deg`, `effective_mass`, and `dielectric_constant`). See the
-[configuration reference](train.md) for the full list of config keys.
+The default model uses only the first-harmonic terms above, parameterized by
+$V_1$, $\omega_1$, $\phi_1$, $m$, and $\epsilon$ (exposed as `v1_mev`,
+`omega1_mev`, `phi1_deg`, `effective_mass`, and `dielectric_constant`).
+Set `v2_mev` and `omega2_mev` to enable the MoTe2 second-harmonic intralayer
+and interlayer terms. Both default to zero, preserving the original model. See
+the [configuration reference](train.md) for the full list of config keys.
 ```
 
 ## Basic Usage

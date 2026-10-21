@@ -69,6 +69,44 @@ def _moire_valley_momenta(
     return (b1 + b2) / 3.0, (2.0 * b1 - b2) / 3.0
 
 
+def _moire_second_shell_vectors(primitive_lattice: jnp.ndarray) -> jnp.ndarray:
+    r"""Returns one vector from each second-shell reciprocal pair.
+
+    The order matches the portable MoTe2 six-parameter model:
+
+    .. math::
+
+        [\mathbf b_1+\mathbf b_2,\ \mathbf b_2-2\mathbf b_1,\
+        \mathbf b_1-2\mathbf b_2].
+    """
+    b1, b2 = get_reciprocal_vectors(jnp.asarray(primitive_lattice))
+    return jnp.stack([b1 + b2, b2 - 2.0 * b1, b1 - 2.0 * b2], axis=0)
+
+
+def _moire_second_tunneling_vectors(
+    primitive_lattice: jnp.ndarray,
+) -> jnp.ndarray:
+    r"""Returns the second-harmonic tunneling vectors in the periodic layer gauge.
+
+    The fitted model defines the source-basis transfers as twice the three
+    nearest interlayer transfers. After converting its conjugate hole basis to
+    JaQMC's periodic layer gauge, the upper-right tunneling field contains
+
+    .. math::
+
+        \mathbf q_j^{(2)}
+          = 3(\mathbf K_+-\mathbf K_-)-2\mathbf s_j,\qquad
+        \mathbf s_j\in\{0,\mathbf b_2,\mathbf b_2-\mathbf b_1\}.
+    """
+    first_shell = _moire_first_shell_vectors(primitive_lattice)
+    k_plus, k_minus = _moire_valley_momenta(primitive_lattice)
+    first_tunneling_offsets = jnp.stack(
+        [jnp.zeros_like(k_plus), first_shell[1], first_shell[2]],
+        axis=0,
+    )
+    return 3.0 * (k_plus - k_minus) - 2.0 * first_tunneling_offsets
+
+
 def _physical_spin_signs(nspins: tuple[int, int], dtype: jnp.dtype) -> jnp.ndarray:
     """Returns physical-spin signs for all electrons.
 
@@ -85,6 +123,59 @@ def _physical_spin_signs(nspins: tuple[int, int], dtype: jnp.dtype) -> jnp.ndarr
             jnp.ones((nspins[0],), dtype=dtype),
             -jnp.ones((nspins[1],), dtype=dtype),
         ]
+    )
+
+
+def _moire_potential_matrix(
+    positions: jnp.ndarray,
+    primitive_lattice: jnp.ndarray,
+    physical_spin_signs: jnp.ndarray,
+    *,
+    v1_mev: float,
+    phi1_rad: float,
+    omega1_mev: float,
+    v2_mev: float = 0.0,
+    omega2_mev: float = 0.0,
+) -> jnp.ndarray:
+    r"""Evaluates the two-layer moire potential for each electron.
+
+    ``physical_spin_signs`` selects the two time-reversed valleys. The
+    spin-down matrix is the complex conjugate of the spin-up matrix at the same
+    position; sampled layer pseudospin remains the matrix's internal basis.
+
+    Returns:
+        Potential matrices with shape ``(nelec, 2, 2)``.
+    """
+    positions = jnp.asarray(positions)
+    physical_spin_signs = jnp.asarray(physical_spin_signs, dtype=positions.dtype)
+    first_shell = _moire_first_shell_vectors(primitive_lattice)
+    first_projection = positions @ first_shell[0:5:2].T
+    v_bottom = -2.0 * v1_mev * jnp.sum(jnp.cos(first_projection + phi1_rad), axis=-1)
+    v_top = -2.0 * v1_mev * jnp.sum(jnp.cos(first_projection - phi1_rad), axis=-1)
+
+    second_projection = positions @ _moire_second_shell_vectors(primitive_lattice).T
+    second_intralayer = -2.0 * v2_mev * jnp.sum(jnp.cos(second_projection), axis=-1)
+    v_bottom = v_bottom + second_intralayer
+    v_top = v_top + second_intralayer
+
+    delta_t = omega1_mev * (
+        1.0
+        + jnp.exp(1j * (positions @ first_shell[1]))
+        + jnp.exp(1j * (positions @ first_shell[2]))
+    )
+    second_tunneling_projection = (
+        positions @ _moire_second_tunneling_vectors(primitive_lattice).T
+    )
+    delta_t = delta_t + omega2_mev * jnp.sum(
+        jnp.exp(1j * second_tunneling_projection), axis=-1
+    )
+    spin_tunneling = delta_t.real + 1j * physical_spin_signs * delta_t.imag
+    return jnp.stack(
+        [
+            jnp.stack([v_bottom, spin_tunneling], axis=-1),
+            jnp.stack([jnp.conj(spin_tunneling), v_top], axis=-1),
+        ],
+        axis=-2,
     )
 
 
@@ -396,16 +487,20 @@ class MoirePotential(PerWalkerEstimator):
             - i\eta_i\operatorname{Im}\Delta_T & \Delta_t
         \end{pmatrix},
 
-    where :math:`\eta_i` is the physical-spin sign. The first-harmonic fields are
+    where :math:`\eta_i` is the physical-spin sign. The two-shell fields are
 
     .. math::
 
         \Delta_{b/t}(\mathbf r)
-          = -2V\sum_{i=1,3,5}\cos(\mathbf g_i\cdot\mathbf r \pm \delta),
+          = -2V_1\sum_{i=1,3,5}
+              \cos(\mathbf g_i^{(1)}\cdot\mathbf r \pm \phi_1)
+            -2V_2\sum_{j=1}^{3}
+              \cos(\mathbf g_j^{(2)}\cdot\mathbf r),
         \qquad
         \Delta_T(\mathbf r)
-          = \omega(1 + e^{i\mathbf g_2\cdot\mathbf r}
-                     + e^{i\mathbf g_3\cdot\mathbf r}).
+          = \omega_1(1 + e^{i\mathbf g_2\cdot\mathbf r}
+                       + e^{i\mathbf g_3\cdot\mathbf r})
+            + \omega_2\sum_{j=1}^{3}e^{i\mathbf q_j^{(2)}\cdot\mathbf r}.
 
     Args:
         f_layer_components: Function returning layer orbitals, phase amplitudes,
@@ -416,7 +511,10 @@ class MoirePotential(PerWalkerEstimator):
         v1_mev: First-harmonic intralayer potential amplitude :math:`V`.
         phi1_rad: First-harmonic phase :math:`\phi_1` in radians.
         omega1_mev: First-harmonic interlayer tunneling amplitude
-            :math:`\omega`.
+            :math:`\omega_1`.
+        v2_mev: Second-harmonic intralayer potential amplitude :math:`V_2`.
+        omega2_mev: Second-harmonic interlayer tunneling amplitude
+            :math:`\omega_2`.
     """
 
     f_layer_components: Callable[
@@ -428,6 +526,8 @@ class MoirePotential(PerWalkerEstimator):
     v1_mev: float = runtime_dep(default=0.0)
     phi1_rad: float = runtime_dep(default=0.0)
     omega1_mev: float = runtime_dep(default=0.0)
+    v2_mev: float = runtime_dep(default=0.0)
+    omega2_mev: float = runtime_dep(default=0.0)
 
     def evaluate_single_walker(
         self,
@@ -442,29 +542,16 @@ class MoirePotential(PerWalkerEstimator):
         if phi.shape[0] != 2:
             raise ValueError("MoirePotential supports exactly two layers.")
 
-        positions = data.positions
-        reci_vec = _moire_first_shell_vectors(self.primitive_lattice)
-        g1_proj = positions @ reci_vec[0:5:2].T
-        v_bottom = (
-            -2.0 * self.v1_mev * jnp.sum(jnp.cos(g1_proj + self.phi1_rad), axis=-1)
-        )
-        v_top = -2.0 * self.v1_mev * jnp.sum(jnp.cos(g1_proj - self.phi1_rad), axis=-1)
-        delta_t = self.omega1_mev * (
-            1.0
-            + jnp.exp(1j * (positions @ reci_vec[1]))
-            + jnp.exp(1j * (positions @ reci_vec[2]))
-        )
-        spin_sign = _physical_spin_signs(self.nspins, positions.dtype)
-        potential_matrix = jnp.stack(
-            [
-                jnp.stack(
-                    [v_bottom, delta_t.real + 1j * spin_sign * delta_t.imag], axis=-1
-                ),
-                jnp.stack(
-                    [delta_t.real - 1j * spin_sign * delta_t.imag, v_top], axis=-1
-                ),
-            ],
-            axis=-2,
+        spin_sign = _physical_spin_signs(self.nspins, data.positions.dtype)
+        potential_matrix = _moire_potential_matrix(
+            data.positions,
+            self.primitive_lattice,
+            spin_sign,
+            v1_mev=self.v1_mev,
+            phi1_rad=self.phi1_rad,
+            omega1_mev=self.omega1_mev,
+            v2_mev=self.v2_mev,
+            omega2_mev=self.omega2_mev,
         )
         operator_orbitals = jnp.einsum("il,ilm,mdij->dij", chi, potential_matrix, phi)
         energy = jnp.sum(compute_operator_ratio(phi0, operator_orbitals))

@@ -43,6 +43,8 @@ class MoireConfig:
         v1_mev: Moire intralayer potential amplitude in meV.
         phi1_deg: Moire potential phase in degrees.
         omega1_mev: Interlayer tunneling amplitude in meV.
+        v2_mev: Second-harmonic intralayer potential amplitude in meV.
+        omega2_mev: Second-harmonic interlayer tunneling amplitude in meV.
         moire_lattice_constant_nm: Physical length scale for dimensionless
             lattice vectors.
 
@@ -66,6 +68,8 @@ class MoireConfig:
     v1_mev: float = 11.2
     phi1_deg: float = -91.0
     omega1_mev: float = -13.3
+    v2_mev: float = 0.0
+    omega2_mev: float = 0.0
     moire_lattice_constant_nm: float = 10.084569175744832
 
     def __post_init__(self) -> None:

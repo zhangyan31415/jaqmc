@@ -252,6 +252,8 @@ def make_estimators(
                 v1_mev=system_config.v1_mev,
                 phi1_rad=system_config.phi1_rad,
                 omega1_mev=system_config.omega1_mev,
+                v2_mev=system_config.v2_mev,
+                omega2_mev=system_config.omega2_mev,
             )
             components.append("energy:moire_potential")
         if cfg.get("estimators.enabled.soc", True):

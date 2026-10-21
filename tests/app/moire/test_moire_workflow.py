@@ -5,7 +5,6 @@ from pathlib import Path
 
 import jax
 import numpy as np
-import pytest
 from jax import numpy as jnp
 
 from jaqmc.app.moire.matrix_hamiltonian import (
@@ -62,14 +61,17 @@ def test_saved_config_excludes_runtime_klist_arrays(tmp_path: Path):
     assert "translation_vectors" not in yaml
 
 
-def test_singlephase_requires_spin_channels_divisible_by_kmesh(tmp_path: Path):
+def test_fractional_spin_channels_use_multiphase_at_integer_filling(tmp_path: Path):
     cfg = _base_config(tmp_path)
-    cfg["system"]["electron_spins"] = [5, 4]
-    cfg["system"]["nelec"] = 9
-    cfg["system"]["supercell_matrix"] = [[3, 0], [0, 3]]
+    cfg["system"]["electron_spins"] = [2, 2]
 
-    with pytest.raises(ValueError, match="divisible by nk=9"):
-        configure_system(ConfigManager(cfg))
+    system, wf = configure_system(ConfigManager(cfg))
+
+    assert system.scale == 4
+    assert wf.phase_mode == "multiphase"
+    assert wf.multiphase_klist is not None
+    assert wf.multiphase_klist.shape == (4, 2)
+    assert wf.translation_vectors is not None
 
 
 def test_continuum_model_path_configures_generic_workflow(tmp_path: Path):
