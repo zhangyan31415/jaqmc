@@ -1,0 +1,48 @@
+{
+  "start": 0,
+  "parameters": [
+    -19.052354905882865,
+    -10.56676448485619,
+    0.05347808286522157,
+    -0.13810361220434567,
+    0.01939048296529644,
+    -0.005207939271303648
+  ],
+  "solver_success": true,
+  "solver_message": "`ftol` termination condition is satisfied.",
+  "nfev": 25,
+  "jacobian_relative_error": 5.9191311807307445e-09,
+  "cost": 63.81513884715102,
+  "metrics": {
+    "train": {
+      "energy_rms_mev": 8.524503791907328,
+      "energy_max_mev": 19.821786066835823,
+      "overlap_mean": 0.7066092648218757,
+      "overlap_min": 0.01523703155875759
+    },
+    "validation": {
+      "energy_rms_mev": 9.153100332708364,
+      "energy_max_mev": 19.963973416857932,
+      "overlap_mean": 0.7454687198156512,
+      "overlap_min": 0.09895986504785555
+    },
+    "path": {
+      "energy_rms_mev": 8.858546523412665,
+      "energy_max_mev": 19.963973416857932,
+      "overlap_mean": 0.7286997596594688,
+      "overlap_min": 0.01523703155875759
+    },
+    "local_validation": {
+      "energy_rms_mev": 4.8159862432683695,
+      "energy_max_mev": 8.891660743886282,
+      "overlap_mean": 0.4865664202270856,
+      "overlap_min": 0.014777160924137963
+    }
+  },
+  "development_indirect_gap_mev": -126.13117184753236,
+  "direct_gap_min_mev": 1.504045447819999,
+  "native_direct_gap_min_mev": 0.9508865942962075,
+  "local_gap_rms_mev": 3.5483800101585365,
+  "quality_gate": false,
+  "selection_scope": "development only; accuracy gate fallback explicitly flagged"
+}

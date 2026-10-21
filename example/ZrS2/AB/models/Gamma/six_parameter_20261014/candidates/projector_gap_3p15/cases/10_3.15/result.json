@@ -1,0 +1,90 @@
+{
+  "folder": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_p1/a0.0_g1.0_s2",
+  "action_weight": 0.0,
+  "gap_weight": 1.0,
+  "indirect_weight": 1.0,
+  "projector_weight": 1.0,
+  "start": 2,
+  "parameters": [
+    -18.63731251867774,
+    -8.810906733159781,
+    0.04747990715657983,
+    -0.04414463312395593,
+    0.018876345132669545,
+    -0.020872143945069685
+  ],
+  "jacobian_relative_error": 9.590460126683579e-09,
+  "solver_success": true,
+  "solver_status": 3,
+  "message": "`xtol` termination condition is satisfied.",
+  "nfev": 39,
+  "metrics": {
+    "train": {
+      "rms_mev": 1.5133434434263955,
+      "max_mev": 3.48105614095974,
+      "raw_rms_mev": 6272.489434003926,
+      "raw_max_mev": 6275.918136724389,
+      "gamma_offset_ev": 6.2727427063975405,
+      "pair_overlap_mean": 0.9669465191671093,
+      "pair_overlap_min": 0.9324754147828556,
+      "minimum_principal_overlap_squared": 0.8572950724269418,
+      "kpoint_count": 47
+    },
+    "validation": {
+      "rms_mev": 1.5479143828497304,
+      "max_mev": 3.472838648693827,
+      "raw_rms_mev": 6272.357529240023,
+      "raw_max_mev": 6275.899019403518,
+      "gamma_offset_ev": 6.2727427063975405,
+      "pair_overlap_mean": 0.9685600283058399,
+      "pair_overlap_min": 0.9348768033076503,
+      "minimum_principal_overlap_squared": 0.8641062523764929,
+      "kpoint_count": 16
+    },
+    "path": {
+      "rms_mev": 1.543146048174794,
+      "max_mev": 3.48105614095974,
+      "raw_rms_mev": 6272.453688063032,
+      "raw_max_mev": 6275.918136724389,
+      "gamma_offset_ev": 6.2727427063975405,
+      "pair_overlap_mean": 0.967775260472744,
+      "pair_overlap_min": 0.9324754147828556,
+      "minimum_principal_overlap_squared": 0.8572950724269418,
+      "kpoint_count": 60
+    },
+    "dense_validation": {
+      "rms_mev": 1.0158434111730454,
+      "max_mev": 2.1107525863148444,
+      "raw_rms_mev": 6272.501721233598,
+      "raw_max_mev": 6274.576687183146,
+      "gamma_offset_ev": 6.2727427063975405,
+      "pair_overlap_mean": 0.9586808843433418,
+      "pair_overlap_min": 0.9413677851898415,
+      "minimum_principal_overlap_squared": 0.8715822750564017,
+      "kpoint_count": 6
+    }
+  },
+  "gap_metrics": {
+    "gap_train": {
+      "rms_mev": 1.206305588106279,
+      "max_mev": 2.026240598076497,
+      "model_min_mev": 2.3680599533350835,
+      "native_min_mev": 4.19171312785771
+    },
+    "validation": {
+      "rms_mev": 1.662857040999409,
+      "max_mev": 3.117905895528219,
+      "model_min_mev": 10.448412234701367,
+      "native_min_mev": 8.252899769999544
+    },
+    "dense_validation": {
+      "rms_mev": 1.4497223281957634,
+      "max_mev": 2.092489034996911,
+      "model_min_mev": 2.3916761712905603,
+      "native_min_mev": 4.231452921670709
+    }
+  },
+  "path_min_gap_mev": 2.9085063519235717,
+  "path_indirect_gap_mev": 2.5443147092306733,
+  "elapsed_seconds": 36.10447455197573
+}

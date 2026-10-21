@@ -1,40 +1,51 @@
 # 材料示例
 
-按 `材料 / 堆垛 / 转角 / 结构状态 / 原文件名` 分类，供后续加入多个材料使用。
-当前收录 MoTe₂ 同质双层 AA 结构：26 个转角，52 个 VASP 结构文件，约 12.93 MiB。
-上述文件是结构数据集，尚未自动转换成 NQS 哈密顿量或训练配置。下方另列已归档的连续模型。
+每种材料使用相同的入口：`材料/README.md` → `堆垛/README.md` → `models/谷/模型版本/README.md`。
+模型说明列出参数顺序与单位、候选版本、使用命令、能带与参数趋势，以及适用范围。
+
+## 材料索引
+
+| 材料 / 堆垛 | 谷和模型 | 已归档内容 |
+|---|---|---|
+| [MoTe₂ / AA](MoTe2/README.md) | [K，六参数联合拟合](MoTe2/AA/models/K/six_parameter_joint_20261016/README.md) | 9 个标定角度、角度函数、能带、参数和删角度对比；另有原子结构 |
+| [WSe₂ / AA](WSe2/README.md) | [K，七参数 top3 模型](WSe2/AA/models/K/seven_parameter_top3_20261018/README.md) | 主候选及对照、端点删除、小角度敏感性、完整 PDF |
+| [ZrS₂ / AB](ZrS2/README.md) | [Gamma，六参数模型](ZrS2/AB/models/Gamma/six_parameter_20261014/README.md) | 12 角度独立模型、小角度及全角度联合对照、3.15° gap 改进版、能带与参数趋势 |
+
+## 目录约定
 
 ```text
 example/
 ├── README.md
-├── index.csv                     # 逐文件索引：转角、原子数、来源、SHA256
-├── manifest.json                 # 完整元数据及 OpenMX 几何核对记录
-└── MoTe2/
-    └── AA/
-        ├── README.md             # 转角总表和 OpenMX 对应关系
-        ├── 1.08455/
-        │   └── rigid/
-        │       └── 1.08455.vasp
-        ├── 3.14966/
-        │   ├── rigid/
-        │   │   └── 3.14966.vasp
-        │   └── relaxed_cell/
-        │       └── 3.14966_relaxed.vasp
-        └── ...
+├── MoTe2/
+│   ├── README.md
+│   └── AA/
+│       ├── README.md
+│       ├── <五位小数转角>/{rigid,relaxed_cell}/<原文件名>
+│       └── models/K/six_parameter_joint_20261016/
+├── WSe2/
+│   ├── README.md
+│   └── AA/{README.md,models/K/seven_parameter_top3_20261018/}
+├── ZrS2/
+│   ├── README.md
+│   └── AB/{README.md,models/Gamma/six_parameter_20261014/}
+├── continuum_models_manifest.json      # 模型来源、原路径、SHA256
+├── continuum_models_verification.json  # 归档完整性和读取核对
+├── index.csv                          # 原有 MoTe2 结构逐文件索引
+├── manifest.json                      # 原有 MoTe2 结构元数据
+└── verification.json                  # 原有 MoTe2 结构核对记录
 ```
 
-## 命名和来源
+- `models/谷/模型版本/` 包含独立代码、参数和 `reports/`；多个候选用 `candidates/` 分类，多角度模型用 `cases/原算例标签/` 保存。
+- 模型转角保留来源标签和精度；不要把两位小数算例标签当作精确转角。跨角度函数是否存在，以各模型说明为准；ZrS₂ 的平滑联合拟合不等同于可外推的解析角度函数。
+- `reports/` 保留源报告、PNG/PDF 和数值表。对照或失败候选有明确标识；不把优化收敛写成材料精度达标。
+- 所有模型都属于单粒子模型归档，未自动转为 JAQMC 多体哈密顿量或训练配置。WTe₂、WS₂ 尚未纳入本次归档。
 
-- 材料使用化学式目录，如 `MoTe2`、将来可增加 `ZrS2` 等。
-- 堆垛独立分类，如 `AA`、`AB`。
-- 转角保留来源文件名的五位小数，单位为度；这是来源标称值，未由弛豫后坐标重新测角。
-- `rigid/`：未弛豫结构。
-- `relaxed_cell/`：用户指定的 MLFF 晶胞弛豫结构，来源目录为 `2.relaxed_structures_cell_relaxed`。
-- 所有结构文件原样复制，原文件名和内容保持一致；没有改晶胞、坐标、元素或原子顺序。
-- 同一转角的不同来源版本保留原文件名，不自动覆盖或合并。6.00898° 的版本说明见材料 README。
-- 原始绝对路径和内容校验值保存在 `index.csv`、`manifest.json`。
+## 原子结构数据
 
-## 数据范围
+目前仅 MoTe₂ AA 收录原子结构：26 个来源标称转角，52 个 VASP 文件，约 12.93 MiB。
+按 `材料/堆垛/转角/结构状态/原文件名` 保存；`rigid/` 为未弛豫，`relaxed_cell/` 为指定 MLFF 晶胞弛豫。
+原文件名、内容、晶胞、坐标、元素和原子顺序均保持不变；不同来源版本不自动合并。
+1.08455°、1.20286° 缺少指定来源的 relaxed 文件，仅有 rigid。6.00898° 的两个 relaxed 版本及 SOC/NSOC 对应关系见 [MoTe₂ AA 说明](MoTe2/AA/README.md)。
 
 rigid 来源：
 `/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/2.twist_structure_MLFF/1.rigid_structures`
@@ -45,23 +56,5 @@ relaxed 来源：
 OpenMX 对照来源：
 `/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/1.MoTe2/AA/9.openmx_qk__mlff__cell_relaxed`
 
-共 27 个 rigid 文件（26 个转角），25 个 relaxed 文件（24 个转角）。
-1.08455°、1.20286° 在指定 relaxed 来源中没有文件，仅提供 rigid，不补造结果。
-OpenMX 目录对应 15 个转角、30 份 SOC/NSOC 输入，其晶胞和有序原子坐标均已逐项核对。
-
-## 新增材料
-
-继续使用同一层级即可，例如：`ZrS2/AB/3.15000/rigid/` 和 `ZrS2/AB/3.15000/relaxed_cell/`。
-新增状态使用独立且含义明确的目录名，例如固定晶胞弛豫可用 `relaxed_fixed_cell/`。
-实际新增时同时补充来源、原子数和 SHA256 索引，避免把不同弛豫方式或来源版本混为一类。
-
-## 连续模型（2026-10-21 归档）
-
-模型放在 `材料/堆垛/models/valley/模型版本/`，跨角度函数共用一套代码和参数；原有 `材料/堆垛/转角/结构状态/` 保持不变。
-
-| 材料 / 堆垛 | 谷和模型 | 内容 |
-|---|---|---|
-| MoTe₂ / AA | [K，六参数联合拟合](MoTe2/AA/models/K/six_parameter_joint_20261016/README.md) | 9 个标定角度的模型、角度函数、能带、参数和删角度对比 |
-| WSe₂ / AA | [K，七参数 top3 模型](WSe2/AA/models/K/seven_parameter_top3_20261018/README.md) | 主候选及对照、端点删除、小角度敏感性、完整 PDF |
-
-这些是单粒子拟合模型归档，精度和适用角度见各自说明，不代表已完成 JAQMC 多体训练。旧的 `index.csv`、`manifest.json`、`verification.json` 继续只描述结构文件；模型文件来源和 SHA256 另记在 `continuum_models_manifest.json`。
+旧的 `index.csv`、`manifest.json`、`verification.json` 只描述这批结构；模型新增不会改写其数量或核对结果。
+原始绝对路径和 SHA256 分别记录在结构索引及模型清单中。

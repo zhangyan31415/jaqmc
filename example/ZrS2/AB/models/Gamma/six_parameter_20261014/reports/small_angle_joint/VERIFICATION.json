@@ -1,0 +1,203 @@
+{
+  "status": "passed",
+  "parameter_count_per_angle": 6,
+  "angle_count": 5,
+  "hamiltonian_family_unchanged": true,
+  "source_arrays_preserved": true,
+  "fresh_native_excluded_from_selection": true,
+  "jacobian_directional_relative_errors": [
+    1.7681125087529028e-08,
+    9.769026735867547e-09,
+    1.2022431305063985e-08
+  ],
+  "records": [
+    {
+      "case": "14_2.28",
+      "angle_deg": 2.28,
+      "parameter_count": 6,
+      "selected_model_sha256": "2c238e00d4ab83ae64e2a8da6a22ad7ae10300a5b0353919ca94b26d3af4038e",
+      "source_model_sha256": "82470f1a05295270f543ecc4fbe1325ee1f7b2cb8ace1d8c178d89fef75f8b75",
+      "reference_sha256": "6a601a3b9fdc16a806324bd9797bf76fb09171e5366ae1336c9d12a8d9b33e5d",
+      "final_native_sha256": "145afe28dbb0d95d2ff11e05fc0bc3282170e50b970ea552c0a6e2e3c12a0f20",
+      "hermiticity_max_ev": 0.0,
+      "path_selected": {
+        "energy_rms_mev": 1.1590637710082496,
+        "energy_max_mev": 4.8169245283146145,
+        "direct_gap_rms_mev": 2.0379232936065246
+      },
+      "path_baseline": {
+        "energy_rms_mev": 1.1643059587245086,
+        "energy_max_mev": 4.840558603906725,
+        "direct_gap_rms_mev": 2.0040946769875743
+      },
+      "fresh_selected": {
+        "energy_rms_mev": 0.9628149554517254,
+        "energy_max_mev": 1.7871340270065872,
+        "direct_gap_rms_mev": 1.5811552006301721,
+        "native_overlap_mean": 0.9547400630935109,
+        "native_overlap_min": 0.8783030455682186,
+        "minimum_singular_squared_min": 0.7488200455247725
+      },
+      "fresh_baseline": {
+        "energy_rms_mev": 0.9767543478555798,
+        "energy_max_mev": 1.821215062228612,
+        "direct_gap_rms_mev": 1.6043467325432963,
+        "native_overlap_mean": 0.9543421102968976,
+        "native_overlap_min": 0.8789295570620589,
+        "minimum_singular_squared_min": 0.7487639455930023
+      }
+    },
+    {
+      "case": "13_2.45",
+      "angle_deg": 2.45,
+      "parameter_count": 6,
+      "selected_model_sha256": "98b384a009bd97fefd90b4a4883257ddc2041728ed3c4957370a171a3a58dded",
+      "source_model_sha256": "da0777033ead07364290be22b6344f258c2ebb76f19d5da45ef0e6901091acef",
+      "reference_sha256": "0f2b578be01472062a618fecacfcca7f4cf4d7c4eb487016befd3d9273436db5",
+      "final_native_sha256": "94a41f9352562da9b28c13e83dc5cbeff0a6c41ac0a618f92dcf1e011417bd94",
+      "hermiticity_max_ev": 0.0,
+      "path_selected": {
+        "energy_rms_mev": 1.2633532457680925,
+        "energy_max_mev": 3.344378601670486,
+        "direct_gap_rms_mev": 2.6581703800861245
+      },
+      "path_baseline": {
+        "energy_rms_mev": 1.298729171785035,
+        "energy_max_mev": 3.6937425067272573,
+        "direct_gap_rms_mev": 2.8298606376126823
+      },
+      "fresh_selected": {
+        "energy_rms_mev": 0.8216162718278978,
+        "energy_max_mev": 1.5535095332306903,
+        "direct_gap_rms_mev": 0.637919643624848,
+        "native_overlap_mean": 0.9405109499910712,
+        "native_overlap_min": 0.8588790688540817,
+        "minimum_singular_squared_min": 0.5474392181213728
+      },
+      "fresh_baseline": {
+        "energy_rms_mev": 0.7434762728565469,
+        "energy_max_mev": 1.4948051263655726,
+        "direct_gap_rms_mev": 0.6601467271525973,
+        "native_overlap_mean": 0.9422722241672405,
+        "native_overlap_min": 0.8607614459244082,
+        "minimum_singular_squared_min": 0.5552371957395998
+      }
+    },
+    {
+      "case": "12_2.65",
+      "angle_deg": 2.65,
+      "parameter_count": 6,
+      "selected_model_sha256": "c3298ac826cb76d9e1f98d326207594638a0d5aa5f8262e77290e0070c3ec5af",
+      "source_model_sha256": "c00cc520bdbc20725b8ae466e1f8dc916b848c006d1527877d7b20bf2ac96e03",
+      "reference_sha256": "9b82246876d7e6ece31fee483d4020bf1f7bb7820b263ec0b141a8debfacb44a",
+      "final_native_sha256": "2bc72789e68d73107eaa1f6fc4e486853dd89a5af88fcbb2bd315b8b34c2ad4f",
+      "hermiticity_max_ev": 0.0,
+      "path_selected": {
+        "energy_rms_mev": 1.4291969300985514,
+        "energy_max_mev": 4.015588528529526,
+        "direct_gap_rms_mev": 2.738368195136043
+      },
+      "path_baseline": {
+        "energy_rms_mev": 1.4361420479953129,
+        "energy_max_mev": 4.07800837157539,
+        "direct_gap_rms_mev": 2.7806321577979225
+      },
+      "fresh_selected": {
+        "energy_rms_mev": 1.0168439330379693,
+        "energy_max_mev": 1.8213562092183055,
+        "direct_gap_rms_mev": 0.8120895867645425,
+        "native_overlap_mean": 0.9617775710831636,
+        "native_overlap_min": 0.9240530620569825,
+        "minimum_singular_squared_min": 0.7999746388713471
+      },
+      "fresh_baseline": {
+        "energy_rms_mev": 1.0012779908579768,
+        "energy_max_mev": 1.7996451698897575,
+        "direct_gap_rms_mev": 0.8259672986113235,
+        "native_overlap_mean": 0.962267021602783,
+        "native_overlap_min": 0.9252810659303718,
+        "minimum_singular_squared_min": 0.8029750989432339
+      }
+    },
+    {
+      "case": "11_2.88",
+      "angle_deg": 2.88,
+      "parameter_count": 6,
+      "selected_model_sha256": "f4adb8affeac27d532f76301e01bf3c5b85fb8fbb52adca0b1d0f0fd3e43612b",
+      "source_model_sha256": "6e939cb1c7fc4b34b9af811e6a7b35ede9f8b96465805e9dfbf9c90c06625970",
+      "reference_sha256": "be2c896ebc092f360b88d89a39f45cb07da8332003f5d64c00d866ce67ae0bd6",
+      "final_native_sha256": "973e0d16c4687520ac162a69d29a0260ae02a2ac03fd366934bc5ae4e5ab05ea",
+      "hermiticity_max_ev": 0.0,
+      "path_selected": {
+        "energy_rms_mev": 1.6136130098888957,
+        "energy_max_mev": 3.6310989894884904,
+        "direct_gap_rms_mev": 2.1791456115829853
+      },
+      "path_baseline": {
+        "energy_rms_mev": 1.5870643383294645,
+        "energy_max_mev": 3.6183277655875563,
+        "direct_gap_rms_mev": 2.3181820270737483
+      },
+      "fresh_selected": {
+        "energy_rms_mev": 1.5303422406218705,
+        "energy_max_mev": 3.033932790057814,
+        "direct_gap_rms_mev": 0.8921665108139174,
+        "native_overlap_mean": 0.9701672352214497,
+        "native_overlap_min": 0.9369434908142859,
+        "minimum_singular_squared_min": 0.8668207009595301
+      },
+      "fresh_baseline": {
+        "energy_rms_mev": 1.5066069584668478,
+        "energy_max_mev": 3.0079320307697666,
+        "direct_gap_rms_mev": 0.9651521148625162,
+        "native_overlap_mean": 0.9706896991509532,
+        "native_overlap_min": 0.9381713202303076,
+        "minimum_singular_squared_min": 0.8679492276706543
+      }
+    },
+    {
+      "case": "10_3.15",
+      "angle_deg": 3.15,
+      "parameter_count": 6,
+      "selected_model_sha256": "d7e077c166727648c0d4aaad9020770ad429450290c4c56711fd6a62bb13ffa7",
+      "source_model_sha256": "b0a99d845b6aedbda005d15393411ec830b27589b278d69841e6a82f03fdc7ca",
+      "reference_sha256": "688fcff0157156ae9fae09f4df2242947fc83508f4d996cc60c01bc0c413cc2d",
+      "final_native_sha256": "054224a27916691427f47bbdd72c8963db0287ba460bfbcd6ee11345a984c487",
+      "hermiticity_max_ev": 0.0,
+      "path_selected": {
+        "energy_rms_mev": 1.6508227957101407,
+        "energy_max_mev": 3.4389919595329417,
+        "direct_gap_rms_mev": 1.5998648011457743
+      },
+      "path_baseline": {
+        "energy_rms_mev": 1.6368840011280195,
+        "energy_max_mev": 3.426387729618799,
+        "direct_gap_rms_mev": 1.577499951198356
+      },
+      "fresh_selected": {
+        "energy_rms_mev": 1.5435462089777403,
+        "energy_max_mev": 3.1734702638548313,
+        "direct_gap_rms_mev": 1.256127126960641,
+        "native_overlap_mean": 0.9697731427759716,
+        "native_overlap_min": 0.9316905789575868,
+        "minimum_singular_squared_min": 0.8668749993167666
+      },
+      "fresh_baseline": {
+        "energy_rms_mev": 1.531878874802676,
+        "energy_max_mev": 3.1516474732742883,
+        "direct_gap_rms_mev": 1.2532631960359093,
+        "native_overlap_mean": 0.9692945016516344,
+        "native_overlap_min": 0.9305328137973629,
+        "minimum_singular_squared_min": 0.8643330838591121
+      }
+    }
+  ],
+  "aggregate": {
+    "path_selected_rms_mean_mev": 1.4232099504947862,
+    "path_baseline_rms_mean_mev": 1.4246251035924682,
+    "fresh_selected_rms_mean_mev": 1.1750327219834404,
+    "fresh_baseline_rms_mean_mev": 1.1519988889679253,
+    "fresh_selected_overlap_min": 0.8588790688540817,
+    "fresh_baseline_overlap_min": 0.8607614459244082
+  }
+}

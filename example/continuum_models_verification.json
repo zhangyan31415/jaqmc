@@ -1,11 +1,16 @@
 {
   "status": "passed",
   "archive_date": "2026-10-21",
-  "copied_files": 112,
+  "copied_files": 266,
   "all_copied_file_source_and_destination_sha256_match": true,
+  "generated_files_exist": true,
+  "local_readme_links_checked": 38,
   "python": "/data/home/zy/mambaforge/envs/moirekp/bin/python",
   "python_version": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
-  "usage_checks": [
+  "hostname": "login002",
+  "working_directory": "/data/work/zy/software/research-lab/10_nqs/external/jaqmc",
+  "process_thread_layout": "one process; BLAS/OpenMP threads=1; lightweight archive integrity and usage checks only",
+  "prior_material_usage_checks": [
     {
       "material": "mote2",
       "kind": "portable usage smoke check only; not refitting or material-accuracy validation",
@@ -19,5 +24,225 @@
       "exit_code": 0
     }
   ],
-  "scientific_scope": "Archive integrity and lightweight usage only. Original scientific limitations remain in the reports."
+  "zrs2_model_counts": {
+    "independent": 12,
+    "small_angle_joint": 5,
+    "all_angle_joint": 12,
+    "projector_gap_3p15": 1
+  },
+  "zrs2_parameter_tables_match_npz": true,
+  "zrs2_gamma_hermiticity_max_eV": 0,
+  "zrs2_usage_checks": [
+    {
+      "role": "all_angle_joint",
+      "case": "10_3.15",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "11_2.88",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "12_2.65",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "13_2.45",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "14_2.28",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "3_9.43",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "4_7.34",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "5_6.01",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "6_5.09",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "7_4.41",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "8_3.89",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "all_angle_joint",
+      "case": "9_3.48",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "10_3.15",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "11_2.88",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "12_2.65",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "13_2.45",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "14_2.28",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "3_9.43",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "4_7.34",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "5_6.01",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "6_5.09",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "7_4.41",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "8_3.89",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "independent",
+      "case": "9_3.48",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "projector_gap_3p15",
+      "case": "10_3.15",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "small_angle_joint",
+      "case": "10_3.15",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "small_angle_joint",
+      "case": "11_2.88",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "small_angle_joint",
+      "case": "12_2.65",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "small_angle_joint",
+      "case": "13_2.45",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    },
+    {
+      "role": "small_angle_joint",
+      "case": "14_2.28",
+      "parameter_count": 6,
+      "dimension": 152,
+      "kind": "archive load and one-point Hermiticity check only; not a new material-accuracy calculation"
+    }
+  ],
+  "scientific_scope": "Archive integrity and lightweight usage only. No refit, new DFT, Chern scan or JAQMC training. Original numerical limitations remain in the archived reports."
 }

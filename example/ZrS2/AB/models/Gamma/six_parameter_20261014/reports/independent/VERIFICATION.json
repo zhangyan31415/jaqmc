@@ -1,0 +1,115 @@
+{
+  "status": "completed",
+  "scope": "artifact and held-out-metric verification; solver convergence is distinct from accuracy",
+  "node": "bigmem003",
+  "pid": 1111246,
+  "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/verify_results.py"
+  ],
+  "process_count": 1,
+  "blas_threads": 1,
+  "checks": [
+    {
+      "case": "3_9.43",
+      "model_sha256": "885368f5bfa6bd879932a8e3326a99bf3059f0e418791b89dd044f2fec801f1f",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 1.5560885913146194e-12
+    },
+    {
+      "case": "4_7.34",
+      "model_sha256": "f059dc7ef29b198e2b368f2a93ecaaaa39f42266fc94b2e5a2601ba47d84bc12",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 4.440892098500626e-13
+    },
+    {
+      "case": "5_6.01",
+      "model_sha256": "1c800ecc44310ca0e8e10795cc6666f76628737e36637d9e94ec707762db4877",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 5.255795798575491e-13
+    },
+    {
+      "case": "6_5.09",
+      "model_sha256": "84cfc20c32b137cfd72024d19aac760fd43dabb2dc459aaa315be8377b92875e",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 4.432010314303625e-13
+    },
+    {
+      "case": "7_4.41",
+      "model_sha256": "8e231bd6a2d0b438cd8ea3054cf27697343e05fef556071012c072f4290a84be",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 3.3306690738754696e-13
+    },
+    {
+      "case": "8_3.89",
+      "model_sha256": "2b56a92d7b0b5cbf358a9116fbe435038869749cec055ffda65c460cdb4fc6ba",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 3.468336728928989e-13
+    },
+    {
+      "case": "9_3.48",
+      "model_sha256": "165c1d102111eeb9bff98904e66d462d6a3579acaf9bc09b65e46d220d1ec50b",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 2.0805579481475434e-13
+    },
+    {
+      "case": "10_3.15",
+      "model_sha256": "b0a99d845b6aedbda005d15393411ec830b27589b278d69841e6a82f03fdc7ca",
+      "solver_success": true,
+      "development_gate": true,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 1.8030021919912542e-13
+    },
+    {
+      "case": "11_2.88",
+      "model_sha256": "6e939cb1c7fc4b34b9af811e6a7b35ede9f8b96465805e9dfbf9c90c06625970",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 7.638334409421077e-14
+    },
+    {
+      "case": "12_2.65",
+      "model_sha256": "c00cc520bdbc20725b8ae466e1f8dc916b848c006d1527877d7b20bf2ac96e03",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 9.869882688917642e-14
+    },
+    {
+      "case": "13_2.45",
+      "model_sha256": "da0777033ead07364290be22b6344f258c2ebb76f19d5da45ef0e6901091acef",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 1.389999226830696e-13
+    },
+    {
+      "case": "14_2.28",
+      "model_sha256": "82470f1a05295270f543ecc4fbe1325ee1f7b2cb8ace1d8c178d89fef75f8b75",
+      "solver_success": true,
+      "development_gate": false,
+      "holdout_disjoint": true,
+      "recomputed_metric_max_difference": 1.1102230246251565e-13
+    }
+  ],
+  "original_315_model_sha256": "c855780e0c2ce824c8b092950ca74cffcb59cf677a862ff6f367290733716a81",
+  "elapsed_seconds": 14.493103604763746,
+  "process_state": "exited_successfully"
+}

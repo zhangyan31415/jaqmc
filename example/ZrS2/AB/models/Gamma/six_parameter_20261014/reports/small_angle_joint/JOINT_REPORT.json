@@ -1,0 +1,571 @@
+{
+  "status": "completed",
+  "parameter_count_per_angle": 6,
+  "hamiltonian_family_unchanged": true,
+  "selected": {
+    "name": "lambda_10_quadratic",
+    "strength": 10.0,
+    "start": "quadratic",
+    "success": true,
+    "message": "`ftol` termination condition is satisfied.",
+    "cost": 28.794359752261492,
+    "nfev": 83,
+    "optimality": 0.009178472665030466,
+    "elapsed_seconds": 79.71768142282963,
+    "parameters": [
+      [
+        -19.63078307119308,
+        -12.142565520026935,
+        0.04436981732356454,
+        -0.03925102930467039,
+        0.024165643351294442,
+        -0.023860988874095487
+      ],
+      [
+        -19.171224292150818,
+        -11.013737794229842,
+        0.044056411467262635,
+        -0.0394186323633678,
+        0.024665357888470962,
+        -0.019656742447678135
+      ],
+      [
+        -18.83798075715314,
+        -10.134858582341659,
+        0.04260951677876604,
+        -0.03740063240391518,
+        0.023484799083485747,
+        -0.018138793379290693
+      ],
+      [
+        -18.629895577284117,
+        -9.776656798438744,
+        0.04275586062236695,
+        -0.035549341775000985,
+        0.021804129686730348,
+        -0.01859665198352577
+      ],
+      [
+        -18.347743200101075,
+        -8.950026749242458,
+        0.04456751487126347,
+        -0.03776084489729779,
+        0.01970145308226505,
+        -0.01863514533359779
+      ]
+    ],
+    "development": {
+      "cases": [
+        {
+          "case": "14_2.28",
+          "angle_deg": 2.28,
+          "parameters": [
+            -19.63078307119308,
+            -12.142565520026935,
+            0.04436981732356454,
+            -0.03925102930467039,
+            0.024165643351294442,
+            -0.023860988874095487
+          ],
+          "validation": {
+            "energy_rms_mev": 1.1028894092478367,
+            "energy_max_mev": 4.81692452831442,
+            "overlap_mean": 0.928335033489599,
+            "overlap_min": 0.8202629809578941,
+            "direct_gap_rms_mev": 1.9116802341437962,
+            "model_indirect_gap_mev": 0.7691155648200387,
+            "native_indirect_gap_mev": 0.583663804583523,
+            "indirect_gap_error_mev": 0.18545176023651577
+          },
+          "local_validation": {
+            "energy_rms_mev": 0.8186165813365588,
+            "energy_max_mev": 1.2116942812533116,
+            "overlap_mean": 0.9695537816325657,
+            "overlap_min": 0.9609288870241837,
+            "direct_gap_rms_mev": 0.14066116833607836,
+            "model_indirect_gap_mev": 3.357623152543648,
+            "native_indirect_gap_mev": 3.391821090062308,
+            "indirect_gap_error_mev": -0.03419793751865963
+          }
+        },
+        {
+          "case": "13_2.45",
+          "angle_deg": 2.45,
+          "parameters": [
+            -19.171224292150818,
+            -11.013737794229842,
+            0.044056411467262635,
+            -0.0394186323633678,
+            0.024665357888470962,
+            -0.019656742447678135
+          ],
+          "validation": {
+            "energy_rms_mev": 1.1668762475725998,
+            "energy_max_mev": 2.9905878152749894,
+            "overlap_mean": 0.9346686813247886,
+            "overlap_min": 0.6368684711742952,
+            "direct_gap_rms_mev": 2.3927399698822804,
+            "model_indirect_gap_mev": 0.5123376095344523,
+            "native_indirect_gap_mev": 0.7255989495433823,
+            "indirect_gap_error_mev": -0.21326134000893004
+          },
+          "local_validation": {
+            "energy_rms_mev": 0.8448782546210101,
+            "energy_max_mev": 1.5260891350603878,
+            "overlap_mean": 0.9457800405557018,
+            "overlap_min": 0.8648823605139402,
+            "direct_gap_rms_mev": 0.3577605489887939,
+            "model_indirect_gap_mev": 0.6501312345811444,
+            "native_indirect_gap_mev": 0.37912091720926355,
+            "indirect_gap_error_mev": 0.27101031737188086
+          }
+        },
+        {
+          "case": "12_2.65",
+          "angle_deg": 2.65,
+          "parameters": [
+            -18.83798075715314,
+            -10.134858582341659,
+            0.04260951677876604,
+            -0.03740063240391518,
+            0.023484799083485747,
+            -0.018138793379290693
+          ],
+          "validation": {
+            "energy_rms_mev": 1.4104694111947345,
+            "energy_max_mev": 4.015588528529533,
+            "overlap_mean": 0.9566013564412281,
+            "overlap_min": 0.8663756018355911,
+            "direct_gap_rms_mev": 2.6168367206389345,
+            "model_indirect_gap_mev": 2.8806637063992153,
+            "native_indirect_gap_mev": 3.0056711036436923,
+            "indirect_gap_error_mev": -0.1250073972444768
+          },
+          "local_validation": {
+            "energy_rms_mev": 0.9701472927061638,
+            "energy_max_mev": 1.7099483355410283,
+            "overlap_mean": 0.9655677248453064,
+            "overlap_min": 0.9436127318739647,
+            "direct_gap_rms_mev": 0.7257320487661391,
+            "model_indirect_gap_mev": 2.7833883924129332,
+            "native_indirect_gap_mev": 1.5101615485164643,
+            "indirect_gap_error_mev": 1.273226843896469
+          }
+        },
+        {
+          "case": "11_2.88",
+          "angle_deg": 2.88,
+          "parameters": [
+            -18.629895577284117,
+            -9.776656798438744,
+            0.04275586062236695,
+            -0.035549341775000985,
+            0.021804129686730348,
+            -0.01859665198352577
+          ],
+          "validation": {
+            "energy_rms_mev": 1.6175212412470352,
+            "energy_max_mev": 3.630176974628169,
+            "overlap_mean": 0.9685447585450974,
+            "overlap_min": 0.9254601906691466,
+            "direct_gap_rms_mev": 2.1547107557264034,
+            "model_indirect_gap_mev": 4.935170558200766,
+            "native_indirect_gap_mev": 3.278353341585216,
+            "indirect_gap_error_mev": 1.6568172166155497
+          },
+          "local_validation": {
+            "energy_rms_mev": 1.2890323570892608,
+            "energy_max_mev": 2.49447672751113,
+            "overlap_mean": 0.9638430091576874,
+            "overlap_min": 0.9373900769283515,
+            "direct_gap_rms_mev": 0.7862214419918587,
+            "model_indirect_gap_mev": 1.8154612543544237,
+            "native_indirect_gap_mev": 2.7384277732238615,
+            "indirect_gap_error_mev": -0.9229665188694378
+          }
+        },
+        {
+          "case": "10_3.15",
+          "angle_deg": 3.15,
+          "parameters": [
+            -18.347743200101075,
+            -8.950026749242458,
+            0.04456751487126347,
+            -0.03776084489729779,
+            0.01970145308226505,
+            -0.01863514533359779
+          ],
+          "validation": {
+            "energy_rms_mev": 1.649579951759205,
+            "energy_max_mev": 3.4325252032051807,
+            "overlap_mean": 0.9730110129674949,
+            "overlap_min": 0.9465231365067127,
+            "direct_gap_rms_mev": 1.509350574273644,
+            "model_indirect_gap_mev": 7.898108228317054,
+            "native_indirect_gap_mev": 6.408076733777079,
+            "indirect_gap_error_mev": 1.4900314945399742
+          },
+          "local_validation": {
+            "energy_rms_mev": 1.224964818519559,
+            "energy_max_mev": 2.5936183436290823,
+            "overlap_mean": 0.9635267825512014,
+            "overlap_min": 0.9374507112833822,
+            "direct_gap_rms_mev": 1.2010663747831862,
+            "model_indirect_gap_mev": 1.9248307019611235,
+            "native_indirect_gap_mev": 4.121498423337755,
+            "indirect_gap_error_mev": -2.1966677213766315
+          }
+        }
+      ],
+      "summary": {
+        "validation_energy_rms_mev": 1.3894672522042824,
+        "local_energy_rms_mev": 1.0295278608545106,
+        "validation_direct_gap_rms_mev": 2.1170636509330114,
+        "validation_overlap_min_mean": 0.8390980762287279,
+        "local_overlap_min_mean": 0.9288529535247644,
+        "scaled_curvature_rms": 0.11361761426663984,
+        "selection_score": 2.944607270245267
+      }
+    }
+  },
+  "baseline": {
+    "name": "independent_baseline",
+    "strength": null,
+    "start": "independent",
+    "parameters": [
+      [
+        -19.675060164337296,
+        -12.163164481171775,
+        0.044797771776070486,
+        -0.03996323279807268,
+        0.023983722491959812,
+        -0.024208803876104534
+      ],
+      [
+        -19.20048820381362,
+        -11.002849381000162,
+        0.04318124016944699,
+        -0.038738660245583985,
+        0.024978932794468726,
+        -0.01896145134188146
+      ],
+      [
+        -18.82087831264711,
+        -10.080505840712785,
+        0.042241296849215244,
+        -0.03706225220594223,
+        0.023500985860641734,
+        -0.018130514304022023
+      ],
+      [
+        -18.627798066001425,
+        -9.613848853329275,
+        0.04228409914369469,
+        -0.0356039668907137,
+        0.021875169331890987,
+        -0.018684542158743902
+      ],
+      [
+        -18.33529132278916,
+        -8.899214872791044,
+        0.04480879088787322,
+        -0.038225869650180155,
+        0.019681497649847883,
+        -0.01870262642798864
+      ]
+    ],
+    "development": {
+      "cases": [
+        {
+          "case": "14_2.28",
+          "angle_deg": 2.28,
+          "parameters": [
+            -19.675060164337296,
+            -12.163164481171775,
+            0.044797771776070486,
+            -0.03996323279807268,
+            0.023983722491959812,
+            -0.024208803876104534
+          ],
+          "validation": {
+            "energy_rms_mev": 1.111171997575123,
+            "energy_max_mev": 4.840558603906975,
+            "overlap_mean": 0.927931244296484,
+            "overlap_min": 0.8194135072851044,
+            "direct_gap_rms_mev": 1.8959467307014222,
+            "model_indirect_gap_mev": 0.6447461459648529,
+            "native_indirect_gap_mev": 0.583663804583523,
+            "indirect_gap_error_mev": 0.06108234138132995
+          },
+          "local_validation": {
+            "energy_rms_mev": 0.8303514649718284,
+            "energy_max_mev": 1.2188041785549801,
+            "overlap_mean": 0.9688988336012697,
+            "overlap_min": 0.9601708172955218,
+            "direct_gap_rms_mev": 0.12703439445161543,
+            "model_indirect_gap_mev": 3.3774916675202853,
+            "native_indirect_gap_mev": 3.391821090062308,
+            "indirect_gap_error_mev": -0.01432942254202263
+          }
+        },
+        {
+          "case": "13_2.45",
+          "angle_deg": 2.45,
+          "parameters": [
+            -19.20048820381362,
+            -11.002849381000162,
+            0.04318124016944699,
+            -0.038738660245583985,
+            0.024978932794468726,
+            -0.01896145134188146
+          ],
+          "validation": {
+            "energy_rms_mev": 1.2056744827519603,
+            "energy_max_mev": 3.3316496656300156,
+            "overlap_mean": 0.9350460966606434,
+            "overlap_min": 0.632472782444532,
+            "direct_gap_rms_mev": 2.568681764510694,
+            "model_indirect_gap_mev": 0.40090988389898663,
+            "native_indirect_gap_mev": 0.7255989495433823,
+            "indirect_gap_error_mev": -0.3246890656443957
+          },
+          "local_validation": {
+            "energy_rms_mev": 0.7432126844729937,
+            "energy_max_mev": 1.462170906190191,
+            "overlap_mean": 0.9468817478601506,
+            "overlap_min": 0.8589781164715524,
+            "direct_gap_rms_mev": 0.38707927535777015,
+            "model_indirect_gap_mev": 0.5505323823802033,
+            "native_indirect_gap_mev": 0.37912091720926355,
+            "indirect_gap_error_mev": 0.17141146517093975
+          }
+        },
+        {
+          "case": "12_2.65",
+          "angle_deg": 2.65,
+          "parameters": [
+            -18.82087831264711,
+            -10.080505840712785,
+            0.042241296849215244,
+            -0.03706225220594223,
+            0.023500985860641734,
+            -0.018130514304022023
+          ],
+          "validation": {
+            "energy_rms_mev": 1.4200022164862698,
+            "energy_max_mev": 4.078008371575355,
+            "overlap_mean": 0.9567561040986338,
+            "overlap_min": 0.863650203558088,
+            "direct_gap_rms_mev": 2.6658216180115772,
+            "model_indirect_gap_mev": 2.802605322124098,
+            "native_indirect_gap_mev": 3.0056711036436923,
+            "indirect_gap_error_mev": -0.20306578151959437
+          },
+          "local_validation": {
+            "energy_rms_mev": 0.9561120239961253,
+            "energy_max_mev": 1.704331612560936,
+            "overlap_mean": 0.9659359418539368,
+            "overlap_min": 0.9438852480762128,
+            "direct_gap_rms_mev": 0.7338709170285517,
+            "model_indirect_gap_mev": 2.7864911624919873,
+            "native_indirect_gap_mev": 1.5101615485164643,
+            "indirect_gap_error_mev": 1.276329613975523
+          }
+        },
+        {
+          "case": "11_2.88",
+          "angle_deg": 2.88,
+          "parameters": [
+            -18.627798066001425,
+            -9.613848853329275,
+            0.04228409914369469,
+            -0.0356039668907137,
+            0.021875169331890987,
+            -0.018684542158743902
+          ],
+          "validation": {
+            "energy_rms_mev": 1.588664999417596,
+            "energy_max_mev": 3.618327765587237,
+            "overlap_mean": 0.968522323076105,
+            "overlap_min": 0.9212071644638504,
+            "direct_gap_rms_mev": 2.3023672773808603,
+            "model_indirect_gap_mev": 4.578140611566604,
+            "native_indirect_gap_mev": 3.278353341585216,
+            "indirect_gap_error_mev": 1.2997872699813882
+          },
+          "local_validation": {
+            "energy_rms_mev": 1.2864459088164202,
+            "energy_max_mev": 2.4791516434887124,
+            "overlap_mean": 0.9644898223220552,
+            "overlap_min": 0.9374948203697535,
+            "direct_gap_rms_mev": 0.8290278880154042,
+            "model_indirect_gap_mev": 1.8447856695047171,
+            "native_indirect_gap_mev": 2.7384277732238615,
+            "indirect_gap_error_mev": -0.8936421037191444
+          }
+        },
+        {
+          "case": "10_3.15",
+          "angle_deg": 3.15,
+          "parameters": [
+            -18.33529132278916,
+            -8.899214872791044,
+            0.04480879088787322,
+            -0.038225869650180155,
+            0.019681497649847883,
+            -0.01870262642798864
+          ],
+          "validation": {
+            "energy_rms_mev": 1.636463997285184,
+            "energy_max_mev": 3.4196338136998072,
+            "overlap_mean": 0.9727500983599587,
+            "overlap_min": 0.946260389716128,
+            "direct_gap_rms_mev": 1.4742067953735576,
+            "model_indirect_gap_mev": 7.972229543283311,
+            "native_indirect_gap_mev": 6.408076733777079,
+            "indirect_gap_error_mev": 1.564152809506232
+          },
+          "local_validation": {
+            "energy_rms_mev": 1.2125814447105256,
+            "energy_max_mev": 2.5875469256585806,
+            "overlap_mean": 0.9630880190016546,
+            "overlap_min": 0.9369013377568194,
+            "direct_gap_rms_mev": 1.2129633511934201,
+            "model_indirect_gap_mev": 1.8852514876596116,
+            "native_indirect_gap_mev": 4.121498423337755,
+            "indirect_gap_error_mev": -2.2362469356781434
+          }
+        }
+      ],
+      "summary": {
+        "validation_energy_rms_mev": 1.3923955387032267,
+        "local_energy_rms_mev": 1.0057407053935785,
+        "validation_direct_gap_rms_mev": 2.1814048371956223,
+        "validation_overlap_min_mean": 0.8366008094935407,
+        "local_overlap_min_mean": 0.9274860679939719,
+        "scaled_curvature_rms": 0.1484831078488341,
+        "selection_score": 2.967935449180508
+      }
+    }
+  },
+  "fresh_native": {
+    "selected": [
+      {
+        "case": "14_2.28",
+        "angle_deg": 2.28,
+        "energy_rms_mev": 0.9628149554517228,
+        "energy_max_mev": 1.787134027006504,
+        "direct_gap_rms_mev": 1.5811552006302967,
+        "native_overlap_mean": 0.9547400630935109,
+        "native_overlap_min": 0.8783030455682148,
+        "minimum_singular_squared_mean": 0.9083728224275711,
+        "minimum_singular_squared_min": 0.7488200455247885
+      },
+      {
+        "case": "13_2.45",
+        "angle_deg": 2.45,
+        "energy_rms_mev": 0.8216162718277961,
+        "energy_max_mev": 1.5535095332305375,
+        "direct_gap_rms_mev": 0.6379196436249436,
+        "native_overlap_mean": 0.9405109499910735,
+        "native_overlap_min": 0.858879068854072,
+        "minimum_singular_squared_mean": 0.8394192113719243,
+        "minimum_singular_squared_min": 0.5474392181213161
+      },
+      {
+        "case": "12_2.65",
+        "angle_deg": 2.65,
+        "energy_rms_mev": 1.016843933038016,
+        "energy_max_mev": 1.821356209218139,
+        "direct_gap_rms_mev": 0.812089586764431,
+        "native_overlap_mean": 0.9617775710831631,
+        "native_overlap_min": 0.9240530620569767,
+        "minimum_singular_squared_mean": 0.9131046461324589,
+        "minimum_singular_squared_min": 0.799974638871332
+      },
+      {
+        "case": "11_2.88",
+        "angle_deg": 2.88,
+        "energy_rms_mev": 1.530342240621846,
+        "energy_max_mev": 3.033932790057446,
+        "direct_gap_rms_mev": 0.8921665108141394,
+        "native_overlap_mean": 0.9701672352214497,
+        "native_overlap_min": 0.9369434908142901,
+        "minimum_singular_squared_mean": 0.9384293732151056,
+        "minimum_singular_squared_min": 0.8668207009595186
+      },
+      {
+        "case": "10_3.15",
+        "angle_deg": 3.15,
+        "energy_rms_mev": 1.5435462089777496,
+        "energy_max_mev": 3.1734702638550396,
+        "direct_gap_rms_mev": 1.256127126960653,
+        "native_overlap_mean": 0.969773142775971,
+        "native_overlap_min": 0.9316905789575887,
+        "minimum_singular_squared_mean": 0.9375786990386781,
+        "minimum_singular_squared_min": 0.8668749993167613
+      }
+    ],
+    "baseline": [
+      {
+        "case": "14_2.28",
+        "angle_deg": 2.28,
+        "energy_rms_mev": 0.9767543478555065,
+        "energy_max_mev": 1.8212150622285428,
+        "direct_gap_rms_mev": 1.6043467325432184,
+        "native_overlap_mean": 0.9543421102968976,
+        "native_overlap_min": 0.8789295570620519,
+        "minimum_singular_squared_mean": 0.9075190413746534,
+        "minimum_singular_squared_min": 0.7487639455930186
+      },
+      {
+        "case": "13_2.45",
+        "angle_deg": 2.45,
+        "energy_rms_mev": 0.7434762728565357,
+        "energy_max_mev": 1.4948051263655449,
+        "direct_gap_rms_mev": 0.6601467271525973,
+        "native_overlap_mean": 0.9422722241672354,
+        "native_overlap_min": 0.8607614459243944,
+        "minimum_singular_squared_mean": 0.8453540193436138,
+        "minimum_singular_squared_min": 0.5552371957395953
+      },
+      {
+        "case": "12_2.65",
+        "angle_deg": 2.65,
+        "energy_rms_mev": 1.0012779908580458,
+        "energy_max_mev": 1.7996451698897922,
+        "direct_gap_rms_mev": 0.8259672986114442,
+        "native_overlap_mean": 0.9622670216027837,
+        "native_overlap_min": 0.9252810659303731,
+        "minimum_singular_squared_mean": 0.9140542005044049,
+        "minimum_singular_squared_min": 0.8029750989432359
+      },
+      {
+        "case": "11_2.88",
+        "angle_deg": 2.88,
+        "energy_rms_mev": 1.5066069584668176,
+        "energy_max_mev": 3.0079320307696764,
+        "direct_gap_rms_mev": 0.9651521148624219,
+        "native_overlap_mean": 0.9706896991509536,
+        "native_overlap_min": 0.9381713202302983,
+        "minimum_singular_squared_mean": 0.9394090298590514,
+        "minimum_singular_squared_min": 0.8679492276706932
+      },
+      {
+        "case": "10_3.15",
+        "angle_deg": 3.15,
+        "energy_rms_mev": 1.5318788748026624,
+        "energy_max_mev": 3.151647473274434,
+        "direct_gap_rms_mev": 1.253263196035874,
+        "native_overlap_mean": 0.9692945016516342,
+        "native_overlap_min": 0.9305328137973584,
+        "minimum_singular_squared_mean": 0.936554445328269,
+        "minimum_singular_squared_min": 0.8643330838591025
+      }
+    ],
+    "selected_energy_rms_mean_mev": 1.1750327219834262,
+    "baseline_energy_rms_mean_mev": 1.1519988889679136,
+    "selected_overlap_min": 0.858879068854072,
+    "baseline_overlap_min": 0.8607614459243944
+  }
+}

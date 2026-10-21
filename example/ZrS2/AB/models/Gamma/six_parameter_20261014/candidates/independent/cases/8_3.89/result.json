@@ -1,0 +1,76 @@
+{
+  "case": "8_3.89",
+  "angle": 3.89,
+  "start": 2,
+  "parameters": [
+    -17.60105004710273,
+    -7.420720812351856,
+    0.04260431819845761,
+    -0.03331866242781193,
+    0.014005756536830782,
+    -0.01754979380843007
+  ],
+  "solver_success": true,
+  "solver_message": "`ftol` termination condition is satisfied.",
+  "nfev": 18,
+  "jacobian_relative_error": 1.015677524987586e-08,
+  "cost": 4.3779287414950385,
+  "metrics": {
+    "train": {
+      "energy_rms_mev": 1.631212104227144,
+      "energy_max_mev": 4.585765728952667,
+      "overlap_mean": 0.9755581680001643,
+      "overlap_min": 0.9426742606129129
+    },
+    "validation": {
+      "energy_rms_mev": 1.4356359692055558,
+      "energy_max_mev": 4.083510305473381,
+      "overlap_mean": 0.9767740754937314,
+      "overlap_min": 0.9435825620902765
+    },
+    "path": {
+      "energy_rms_mev": 1.578261368084738,
+      "energy_max_mev": 4.585765728952667,
+      "overlap_mean": 0.9759026751233415,
+      "overlap_min": 0.9426742606129129
+    },
+    "local_validation": {
+      "energy_rms_mev": 2.104287795800458,
+      "energy_max_mev": 4.5698009597697204,
+      "overlap_mean": 0.9660385125312371,
+      "overlap_min": 0.937428920608944
+    }
+  },
+  "development_indirect_gap_mev": -8.770222591895202,
+  "direct_gap_min_mev": 3.0465720675478503,
+  "native_direct_gap_min_mev": 5.734344741448183,
+  "local_gap_rms_mev": 1.10626362922281,
+  "quality_gate": false,
+  "selection_scope": "development only; accuracy gate fallback explicitly flagged",
+  "final": {
+    "local": {
+      "energy_rms_mev": 1.9112557667707808,
+      "energy_max_mev": 3.523602306161125,
+      "native_overlap_min": 0.9377480956177079,
+      "native_overlap_mean": 0.9619187057884333,
+      "gap_rms_mev": 1.5825095305246377
+    },
+    "two_dimensional": {
+      "energy_rms_mev": 1.034078546377301,
+      "energy_max_mev": 1.784434718187497,
+      "native_overlap_min": 0.9737192043826477,
+      "native_overlap_mean": 0.9825137291923354,
+      "gap_rms_mev": 0.5261570619437903
+    },
+    "all": {
+      "energy_rms_mev": 1.5365899007367512,
+      "energy_max_mev": 3.523602306161125,
+      "native_overlap_min": 0.9377480956177079,
+      "native_overlap_mean": 0.9722162174903841,
+      "gap_rms_mev": 1.1792323070613846
+    }
+  },
+  "reference_max_energy_rms_mev": 0.09671528017165723,
+  "model_sha256": "2b56a92d7b0b5cbf358a9116fbe435038869749cec055ffda65c460cdb4fc6ba",
+  "scope": "19Q experiment; development selection then fresh native validation"
+}

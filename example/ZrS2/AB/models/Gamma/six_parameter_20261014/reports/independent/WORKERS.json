@@ -1,0 +1,154 @@
+{
+  "status": "completed",
+  "workers": [
+    {
+      "node": "bigmem003",
+      "cases": [
+        "14_2.28",
+        "3_9.43"
+      ],
+      "pid": 1102849,
+      "command": [
+        "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+        "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/sweep.py",
+        "--cases",
+        "14_2.28",
+        "3_9.43"
+      ],
+      "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+      "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+      "process_count": 1,
+      "blas_threads": 8,
+      "log": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/bigmem003.log",
+      "exit_code": 0,
+      "process_state": "exited_successfully"
+    },
+    {
+      "node": "gpuh2002",
+      "cases": [
+        "13_2.45",
+        "4_7.34"
+      ],
+      "pid": 699816,
+      "command": [
+        "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+        "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/sweep.py",
+        "--cases",
+        "13_2.45",
+        "4_7.34"
+      ],
+      "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+      "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+      "process_count": 1,
+      "blas_threads": 8,
+      "log": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/gpuh2002.log",
+      "exit_code": 0,
+      "process_state": "exited_successfully"
+    },
+    {
+      "node": "gpuh201",
+      "cases": [
+        "12_2.65",
+        "5_6.01"
+      ],
+      "pid": 1309248,
+      "command": [
+        "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+        "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/sweep.py",
+        "--cases",
+        "12_2.65",
+        "5_6.01"
+      ],
+      "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+      "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+      "process_count": 1,
+      "blas_threads": 8,
+      "log": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/gpuh201.log",
+      "exit_code": 0,
+      "process_state": "exited_successfully"
+    },
+    {
+      "node": "gpuh202",
+      "cases": [
+        "11_2.88",
+        "6_5.09"
+      ],
+      "pid": 1663952,
+      "command": [
+        "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+        "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/sweep.py",
+        "--cases",
+        "11_2.88",
+        "6_5.09"
+      ],
+      "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+      "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+      "process_count": 1,
+      "blas_threads": 8,
+      "log": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/gpuh202.log",
+      "exit_code": 0,
+      "process_state": "exited_successfully"
+    },
+    {
+      "node": "gpuh203",
+      "cases": [
+        "10_3.15",
+        "7_4.41"
+      ],
+      "pid": 2553276,
+      "command": [
+        "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+        "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/sweep.py",
+        "--cases",
+        "10_3.15",
+        "7_4.41"
+      ],
+      "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+      "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+      "process_count": 1,
+      "blas_threads": 8,
+      "log": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/gpuh203.log",
+      "exit_code": 0,
+      "process_state": "exited_successfully"
+    },
+    {
+      "node": "gpuh204",
+      "cases": [
+        "9_3.48",
+        "8_3.89"
+      ],
+      "pid": 526789,
+      "command": [
+        "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+        "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/sweep.py",
+        "--cases",
+        "9_3.48",
+        "8_3.89"
+      ],
+      "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+      "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+      "process_count": 1,
+      "blas_threads": 8,
+      "log": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/gpuh204.log",
+      "exit_code": 0,
+      "process_state": "exited_successfully"
+    }
+  ],
+  "postprocessing": [
+    {
+      "node": "gpuh2002",
+      "script": "report.py",
+      "log": "report_final.log"
+    },
+    {
+      "node": "bigmem003",
+      "script": "verify_results.py",
+      "log": "verify_final.log"
+    },
+    {
+      "node": "gpuh204",
+      "script": "diagnostics.py",
+      "log": "diagnostics_final.log"
+    }
+  ]
+}

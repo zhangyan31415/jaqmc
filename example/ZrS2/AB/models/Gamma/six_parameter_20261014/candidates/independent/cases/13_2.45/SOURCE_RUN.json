@@ -1,0 +1,1002 @@
+{
+  "status": "completed",
+  "case": "13_2.45",
+  "node": "gpuh2002",
+  "pid": 699816,
+  "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/sweep.py",
+    "--cases",
+    "13_2.45",
+    "4_7.34"
+  ],
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "process_count": 1,
+  "blas_threads": 8,
+  "source_commit": "3b6ca7f93e07d1e12e35d91c228476acce856712",
+  "config": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/13_2.45/tapw.yaml",
+  "efermi": -5.708568,
+  "schur_energy_ev": -6.208568,
+  "nominal_parameters": 8,
+  "independent_real_parameters": 6,
+  "weights": {
+    "energy": 1,
+    "direct_gap": 1,
+    "indirect_gap": 1,
+    "projector": 1,
+    "action": 0
+  },
+  "source_paths": {
+    "H_file": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/13.ZrS2/AB/5.openmx_qk__mlff__cell_fix/13_2.45/soc/H.npz",
+    "S_file": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/13.ZrS2/AB/5.openmx_qk__mlff__cell_fix/13_2.45/soc/S.npz",
+    "input_file": "/data/work/zy/software/1.tapw_code/tapw/examples/1.triangular_lattice/1.homo/13.ZrS2/AB/5.openmx_qk__mlff__cell_fix/13_2.45/soc/openmx.dat_rigid"
+  },
+  "code_hashes": {
+    "sweep.py": "b0aec462099a1a179708ebe84077d01b62158e531028cf28d4682c144103de43",
+    "numerics.py": "1ad5aad490bc1e66ef2efd533ddc70430f8f7c7ad6a4017078f300dd2c7aa14e",
+    "model.py": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4",
+    "gap_loss.py": "116a6aa345e9c1ff88178087c1db0674eb8ebbf4cbc4ed3a365a35ceb768140e",
+    "pair_overlap_loss.py": "9a55e56904e3eff3d3186a1b24ec93fdb8142191c4526e2bd3c1751c1409e441"
+  },
+  "basis_convention": "fixed 3.15 atomic common anchor transported to each angle; local selected eigenspace40:48",
+  "points": [
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.0,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.11241220298475206
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.025,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.1123242932725173
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.05,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.11206105587698775
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.075,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.11161995702745493
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.1,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.11097756206981359
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.125,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.11007901552796692
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.15,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10908581513346836
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.175,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10883074006764319
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.2,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10833056393518634
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.225,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10788359965532113
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.25,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10760692020596375
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.275,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10757257544181162
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.3,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10780925942083208
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.325,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10829897274224987
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.35,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10898216793938027
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.375,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10977291527602626
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.4,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.11057718196848518
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.425,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.1113096586552736
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.45,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.1119512901758017
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.475,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.11237948488046302
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.5,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.1124124342179298
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.49166666666666664,
+        0.016666666666666666
+      ],
+      "heff_native_rms_mev": 0.11235866457273995
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.48333333333333334,
+        0.03333333333333333
+      ],
+      "heff_native_rms_mev": 0.11219737735750633
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.475,
+        0.05
+      ],
+      "heff_native_rms_mev": 0.11192748227081185
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.4666666666666667,
+        0.06666666666666667
+      ],
+      "heff_native_rms_mev": 0.11156033761687967
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.4583333333333333,
+        0.08333333333333333
+      ],
+      "heff_native_rms_mev": 0.11111671460110843
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.45,
+        0.1
+      ],
+      "heff_native_rms_mev": 0.11062394060576355
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.44166666666666665,
+        0.11666666666666667
+      ],
+      "heff_native_rms_mev": 0.11011363593071155
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.43333333333333335,
+        0.13333333333333333
+      ],
+      "heff_native_rms_mev": 0.10961837798134656
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.425,
+        0.15
+      ],
+      "heff_native_rms_mev": 0.10916843175709169
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.41666666666666663,
+        0.16666666666666666
+      ],
+      "heff_native_rms_mev": 0.10878949755821474
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.4083333333333333,
+        0.18333333333333332
+      ],
+      "heff_native_rms_mev": 0.10850145479454805
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.39999999999999997,
+        0.2
+      ],
+      "heff_native_rms_mev": 0.10831762349476723
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.39166666666666666,
+        0.21666666666666667
+      ],
+      "heff_native_rms_mev": 0.1082440120049569
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.3833333333333333,
+        0.23333333333333334
+      ],
+      "heff_native_rms_mev": 0.10827815692621504
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.375,
+        0.25
+      ],
+      "heff_native_rms_mev": 0.108407451255939
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.36666666666666664,
+        0.26666666666666666
+      ],
+      "heff_native_rms_mev": 0.10860733880953799
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.3583333333333333,
+        0.2833333333333333
+      ],
+      "heff_native_rms_mev": 0.10884033518815187
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.35,
+        0.3
+      ],
+      "heff_native_rms_mev": 0.10905725655995069
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.3416666666666667,
+        0.31666666666666665
+      ],
+      "heff_native_rms_mev": 0.10920222880989591
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "heff_native_rms_mev": 0.1092231119492859
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.31666666666666665,
+        0.31666666666666665
+      ],
+      "heff_native_rms_mev": 0.10913490300413528
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.3,
+        0.3
+      ],
+      "heff_native_rms_mev": 0.10857524518016984
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.2833333333333333,
+        0.2833333333333333
+      ],
+      "heff_native_rms_mev": 0.10785919689032843
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.26666666666666666,
+        0.26666666666666666
+      ],
+      "heff_native_rms_mev": 0.107176912053989
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.25,
+        0.25
+      ],
+      "heff_native_rms_mev": 0.10662359502685018
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.2333333333333333,
+        0.2333333333333333
+      ],
+      "heff_native_rms_mev": 0.1062814097951553
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.21666666666666665,
+        0.21666666666666665
+      ],
+      "heff_native_rms_mev": 0.10619284069993665
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.19999999999999998,
+        0.19999999999999998
+      ],
+      "heff_native_rms_mev": 0.10625578484211419
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.18333333333333332,
+        0.18333333333333332
+      ],
+      "heff_native_rms_mev": 0.1063876508677687
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.16666666666666666,
+        0.16666666666666666
+      ],
+      "heff_native_rms_mev": 0.10662261661093048
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.15,
+        0.15
+      ],
+      "heff_native_rms_mev": 0.10700400301579584
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.1333333333333333,
+        0.1333333333333333
+      ],
+      "heff_native_rms_mev": 0.10753834390864857
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.11666666666666664,
+        0.11666666666666664
+      ],
+      "heff_native_rms_mev": 0.10817177121472138
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.09999999999999998,
+        0.09999999999999998
+      ],
+      "heff_native_rms_mev": 0.10873361640332217
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.08333333333333331,
+        0.08333333333333331
+      ],
+      "heff_native_rms_mev": 0.10904067589122657
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.06666666666666665,
+        0.06666666666666665
+      ],
+      "heff_native_rms_mev": 0.11038514614863207
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.04999999999999999,
+        0.04999999999999999
+      ],
+      "heff_native_rms_mev": 0.11133591493582087
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.033333333333333326,
+        0.033333333333333326
+      ],
+      "heff_native_rms_mev": 0.1119399956842171
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.016666666666666663,
+        0.016666666666666663
+      ],
+      "heff_native_rms_mev": 0.11229420893341811
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.0875,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.11132719030825754
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.11249999999999999,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.11056053339909946
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.13749999999999998,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.109549754816737
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.16249999999999998,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10904679005413499
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.18749999999999997,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10858347181149125
+    },
+    {
+      "tag": "reused_reference",
+      "fraction": [
+        0.21249999999999997,
+        0.0
+      ],
+      "heff_native_rms_mev": 0.10809192223063373
+    },
+    {
+      "tag": "fresh_0",
+      "fraction": [
+        0.12140625,
+        0.0
+      ],
+      "seconds": 27.495019882917404,
+      "hermitian_max_ev": 1.643369083867194e-08,
+      "anchor_sigma_min": 0.14221556810889355,
+      "local_window_gap_min_mev": 38.1412906907137,
+      "heff_native_rms_mev": 0.11022223427874343,
+      "heff_native_max_mev": 0.18246651520126278,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_1",
+      "fraction": [
+        0.13440625,
+        0.0
+      ],
+      "seconds": 12.631043322384357,
+      "hermitian_max_ev": 1.6434046778293466e-08,
+      "anchor_sigma_min": 0.14002891650893076,
+      "local_window_gap_min_mev": 38.14393112448844,
+      "heff_native_rms_mev": 0.10969258163071559,
+      "heff_native_max_mev": 0.18153898151318515,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_2",
+      "fraction": [
+        0.14740625,
+        0.0
+      ],
+      "seconds": 12.623137602582574,
+      "hermitian_max_ev": 1.6434396772348663e-08,
+      "anchor_sigma_min": 0.13791759429145903,
+      "local_window_gap_min_mev": 38.15429878396337,
+      "heff_native_rms_mev": 0.10901072815701107,
+      "heff_native_max_mev": 0.1805374648427005,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_3",
+      "fraction": [
+        0.16040625,
+        0.0
+      ],
+      "seconds": 12.627952873706818,
+      "hermitian_max_ev": 1.6434736989481548e-08,
+      "anchor_sigma_min": 0.1358780050453469,
+      "local_window_gap_min_mev": 38.17274693337769,
+      "heff_native_rms_mev": 0.10907645583359363,
+      "heff_native_max_mev": 0.1794689608907163,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_4",
+      "fraction": [
+        0.17340624999999998,
+        0.0
+      ],
+      "seconds": 12.61804180406034,
+      "hermitian_max_ev": 1.6435071645026224e-08,
+      "anchor_sigma_min": 0.13390676398182252,
+      "local_window_gap_min_mev": 38.19967154594295,
+      "heff_native_rms_mev": 0.10886068057201267,
+      "heff_native_max_mev": 0.17834093283930486,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_5",
+      "fraction": [
+        0.18640625,
+        0.0
+      ],
+      "seconds": 12.63355054333806,
+      "hermitian_max_ev": 1.643539915348098e-08,
+      "anchor_sigma_min": 0.13200068308707855,
+      "local_window_gap_min_mev": 38.235514004481,
+      "heff_native_rms_mev": 0.10860565209754904,
+      "heff_native_max_mev": 0.17716130830525145,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_6",
+      "fraction": [
+        0.11,
+        0.17
+      ],
+      "seconds": 12.63675257191062,
+      "hermitian_max_ev": 1.651588581652905e-08,
+      "anchor_sigma_min": 0.12631233805873054,
+      "local_window_gap_min_mev": 38.44308388620821,
+      "heff_native_rms_mev": 0.10731749926252747,
+      "heff_native_max_mev": 0.17149563280938196,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_7",
+      "fraction": [
+        -0.17,
+        0.04
+      ],
+      "seconds": 12.657827066257596,
+      "hermitian_max_ev": 1.6448766582027115e-08,
+      "anchor_sigma_min": 0.13750690880511918,
+      "local_window_gap_min_mev": 38.18179279625955,
+      "heff_native_rms_mev": 0.10920562503047997,
+      "heff_native_max_mev": 0.17999328368212275,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_8",
+      "fraction": [
+        0.22,
+        -0.09
+      ],
+      "seconds": 12.666380640119314,
+      "hermitian_max_ev": 1.6470408099638907e-08,
+      "anchor_sigma_min": 0.13355863076511154,
+      "local_window_gap_min_mev": 38.24298857308683,
+      "heff_native_rms_mev": 0.1084730497389826,
+      "heff_native_max_mev": 0.1765592565066143,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_9",
+      "fraction": [
+        -0.08,
+        -0.21
+      ],
+      "seconds": 12.620443293824792,
+      "hermitian_max_ev": 1.6534116350993673e-08,
+      "anchor_sigma_min": 0.12330711584412991,
+      "local_window_gap_min_mev": 38.51016329477641,
+      "heff_native_rms_mev": 0.10726454464251604,
+      "heff_native_max_mev": 0.16946047738297665,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_10",
+      "fraction": [
+        0.23,
+        0.06
+      ],
+      "seconds": 12.6143210362643,
+      "hermitian_max_ev": 1.6465634990591932e-08,
+      "anchor_sigma_min": 0.12217068689307094,
+      "local_window_gap_min_mev": 38.536927592399906,
+      "heff_native_rms_mev": 0.10735175114762813,
+      "heff_native_max_mev": 0.1689833449614042,
+      "schur_energy_ev": -6.208568
+    },
+    {
+      "tag": "fresh_11",
+      "fraction": [
+        -0.13,
+        0.27
+      ],
+      "seconds": 12.559641685336828,
+      "hermitian_max_ev": 1.655863656328807e-08,
+      "anchor_sigma_min": 0.1291095521954762,
+      "local_window_gap_min_mev": 38.39301024681596,
+      "heff_native_rms_mev": 0.10749730035100329,
+      "heff_native_max_mev": 0.17229398265250495,
+      "schur_energy_ev": -6.208568
+    }
+  ],
+  "final_holdout_used_for_selection": false,
+  "reciprocal": [
+    [
+      0.07318858540407892,
+      0.042255449487151646
+    ],
+    [
+      0.0,
+      0.08451089896918436
+    ]
+  ],
+  "q": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.08451089896918436
+    ],
+    [
+      0.0,
+      0.16902179793836872
+    ],
+    [
+      -0.07318858540407892,
+      -0.042255449487151646
+    ],
+    [
+      -0.07318858540407892,
+      0.04225544948203271
+    ],
+    [
+      -0.07318858540407892,
+      0.12676634845121706
+    ],
+    [
+      -0.14637717080815785,
+      -0.08451089897430329
+    ],
+    [
+      -0.14637717080815785,
+      -5.118933055214825e-12
+    ],
+    [
+      -0.14637717080815785,
+      0.08451089896406543
+    ],
+    [
+      0.07318858540407892,
+      -0.04225544948203271
+    ],
+    [
+      0.0,
+      -0.08451089896918436
+    ],
+    [
+      -0.07318858540407892,
+      -0.126766348456336
+    ],
+    [
+      0.14637717080815785,
+      -0.08451089896406543
+    ],
+    [
+      0.07318858540407892,
+      -0.12676634845121706
+    ],
+    [
+      0.0,
+      -0.16902179793836872
+    ],
+    [
+      0.07318858540407892,
+      0.042255449487151646
+    ],
+    [
+      0.14637717080815785,
+      5.118933055214825e-12
+    ],
+    [
+      0.07318858540407892,
+      0.126766348456336
+    ],
+    [
+      0.14637717080815785,
+      0.08451089897430329
+    ]
+  ],
+  "q_model": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.08451089896918436,
+      0.0
+    ],
+    [
+      -0.16902179793836872,
+      0.0
+    ],
+    [
+      0.042255449487151646,
+      0.07318858540407892
+    ],
+    [
+      -0.04225544948203271,
+      0.07318858540407892
+    ],
+    [
+      -0.12676634845121706,
+      0.07318858540407892
+    ],
+    [
+      0.08451089897430329,
+      0.14637717080815785
+    ],
+    [
+      5.118933055214825e-12,
+      0.14637717080815785
+    ],
+    [
+      -0.08451089896406543,
+      0.14637717080815785
+    ],
+    [
+      0.04225544948203271,
+      -0.07318858540407892
+    ],
+    [
+      0.08451089896918436,
+      0.0
+    ],
+    [
+      0.126766348456336,
+      0.07318858540407892
+    ],
+    [
+      0.08451089896406543,
+      -0.14637717080815785
+    ],
+    [
+      0.12676634845121706,
+      -0.07318858540407892
+    ],
+    [
+      0.16902179793836872,
+      0.0
+    ],
+    [
+      -0.042255449487151646,
+      -0.07318858540407892
+    ],
+    [
+      -5.118933055214825e-12,
+      -0.14637717080815785
+    ],
+    [
+      -0.126766348456336,
+      -0.07318858540407892
+    ],
+    [
+      -0.08451089897430329,
+      -0.14637717080815785
+    ]
+  ],
+  "q_convention": "formula Q=-native TAPW g; model coordinates exchange x/y",
+  "source_hashes": {
+    "H_file": "0e311772db574c29ba8c4a336926c933bce3bce1b0931c9591857a48f4b8d621",
+    "S_file": "094be203d4c74784cab9061dfdc20c2a959997b3ce43e9c81ce3190a30bf2377",
+    "input_file": "d30ad76ba0fa7ec6dd9cf73a832c8886018e2d5da10d6c70e8c6af81b051dbe7"
+  },
+  "stage": "complete",
+  "train_indices": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    14,
+    15,
+    17,
+    18,
+    20,
+    21,
+    23,
+    24,
+    26,
+    27,
+    29,
+    30,
+    32,
+    33,
+    35,
+    36,
+    38,
+    39,
+    40,
+    41,
+    42,
+    44,
+    45,
+    47,
+    48,
+    50,
+    51,
+    53,
+    54,
+    56,
+    57,
+    59
+  ],
+  "validation_indices": [
+    1,
+    10,
+    13,
+    16,
+    19,
+    22,
+    25,
+    28,
+    31,
+    34,
+    37,
+    43,
+    46,
+    49,
+    52,
+    55,
+    58
+  ],
+  "gap_indices": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "local_validation_indices": [
+    60,
+    61,
+    62,
+    63,
+    64,
+    65
+  ],
+  "local_segment": 0,
+  "local_center_t": 0.3,
+  "point_count": 66,
+  "model_sha256": "da0777033ead07364290be22b6344f258c2ebb76f19d5da45ef0e6901091acef",
+  "elapsed_seconds": 292.7608194556087,
+  "process_state": "exited_successfully"
+}

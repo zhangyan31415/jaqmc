@@ -1,0 +1,76 @@
+{
+  "case": "3_9.43",
+  "angle": 9.43,
+  "start": 1,
+  "parameters": [
+    -13.062963946126436,
+    -0.08204778258493306,
+    0.05761633048771947,
+    -0.1999999882445141,
+    0.0116308971357042,
+    -0.11862477755195322
+  ],
+  "solver_success": true,
+  "solver_message": "`ftol` termination condition is satisfied.",
+  "nfev": 222,
+  "jacobian_relative_error": 3.678046056823979e-09,
+  "cost": 207.8250065890631,
+  "metrics": {
+    "train": {
+      "energy_rms_mev": 17.566170241081277,
+      "energy_max_mev": 40.21435416401403,
+      "overlap_mean": 0.46084668328819156,
+      "overlap_min": 0.0069851547643219524
+    },
+    "validation": {
+      "energy_rms_mev": 16.89379822841844,
+      "energy_max_mev": 41.95993572809828,
+      "overlap_mean": 0.5292459636917007,
+      "overlap_min": 0.04402890552972467
+    },
+    "path": {
+      "energy_rms_mev": 17.271660470576563,
+      "energy_max_mev": 41.95993572809828,
+      "overlap_mean": 0.49742439384215587,
+      "overlap_min": 0.0069851547643219524
+    },
+    "local_validation": {
+      "energy_rms_mev": 19.394616272685738,
+      "energy_max_mev": 29.299651654071667,
+      "overlap_mean": 0.1382943878612318,
+      "overlap_min": 0.028783242207795545
+    }
+  },
+  "development_indirect_gap_mev": -169.59694204476585,
+  "direct_gap_min_mev": 3.7111637256501075,
+  "native_direct_gap_min_mev": 0.41711480091777275,
+  "local_gap_rms_mev": 4.155867129553486,
+  "quality_gate": false,
+  "selection_scope": "development only; accuracy gate fallback explicitly flagged",
+  "final": {
+    "local": {
+      "energy_rms_mev": 21.689695824376347,
+      "energy_max_mev": 29.694097663819974,
+      "native_overlap_min": 0.04658740055578445,
+      "native_overlap_mean": 0.07969521869397352,
+      "gap_rms_mev": 1.2917731524003822
+    },
+    "two_dimensional": {
+      "energy_rms_mev": 15.51687497894286,
+      "energy_max_mev": 27.03118266830301,
+      "native_overlap_min": 0.7306362933675341,
+      "native_overlap_mean": 0.8633374806191104,
+      "gap_rms_mev": 11.528225272667434
+    },
+    "all": {
+      "energy_rms_mev": 18.857575587361595,
+      "energy_max_mev": 29.694097663819974,
+      "native_overlap_min": 0.04658740055578445,
+      "native_overlap_mean": 0.47151634965654193,
+      "gap_rms_mev": 8.202702475849973
+    }
+  },
+  "reference_max_energy_rms_mev": 1.4947074782111724,
+  "model_sha256": "885368f5bfa6bd879932a8e3326a99bf3059f0e418791b89dd044f2fec801f1f",
+  "scope": "19Q experiment; development selection then fresh native validation"
+}

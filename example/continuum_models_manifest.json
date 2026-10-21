@@ -677,15 +677,969 @@
       "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/top3_path_bandwidth_gap.pdf",
       "bytes": 30518,
       "sha256": "04a670f02795b836ee0402f2d0c1e81d2155b50e75508fb23518bd8f8f425dca"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/10_3.15/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/10_3.15/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/10_3.15/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/10_3.15/selected/model.npz",
+      "bytes": 973,
+      "sha256": "b0a99d845b6aedbda005d15393411ec830b27589b278d69841e6a82f03fdc7ca"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/10_3.15/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/10_3.15/selected/selection.json",
+      "bytes": 1477,
+      "sha256": "ca01006343ddab3d472df97ef564cfe6f5688591eac4e05b22ee42588c85a07e"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/10_3.15/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/10_3.15/result.json",
+      "bytes": 2501,
+      "sha256": "4f176fb3710c46af68fbcf4ef6a85d3cbcc85dcf4ec0f2018aa1b0a65895b2ca"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/10_3.15/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/10_3.15/plot_data.npz",
+      "bytes": 46357,
+      "sha256": "52d1d61b553c93e7e9127d975723d45fe9dfeca3a8f07a595edae35f98a81310"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/10_3.15/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/10_3.15/run.json",
+      "bytes": 21822,
+      "sha256": "e7f091beef58b21c1d02013899730806191fcbac9172792529cae0535628b34b"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/11_2.88/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/11_2.88/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/11_2.88/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/11_2.88/selected/model.npz",
+      "bytes": 972,
+      "sha256": "6e939cb1c7fc4b34b9af811e6a7b35ede9f8b96465805e9dfbf9c90c06625970"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/11_2.88/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/11_2.88/selected/selection.json",
+      "bytes": 1491,
+      "sha256": "69412cd3d3ebaccb3ed807c884826bbf2b6bd95448502d047e833c555591bd54"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/11_2.88/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/11_2.88/result.json",
+      "bytes": 2512,
+      "sha256": "9155b8b0e849c662373c4d1d811917c1b2616c734095f940475c19361ed354b7"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/11_2.88/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/11_2.88/plot_data.npz",
+      "bytes": 46216,
+      "sha256": "e85861f95d6b330d2278122a5e843ff562625aa86ec777b709cffb59815bcb61"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/11_2.88/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/11_2.88/run.json",
+      "bytes": 21813,
+      "sha256": "464ca8114296a1554e066bd352b70c103a2d7877b58aa84dec63ea2ff2fb3d44"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/12_2.65/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/12_2.65/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/12_2.65/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/12_2.65/selected/model.npz",
+      "bytes": 974,
+      "sha256": "c00cc520bdbc20725b8ae466e1f8dc916b848c006d1527877d7b20bf2ac96e03"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/12_2.65/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/12_2.65/selected/selection.json",
+      "bytes": 1482,
+      "sha256": "e035e4fcac13ae9869f12066b47adb90e479860716165a80b2bbd65f0d0319f1"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/12_2.65/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/12_2.65/result.json",
+      "bytes": 2504,
+      "sha256": "04964b05638a59e94d98e47e1a7fdaa5528021a9fc8a3df8da384b4e74547f64"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/12_2.65/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/12_2.65/plot_data.npz",
+      "bytes": 46276,
+      "sha256": "07285385a909215305b968f0bee581dbd0f358d10b259f4a33f1139b401ceaae"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/12_2.65/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/12_2.65/run.json",
+      "bytes": 21730,
+      "sha256": "b6d5fe0c4fad165f1f149e6ca84d70d86d10c6941dc4d4ae83c0f4c3123f2788"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/13_2.45/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/13_2.45/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/13_2.45/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/13_2.45/selected/model.npz",
+      "bytes": 973,
+      "sha256": "da0777033ead07364290be22b6344f258c2ebb76f19d5da45ef0e6901091acef"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/13_2.45/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/13_2.45/selected/selection.json",
+      "bytes": 1482,
+      "sha256": "1267054597668fcfe094d43a4367f83805f5f8c920ff8954502671ab71c3a97a"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/13_2.45/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/13_2.45/result.json",
+      "bytes": 2506,
+      "sha256": "dcabb520c779e3a708601c154fb08cace4410e7641eba6e68f5890d9ab42ed6b"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/13_2.45/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/13_2.45/plot_data.npz",
+      "bytes": 46461,
+      "sha256": "0335dcbf35419f6e9fbde83124bde6ffce701cfc44eb3ab1cb072c7de36149af"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/13_2.45/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/13_2.45/run.json",
+      "bytes": 21796,
+      "sha256": "8c7a100f977eb88e726ea42c2e327903434dc174133f740835e548d1bd0ad853"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/14_2.28/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/14_2.28/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/14_2.28/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/14_2.28/selected/model.npz",
+      "bytes": 973,
+      "sha256": "82470f1a05295270f543ecc4fbe1325ee1f7b2cb8ace1d8c178d89fef75f8b75"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/14_2.28/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/14_2.28/selected/selection.json",
+      "bytes": 1481,
+      "sha256": "2ebbdd7a86085a34fe53c873b596e5f7cc78fbbee9f4c062812182d6ee937e33"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/14_2.28/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/14_2.28/result.json",
+      "bytes": 2506,
+      "sha256": "9c3511d3d63c738b4bca6732de21f58e81cbea5ce5da80b963050634eeac1731"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/14_2.28/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/14_2.28/plot_data.npz",
+      "bytes": 46447,
+      "sha256": "640227c224b821d76ebd030c99908c099495e9dbed0fe881ea1649e6b18e3df0"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/14_2.28/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/14_2.28/run.json",
+      "bytes": 24425,
+      "sha256": "eac4886e05df8c04eec0e24049ccf88e2a24e8a142c347156c3e1472f1120b66"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/3_9.43/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/3_9.43/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/3_9.43/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/3_9.43/selected/model.npz",
+      "bytes": 973,
+      "sha256": "885368f5bfa6bd879932a8e3326a99bf3059f0e418791b89dd044f2fec801f1f"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/3_9.43/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/3_9.43/selected/selection.json",
+      "bytes": 1489,
+      "sha256": "6f3aa207ae82cdce0cf8f91c094124c5605c0488440f2a1af86e33866238f5a9"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/3_9.43/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/3_9.43/result.json",
+      "bytes": 2514,
+      "sha256": "104cdb79da455356b3aee6f82bbcc02ff9917f73347b8eb014bcf5a4593f2348"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/3_9.43/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/3_9.43/plot_data.npz",
+      "bytes": 46718,
+      "sha256": "7a33ef29320ec53b9c9cca38cab7d8cf0df2f00565a46eaa21a422e36ac588a5"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/3_9.43/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/3_9.43/run.json",
+      "bytes": 40442,
+      "sha256": "e0310569bed1c617cc56f0118f701e72a5fc0d9d6346a0030fceede11808ef59"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/4_7.34/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/4_7.34/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/4_7.34/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/4_7.34/selected/model.npz",
+      "bytes": 973,
+      "sha256": "f059dc7ef29b198e2b368f2a93ecaaaa39f42266fc94b2e5a2601ba47d84bc12"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/4_7.34/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/4_7.34/selected/selection.json",
+      "bytes": 1483,
+      "sha256": "599ac248aed2aa540ab22332020e0b59ec6a26899631676bad449b70e7d0b2a7"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/4_7.34/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/4_7.34/result.json",
+      "bytes": 2505,
+      "sha256": "e2b274d199c52daf3710419c9c8bcd54823bbf2a7f42cc430d2da7b34ee1643b"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/4_7.34/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/4_7.34/plot_data.npz",
+      "bytes": 46740,
+      "sha256": "c50fa25352ec8d9b6c75dcd95118b482854e410d2e92828bead21be084c0f576"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/4_7.34/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/4_7.34/run.json",
+      "bytes": 40633,
+      "sha256": "86d829055d61da863d9bec9bb208ada2a1e70f91e7ac54fb838110d455e1ea04"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/5_6.01/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/5_6.01/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/5_6.01/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/5_6.01/selected/model.npz",
+      "bytes": 973,
+      "sha256": "1c800ecc44310ca0e8e10795cc6666f76628737e36637d9e94ec707762db4877"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/5_6.01/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/5_6.01/selected/selection.json",
+      "bytes": 1474,
+      "sha256": "406e6c65dd9a0054ddc0b6f13af38d4717fc2d3b1bc664e19d3b2856a086c5a1"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/5_6.01/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/5_6.01/result.json",
+      "bytes": 2496,
+      "sha256": "6459c9f45ad9b796200ec7d2044f6ad652f1f7c240610a563b03141a84b6a7c8"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/5_6.01/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/5_6.01/plot_data.npz",
+      "bytes": 46045,
+      "sha256": "7821070deec9c4cae2a4a3acd922e21dac7cf3ef7c3987ead6a65d63870e2ee8"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/5_6.01/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/5_6.01/run.json",
+      "bytes": 40268,
+      "sha256": "ca1094e49a7d233248f8d680502256177537fa569c67ecfa03f05ce439f4a596"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/6_5.09/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/6_5.09/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/6_5.09/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/6_5.09/selected/model.npz",
+      "bytes": 972,
+      "sha256": "84cfc20c32b137cfd72024d19aac760fd43dabb2dc459aaa315be8377b92875e"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/6_5.09/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/6_5.09/selected/selection.json",
+      "bytes": 1475,
+      "sha256": "77b41a0232ead143d8d3a21ec1a8bdc6a91d20c2746de79e17e0e3eea4fa1b4d"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/6_5.09/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/6_5.09/result.json",
+      "bytes": 2497,
+      "sha256": "afd825e7426732db2a3162fc299889cc87fc418f707437edb31b97db9de15b2e"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/6_5.09/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/6_5.09/plot_data.npz",
+      "bytes": 46292,
+      "sha256": "428135d764a16f968865bde0843f0146e063596fe8574b5eb717d56b249e56f9"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/6_5.09/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/6_5.09/run.json",
+      "bytes": 40315,
+      "sha256": "f67cb079fcde2b5b93dc446baabb0db8a4e520d5d79690f28a2233b7c15d2e3e"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/7_4.41/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/7_4.41/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/7_4.41/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/7_4.41/selected/model.npz",
+      "bytes": 972,
+      "sha256": "8e231bd6a2d0b438cd8ea3054cf27697343e05fef556071012c072f4290a84be"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/7_4.41/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/7_4.41/selected/selection.json",
+      "bytes": 1476,
+      "sha256": "8d69a32ef834b3ef9b86e1ae0649b7d5b9268879ca04b5de90aae05114672de9"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/7_4.41/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/7_4.41/result.json",
+      "bytes": 2500,
+      "sha256": "d6c66be536b7a2aaaeadb9f568e2968b3003cac096f5ead8945fe5a887ad40b0"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/7_4.41/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/7_4.41/plot_data.npz",
+      "bytes": 46189,
+      "sha256": "b68144e8525f1781c116d2389179b9e25a5c39c02f466a77e1d3a3bcc04f8ea0"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/7_4.41/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/7_4.41/run.json",
+      "bytes": 40017,
+      "sha256": "1b69fe4e0bcece9baa9bcd45f1d584012d017ec0076c8efe44e26e8f988d9397"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/8_3.89/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/8_3.89/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/8_3.89/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/8_3.89/selected/model.npz",
+      "bytes": 973,
+      "sha256": "2b56a92d7b0b5cbf358a9116fbe435038869749cec055ffda65c460cdb4fc6ba"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/8_3.89/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/8_3.89/selected/selection.json",
+      "bytes": 1471,
+      "sha256": "44cbf04dca525e4b8158cb91afc8db94ae8a2e0c6fd84a92dff63fc2ba911242"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/8_3.89/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/8_3.89/result.json",
+      "bytes": 2492,
+      "sha256": "d681e2598d934cc1b36090e0ee241c073b419b0a709e0d35b845a880711c4274"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/8_3.89/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/8_3.89/plot_data.npz",
+      "bytes": 46338,
+      "sha256": "4610544598ca8a146fffd7fc1b28138f3339a60f15574b8a720c771382d81903"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/8_3.89/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/8_3.89/run.json",
+      "bytes": 39016,
+      "sha256": "0bc0f547048ce267859cacf9b4e6af46f3616554fc692e23119e31018a28343c"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/9_3.48/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/9_3.48/selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/9_3.48/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/9_3.48/selected/model.npz",
+      "bytes": 972,
+      "sha256": "165c1d102111eeb9bff98904e66d462d6a3579acaf9bc09b65e46d220d1ec50b"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/9_3.48/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/9_3.48/selected/selection.json",
+      "bytes": 1478,
+      "sha256": "fabd05332008911afa0e0b929eb59410d80da45627e51205eda4fb4b6d4d6ccb"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/9_3.48/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/9_3.48/result.json",
+      "bytes": 2501,
+      "sha256": "5f267b55e1b8945c9068a8d615960ccb6e257a7ffabef3d76babd406f0750479"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/9_3.48/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/9_3.48/plot_data.npz",
+      "bytes": 46399,
+      "sha256": "8798dbbc45cbaff0952edeaea0bcb7790fddfaf1bac365186d7c69121b89678b"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/cases/9_3.48/SOURCE_RUN.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/results/9_3.48/run.json",
+      "bytes": 22030,
+      "sha256": "22b966b2737515bf681bb2addc6c0fc8c4e2b8fe7e77205f33885b2663afb824"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/cases/10_3.15/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/selected/10_3.15/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/cases/10_3.15/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/selected/10_3.15/model.npz",
+      "bytes": 973,
+      "sha256": "d7e077c166727648c0d4aaad9020770ad429450290c4c56711fd6a62bb13ffa7"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/cases/11_2.88/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/selected/11_2.88/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/cases/11_2.88/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/selected/11_2.88/model.npz",
+      "bytes": 972,
+      "sha256": "f4adb8affeac27d532f76301e01bf3c5b85fb8fbb52adca0b1d0f0fd3e43612b"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/cases/12_2.65/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/selected/12_2.65/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/cases/12_2.65/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/selected/12_2.65/model.npz",
+      "bytes": 974,
+      "sha256": "c3298ac826cb76d9e1f98d326207594638a0d5aa5f8262e77290e0070c3ec5af"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/cases/13_2.45/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/selected/13_2.45/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/cases/13_2.45/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/selected/13_2.45/model.npz",
+      "bytes": 974,
+      "sha256": "98b384a009bd97fefd90b4a4883257ddc2041728ed3c4957370a171a3a58dded"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/cases/14_2.28/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/selected/14_2.28/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/cases/14_2.28/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/selected/14_2.28/model.npz",
+      "bytes": 973,
+      "sha256": "2c238e00d4ab83ae64e2a8da6a22ad7ae10300a5b0353919ca94b26d3af4038e"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/REPORT.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/REPORT.md",
+      "bytes": 2695,
+      "sha256": "8cbda652b6a38e0ea13aecadff8e7431866071fa4fe96fb34767a638cfaf741b"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/JOINT_REPORT.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/JOINT_REPORT.json",
+      "bytes": 20483,
+      "sha256": "864e7d523ed50f368db981c3d82d41e0912e1ca472b0c5fe3982701ea29f119a"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/SELECTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/SELECTION.json",
+      "bytes": 13392,
+      "sha256": "5ce16189f0523630550a1c29a1cf524ac145653df7de10c279f004bc4085beea"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/VERIFICATION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/VERIFICATION.json",
+      "bytes": 8354,
+      "sha256": "28f5f6fab333971cfffd5637ce0a822a963c1ff74eaf7c0dada20e6a95bdc4d3"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/AUDIT.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/AUDIT.json",
+      "bytes": 2485,
+      "sha256": "1b79e3ab071d67259887163a8c7e317698cebe0ca7db37d4c5e8c82af675f46f"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/joint_parameter_trends.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/joint_parameter_trends.png",
+      "bytes": 224136,
+      "sha256": "6f918b7ed52ffae4a896edcf31b27007998ca3d5874e3dd567e1f5e9198e60f6"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/joint_parameter_trends.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/joint_parameter_trends.pdf",
+      "bytes": 26587,
+      "sha256": "95f0c6f7c630967d27b087aad9852e8e3c8252af8b74ec8978b643b07c4d97e7"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/joint_top6_bands.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/joint_top6_bands.png",
+      "bytes": 305626,
+      "sha256": "52ca2fe5a07cb68193a3701d025eefed8585e9fbdb99f94456161af64c164bc7"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/joint_top6_bands.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/joint_top6_bands.pdf",
+      "bytes": 62315,
+      "sha256": "4a9a75f5473359437d7a32de1f5dc8f6f98b4fe9ace0a3b13f41c59da1c92350"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/joint_quality_tradeoff.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/joint_quality_tradeoff.png",
+      "bytes": 91616,
+      "sha256": "747c02ef30fe2bfbe0982ce2e9c47d7fb36cef17b2d78a4cb3f5a7fba9213c06"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/small_angle_joint/joint_quality_tradeoff.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_small_angles_20261014/joint_quality_tradeoff.pdf",
+      "bytes": 22614,
+      "sha256": "9b6ef706f6d973b2e55ba277a86f00b7d8f170c8ee35ff17ed243d578f9963a6"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/10_3.15/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/10_3.15/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/10_3.15/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/10_3.15/model.npz",
+      "bytes": 973,
+      "sha256": "3241946295cc2bf42e6eb2af49daf0a2fc0fd180f7a3679105a92288c46360d5"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/11_2.88/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/11_2.88/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/11_2.88/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/11_2.88/model.npz",
+      "bytes": 972,
+      "sha256": "e42b1e9e3bb1c70a51bd8256a953c49f79e626c13c72b01f706ece45246ebaf3"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/12_2.65/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/12_2.65/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/12_2.65/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/12_2.65/model.npz",
+      "bytes": 974,
+      "sha256": "0dda7513bec2975978ed3dc82a29ecc807df4b72be7e5e4cfc00d88ed0ca9d98"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/13_2.45/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/13_2.45/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/13_2.45/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/13_2.45/model.npz",
+      "bytes": 973,
+      "sha256": "ca311366169ce0e117ad80baaf310938f88b6b6544d66d8cf8c44d490e79c281"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/14_2.28/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/14_2.28/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/14_2.28/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/14_2.28/model.npz",
+      "bytes": 973,
+      "sha256": "fddbb3c892ee1e81282dcb518cb27bf65e62c4e8bb2e5cce6e4bd64d752a6917"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/3_9.43/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/3_9.43/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/3_9.43/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/3_9.43/model.npz",
+      "bytes": 973,
+      "sha256": "1975359a176512bdf6691b2143119293dcc069aca98e75edc8f364f18202ce90"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/4_7.34/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/4_7.34/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/4_7.34/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/4_7.34/model.npz",
+      "bytes": 973,
+      "sha256": "3641929938fb251e88e529d2c5a1c8b69ca535ae164c6f511dd265f6b865053d"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/5_6.01/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/5_6.01/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/5_6.01/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/5_6.01/model.npz",
+      "bytes": 973,
+      "sha256": "f1ad60a12b1cc5f12cc50dae681a29299c4d2e78e8dc242066a9adec72306f50"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/6_5.09/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/6_5.09/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/6_5.09/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/6_5.09/model.npz",
+      "bytes": 972,
+      "sha256": "25438cf79427a14b17e06a46436f8cc81be432663d8edb672e26c9692cfdbc60"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/7_4.41/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/7_4.41/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/7_4.41/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/7_4.41/model.npz",
+      "bytes": 973,
+      "sha256": "1ad32ccb42d5d1e419d005ec28e6ae40b6cb129cc10bc841c8a43713ba65225a"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/8_3.89/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/8_3.89/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/8_3.89/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/8_3.89/model.npz",
+      "bytes": 972,
+      "sha256": "1b6bbc82dd2e9fb9a3f1e44af24329d6f1c0a73c83fb49335db1f22a1ea97e92"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/9_3.48/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/9_3.48/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/cases/9_3.48/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/selected/9_3.48/model.npz",
+      "bytes": 971,
+      "sha256": "fe0edf8d81179a4bdb771f7f3ebe29ba454162c840cd5f4e01156e1dcc33ce94"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/REPORT.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/REPORT.md",
+      "bytes": 2233,
+      "sha256": "cc0450e7db17832eb989f86cb1f7ee18a5dfaf63eb2e2b159573dc5e0c38eb9f"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/JOINT_REPORT.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/JOINT_REPORT.json",
+      "bytes": 46653,
+      "sha256": "fbce750df640294382eea9e53d3ec9929bd394a8816f415b9983244b33823588"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/SELECTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/SELECTION.json",
+      "bytes": 24537,
+      "sha256": "24cf07983170fe1c5954fa8c2c2fc64cfb0b353a6c0d6e81c40512106810fd6b"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/VERIFICATION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/VERIFICATION.json",
+      "bytes": 19046,
+      "sha256": "84c9fa486bea51894671e1238b5fbbfd22e4d365e912635bfce85eff5bfcc79b"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/AUDIT.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/AUDIT.json",
+      "bytes": 5391,
+      "sha256": "ad3ccba20d4f907b145a943b8e10c1966ceb360334340c92fbef52f96f7a5fab"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/all_angle_joint_parameter_trends.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/all_angle_joint_parameter_trends.png",
+      "bytes": 215788,
+      "sha256": "bdd9199eeb5c341b2881cbb598cbaf403b7779fb53838f5f81aa8b8f269bd506"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/all_angle_joint_parameter_trends.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/all_angle_joint_parameter_trends.pdf",
+      "bytes": 28427,
+      "sha256": "894260dd9f632d90ad99bce953761adc86955362b68b164444d3a1e9588ffdb5"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/all_angle_joint_top6_bands.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/all_angle_joint_top6_bands.png",
+      "bytes": 638192,
+      "sha256": "160d7a9453d475dade14c9bc9b0e9e2ba7f66955489e90e5f2708d84f7d82c4a"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/all_angle_joint_top6_bands.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/all_angle_joint_top6_bands.pdf",
+      "bytes": 123380,
+      "sha256": "4a431bf408aeaec4b2e555c30ca8334bbf2b0b5cb0cd58dbe50c653242015b00"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/all_angle_joint_quality_tradeoff.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/all_angle_joint_quality_tradeoff.png",
+      "bytes": 137231,
+      "sha256": "29fe32cc818363354be8b1b6725a5ad6fcaec4947bf0a2d3abd6dceac3066cb6"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/all_angle_joint/all_angle_joint_quality_tradeoff.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/joint_all_angles_20261014/all_angle_joint_quality_tradeoff.pdf",
+      "bytes": 26054,
+      "sha256": "4ebd9ae26670cec3ccdb261b867a76a0617c08640c893dd0bec257845d9001df"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/independent/ORIGINAL_README.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/README.md",
+      "bytes": 4556,
+      "sha256": "49d0a63740e8e2471c655da280a74ca4341868064a8e8b8039eaab4bc013912d"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/independent/REPORT.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/REPORT.md",
+      "bytes": 2396,
+      "sha256": "60a163951ec03792daa3f5e7010a52172e87613261ce61bc636acb9f2b32d649"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/independent/summary.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/summary.csv",
+      "bytes": 5722,
+      "sha256": "5d927fdb761f931825979d5b18f7892a41c3bdd8d35d88582c0ea6c34470dc98"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/independent/summary.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/summary.json",
+      "bytes": 12632,
+      "sha256": "9d22715120e337034f1e962227b0f7ae9f6d06d6e503ab8592c11c0076eb2863"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/independent/VERIFICATION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/VERIFICATION.json",
+      "bytes": 4183,
+      "sha256": "0fd34469d5e84d14fcf58af70f4b4d7efa6bbc0ea0b084bcb649b7add24df3e9"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/independent/WORKERS.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/WORKERS.json",
+      "bytes": 4995,
+      "sha256": "2d7bdbfff6d9f3011390d66b60d7cd4cdc8e9956a9ea7b969130824f54be4854"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/independent/bands_all_angles.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/bands_all_angles.png",
+      "bytes": 675191,
+      "sha256": "7cd7b1755f6ad3ecada878394f3215155cf6eb64be20d09e4c9f6a5f81cf356f"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/independent/bands_all_angles.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/bands_all_angles.pdf",
+      "bytes": 66997,
+      "sha256": "03d3633f91fd744a532ed930875ced314a451b1315f93fc33030bd4fb96a9f02"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/independent/parameters_vs_angle.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/parameters_vs_angle.png",
+      "bytes": 116901,
+      "sha256": "0616d0ddd6176fe89d2e7aca7757782f7282ed62575bb7c838f25b6fb1a3a08e"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/independent/parameters_vs_angle.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_angle_sweep_20261013/parameters_vs_angle.pdf",
+      "bytes": 20534,
+      "sha256": "2c26e78a8c13197aee864f63415de5d2e0caf7de90b607e816f630f9c4dc69fb"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/projector_gap_3p15/cases/10_3.15/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_selected/model.py",
+      "bytes": 5659,
+      "sha256": "d7a276244b5723b790b45605aa72d87dcb0159d7d097e51bd12467eb2bc5a6f4"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/projector_gap_3p15/cases/10_3.15/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_selected/model.npz",
+      "bytes": 2275,
+      "sha256": "c855780e0c2ce824c8b092950ca74cffcb59cf677a862ff6f367290733716a81"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/projector_gap_3p15/cases/10_3.15/result.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_selected/result.json",
+      "bytes": 2954,
+      "sha256": "62db42c45c3ce3238b3bae1bed506b383328393c3ee94f6381fc1bfbcc39d999"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/projector_gap_3p15/cases/10_3.15/selection.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_selected/selection.json",
+      "bytes": 3912,
+      "sha256": "d81c9eb66314071ea46db09ed7bb75c435db160959453ac4c303722aeee24dde"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/projector_gap_3p15/cases/10_3.15/FORMULAS.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_selected/FORMULAS.md",
+      "bytes": 8614,
+      "sha256": "fd9aafb80f962aa3ae30d3257e7a4a29a51891a872f27f7e6efc32095d249c15"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/projector_gap_3p15/cases/10_3.15/ORIGINAL_README.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_selected/README.md",
+      "bytes": 508,
+      "sha256": "64c168d5fae74a3541a19c593fe9d0acc70f63ed3a676bdef4398dca988cd931"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/projector_gap_3p15/PROJECTOR_REPORT.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/PROJECTOR_REPORT.md",
+      "bytes": 1445,
+      "sha256": "01a4f889b00d5684be074853153975dd5a7218f85b71e17c67a497fa4d9a1a14"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/projector_gap_3p15/PROJECTOR_VERIFICATION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/PROJECTOR_VERIFICATION.json",
+      "bytes": 10736,
+      "sha256": "fee8246b85a7266a3a3a348e437f22cac6ccef809fe607b4dd6235cd2a178299"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/projector_gap_3p15/projector_bands_comparison.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_bands_comparison.png",
+      "bytes": 206590,
+      "sha256": "60204a372d217d132015d52b3581bfbf1a02a2c8f5d4d607542ebb28182642e5"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/projector_gap_3p15/projector_bands_comparison.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_bands_comparison.pdf",
+      "bytes": 21585,
+      "sha256": "331e9d8e3617ff42624cc476b30e7d58a873ce8ed9b4a91009d115d231eaffc0"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/projector_gap_3p15/projector_gap_comparison.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_gap_comparison.png",
+      "bytes": 169577,
+      "sha256": "4b92fd9e1873373ba7a59a66bb92b800df6023efb777200a536982537355c8c0"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/projector_gap_3p15/projector_gap_comparison.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_gap_comparison.pdf",
+      "bytes": 20573,
+      "sha256": "8d52dc259d6562b9c474ee15f46e536510186992e3ae06e7c9e7f97754c76b34"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/projector_gap_3p15/projector_gmkg_full.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_gmkg_full.png",
+      "bytes": 543466,
+      "sha256": "22abf73809bbd7fad8f5ab90eabc1feab1a042b7a1992b0574070aa16ba4dc70"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/projector_gap_3p15/projector_gmkg_full.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_gmkg_full.pdf",
+      "bytes": 39298,
+      "sha256": "e7abc9062affb36b3a572607c0d33c48d11c20b4c03850b80efb0f3e18b54edf"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/projector_gap_3p15/projector_b1_low_energy.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_b1_low_energy.png",
+      "bytes": 617241,
+      "sha256": "e66900962adf6eede9c65756ed0f3fd2059304d243dd6c40289ab9fb85c95706"
+    },
+    {
+      "destination": "example/ZrS2/AB/models/Gamma/six_parameter_20261014/reports/projector_gap_3p15/projector_b1_low_energy.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_b1_low_energy.pdf",
+      "bytes": 54576,
+      "sha256": "fe46c9583163c1b933baa448701f381234f6b17b37c4a07c56dee778db10e143"
     }
   ],
   "generated_files": [
     "example/MoTe2/AA/models/K/six_parameter_joint_20261016/README.md",
     "example/WSe2/AA/models/K/seven_parameter_top3_20261018/README.md",
-    "example/WSe2/AA/README.md"
+    "example/WSe2/AA/README.md",
+    "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/independent/parameters.csv",
+    "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/small_angle_joint/parameters.csv",
+    "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/all_angle_joint/parameters.csv",
+    "example/ZrS2/AB/models/Gamma/six_parameter_20261014/candidates/projector_gap_3p15/parameters.csv",
+    "example/ZrS2/AB/models/Gamma/six_parameter_20261014/README.md",
+    "example/MoTe2/README.md",
+    "example/WSe2/README.md",
+    "example/ZrS2/README.md",
+    "example/ZrS2/AB/README.md"
   ],
   "modified_existing_files": [
+    "example/MoTe2/AA/README.md",
     "example/README.md",
-    "example/MoTe2/AA/README.md"
+    "example/WSe2/AA/README.md"
+  ],
+  "uploads": [
+    {
+      "archive_date": "2026-10-21",
+      "material": "ZrS2",
+      "stacking": "AB",
+      "valley": "Gamma",
+      "source_repository": "/data/work/zy/software/1.tapw_code/moirekp-release",
+      "source_commit": "e857d8bf9ba04e3dae8fdf093da7b34642e54469",
+      "target_base_commit": "39d67051330d12969365a4f8fa00b4549dbcd7d4",
+      "model_counts": {
+        "independent": 12,
+        "small_angle_joint": 5,
+        "all_angle_joint": 12,
+        "projector_gap_3p15": 1
+      },
+      "copied_files": 154,
+      "copied_bytes": 5841251,
+      "note": "Existing fits archived unchanged; common material/stacking indexes standardized. No fit rerun."
+    }
   ]
 }

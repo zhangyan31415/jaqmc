@@ -1,4 +1,12 @@
-# MoTe₂ AA 双层结构
+# MoTe₂ AA examples
+
+| Valley | Model archive | Scope |
+|---|---|---|
+| K | [Six-parameter joint model](models/K/six_parameter_joint_20261016/README.md) | Nine calibration angles, angle functions, bands and deletion diagnostics |
+
+Model code, coefficients, figures and limits are documented in the linked README. Atomic structures below are archived separately; a structure angle does not imply available electronic reference data or a fitted model at that angle.
+
+## 原子结构
 
 26 个来源标称转角：1.08455°—21.78679°。文件按转角、rigid/relaxed_cell 分类。
 
@@ -65,7 +73,3 @@ OpenMX 目录的两位小数仅作算例标签，归档使用 VASP 文件的五�
 - 两个 relaxed 文件都来自指定来源目录，不根据下划线猜测优劣或额外修改结果。
 
 所有文件的源路径、SHA256、原子数及 SOC/NSOC 对应记录见根目录 `index.csv` 与 `manifest.json`。
-
-## 连续模型
-
-[K 谷六参数联合拟合模型、参数和能带报告](models/K/six_parameter_joint_20261016/README.md)。该模型与本目录的原子结构分别归档；不表示每个结构角度都有相应的电子结构或拟合结果。

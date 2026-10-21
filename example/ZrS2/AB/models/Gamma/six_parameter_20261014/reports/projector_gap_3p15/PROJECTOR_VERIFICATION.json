@@ -1,0 +1,285 @@
+{
+  "status": "completed",
+  "node": "bigmem003",
+  "pid": 508241,
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "examples/nonlinear_fit/zrs2_3.15/report_projector_gap.py"
+  ],
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "process_count": 1,
+  "blas_threads": 8,
+  "selection_sha256": "d81c9eb66314071ea46db09ed7bb75c435db160959453ac4c303722aeee24dde",
+  "final_native_packet_sha256": "0bd5af13c69909877328a73543d638e8a47bff891887c8d0e50a0bf22c205a13",
+  "final_packet_used_only_after_freeze": true,
+  "native_controls": [
+    {
+      "index": 0,
+      "native_matrix_max_error_ev": 8.97958793791009e-12,
+      "heff_max_error_ev": 4.4922496820264245e-12
+    },
+    {
+      "index": 20,
+      "native_matrix_max_error_ev": 5.663025606480607e-12,
+      "heff_max_error_ev": 4.198189359728312e-13
+    }
+  ],
+  "models": {
+    "old": {
+      "parameters": [
+        -18.67461674698483,
+        -7.765865863730176,
+        0.04627955102048905,
+        -0.04625004882266418,
+        0.018665310993361568,
+        -0.01964741875561146
+      ],
+      "m1": -0.20401929376222153,
+      "m2": -0.4906062230348584,
+      "nominal_parameters": 8,
+      "independent_real_parameters": 6,
+      "path_energy_rms_mev": 1.0138816250063627,
+      "path_energy_max_mev": 2.7389192741686665,
+      "path_pair_overlap_mean": 0.9622129837582589,
+      "path_pair_overlap_min": 0.856868820456302,
+      "dense_local_direct_gap_min_mev": 1.1027329449686818,
+      "dense_local_direct_gap_u": 0.3025,
+      "path_plus_dense_indirect_gap_mev": 0.9934596326932263,
+      "principal_kinetic_coefficients": [
+        -26.44048261071501,
+        -10.908750883254655
+      ],
+      "fresh_gap": {
+        "rms_mev": 1.056993337878171,
+        "max_mev": 2.641324739512285,
+        "pair_overlap_mean": 0.8972059948253719,
+        "pair_overlap_min": 0.8038907706026001,
+        "minimum_principal_overlap_squared": 0.6371056139455539,
+        "reference_heff_native_pair_overlap_mean": 0.9999949614823035,
+        "reference_heff_native_pair_overlap_min": 0.9999907471553764,
+        "reconstruction": "(F+GY) times selected eigenvectors, then cluster Gram normalization; native orthogonalized TAPW coefficient frame",
+        "gap_rms_mev": 1.9190247497573465,
+        "gap_max_error_mev": 3.620707887074796,
+        "model_sampled_min_gap_mev": 1.1227726213612967,
+        "native_sampled_min_gap_mev": 4.167318401913533,
+        "model_gap_values_mev": [
+          1.1227726213612967,
+          1.7850174593590298,
+          2.800474289863797,
+          3.879251766177712,
+          4.959315363331447,
+          6.020672565724354
+        ],
+        "native_gap_values_mev": [
+          4.743480508436093,
+          4.337253960750687,
+          4.167318401913533,
+          4.3292754006127865,
+          4.77345954816677,
+          5.414724798750825
+        ]
+      },
+      "fresh_2d": {
+        "rms_mev": 0.6420239991632922,
+        "max_mev": 1.2627410520291704,
+        "pair_overlap_mean": 0.9745399075674585,
+        "pair_overlap_min": 0.9574428164436786,
+        "minimum_principal_overlap_squared": 0.9124948972849488,
+        "reference_heff_native_pair_overlap_mean": 0.999994196535421,
+        "reference_heff_native_pair_overlap_min": 0.9999831413845431,
+        "reconstruction": "(F+GY) times selected eigenvectors, then cluster Gram normalization; native orthogonalized TAPW coefficient frame",
+        "gap_rms_mev": 0.5973252946952817,
+        "gap_max_error_mev": 0.9870025632582333,
+        "model_sampled_min_gap_mev": 16.202343376735914,
+        "native_sampled_min_gap_mev": 15.350049993802628,
+        "model_gap_values_mev": [
+          19.685512706560612,
+          22.488505334692487,
+          21.437121198341742,
+          19.59447970320848,
+          16.202343376735914,
+          19.685512706875326
+        ],
+        "native_gap_values_mev": [
+          19.792996582598477,
+          23.47550789795072,
+          22.080205854081214,
+          19.654009642708914,
+          15.350049993802628,
+          19.792995281621373
+        ]
+      }
+    },
+    "direct_indirect_action": {
+      "parameters": [
+        -18.743028838702873,
+        -9.52540942034111,
+        0.0465905328515213,
+        -0.04053223398011083,
+        0.01921452809745046,
+        -0.020215357515989258
+      ],
+      "m1": -0.20327462294315463,
+      "m2": -0.39998093014920116,
+      "nominal_parameters": 8,
+      "independent_real_parameters": 6,
+      "path_energy_rms_mev": 1.8947321646439788,
+      "path_energy_max_mev": 4.242558705419438,
+      "path_pair_overlap_mean": 0.9695564068142009,
+      "path_pair_overlap_min": 0.9386428315228385,
+      "dense_local_direct_gap_min_mev": 2.6404050784643447,
+      "dense_local_direct_gap_u": 0.32375,
+      "path_plus_dense_indirect_gap_mev": 2.376865050304322,
+      "principal_kinetic_coefficients": [
+        -28.268438259043982,
+        -9.217619418361764
+      ],
+      "fresh_gap": {
+        "rms_mev": 1.2033070288544625,
+        "max_mev": 2.5677066110061375,
+        "pair_overlap_mean": 0.9627759855532221,
+        "pair_overlap_min": 0.9474258762088459,
+        "minimum_principal_overlap_squared": 0.8914805192425236,
+        "reference_heff_native_pair_overlap_mean": 0.9999949614823035,
+        "reference_heff_native_pair_overlap_min": 0.9999907471553764,
+        "reconstruction": "(F+GY) times selected eigenvectors, then cluster Gram normalization; native orthogonalized TAPW coefficient frame",
+        "gap_rms_mev": 1.3206228262589315,
+        "gap_max_error_mev": 1.6322579462862903,
+        "model_sampled_min_gap_mev": 2.693514779139282,
+        "native_sampled_min_gap_mev": 4.167318401913533,
+        "model_gap_values_mev": [
+          3.150027947610164,
+          2.7049960144643963,
+          2.693514779139282,
+          3.106963049845604,
+          3.7938197205665616,
+          4.617810728453249
+        ],
+        "native_gap_values_mev": [
+          4.743480508436093,
+          4.337253960750687,
+          4.167318401913533,
+          4.3292754006127865,
+          4.77345954816677,
+          5.414724798750825
+        ]
+      },
+      "fresh_2d": {
+        "rms_mev": 2.292299948658364,
+        "max_mev": 4.034722288873027,
+        "pair_overlap_mean": 0.9759071115410713,
+        "pair_overlap_min": 0.964430595245728,
+        "minimum_principal_overlap_squared": 0.9270837357068267,
+        "reference_heff_native_pair_overlap_mean": 0.999994196535421,
+        "reference_heff_native_pair_overlap_min": 0.9999831413845431,
+        "reconstruction": "(F+GY) times selected eigenvectors, then cluster Gram normalization; native orthogonalized TAPW coefficient frame",
+        "gap_rms_mev": 1.8802416830755857,
+        "gap_max_error_mev": 2.593711957277659,
+        "model_sampled_min_gap_mev": 14.694628204977745,
+        "native_sampled_min_gap_mev": 15.350049993802628,
+        "model_gap_values_mev": [
+          18.043827716366373,
+          20.88179594067306,
+          19.815057836933214,
+          17.97923835992164,
+          14.694628204977745,
+          18.043827716685467
+        ],
+        "native_gap_values_mev": [
+          19.792996582598477,
+          23.47550789795072,
+          22.080205854081214,
+          19.654009642708914,
+          15.350049993802628,
+          19.792995281621373
+        ]
+      }
+    },
+    "projector_gap": {
+      "parameters": [
+        -18.63731251867774,
+        -8.810906733159781,
+        0.04747990715657983,
+        -0.04414463312395593,
+        0.018876345132669545,
+        -0.020872143945069685
+      ],
+      "m1": -0.20442765641139266,
+      "m2": -0.4324165758855625,
+      "nominal_parameters": 8,
+      "independent_real_parameters": 6,
+      "path_energy_rms_mev": 1.5614222703107792,
+      "path_energy_max_mev": 3.5954470233339335,
+      "path_pair_overlap_mean": 0.9677752604727442,
+      "path_pair_overlap_min": 0.9324754147828547,
+      "dense_local_direct_gap_min_mev": 2.310529941370952,
+      "dense_local_direct_gap_u": 0.31925000000000003,
+      "path_plus_dense_indirect_gap_mev": 2.300307531406372,
+      "principal_kinetic_coefficients": [
+        -27.44821925183752,
+        -9.826405785517958
+      ],
+      "fresh_gap": {
+        "rms_mev": 1.0719901301850912,
+        "max_mev": 2.3237929769903687,
+        "pair_overlap_mean": 0.9574440276568232,
+        "pair_overlap_min": 0.9391583612449231,
+        "minimum_principal_overlap_squared": 0.8677030835630062,
+        "reference_heff_native_pair_overlap_mean": 0.9999949614823035,
+        "reference_heff_native_pair_overlap_min": 0.9999907471553764,
+        "reconstruction": "(F+GY) times selected eigenvectors, then cluster Gram normalization; native orthogonalized TAPW coefficient frame",
+        "gap_rms_mev": 1.518957948624147,
+        "gap_max_error_mev": 2.075213765651472,
+        "model_sampled_min_gap_mev": 2.318315498158606,
+        "native_sampled_min_gap_mev": 4.167318401913533,
+        "model_gap_values_mev": [
+          2.668266742784621,
+          2.318315498158606,
+          2.4947975518947034,
+          3.0915093638969813,
+          3.902801603810645,
+          4.8037102344542575
+        ],
+        "native_gap_values_mev": [
+          4.743480508436093,
+          4.337253960750687,
+          4.167318401913533,
+          4.3292754006127865,
+          4.77345954816677,
+          5.414724798750825
+        ]
+      },
+      "fresh_2d": {
+        "rms_mev": 1.8176618561040976,
+        "max_mev": 3.3286752360313088,
+        "pair_overlap_mean": 0.9744949057293907,
+        "pair_overlap_min": 0.9614217972694634,
+        "minimum_principal_overlap_squared": 0.9226506502331404,
+        "reference_heff_native_pair_overlap_mean": 0.999994196535421,
+        "reference_heff_native_pair_overlap_min": 0.9999831413845431,
+        "reconstruction": "(F+GY) times selected eigenvectors, then cluster Gram normalization; native orthogonalized TAPW coefficient frame",
+        "gap_rms_mev": 1.5390662903220864,
+        "gap_max_error_mev": 2.187656732079386,
+        "model_sampled_min_gap_mev": 14.938875536257127,
+        "native_sampled_min_gap_mev": 15.350049993802628,
+        "model_gap_values_mev": [
+          18.391599434072653,
+          21.287851165871334,
+          20.199424964557505,
+          18.31524796818422,
+          14.938875536257127,
+          18.391599434398124
+        ],
+        "native_gap_values_mev": [
+          19.792996582598477,
+          23.47550789795072,
+          22.080205854081214,
+          19.654009642708914,
+          15.350049993802628,
+          19.792995281621373
+        ]
+      }
+    }
+  },
+  "scope": "Six fresh local and six fresh two-dimensional native points; no parameter or weight updates after evaluation"
+}

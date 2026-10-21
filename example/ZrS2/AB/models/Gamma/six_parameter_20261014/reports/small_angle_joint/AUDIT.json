@@ -1,0 +1,91 @@
+{
+  "cases": [
+    {
+      "case": "14_2.28",
+      "angle_deg": 2.28,
+      "reference_shape": [
+        69,
+        152,
+        152
+      ],
+      "reference_sha256": "6a601a3b9fdc16a806324bd9797bf76fb09171e5366ae1336c9d12a8d9b33e5d",
+      "final_native_sha256": "145afe28dbb0d95d2ff11e05fc0bc3282170e50b970ea552c0a6e2e3c12a0f20",
+      "train_count": 45,
+      "validation_count": 18,
+      "local_validation_count": 6
+    },
+    {
+      "case": "13_2.45",
+      "angle_deg": 2.45,
+      "reference_shape": [
+        66,
+        152,
+        152
+      ],
+      "reference_sha256": "0f2b578be01472062a618fecacfcca7f4cf4d7c4eb487016befd3d9273436db5",
+      "final_native_sha256": "94a41f9352562da9b28c13e83dc5cbeff0a6c41ac0a618f92dcf1e011417bd94",
+      "train_count": 43,
+      "validation_count": 17,
+      "local_validation_count": 6
+    },
+    {
+      "case": "12_2.65",
+      "angle_deg": 2.65,
+      "reference_shape": [
+        66,
+        152,
+        152
+      ],
+      "reference_sha256": "9b82246876d7e6ece31fee483d4020bf1f7bb7820b263ec0b141a8debfacb44a",
+      "final_native_sha256": "2bc72789e68d73107eaa1f6fc4e486853dd89a5af88fcbb2bd315b8b34c2ad4f",
+      "train_count": 44,
+      "validation_count": 16,
+      "local_validation_count": 6
+    },
+    {
+      "case": "11_2.88",
+      "angle_deg": 2.88,
+      "reference_shape": [
+        66,
+        152,
+        152
+      ],
+      "reference_sha256": "be2c896ebc092f360b88d89a39f45cb07da8332003f5d64c00d866ce67ae0bd6",
+      "final_native_sha256": "973e0d16c4687520ac162a69d29a0260ae02a2ac03fd366934bc5ae4e5ab05ea",
+      "train_count": 44,
+      "validation_count": 16,
+      "local_validation_count": 6
+    },
+    {
+      "case": "10_3.15",
+      "angle_deg": 3.15,
+      "reference_shape": [
+        66,
+        152,
+        152
+      ],
+      "reference_sha256": "688fcff0157156ae9fae09f4df2242947fc83508f4d996cc60c01bc0c413cc2d",
+      "final_native_sha256": "054224a27916691427f47bbdd72c8963db0287ba460bfbcd6ee11345a984c487",
+      "train_count": 43,
+      "validation_count": 17,
+      "local_validation_count": 6
+    }
+  ],
+  "parameter_names": [
+    "a1",
+    "a2",
+    "V1",
+    "V2",
+    "w1",
+    "w2"
+  ],
+  "parameters_per_angle": 6,
+  "hamiltonian_parameter_count_unchanged": true,
+  "jacobian_directional_relative_errors": [
+    1.7681125087529028e-08,
+    9.769026735867547e-09,
+    1.2022431305063985e-08
+  ],
+  "residual_count": 2029,
+  "source_commit": "3b6ca7f93e07d1e12e35d91c228476acce856712"
+}

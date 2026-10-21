@@ -1,0 +1,377 @@
+{
+  "selected": "lambda_10_quadratic",
+  "rule": "Minimum development score among lambda > 0; fresh native points excluded",
+  "selection_score": 2.944607270245267,
+  "baseline": {
+    "name": "independent_baseline",
+    "strength": null,
+    "start": "independent",
+    "parameters": [
+      [
+        -19.675060164337296,
+        -12.163164481171775,
+        0.044797771776070486,
+        -0.03996323279807268,
+        0.023983722491959812,
+        -0.024208803876104534
+      ],
+      [
+        -19.20048820381362,
+        -11.002849381000162,
+        0.04318124016944699,
+        -0.038738660245583985,
+        0.024978932794468726,
+        -0.01896145134188146
+      ],
+      [
+        -18.82087831264711,
+        -10.080505840712785,
+        0.042241296849215244,
+        -0.03706225220594223,
+        0.023500985860641734,
+        -0.018130514304022023
+      ],
+      [
+        -18.627798066001425,
+        -9.613848853329275,
+        0.04228409914369469,
+        -0.0356039668907137,
+        0.021875169331890987,
+        -0.018684542158743902
+      ],
+      [
+        -18.33529132278916,
+        -8.899214872791044,
+        0.04480879088787322,
+        -0.038225869650180155,
+        0.019681497649847883,
+        -0.01870262642798864
+      ]
+    ],
+    "development": {
+      "cases": [
+        {
+          "case": "14_2.28",
+          "angle_deg": 2.28,
+          "parameters": [
+            -19.675060164337296,
+            -12.163164481171775,
+            0.044797771776070486,
+            -0.03996323279807268,
+            0.023983722491959812,
+            -0.024208803876104534
+          ],
+          "validation": {
+            "energy_rms_mev": 1.111171997575123,
+            "energy_max_mev": 4.840558603906975,
+            "overlap_mean": 0.927931244296484,
+            "overlap_min": 0.8194135072851044,
+            "direct_gap_rms_mev": 1.8959467307014222,
+            "model_indirect_gap_mev": 0.6447461459648529,
+            "native_indirect_gap_mev": 0.583663804583523,
+            "indirect_gap_error_mev": 0.06108234138132995
+          },
+          "local_validation": {
+            "energy_rms_mev": 0.8303514649718284,
+            "energy_max_mev": 1.2188041785549801,
+            "overlap_mean": 0.9688988336012697,
+            "overlap_min": 0.9601708172955218,
+            "direct_gap_rms_mev": 0.12703439445161543,
+            "model_indirect_gap_mev": 3.3774916675202853,
+            "native_indirect_gap_mev": 3.391821090062308,
+            "indirect_gap_error_mev": -0.01432942254202263
+          }
+        },
+        {
+          "case": "13_2.45",
+          "angle_deg": 2.45,
+          "parameters": [
+            -19.20048820381362,
+            -11.002849381000162,
+            0.04318124016944699,
+            -0.038738660245583985,
+            0.024978932794468726,
+            -0.01896145134188146
+          ],
+          "validation": {
+            "energy_rms_mev": 1.2056744827519603,
+            "energy_max_mev": 3.3316496656300156,
+            "overlap_mean": 0.9350460966606434,
+            "overlap_min": 0.632472782444532,
+            "direct_gap_rms_mev": 2.568681764510694,
+            "model_indirect_gap_mev": 0.40090988389898663,
+            "native_indirect_gap_mev": 0.7255989495433823,
+            "indirect_gap_error_mev": -0.3246890656443957
+          },
+          "local_validation": {
+            "energy_rms_mev": 0.7432126844729937,
+            "energy_max_mev": 1.462170906190191,
+            "overlap_mean": 0.9468817478601506,
+            "overlap_min": 0.8589781164715524,
+            "direct_gap_rms_mev": 0.38707927535777015,
+            "model_indirect_gap_mev": 0.5505323823802033,
+            "native_indirect_gap_mev": 0.37912091720926355,
+            "indirect_gap_error_mev": 0.17141146517093975
+          }
+        },
+        {
+          "case": "12_2.65",
+          "angle_deg": 2.65,
+          "parameters": [
+            -18.82087831264711,
+            -10.080505840712785,
+            0.042241296849215244,
+            -0.03706225220594223,
+            0.023500985860641734,
+            -0.018130514304022023
+          ],
+          "validation": {
+            "energy_rms_mev": 1.4200022164862698,
+            "energy_max_mev": 4.078008371575355,
+            "overlap_mean": 0.9567561040986338,
+            "overlap_min": 0.863650203558088,
+            "direct_gap_rms_mev": 2.6658216180115772,
+            "model_indirect_gap_mev": 2.802605322124098,
+            "native_indirect_gap_mev": 3.0056711036436923,
+            "indirect_gap_error_mev": -0.20306578151959437
+          },
+          "local_validation": {
+            "energy_rms_mev": 0.9561120239961253,
+            "energy_max_mev": 1.704331612560936,
+            "overlap_mean": 0.9659359418539368,
+            "overlap_min": 0.9438852480762128,
+            "direct_gap_rms_mev": 0.7338709170285517,
+            "model_indirect_gap_mev": 2.7864911624919873,
+            "native_indirect_gap_mev": 1.5101615485164643,
+            "indirect_gap_error_mev": 1.276329613975523
+          }
+        },
+        {
+          "case": "11_2.88",
+          "angle_deg": 2.88,
+          "parameters": [
+            -18.627798066001425,
+            -9.613848853329275,
+            0.04228409914369469,
+            -0.0356039668907137,
+            0.021875169331890987,
+            -0.018684542158743902
+          ],
+          "validation": {
+            "energy_rms_mev": 1.588664999417596,
+            "energy_max_mev": 3.618327765587237,
+            "overlap_mean": 0.968522323076105,
+            "overlap_min": 0.9212071644638504,
+            "direct_gap_rms_mev": 2.3023672773808603,
+            "model_indirect_gap_mev": 4.578140611566604,
+            "native_indirect_gap_mev": 3.278353341585216,
+            "indirect_gap_error_mev": 1.2997872699813882
+          },
+          "local_validation": {
+            "energy_rms_mev": 1.2864459088164202,
+            "energy_max_mev": 2.4791516434887124,
+            "overlap_mean": 0.9644898223220552,
+            "overlap_min": 0.9374948203697535,
+            "direct_gap_rms_mev": 0.8290278880154042,
+            "model_indirect_gap_mev": 1.8447856695047171,
+            "native_indirect_gap_mev": 2.7384277732238615,
+            "indirect_gap_error_mev": -0.8936421037191444
+          }
+        },
+        {
+          "case": "10_3.15",
+          "angle_deg": 3.15,
+          "parameters": [
+            -18.33529132278916,
+            -8.899214872791044,
+            0.04480879088787322,
+            -0.038225869650180155,
+            0.019681497649847883,
+            -0.01870262642798864
+          ],
+          "validation": {
+            "energy_rms_mev": 1.636463997285184,
+            "energy_max_mev": 3.4196338136998072,
+            "overlap_mean": 0.9727500983599587,
+            "overlap_min": 0.946260389716128,
+            "direct_gap_rms_mev": 1.4742067953735576,
+            "model_indirect_gap_mev": 7.972229543283311,
+            "native_indirect_gap_mev": 6.408076733777079,
+            "indirect_gap_error_mev": 1.564152809506232
+          },
+          "local_validation": {
+            "energy_rms_mev": 1.2125814447105256,
+            "energy_max_mev": 2.5875469256585806,
+            "overlap_mean": 0.9630880190016546,
+            "overlap_min": 0.9369013377568194,
+            "direct_gap_rms_mev": 1.2129633511934201,
+            "model_indirect_gap_mev": 1.8852514876596116,
+            "native_indirect_gap_mev": 4.121498423337755,
+            "indirect_gap_error_mev": -2.2362469356781434
+          }
+        }
+      ],
+      "summary": {
+        "validation_energy_rms_mev": 1.3923955387032267,
+        "local_energy_rms_mev": 1.0057407053935785,
+        "validation_direct_gap_rms_mev": 2.1814048371956223,
+        "validation_overlap_min_mean": 0.8366008094935407,
+        "local_overlap_min_mean": 0.9274860679939719,
+        "scaled_curvature_rms": 0.1484831078488341,
+        "selection_score": 2.967935449180508
+      }
+    }
+  },
+  "candidates": [
+    {
+      "name": "lambda_0.1_previous",
+      "success": true,
+      "strength": 0.1,
+      "start": "previous",
+      "development_summary": {
+        "validation_energy_rms_mev": 1.3985170166803975,
+        "local_energy_rms_mev": 1.0284969491560552,
+        "validation_direct_gap_rms_mev": 2.14200081554198,
+        "validation_overlap_min_mean": 0.8391727322336335,
+        "local_overlap_min_mean": 0.9292133100043001,
+        "scaled_curvature_rms": 0.1462987395294944,
+        "selection_score": 2.9673221833253933
+      }
+    },
+    {
+      "name": "lambda_0.1_quadratic",
+      "success": true,
+      "strength": 0.1,
+      "start": "quadratic",
+      "development_summary": {
+        "validation_energy_rms_mev": 1.398508461413954,
+        "local_energy_rms_mev": 1.02859941474034,
+        "validation_direct_gap_rms_mev": 2.141933232375811,
+        "validation_overlap_min_mean": 0.8391608423140715,
+        "local_overlap_min_mean": 0.9292123588850579,
+        "scaled_curvature_rms": 0.14660962327217514,
+        "selection_score": 2.967461355753906
+      }
+    },
+    {
+      "name": "lambda_0_previous",
+      "success": true,
+      "strength": 0.0,
+      "start": "previous",
+      "development_summary": {
+        "validation_energy_rms_mev": 1.3986497883392741,
+        "local_energy_rms_mev": 1.0285185807422876,
+        "validation_direct_gap_rms_mev": 2.142357707888222,
+        "validation_overlap_min_mean": 0.8391716069573775,
+        "local_overlap_min_mean": 0.929214853727969,
+        "scaled_curvature_rms": 0.14747453114366577,
+        "selection_score": 2.9678523175962574
+      }
+    },
+    {
+      "name": "lambda_0_quadratic",
+      "success": true,
+      "strength": 0.0,
+      "start": "quadratic",
+      "development_summary": {
+        "validation_energy_rms_mev": 1.398569104167605,
+        "local_energy_rms_mev": 1.0285952585298719,
+        "validation_direct_gap_rms_mev": 2.14225172634828,
+        "validation_overlap_min_mean": 0.8391684927029169,
+        "local_overlap_min_mean": 0.9292125678455273,
+        "scaled_curvature_rms": 0.14783885841574873,
+        "selection_score": 2.9678839015147975
+      }
+    },
+    {
+      "name": "lambda_100_previous",
+      "success": false,
+      "strength": 100.0,
+      "start": "previous",
+      "development_summary": {
+        "validation_energy_rms_mev": 1.363769212052919,
+        "local_energy_rms_mev": 1.0371715798296475,
+        "validation_direct_gap_rms_mev": 2.049940684443161,
+        "validation_overlap_min_mean": 0.8409973102532012,
+        "local_overlap_min_mean": 0.9266515644369597,
+        "scaled_curvature_rms": 0.06821611459942259,
+        "selection_score": 2.888902270968785
+      }
+    },
+    {
+      "name": "lambda_100_quadratic",
+      "success": false,
+      "strength": 100.0,
+      "start": "quadratic",
+      "development_summary": {
+        "validation_energy_rms_mev": 1.363798176717383,
+        "local_energy_rms_mev": 1.0371077986399864,
+        "validation_direct_gap_rms_mev": 2.050185078204867,
+        "validation_overlap_min_mean": 0.8410304260463543,
+        "local_overlap_min_mean": 0.9266281471056661,
+        "scaled_curvature_rms": 0.06818526966899226,
+        "selection_score": 2.888853384866778
+      }
+    },
+    {
+      "name": "lambda_10_previous",
+      "success": true,
+      "strength": 10.0,
+      "start": "previous",
+      "development_summary": {
+        "validation_energy_rms_mev": 1.389580146617119,
+        "local_energy_rms_mev": 1.0295815047274328,
+        "validation_direct_gap_rms_mev": 2.1171459138435003,
+        "validation_overlap_min_mean": 0.8391044891057037,
+        "local_overlap_min_mean": 0.928849175564805,
+        "scaled_curvature_rms": 0.11362001286009826,
+        "selection_score": 2.9447489133396236
+      }
+    },
+    {
+      "name": "lambda_10_quadratic",
+      "success": true,
+      "strength": 10.0,
+      "start": "quadratic",
+      "development_summary": {
+        "validation_energy_rms_mev": 1.3894672522042824,
+        "local_energy_rms_mev": 1.0295278608545106,
+        "validation_direct_gap_rms_mev": 2.1170636509330114,
+        "validation_overlap_min_mean": 0.8390980762287279,
+        "local_overlap_min_mean": 0.9288529535247644,
+        "scaled_curvature_rms": 0.11361761426663984,
+        "selection_score": 2.944607270245267
+      }
+    },
+    {
+      "name": "lambda_1_previous",
+      "success": true,
+      "strength": 1.0,
+      "start": "previous",
+      "development_summary": {
+        "validation_energy_rms_mev": 1.397496735958338,
+        "local_energy_rms_mev": 1.0285558725863275,
+        "validation_direct_gap_rms_mev": 2.1389445592419456,
+        "validation_overlap_min_mean": 0.8391446114729229,
+        "local_overlap_min_mean": 0.92919904191541,
+        "scaled_curvature_rms": 0.13869130463942836,
+        "selection_score": 2.963749803803077
+      }
+    },
+    {
+      "name": "lambda_1_quadratic",
+      "success": true,
+      "strength": 1.0,
+      "start": "quadratic",
+      "development_summary": {
+        "validation_energy_rms_mev": 1.3973791959153883,
+        "local_energy_rms_mev": 1.0285077726812895,
+        "validation_direct_gap_rms_mev": 2.1388358284225975,
+        "validation_overlap_min_mean": 0.8391505471953927,
+        "local_overlap_min_mean": 0.9291985909261049,
+        "scaled_curvature_rms": 0.13854666160632317,
+        "selection_score": 2.963527063177085
+      }
+    }
+  ]
+}
