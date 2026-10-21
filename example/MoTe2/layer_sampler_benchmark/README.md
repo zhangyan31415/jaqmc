@@ -200,3 +200,53 @@ parameter-space metric solve and check microbatch output ordering:
 JAX_PLATFORMS=cpu python -m unittest discover \
   -s example/MoTe2/layer_sampler_benchmark -p test_helpers.py -v
 ```
+
+### Frozen-checkpoint measurement-cadence experiment
+
+`cadence_worker.py` evaluates the final frozen 18-hole, 2-degree checkpoint
+(SHA256 `6f79f2570485b3202cf40fac72c20b230ca286108e1faed5c0bb63a44f6b2423`)
+with the repaired `forward_laplacian` kinetic backend. It requires the original
+experiment artifact directory, including `frozen/checkpoint.pkl`,
+`bloch_shell5.npz`, `frozen/wolff_tuning.json`, and the prior `production`
+traces and summary. No weights are optimized.
+
+Run phases in this order, passing the same absolute `--base` and `--out`
+paths throughout:
+
+```bash
+python cadence_worker.py --base "$experiment_base" --out "$cadence_out" --phase validate
+# Use one rank per allocated GPU for each worker phase. SLURM_PROCID and
+# SLURM_NTASKS distribute cases; a single process also works.
+python cadence_worker.py --base "$experiment_base" --out "$cadence_out" --phase smoke
+python cadence_worker.py --base "$experiment_base" --out "$cadence_out" --phase pilot
+python cadence_analyze.py --base "$experiment_base" --out "$cadence_out" --phase pilot
+python cadence_worker.py --base "$experiment_base" --out "$cadence_out" --phase holdout
+python cadence_analyze.py --base "$experiment_base" --out "$cadence_out" --phase holdout
+```
+
+The pilot measures all four kernels at 5/10/20/40 sweeps between energy
+measurements (8 seeds, 32 walkers each, 2048 records). Selection minimizes
+measured sampling-plus-energy GPU seconds times independent-walker MCSE
+squared. `selection.json` is immutable once written. The independent holdout
+uses 12 new seeds, 32 walkers each, and 4096 records, evaluating each chosen
+cadence and cadence 10 as a baseline. Burn-in is 4100 sweeps throughout.
+Holdout initial families are four uniform seeds and eight perturbed-bank
+seeds; the underlying benchmark's family boundary remains at seed index 4.
+
+`REPORT_ZH.md` and `holdout_summary.json` distinguish actual stable observed
+precision crossings from asymptotic cost extrapolation. The 95% intervals
+resample whole walkers within seed and retain paired comparisons. Crossing
+intervals retain right-censored repeats; crossings at the first measured
+grid have limited time resolution. These are retrospective MCSE estimates,
+not optional-stopping guarantees or errors relative to an exact ground state.
+Intervals condition on measured hardware timing. Bootstrap selection
+frequencies do not establish probabilities that a cadence is truly optimal.
+Pilot diagnostic failures are reported and the holdout must independently
+pass all documented checks.
+
+Numerical analysis contracts (CPU; synthetic fixtures only):
+
+```bash
+python test_cadence_stats.py
+python test_cadence_pipeline.py
+```
