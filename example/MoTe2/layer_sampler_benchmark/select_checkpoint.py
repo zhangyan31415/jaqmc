@@ -6,7 +6,9 @@ from train import frozen_eval,atomic_json
 from sampler import Sampler,jax,jnp,np
 
 p=argparse.ArgumentParser();p.add_argument('--base',type=Path,required=True)
-p.add_argument('--evaluate',action='store_true');args=p.parse_args();base=args.base
+p.add_argument('--evaluate',action='store_true')
+p.add_argument('--kinetic-mode',choices=['scan','forward_laplacian'],default='scan')
+args=p.parse_args();base=args.base
 candidates=[];replica_status=[]
 for directory in sorted((base/'training').glob('seed*')):
     path=directory/'converged.pkl'
@@ -48,7 +50,7 @@ record=pickle.loads(Path(best['path']).read_bytes())
 data=dict(np.load(base/'bloch_shell5.npz'))
 blochhash=hashlib.sha256((base/'bloch_shell5.npz').read_bytes()).hexdigest()
 assert record['configuration']['bloch_sha256']==blochhash
-m=Sampler(walkers=128,covariant=True,spectral_g=data['g'],spectral_coeff=data['coeff'])
+m=Sampler(walkers=128,covariant=True,kinetic_mode=args.kinetic_mode,spectral_g=data['g'],spectral_coeff=data['coeff'])
 params=jax.tree_util.tree_map(jnp.asarray,record['params'])
 final=base/'frozen';final.mkdir(exist_ok=True)
 candidate_directory=Path(best['path']).parent
@@ -76,7 +78,7 @@ if not holdout['mixing_pass'] or abs(holdout['mean']-best['mean'])>3*np.hypot(ho
     raise RuntimeError('Independent final holdout failed.')
 shutil.copyfile(best['path'],final/'checkpoint.pkl')
 sha=hashlib.sha256((final/'checkpoint.pkl').read_bytes()).hexdigest()
-selection=dict(candidates=candidates,replica_status=replica_status,chosen=best,independent_final_holdout=holdout,
+selection=dict(validation_kinetic_mode=args.kinetic_mode,candidates=candidates,replica_status=replica_status,chosen=best,independent_final_holdout=holdout,
     cross_replica_final_holdouts=final_checks,
     checkpoint_sha256=sha,bloch_sha256=blochhash,
     convergence_scope='Numerical SR plateau within the stated covariant neural architecture; no claim of exact ground state or FCI topology.')

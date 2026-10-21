@@ -1,0 +1,8 @@
+-r requirements.txt
+# Published0.0.8 predates JAX0.11; pin the upstream compatibility fixes.
+kfac-jax @ git+https://github.com/google-deepmind/kfac-jax.git@6567eb076e7e39af443d2d8dfafd3425119d8417
+distrax==0.1.9
+tfp-nightly==0.26.0.dev20261021
+chex==0.1.92
+immutabledict==4.3.1
+dm-tree==0.1.10

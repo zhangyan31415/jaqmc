@@ -60,6 +60,7 @@ def _make_flax_dense_pattern(
     num_repeated_axes: int,
     num_in_dims: int,
     num_out_dims: int,
+    parameter_dtype=np.float32,
 ) -> kfac_jax.tag_graph_matcher.GraphPattern:
     """Returns a pattern for a dense or repeated dense layer."""
     batch_dim = (2,)
@@ -72,6 +73,8 @@ def _make_flax_dense_pattern(
     p_shapes = [weight_shape, out_dims] if with_bias else [weight_shape]
 
     name = "flax_dense_with_bias" if with_bias else "flax_dense_no_bias"
+    if parameter_dtype == np.float64:
+        name += "_float64"
 
     if num_repeated_axes > 0:
         name = f"repeated[{num_repeated_axes}]_{name}"
@@ -88,7 +91,7 @@ def _make_flax_dense_pattern(
         ),
         example_args=[
             np.zeros(x_shape),
-            [np.zeros(s, dtype=np.float32) for s in p_shapes],
+            [np.zeros(s, dtype=parameter_dtype) for s in p_shapes],
         ],
     )
 
@@ -250,9 +253,10 @@ def make_graph_patterns():
                 num_repeated_axes=repeat,
                 num_in_dims=n_ins,
                 num_out_dims=n_outs,
+                parameter_dtype=parameter_dtype,
             )
-            for with_bias, repeat, n_ins, n_outs in itertools.product(
-                (True, False), range(4), range(1, 3), range(1, 3)
+            for with_bias, repeat, n_ins, n_outs, parameter_dtype in itertools.product(
+                (True, False), range(4), range(1, 3), range(1, 3), (np.float32, np.float64)
             )
         ),
         *kfac_jax.tag_graph_matcher.DEFAULT_GRAPH_PATTERNS,

@@ -7,9 +7,10 @@ from nqs18 import MoireData
 
 parser=argparse.ArgumentParser();parser.add_argument('--checkpoint',type=Path)
 parser.add_argument('--base',type=Path,default=Path(__file__).resolve().parent)
+parser.add_argument('--kinetic-mode',choices=['scan','forward_laplacian'],default='scan')
 args=parser.parse_args();base=args.base
 data=dict(np.load(base/'bloch_shell5.npz'))
-m=Sampler(walkers=2,covariant=True,spectral_g=data['g'],spectral_coeff=data['coeff'])
+m=Sampler(walkers=2,covariant=True,kinetic_mode=args.kinetic_mode,spectral_g=data['g'],spectral_coeff=data['coeff'])
 p,r,s=initialize(m,733,data)
 if args.checkpoint:
     with args.checkpoint.open('rb') as f:record=pickle.load(f)

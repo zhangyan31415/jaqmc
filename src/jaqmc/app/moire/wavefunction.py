@@ -128,7 +128,12 @@ class MultiPhaseLayer(nn.Module):
         multik = self.param("multik", init_multik, (nk, nelec * ndets))
         kdot = positions @ klist.T
         trig_features = jnp.stack([jnp.cos(kdot), jnp.sin(kdot)], axis=-2)
-        mixed = jnp.dot(trig_features, multik)
+        # Expose the trainable contraction to KFAC graph matching. jnp.dot
+        # introduces a nested jit boundary on newer JAX versions.
+        mixed = jax.lax.dot_general(
+            trig_features, multik,
+            (((trig_features.ndim - 1,), (0,)), ((), ())),
+        )
         cos_mix = mixed[..., 0, :]
         sin_mix = mixed[..., 1, :]
         phase = (cos_mix + 1j * sin_mix).reshape(*cos_mix.shape[:-1], nelec, ndets)

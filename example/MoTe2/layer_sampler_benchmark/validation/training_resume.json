@@ -1,0 +1,11 @@
+{
+  "check": "40 uninterrupted vs20+20 resumed actual training",
+  "errors": {
+    "params": 2.55351295663786e-15,
+    "positions": 0.0,
+    "angles": 0.0,
+    "key": 0.0,
+    "optimizer_state": 4.313216450668733e-14
+  },
+  "no_convergence_claim": true
+}

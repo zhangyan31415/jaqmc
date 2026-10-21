@@ -26,6 +26,7 @@ def run_case(ex, p, bank, method, seed, count, cadence, kind, obs_batch, output)
         assert previous['checkpoint_sha256']==ex.checkpoint_sha
         assert previous['sampling_source_sha256']==source_sha
         assert previous['walkers']==ex.walkers
+        assert previous.get('kinetic_mode','scan')==ex.kinetic_mode
         assert previous['fixed_r_width']==.07
         assert previous['fixed_angle_width']==(np.pi if method=='continuous' else None)
         assert previous['cadence_sweeps']==cadence
@@ -121,7 +122,7 @@ def run_case(ex, p, bank, method, seed, count, cadence, kind, obs_batch, output)
     temporary.replace(path)
     record = dict(kind=kind, method=method, seed=seed, measurements=count, walkers=ex.walkers,
         checkpoint_sha256=ex.checkpoint_sha,continued_from=completed,
-        sampling_source_sha256=source_sha,
+        sampling_source_sha256=source_sha,kinetic_mode=ex.kinetic_mode,
         cadence_sweeps=cadence, burn_sweeps=10*burn_chunks, fixed_r_width=rw, fixed_angle_width=sw if cont else None,
         coupling=coupling if method=='wolff_corrected' else None,
         proxy_radius=radius if method=='wolff_corrected' else None, initial_family=family,
@@ -144,6 +145,7 @@ def main():
     parser.add_argument('--out',type=Path);parser.add_argument('--checkpoint',type=Path)
     parser.add_argument('--records',type=int,default=4096)
     parser.add_argument('--reference-records',type=int,default=8192)
+    parser.add_argument('--kinetic-mode',choices=['scan','forward_laplacian'],default='scan')
     parser.add_argument('--smoke',action='store_true');parser.add_argument('--pilot',action='store_true');args=parser.parse_args()
     base=args.base;output=args.out or base/'production'
     for sub in ['traces','states','records','progress']:(output/sub).mkdir(parents=True,exist_ok=True)
@@ -155,7 +157,8 @@ def main():
         assert selected['checkpoint_sha256']==digest
     data=dict(np.load(base/'bloch_shell5.npz'))
     assert hashlib.sha256((base/'bloch_shell5.npz').read_bytes()).hexdigest()==record['configuration']['bloch_sha256']
-    ex=Sampler(walkers=32,covariant=True,spectral_g=data['g'],spectral_coeff=data['coeff'])
+    ex=Sampler(walkers=32,covariant=True,kinetic_mode=args.kinetic_mode,spectral_g=data['g'],spectral_coeff=data['coeff'])
+    ex.kinetic_mode=args.kinetic_mode
     ex.checkpoint_sha=digest
     ex.energy_batch=ex.batch_energy(8)
     params=jax.tree_util.tree_map(jnp.asarray,record['params'])
@@ -166,7 +169,7 @@ def main():
         visible=os.environ.get('CUDA_VISIBLE_DEVICES'),job_id=os.environ.get('SLURM_JOB_ID'),
         rank=rank,affinity=sorted(os.sched_getaffinity(0)),checkpoint=str(checkpoint),
         checkpoint_sha256=digest,second_moment_validation_error=residual,
-        smoke=args.smoke,source_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest()
+        smoke=args.smoke,kinetic_mode=args.kinetic_mode,source_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest()
              for p in Path(__file__).resolve().parent.glob('*.py')})
     atomic_json(output/f'metadata_{rank}.json',metadata);print('METADATA',json.dumps(metadata),flush=True)
     bank=record['positions']

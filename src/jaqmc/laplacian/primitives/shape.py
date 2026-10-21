@@ -618,6 +618,27 @@ def handle_concatenate(args, kwargs):
     )
 
 
+def handle_stack(args, kwargs):
+    """Lower JAX 0.11's stack primitive to existing linear shape rules.
+
+    Stack is linear; the generic Hessian fallback is both unnecessary and
+    especially expensive for particle-pair streams.
+    """
+    axis = int(kwargs["axis"])
+    expanded = []
+    for arg in args:
+        shape = arg.x.shape if isinstance(arg, LapTuple) else arg.shape
+        normalized_axis = axis if axis >= 0 else axis + len(shape) + 1
+        new_shape = (*shape[:normalized_axis], 1, *shape[normalized_axis:])
+        expanded.append(handle_broadcast_in_dim((arg,), {
+            "shape": new_shape,
+            "broadcast_dimensions": tuple(
+                i if i < normalized_axis else i + 1 for i in range(len(shape))
+            ),
+        }))
+    return handle_concatenate(tuple(expanded), {"dimension": normalized_axis})
+
+
 SHAPE_HANDLERS: dict[Primitive | str, LaplacianHandler] = {
     jax.lax.reshape_p: handle_reshape,
     jax.lax.transpose_p: handle_transpose,
@@ -629,3 +650,5 @@ SHAPE_HANDLERS: dict[Primitive | str, LaplacianHandler] = {
 }
 if hasattr(jax.lax, "split_p"):
     SHAPE_HANDLERS[jax.lax.split_p] = handle_split
+if hasattr(jax.lax, "stack_p"):
+    SHAPE_HANDLERS[jax.lax.stack_p] = handle_stack

@@ -56,7 +56,7 @@ class RepeatedDenseBlock(kfac_jax.DenseTwoKroneckerFactored):
     Therefore, we need to modify the ways to handle the parameters.
     """
 
-    def __init__(self, layer_tag_eq):
+    def __init__(self, layer_tag_eq, **kwargs):
         # Even though the superclass constructor will set this later, we need to do
         # it now since it's used below by `self.parameters_shapes`.
         self._layer_tag_eq = layer_tag_eq
@@ -70,7 +70,7 @@ class RepeatedDenseBlock(kfac_jax.DenseTwoKroneckerFactored):
             out_str = f"({in_str[:-w_dim_out]})({in_str[-w_dim_out:]})"
             parameters_specs.append(f"{in_str} -> {out_str}")
 
-        super().__init__(layer_tag_eq, parameters_specs)
+        super().__init__(layer_tag_eq, parameters_specs=parameters_specs, **kwargs)
 
     @property
     def weight_dimension_split(self) -> tuple[int, int]:

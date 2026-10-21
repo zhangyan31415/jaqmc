@@ -87,11 +87,14 @@ class KFACOptimizer:
     """
 
     learning_rate: Any = module_config(Standard, direct_value_type=float)
-    norm_constraint: float = 1e-3
+    norm_constraint: float | None = 1e-3
     curvature_ema: float = 0.95
     l2_reg: float = 0.0
     inverse_update_period: int = 1
     damping: float = 1e-3
+    pmap_axis_name: str | None = BATCH_AXIS_NAME
+    predictive_variance: float = 0.5
+    reject_generic: bool = False
     f_log_psi: NumericWavefunctionEvaluate = runtime_dep()
 
     def init(
@@ -115,9 +118,18 @@ class KFACOptimizer:
         """
         del extra
         self._build(self.f_log_psi)
+        precondition_state = self._preconditioner.init((params, batched_data), rngs)
+        if self.reject_generic and any(
+            eq.params["meta"].variant == "generic"
+            for eq in self._preconditioner.estimator.jaxpr.layer_tags
+        ):
+            raise ValueError(
+                "KFAC fisher_exact has generic shared-parameter blocks; "
+                "register supported dense/scale layers before training."
+            )
         return KFACState(
             self._tx.init(params),
-            self._preconditioner.init((params, batched_data), rngs),
+            precondition_state,
         )
 
     def update(
@@ -169,7 +181,9 @@ class KFACOptimizer:
         def value_func(params: Params, batched_data: BatchedData):
             batch_log_psi = jax.vmap(f_log_psi, in_axes=(None, batched_data.vmap_axis))
             logpsi = batch_log_psi(params, batched_data.data)
-            kfac_jax.register_normal_predictive_distribution(logpsi[:, None])
+            kfac_jax.register_normal_predictive_distribution(
+                logpsi[:, None], variance=self.predictive_variance
+            )
             return logpsi
 
         self._preconditioner = kfac_jax.OptaxPreconditioner(
@@ -180,7 +194,7 @@ class KFACOptimizer:
             curvature_ema=self.curvature_ema,
             inverse_update_period=self.inverse_update_period,
             estimation_mode="fisher_exact",
-            pmap_axis_name=BATCH_AXIS_NAME,
+            pmap_axis_name=self.pmap_axis_name,
             layer_tag_to_block_ctor=make_tag_to_block_ctor(),
             auto_register_kwargs=dict(graph_patterns=make_graph_patterns()),
             # The default batch_size_extractor is not smart enough. Since we already

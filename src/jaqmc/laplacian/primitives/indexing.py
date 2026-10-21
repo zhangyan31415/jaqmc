@@ -13,11 +13,15 @@
 """Forward Laplacian rules for indexing primitives."""
 
 import jax
-import jax.core
 import jax.numpy as jnp
 import numpy as np
 from jax.errors import ConcretizationTypeError
 from jax.extend.core import Primitive
+
+try:
+    from jax.extend.core import concrete_or_error
+except ImportError:  # JAX releases before this public extension API moved.
+    from jax.core import concrete_or_error
 
 from ..guards import is_sparse_laptuple
 from ..sparse import OwnerRole
@@ -165,7 +169,7 @@ def handle_gather(args, kwargs):
         )
 
     try:
-        concrete_indices = jax.core.concrete_or_error(np.asarray, start_indices)
+        concrete_indices = concrete_or_error(np.asarray, start_indices)
     except ConcretizationTypeError:
         concrete_indices = None
     label_gather_kwargs = {**kwargs, "fill_value": -1}

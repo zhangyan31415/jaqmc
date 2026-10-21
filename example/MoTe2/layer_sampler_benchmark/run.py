@@ -10,6 +10,10 @@ def main():
     parser.add_argument('--out',type=Path,required=True)
     parser.add_argument('--gpus',default=os.environ.get('CUDA_VISIBLE_DEVICES','0'))
     parser.add_argument('--threads',type=int,default=4)
+    parser.add_argument('--optimizer',choices=['sr','kfac'],default='sr')
+    parser.add_argument('--kinetic-mode',choices=['scan','forward_laplacian'],default='scan')
+    parser.add_argument('--kfac-inverse-period',type=int,default=10)
+    parser.add_argument('--reset-optimizer',action='store_true')
     parser.add_argument('--stage',choices=['all','init','validate','train','evaluate','pilot','compare','analyze'],default='all')
     args=parser.parse_args();out=args.out.resolve();out.mkdir(parents=True,exist_ok=True)
     gpus=[g.strip() for g in args.gpus.split(',') if g.strip()]
@@ -20,7 +24,8 @@ def main():
     env.update(JAX_ENABLE_X64='true',XLA_PYTHON_CLIENT_PREALLOCATE='false',JAX_PLATFORMS='cuda',
                OMP_NUM_THREADS=str(args.threads),OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1',NUMEXPR_NUM_THREADS='1')
     (out/'launcher.json').write_text(json.dumps(dict(command=sys.argv,python=sys.executable,
-        gpus=gpus,processes_per_gpu=1,threads_per_process=args.threads,source=str(HERE)),indent=2))
+        gpus=gpus,processes_per_gpu=1,threads_per_process=args.threads,source=str(HERE),
+        optimizer=args.optimizer,kinetic_mode=args.kinetic_mode,kfac_inverse_period=args.kfac_inverse_period),indent=2))
 
     def stage(name,script,arguments=(),parallel=False):
         (out/'CURRENT_STAGE.txt').write_text(name+'\n')
@@ -53,26 +58,29 @@ def main():
         stage('report','report.py',['--base',out])
         stage('verify','verify_results.py',['--base',out])
 
+    backend=['--kinetic-mode',args.kinetic_mode]
     chosen=args.stage
     if chosen in ['all','init']:
         if not (out/'bloch_shell5.npz').exists():stage('initialize','spectral.py',['--out',out/'bloch_shell5.npz'])
-    if chosen in ['all','validate']:stage('validate_initial','validate.py',['--base',out])
+    if chosen in ['all','validate']:stage('validate_initial','validate.py',['--base',out,*backend])
     if chosen in ['all','train']:
         stage('train','train.py',['--base',out,'--refine','--minimum-steps',8000,'--max-steps',16000,
-              '--plateau-threshold',.02,'--holdout-records',2048],True)
+              '--plateau-threshold',.02,'--holdout-records',2048,'--optimizer',args.optimizer,
+              '--kfac-inverse-period',args.kfac_inverse_period,*backend,
+              *(['--reset-optimizer'] if args.reset_optimizer else [])],True)
     if chosen in ['all','evaluate']:
-        stage('evaluate_candidates','select_checkpoint.py',['--base',out,'--evaluate'],True)
-        stage('freeze','select_checkpoint.py',['--base',out])
-        stage('validate_trained','validate.py',['--base',out,'--checkpoint',out/'frozen/checkpoint.pkl'])
+        stage('evaluate_candidates','select_checkpoint.py',['--base',out,'--evaluate',*backend],True)
+        stage('freeze','select_checkpoint.py',['--base',out,*backend])
+        stage('validate_trained','validate.py',['--base',out,'--checkpoint',out/'frozen/checkpoint.pkl',*backend])
     if chosen in ['all','pilot']:
-        stage('pilot','benchmark_worker.py',['--base',out,'--pilot','--out',out/'pilot'],True)
+        stage('pilot','benchmark_worker.py',['--base',out,'--pilot','--out',out/'pilot',*backend],True)
         stage('tune','tune_wolff.py',['--base',out])
     if chosen in ['all','compare']:
-        stage('compare','benchmark_worker.py',['--base',out],True)
+        stage('compare','benchmark_worker.py',['--base',out,*backend],True)
         try:analyze()
         except subprocess.CalledProcessError as error:
             if error.returncode!=3 or error.cmd!=['verify']:raise
-            stage('extend','benchmark_worker.py',['--base',out,'--records',8192,'--reference-records',16384],True)
+            stage('extend','benchmark_worker.py',['--base',out,'--records',8192,'--reference-records',16384,*backend],True)
             analyze()
     elif chosen=='analyze':analyze()
     (out/'CURRENT_STAGE.txt').write_text('completed '+chosen+'\n')

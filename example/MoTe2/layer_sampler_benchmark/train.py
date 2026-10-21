@@ -1,4 +1,4 @@
-"""Independent SR training replicas with frozen holdouts and explicit plateau gate."""
+"""Independent SR/KFAC training replicas with frozen holdouts and explicit plateau gate."""
 from helpers import task_rank
 from pathlib import Path
 import argparse,json,pickle,os,socket,time,sys,hashlib
@@ -6,7 +6,8 @@ from sampler import Sampler,N,coefficients,jax,jnp,np
 from spectral import initialize
 from nqs18 import MoireData,microbatch_map
 from jax.flatten_util import ravel_pytree
-from helpers import sr_direction, source_commit
+from helpers import source_commit
+from optimizers import TrainingUpdate
 sys.path.insert(0,str(Path(__file__).resolve().parent/'source'))
 from mcstats import summary as analyze_trace,split_rhat
 
@@ -62,7 +63,8 @@ def train(args):
     rank=task_rank();seed=731+rank*103
     out=args.base/'training'/f'seed{seed}';out.mkdir(parents=True,exist_ok=True)
     data=dict(np.load(args.base/'bloch_shell5.npz'))
-    m=Sampler(walkers=128,covariant=True,spectral_g=data['g'],spectral_coeff=data['coeff'])
+    m=Sampler(walkers=128,covariant=True,kinetic_mode=args.kinetic_mode,
+        spectral_g=data['g'],spectral_coeff=data['coeff'])
     p,r,s=initialize(m,seed,data);flat,unravel=ravel_pytree(p)
     state=m.initial(p,seed+10000,True)
     chunk=m.make_chunk('continuous',10);energy=m.batch_energy(8)
@@ -76,51 +78,45 @@ def train(args):
             for f in Path(__file__).resolve().parent.glob('*.py')},
         bloch_input=str(args.base/'bloch_shell5.npz'),
         bloch_sha256=hashlib.sha256((args.base/'bloch_shell5.npz').read_bytes()).hexdigest(),
-        native_source_commit=source_commit())
+        native_source_commit=source_commit(),optimizer=args.optimizer,kinetic_mode=args.kinetic_mode)
     atomic_json(out/'provenance.json',provenance);print('ENV',json.dumps(provenance),flush=True)
 
-    @jax.jit
-    def update(p,r,u,lr):
-        chi=jax.vmap(coefficients)(u);e=energy(p,r,chi)[:,0]
-        x,_=ravel_pytree(p)
-        def one(a,b):
-            def logs(v):
-                z=m.logdata(unravel(v),MoireData(positions=a,spin_coords=b))
-                return jnp.stack([z.real,z.imag])
-            return jax.jacrev(logs)(x)
-        jac=microbatch_map(one,r,chi,8);o=jac[:,0,:]+1j*jac[:,1,:]
-        med=jnp.median(e.real);mad=jnp.maximum(jnp.mean(abs(e.real-med)),.1)
-        medi=jnp.median(e.imag);madi=jnp.maximum(jnp.mean(abs(e.imag-medi)),.1)
-        clipped=jnp.clip(e.real,med-5*mad,med+5*mad)+1j*jnp.clip(e.imag,medi-5*madi,medi+5*madi)
-        direction=sr_direction(o,clipped,.05)
-        delta=lr*direction
-        metric=jnp.sqrt(jnp.mean(abs((o-o.mean(axis=0))@delta)**2))
-        delta*=jnp.minimum(1.,.05/jnp.maximum(metric,1e-12))
-        delta*=jnp.minimum(1.,.15/jnp.maximum(jnp.linalg.norm(delta),1e-12))
-        return unravel(x-delta),jnp.array([e.real.mean(),e.real.std(),e.imag.mean(),jnp.linalg.norm(delta),metric])
-
-    history=[];holdouts=[];begin=time.perf_counter();rw=.07
+    optimizer_configuration=dict(optimizer=args.optimizer,kinetic_mode=args.kinetic_mode,
+        damping=args.damping,inverse_period=args.kfac_inverse_period,ema=args.kfac_ema)
+    history=[];holdouts=[];begin=time.perf_counter();rw=.07;record=None
     resume=out/'latest.pkl'
     start=0
     if resume.exists():
         with resume.open('rb') as f:record=pickle.load(f)
         assert record['configuration']['bloch_sha256']==provenance['bloch_sha256']
         assert record['configuration']['theta_deg']==2 and record['configuration']['holes']==N
+        old_config=record.get('optimizer_configuration')
+        legacy=(old_config is None and args.optimizer=='sr' and args.kinetic_mode=='scan' and args.damping==.05)
+        if old_config!=optimizer_configuration and not legacy and not args.reset_optimizer:
+            raise ValueError('Optimizer/backend configuration changed; use --reset-optimizer to migrate weights explicitly.')
         p=jax.tree_util.tree_map(jnp.asarray,record['params'])
         state=(jnp.asarray(record['positions']),jnp.asarray(record['angles']),None,jnp.asarray(record['key']))
         start=record['step'];rw=record['rw'];history=record['history'];holdouts=record['holdouts']
         if args.refine and (out/'converged.pkl').exists():
             old_gate=json.loads((out/'gate.json').read_text())
-            if old_gate['passed'] and old_gate['threshold']<=args.plateau_threshold and start>=args.minimum_steps:
+            if old_gate['passed'] and old_gate['threshold']<=args.plateau_threshold and start>=args.minimum_steps and not args.reset_optimizer:
                 print('ALREADY_REFINED',seed,flush=True);return
             (out/'converged.pkl').replace(out/f'coarse_converged_{start}.pkl')
     else:
         for i in range(205):
             state,acc=chunk(p,state,rw,jnp.pi,.35)
             if i<100:rw=float(np.clip(rw*np.exp(.05*(float(acc[0])-.45)),.015,.15))
+    trainer=TrainingUpdate(m,p,optimizer=args.optimizer,damping=args.damping,
+        inverse_period=args.kfac_inverse_period,ema=args.kfac_ema)
+    optimizer_state=trainer.init(p,state[0],state[1],jax.random.fold_in(state[3],201))
+    if record is not None and not args.reset_optimizer and record.get('optimizer_state') is not None:
+        optimizer_state=jax.tree.map(jnp.asarray,record['optimizer_state'])
+    if args.reset_optimizer and holdouts:
+        atomic_json(out/f'holdouts_before_reset_{start}.json',holdouts);holdouts=[]
     def save(step,path):
         item=dict(params=jax.device_get(p),positions=np.asarray(state[0]),angles=np.asarray(state[1]),
                   key=np.asarray(state[3]),step=step,rw=rw,history=history,holdouts=holdouts,
+                  optimizer_configuration=optimizer_configuration,optimizer_state=jax.device_get(optimizer_state),
                   optimization_gate=dict(threshold=args.plateau_threshold,minimum_steps=args.minimum_steps,
                       holdout_records=args.holdout_records,refinement=args.refine,
                       refinement_lr_multiplier=.5 if args.refine else 1.),
@@ -148,7 +144,7 @@ def train(args):
         if args.refine:lr*=.5
         state=(state[0],state[1],m.phi_batch(p,state[0]),state[3])
         state,acc=chunk(p,state,rw,jnp.pi,.35)
-        p,metrics=update(p,state[0],state[1],lr)
+        p,optimizer_state,metrics=trainer.step(p,optimizer_state,state[0],state[1],lr,jax.random.fold_in(state[3],step))
         a=np.asarray(metrics)
         if not np.all(np.isfinite(a)):raise FloatingPointError((step,a))
         if (step+1)%20==0:
@@ -187,4 +183,11 @@ if __name__=='__main__':
     parser.add_argument('--minimum-steps',type=int,default=8000)
     parser.add_argument('--plateau-threshold',type=float,default=.02)
     parser.add_argument('--holdout-records',type=int,default=2048)
-    parser.add_argument('--refine',action='store_true');train(parser.parse_args())
+    parser.add_argument('--refine',action='store_true')
+    parser.add_argument('--optimizer',choices=['sr','kfac'],default='sr')
+    parser.add_argument('--kinetic-mode',choices=['scan','forward_laplacian'],default='scan')
+    parser.add_argument('--damping',type=float,default=.05)
+    parser.add_argument('--kfac-inverse-period',type=int,default=10)
+    parser.add_argument('--kfac-ema',type=float,default=.95)
+    parser.add_argument('--reset-optimizer',action='store_true')
+    train(parser.parse_args())

@@ -30,7 +30,63 @@ research project, private dependency directory or editable installation.
 The main project's package metadata currently caps JAX at0.9.1, so **do not
 combine `pip install -e .` with this example's0.11.2 runtime**. Other JAX
 versions have not been validated for this experiment. Kinetic energy uses
-`scan`; the forward-Laplacian backend was incompatible with0.11.2.
+`scan` or `forward_laplacian`; the JAX0.11 gather API and stack rules are
+fixed in this branch. The latter is faster on the tested18-hole fixture.
+
+## KFAC and forward Laplacian
+
+Install the tested KFAC environment, then select both backends explicitly:
+
+```bash
+python -m pip install -r example/MoTe2/layer_sampler_benchmark/requirements-kfac.txt
+python -m pip install 'jax[cuda12]==0.11.2'
+python example/MoTe2/layer_sampler_benchmark/run.py \
+  --out "$PWD/runs/mote2_18h_kfac_forward" --gpus 0,1,2,3 \
+  --optimizer kfac --kinetic-mode forward_laplacian --kfac-inverse-period 10
+```
+
+The optional requirements pin an upstream KFAC-JAX Git commit with JAX0.11
+compatibility fixes, plus the tested Distrax/TFP dependencies. Installing the
+published `kfac-jax==0.0.8` wheel alone is insufficient on JAX0.11.2.
+The defaults remain `--optimizer sr --kinetic-mode scan` for reproducibility.
+Both choices propagate through training, frozen validation and sampling.
+KFAC initialization/compilation is recorded separately from hot-step timings.
+
+KFAC uses the native complex-wavefunction implementation with real parameters,
+variance1 for its registered predictive distribution, damping.05, EMA.95 and
+one inverse refresh every10 steps by default. `--kfac-inverse-period 1` refreshes
+every step. Its block approximation uses uncentered curvature; the SR backend
+uses the centered empirical quantum metric. The directions need not be equal.
+Both use the same force Re<conj(O)*(E_local-mean(E_local))> and the same centered
+empirical quantum-metric/parameter trust caps. The force convention is half the
+real energy gradient and is identical for both optimizers.
+
+The float64 dense patterns include biases; the trainable momentum contraction
+is exposed to graph matching. All parameters in the tested model occupy10
+repeated-dense blocks. Unmatched `generic` shared-parameter blocks are rejected:
+replicated-one-hot `fisher_exact` tangents can otherwise cancel their phase
+curvature. There is an explicit rejection regression, not a silent fallback.
+
+Training checkpoints retain KFAC EMA factors, inverse caches, optimizer count,
+full sampler state and backend configuration. Resume requires the same config.
+To deliberately migrate trusted weights from a previous optimizer/backend, add
+`--reset-optimizer`; earlier holdouts are archived and new validation is needed.
+Sampling continuation also requires the same kinetic backend so its timing
+series is not mixed. A KFAC-trained checkpoint must be loaded in an environment
+with its KFAC dependencies available.
+
+[Measured18-hole checks and timings](BACKEND_VALIDATION.md) distinguish pure
+local-energy evaluation, full optimizer updates and short actual training loops.
+Single-step throughput does not establish time to a converged target energy.
+
+To repeat those checks using a trusted trained128-walker checkpoint and its
+matching Bloch input:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python example/MoTe2/layer_sampler_benchmark/benchmark_backends.py \
+  --checkpoint /absolute/run/training/seed731/checkpoint_2000.pkl \
+  --bloch /absolute/run/bloch_shell5.npz --out /absolute/backend_checks
+```
 
 ## Run on another GPU machine
 
@@ -76,7 +132,7 @@ included in this commit.
 
 1. Build full-continuum Bloch initialization orbitals (shell5), and check
    shell6, antisymmetry, Gamma momentum projection and Fourier/energy identities.
-2. Train four independent128-walker SR replicas:32x3 single-particle and16x3
+2. Train four independent128-walker SR/KFAC replicas:32x3 single-particle and16x3
    pair streams,8854 parameters. From-scratch strict training starts with half
    the base learning-rate schedule; restore-point strict holdouts are added
    when resuming coarse training. A fixed step count does not certify convergence.
