@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "archive_date": "2026-10-21",
+  "copied_files": 112,
+  "all_copied_file_source_and_destination_sha256_match": true,
+  "python": "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+  "python_version": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "usage_checks": [
+    {
+      "material": "mote2",
+      "kind": "portable usage smoke check only; not refitting or material-accuracy validation",
+      "stdout": "{'mass_over_me': np.float64(0.6793823256145924), 'V1_meV': np.float64(9.298069800273021), 'phi_deg': np.float64(88.73844433549095), 'w1_meV': np.float64(-10.228179087299573), 'V2_meV': np.float64(15.885035559117508), 'w2_meV': np.float64(9.46304005923026)}\n[ 0.00985741 -0.00972695 -0.01604378]\n",
+      "exit_code": 0
+    },
+    {
+      "material": "wse2",
+      "kind": "portable usage smoke check only; not refitting or material-accuracy validation",
+      "stdout": "{'mass_over_me': np.float64(0.342128286177495), 'V1_meV': np.float64(4.262850492037575), 'phi_deg': np.float64(119.91215760667775), 'w1_meV': np.float64(-11.296632316981746), 'V2_meV': np.float64(54.081499870692305), 'w2_meV': np.float64(3.2537878832678477), 'lambda_eV_A': np.float64(0.057115663561416986)}\n[-0.01437373 -0.02787361 -0.04040345]\n",
+      "exit_code": 0
+    }
+  ],
+  "scientific_scope": "Archive integrity and lightweight usage only. Original scientific limitations remain in the reports."
+}

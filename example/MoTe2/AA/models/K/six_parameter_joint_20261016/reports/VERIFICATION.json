@@ -1,0 +1,171 @@
+{
+  "status": "completed",
+  "rank_constrained_fit_count": 100,
+  "expected_rank_constrained_fit_count": 100,
+  "all_fits_optimizer_success": true,
+  "all_training_rank_constraints_feasible": true,
+  "source_references_unchanged": true,
+  "mass_is_shared_across_all_angles_in_each_fit": true,
+  "export_reloaded_anchor_energy_max_error_eV": 1.9081958235744878e-16,
+  "known_angle_cutoff_records": [
+    {
+      "case": "15_2.13",
+      "medium_dimension": 108,
+      "large_dimension": 192,
+      "enlarged_Q_change_relative_path_top3_max_mev": 8.941760992087211e-06,
+      "original_to_large_Q_change_relative_path_top3_max_mev": 0.012882067403939601,
+      "large_Q_Gamma_gaps12_23_mev": [
+        7.014745535793138,
+        5.359757256833171
+      ],
+      "large_Q_Gamma_overlap_squared_with_zero_embedded_Heff": [
+        0.9070167261284835,
+        0.9375413748709905,
+        0.876330274807151
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "medium_dimension": 108,
+      "large_dimension": 192,
+      "enlarged_Q_change_relative_path_top3_max_mev": 6.188827686770537e-06,
+      "original_to_large_Q_change_relative_path_top3_max_mev": 0.005676957802496219,
+      "large_Q_Gamma_gaps12_23_mev": [
+        12.646176262487316,
+        2.29923870041045
+      ],
+      "large_Q_Gamma_overlap_squared_with_zero_embedded_Heff": [
+        0.9006933121754798,
+        0.9185106192060398,
+        0.8489380568185677
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "medium_dimension": 108,
+      "large_dimension": 192,
+      "enlarged_Q_change_relative_path_top3_max_mev": 5.033283136413047e-05,
+      "original_to_large_Q_change_relative_path_top3_max_mev": 0.017574560866958855,
+      "large_Q_Gamma_gaps12_23_mev": [
+        15.083538527243798,
+        0.6877862757372049
+      ],
+      "large_Q_Gamma_overlap_squared_with_zero_embedded_Heff": [
+        0.8985951511359672,
+        0.8827942714172361,
+        0.9520637546439232
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "medium_dimension": 108,
+      "large_dimension": 192,
+      "enlarged_Q_change_relative_path_top3_max_mev": 0.0001514653250076492,
+      "original_to_large_Q_change_relative_path_top3_max_mev": 0.04428063824768813,
+      "large_Q_Gamma_gaps12_23_mev": [
+        15.538288911232161,
+        3.36026375624064
+      ],
+      "large_Q_Gamma_overlap_squared_with_zero_embedded_Heff": [
+        0.8982469020653556,
+        0.8888196185328513,
+        0.9588787200241043
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "medium_dimension": 108,
+      "large_dimension": 192,
+      "enlarged_Q_change_relative_path_top3_max_mev": 0.00033521869449515407,
+      "original_to_large_Q_change_relative_path_top3_max_mev": 0.08829268827518,
+      "large_Q_Gamma_gaps12_23_mev": [
+        16.371822423710483,
+        5.439634359819419
+      ],
+      "large_Q_Gamma_overlap_squared_with_zero_embedded_Heff": [
+        0.8997127592386411,
+        0.8935529737684754,
+        0.9602850252002982
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "medium_dimension": 108,
+      "large_dimension": 192,
+      "enlarged_Q_change_relative_path_top3_max_mev": 0.0006628661092591415,
+      "original_to_large_Q_change_relative_path_top3_max_mev": 0.1567384361750337,
+      "large_Q_Gamma_gaps12_23_mev": [
+        17.661360650723918,
+        6.586640641132332
+      ],
+      "large_Q_Gamma_overlap_squared_with_zero_embedded_Heff": [
+        0.9029596706359739,
+        0.9002386393256967,
+        0.9623508744011239
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "medium_dimension": 108,
+      "large_dimension": 192,
+      "enlarged_Q_change_relative_path_top3_max_mev": 0.0014439981756453335,
+      "original_to_large_Q_change_relative_path_top3_max_mev": 0.2724622222342532,
+      "large_Q_Gamma_gaps12_23_mev": [
+        19.506184777644048,
+        6.4101209650100515
+      ],
+      "large_Q_Gamma_overlap_squared_with_zero_embedded_Heff": [
+        0.9074259012115664,
+        0.9085078897632451,
+        0.9581797040587603
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "medium_dimension": 108,
+      "large_dimension": 192,
+      "enlarged_Q_change_relative_path_top3_max_mev": 0.0031173288831691792,
+      "original_to_large_Q_change_relative_path_top3_max_mev": 0.48537543664401284,
+      "large_Q_Gamma_gaps12_23_mev": [
+        22.033722788129097,
+        4.489611754531091
+      ],
+      "large_Q_Gamma_overlap_squared_with_zero_embedded_Heff": [
+        0.9107799258625568,
+        0.9160941623668889,
+        0.9468378430743398
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "medium_dimension": 108,
+      "large_dimension": 192,
+      "enlarged_Q_change_relative_path_top3_max_mev": 0.006888133922714701,
+      "original_to_large_Q_change_relative_path_top3_max_mev": 0.8890684876307091,
+      "large_Q_Gamma_gaps12_23_mev": [
+        25.39983629799125,
+        0.41298420297505856
+      ],
+      "large_Q_Gamma_overlap_squared_with_zero_embedded_Heff": [
+        0.9081297624972453,
+        0.9087768935882256,
+        0.9171277119081415
+      ]
+    }
+  ],
+  "small_angle_cutoff_max_relative_energy_change_mev": 0.0029763915613405523,
+  "all_small_angle_spectra_finite": true,
+  "artifact_sizes_bytes": {
+    "joint_top3_overlap.png": 637701,
+    "joint_top3_overlap.pdf": 75521,
+    "joint_leave_one_angle_out.png": 635351,
+    "joint_leave_one_angle_out.pdf": 63023,
+    "joint_parameter_trends.png": 271140,
+    "joint_parameter_trends.pdf": 58069,
+    "joint_high_symmetry_gaps.png": 285122,
+    "joint_high_symmetry_gaps.pdf": 24577,
+    "joint_small_angle_bands.png": 451887,
+    "joint_small_angle_bands.pdf": 69734
+  },
+  "limitations": "Numerical output/provenance inspection. The omitted-angle Gamma state-identity failure remains; this is not certification of a transferable small-angle model."
+}

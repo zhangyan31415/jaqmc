@@ -1,0 +1,39 @@
+{
+  "Hamiltonian": "Unchanged seven terms: pure quadratic diagonal kinetic, common mass, common real momentum tunneling lambda. No beta or new physical parameter.",
+  "objective": "All groups use common sigma=2meV, three bands equally weighted; Gamma energies and near-Gamma shape explicit. Only gaps12/23, only top3 projector. No gap34/P4 fit or positive-gap veto.",
+  "weights": {
+    "path_energy": 1.0,
+    "path_gaps12_23": 0.5,
+    "HS_energy": 1.0,
+    "HS_gaps12_23": 1.0,
+    "Gamma_top23": 4.0,
+    "Gamma_patch_top23": 2.0,
+    "Gamma_shape_top23": 1.0,
+    "top3_projector": 1.0
+  },
+  "sigma_meV": 2.0,
+  "k_training": "All original train points plus Gamma/M/K; development and holdout k points not optimized, but historically inspected.",
+  "acceptance": "For EACH angle: |Gamma E2/E3 errors| <=2meV, |Gamma gap23 error| <=2meV, near-Gamma top23 RMS<=2.5meV; top3 path RMS<=2meV up to5.09, <=5meV above. Failed gates remain explicitly failed.",
+  "selection_scope": "New exploratory fit, all prior data inspected. Diagnostic independent potentials are not a transferable angular prediction.",
+  "physical_parameter_bounds": [
+    [
+      2.53998808,
+      -0.35,
+      -0.35,
+      -0.35,
+      -0.35,
+      -0.35,
+      -0.5
+    ],
+    [
+      25.399880800000002,
+      0.35,
+      0.35,
+      -1e-08,
+      0.35,
+      0.35,
+      0.5
+    ]
+  ],
+  "source_code_sha256": "57630c9179d5a6bcfff2249e0173d975ab3001261c6cfdb98aacb1fb203ff109"
+}

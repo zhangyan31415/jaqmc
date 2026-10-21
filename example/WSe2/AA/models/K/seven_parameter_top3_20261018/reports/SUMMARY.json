@@ -1,0 +1,105 @@
+{
+  "status": "complete",
+  "full_calibration_metrics": {
+    "old": {
+      "mean_top3_RMS_meV": 1.573364384912523,
+      "worst_top3_RMS_meV": 4.32355744835195,
+      "worst_Gamma_top23_abs_error_meV": 5.563033032365162,
+      "worst_Gamma_gap23_abs_error_meV": 8.79347859353108,
+      "worst_Gamma_patch_RMS_meV": 3.0689618084937367
+    },
+    "robust": {
+      "mean_top3_RMS_meV": 1.5844955182007607,
+      "worst_top3_RMS_meV": 2.159375353319872,
+      "worst_Gamma_top23_abs_error_meV": 2.000001731454334,
+      "worst_Gamma_gap23_abs_error_meV": 1.9996762322948758,
+      "worst_Gamma_patch_RMS_meV": 1.3735580000718648
+    },
+    "strict": {
+      "mean_top3_RMS_meV": 1.6359368811151935,
+      "worst_top3_RMS_meV": 2.1981211544259245,
+      "worst_Gamma_top23_abs_error_meV": 1.0000106036143435,
+      "worst_Gamma_gap23_abs_error_meV": 0.998962051519122,
+      "worst_Gamma_patch_RMS_meV": 1.1596153603039088
+    },
+    "flexible": {
+      "mean_top3_RMS_meV": 1.2175766565685078,
+      "worst_top3_RMS_meV": 2.1595446444427706,
+      "worst_Gamma_top23_abs_error_meV": 2.001854542547178,
+      "worst_Gamma_gap23_abs_error_meV": 1.9998266857038374,
+      "worst_Gamma_patch_RMS_meV": 1.3735399053366928
+    }
+  },
+  "small_angle_sensitivity": [
+    {
+      "angle_deg": 1.25,
+      "deleted_fit": "omit_low",
+      "top3_RMS_change_meV": 0.4728016503359498,
+      "top1_RMS_change_meV": 0.1919794347083371,
+      "top3_max_abs_change_meV": 1.0789377605668093
+    },
+    {
+      "angle_deg": 1.25,
+      "deleted_fit": "omit_high",
+      "top3_RMS_change_meV": 0.1880303062924178,
+      "top1_RMS_change_meV": 0.1974256695766823,
+      "top3_max_abs_change_meV": 0.5540052801662338
+    },
+    {
+      "angle_deg": 1.25,
+      "deleted_fit": "omit_both",
+      "top3_RMS_change_meV": 0.7440823025197234,
+      "top1_RMS_change_meV": 0.42569184670438476,
+      "top3_max_abs_change_meV": 1.4311037831487816
+    },
+    {
+      "angle_deg": 1.54,
+      "deleted_fit": "omit_low",
+      "top3_RMS_change_meV": 0.5278329303793694,
+      "top1_RMS_change_meV": 0.2100680587897004,
+      "top3_max_abs_change_meV": 1.2899557492109945
+    },
+    {
+      "angle_deg": 1.54,
+      "deleted_fit": "omit_high",
+      "top3_RMS_change_meV": 0.29506284270895067,
+      "top1_RMS_change_meV": 0.30596045930563615,
+      "top3_max_abs_change_meV": 0.8277239859215708
+    },
+    {
+      "angle_deg": 1.54,
+      "deleted_fit": "omit_both",
+      "top3_RMS_change_meV": 0.874426072391378,
+      "top1_RMS_change_meV": 0.5383202309244268,
+      "top3_max_abs_change_meV": 1.7175181592195958
+    },
+    {
+      "angle_deg": 2.0,
+      "deleted_fit": "omit_low",
+      "top3_RMS_change_meV": 0.40298094707480625,
+      "top1_RMS_change_meV": 0.19758066419123635,
+      "top3_max_abs_change_meV": 1.0503388039623403
+    },
+    {
+      "angle_deg": 2.0,
+      "deleted_fit": "omit_high",
+      "top3_RMS_change_meV": 0.41776174098324365,
+      "top1_RMS_change_meV": 0.5213910114558985,
+      "top3_max_abs_change_meV": 0.8495185245421428
+    },
+    {
+      "angle_deg": 2.0,
+      "deleted_fit": "omit_both",
+      "top3_RMS_change_meV": 0.6661605169455008,
+      "top1_RMS_change_meV": 0.7320073723004128,
+      "top3_max_abs_change_meV": 1.0321322164124211
+    }
+  ],
+  "primary": "robust",
+  "primary_physical_parameters": {
+    "mass_over_me": 0.342128286177495,
+    "lambda_eV_A": 0.057115663561416986,
+    "global_coefficient_count": 12
+  },
+  "scope": "Repair candidates, not a validated all-angle material model. \u0393 caps apply at retained training angles; endpoint extrapolation can violate them. All strict 2meV path accuracy goals are NOT met. No Chern scan reused or inferred."
+}

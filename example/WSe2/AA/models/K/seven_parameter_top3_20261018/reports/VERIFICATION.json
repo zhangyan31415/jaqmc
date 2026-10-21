@@ -1,0 +1,422 @@
+{
+  "status": "complete",
+  "evaluation_case_count": 86,
+  "model_bands_per_valley": 6,
+  "fit_target_band_count": 3,
+  "portable_parameter_equivalence": [
+    {
+      "role": "robust",
+      "fold": "full",
+      "parameter_equivalence_max_eV": 1.734723475976807e-18
+    },
+    {
+      "role": "robust",
+      "fold": "omit_low",
+      "parameter_equivalence_max_eV": 1.3877787807814457e-17
+    },
+    {
+      "role": "robust",
+      "fold": "omit_high",
+      "parameter_equivalence_max_eV": 1.3877787807814457e-17
+    },
+    {
+      "role": "robust",
+      "fold": "omit_both",
+      "parameter_equivalence_max_eV": 1.734723475976807e-18
+    },
+    {
+      "role": "flexible",
+      "fold": "full",
+      "parameter_equivalence_max_eV": 3.469446951953614e-18
+    },
+    {
+      "role": "flexible",
+      "fold": "omit_low",
+      "parameter_equivalence_max_eV": 2.7755575615628914e-17
+    },
+    {
+      "role": "flexible",
+      "fold": "omit_high",
+      "parameter_equivalence_max_eV": 4.336808689942018e-19
+    },
+    {
+      "role": "flexible",
+      "fold": "omit_both",
+      "parameter_equivalence_max_eV": 3.469446951953614e-18
+    },
+    {
+      "role": "saturating",
+      "fold": "full",
+      "parameter_equivalence_max_eV": 2.6020852139652106e-18
+    },
+    {
+      "role": "saturating",
+      "fold": "omit_low",
+      "parameter_equivalence_max_eV": 1.734723475976807e-18
+    },
+    {
+      "role": "saturating",
+      "fold": "omit_high",
+      "parameter_equivalence_max_eV": 8.673617379884035e-19
+    },
+    {
+      "role": "saturating",
+      "fold": "omit_both",
+      "parameter_equivalence_max_eV": 2.7755575615628914e-17
+    },
+    {
+      "role": "strict",
+      "fold": "full",
+      "parameter_equivalence_max_eV": 3.469446951953614e-18
+    },
+    {
+      "role": "strict",
+      "fold": "omit_low",
+      "parameter_equivalence_max_eV": 3.469446951953614e-18
+    },
+    {
+      "role": "strict",
+      "fold": "omit_high",
+      "parameter_equivalence_max_eV": 3.469446951953614e-18
+    },
+    {
+      "role": "strict",
+      "fold": "omit_both",
+      "parameter_equivalence_max_eV": 1.734723475976807e-18
+    },
+    {
+      "role": "all_angle_diagnostic",
+      "fold": "full",
+      "parameter_equivalence_max_eV": 1.3877787807814457e-17
+    }
+  ],
+  "angle_fold_disjointness": [
+    {
+      "role": "robust",
+      "fold": "full",
+      "calibration_cases": [
+        "15_2.13",
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41",
+        "6_5.09"
+      ],
+      "withheld_cases": [],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "robust",
+      "fold": "omit_low",
+      "calibration_cases": [
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41",
+        "6_5.09"
+      ],
+      "withheld_cases": [
+        "15_2.13"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "robust",
+      "fold": "omit_high",
+      "calibration_cases": [
+        "15_2.13",
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41"
+      ],
+      "withheld_cases": [
+        "6_5.09"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "robust",
+      "fold": "omit_both",
+      "calibration_cases": [
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41"
+      ],
+      "withheld_cases": [
+        "15_2.13",
+        "6_5.09"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "flexible",
+      "fold": "full",
+      "calibration_cases": [
+        "15_2.13",
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41",
+        "6_5.09"
+      ],
+      "withheld_cases": [],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "flexible",
+      "fold": "omit_low",
+      "calibration_cases": [
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41",
+        "6_5.09"
+      ],
+      "withheld_cases": [
+        "15_2.13"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "flexible",
+      "fold": "omit_high",
+      "calibration_cases": [
+        "15_2.13",
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41"
+      ],
+      "withheld_cases": [
+        "6_5.09"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "flexible",
+      "fold": "omit_both",
+      "calibration_cases": [
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41"
+      ],
+      "withheld_cases": [
+        "15_2.13",
+        "6_5.09"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "saturating",
+      "fold": "full",
+      "calibration_cases": [
+        "15_2.13",
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41",
+        "6_5.09"
+      ],
+      "withheld_cases": [],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "saturating",
+      "fold": "omit_low",
+      "calibration_cases": [
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41",
+        "6_5.09"
+      ],
+      "withheld_cases": [
+        "15_2.13"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "saturating",
+      "fold": "omit_high",
+      "calibration_cases": [
+        "15_2.13",
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41"
+      ],
+      "withheld_cases": [
+        "6_5.09"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "saturating",
+      "fold": "omit_both",
+      "calibration_cases": [
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41"
+      ],
+      "withheld_cases": [
+        "15_2.13",
+        "6_5.09"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "strict",
+      "fold": "full",
+      "calibration_cases": [
+        "15_2.13",
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41",
+        "6_5.09"
+      ],
+      "withheld_cases": [],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "strict",
+      "fold": "omit_low",
+      "calibration_cases": [
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41",
+        "6_5.09"
+      ],
+      "withheld_cases": [
+        "15_2.13"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "strict",
+      "fold": "omit_high",
+      "calibration_cases": [
+        "15_2.13",
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41"
+      ],
+      "withheld_cases": [
+        "6_5.09"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "strict",
+      "fold": "omit_both",
+      "calibration_cases": [
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41"
+      ],
+      "withheld_cases": [
+        "15_2.13",
+        "6_5.09"
+      ],
+      "seed_scope": "Same retained-angle soft fit only, or retained-only action / fixed generic constants. No withheld-angle reference before optimization."
+    },
+    {
+      "role": "all_angle_diagnostic",
+      "fold": "full",
+      "calibration_cases": [
+        "15_2.13",
+        "14_2.28",
+        "13_2.45",
+        "12_2.65",
+        "11_2.88",
+        "10_3.15",
+        "9_3.48",
+        "8_3.89",
+        "7_4.41",
+        "6_5.09",
+        "5_6.01",
+        "4_7.34",
+        "3_9.43"
+      ],
+      "withheld_cases": [],
+      "seed_scope": "Action/generic use only retained references or fixed constants. Full-data diagnostic seed allowed only in full fit. No deleted-angle energies/fit values enter a deletion initialization."
+    }
+  ],
+  "final_six_band_Q_change_max_meV": 0.0025965582758080696,
+  "primary_fit_basis_to_converged_top3_max_meV": 0.08398902428645091,
+  "optimization_attempt_count": 133,
+  "stationary_accepted_attempt_count": 117,
+  "all_strict_accuracy_goals_met": false,
+  "scope": "Primary meets declared Gamma caps within numerical tolerance; worst path RMS remains above the exploratory 2meV goal. Larger-angle physics and small-angle predictions remain unvalidated."
+}

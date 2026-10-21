@@ -1,0 +1,153 @@
+{
+  "geometry_reference": {
+    "angle_deg": 2.1339296665972505,
+    "reciprocal": [
+      [
+        0.08226027042678133,
+        0.0
+      ],
+      [
+        0.041130135213390664,
+        0.07123948391177042
+      ]
+    ],
+    "kappas": [
+      [
+        0.04113013521346536,
+        -0.023746494637766877
+      ],
+      [
+        0.04113013521343541,
+        0.023746494637766628
+      ]
+    ],
+    "fractional_to_model": [
+      [
+        -0.04113013521340568,
+        -0.07123948391330008
+      ],
+      [
+        0.04113013521349541,
+        -0.07123948391330008
+      ]
+    ]
+  },
+  "geometry_angles_deg": [
+    2.1339296665972505,
+    2.2810596097298803,
+    2.4499772766168695,
+    2.6459083811926885,
+    2.875894633632971,
+    3.149657426389616,
+    3.481006089466939,
+    3.8902381690076835,
+    4.408455007944072,
+    5.085847808123473,
+    6.008983197766148,
+    7.3409930166302155,
+    9.430007907896421
+  ],
+  "normalised_reciprocal_scales": [
+    1.0,
+    1.0000247374337263,
+    1.000055172571781,
+    1.0000931995407143,
+    1.0001415702759417,
+    1.0002044066971119,
+    1.000288108610795,
+    1.000403049759862,
+    1.000566952859475,
+    1.0008121512265233,
+    1.001202839130497,
+    1.0018817588838556,
+    1.0032216214098637
+  ],
+  "family": "r2_linear_near",
+  "selected_curve": "sine_squared_linear",
+  "coordinate": "r2",
+  "degree": 1,
+  "function_domain_deg": [
+    2.1339296665972505,
+    5.085847808123473
+  ],
+  "a_h_eV_A2": 10.80494546265397,
+  "mass_over_me": 0.3526146553139724,
+  "lambda_eV_A": 0.05955427029581715,
+  "potential_controls_eV": [
+    [
+      -0.0015884037415323585,
+      -4.3163513286394894e-05
+    ],
+    [
+      0.004177763740353147,
+      0.003226251487375605
+    ],
+    [
+      -0.010040658954959168,
+      -0.010665061593685552
+    ],
+    [
+      -0.002305341285936268,
+      0.09886148845570535
+    ],
+    [
+      0.0016237571213282515,
+      0.009447773324308831
+    ]
+  ],
+  "potential_order": [
+    "Vcos",
+    "Vsin",
+    "w1",
+    "V2",
+    "w2"
+  ],
+  "scope": "Seven-term quadratic model candidate. Below2.13 no independent own-Heff validation. Geometry scaling below the smallest cell assumes its lattice normalization. Failed accuracy gates are not waived.",
+  "potential_A_eV": [
+    -0.0019187833862920178,
+    0.004381201545282689,
+    -0.009907158727487365,
+    -0.023935286365378186,
+    -4.9054423753457e-05
+  ],
+  "potential_B_eV": [
+    0.0006528998497945327,
+    -0.00040203600429939643,
+    -0.00026382460253349983,
+    0.042745332884249164,
+    0.0033058283821115336
+  ],
+  "loss_configuration": {
+    "method": "worst-angle top3 with explicit Gamma constraints",
+    "Gamma_tolerance_meV": 2,
+    "no_gap34_or_top4_target": true
+  },
+  "global_coefficient_count": 12,
+  "physical_coefficient_count": 7,
+  "calibration_cases": [
+    "14_2.28",
+    "13_2.45",
+    "12_2.65",
+    "11_2.88",
+    "10_3.15",
+    "9_3.48",
+    "8_3.89",
+    "7_4.41"
+  ],
+  "withheld_cases": [
+    "15_2.13",
+    "6_5.09"
+  ],
+  "fit_scope": "Top3-only spectrum + explicit Gamma constraints. Six-band plots retain context; bands4-6 not fitted.",
+  "role": "robust",
+  "fold": "omit_both",
+  "source_result_path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/minimax/r2_linear_near/omit_both/action/result.json",
+  "source_result_sha256": "2036182d6b22c616be744df22dbda1ff166e63a5c4d5cb11729874134ce15f22",
+  "potential_C_eV": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

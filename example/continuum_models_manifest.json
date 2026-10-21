@@ -1,0 +1,691 @@
+{
+  "archive_date": "2026-10-21",
+  "kind": "single-particle continuum model archive; no new fit or JAQMC training",
+  "source_repository": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "source_commit": "e857d8bf9ba04e3dae8fdf093da7b34642e54469",
+  "source_worktree_note": "Scientific examples are local untracked artifacts; individual file SHA256 values identify their exact versions.",
+  "target_base_commit": "7121b4ef2f0e5b6d46c53f1c13e28af59abcc2d0",
+  "copied_files": [
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/angle_parameters.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/angle_parameters.py",
+      "bytes": 1555,
+      "sha256": "7b9844e168524f83125442d8ac686899d45df627517f89500a3e4ac569b56b8e"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/ANGLE_FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/ANGLE_FUNCTION.json",
+      "bytes": 1423,
+      "sha256": "fa072c37fcf56be12ccb534403bef7c18b81db340ac6693b4524d193c0a7e44c"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/15_2.13/model.py",
+      "bytes": 5015,
+      "sha256": "e160be3307807d73328a94b4b1ed83bffe6ac4b6ef6b5e1f7c7ff972de911368"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/10_3.15/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/10_3.15/model.npz",
+      "bytes": 2095,
+      "sha256": "e7be6662fdb63e6b4e4ed82ffa85363b76283e0ba7bc6cfa1bf3c4ea8ffdde04"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/10_3.15/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/10_3.15/comparison.npz",
+      "bytes": 6076,
+      "sha256": "76b27e1b6c9e5e291eaf46cfe4df186d580fb190bcc073ebbf2b508b3c2184dc"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/11_2.88/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/11_2.88/model.npz",
+      "bytes": 2068,
+      "sha256": "a8ac85051fa1b51fcb8891d97e593c3edd4dc3eda19af2446ffcd7530ce65fb8"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/11_2.88/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/11_2.88/comparison.npz",
+      "bytes": 6039,
+      "sha256": "7a5c7a6075d297722fe5b472661bb21d2750647647352efc3f13fcc0d2a122df"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/12_2.65/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/12_2.65/model.npz",
+      "bytes": 2101,
+      "sha256": "a7ce1212b9754c5cbdf02ec114558fcdcecebd417edd2c32dc70ea2cd17650a4"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/12_2.65/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/12_2.65/comparison.npz",
+      "bytes": 6014,
+      "sha256": "d5ffa5d929ae5eaa9205d6477a4bc3f49bd39853047d5bd30b781bcb2d58fa44"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/13_2.45/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/13_2.45/model.npz",
+      "bytes": 2094,
+      "sha256": "302bb6d240337326561906ddcfc6d0aefe6b96dcd656391404fd81c07b9acf0a"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/13_2.45/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/13_2.45/comparison.npz",
+      "bytes": 6033,
+      "sha256": "3385bad6db50dd90e271df791c02a2e2e9cb7d94600d599c7ab87a28b72f8795"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/15_2.13/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/15_2.13/model.npz",
+      "bytes": 2075,
+      "sha256": "831cb15aa45e40bebe327dbe0faafb19056f079a777cf9309962bac2167b2a6f"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/15_2.13/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/15_2.13/comparison.npz",
+      "bytes": 5988,
+      "sha256": "e40c54bcb1c832dae500d26ad49a48985396c356ed8e505321331bb45f0a592b"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/6_5.09/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/6_5.09/model.npz",
+      "bytes": 2103,
+      "sha256": "d646fd00a76210e6285f05c690bb35e900a287a53ff4fe3e78c7c88c9913358c"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/6_5.09/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/6_5.09/comparison.npz",
+      "bytes": 6168,
+      "sha256": "f1c85e8f2450d82a68226dd82b64d1e263633528ca220ecf9e7f16a2a70806e7"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/7_4.41/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/7_4.41/model.npz",
+      "bytes": 2097,
+      "sha256": "5bdd2857a00b6dc32695c70e8b76577e1eb23f1ed5d77e19a7d0a6a9c228134a"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/7_4.41/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/7_4.41/comparison.npz",
+      "bytes": 6134,
+      "sha256": "d6e5cdb122135efc384b4afe470707a333058393d574b88284825b95b30dadb9"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/8_3.89/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/8_3.89/model.npz",
+      "bytes": 2085,
+      "sha256": "a714df7b80f31a0e6aa79e50695e6726628b3752239b26460a95d30289198b98"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/8_3.89/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/8_3.89/comparison.npz",
+      "bytes": 6084,
+      "sha256": "9c87e2d719d938c90f83a8331f4519d407ce1c56ac434b5b6dbd4656869be133"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/9_3.48/model.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/9_3.48/model.npz",
+      "bytes": 2096,
+      "sha256": "347a6f9766fc14670e7413f3695e8a25b92ac9d352c13f295a9a50aa6042dd38"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/cases/9_3.48/comparison.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/selected/models/9_3.48/comparison.npz",
+      "bytes": 6089,
+      "sha256": "abdc16e63fabc4dbb9097ed2a0b47ad0d346abed310892d5835307ebd265276a"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/REPORT.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/REPORT.json",
+      "bytes": 2495449,
+      "sha256": "d4be7e6dba0fe3b26c40314de5bdd8e9092458467c7185d812c695cf0d194cdc"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/SMALL_ANGLE_REPORT.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/SMALL_ANGLE_REPORT.json",
+      "bytes": 350232,
+      "sha256": "b6f1d6a7bba8066afb2e3f98feefea5b259b7ab476a32a48b86aeb0b76c78acc"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/VERIFICATION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/VERIFICATION.json",
+      "bytes": 5808,
+      "sha256": "da1090250907d9d7401241445b1d3dd06a7e8e973c72a8c92b6e1d1ef660c50d"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/candidate_comparison.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/candidate_comparison.csv",
+      "bytes": 1295,
+      "sha256": "7095ef55a67820c0fee3f2e58a0223d64e0dc24a651898398635e0c9df23a3ca"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_parameters.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_parameters.csv",
+      "bytes": 1235,
+      "sha256": "cf598f0cc39e30c35e27aed6f89bab63be6471ba4b4ec7ae07c6f7f2db34af65"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/omitted_angle_metrics.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/omitted_angle_metrics.csv",
+      "bytes": 1959,
+      "sha256": "396ee2c7d970c2a3e25a6da6aab34de44ce9e9be4ae16a3c858d3210d74df104"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/function_coefficients_mev.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/function_coefficients_mev.csv",
+      "bytes": 399,
+      "sha256": "65dbbcfcd583c5c636555a9a6eb60597919514875bbc969d5f6ac6413fbde6f6"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_top3_overlap.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_top3_overlap.png",
+      "bytes": 637701,
+      "sha256": "3e5f58184dc273a88fa37a5d6a82a2f2611390b0dad7f30dd7b098a63e86057a"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_top3_overlap.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_top3_overlap.pdf",
+      "bytes": 75521,
+      "sha256": "690f4a1a0150a13ce126c031fbf159cfdaf1107ce6bebbdcc22a20e865387012"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_parameter_trends.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_parameter_trends.png",
+      "bytes": 271140,
+      "sha256": "538884c8990a8ea4847f9c6bc0bdd8cb10bf5dc11ebb6cecd22471dc7041afc6"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_parameter_trends.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_parameter_trends.pdf",
+      "bytes": 58069,
+      "sha256": "71bcd0a39b7903172eb582f6200dba164b96d23890e9f3d0fb67ed2c37813d30"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_high_symmetry_gaps.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_high_symmetry_gaps.png",
+      "bytes": 285122,
+      "sha256": "56f4c9c16e50c876467b0ddbaefea7eb13c4812c4a7cf7b393f622a97e132c43"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_high_symmetry_gaps.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_high_symmetry_gaps.pdf",
+      "bytes": 24577,
+      "sha256": "4e9308d66efe8836f4b0389d1b4c5b8ce3a600b20377e230c3d10c76445064a4"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_leave_one_angle_out.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_leave_one_angle_out.png",
+      "bytes": 635351,
+      "sha256": "b8061441e38a4c332a67d6a9b67844304f681ad74e31d771818b80326169f664"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_leave_one_angle_out.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_leave_one_angle_out.pdf",
+      "bytes": 63023,
+      "sha256": "8af045dcfd1373fbf179d59654c446c56eab1fb4f3dae9f04fe480d416032445"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_small_angle_bands.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_small_angle_bands.png",
+      "bytes": 451887,
+      "sha256": "427a9fbf7c19fdf99850e5c021a9e3842ee34f3563570f1a2014e946cd886fa1"
+    },
+    {
+      "destination": "example/MoTe2/AA/models/K/six_parameter_joint_20261016/reports/joint_small_angle_bands.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_joint_angle_functions_20261016/joint_small_angle_bands.pdf",
+      "bytes": 69734,
+      "sha256": "87e46188c343660d6b34d54a61de86f44f3bde3c63724b8a55d7d086327c006d"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/all_angle_diagnostic/full/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/all_angle_diagnostic/full/FUNCTION.json",
+      "bytes": 3760,
+      "sha256": "4c4bc607d90fcd5c339fb6e2635d093d0b416cfb952db6b8e9bdbc2bad71fa7f"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/all_angle_diagnostic/full/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/all_angle_diagnostic/full/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/all_angle_diagnostic/full/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/all_angle_diagnostic/full/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/full/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/full/FUNCTION.json",
+      "bytes": 3716,
+      "sha256": "2f2518f22af7817c1b87b837cbf388ffefc3aedf4899c1d977312b34608eccd0"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/full/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/full/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/full/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/full/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/omit_both/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/omit_both/FUNCTION.json",
+      "bytes": 3734,
+      "sha256": "ed688e83f2416a9670c67225ffaaf104c3b6b28c84d73eb500f35bf0316a60d9"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/omit_both/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/omit_both/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/omit_both/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/omit_both/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/omit_high/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/omit_high/FUNCTION.json",
+      "bytes": 3734,
+      "sha256": "9b69005d99f0afa9ceefeece5a3ad6c2bbafe253f5010f64f5002195935811f5"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/omit_high/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/omit_high/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/omit_high/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/omit_high/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/omit_low/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/omit_low/FUNCTION.json",
+      "bytes": 3714,
+      "sha256": "d1b22db296434f33e759183437c2bde5076cd6f7a7316be0ca385948fc871bb7"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/omit_low/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/omit_low/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/flexible/omit_low/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/flexible/omit_low/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/full/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/full/FUNCTION.json",
+      "bytes": 3478,
+      "sha256": "e60e0e558cafe9033ede51d6496659843230c9349b2ef6ac86a82756368133a0"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/full/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/full/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/full/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/full/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/omit_both/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/omit_both/FUNCTION.json",
+      "bytes": 3496,
+      "sha256": "95a470bec308e53d7ebe81c040adc5048bb6e93fb9ed23b0b67ca6af3ac84f4b"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/omit_both/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/omit_both/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/omit_both/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/omit_both/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/omit_high/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/omit_high/FUNCTION.json",
+      "bytes": 3491,
+      "sha256": "ecc3036852fb90fbd0f962409ad91ab8c3841ed6e3306ca0c4fa688f2205344a"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/omit_high/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/omit_high/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/omit_high/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/omit_high/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/omit_low/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/omit_low/FUNCTION.json",
+      "bytes": 3489,
+      "sha256": "ae0e2654ad3557e676f3893d1baa426a9a4f5c6d2cbc8ceb8fd584149fb6648b"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/omit_low/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/omit_low/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/robust/omit_low/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/robust/omit_low/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/full/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/full/FUNCTION.json",
+      "bytes": 3696,
+      "sha256": "d493d710e68cf289651a71c6b7ce9b9a3681857a8c20b03230c741dec931ecb8"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/full/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/full/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/full/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/full/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/omit_both/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/omit_both/FUNCTION.json",
+      "bytes": 3699,
+      "sha256": "0426bc88776c221ff528162715b19b7508d23d094993c4982ccd51598eae6e15"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/omit_both/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/omit_both/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/omit_both/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/omit_both/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/omit_high/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/omit_high/FUNCTION.json",
+      "bytes": 3721,
+      "sha256": "79e1a40d0bd88af80d19fe41cc236b80d62a3333e67fbe0014fb722a4c5aa348"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/omit_high/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/omit_high/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/omit_high/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/omit_high/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/omit_low/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/omit_low/FUNCTION.json",
+      "bytes": 3718,
+      "sha256": "a07b8bf11d2d7e86c2731ea18375bee7db61f924c2c95beebffade9d6105d8f9"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/omit_low/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/omit_low/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/saturating/omit_low/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/saturating/omit_low/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/full/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/full/FUNCTION.json",
+      "bytes": 3483,
+      "sha256": "3398adf0d1dbbaae9df0fb8e340559acdc85982fe050b375e837d60506268cf7"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/full/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/full/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/full/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/full/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/omit_both/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/omit_both/FUNCTION.json",
+      "bytes": 3498,
+      "sha256": "17de77a379bd440e16c1892a649546902122fc3f10e89cd86e2bd9b77fb8f261"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/omit_both/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/omit_both/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/omit_both/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/omit_both/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/omit_high/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/omit_high/FUNCTION.json",
+      "bytes": 3497,
+      "sha256": "49e40bccd8226de5f04f80e1748d0adede87f5f1d6c3d79db62d391b5b976347"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/omit_high/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/omit_high/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/omit_high/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/omit_high/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/omit_low/FUNCTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/omit_low/FUNCTION.json",
+      "bytes": 3492,
+      "sha256": "9640380d756dd91a2dae4fee48e03a3eefd9cc666bba066c8c62d35b3ded1a9c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/omit_low/angle_model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/omit_low/angle_model.py",
+      "bytes": 2592,
+      "sha256": "abec0c775c3d56090baf76e733c39731247bcaa77b153be97bcad381315f5ac2"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/candidates/strict/omit_low/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/models/strict/omit_low/model.py",
+      "bytes": 2548,
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/ORIGINAL_README.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/README.md",
+      "bytes": 5976,
+      "sha256": "3e92910e7487e0171394c2ffb3f057b98dae5aaf966057119146c81daa42c009"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/PROVENANCE.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/PROVENANCE.json",
+      "bytes": 454447,
+      "sha256": "35a52432d5183f3bd62eb6ecded34c67baab9785e685b0d0da290deb7a1641b5"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/VERIFICATION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/VERIFICATION.json",
+      "bytes": 10983,
+      "sha256": "17a4e0fae8ecac60af1608c7b7776a08099aa37c82170f116e30f683752157eb"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/SUMMARY.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/SUMMARY.json",
+      "bytes": 3684,
+      "sha256": "c897b6723dff6d7675e778db84f066895224547e14dd9dd91280aa14092517ec"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/PROTOCOL.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/PROTOCOL.json",
+      "bytes": 1455,
+      "sha256": "1175e4f8c73dae3e48c66da884e3ed75eea28d12686b2e1f4a1c7d547e4c95f7"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/angle_function_coefficients.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/angle_function_coefficients.csv",
+      "bytes": 9845,
+      "sha256": "831ec6b8d4cfd168bef16f0db5d8a8c21f172c827086d170f96230763a1838a1"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/converged_top3_metrics.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/converged_top3_metrics.csv",
+      "bytes": 13055,
+      "sha256": "ff42728f767b8a0abc6561b93e0464542942af81e8d578042a6021a8869ad93b"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/endpoint_CV_metrics.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/endpoint_CV_metrics.csv",
+      "bytes": 3728,
+      "sha256": "d9efa1608d1530ea0f66833ae3704996ea7ab0d0cc283fba201133795fcfd90c"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/path_bandwidth_gap_comparison.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/path_bandwidth_gap_comparison.csv",
+      "bytes": 7269,
+      "sha256": "1f46ac2a0b78caf3bb86fb9048ebc82cd9c30477d50ffa6839b1d02d4f17b06d"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/small_angle_model_sensitivity.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/small_angle_model_sensitivity.csv",
+      "bytes": 743,
+      "sha256": "b5a3e8d480601544a7bd18f92fde292ed1e43174f4eb1ff131e0314db68edb24"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/wse2_top3_gamma_complete.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/wse2_top3_gamma_complete.pdf",
+      "bytes": 777614,
+      "sha256": "9fc093c3fb57f474a8ce854919cfbac8ece51aa956d5f73bf4e89389ff53d241"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/all_angles_top3_focus_robust.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/all_angles_top3_focus_robust.png",
+      "bytes": 979162,
+      "sha256": "5d3cb25d31222231ef1d72bcfb41ed5c04c62f2505ad4b362eb4758ac684b7d0"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/all_angles_top3_focus_robust.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/all_angles_top3_focus_robust.pdf",
+      "bytes": 143944,
+      "sha256": "d25193e693fd8b4f143091d9f46148c6f6609bfcc445cb9aa1b7625900f298b7"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/gamma_top23_before_after.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/gamma_top23_before_after.png",
+      "bytes": 907800,
+      "sha256": "07cd3e9080768c68fbd8603122a86cf42e921b846113ebbf12ee530c8b177dc7"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/gamma_top23_before_after.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/gamma_top23_before_after.pdf",
+      "bytes": 62877,
+      "sha256": "8f778ba8952c3b0ecaeff472b09fd7a01105c8bb0247ef5ab1f9404a52996f0f"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/parameter_functions.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/parameter_functions.png",
+      "bytes": 278913,
+      "sha256": "4b0e72212d6af4cfd6c77ab469364261527d59c5742e58d587d64daebf2d1010"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/parameter_functions.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/parameter_functions.pdf",
+      "bytes": 25350,
+      "sha256": "0f7bdb1ce9ffa558a3d152a73085812bbcb0dfc58a3f77231cfe6e34638bc075"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/endpoint_bands_both.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/endpoint_bands_both.png",
+      "bytes": 676361,
+      "sha256": "b21708fb7d29b63ea0a7a2f820b4d032c2e79a825daa2ed32c60d264d5952963"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/endpoint_bands_both.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/endpoint_bands_both.pdf",
+      "bytes": 69678,
+      "sha256": "6c6085f2c9629f0ec975101a109725c2aa9bc6e112f1bf42dca5e1f922c4c869"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/small_angle_top3_sensitivity.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/small_angle_top3_sensitivity.png",
+      "bytes": 700926,
+      "sha256": "5be4aa203071adad1a5a451dd3bcde4a56bdbb32e4f97a5b38f826fab495ee63"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/small_angle_top3_sensitivity.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/small_angle_top3_sensitivity.pdf",
+      "bytes": 85937,
+      "sha256": "fd55079899ada45af4acbd24fe2a9bf76d76c1a8ab7bd9ebdc00007544606592"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/top3_path_bandwidth_gap.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/top3_path_bandwidth_gap.png",
+      "bytes": 293370,
+      "sha256": "3c6fa175416b2ecce11c930225a54a32ae22cf9108d6d9d10dcc78a9aa193eb3"
+    },
+    {
+      "destination": "example/WSe2/AA/models/K/seven_parameter_top3_20261018/reports/top3_path_bandwidth_gap.pdf",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_top3_gamma_refit_20261018/top3_path_bandwidth_gap.pdf",
+      "bytes": 30518,
+      "sha256": "04a670f02795b836ee0402f2d0c1e81d2155b50e75508fb23518bd8f8f425dca"
+    }
+  ],
+  "generated_files": [
+    "example/MoTe2/AA/models/K/six_parameter_joint_20261016/README.md",
+    "example/WSe2/AA/models/K/seven_parameter_top3_20261018/README.md",
+    "example/WSe2/AA/README.md"
+  ],
+  "modified_existing_files": [
+    "example/README.md",
+    "example/MoTe2/AA/README.md"
+  ]
+}
