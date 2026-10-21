@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "scheduler_state": "COMPLETED",
+  "exit_code": "0:0",
+  "job_id": "574889",
+  "source_model_files_verified": 36,
+  "timing_rows": 40,
+  "materials": 2,
+  "cases_per_material": 5,
+  "tasks_per_case": 4,
+  "rounds": 5,
+  "independent_operator_checks": "passed",
+  "native_wavefunction_checks": "passed",
+  "source_hashes_match": true,
+  "artifacts": [
+    "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/RUN.md",
+    "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/gpu/result.json",
+    "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/gpu/timings.csv",
+    "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/summary.json",
+    "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/selected_models.json",
+    "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/operator_checks.json",
+    "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/scheduler_final.txt"
+  ]
+}

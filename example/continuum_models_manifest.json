@@ -1601,6 +1601,402 @@
       "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/zrs2_3.15/gap_refinement_20261012/projector_b1_low_energy.pdf",
       "bytes": 54576,
       "sha256": "fe46c9583163c1b933baa448701f381234f6b17b37c4a07c56dee778db10e143"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/model.py",
+      "bytes": 1979,
+      "sha256": "4042f6c5919b2c7d9034b02434405450546148b8cee6675d946e39176afa0db3"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/kernel.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/kernel.py",
+      "bytes": 2242,
+      "sha256": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/physical.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/physical.py",
+      "bytes": 6074,
+      "sha256": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/COEFFICIENTS.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/COEFFICIENTS.json",
+      "bytes": 188562,
+      "sha256": "855298009bab8910c66c1a333bd440b71700c3c5416ca7e23bfd2a37b5208fac"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/CATALOG.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/CATALOG.json",
+      "bytes": 998,
+      "sha256": "1952fb8f64930228b502898bba30ddb78861f73920fc91e3adbeff1b2c7c453f"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/geometry.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/geometry.npz",
+      "bytes": 15156,
+      "sha256": "3d0ccf686c129d802de1664a2e014b4716e5a54fce6dc86496dee4f78cf8bd52"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/ALL_BANDS.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_NEW7_BANDS.png",
+      "bytes": 693763,
+      "sha256": "3c26b0e79620900b8f0b455bbeae37d5641a69faa700604633a7e8bb72f29cc1"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/PARAMETERS.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_NEW7_PARAMETERS.png",
+      "bytes": 155296,
+      "sha256": "fec297d4cd4df1b1fca133a0de3ee15e6cf30b63945dd021ba41efb3cc5a7aff"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/parameters.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_NEW7_PARAMETERS.csv",
+      "bytes": 1994,
+      "sha256": "4baa873091841aaef21c7f272505b85c6d8469eb96e38e34a666dffdf7a211e8"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/NATIVE_SPIN_SPLITTING.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_NATIVE_SPIN_SPLITTING.json",
+      "bytes": 5144,
+      "sha256": "ff7bce5c6c5db9a8967349bbf4a75f8178e1f66f8b308f3c3c337a8605ef979f"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/ORIGINAL_RESULTS.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/RESULTS.md",
+      "bytes": 3257,
+      "sha256": "45f7ae06aef3721b2c576ff54cf16321e21df637a373541da4ed0817c70bd319"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/ORIGINAL_VERIFICATION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/VERIFICATION.json",
+      "bytes": 2756,
+      "sha256": "c790be188cf4cc8c6a5671a3adce5745f1cd1b2bc20003935f9bfdb1b24292e3"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/ORIGINAL_SELECTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/SELECTED.json",
+      "bytes": 12656,
+      "sha256": "fe18b36ead64ce41febe6ad703d1eedff5125c11c7bc1535c968d67ff7935998"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/SOURCE_EXPORT_VERIFICATION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/EXPORT_VERIFICATION.json",
+      "bytes": 337,
+      "sha256": "609f69400ddc0430d5a4cab9dbbf96a4dcc8da60ed83c8fdd66b7589d0a3a5f1"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/ORIGINAL_METHOD.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_spinfree_symmetry_fit_20261021/METHOD.md",
+      "bytes": 8808,
+      "sha256": "d5b885d978ce46cd1bf6d3c2b4a91e2a1b7e22cc237e6b7d14ac0608ba4bdb88"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/10_3.15.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/10_3.15.npz",
+      "bytes": 15938,
+      "sha256": "bc055b65ac1026ce401fa64f12fd0b8e2175ec142a72268ebdbd8c4a7c242ec7"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/11_2.88.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/11_2.88.npz",
+      "bytes": 15928,
+      "sha256": "8bfc100b7ee5aedea6234e926a2c39d972f73c8f9abb47e363a36d59f6b3d2d0"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/12_2.65.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/12_2.65.npz",
+      "bytes": 15764,
+      "sha256": "2999052850cafb3278632a84c4ad250007cae8de7fa06384ee9e1bc80b8ad834"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/13_2.45.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/13_2.45.npz",
+      "bytes": 15731,
+      "sha256": "add8fa84f91c5fe45d50f12901690be25c9855ba39e441357c0a8629b19e3183"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/14_2.28.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/14_2.28.npz",
+      "bytes": 15600,
+      "sha256": "58636268bf881f5046127ae2076dba8af627495a064d8538cc8e8654d05e360e"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/3_9.43.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/3_9.43.npz",
+      "bytes": 16683,
+      "sha256": "dfc22e362f5ede80d1dbe7a7eb4286a8f0cb6c65308f213289c260e24f8eb1fe"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/4_7.34.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/4_7.34.npz",
+      "bytes": 16545,
+      "sha256": "07a7d3baf62815d9742532ca6178440c39a431474288ff3e2c070b0a30ff7fe9"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/5_6.01.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/5_6.01.npz",
+      "bytes": 16520,
+      "sha256": "0dde2720240df84904926d0ca85db786867176f63fd9fab98e3eb6b7859b0c9d"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/6_5.09.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/6_5.09.npz",
+      "bytes": 16390,
+      "sha256": "88cc62d02a6cf6c1a8fec60460c6f12ba55415c46ef851bd9af7348d0dbbe2c9"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/7_4.41.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/7_4.41.npz",
+      "bytes": 16380,
+      "sha256": "e19ef089de646625d041c849faae16b6128c2dda074f47059b6200a7d4536eef"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/8_3.89.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/8_3.89.npz",
+      "bytes": 16199,
+      "sha256": "f0f1d5f2c94d356b71c5c1edc9ee9e97e74d1171068f679decc4f37cbb326d0d"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/9_3.48.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/predictions/9_3.48.npz",
+      "bytes": 16119,
+      "sha256": "9eeee278d12c4b23d8049151a24f3f9cac9e16a83ee1ccc5c9ef9901b599fbfb"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/RUN.md",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/RUN.md",
+      "bytes": 9081,
+      "sha256": "fc12b2b81f55218b363e480aad9c8b94e47b42081e87417a5ee96dbb809c6e76"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/operator_checks.json",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/operator_checks.json",
+      "bytes": 1867,
+      "sha256": "a7658d663f922ad7bc4af607e3b699f0f0750a01bffa99d248ca2a96e772aee4"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/verification.json",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/verification.json",
+      "bytes": 1076,
+      "sha256": "7406522821a4687dda33ea0cda541fcd4cbd4cb8bc944e91f6205891efcbe0d3"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/scheduler_final.txt",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/scheduler_final.txt",
+      "bytes": 186,
+      "sha256": "2f2a1b8327ba79da29a8c6ccaaf3414ff7c24667e39c46ba9e9fea177202208c"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/result.json",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/gpu/result.json",
+      "bytes": 49101,
+      "sha256": "486bca1e90dcfc4285fd47945d1c84197a71ac49f1c331d02d4f2a6be8b084f0"
+    },
+    {
+      "destination": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/timings.csv",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/gpu/timings.csv",
+      "bytes": 4174,
+      "sha256": "599b09927f3987bb1442df7125d3b7f90929d563e84d86147f60abf83f248468"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/model.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/model.py",
+      "bytes": 1979,
+      "sha256": "4042f6c5919b2c7d9034b02434405450546148b8cee6675d946e39176afa0db3"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/kernel.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/kernel.py",
+      "bytes": 2242,
+      "sha256": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/physical.py",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/physical.py",
+      "bytes": 6074,
+      "sha256": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/COEFFICIENTS.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/COEFFICIENTS.json",
+      "bytes": 189305,
+      "sha256": "1b3d08e665aab4e3a3632d8d90848058795113a257f2efce5a72b191bdf0ce7f"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/CATALOG.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/CATALOG.json",
+      "bytes": 998,
+      "sha256": "1952fb8f64930228b502898bba30ddb78861f73920fc91e3adbeff1b2c7c453f"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/geometry.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/geometry.npz",
+      "bytes": 18228,
+      "sha256": "d46dc03bc1216ffb213a146e94d1b4bd5f78d67f89833b391d97965087914e00"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/ALL_BANDS.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_NEW7_BANDS.png",
+      "bytes": 714565,
+      "sha256": "0116d62f9bb79b579db0cfd75dec193caf50512dd1aa2dcb43d4396e4823f487"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/PARAMETERS.png",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_NEW7_PARAMETERS.png",
+      "bytes": 162142,
+      "sha256": "5ccfe48b3222b407213293cfbc262a6a59312946dd9fc8fe3f3dca9495c448e3"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/parameters.csv",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_NEW7_PARAMETERS.csv",
+      "bytes": 1986,
+      "sha256": "08c1cf5e777c4e56b9065c676d0c0d2566c0d62bfa05a51d970ad17b9f2770a7"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/NATIVE_SPIN_SPLITTING.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_NATIVE_SPIN_SPLITTING.json",
+      "bytes": 5052,
+      "sha256": "9203cba21dba392faafc9532cbda046b14a9c9a1e4cfe0f8318c3acf8207fb4a"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/ORIGINAL_RESULTS.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/RESULTS.md",
+      "bytes": 3257,
+      "sha256": "45f7ae06aef3721b2c576ff54cf16321e21df637a373541da4ed0817c70bd319"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/ORIGINAL_VERIFICATION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/VERIFICATION.json",
+      "bytes": 2756,
+      "sha256": "c790be188cf4cc8c6a5671a3adce5745f1cd1b2bc20003935f9bfdb1b24292e3"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/ORIGINAL_SELECTION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/SELECTED.json",
+      "bytes": 12656,
+      "sha256": "fe18b36ead64ce41febe6ad703d1eedff5125c11c7bc1535c968d67ff7935998"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/SOURCE_EXPORT_VERIFICATION.json",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/EXPORT_VERIFICATION.json",
+      "bytes": 336,
+      "sha256": "fb21321170db6ea0e07c99a8fb44571d860c0429de4ac69aa10cd358dbb0896f"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/ORIGINAL_METHOD.md",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_spinfree_symmetry_fit_20261021/METHOD.md",
+      "bytes": 8808,
+      "sha256": "d5b885d978ce46cd1bf6d3c2b4a91e2a1b7e22cc237e6b7d14ac0608ba4bdb88"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/10_3.15.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/10_3.15.npz",
+      "bytes": 16050,
+      "sha256": "a2c4aeaa22042ba4e7891610f213b6a818a7e4a262e9412d417b824ca94306ca"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/11_2.88.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/11_2.88.npz",
+      "bytes": 16091,
+      "sha256": "49d67d275da379c5427f61dd4ea521a61b029ba29f3a5f6dc7017e57488dbdb5"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/12_2.65.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/12_2.65.npz",
+      "bytes": 16047,
+      "sha256": "e7e057390165fac0a5c86f1c246d9862e7760353174594094cc6df9e48c2a705"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/13_2.45.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/13_2.45.npz",
+      "bytes": 16020,
+      "sha256": "2d546d5322c07e332fe8e0ac3719ff3925e0c03cbebd91087c6a0c5ae822f0ac"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/14_2.28.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/14_2.28.npz",
+      "bytes": 15966,
+      "sha256": "0f42a674b519dedd28666fbdb2469207619318a0885b242d01c298085dccf70c"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/3_9.43.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/3_9.43.npz",
+      "bytes": 16708,
+      "sha256": "f2acb0d5d21db834b97a77f2bea0aac1f7c435144701db89e325412cf5bc9554"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/4_7.34.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/4_7.34.npz",
+      "bytes": 16589,
+      "sha256": "754c7da300e4cbb771f432bb5e3ba28ad603cf343f8ba27a42f84693e78c7387"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/5_6.01.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/5_6.01.npz",
+      "bytes": 16442,
+      "sha256": "d4cbeddd09320e390b481962cc50961bf24047ad4c1e441dac289e44fdfc0945"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/6_5.09.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/6_5.09.npz",
+      "bytes": 16376,
+      "sha256": "96765753d7ef7d90b32350f8457b98d849aba81b319d4b8824f5b48eb559922b"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/7_4.41.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/7_4.41.npz",
+      "bytes": 16362,
+      "sha256": "2d5587855bd526f37122bad7099970727e081b360c19dcdae83c27afe07fad8b"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/8_3.89.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/8_3.89.npz",
+      "bytes": 16274,
+      "sha256": "ab6645d256690a4d075e91da9e17934a9b30117d8aab8b8e4f4d028b2651a40d"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/predictions/9_3.48.npz",
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/predictions/9_3.48.npz",
+      "bytes": 16226,
+      "sha256": "1f1fd25e9d8352f10621a8d1cf887a5c2cb93f99714284c788f6cf8f73ad398e"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/RUN.md",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/RUN.md",
+      "bytes": 9081,
+      "sha256": "fc12b2b81f55218b363e480aad9c8b94e47b42081e87417a5ee96dbb809c6e76"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/operator_checks.json",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/operator_checks.json",
+      "bytes": 1867,
+      "sha256": "a7658d663f922ad7bc4af607e3b699f0f0750a01bffa99d248ca2a96e772aee4"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/verification.json",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/verification.json",
+      "bytes": 1076,
+      "sha256": "7406522821a4687dda33ea0cda541fcd4cbd4cb8bc944e91f6205891efcbe0d3"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/scheduler_final.txt",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/scheduler_final.txt",
+      "bytes": 186,
+      "sha256": "2f2a1b8327ba79da29a8c6ccaaf3414ff7c24667e39c46ba9e9fea177202208c"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/result.json",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/gpu/result.json",
+      "bytes": 49101,
+      "sha256": "486bca1e90dcfc4285fd47945d1c84197a71ac49f1c331d02d4f2a6be8b084f0"
+    },
+    {
+      "destination": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/nqs_cost/timings.csv",
+      "source": "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/gpu/timings.csv",
+      "bytes": 4174,
+      "sha256": "599b09927f3987bb1442df7125d3b7f90929d563e84d86147f60abf83f248468"
     }
   ],
   "generated_files": [
@@ -1615,7 +2011,18 @@
     "example/MoTe2/README.md",
     "example/WSe2/README.md",
     "example/ZrS2/README.md",
-    "example/ZrS2/AB/README.md"
+    "example/ZrS2/AB/README.md",
+    "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/reports/SELECTION.json",
+    "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021/README.md",
+    "example/SnS2/README.md",
+    "example/SnS2/AA/README.md",
+    "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/reports/SELECTION.json",
+    "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/README.md",
+    "example/SnSe2/README.md",
+    "example/SnSe2/AA/README.md",
+    "example/M_VALLEY_SEVEN_PARAMETER.md",
+    "example/verify_m_seven_parameter.py",
+    "example/m_seven_parameter_verification.json"
   ],
   "modified_existing_files": [
     "example/MoTe2/AA/README.md",
@@ -1640,6 +2047,62 @@
       "copied_files": 154,
       "copied_bytes": 5841251,
       "note": "Existing fits archived unchanged; common material/stacking indexes standardized. No fit rerun."
+    },
+    {
+      "archive_date": "2026-10-21",
+      "material": "SnS2",
+      "stacking": "AA",
+      "valley": "M",
+      "selected_candidate": "sns2_m_rank0",
+      "model_directory": "example/SnS2/AA/models/M/seven_parameter_constant_mass_20261021",
+      "source_directory": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0",
+      "active_full9_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8
+      ],
+      "physical_parameters": 7,
+      "global_controls": 17,
+      "angles": 12,
+      "scientific_status": "FAIL",
+      "source_repository": "/data/work/zy/software/1.tapw_code/moirekp-release",
+      "source_commit": "e857d8bf9ba04e3dae8fdf093da7b34642e54469",
+      "target_base_commit": "162cceb54ebae50c2dd434965f4974580202a4aa",
+      "copied_files": 33,
+      "copied_bytes": 1358304,
+      "note": "Selected new seven-term spin-free M-valley models only; exact source files preserved. Fixed two mass eigenvalues, actual layer axes, spectra/overlap packets, Hamiltonian documentation and historical external NQS cost evidence. No fit or native solver change."
+    },
+    {
+      "archive_date": "2026-10-21",
+      "material": "SnSe2",
+      "stacking": "AA",
+      "valley": "M",
+      "selected_candidate": "snse2_m_rank1",
+      "model_directory": "example/SnSe2/AA/models/M/seven_parameter_constant_mass_20261021",
+      "source_directory": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1",
+      "active_full9_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "physical_parameters": 7,
+      "global_controls": 17,
+      "angles": 12,
+      "scientific_status": "FAIL",
+      "source_repository": "/data/work/zy/software/1.tapw_code/moirekp-release",
+      "source_commit": "e857d8bf9ba04e3dae8fdf093da7b34642e54469",
+      "target_base_commit": "162cceb54ebae50c2dd434965f4974580202a4aa",
+      "copied_files": 33,
+      "copied_bytes": 1391020,
+      "note": "Selected new seven-term spin-free M-valley models only; exact source files preserved. Fixed two mass eigenvalues, actual layer axes, spectra/overlap packets, Hamiltonian documentation and historical external NQS cost evidence. No fit or native solver change."
     }
   ]
 }

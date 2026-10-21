@@ -1,0 +1,70 @@
+{
+  "hessian_checks": [
+    {
+      "ndets": 1,
+      "common": false,
+      "tensor_error_meV": 5.3290705182007514e-14
+    },
+    {
+      "ndets": 1,
+      "common": true,
+      "tensor_error_meV": 6.43668973480993e-14,
+      "common_error_meV": 3.825111308926479e-13
+    },
+    {
+      "ndets": 2,
+      "common": false,
+      "tensor_error_meV": 5.687116766346677e-14
+    },
+    {
+      "ndets": 2,
+      "common": true,
+      "tensor_error_meV": 2.847716647714797e-14,
+      "common_error_meV": 1.469230744657481e-13
+    }
+  ],
+  "source_model_checks": [
+    {
+      "material": "sns2_m",
+      "variant": "old7",
+      "fourier_error_eV": 6.217556349527567e-16,
+      "periodic_error_eV": 4.718447854656915e-16,
+      "potential_error_meV": 6.355287432313019e-14
+    },
+    {
+      "material": "sns2_m",
+      "variant": "new7",
+      "fourier_error_eV": 4.6138054098019e-16,
+      "periodic_error_eV": 4.85722573273506e-16,
+      "potential_error_meV": 1.1368683772161603e-13
+    },
+    {
+      "material": "sns2_m",
+      "variant": "full9",
+      "fourier_error_eV": 4.3202904629345545e-16,
+      "periodic_error_eV": 4.371503159461554e-16,
+      "potential_error_meV": 1.7053025658242404e-13
+    },
+    {
+      "material": "snse2_m",
+      "variant": "old7",
+      "fourier_error_eV": 6.661338147750939e-16,
+      "periodic_error_eV": 5.551115123125783e-16,
+      "potential_error_meV": 4.263256414560601e-14
+    },
+    {
+      "material": "snse2_m",
+      "variant": "new7",
+      "fourier_error_eV": 7.088678482079289e-16,
+      "periodic_error_eV": 6.522560269672795e-16,
+      "potential_error_meV": 1.7067822212573437e-13
+    },
+    {
+      "material": "snse2_m",
+      "variant": "full9",
+      "fourier_error_eV": 6.894489270151014e-16,
+      "periodic_error_eV": 6.106226635438361e-16,
+      "potential_error_meV": 1.1457157353758233e-13
+    }
+  ]
+}

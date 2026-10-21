@@ -1,0 +1,86 @@
+[
+  {
+    "model": "sns2_m_rank0",
+    "process_exit_status": 0,
+    "initial_fit_exit_status": 0,
+    "optimizer_converged": true,
+    "initial_and_final_gradient_verified": true,
+    "two_constant_mass_eigenvalues": true,
+    "physical_parameters": 7,
+    "independent_global_variables": 17,
+    "export": {
+      "angles": 12,
+      "path_rows": 61,
+      "independent_k": 60,
+      "hamiltonian_error_eV": 0.0,
+      "spectrum_error_eV": 1.7208456881689926e-15,
+      "group_probability_error": 1.9317880628477724e-14,
+      "principal_probability_error": 1.942890293094024e-14,
+      "potential_periodicity_error_eV": 4.718447854656915e-16,
+      "scientific_status": "FAIL"
+    }
+  },
+  {
+    "model": "sns2_m_rank1",
+    "process_exit_status": 0,
+    "initial_fit_exit_status": 0,
+    "optimizer_converged": true,
+    "initial_and_final_gradient_verified": true,
+    "two_constant_mass_eigenvalues": true,
+    "physical_parameters": 7,
+    "independent_global_variables": 17,
+    "export": {
+      "angles": 12,
+      "path_rows": 61,
+      "independent_k": 60,
+      "hamiltonian_error_eV": 0.0,
+      "spectrum_error_eV": 1.609823385706477e-15,
+      "group_probability_error": 9.880984919163893e-15,
+      "principal_probability_error": 1.0103029524088925e-14,
+      "potential_periodicity_error_eV": 3.885780586188048e-16,
+      "scientific_status": "FAIL"
+    }
+  },
+  {
+    "model": "snse2_m_rank0",
+    "process_exit_status": 0,
+    "initial_fit_exit_status": 1,
+    "optimizer_converged": true,
+    "initial_and_final_gradient_verified": true,
+    "two_constant_mass_eigenvalues": true,
+    "physical_parameters": 7,
+    "independent_global_variables": 17,
+    "export": {
+      "angles": 12,
+      "path_rows": 61,
+      "independent_k": 60,
+      "hamiltonian_error_eV": 0.0,
+      "spectrum_error_eV": 2.942091015256665e-15,
+      "group_probability_error": 5.662137425588298e-15,
+      "principal_probability_error": 7.549516567451064e-15,
+      "potential_periodicity_error_eV": 5.551115123125783e-16,
+      "scientific_status": "FAIL"
+    }
+  },
+  {
+    "model": "snse2_m_rank1",
+    "process_exit_status": 0,
+    "initial_fit_exit_status": 0,
+    "optimizer_converged": true,
+    "initial_and_final_gradient_verified": true,
+    "two_constant_mass_eigenvalues": true,
+    "physical_parameters": 7,
+    "independent_global_variables": 17,
+    "export": {
+      "angles": 12,
+      "path_rows": 61,
+      "independent_k": 60,
+      "hamiltonian_error_eV": 0.0,
+      "spectrum_error_eV": 2.0539125955565396e-15,
+      "group_probability_error": 8.548717289613705e-15,
+      "principal_probability_error": 1.199040866595169e-14,
+      "potential_periodicity_error_eV": 5.551115123125783e-16,
+      "scientific_status": "FAIL"
+    }
+  }
+]

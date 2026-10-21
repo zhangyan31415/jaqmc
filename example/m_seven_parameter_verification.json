@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "scope": "Portable archive checks only; not new fitting, native wavefunction validation or ground-state training",
+  "copied_files_verified": 66,
+  "readme_links_checked": 50,
+  "materials": [
+    {
+      "material": "SnS2",
+      "angles": 12,
+      "path_rows_per_angle": 61,
+      "independent_k_per_angle": 60,
+      "errors": {
+        "spectrum_eV": 3.3861802251067274e-15,
+        "hermiticity_eV": 0.0,
+        "potential_periodicity_eV": 4.718447854656915e-16,
+        "tensor_eigenvalues_eV_A2": 3.552713678800501e-15,
+        "parameter_eV_or_eV_A2": 1.7763568394002505e-15
+      },
+      "fourier_error_eV": 4.591826330278008e-16,
+      "retained_original_scientific_status": "FAIL"
+    },
+    {
+      "material": "SnSe2",
+      "angles": 12,
+      "path_rows_per_angle": 61,
+      "independent_k_per_angle": 60,
+      "errors": {
+        "spectrum_eV": 2.8033131371785203e-15,
+        "hermiticity_eV": 0.0,
+        "potential_periodicity_eV": 5.551115123125783e-16,
+        "tensor_eigenvalues_eV_A2": 5.329070518200751e-15,
+        "parameter_eV_or_eV_A2": 1.7763568394002505e-15
+      },
+      "fourier_error_eV": 7.088678482079289e-16,
+      "retained_original_scientific_status": "FAIL"
+    }
+  ],
+  "python": "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+  "python_version": "3.11.15",
+  "numpy": "2.4.6",
+  "hostname": "test001",
+  "working_directory": "/data/work/zy/software/research-lab/10_nqs/external/jaqmc",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/research-lab/10_nqs/external/jaqmc/example/verify_m_seven_parameter.py",
+    "--out",
+    "/data/work/zy/software/research-lab/10_nqs/external/jaqmc/example/m_seven_parameter_verification.json"
+  ],
+  "process_thread_layout": "one process; BLAS/OpenMP threads=1"
+}

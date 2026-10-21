@@ -10,6 +10,10 @@
 | [MoTe₂ / AA](MoTe2/README.md) | [K，六参数联合拟合](MoTe2/AA/models/K/six_parameter_joint_20261016/README.md) | 9 个标定角度、角度函数、能带、参数和删角度对比；另有原子结构 |
 | [WSe₂ / AA](WSe2/README.md) | [K，七参数 top3 模型](WSe2/AA/models/K/seven_parameter_top3_20261018/README.md) | 主候选及对照、端点删除、小角度敏感性、完整 PDF |
 | [ZrS₂ / AB](ZrS2/README.md) | [Gamma，六参数模型](ZrS2/AB/models/Gamma/six_parameter_20261014/README.md) | 12 角度独立模型、小角度及全角度联合对照、3.15° gap 改进版、能带与参数趋势 |
+| [SnS₂ / AA](SnS2/README.md) | [M，新7参数双质量固定](SnS2/AA/models/M/seven_parameter_constant_mass_20261021/README.md) | 选中rank0，实际层质量轴、12角度、分带overlap、完整公式和固定态NQS成本记录 |
+| [SnSe₂ / AA](SnSe2/README.md) | [M，新7参数双质量固定](SnSe2/AA/models/M/seven_parameter_constant_mass_20261021/README.md) | 选中rank1，实际层质量轴、12角度、分带overlap、完整公式和固定态NQS成本记录 |
+
+SnS₂／SnSe₂ 的 [公共哈密顿量、角度函数及边界约定](M_VALLEY_SEVEN_PARAMETER.md) 说明两个新7参数模型与旧共同主轴7参数的区别。两种材料保留的三项势不同；均为每层一个轨道、无显式SOC的M谷模型。
 
 ## 目录约定
 
@@ -28,6 +32,14 @@ example/
 ├── ZrS2/
 │   ├── README.md
 │   └── AB/{README.md,models/Gamma/six_parameter_20261014/}
+├── SnS2/
+│   ├── README.md
+│   └── AA/{README.md,models/M/seven_parameter_constant_mass_20261021/}
+├── SnSe2/
+│   ├── README.md
+│   └── AA/{README.md,models/M/seven_parameter_constant_mass_20261021/}
+├── M_VALLEY_SEVEN_PARAMETER.md          # 新7参数的实空间/倒空间公式与适用范围
+├── verify_m_seven_parameter.py         # 两种新7模型的可移植归档检查
 ├── continuum_models_manifest.json      # 模型来源、原路径、SHA256
 ├── continuum_models_verification.json  # 归档完整性和读取核对
 ├── index.csv                          # 原有 MoTe2 结构逐文件索引

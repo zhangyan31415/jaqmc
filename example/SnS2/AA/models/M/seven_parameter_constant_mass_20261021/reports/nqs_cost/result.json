@@ -1,0 +1,1488 @@
+{
+  "scope": "fixed untrained wavefunction cost benchmark; not convergence, ground-state energies or phases",
+  "hostname": "gpu006",
+  "cwd": "/data/work/zy/software/research-lab/10_nqs",
+  "environment_prefix": "/data/work/zy/software/research-lab/10_nqs/.venv",
+  "python": "3.12.7 | packaged by conda-forge | (main, Oct  4 2024, 16:05:46) [GCC 13.3.0]",
+  "command": [
+    "/data/work/zy/software/research-lab/10_nqs/.venv/bin/python",
+    "/data/work/zy/software/research-lab/10_nqs/scripts/benchmark_m_new7.py",
+    "--walkers",
+    "64",
+    "--microbatch",
+    "4",
+    "--repeats",
+    "5",
+    "--trials",
+    "5",
+    "--theta",
+    "3.89",
+    "--out",
+    "/data/work/zy/software/research-lab/10_nqs/results/m_new7_nqs_cost_20261021/gpu"
+  ],
+  "jax": "0.11.2",
+  "device": "NVIDIA A100-PCIE-40GB",
+  "slurm_job_id": "574889",
+  "gpu_ids": "1",
+  "affinity": [
+    1,
+    2,
+    33,
+    34
+  ],
+  "process_threads": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "walkers": 64,
+  "microbatch": 4,
+  "particles": 18,
+  "spin_populations": [
+    9,
+    9
+  ],
+  "network_single": [
+    32,
+    32,
+    32
+  ],
+  "network_pair": [
+    16,
+    16,
+    16
+  ],
+  "determinants": 1,
+  "layer_components": 2,
+  "interaction": "same native Ewald2D dielectric10 in all controls; not a fitted material screening kernel",
+  "representation": "one selected M valley; unprojected real-space continuum; actual enlarged periodic cell; no parity-sector deletion",
+  "native_bilayer": "JaQMC original scalar kinetic + valley-momentum shift + first harmonic potential at same geometry/network; cost reference only",
+  "diagnostic": "new7_common_axes replaces actual two layer tensors by a shared tensor; diagnostic only",
+  "source_commit": "162cceb54ebae50c2dd434965f4974580202a4aa",
+  "source_sha256": {
+    "/data/work/zy/software/research-lab/10_nqs/scripts/benchmark_m_new7.py": "66ad0fd82270dffe2508c05c36d6ff1d58ad232522711f02adabad2b244b42a9",
+    "/data/work/zy/software/research-lab/10_nqs/scripts/m_valley_nqs.py": "edb5a50988dee207f646f307e7870d92208e30eaff9a6d3c2de9109f8509f2e4",
+    "/data/work/zy/software/research-lab/10_nqs/scripts/check_m_valley_nqs.py": "c5957fc90d4fae15ef37991132f8eb1fcef6d8e05d3df7439c72989a8905aae6"
+  },
+  "caveat": "native JaQMC components; moire CLI initializer bypassed; project SR; JAX0.11.2 outside declared<=0.9.1 range",
+  "models": {
+    "sns2_m": {
+      "material": "sns2_m",
+      "theta_deg": 3.8902381690076835,
+      "length_A": 53.6632638649,
+      "enlarged_cell_A": [
+        [
+          80.49489579829999,
+          -46.4737497567
+        ],
+        [
+          26.831631931500013,
+          46.4737497567
+        ]
+      ],
+      "simulation_cell_dimensionless": [
+        [
+          4.500000000053108,
+          -2.5980762113370535
+        ],
+        [
+          1.4999999999468916,
+          2.5980762113370535
+        ]
+      ],
+      "original_moire_cells": 18,
+      "parameters": 14064,
+      "parameter_hash": "61b92582ea69e16d9e870ae9af8e88e0ad22f006057d5f66d9ae7d3ba4af4915",
+      "models": {
+        "old7": {
+          "material": "sns2_m",
+          "variant": "old7",
+          "theta": 3.8902381690076835,
+          "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_7p/portable",
+          "parameters": [
+            4.314001003305875,
+            9.96151945103399,
+            0.10365543112365673,
+            -0.03144906036312825,
+            0.0009450406333057897,
+            -0.004136549911994716,
+            0.0,
+            0.013741011591203682,
+            0.0
+          ],
+          "tensors_A2": [
+            [
+              [
+                8.549639839140212,
+                -2.4454472220148196
+              ],
+              [
+                -2.4454472220148196,
+                5.725880615199653
+              ]
+            ],
+            [
+              [
+                8.549639839140212,
+                -2.4454472220148196
+              ],
+              [
+                -2.4454472220148196,
+                5.725880615199653
+              ]
+            ]
+          ],
+          "axis": [
+            0.11708541103645549,
+            -0.06759929357810529
+          ],
+          "oblique": [
+            [
+              0.11708541103645549,
+              0.0675992935828921
+            ],
+            [
+              0.0,
+              0.1351985871609974
+            ]
+          ],
+          "transfers": [
+            [
+              0.058542705518227746,
+              -0.033799646789052645
+            ],
+            [
+              0.058542705518227746,
+              0.10139894037194475
+            ]
+          ],
+          "primitive_A": [
+            [
+              53.6632638649,
+              0.0
+            ],
+            [
+              -26.831631933400004,
+              46.4737497567
+            ]
+          ],
+          "enlarged_A": [
+            [
+              80.49489579829999,
+              -46.4737497567
+            ],
+            [
+              26.831631931500013,
+              46.4737497567
+            ]
+          ],
+          "length_A": 53.6632638649,
+          "hashes": {
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_7p/portable/model.py": "106f8e3e15dfbad0bef0e9b74d116aa0e81d1a4392d7832bd21f80146c2bfb0d",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_7p/portable/kernel.py": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_7p/portable/physical.py": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_7p/portable/COEFFICIENTS.json": "84dc8a473c3940677c6384ace0884e68800ac32a714dae2838ea31da6f7b715d",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_7p/portable/CATALOG.json": "1952fb8f64930228b502898bba30ddb78861f73920fc91e3adbeff1b2c7c453f",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_7p/portable/geometry.npz": "3d0ccf686c129d802de1664a2e014b4716e5a54fce6dc86496dee4f78cf8bd52"
+          }
+        },
+        "new7": {
+          "material": "sns2_m",
+          "variant": "new7",
+          "theta": 3.8902381690076835,
+          "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable",
+          "parameters": [
+            4.588327236983352,
+            10.708888915231197,
+            0.10691945673002487,
+            -0.03208250982812902,
+            0.0076277417923595655,
+            0.0,
+            0.0,
+            8.521631369265969e-05,
+            0.022314025414682765
+          ],
+          "tensors_A2": [
+            [
+              [
+                8.995413698902258,
+                -2.7479871594890755
+              ],
+              [
+                -2.7479871594890755,
+                6.301802453312291
+              ]
+            ],
+            [
+              [
+                9.35503195418029,
+                -2.540361462991296
+              ],
+              [
+                -2.540361462991296,
+                5.94218419803426
+              ]
+            ]
+          ],
+          "axis": [
+            0.11708541103645549,
+            -0.06759929357810529
+          ],
+          "oblique": [
+            [
+              0.11708541103645549,
+              0.0675992935828921
+            ],
+            [
+              0.0,
+              0.1351985871609974
+            ]
+          ],
+          "transfers": [
+            [
+              0.058542705518227746,
+              -0.033799646789052645
+            ],
+            [
+              0.058542705518227746,
+              0.10139894037194475
+            ]
+          ],
+          "primitive_A": [
+            [
+              53.6632638649,
+              0.0
+            ],
+            [
+              -26.831631933400004,
+              46.4737497567
+            ]
+          ],
+          "enlarged_A": [
+            [
+              80.49489579829999,
+              -46.4737497567
+            ],
+            [
+              26.831631931500013,
+              46.4737497567
+            ]
+          ],
+          "length_A": 53.6632638649,
+          "hashes": {
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/model.py": "4042f6c5919b2c7d9034b02434405450546148b8cee6675d946e39176afa0db3",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/kernel.py": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/physical.py": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/COEFFICIENTS.json": "855298009bab8910c66c1a333bd440b71700c3c5416ca7e23bfd2a37b5208fac",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/CATALOG.json": "1952fb8f64930228b502898bba30ddb78861f73920fc91e3adbeff1b2c7c453f",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/sns2_m_rank0/portable/geometry.npz": "3d0ccf686c129d802de1664a2e014b4716e5a54fce6dc86496dee4f78cf8bd52"
+          }
+        },
+        "full9": {
+          "material": "sns2_m",
+          "variant": "full9",
+          "theta": 3.8902381690076835,
+          "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_9p/portable",
+          "parameters": [
+            4.53971793925353,
+            10.390671632203025,
+            0.09479793198925562,
+            -0.033446170397484445,
+            0.006829075050217102,
+            -0.010679937789076107,
+            -0.01274510254158965,
+            0.018208938062767063,
+            0.02027223987774003
+          ],
+          "tensors_A2": [
+            [
+              [
+                8.752674227424437,
+                -2.626939562774442
+              ],
+              [
+                -2.626939562774442,
+                6.177715344032116
+              ]
+            ],
+            [
+              [
+                9.096451460525275,
+                -2.4284596846952353
+              ],
+              [
+                -2.4284596846952353,
+                5.833938110931282
+              ]
+            ]
+          ],
+          "axis": [
+            0.11708541103645549,
+            -0.06759929357810529
+          ],
+          "oblique": [
+            [
+              0.11708541103645549,
+              0.0675992935828921
+            ],
+            [
+              0.0,
+              0.1351985871609974
+            ]
+          ],
+          "transfers": [
+            [
+              0.058542705518227746,
+              -0.033799646789052645
+            ],
+            [
+              0.058542705518227746,
+              0.10139894037194475
+            ]
+          ],
+          "primitive_A": [
+            [
+              53.6632638649,
+              0.0
+            ],
+            [
+              -26.831631933400004,
+              46.4737497567
+            ]
+          ],
+          "enlarged_A": [
+            [
+              80.49489579829999,
+              -46.4737497567
+            ],
+            [
+              26.831631931500013,
+              46.4737497567
+            ]
+          ],
+          "length_A": 53.6632638649,
+          "hashes": {
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_9p/portable/model.py": "106f8e3e15dfbad0bef0e9b74d116aa0e81d1a4392d7832bd21f80146c2bfb0d",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_9p/portable/kernel.py": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_9p/portable/physical.py": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_9p/portable/COEFFICIENTS.json": "d219b0897870a44543816b4d179d37aef1de2b94282c2fd8bcb09551c8ec863d",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_9p/portable/CATALOG.json": "1952fb8f64930228b502898bba30ddb78861f73920fc91e3adbeff1b2c7c453f",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/sns2_m_9p/portable/geometry.npz": "3d0ccf686c129d802de1664a2e014b4716e5a54fce6dc86496dee4f78cf8bd52"
+          }
+        }
+      }
+    },
+    "snse2_m": {
+      "material": "snse2_m",
+      "theta_deg": 3.8902381690076835,
+      "length_A": 56.31865285779458,
+      "enlarged_cell_A": [
+        [
+          97.49056144,
+          3.3109530499999993
+        ],
+        [
+          -1.9115796400000038,
+          56.28620189
+        ]
+      ],
+      "simulation_cell_dimensionless": [
+        [
+          5.1931583849936045,
+          0.17636890525561064
+        ],
+        [
+          -0.1018266352087702,
+          2.9982713914761145
+        ]
+      ],
+      "original_moire_cells": 18,
+      "parameters": 14064,
+      "parameter_hash": "61b92582ea69e16d9e870ae9af8e88e0ad22f006057d5f66d9ae7d3ba4af4915",
+      "models": {
+        "old7": {
+          "material": "snse2_m",
+          "variant": "old7",
+          "theta": 3.8902381690076835,
+          "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_7p/portable",
+          "parameters": [
+            5.124299890620424,
+            13.271678798713545,
+            0.11842925678970113,
+            -0.013351731933370954,
+            -0.001164483174532356,
+            0.0009222996315426721,
+            0.0,
+            0.010626287072168103,
+            0.0
+          ],
+          "tensors_A2": [
+            [
+              [
+                13.262292417496626,
+                0.27638071603804243
+              ],
+              [
+                0.27638071603804243,
+                5.133686271837344
+              ]
+            ],
+            [
+              [
+                13.262292417496626,
+                0.27638071603804243
+              ],
+              [
+                0.27638071603804243,
+                5.133686271837344
+              ]
+            ]
+          ],
+          "axis": [
+            0.1287498301726815,
+            0.004372573485994652
+          ],
+          "oblique": [
+            [
+              0.06058815537807059,
+              0.11368691040711935
+            ],
+            [
+              -0.06816167479461088,
+              0.1093143369211247
+            ]
+          ],
+          "transfers": [
+            [
+              0.06437491508634074,
+              0.002186286742997326
+            ],
+            [
+              -0.0037867597082701446,
+              0.11150062366412203
+            ]
+          ],
+          "primitive_A": [
+            [
+              47.78949089999999,
+              29.79857747
+            ],
+            [
+              -49.70107054,
+              26.48762442
+            ]
+          ],
+          "enlarged_A": [
+            [
+              97.49056144,
+              3.3109530499999993
+            ],
+            [
+              -1.9115796400000038,
+              56.28620189
+            ]
+          ],
+          "length_A": 56.31865285779458,
+          "hashes": {
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_7p/portable/model.py": "106f8e3e15dfbad0bef0e9b74d116aa0e81d1a4392d7832bd21f80146c2bfb0d",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_7p/portable/kernel.py": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_7p/portable/physical.py": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_7p/portable/COEFFICIENTS.json": "caf3ea58ff13bf180570f7df9b8492716514744c9480efe7ccc6d724f522776b",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_7p/portable/CATALOG.json": "1952fb8f64930228b502898bba30ddb78861f73920fc91e3adbeff1b2c7c453f",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_7p/portable/geometry.npz": "d46dc03bc1216ffb213a146e94d1b4bd5f78d67f89833b391d97965087914e00"
+          }
+        },
+        "new7": {
+          "material": "snse2_m",
+          "variant": "new7",
+          "theta": 3.8902381690076835,
+          "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable",
+          "parameters": [
+            5.22166519194392,
+            13.786341671707161,
+            0.13635735768912854,
+            -0.0149285634914781,
+            0.0,
+            0.0,
+            0.011716404685752252,
+            0.01226230924277739,
+            0.030092479269859577
+          ],
+          "tensors_A2": [
+            [
+              [
+                13.786341671707161,
+                -2.0647091818280517e-10
+              ],
+              [
+                -2.0647091818280517e-10,
+                5.22166519194392
+              ]
+            ],
+            [
+              [
+                13.746918587215463,
+                0.579734236452307
+              ],
+              [
+                0.579734236452307,
+                5.26108827643562
+              ]
+            ]
+          ],
+          "axis": [
+            0.1287498301726815,
+            0.004372573485994652
+          ],
+          "oblique": [
+            [
+              0.06058815537807059,
+              0.11368691040711935
+            ],
+            [
+              -0.06816167479461088,
+              0.1093143369211247
+            ]
+          ],
+          "transfers": [
+            [
+              0.06437491508634074,
+              0.002186286742997326
+            ],
+            [
+              -0.0037867597082701446,
+              0.11150062366412203
+            ]
+          ],
+          "primitive_A": [
+            [
+              47.78949089999999,
+              29.79857747
+            ],
+            [
+              -49.70107054,
+              26.48762442
+            ]
+          ],
+          "enlarged_A": [
+            [
+              97.49056144,
+              3.3109530499999993
+            ],
+            [
+              -1.9115796400000038,
+              56.28620189
+            ]
+          ],
+          "length_A": 56.31865285779458,
+          "hashes": {
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/model.py": "4042f6c5919b2c7d9034b02434405450546148b8cee6675d946e39176afa0db3",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/kernel.py": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/physical.py": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/COEFFICIENTS.json": "1b3d08e665aab4e3a3632d8d90848058795113a257f2efce5a72b191bdf0ce7f",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/CATALOG.json": "1952fb8f64930228b502898bba30ddb78861f73920fc91e3adbeff1b2c7c453f",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_seven_term_search_20261021/snse2_m_rank1/portable/geometry.npz": "d46dc03bc1216ffb213a146e94d1b4bd5f78d67f89833b391d97965087914e00"
+          }
+        },
+        "full9": {
+          "material": "snse2_m",
+          "variant": "full9",
+          "theta": 3.8902381690076835,
+          "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p/portable",
+          "parameters": [
+            5.25749723352842,
+            13.781338410248354,
+            0.13311298432617988,
+            -0.015063650855917961,
+            0.0026042207841648814,
+            -0.0005227905848186915,
+            0.009761273828431082,
+            0.006024556305151297,
+            0.03262559178202138
+          ],
+          "tensors_A2": [
+            [
+              [
+                13.781338410248354,
+                -2.0548649074604834e-10
+              ],
+              [
+                -2.0548649074604834e-10,
+                5.25749723352842
+              ]
+            ],
+            [
+              [
+                13.74210329007801,
+                0.5769701363387714
+              ],
+              [
+                0.5769701363387714,
+                5.2967323536987685
+              ]
+            ]
+          ],
+          "axis": [
+            0.1287498301726815,
+            0.004372573485994652
+          ],
+          "oblique": [
+            [
+              0.06058815537807059,
+              0.11368691040711935
+            ],
+            [
+              -0.06816167479461088,
+              0.1093143369211247
+            ]
+          ],
+          "transfers": [
+            [
+              0.06437491508634074,
+              0.002186286742997326
+            ],
+            [
+              -0.0037867597082701446,
+              0.11150062366412203
+            ]
+          ],
+          "primitive_A": [
+            [
+              47.78949089999999,
+              29.79857747
+            ],
+            [
+              -49.70107054,
+              26.48762442
+            ]
+          ],
+          "enlarged_A": [
+            [
+              97.49056144,
+              3.3109530499999993
+            ],
+            [
+              -1.9115796400000038,
+              56.28620189
+            ]
+          ],
+          "length_A": 56.31865285779458,
+          "hashes": {
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p/portable/model.py": "106f8e3e15dfbad0bef0e9b74d116aa0e81d1a4392d7832bd21f80146c2bfb0d",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p/portable/kernel.py": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p/portable/physical.py": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p/portable/COEFFICIENTS.json": "08be9c4f98beded948870c653f54f2121511cc0205a3bd25db505110a10cce41",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p/portable/CATALOG.json": "1952fb8f64930228b502898bba30ddb78861f73920fc91e3adbeff1b2c7c453f",
+            "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p/portable/geometry.npz": "d46dc03bc1216ffb213a146e94d1b4bd5f78d67f89833b391d97965087914e00"
+          }
+        }
+      }
+    }
+  },
+  "operator_validation": {
+    "sns2_m": {
+      "actual_native_tensor_error_meV": 4.053247736338453e-13,
+      "actual_common_path_error_meV": 7.230470624735916e-13
+    },
+    "snse2_m": {
+      "actual_native_tensor_error_meV": 8.959338845576656e-13,
+      "actual_common_path_error_meV": 4.1724349659571047e-13
+    }
+  },
+  "results": {
+    "sns2_m": {
+      "potential": {
+        "native_bilayer": {
+          "first_call_seconds": 6.057157337665558,
+          "trial_seconds": [
+            0.0016087643802165986,
+            0.00150105282664299,
+            0.0014875993132591248,
+            0.0014939486980438232,
+            0.0014938592910766601
+          ],
+          "median_ms": 1.4939486980438232,
+          "min_ms": 1.4875993132591248,
+          "max_ms": 1.6087643802165985,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 6853416
+          }
+        },
+        "old7": {
+          "first_call_seconds": 2.3569385185837746,
+          "trial_seconds": [
+            0.0015220455825328827,
+            0.0013988085091114044,
+            0.0014020591974258424,
+            0.001402100920677185,
+            0.0013990975916385652
+          ],
+          "median_ms": 1.4020591974258423,
+          "min_ms": 1.3988085091114044,
+          "max_ms": 1.5220455825328827,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 6787880
+          }
+        },
+        "new7_common_axes": {
+          "first_call_seconds": 1.7494861148297787,
+          "trial_seconds": [
+            0.0015181779861450195,
+            0.0014060541987419128,
+            0.001409311592578888,
+            0.0014053545892238617,
+            0.0013976655900478363
+          ],
+          "median_ms": 1.4060541987419128,
+          "min_ms": 1.3976655900478363,
+          "max_ms": 1.5181779861450195,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 6787880
+          }
+        },
+        "new7": {
+          "first_call_seconds": 1.8000052720308304,
+          "trial_seconds": [
+            0.0015155285596847533,
+            0.0014022380113601685,
+            0.0013999879360198975,
+            0.0014016620814800262,
+            0.0014016255736351013
+          ],
+          "median_ms": 1.4016620814800262,
+          "min_ms": 1.3999879360198975,
+          "max_ms": 1.5155285596847534,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 6787880
+          }
+        },
+        "full9": {
+          "first_call_seconds": 1.864865668118,
+          "trial_seconds": [
+            0.0014077283442020417,
+            0.0014020726084709167,
+            0.001399821788072586,
+            0.001399974524974823,
+            0.0014013715088367462
+          ],
+          "median_ms": 1.4013715088367462,
+          "min_ms": 1.399821788072586,
+          "max_ms": 1.4077283442020416,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 6787880
+          }
+        }
+      },
+      "kinetic": {
+        "native_bilayer": {
+          "first_call_seconds": 17.89675334095955,
+          "trial_seconds": [
+            0.26139108687639234,
+            0.2606995768845081,
+            0.2607008881866932,
+            0.26072434708476067,
+            0.26070561632514
+          ],
+          "median_ms": 260.70561632514,
+          "min_ms": 260.69957688450813,
+          "max_ms": 261.39108687639236,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7216080
+          }
+        },
+        "old7": {
+          "first_call_seconds": 8.832019474357367,
+          "trial_seconds": [
+            0.21109444051980972,
+            0.21057628393173217,
+            0.21054009944200516,
+            0.2106178343296051,
+            0.21050800904631614
+          ],
+          "median_ms": 210.57628393173218,
+          "min_ms": 210.50800904631615,
+          "max_ms": 211.09444051980972,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7182800
+          }
+        },
+        "new7_common_axes": {
+          "first_call_seconds": 8.626069474965334,
+          "trial_seconds": [
+            0.21107063964009284,
+            0.21040839031338693,
+            0.2105307959020138,
+            0.2104843057692051,
+            0.21046868413686753
+          ],
+          "median_ms": 210.4843057692051,
+          "min_ms": 210.40839031338692,
+          "max_ms": 211.07063964009285,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7182800
+          }
+        },
+        "new7": {
+          "first_call_seconds": 9.72503350675106,
+          "trial_seconds": [
+            0.5932109028100967,
+            0.5980393894016742,
+            0.5984980121254921,
+            0.5983595825731755,
+            0.5983147561550141
+          ],
+          "median_ms": 598.314756155014,
+          "min_ms": 593.2109028100967,
+          "max_ms": 598.4980121254921,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 4357840
+          }
+        },
+        "full9": {
+          "first_call_seconds": 5.705815423280001,
+          "trial_seconds": [
+            0.5971538878977298,
+            0.5949625663459301,
+            0.5991250976920128,
+            0.5985167875885964,
+            0.5986856810748578
+          ],
+          "median_ms": 598.5167875885963,
+          "min_ms": 594.9625663459301,
+          "max_ms": 599.1250976920128,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 4357840
+          }
+        }
+      },
+      "local_energy": {
+        "native_bilayer": {
+          "first_call_seconds": 12.666969362646341,
+          "trial_seconds": [
+            0.26208619177341463,
+            0.2615834169089794,
+            0.2614774860441685,
+            0.2615032561123371,
+            0.2615442082285881
+          ],
+          "untrained_energy_mean_meV": [
+            598.1635215288154,
+            -20.611624186036906
+          ],
+          "median_ms": 261.5442082285881,
+          "min_ms": 261.4774860441685,
+          "max_ms": 262.0861917734146,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7258320
+          }
+        },
+        "old7": {
+          "first_call_seconds": 13.376760717481375,
+          "trial_seconds": [
+            0.21537920236587524,
+            0.2148897022008896,
+            0.2148457311093807,
+            0.21478777453303338,
+            0.21479142531752587
+          ],
+          "untrained_energy_mean_meV": [
+            -134.64137184941967,
+            -2.819983215324825
+          ],
+          "median_ms": 214.84573110938072,
+          "min_ms": 214.78777453303337,
+          "max_ms": 215.37920236587524,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7249616
+          }
+        },
+        "new7_common_axes": {
+          "first_call_seconds": 10.769930828362703,
+          "trial_seconds": [
+            0.21532430425286292,
+            0.21477908194065093,
+            0.21479378566145896,
+            0.2147161401808262,
+            0.21472913697361945
+          ],
+          "untrained_energy_mean_meV": [
+            -198.37636978781853,
+            -23.490502246854803
+          ],
+          "median_ms": 214.77908194065094,
+          "min_ms": 214.7161401808262,
+          "max_ms": 215.32430425286293,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7249616
+          }
+        },
+        "new7": {
+          "first_call_seconds": 6.669627670198679,
+          "trial_seconds": [
+            0.6036453098058701,
+            0.6084763415157795,
+            0.60393837839365,
+            0.6028870724141597,
+            0.6037501618266106
+          ],
+          "untrained_energy_mean_meV": [
+            -198.63982130634065,
+            -23.22194510797766
+          ],
+          "median_ms": 603.7501618266106,
+          "min_ms": 602.8870724141598,
+          "max_ms": 608.4763415157795,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 4455888
+          }
+        },
+        "full9": {
+          "first_call_seconds": 6.614343900233507,
+          "trial_seconds": [
+            0.6025482311844825,
+            0.6076854631304741,
+            0.602628268301487,
+            0.6032799921929837,
+            0.6031707137823105
+          ],
+          "untrained_energy_mean_meV": [
+            -127.0017698052019,
+            -66.22158036232622
+          ],
+          "median_ms": 603.1707137823105,
+          "min_ms": 602.5482311844826,
+          "max_ms": 607.6854631304741,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 4455888
+          }
+        }
+      },
+      "vmc_sr_step": {
+        "native_bilayer": {
+          "first_call_seconds": 29.015233144164085,
+          "trial_seconds": [
+            0.2801043324172497,
+            0.27856340184807776,
+            0.27838603779673576,
+            0.2784326858818531,
+            0.278390197455883
+          ],
+          "median_ms": 278.4326858818531,
+          "min_ms": 278.38603779673576,
+          "max_ms": 280.1043324172497,
+          "compiled_memory_bytes": {
+            "arguments": 83912,
+            "outputs": 140224,
+            "temporaries": 1201850064
+          }
+        },
+        "old7": {
+          "first_call_seconds": 15.492873188108206,
+          "trial_seconds": [
+            0.2330286592245102,
+            0.23143645524978637,
+            0.23124394416809083,
+            0.23137011080980302,
+            0.23152520507574081
+          ],
+          "median_ms": 231.43645524978638,
+          "min_ms": 231.24394416809082,
+          "max_ms": 233.0286592245102,
+          "compiled_memory_bytes": {
+            "arguments": 83912,
+            "outputs": 140224,
+            "temporaries": 1201844944
+          }
+        },
+        "new7_common_axes": {
+          "first_call_seconds": 15.360261771827936,
+          "trial_seconds": [
+            0.23358927741646768,
+            0.23173243328928947,
+            0.23160413280129433,
+            0.2315532945096493,
+            0.23158156871795654
+          ],
+          "median_ms": 231.60413280129433,
+          "min_ms": 231.55329450964928,
+          "max_ms": 233.58927741646767,
+          "compiled_memory_bytes": {
+            "arguments": 83912,
+            "outputs": 140224,
+            "temporaries": 1201844944
+          }
+        },
+        "new7": {
+          "first_call_seconds": 12.46296589449048,
+          "trial_seconds": [
+            0.6199771717190743,
+            0.6211910270154476,
+            0.6211689241230488,
+            0.6175183273851872,
+            0.6173219718039036
+          ],
+          "median_ms": 619.9771717190742,
+          "min_ms": 617.3219718039036,
+          "max_ms": 621.1910270154476,
+          "compiled_memory_bytes": {
+            "arguments": 83912,
+            "outputs": 140224,
+            "temporaries": 1201838544
+          }
+        },
+        "full9": {
+          "first_call_seconds": 12.454396653920412,
+          "trial_seconds": [
+            0.6208895690739155,
+            0.6209684923291207,
+            0.6189143627882003,
+            0.6170714929699898,
+            0.6166498549282551
+          ],
+          "median_ms": 618.9143627882004,
+          "min_ms": 616.6498549282551,
+          "max_ms": 620.9684923291206,
+          "compiled_memory_bytes": {
+            "arguments": 83912,
+            "outputs": 140224,
+            "temporaries": 1201838544
+          }
+        }
+      }
+    },
+    "snse2_m": {
+      "potential": {
+        "native_bilayer": {
+          "first_call_seconds": 1.9302572533488274,
+          "trial_seconds": [
+            0.0016233980655670165,
+            0.00151590034365654,
+            0.0015082187950611115,
+            0.001507752388715744,
+            0.0011735014617443086
+          ],
+          "median_ms": 1.5082187950611115,
+          "min_ms": 1.1735014617443085,
+          "max_ms": 1.6233980655670166,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 6853416
+          }
+        },
+        "old7": {
+          "first_call_seconds": 1.7976953461766243,
+          "trial_seconds": [
+            0.0015283375978469849,
+            0.0014103010296821594,
+            0.0014113664627075195,
+            0.001411154866218567,
+            0.0011035524308681487
+          ],
+          "median_ms": 1.411154866218567,
+          "min_ms": 1.1035524308681488,
+          "max_ms": 1.5283375978469849,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 6787880
+          }
+        },
+        "new7_common_axes": {
+          "first_call_seconds": 1.7511188611388206,
+          "trial_seconds": [
+            0.0015349671244621276,
+            0.0014158643782138825,
+            0.0014192871749401093,
+            0.0014165163040161133,
+            0.0010982602834701538
+          ],
+          "median_ms": 1.4165163040161133,
+          "min_ms": 1.0982602834701538,
+          "max_ms": 1.5349671244621277,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 6787880
+          }
+        },
+        "new7": {
+          "first_call_seconds": 1.7492315955460072,
+          "trial_seconds": [
+            0.0015245415270328522,
+            0.0014125332236289978,
+            0.0014129966497421266,
+            0.0010991811752319336,
+            0.0010961703956127167
+          ],
+          "median_ms": 1.4125332236289978,
+          "min_ms": 1.0961703956127167,
+          "max_ms": 1.5245415270328522,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 6787880
+          }
+        },
+        "full9": {
+          "first_call_seconds": 1.8871510922908783,
+          "trial_seconds": [
+            0.0014189474284648895,
+            0.0014093108475208282,
+            0.0014156796038150786,
+            0.0011523857712745667,
+            0.001100371778011322
+          ],
+          "median_ms": 1.4093108475208282,
+          "min_ms": 1.100371778011322,
+          "max_ms": 1.4189474284648895,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 6787880
+          }
+        }
+      },
+      "kinetic": {
+        "native_bilayer": {
+          "first_call_seconds": 10.70611833408475,
+          "trial_seconds": [
+            0.26153711304068566,
+            0.2608011312782764,
+            0.26087697595357895,
+            0.26078606098890306,
+            0.26097899302840233
+          ],
+          "median_ms": 260.87697595357895,
+          "min_ms": 260.78606098890305,
+          "max_ms": 261.53711304068565,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7216080
+          }
+        },
+        "old7": {
+          "first_call_seconds": 8.921921294182539,
+          "trial_seconds": [
+            0.21232921332120896,
+            0.2115064561367035,
+            0.21158189326524734,
+            0.21148722097277642,
+            0.21154891550540925
+          ],
+          "median_ms": 211.54891550540924,
+          "min_ms": 211.4872209727764,
+          "max_ms": 212.32921332120895,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7182800
+          }
+        },
+        "new7_common_axes": {
+          "first_call_seconds": 8.811270918697119,
+          "trial_seconds": [
+            0.212638770788908,
+            0.2118946336209774,
+            0.21142947301268578,
+            0.21152735203504563,
+            0.21145177781581878
+          ],
+          "median_ms": 211.52735203504562,
+          "min_ms": 211.42947301268578,
+          "max_ms": 212.638770788908,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7182800
+          }
+        },
+        "new7": {
+          "first_call_seconds": 5.962911073118448,
+          "trial_seconds": [
+            0.5923003740608692,
+            0.5918988108634948,
+            0.592577300965786,
+            0.5918335281312466,
+            0.5928064361214638
+          ],
+          "median_ms": 592.3003740608692,
+          "min_ms": 591.8335281312466,
+          "max_ms": 592.8064361214638,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 4357840
+          }
+        },
+        "full9": {
+          "first_call_seconds": 5.848619528114796,
+          "trial_seconds": [
+            0.5933036886155605,
+            0.5921379357576371,
+            0.5918374702334404,
+            0.592012070119381,
+            0.5919669099152088
+          ],
+          "median_ms": 592.012070119381,
+          "min_ms": 591.8374702334404,
+          "max_ms": 593.3036886155605,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 4357840
+          }
+        }
+      },
+      "local_energy": {
+        "native_bilayer": {
+          "first_call_seconds": 11.899593770503998,
+          "trial_seconds": [
+            0.2622257724404335,
+            0.2612992890179157,
+            0.2612979859113693,
+            0.26125468313694,
+            0.2613889448344707
+          ],
+          "untrained_energy_mean_meV": [
+            552.2883774410118,
+            29.50869649282496
+          ],
+          "median_ms": 261.2992890179157,
+          "min_ms": 261.25468313694,
+          "max_ms": 262.2257724404335,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7258320
+          }
+        },
+        "old7": {
+          "first_call_seconds": 10.814860042184591,
+          "trial_seconds": [
+            0.21572701185941695,
+            0.21494154408574104,
+            0.21505538672208785,
+            0.21494845524430276,
+            0.21496869549155234
+          ],
+          "untrained_energy_mean_meV": [
+            14.505807274318073,
+            107.55221292570796
+          ],
+          "median_ms": 214.96869549155235,
+          "min_ms": 214.94154408574104,
+          "max_ms": 215.72701185941696,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7249616
+          }
+        },
+        "new7_common_axes": {
+          "first_call_seconds": 10.783872593194246,
+          "trial_seconds": [
+            0.21545741334557533,
+            0.21494901776313782,
+            0.21486073806881906,
+            0.21494284719228746,
+            0.21492830961942672
+          ],
+          "untrained_energy_mean_meV": [
+            -51.051699060764136,
+            106.35176460086079
+          ],
+          "median_ms": 214.94284719228745,
+          "min_ms": 214.86073806881905,
+          "max_ms": 215.45741334557533,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 7249616
+          }
+        },
+        "new7": {
+          "first_call_seconds": 6.574392057955265,
+          "trial_seconds": [
+            0.6025236554443836,
+            0.6017579458653927,
+            0.6027193859219551,
+            0.6038173243403435,
+            0.6034446597099304
+          ],
+          "untrained_energy_mean_meV": [
+            -52.05867385336809,
+            106.22974842377
+          ],
+          "median_ms": 602.7193859219551,
+          "min_ms": 601.7579458653927,
+          "max_ms": 603.8173243403435,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 4455888
+          }
+        },
+        "full9": {
+          "first_call_seconds": 6.618800822645426,
+          "trial_seconds": [
+            0.602476267516613,
+            0.6020875424146652,
+            0.6027300164103508,
+            0.6048719912767411,
+            0.6039520837366581
+          ],
+          "untrained_energy_mean_meV": [
+            -60.951287321488856,
+            103.44175809847854
+          ],
+          "median_ms": 602.7300164103508,
+          "min_ms": 602.0875424146652,
+          "max_ms": 604.871991276741,
+          "compiled_memory_bytes": {
+            "arguments": 83904,
+            "outputs": 1024,
+            "temporaries": 4455888
+          }
+        }
+      },
+      "vmc_sr_step": {
+        "native_bilayer": {
+          "first_call_seconds": 15.725724924355745,
+          "trial_seconds": [
+            0.2799987092614174,
+            0.2784168541431427,
+            0.2783763721585274,
+            0.2783766381442547,
+            0.27834637016057967
+          ],
+          "median_ms": 278.3766381442547,
+          "min_ms": 278.3463701605797,
+          "max_ms": 279.9987092614174,
+          "compiled_memory_bytes": {
+            "arguments": 83912,
+            "outputs": 140224,
+            "temporaries": 1201850064
+          }
+        },
+        "old7": {
+          "first_call_seconds": 15.299513291567564,
+          "trial_seconds": [
+            0.2325100615620613,
+            0.23097225055098533,
+            0.23078224062919617,
+            0.23082403913140298,
+            0.2308373659849167
+          ],
+          "median_ms": 230.8373659849167,
+          "min_ms": 230.78224062919617,
+          "max_ms": 232.5100615620613,
+          "compiled_memory_bytes": {
+            "arguments": 83912,
+            "outputs": 140224,
+            "temporaries": 1201844944
+          }
+        },
+        "new7_common_axes": {
+          "first_call_seconds": 15.649046741425991,
+          "trial_seconds": [
+            0.23236033022403718,
+            0.2308124877512455,
+            0.23082477673888208,
+            0.23086292967200278,
+            0.2308654420077801
+          ],
+          "median_ms": 230.8629296720028,
+          "min_ms": 230.8124877512455,
+          "max_ms": 232.36033022403717,
+          "compiled_memory_bytes": {
+            "arguments": 83912,
+            "outputs": 140224,
+            "temporaries": 1201844944
+          }
+        },
+        "new7": {
+          "first_call_seconds": 12.407046478241682,
+          "trial_seconds": [
+            0.6218867257237435,
+            0.6208228588104248,
+            0.620434294641018,
+            0.6202611237764358,
+            0.616728164255619
+          ],
+          "median_ms": 620.4342946410179,
+          "min_ms": 616.728164255619,
+          "max_ms": 621.8867257237434,
+          "compiled_memory_bytes": {
+            "arguments": 83912,
+            "outputs": 140224,
+            "temporaries": 1201838544
+          }
+        },
+        "full9": {
+          "first_call_seconds": 12.433444730937481,
+          "trial_seconds": [
+            0.6209610313177109,
+            0.620587682723999,
+            0.6203133396804332,
+            0.6202865801751614,
+            0.6169717222452163
+          ],
+          "median_ms": 620.3133396804333,
+          "min_ms": 616.9717222452164,
+          "max_ms": 620.9610313177109,
+          "compiled_memory_bytes": {
+            "arguments": 83912,
+            "outputs": 140224,
+            "temporaries": 1201838544
+          }
+        }
+      }
+    }
+  },
+  "device_memory_stats": {
+    "num_allocs": 1301224,
+    "bytes_in_use": 256512,
+    "peak_bytes_in_use": 1202308352,
+    "largest_alloc_size": 1201850112,
+    "bytes_limit": 31805407232,
+    "bytes_reserved": 0,
+    "peak_bytes_reserved": 0,
+    "largest_free_block_bytes": 2147483648,
+    "pool_bytes": 4297064448,
+    "peak_pool_bytes": 4297064448
+  },
+  "elapsed_seconds": 934.0559469759464
+}
