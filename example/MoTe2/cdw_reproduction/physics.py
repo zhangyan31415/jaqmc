@@ -14,6 +14,7 @@ from jaqmc.app.moire.wavefunction import MoireWavefunction
 from jaqmc.estimator.ewald import EwaldSum2D
 from jaqmc.estimator.kinetic import EuclideanKinetic, LaplacianMode
 from jaqmc.utils.wiring import runtime_dep
+from jaqmc.wavefunction.output.logdet import LogDet
 from reference import configuration, exact_slater, spectral_seed
 
 jax.config.update("jax_enable_x64", True)
@@ -146,7 +147,70 @@ class Model:
         p = jax.tree.map(lambda x: x.astype(jnp.float64), p)
         return p, r, s
 
-    def make_sampler(self, sweeps=20):
+    def make_sampler(self, sweeps=20, cache_orbitals=True):
+        """Metropolis sweeps, caching position-only orbitals during angle moves.
+
+        The cache lives within one call so parameter updates cannot stale it.
+        ``cache_orbitals=False`` retains the original evaluation path.
+        """
+        if not cache_orbitals:
+            return self._make_uncached_sampler(sweeps)
+
+        def orbitals(p, r, s):
+            return self.wf.layer_components(
+                p, MoireData(positions=r, spin_coords=s))[0]
+
+        def from_orbitals(phi, s, jastrow):
+            chi = jnp.stack([jnp.exp(1j*s), jnp.exp(-1j*s)], axis=-1)
+            matrix = jnp.einsum("il,ldij->dij", chi, phi)
+            return LogDet().apply({}, matrix)["logpsi"] + jastrow
+
+        orbital_batch = jax.vmap(orbitals, in_axes=(None, 0, 0))
+        jastrow_batch = jax.vmap(self.jastrow)
+        log_batch = jax.vmap(from_orbitals)
+
+        def run(p, state, width):
+            r, s, key = state
+            phi = orbital_batch(p, r, s)
+            jastrow = jastrow_batch(r)
+            logs = log_batch(phi, s, jastrow)
+
+            def step(carry, _):
+                r, s, phi, jastrow, logs, key, acceptance = carry
+                key, a, b, c, d = jax.random.split(key, 5)
+                candidate = jnp.mod((r+width*jax.random.normal(a, r.shape))@
+                                    self.invcell, 1.)@self.cell
+                proposed_phi = orbital_batch(p, candidate, s)
+                proposed_jastrow = jastrow_batch(candidate)
+                proposed = log_batch(proposed_phi, s, proposed_jastrow)
+                take = jnp.log(jax.random.uniform(b, (self.walkers,))) < 2*(proposed.real-logs.real)
+                r = jnp.where(take[:, None, None], candidate, r)
+                phi = jnp.where(take[:, None, None, None, None], proposed_phi, phi)
+                jastrow = jnp.where(take, proposed_jastrow, jastrow)
+                logs = jnp.where(take, proposed, logs)
+
+                def angle_step(index, carry):
+                    s, logs, spin_key, count = carry
+                    spin_key, proposal_key, accept_key = jax.random.split(spin_key, 3)
+                    angles = s.at[:, index].set(
+                        jax.random.uniform(proposal_key, (self.walkers,))*2*jnp.pi)
+                    proposed = log_batch(phi, angles, jastrow)
+                    spin_take = jnp.log(jax.random.uniform(accept_key, (self.walkers,))) < 2*(proposed.real-logs.real)
+                    return (jnp.where(spin_take[:, None], angles, s),
+                            jnp.where(spin_take, proposed, logs),
+                            spin_key, count+spin_take.mean())
+
+                s, logs, _, spin_count = jax.lax.fori_loop(
+                    0, self.n, angle_step, (s, logs, c, jnp.array(0.)))
+                acceptance += jnp.array([take.mean(), spin_count/self.n])
+                return (r, s, phi, jastrow, logs, key, acceptance), None
+
+            result, _ = jax.lax.scan(step,
+                (r, s, phi, jastrow, logs, key, jnp.zeros(2)), None, length=sweeps)
+            return (result[0], result[1], result[5]), result[6]/sweeps
+        return jax.jit(run)
+
+    def _make_uncached_sampler(self, sweeps):
         """Full position and independent uniform-angle Metropolis sweeps."""
         def run(p, state, width):
             r, s, key = state

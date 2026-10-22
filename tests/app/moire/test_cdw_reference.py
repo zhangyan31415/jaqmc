@@ -69,3 +69,26 @@ def test_trainable_seed_boundaries_and_kinetic_parity():
     second = jax.jit(forward.energy)(p, r[0], s[0])
     np.testing.assert_allclose(first, second, rtol=1e-8, atol=1e-8)
     assert np.isfinite(first).all()
+
+
+@pytest.mark.requires_x64
+@pytest.mark.parametrize("filling", [1, 2])
+@pytest.mark.parametrize("ndets", [1, 2])
+def test_cached_sampler_preserves_trajectory_across_parameter_updates(filling, ndets):
+    from physics import Model
+    m = Model(cells=27, filling=filling, walkers=4, width=8, depth=2,
+              ndets=ndets, cutoff=3)
+    p, r, s = m.initialize(42)
+    old = m.make_sampler(sweeps=3, cache_orbitals=False)
+    cached = m.make_sampler(sweeps=3)
+    state = r, s, jax.random.PRNGKey(5100)
+    for width in [.07, .2]:
+        first, acceptance = old(p, state, width)
+        second, cached_acceptance = cached(p, state, width)
+        for expected, actual in zip(first, second):
+            np.testing.assert_array_equal(expected, actual)
+        np.testing.assert_array_equal(acceptance, cached_acceptance)
+        np.testing.assert_allclose(m.logs(p, first[0], first[1]),
+                                   m.logs(p, second[0], second[1]), atol=1e-12)
+        state = first
+        p = jax.tree.map(lambda x: x*1.001, p)
