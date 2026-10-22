@@ -1,0 +1,434 @@
+[
+  {
+    "rank": 0,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "MX",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 1,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "MX",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 2,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "MX",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 3,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "MX",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 4,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "XM",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 5,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "XM",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 6,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "XM",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 7,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "XM",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 8,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "MM",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 9,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "MM",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 10,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "MM",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 11,
+    "theta": 3.0,
+    "filling": 1,
+    "motif": "MM",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 12,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "MX",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 13,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "MX",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 14,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "MX",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 15,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "MX",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 16,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "XM",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 17,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "XM",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 18,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "XM",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 19,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "XM",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 20,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "MM",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 21,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "MM",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 22,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "MM",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 23,
+    "theta": 3.0,
+    "filling": 2,
+    "motif": "MM",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 24,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "MX",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 25,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "MX",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 26,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "MX",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 27,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "MX",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 28,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "XM",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 29,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "XM",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 30,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "XM",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 31,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "XM",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 32,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "MM",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 33,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "MM",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 34,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "MM",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 35,
+    "theta": 4.2,
+    "filling": 1,
+    "motif": "MM",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 36,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "MX",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 37,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "MX",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 38,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "MX",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 39,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "MX",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 40,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "XM",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 41,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "XM",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 42,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "XM",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 43,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "XM",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 44,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "MM",
+    "seed": 731,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 45,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "MM",
+    "seed": 834,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 46,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "MM",
+    "seed": 937,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  },
+  {
+    "rank": 47,
+    "theta": 4.2,
+    "filling": 2,
+    "motif": "MM",
+    "seed": 1040,
+    "cells": 27,
+    "physics": "R1_full_continuum"
+  }
+]

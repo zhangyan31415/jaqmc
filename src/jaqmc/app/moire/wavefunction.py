@@ -173,6 +173,10 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
             wavefunctions require a concrete sector; phase-input configuration
             substitutes the default ``(0.0, 0.0)`` Gamma sector when unset.
             Singlephase wavefunctions do not support this argument.
+        momentum_projection: Project fractional wavefunctions onto ``k_com``.
+            Disable to allow charge order in the simulation supercell. The
+            unprojected construction retains multiphase and boundary-twist
+            factors, and requires ``k_com`` to be unset.
         hidden_dims_single: Hidden dimensions for single-electron streams.
         hidden_dims_double: Hidden dimensions for pairwise streams.
         ndets: Number of determinants before center-of-mass momentum projection.
@@ -199,6 +203,7 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
         default="singlephase"
     )
     k_com: tuple[float, float] | None = None
+    momentum_projection: bool = True
     hidden_dims_single: list[int] = field(default_factory=lambda: [256] * 4)
     hidden_dims_double: list[int] = field(default_factory=lambda: [32] * 4)
     ndets: int = 1
@@ -274,13 +279,15 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
             if self.k_com is not None:
                 raise ValueError("k_com must be None when phase_mode='singlephase'")
         else:
-            if self.k_com is None:
+            if self.momentum_projection and self.k_com is None:
                 raise ValueError("k_com must be provided when phase_mode='multiphase'")
+            if not self.momentum_projection and self.k_com is not None:
+                raise ValueError("k_com must be None when momentum_projection=False")
             if self.multiphase_klist is None:
                 raise ValueError(
                     "multiphase_klist must be provided when phase_mode='multiphase'"
                 )
-            if self.translation_vectors is None:
+            if self.momentum_projection and self.translation_vectors is None:
                 raise ValueError(
                     "translation_vectors must be provided when phase_mode='multiphase'"
                 )
@@ -345,9 +352,15 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
         nk = system_config.scale
         kpts = get_supercell_kpts_in_first_bz(S, self.primitive_lattice)
         complete_spin_meshes = all(nspin % nk == 0 for nspin in self.nspins)
+        if not self.momentum_projection and self.k_com is not None:
+            raise ValueError("k_com must be None when momentum_projection=False")
         self.phase_mode = (
             "singlephase"
-            if math.isclose(filling, round(filling)) and complete_spin_meshes
+            if (
+                self.momentum_projection
+                and math.isclose(filling, round(filling))
+                and complete_spin_meshes
+            )
             else "multiphase"
         )
 
@@ -360,15 +373,14 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
             )
         else:
             self.multiphase_klist = kpts
-            # Primitive-cell copies l_a enumerated inside the supercell from S.
-            self.translation_vectors = get_supercell_copies(self.primitive_lattice, S)
-            # Fractional filling: an unset k_com means "auto-select the default
-            # sector", which is the Gamma point (k_com=0). Translation projection
-            # is therefore on by default; users pick another sector via wf.k_com
-            # in YAML/CLI. (Leaving k_com=None on the raw MoireWavefunction
-            # instead disables projection, but the workflow never surfaces that.)
-            if self.k_com is None:
-                self.k_com = (0.0, 0.0)
+            if self.momentum_projection:
+                self.translation_vectors = get_supercell_copies(
+                    self.primitive_lattice, S
+                )
+                if self.k_com is None:
+                    self.k_com = (0.0, 0.0)
+            else:
+                self.translation_vectors = None
 
     # Shared dense orbital core.
     def _get_orbital_blocks(self, data: MoireData) -> tuple[jnp.ndarray, ...]:
@@ -493,6 +505,18 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
             for layer_idx in range(self.nlayers)
         )
 
+    def _get_unprojected_multiphase_orbitals(
+        self, data: MoireData
+    ) -> tuple[jnp.ndarray, ...]:
+        """Dress supercell orbitals without summing primitive translations."""
+        layer_stack = jnp.stack(self._get_orbital_blocks(data), axis=0)
+        dressed = self.multiphase_layer(
+            orbital=layer_stack,
+            positions=data.positions,
+        )
+        dressed = self._apply_twist(dressed, data.positions)
+        return tuple(dressed[layer_idx] for layer_idx in range(self.nlayers))
+
     def get_layer_components(
         self, data: MoireData
     ) -> tuple[jnp.ndarray, jnp.ndarray, jnp.ndarray]:
@@ -510,6 +534,8 @@ class MoireWavefunction(Wavefunction[MoireData, ComplexLogDetOutput]):
         """
         if self.phase_mode == "singlephase":
             layer_orbitals = self._get_singlephase_layer_orbitals(data)
+        elif not self.momentum_projection:
+            layer_orbitals = self._get_unprojected_multiphase_orbitals(data)
         else:
             layer_orbitals = self._get_momentum_projected_multiphase_orbitals(data)
         phi = jnp.stack(layer_orbitals, axis=0)

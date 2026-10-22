@@ -1,0 +1,14 @@
+# Python 3.12; validated locally with these versions. GPU runtime is CUDA 12.
+jax[cuda12]==0.9.1
+flax==0.12.6
+optax==0.2.8
+numpy==2.4.4
+scipy==1.17.1
+kfac-jax==0.0.8
+pyserde==0.31.7
+universal-pathlib==0.3.10
+fsspec==2026.6.0
+click==8.3.2
+h5py==3.16.0
+PyYAML>=6
+pygments>=2.19
