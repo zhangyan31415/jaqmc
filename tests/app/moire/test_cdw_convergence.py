@@ -42,3 +42,36 @@ def test_nonfinite_and_wrong_particle_count_rejected():
     rho = np.full((16, 4, 1), 8., dtype=complex)
     with pytest.raises(ValueError, match="particle-number"):
         diagnose(energy, rho, np.array([[0, 0]]), holes=9)
+
+
+def test_subset_launcher_queues_ranks_and_reads_correct_original_hosts(tmp_path, monkeypatch):
+    import launch_revalidation as launch
+    calls = []
+
+    class FinishedProcess:
+        returncode = 0
+
+        def poll(self):
+            return 0
+
+    def spawn(command, **kwargs):
+        calls.append((command, kwargs["env"]["CUDA_VISIBLE_DEVICES"]))
+        return FinishedProcess()
+
+    monkeypatch.setenv("CUDA_VISIBLE_DEVICES", "0,1,2")
+    monkeypatch.setattr(launch.os, "sched_getaffinity", lambda _: set(range(6)), raising=False)
+    monkeypatch.setattr(launch.subprocess, "Popen", spawn)
+    monkeypatch.setattr(launch.time, "sleep", lambda _: None)
+    monkeypatch.setattr(sys, "argv", ["launch_revalidation.py", "--host", "0",
+        "--checkpoint-root", str(tmp_path/"original"),
+        "--out", str(tmp_path/"out"), "--remote", str(tmp_path/"remote"),
+        "--ranks", "0,12,36,24"])
+    launch.main()
+    assert [int(command[command.index("--rank")+1]) for command, _ in calls] == [0, 12, 36, 24]
+    assert [gpu for _, gpu in calls] == ["0", "1", "2", "0"]
+    assert [Path(command[command.index("--checkpoint-root")+1]).name
+            for command, _ in calls] == ["host0", "host1", "host4", "host3"]
+    import json
+    status = json.loads((tmp_path/"remote/host_status.json").read_text())
+    assert status["execution_finished"] and status["failure"] is None
+    assert status["requested_ranks"] == [0, 12, 36, 24]

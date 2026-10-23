@@ -18,45 +18,59 @@ def main():
     parser.add_argument("--checkpoint-root", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--remote", type=Path, required=True)
+    parser.add_argument("--ranks", help="Optional subset, queued across available GPUs.")
     args = parser.parse_args()
     devices = os.environ.get("CUDA_VISIBLE_DEVICES", "0,1,2,3,4,5,6,7").split(",")
-    if len(devices) != 8 or not 0 <= args.host < 6:
-        raise ValueError("Requires six hosts with eight GPUs each.")
+    ranks = (list(map(int, args.ranks.split(","))) if args.ranks else
+             list(range(args.host*8, args.host*8+8)))
+    if (not devices or not 0 <= args.host < 6 or
+            (args.ranks is None and len(devices) != 8) or
+            len(set(ranks)) != len(ranks) or any(not 0 <= r < 48 for r in ranks)):
+        raise ValueError("Use valid unique ranks and one process per available GPU.")
     available = sorted(os.sched_getaffinity(0))
-    groups = [available[i::8] for i in range(8)]
+    groups = [available[i::len(devices)] for i in range(len(devices))]
     args.out.mkdir(parents=True, exist_ok=True)
     args.remote.mkdir(parents=True, exist_ok=True)
-    active = []
+    active = {}
+    pending = list(ranks)
     failure = None
     try:
-        for index, device in enumerate(devices):
-            rank = args.host*8+index
+        def start(index, rank):
+            device = devices[index]
+            checkpoint_root = (args.checkpoint_root/f"host{rank//8}" if args.ranks
+                               else args.checkpoint_root)
             env = dict(os.environ, CUDA_VISIBLE_DEVICES=device,
                        OMP_NUM_THREADS="8", OPENBLAS_NUM_THREADS="1")
             log = (args.out/f"rank{rank:02d}.log").open("w")
             process = subprocess.Popen([sys.executable, "-u",
                 str(Path(__file__).with_name("revalidate.py")),
-                "--rank", str(rank), "--checkpoint-root", str(args.checkpoint_root),
+                "--rank", str(rank), "--checkpoint-root", str(checkpoint_root),
                 "--out", str(args.out)], env=env, stdout=log,
                 stderr=subprocess.STDOUT,
                 preexec_fn=lambda group=groups[index]: os.sched_setaffinity(0, group))
-            active.append((rank, process, log))
+            active[index] = rank, process, log
         last_sync = 0.
-        while any(p.poll() is None for _, p, _ in active):
-            for rank, process, _ in active:
-                if process.poll() not in (None, 0):
+        while pending or active:
+            for index in range(len(devices)):
+                if index not in active and pending:
+                    start(index, pending.pop(0))
+            for index, (rank, process, log) in list(active.items()):
+                code = process.poll()
+                if code not in (None, 0):
                     failure = dict(rank=rank, returncode=process.returncode)
                     raise RuntimeError(f"Validation replica failed: {failure}")
+                if code == 0:
+                    log.close()
+                    del active[index]
             if time.monotonic()-last_sync > 60:
                 sync_files(args.out, args.remote)
                 last_sync = time.monotonic()
             time.sleep(2)
-        for rank, process, _ in active:
-            if process.returncode != 0:
-                failure = dict(rank=rank, returncode=process.returncode)
-                raise RuntimeError(f"Validation replica failed: {failure}")
+    except BaseException as error:
+        failure = failure or dict(error=str(error))
+        raise
     finally:
-        for _, process, log in active:
+        for _, process, log in active.values():
             if process.poll() is None:
                 process.terminate()
                 try:
@@ -67,6 +81,7 @@ def main():
             log.close()
         (args.out/"host_status.json").write_text(json.dumps(dict(
             host=args.host, failure=failure, execution_finished=failure is None,
+            requested_ranks=ranks,
             scientific_convergence=False), indent=2))
         sync_files(args.out, args.remote)
 

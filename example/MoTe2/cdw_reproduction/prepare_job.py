@@ -39,19 +39,19 @@ def archive(root):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["validate", "train", "revalidate"])
+    parser.add_argument("mode", choices=["validate", "train", "revalidate", "revalidate_pilot"])
     parser.add_argument("--template", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--validation", type=Path)
     parser.add_argument("--checkpoint-root", type=Path)
     args = parser.parse_args()
-    if args.mode in {"train", "revalidate"}:
+    if args.mode in {"train", "revalidate", "revalidate_pilot"}:
         if args.validation is None:
             raise ValueError("Provide the actual GPU validation result.")
         gate = json.loads(args.validation.read_text())
         if not gate["passed"] or not gate["real_gpu"]:
             raise ValueError("Production requires a passing, real-GPU gate.")
-    if args.mode == "revalidate" and args.checkpoint_root is None:
+    if args.mode.startswith("revalidate") and args.checkpoint_root is None:
         raise ValueError("Provide the mounted first-run checkpoint root.")
     root = Path(__file__).resolve().parents[3]
     args.out.mkdir(parents=True, exist_ok=True)
@@ -60,9 +60,11 @@ def main():
     (args.out/f"source_{digest[:12]}.tar.gz").write_bytes(payload)
     encoded = base64.b64encode(payload).decode()
     data = yaml.safe_load(args.template.read_text())
-    training = args.mode in {"train", "revalidate"}
+    training = args.mode in {"train", "revalidate", "revalidate_pilot"}
+    pilot = args.mode == "revalidate_pilot"
     label = {"train": "48h20-firstpoints", "validate": "1h20-validation",
-             "revalidate": "48h20-convergence"}[args.mode]
+             "revalidate": "48h20-convergence",
+             "revalidate_pilot": "3h20-convergence-probe"}[args.mode]
     caption = f"jaqmc-mote2-cdw-R1-{label}-{digest[:8]}"
     data["caption"] = caption
     resource = copy.deepcopy(data["jobDefVersion"]["resource"])
@@ -71,6 +73,9 @@ def main():
     arnold["roles"][0].update(cpu=176 if training else 22,
         memory=1859584 if training else 232448, gpu=8 if training else 1,
         num=6 if training else 1, ports=1 if training else 0)
+    if pilot:
+        arnold["multipleMachine"] = False
+        arnold["roles"][0].update(cpu=66, memory=697344, gpu=3, num=1, ports=0)
     arnold["hdfsVolumes"] = [dict(
         path="hdfs://haruna/home/byte_data_seed/ssd_hldy/user/zhangyan.31415",
         accessMode="RW", roles=[], mnt="/mnt/hdfs/cdw", extra="", preheatDir="")]
@@ -82,7 +87,7 @@ def main():
         OMP_NUM_THREADS="8", OPENBLAS_NUM_THREADS="1",
         SKIP_MERLIN_OFFICIAL_INTERNAL_INSTALL="TRUE")
     example = '"$WORK_DIR/code/example/MoTe2/cdw_reproduction"'
-    default_rank = "" if training else "0"
+    default_rank = "" if training and not pilot else "0"
     script = f"""set -euo pipefail
 export PYTHONUNBUFFERED=1
 export JAX_ENABLE_X64=true
@@ -125,11 +130,13 @@ export PYTHONPATH="$WORK_DIR/code/src"
 cd "$WORK_DIR/code"
 nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv
 """
-    if args.mode == "revalidate":
+    if args.mode.startswith("revalidate"):
+        checkpoint = ("$CHECKPOINT_ROOT" if pilot else "$CHECKPOINT_ROOT/host$HOST_RANK")
+        ranks = " --ranks 0,12,36,24" if pilot else ""
         script += f"""
 if [[ ! "$HOST_RANK" =~ ^[0-5]$ ]]; then echo "Invalid host rank $HOST_RANK" >&2; exit 4; fi
 CHECKPOINT_ROOT={shlex.quote(str(args.checkpoint_root))}
-"$WORK_DIR/venv/bin/python" -u {example}/launch_revalidation.py --out "$WORK_DIR/results" --remote "$REMOTE_DIR" --host "$HOST_RANK" --checkpoint-root "$CHECKPOINT_ROOT/host$HOST_RANK"
+"$WORK_DIR/venv/bin/python" -u {example}/launch_revalidation.py --out "$WORK_DIR/results" --remote "$REMOTE_DIR" --host "$HOST_RANK" --checkpoint-root "{checkpoint}"{ranks}
 """
     elif training:
         script += f"""
