@@ -19,11 +19,14 @@ def main():
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--remote", type=Path, required=True)
     parser.add_argument("--ranks", help="Optional subset, queued across available GPUs.")
+    parser.add_argument("--gpu-count", type=int, help="Allocated GPUs when no device mask is set.")
     args = parser.parse_args()
-    devices = os.environ.get("CUDA_VISIBLE_DEVICES", "0,1,2,3,4,5,6,7").split(",")
+    fallback = ",".join(map(str, range(args.gpu_count or 8)))
+    devices = os.environ.get("CUDA_VISIBLE_DEVICES", fallback).split(",")
     ranks = (list(map(int, args.ranks.split(","))) if args.ranks else
              list(range(args.host*8, args.host*8+8)))
     if (not devices or not 0 <= args.host < 6 or
+            (args.gpu_count is not None and len(devices) != args.gpu_count) or
             (args.ranks is None and len(devices) != 8) or
             len(set(ranks)) != len(ranks) or any(not 0 <= r < 48 for r in ranks)):
         raise ValueError("Use valid unique ranks and one process per available GPU.")

@@ -132,7 +132,7 @@ nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv
 """
     if args.mode.startswith("revalidate"):
         checkpoint = ("$CHECKPOINT_ROOT" if pilot else "$CHECKPOINT_ROOT/host$HOST_RANK")
-        ranks = " --ranks 0,12,36,24" if pilot else ""
+        ranks = " --ranks 0,12,36,24 --gpu-count 3" if pilot else ""
         script += f"""
 if [[ ! "$HOST_RANK" =~ ^[0-5]$ ]]; then echo "Invalid host rank $HOST_RANK" >&2; exit 4; fi
 CHECKPOINT_ROOT={shlex.quote(str(args.checkpoint_root))}

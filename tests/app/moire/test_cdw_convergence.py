@@ -44,7 +44,9 @@ def test_nonfinite_and_wrong_particle_count_rejected():
         diagnose(energy, rho, np.array([[0, 0]]), holes=9)
 
 
-def test_subset_launcher_queues_ranks_and_reads_correct_original_hosts(tmp_path, monkeypatch):
+@pytest.mark.parametrize("has_device_mask", [False, True])
+def test_subset_launcher_queues_ranks_and_reads_correct_original_hosts(tmp_path, monkeypatch,
+                                                                     has_device_mask):
     import launch_revalidation as launch
     calls = []
 
@@ -58,14 +60,17 @@ def test_subset_launcher_queues_ranks_and_reads_correct_original_hosts(tmp_path,
         calls.append((command, kwargs["env"]["CUDA_VISIBLE_DEVICES"]))
         return FinishedProcess()
 
-    monkeypatch.setenv("CUDA_VISIBLE_DEVICES", "0,1,2")
+    if has_device_mask:
+        monkeypatch.setenv("CUDA_VISIBLE_DEVICES", "0,1,2")
+    else:
+        monkeypatch.delenv("CUDA_VISIBLE_DEVICES", raising=False)
     monkeypatch.setattr(launch.os, "sched_getaffinity", lambda _: set(range(6)), raising=False)
     monkeypatch.setattr(launch.subprocess, "Popen", spawn)
     monkeypatch.setattr(launch.time, "sleep", lambda _: None)
     monkeypatch.setattr(sys, "argv", ["launch_revalidation.py", "--host", "0",
         "--checkpoint-root", str(tmp_path/"original"),
         "--out", str(tmp_path/"out"), "--remote", str(tmp_path/"remote"),
-        "--ranks", "0,12,36,24"])
+        "--ranks", "0,12,36,24", "--gpu-count", "3"])
     launch.main()
     assert [int(command[command.index("--rank")+1]) for command, _ in calls] == [0, 12, 36, 24]
     assert [gpu for _, gpu in calls] == ["0", "1", "2", "0"]
