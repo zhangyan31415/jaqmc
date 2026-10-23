@@ -73,6 +73,23 @@ def test_trainable_seed_boundaries_and_kinetic_parity():
 
 @pytest.mark.requires_x64
 @pytest.mark.parametrize("filling", [1, 2])
+def test_frozen_energy_batch_size_preserves_all_complex_components(filling):
+    from physics import Model, microbatch_map
+    model = Model(cells=3, filling=filling, width=4, depth=1,
+                  walkers=8, cutoff=2)
+    params, r, s = model.initialize(125)
+    reference = np.asarray(model.energy_batch(params, r, s))
+    larger = jax.jit(lambda p, a, b: microbatch_map(
+        lambda x, y: model.energy(p, x, y), a, b, 8))
+    measured = np.asarray(larger(params, r, s))
+    assert np.isfinite(measured).all()
+    np.testing.assert_allclose(measured, reference, rtol=1e-8, atol=1e-7)
+    np.testing.assert_allclose(measured[:, 0], measured[:, 1:].sum(axis=1),
+                               rtol=1e-8, atol=1e-7)
+
+
+@pytest.mark.requires_x64
+@pytest.mark.parametrize("filling", [1, 2])
 @pytest.mark.parametrize("ndets", [1, 2])
 @pytest.mark.parametrize("kernel", ["full", "mixture"])
 def test_cached_sampler_preserves_trajectory_across_parameter_updates(filling, ndets, kernel):

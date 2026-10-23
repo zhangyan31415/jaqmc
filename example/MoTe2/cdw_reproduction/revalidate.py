@@ -15,6 +15,7 @@ import numpy as np
 
 from analyze import finite_json
 from convergence_stats import diagnose, plateau
+from physics import microbatch_map
 from physics import Model
 from run import SR, atomic_json, manifest
 
@@ -27,7 +28,7 @@ def q_grid(model):
     return indices, jnp.asarray(indices) @ (2*jnp.pi*model.invcell.T)
 
 
-def frozen(model, params, training_state, sampler, width, step, args, out):
+def frozen(model, params, training_state, sampler, width, step, args, out, energy_batch):
     """Fresh dispersed banks; fixed parameters throughout each long trace."""
     r, s, key = training_state
     key = jax.random.fold_in(key, step+20261023)
@@ -61,7 +62,7 @@ def frozen(model, params, training_state, sampler, width, step, args, out):
     while True:
         while len(energies) < target:
             state, acceptance = sampler(params, state, width)
-            values = np.asarray(model.energy_batch(params, state[0], state[1]))
+            values = np.asarray(energy_batch(params, state[0], state[1]))
             density = np.asarray(charge(state[0]))
             if not np.isfinite(values).all() or not np.isfinite(density).all():
                 raise FloatingPointError(f"Nonfinite {phase} observation.")
@@ -83,6 +84,7 @@ def frozen(model, params, training_state, sampler, width, step, args, out):
         result = diagnose(values, density, indices, model.n)
         result.update(step=step, records=len(values), walkers=model.walkers,
             burnin_calls=args.burnin, sweeps_per_call=args.sweeps,
+            energy_microbatch=args.energy_microbatch,
             q_indices=indices.tolist(), energy_unclipped=True,
             storage="complex energy components, K/primitive rho, final sampling bank",
             seconds=time.perf_counter()-started)
@@ -107,7 +109,7 @@ def frozen(model, params, training_state, sampler, width, step, args, out):
     return result
 
 
-def validate_gpu(model, case, params, state, width, sampler):
+def validate_gpu(model, case, params, state, width, sampler, energy_batch):
     for kernel in ["full", "mixture"]:
         old = model.make_sampler(20, cache_orbitals=False, spatial_kernel=kernel)
         cached20 = model.make_sampler(20, spatial_kernel=kernel)
@@ -121,14 +123,18 @@ def validate_gpu(model, case, params, state, width, sampler):
     e1 = np.asarray(jax.jit(model.energy)(params, state[0][0], state[1][0]))
     e2 = np.asarray(jax.jit(scan.energy)(params, state[0][0], state[1][0]))
     np.testing.assert_allclose(e1, e2, atol=1e-7, rtol=1e-8)
+    reference = np.asarray(model.energy_batch(params, state[0], state[1]))
+    measured = np.asarray(energy_batch(params, state[0], state[1]))
+    np.testing.assert_allclose(measured, reference, atol=1e-7, rtol=1e-8)
     timings = []
     for _ in range(3):
         begin = time.perf_counter()
         bank, _ = sampler(params, state, width)
-        jax.block_until_ready(model.energy_batch(params, bank[0], bank[1]))
+        jax.block_until_ready(energy_batch(params, bank[0], bank[1]))
         timings.append(time.perf_counter()-begin)
     return dict(exact_sampler_trajectory_parity=True,
         forward_scan_max_error=float(np.max(abs(e1-e2))),
+        frozen_energy_batch_max_error=float(np.max(abs(measured-reference))),
         sample_and_energy_seconds=timings,
         steady_sample_and_energy_seconds=float(np.median(timings[1:])),
         real_gpu=all(x.platform == "gpu" for x in jax.devices()))
@@ -153,6 +159,8 @@ def execute(args):
     state = tuple(jnp.asarray(x) for x in record["state"])
     width = record["width"]
     sampler = model.make_sampler(args.sweeps, spatial_kernel=args.spatial_kernel)
+    energy_batch = jax.jit(lambda p, r, s: microbatch_map(
+        lambda x, y: model.energy(p, x, y), r, s, args.energy_microbatch))
     metadata = dict(case=case, input_checkpoint=str(checkpoint),
         checkpoint_sha256=hashlib.sha256(payload).hexdigest(),
         checkpoint_step=record["step"], architecture=record["architecture"],
@@ -164,10 +172,10 @@ def execute(args):
         physical_model="R1 unchanged; continuous angles; original SR",
         scientific_convergence=False)
     atomic_json(out/"provenance.json", metadata)
-    gate = validate_gpu(model, case, params, state, width, sampler)
+    gate = validate_gpu(model, case, params, state, width, sampler, energy_batch)
     atomic_json(out/"gpu_gate.json", gate)
     print("GPU_GATE", json.dumps(gate), flush=True)
-    baseline = frozen(model, params, state, sampler, width, 8000, args, out)
+    baseline = frozen(model, params, state, sampler, width, 8000, args, out, energy_batch)
     previous = json.loads((source/"evaluations.json").read_text())[-1]
     atomic_json(out/"original_comparison.json", dict(
         checkpoint_fixed=True,
@@ -206,7 +214,7 @@ def execute(args):
             save(step+1)
         if step+1 in [10000, 12000]:
             phases[step+1] = frozen(model, params, state, sampler, width,
-                                    step+1, args, out)
+                                    step+1, args, out, energy_batch)
             save(step+1)
     check = plateau(phases[10000], phases[12000])
     atomic_json(out/"plateau.json", check)
@@ -228,6 +236,8 @@ def main():
     parser.add_argument("--records", type=int, default=4096)
     parser.add_argument("--mid-records", type=int, default=4096)
     parser.add_argument("--max-records", type=int, default=8192)
+    parser.add_argument("--energy-microbatch", type=int, default=32,
+                        choices=[4, 8, 16, 32, 64, 128])
     args = parser.parse_args()
     if (not 0 <= args.rank < 48 or args.steps != 12000 or args.burnin < 1000 or
             min(args.records, args.mid_records) < 4096 or
