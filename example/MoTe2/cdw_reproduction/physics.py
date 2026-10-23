@@ -147,14 +147,35 @@ class Model:
         p = jax.tree.map(lambda x: x.astype(jnp.float64), p)
         return p, r, s
 
-    def make_sampler(self, sweeps=20, cache_orbitals=True):
+    def _position_candidate(self, r, width, normal_key, kernel_key, spatial_kernel):
+        noise = jax.random.normal(normal_key, r.shape)
+        if spatial_kernel == "full":
+            increment = width*noise
+        else:
+            mode_key, index_key, translation_key = jax.random.split(kernel_key, 3)
+            mode = jax.random.uniform(mode_key, (self.walkers,))
+            index = jax.random.randint(index_key, (self.walkers,), 0, self.n)
+            local = width*jnp.sqrt(self.n)*noise*jax.nn.one_hot(index, self.n)[:, :, None]
+            directions = jnp.asarray([[1, 0], [-1, 0], [0, 1], [0, -1]])
+            choice = jax.random.randint(translation_key, (self.walkers,), 0, 4)
+            translation = directions[choice] @ jnp.asarray(self.cfg.lattice_vectors)
+            increment = jnp.where((mode < .1)[:, None, None], translation[:, None, :],
+                jnp.where((mode < .4)[:, None, None], local, width*noise))
+        return jnp.mod((r+increment) @ self.invcell, 1.) @ self.cell
+
+    def make_sampler(self, sweeps=20, cache_orbitals=True, spatial_kernel="full"):
         """Metropolis sweeps, caching position-only orbitals during angle moves.
 
         The cache lives within one call so parameter updates cannot stale it.
         ``cache_orbitals=False`` retains the original evaluation path.
+        ``spatial_kernel="mixture"`` uses 60% full Gaussian, 30% single-particle
+        Gaussian, and 10% rigid +/- primitive translations. Each proposal is
+        symmetric on the periodic cell and uses the unchanged MH target.
         """
+        if spatial_kernel not in {"full", "mixture"}:
+            raise ValueError("Spatial kernel must be full or mixture.")
         if not cache_orbitals:
-            return self._make_uncached_sampler(sweeps)
+            return self._make_uncached_sampler(sweeps, spatial_kernel)
 
         def orbitals(p, r, s):
             return self.wf.layer_components(
@@ -178,8 +199,7 @@ class Model:
             def step(carry, _):
                 r, s, phi, jastrow, logs, key, acceptance = carry
                 key, a, b, c, d = jax.random.split(key, 5)
-                candidate = jnp.mod((r+width*jax.random.normal(a, r.shape))@
-                                    self.invcell, 1.)@self.cell
+                candidate = self._position_candidate(r, width, a, d, spatial_kernel)
                 proposed_phi = orbital_batch(p, candidate, s)
                 proposed_jastrow = jastrow_batch(candidate)
                 proposed = log_batch(proposed_phi, s, proposed_jastrow)
@@ -210,7 +230,7 @@ class Model:
             return (result[0], result[1], result[5]), result[6]/sweeps
         return jax.jit(run)
 
-    def _make_uncached_sampler(self, sweeps):
+    def _make_uncached_sampler(self, sweeps, spatial_kernel):
         """Full position and independent uniform-angle Metropolis sweeps."""
         def run(p, state, width):
             r, s, key = state
@@ -218,8 +238,7 @@ class Model:
             def step(carry, _):
                 r, s, logs, key, acceptance = carry
                 key, a, b, c, d = jax.random.split(key, 5)
-                candidate = jnp.mod((r+width*jax.random.normal(a, r.shape))@
-                                    self.invcell, 1.)@self.cell
+                candidate = self._position_candidate(r, width, a, d, spatial_kernel)
                 proposed = self.logs(p, candidate, s)
                 take = jnp.log(jax.random.uniform(b, (self.walkers,))) < 2*(proposed.real-logs.real)
                 r = jnp.where(take[:, None, None], candidate, r)

@@ -12,6 +12,7 @@ import gzip
 import hashlib
 import io
 import json
+import shlex
 import tarfile
 from pathlib import Path
 
@@ -38,17 +39,20 @@ def archive(root):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["validate", "train"])
+    parser.add_argument("mode", choices=["validate", "train", "revalidate"])
     parser.add_argument("--template", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--validation", type=Path)
+    parser.add_argument("--checkpoint-root", type=Path)
     args = parser.parse_args()
-    if args.mode == "train":
+    if args.mode in {"train", "revalidate"}:
         if args.validation is None:
             raise ValueError("Provide the actual GPU validation result.")
         gate = json.loads(args.validation.read_text())
         if not gate["passed"] or not gate["real_gpu"]:
             raise ValueError("Production requires a passing, real-GPU gate.")
+    if args.mode == "revalidate" and args.checkpoint_root is None:
+        raise ValueError("Provide the mounted first-run checkpoint root.")
     root = Path(__file__).resolve().parents[3]
     args.out.mkdir(parents=True, exist_ok=True)
     payload = archive(root)
@@ -56,8 +60,10 @@ def main():
     (args.out/f"source_{digest[:12]}.tar.gz").write_bytes(payload)
     encoded = base64.b64encode(payload).decode()
     data = yaml.safe_load(args.template.read_text())
-    training = args.mode == "train"
-    caption = f"jaqmc-mote2-cdw-R1-{'48h20-firstpoints' if training else '1h20-validation'}-{digest[:8]}"
+    training = args.mode in {"train", "revalidate"}
+    label = {"train": "48h20-firstpoints", "validate": "1h20-validation",
+             "revalidate": "48h20-convergence"}[args.mode]
+    caption = f"jaqmc-mote2-cdw-R1-{label}-{digest[:8]}"
     data["caption"] = caption
     resource = copy.deepcopy(data["jobDefVersion"]["resource"])
     arnold = resource["arnoldConfig"]
@@ -119,7 +125,13 @@ export PYTHONPATH="$WORK_DIR/code/src"
 cd "$WORK_DIR/code"
 nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv
 """
-    if training:
+    if args.mode == "revalidate":
+        script += f"""
+if [[ ! "$HOST_RANK" =~ ^[0-5]$ ]]; then echo "Invalid host rank $HOST_RANK" >&2; exit 4; fi
+CHECKPOINT_ROOT={shlex.quote(str(args.checkpoint_root))}
+"$WORK_DIR/venv/bin/python" -u {example}/launch_revalidation.py --out "$WORK_DIR/results" --remote "$REMOTE_DIR" --host "$HOST_RANK" --checkpoint-root "$CHECKPOINT_ROOT/host$HOST_RANK"
+"""
+    elif training:
         script += f"""
 if [[ ! "$HOST_RANK" =~ ^[0-5]$ ]]; then echo "Invalid host rank $HOST_RANK" >&2; exit 4; fi
 "$WORK_DIR/venv/bin/python" -u {example}/launch.py --out "$WORK_DIR/results" --remote "$REMOTE_DIR" --host "$HOST_RANK" --steps 8000
@@ -137,7 +149,8 @@ if [[ ! "$HOST_RANK" =~ ^[0-5]$ ]]; then echo "Invalid host rank $HOST_RANK" >&2
     destination.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True))
     (args.out/f"{args.mode}_provenance.json").write_text(json.dumps(dict(
         caption=caption, source_sha256=digest, archive_bytes=len(payload),
-        yaml=str(destination), validation=str(args.validation) if args.validation else None),
+        yaml=str(destination), validation=str(args.validation) if args.validation else None,
+        checkpoint_root=str(args.checkpoint_root) if args.checkpoint_root else None),
         indent=2))
     print(json.dumps(dict(yaml=str(destination), source_sha256=digest,
                           archive_bytes=len(payload)), indent=2))
