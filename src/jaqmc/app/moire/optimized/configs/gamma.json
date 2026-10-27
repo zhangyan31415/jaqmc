@@ -1,0 +1,110 @@
+{
+  "logging": {
+    "level": "warning"
+  },
+  "jax": {
+    "enable_x64": false,
+    "default_matmul_precision": "float32"
+  },
+  "workflow": {
+    "seed": 731,
+    "batch_size": 512
+  },
+  "system": {
+    "nelec": 18,
+    "electron_spins": [
+      9,
+      9
+    ],
+    "lattice_vectors": [
+      [
+        1.7320508075688772,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "moire_lattice_vectors": [
+      [
+        0.8660254037844386,
+        -0.5
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "supercell_matrix": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "twist": [
+      0.0,
+      0.0
+    ],
+    "effective_mass": 1.0,
+    "dielectric_constant": 10.0,
+    "v1_mev": 0.0,
+    "phi1_deg": 0.0,
+    "omega1_mev": 0.0,
+    "moire_lattice_constant_nm": 6.677164039455994
+  },
+  "wf": {
+    "hidden_dims_single": [
+      256,
+      256,
+      256,
+      256
+    ],
+    "hidden_dims_double": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "ndets": 1,
+    "nlayers": 4
+  },
+  "sampler": {
+    "steps": 20,
+    "initial_width": 0.02,
+    "adapt_frequency": 50,
+    "spin_mass": 1.0
+  },
+  "train": {
+    "run": {
+      "iterations": 50000,
+      "burn_in": 1000,
+      "save_time_interval": 600,
+      "save_step_interval": 5000
+    },
+    "optim": {
+      "learning_rate": {
+        "rate": 0.003,
+        "delay": 10000.0,
+        "decay": 1.0
+      },
+      "damping": 0.0003,
+      "norm_constraint": 0.001,
+      "inverse_update_period": 1
+    },
+    "grads": {
+      "clip_scale": 20.0
+    }
+  },
+  "estimators": {
+    "enabled": {
+      "kinetic": false,
+      "soc": false,
+      "moire_potential": false
+    }
+  }
+}

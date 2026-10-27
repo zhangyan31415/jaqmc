@@ -1,0 +1,5 @@
+__pycache__/
+*.npz
+*.h5
+compilation_cache/
+*.log

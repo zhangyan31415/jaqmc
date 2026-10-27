@@ -102,6 +102,7 @@ See the [documentation](https://jaqmc.readthedocs.io/latest/getting-started/quic
 
 ## Where to Go Next
 
+- **Optimized moiré examples**: Run the portable [MoTe₂ and Γ-valley workflows](example/moire_optimized/README.md), including optional derivative backends and full-state continuation.
 - **Train a real system**: See [Molecules](https://jaqmc.readthedocs.io/latest/systems/molecule/index.html), [Solids](https://jaqmc.readthedocs.io/latest/systems/solid/index.html), or [Quantum Hall](https://jaqmc.readthedocs.io/latest/systems/hall/index.html).
 - **Understand the framework**: Read [Core Concepts](https://jaqmc.readthedocs.io/latest/getting-started/concepts.html).
 - **Extend JaQMC**: Start from [Extending JaQMC](https://jaqmc.readthedocs.io/latest/extending/index.html).

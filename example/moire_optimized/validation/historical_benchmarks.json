@@ -1,0 +1,594 @@
+{
+  "schema_version": 1,
+  "measurement_date": "2026-10-27",
+  "source_baseline_commit": "266542b54b03733cfe72041795e2253bddcdf51a",
+  "scope": "Historical measurements before portable packaging; no new throughput or convergence claim.",
+  "sources": {
+    "mote2_same_chunk": {
+      "archive_relative_path": "results/20261027_li_algorithm_search/same_chunk_summary.json",
+      "sha256": "ba861dd1137f4f0fa65d1836084c9cc0e05c9ee1a149a6e84c5285a23bdaa88d"
+    },
+    "mote2_frozen_audit": {
+      "archive_relative_path": "results/20261027_li_algorithm_search/exact_backend_verification.json",
+      "sha256": "216112ce9fb20cad3853c68d97f4164316a4fa1b63ef43ae0a95a270baa39877"
+    },
+    "gamma_first_step": {
+      "archive_relative_path": "results/20261027_gamma_fullstep_comparison/582950/comparison.json",
+      "sha256": "80c17574cb953fe5efb95e59152c53b1c8cafc30fb57c8aa1c9d6ddbf711b022"
+    },
+    "gamma_timings": {
+      "archive_relative_path": "results/20261027_gamma_fullstep_comparison/summary.csv",
+      "sha256": "229949f391127e10205bfbf960e6f5c8511bcb559cf25e11ccf1cd26808cfd84"
+    },
+    "cold_50k_audit": {
+      "archive_relative_path": "research/20261027_li_full_convergence/reviews/FORMAL_50K_REVIEW.md",
+      "sha256": "27ce58fec9e5fc83d530265e4c99a946d6cb2c5374639a11690a84bf661ca931"
+    }
+  },
+  "fixed_conditions": {
+    "batch": 512,
+    "chunk": 512,
+    "particles": 18,
+    "dtype": "float32",
+    "network_single": [
+      256,
+      256,
+      256,
+      256
+    ],
+    "network_pair": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "ndets": 1,
+    "warmup_updates": 10,
+    "timed_updates": 200,
+    "kfac_inverse_update_period": 1,
+    "steady_timing_excludes_compilation": true
+  },
+  "mote2": {
+    "job_id": "582629",
+    "node": "test001",
+    "gpu": "RTX 4090",
+    "points": [
+      {
+        "case": "nu1_theta3_balanced",
+        "versions": {
+          "original": {
+            "mean_seconds": 0.13154883948562202,
+            "median_seconds": 0.13159826246555895,
+            "min_seconds": 0.12957843905314803,
+            "max_seconds": 0.14253510802518576,
+            "std_seconds": 0.0014215032230143225,
+            "n": 200
+          },
+          "combined": {
+            "mean_seconds": 0.10055063718929887,
+            "median_seconds": 0.10085875098593533,
+            "min_seconds": 0.0991895500337705,
+            "max_seconds": 0.10939542402047664,
+            "std_seconds": 0.0011503346209343348,
+            "n": 200
+          },
+          "current": {
+            "mean_seconds": 0.07806895649700892,
+            "median_seconds": 0.07801745895994827,
+            "min_seconds": 0.07733891101088375,
+            "max_seconds": 0.08538781909737736,
+            "std_seconds": 0.000606555076839704,
+            "n": 200
+          },
+          "sparse": {
+            "mean_seconds": 0.06051238050975371,
+            "median_seconds": 0.060451342491433024,
+            "min_seconds": 0.05976109195034951,
+            "max_seconds": 0.06835757696535438,
+            "std_seconds": 0.0007001484768420607,
+            "n": 200
+          }
+        },
+        "numerical_checks": {
+          "original": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.0,
+              "energy:moire_potential": 0.0,
+              "total_energy": 0.0,
+              "energy:kinetic_plus_soc": 0.0,
+              "parameter_delta": 0.0,
+              "update_relative_l2": 0.0,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 0.0
+            }
+          },
+          "combined": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.0001220703125,
+              "energy:moire_potential": 0.0,
+              "total_energy": 0.001283785910345614,
+              "energy:kinetic_plus_soc": 0.001283785910345614,
+              "parameter_delta": 1.255422830581665e-06,
+              "update_relative_l2": 4.2310777644161135e-05,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 6.781704238771151e-06
+            }
+          },
+          "current": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.0001220703125,
+              "energy:moire_potential": 0.0,
+              "total_energy": 0.001283785910345614,
+              "energy:kinetic_plus_soc": 0.001283785910345614,
+              "parameter_delta": 7.770955562591553e-06,
+              "update_relative_l2": 0.00018040754366666079,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 6.781704238771151e-06
+            }
+          },
+          "sparse": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.0001220703125,
+              "energy:moire_potential": 0.0006133957649581134,
+              "total_energy": 0.001102600945159793,
+              "energy:kinetic_plus_soc": 0.0011919509852305055,
+              "parameter_delta": 8.843839168548584e-06,
+              "update_relative_l2": 0.0001805797655833885,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 6.786600958245496e-06
+            }
+          }
+        },
+        "original_to_sparse": 2.173916120593178,
+        "combined_to_sparse": 1.661653968035377,
+        "current_to_sparse": 1.2901319670348341
+      },
+      {
+        "case": "nu1_theta3_fm",
+        "versions": {
+          "original": {
+            "mean_seconds": 0.10546567964483984,
+            "median_seconds": 0.10538836847990751,
+            "min_seconds": 0.10496708890423179,
+            "max_seconds": 0.11467248201370239,
+            "std_seconds": 0.0007103586022415325,
+            "n": 200
+          },
+          "combined": {
+            "mean_seconds": 0.08208704788587057,
+            "median_seconds": 0.08206930244341493,
+            "min_seconds": 0.0811395300552249,
+            "max_seconds": 0.09039138501975685,
+            "std_seconds": 0.0009527712041612217,
+            "n": 200
+          },
+          "current": {
+            "mean_seconds": 0.06728258273389656,
+            "median_seconds": 0.06726803648052737,
+            "min_seconds": 0.06648909498471767,
+            "max_seconds": 0.07375757698900998,
+            "std_seconds": 0.0005464067717511922,
+            "n": 200
+          },
+          "sparse": {
+            "mean_seconds": 0.04803202800278086,
+            "median_seconds": 0.047985105018597096,
+            "min_seconds": 0.04774242301937193,
+            "max_seconds": 0.05414776306133717,
+            "std_seconds": 0.000449553881587052,
+            "n": 200
+          }
+        },
+        "numerical_checks": {
+          "original": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.0,
+              "energy:moire_potential": 0.0,
+              "total_energy": 0.0,
+              "energy:kinetic_plus_soc": 0.0,
+              "parameter_delta": 0.0,
+              "update_relative_l2": 0.0,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 0.0
+            }
+          },
+          "combined": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.0001220703125,
+              "energy:moire_potential": 0.0,
+              "total_energy": 0.0006344208959490061,
+              "energy:kinetic_plus_soc": 0.0006052549579180777,
+              "parameter_delta": 1.3150274753570557e-06,
+              "update_relative_l2": 7.775613630656153e-05,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 1.3576768752601412e-05
+            }
+          },
+          "current": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.0001220703125,
+              "energy:moire_potential": 0.0,
+              "total_energy": 0.0006344208959490061,
+              "energy:kinetic_plus_soc": 0.0006052549579180777,
+              "parameter_delta": 2.008676528930664e-05,
+              "update_relative_l2": 0.0005628826911561191,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 1.3576768752601412e-05
+            }
+          },
+          "sparse": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.0001220703125,
+              "energy:moire_potential": 0.0,
+              "total_energy": 0.0006721692043356597,
+              "energy:kinetic_plus_soc": 0.0007020701305009425,
+              "parameter_delta": 1.4774501323699951e-05,
+              "update_relative_l2": 0.0005600349395535886,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 1.3586728730135494e-05
+            }
+          }
+        },
+        "original_to_sparse": 2.1957365539246814,
+        "combined_to_sparse": 1.7090064962719886,
+        "current_to_sparse": 1.4007857992171633
+      },
+      {
+        "case": "nu2_theta3_balanced",
+        "versions": {
+          "original": {
+            "mean_seconds": 0.1331404057313921,
+            "median_seconds": 0.1331506255082786,
+            "min_seconds": 0.13130315102171153,
+            "max_seconds": 0.14343924599234015,
+            "std_seconds": 0.0011225945481394056,
+            "n": 200
+          },
+          "combined": {
+            "mean_seconds": 0.1012951819220325,
+            "median_seconds": 0.10103268944658339,
+            "min_seconds": 0.10065087291877717,
+            "max_seconds": 0.11118561495095491,
+            "std_seconds": 0.000959003172579668,
+            "n": 200
+          },
+          "current": {
+            "mean_seconds": 0.07906241027696524,
+            "median_seconds": 0.07888852199539542,
+            "min_seconds": 0.07861437695100904,
+            "max_seconds": 0.0880246409215033,
+            "std_seconds": 0.0007832737619143668,
+            "n": 200
+          },
+          "sparse": {
+            "mean_seconds": 0.062017794233979656,
+            "median_seconds": 0.06189325696323067,
+            "min_seconds": 0.06128511996939778,
+            "max_seconds": 0.07108223193790764,
+            "std_seconds": 0.0009185933595687295,
+            "n": 200
+          }
+        },
+        "numerical_checks": {
+          "original": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.0,
+              "energy:moire_potential": 0.0,
+              "total_energy": 0.0,
+              "energy:kinetic_plus_soc": 0.0,
+              "parameter_delta": 0.0,
+              "update_relative_l2": 0.0,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 0.0
+            }
+          },
+          "combined": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.000164031982421875,
+              "energy:moire_potential": 0.0,
+              "total_energy": 0.0008581947186030447,
+              "energy:kinetic_plus_soc": 0.0006786730955354869,
+              "parameter_delta": 1.7583370208740234e-06,
+              "update_relative_l2": 6.45336476736702e-05,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 1.1920928955078125e-07
+            }
+          },
+          "current": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.000164031982421875,
+              "energy:moire_potential": 0.0,
+              "total_energy": 0.0008581947186030447,
+              "energy:kinetic_plus_soc": 0.0006786730955354869,
+              "parameter_delta": 1.9155442714691162e-05,
+              "update_relative_l2": 0.0008454845519736409,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 1.1920928955078125e-07
+            }
+          },
+          "sparse": {
+            "passed": true,
+            "checks": {
+              "same_fields": true,
+              "required_fields": true,
+              "energy:coulomb": true,
+              "energy:moire_potential": true,
+              "total_energy": true,
+              "energy:kinetic_plus_soc": true,
+              "parameter_delta": true,
+              "initial_params": true,
+              "sampled_positions": true,
+              "mean_energy": true
+            },
+            "errors": {
+              "energy:coulomb": 0.000164031982421875,
+              "energy:moire_potential": 0.0007940436480566859,
+              "total_energy": 0.0013483973452821374,
+              "energy:kinetic_plus_soc": 0.0007936964393593371,
+              "parameter_delta": 1.665949821472168e-05,
+              "update_relative_l2": 0.0008391310111619532,
+              "initial_params": 0.0,
+              "sampled_positions": 0.0,
+              "mean_energy_mev_per_hole": 2.914004855685764e-07
+            }
+          }
+        },
+        "original_to_sparse": 2.1468097563915656,
+        "combined_to_sparse": 1.633324486515399,
+        "current_to_sparse": 1.2748342835070843
+      }
+    ],
+    "frozen_validation_job_id": "582645",
+    "time_to_convergence_measured": false
+  },
+  "gamma": {
+    "node": "gpu40903",
+    "gpu": "RTX 4090 index 0",
+    "threads": {
+      "OMP": 4,
+      "BLAS": 1,
+      "NumExpr": 1
+    },
+    "jobs": {
+      "jvp6": 582950,
+      "lap6_paired_repeat": 582963,
+      "sparse_lap6_paired_repeat": 582969
+    },
+    "first_step_checks": {
+      "jvp6": {
+        "initial_params_identical": true,
+        "sampled_positions_identical": true,
+        "sampled_angles_identical": true,
+        "energy:gamma_max_mev_error": 0.03559872508049011,
+        "energy:gamma_gate_passed": false,
+        "energy:coulomb_max_mev_error": 0.0,
+        "energy:coulomb_gate_passed": true,
+        "total_energy_max_mev_error": 0.03559872508049011,
+        "total_energy_gate_passed": false,
+        "mean_energy_mev_per_hole_error": 3.4064580186082263e-06,
+        "mean_energy_gate_passed": true,
+        "parameter_gradient_relative_l2": 3.44086083714501e-06,
+        "parameter_gradient_gate_passed": true,
+        "parameter_delta_relative_l2": 6.368601316353306e-05,
+        "parameter_delta_gate_passed": true,
+        "all_numerical_gates_passed": false
+      },
+      "lap6": {
+        "initial_params_identical": true,
+        "sampled_positions_identical": true,
+        "sampled_angles_identical": true,
+        "energy:gamma_max_mev_error": 0.016650967299938202,
+        "energy:gamma_gate_passed": false,
+        "energy:coulomb_max_mev_error": 0.0,
+        "energy:coulomb_gate_passed": true,
+        "total_energy_max_mev_error": 0.016650967299938202,
+        "total_energy_gate_passed": false,
+        "mean_energy_mev_per_hole_error": 2.459376427541505e-06,
+        "mean_energy_gate_passed": true,
+        "parameter_gradient_relative_l2": 1.732640612317482e-06,
+        "parameter_gradient_gate_passed": true,
+        "parameter_delta_relative_l2": 6.128237873781472e-05,
+        "parameter_delta_gate_passed": true,
+        "all_numerical_gates_passed": false
+      },
+      "sparse_lap6": {
+        "initial_params_identical": true,
+        "sampled_positions_identical": true,
+        "sampled_angles_identical": true,
+        "energy:gamma_max_mev_error": 0.035766810178756714,
+        "energy:gamma_gate_passed": false,
+        "energy:coulomb_max_mev_error": 0.0,
+        "energy:coulomb_gate_passed": true,
+        "total_energy_max_mev_error": 0.035766810178756714,
+        "total_energy_gate_passed": false,
+        "mean_energy_mev_per_hole_error": 3.3753408653311242e-06,
+        "mean_energy_gate_passed": true,
+        "parameter_gradient_relative_l2": 3.4554786907392554e-06,
+        "parameter_gradient_gate_passed": true,
+        "parameter_delta_relative_l2": 6.301830580923706e-05,
+        "parameter_delta_gate_passed": true,
+        "all_numerical_gates_passed": false
+      }
+    },
+    "historical_max_energy_gate_mev_per_configuration": 0.01,
+    "user_authorized_inclusion_despite_failed_max_energy_gate": true,
+    "time_to_convergence_measured": false
+  },
+  "layer_representation": {
+    "replay_job_id": 583068,
+    "source_updates": 45000,
+    "timed_updates_per_order": 200,
+    "orders": [
+      "continuous, discrete",
+      "discrete, continuous"
+    ],
+    "continuous": {
+      "synchronized_ms": 49.022,
+      "loop_interval_ms": 51.221
+    },
+    "discrete": {
+      "synchronized_ms": 51.158,
+      "loop_interval_ms": 54.053
+    },
+    "operational_energy_plateau_at_50000_updates": {
+      "continuous": false,
+      "discrete": false
+    },
+    "user_stopped_at_updates": 70000,
+    "ground_state_established": false
+  }
+}

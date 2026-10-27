@@ -1,0 +1,59 @@
+{
+  "scope": "Portable package software verification; reduced examples are not material or performance results",
+  "python": "3.12.7",
+  "unit_test_count": 32,
+  "unit_tests": "passed",
+  "ruff": "passed",
+  "wheel_assets_included": true,
+  "wheel_source_files_checked": 17,
+  "wheel_matches_current_source": true,
+  "cpu_cases": {
+    "mote_full3": {
+      "completed_updates": 3,
+      "optimizer_counts": {
+        "opt_state/optax/0/count": 3,
+        "opt_state/kfac/count": 3
+      },
+      "burn_performed": true
+    },
+    "mote_split1": {
+      "completed_updates": 1,
+      "optimizer_counts": {
+        "opt_state/optax/0/count": 1,
+        "opt_state/kfac/count": 1
+      },
+      "burn_performed": true
+    },
+    "mote_resume3": {
+      "completed_updates": 3,
+      "optimizer_counts": {
+        "opt_state/optax/0/count": 3,
+        "opt_state/kfac/count": 3
+      },
+      "burn_performed": false
+    },
+    "mote_discrete2": {
+      "completed_updates": 2,
+      "optimizer_counts": {
+        "opt_state/optax/0/count": 2,
+        "opt_state/kfac/count": 2
+      },
+      "burn_performed": true
+    },
+    "gamma2": {
+      "completed_updates": 2,
+      "optimizer_counts": {
+        "opt_state/optax/0/count": 2,
+        "opt_state/kfac/count": 2
+      },
+      "burn_performed": true
+    }
+  },
+  "continuation_all_arrays_bitwise_equal": true,
+  "compared_native_arrays": 48,
+  "commands": [
+    "python -m pytest tests/app/moire/optimized --n-cpu-devices=1 -q",
+    "JAX_PLATFORMS=cpu python example/moire_optimized/smoke_test.py --out NEW_DIRECTORY"
+  ],
+  "review": "No remaining P1/P2 findings; historical Gamma numerical differences are preserved in BENCHMARKS.md"
+}

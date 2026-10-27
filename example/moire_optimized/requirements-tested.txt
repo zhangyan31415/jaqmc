@@ -1,0 +1,22 @@
+# Scientific package versions observed in the historical Python 3.12.7 environment.
+# Record only: JAX 0.11.2 exceeds pyproject.toml's <=0.9.1 bound.
+# Do not treat this file as a lockfile or install it into a shared base environment.
+# NVIDIA GPU runs also used jax-cuda12-plugin/pjrt 0.11.2 and a compatible driver.
+# These pins describe the historical environment, not support for every device.
+jax==0.11.2
+jaxlib==0.11.2
+flax==0.12.10
+kfac-jax==0.0.8
+numpy==2.5.3
+optax==0.2.8
+h5py==3.16.0
+pyserde==0.33.1
+chex==0.1.92
+plum-dispatch==2.10.1
+dm-tree==0.1.10
+einops==0.8.2
+fsspec==2026.9.0
+universal-pathlib==0.3.10
+PyYAML==6.0.3
+# Verification dependency:
+pytest==9.1.1
