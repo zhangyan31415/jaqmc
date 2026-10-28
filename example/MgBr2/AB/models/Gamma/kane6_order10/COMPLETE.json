@@ -1,0 +1,9 @@
+{
+  "exit_status": 0,
+  "optimizer_converged": true,
+  "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "nfev": 99,
+  "nit": 79,
+  "loss": 91.09265790734182,
+  "finished": 1792818656.3547971
+}

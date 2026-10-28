@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/RESULT.json",
+    "sha256": "e923707cb44f9ee527791efed2cf900494d65979187aa05bcd8857d3c97dca84"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/BANDS_OVERLAP.png",
+    "sha256": "edcf283ae96ab8c79f18a0af37b6f4b5b2815be6e27166c87a2efc7eddf5ac89"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/PARAMETERS_PILOT.png",
+    "sha256": "2ec97c5a7642f96c83ad8b8aa7ce21ac6681c5a132b66d8097996ea73736f502"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/Q_CHECK.json",
+    "sha256": "b13b2a532a1660c90f44e8e9d42f2a513fd97e9d203a99c41436be97454c80dc"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/REPORT.md",
+    "sha256": "cf79d76230e43d60e69c97ac3b6a2a363d18a3a96962361417fd2d51ec1d9a3e"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/COMPLETE.json",
+    "sha256": "166b01d59231653b2ad9cca78ffb1d44e18f7fb7def223b7e82ccd7a1cd9f117"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/operators.py",
+    "sha256": "f8529df02993d88c5416ac8a26c2753d8d797519ec227e8f40bee468b5521328"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/pilot/reference_source_canonical.npz",
+    "sha256": "4d36be3b25532121267659866e526df0d426829eebe53cecae09b107a0fb9669"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/8_3.89.npz",
+    "sha256": "ee1b74a89bb4d5446dc7ee172e90d49d0802062c88bf6dcf716e46d043b45537"
+  }
+]

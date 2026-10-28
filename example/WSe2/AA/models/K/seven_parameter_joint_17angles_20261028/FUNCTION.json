@@ -1,0 +1,237 @@
+{
+  "geometry_reference": {
+    "angle_deg": 2.1339296665972505,
+    "reciprocal": [
+      [
+        0.08226027042678133,
+        0.0
+      ],
+      [
+        0.041130135213390664,
+        0.07123948391177042
+      ]
+    ],
+    "kappas": [
+      [
+        0.04113013521346536,
+        -0.023746494637766877
+      ],
+      [
+        0.04113013521343541,
+        0.023746494637766628
+      ]
+    ],
+    "fractional_to_model": [
+      [
+        -0.04113013521340568,
+        -0.07123948391330008
+      ],
+      [
+        0.04113013521349541,
+        -0.07123948391330008
+      ]
+    ]
+  },
+  "geometry_angles_deg": [
+    1.202855227481003,
+    1.4075774463457396,
+    1.4701297257779093,
+    1.538499818371707,
+    1.6135389011625705,
+    1.696272693519767,
+    1.787948610382325,
+    2.1339296665972505,
+    2.2810596097298803,
+    2.4499772766168695,
+    2.6459083811926885,
+    2.875894633632971,
+    3.149657426389616,
+    3.481006089466939,
+    3.8902381690076835,
+    4.408455007944072,
+    5.085847808123473,
+    6.008983197766148,
+    7.3409930166302155,
+    9.430007907896421
+  ],
+  "normalised_reciprocal_scales": [
+    1.00063487458945,
+    1.0006452558812404,
+    1.000659555427746,
+    1.0006664960963327,
+    1.0006767034914714,
+    1.0006851381619173,
+    1.0006955924539676,
+    1.0,
+    1.0000247374337263,
+    1.000055172571781,
+    1.0000931995407143,
+    1.0001415702759417,
+    1.0002044066971119,
+    1.000288108610795,
+    1.000403049759862,
+    1.000566952859475,
+    1.0008121512265233,
+    1.001202839130497,
+    1.0018817588838556,
+    1.0032216214098637
+  ],
+  "family": "z_cubic",
+  "selected_curve": "r2_linear",
+  "function_domain_deg": [
+    1.202855227481003,
+    5.085847808123473
+  ],
+  "a_h_eV_A2": 10.709964989964163,
+  "mass_over_me": 0.35574179033919967,
+  "lambda_eV_A": null,
+  "potential_order": [
+    "Vcos",
+    "Vsin",
+    "w1",
+    "V2",
+    "w2"
+  ],
+  "scope": "17angle update; same7terms,one sharedmass,quadratic kinetic; HS C3ordering/principal and physical derivative safeguards retained.",
+  "loss_configuration": {
+    "method": "minimax top3 energy plus explicit per-angle Gamma constraints",
+    "weights": {
+      "path_energy": 1.0,
+      "path_gaps12_23": 0.5,
+      "HS_energy": 1.0,
+      "HS_gaps12_23": 1.0,
+      "Gamma_top23": 4.0,
+      "Gamma_patch_top23": 2.0,
+      "Gamma_shape_top23": 1.0
+    },
+    "old_Heff_top3_projector_weight": 1.0,
+    "new_native_wavefunction_loss": false,
+    "Gamma_tolerance_meV": 2.0,
+    "Gamma_patch_tolerance_meV": 2.5,
+    "no_gap34_or_top4_target": true
+  },
+  "global_coefficient_count": 23,
+  "physical_coefficient_count": 7,
+  "calibration_cases": [
+    "27_1.20286",
+    "23_1.40758",
+    "22_1.47013",
+    "21_1.53850",
+    "20_1.61354",
+    "19_1.69627",
+    "18_1.78795",
+    "15_2.13",
+    "14_2.28",
+    "13_2.45",
+    "12_2.65",
+    "11_2.88",
+    "10_3.15",
+    "9_3.48",
+    "8_3.89",
+    "7_4.41",
+    "6_5.09"
+  ],
+  "withheld_cases": [],
+  "fit_scope": "Top3-only spectrum + explicit Gamma constraints. Six-band plots retain context; bands4-6 not fitted.",
+  "role": "joint_smallangle_candidate",
+  "fold": "full",
+  "geometry_normalization": "Normalize at the stored geometry_reference angle, not at the first calibration angle; new measured cells included.",
+  "polar_angle_law": false,
+  "variables_scaled": [
+    1.0709964989964162,
+    0.06505182083240166,
+    0.08964011246847431,
+    -0.05240887490020766,
+    0.01034702775416499,
+    -0.11694127461636378,
+    0.2728550625019075,
+    0.2454504057659003,
+    0.17362937573167528,
+    -0.24813941887639196,
+    -0.538075893510044,
+    -0.3776553999134763,
+    -0.609986281040652,
+    0.10571462934173577,
+    0.41445229175026566,
+    -0.5034307821621171,
+    4.7714584583698905,
+    0.1772849949381366,
+    0.3638516371596874,
+    0.1416419550969514,
+    0.5346589936178676,
+    0.7336286635251937,
+    0.549156971511021
+  ],
+  "profile": "loose",
+  "derivative_limits": {
+    "slope": [
+      5.0,
+      8.0,
+      12.0,
+      80.0,
+      8.0,
+      0.02
+    ],
+    "curvature": [
+      7.0,
+      10.0,
+      12.0,
+      60.0,
+      8.0,
+      0.02
+    ]
+  },
+  "angle_variable": "r2=(sin(theta/2)/sin(3degree/2))^2 or z=r2/(1+r2); Bernstein polynomials in the normalized coordinate",
+  "model_scope": "Joint native Q8 at1.20286/1.53850/1.78795plus archived Heff2.13\u20135.09. Common mass and lambda; physical derivative limits explicit prior assumptions.",
+  "coordinate": "z",
+  "degree": 3,
+  "parameterization": "Smooth Cartesian Fourier coefficients Vcos/Vsin, phase derived only",
+  "potential_controls_eV": [
+    [
+      0.0013010364166480331,
+      0.0017928022493694862,
+      -0.0010481774980041533,
+      0.00020694055508329982
+    ],
+    [
+      -0.0023388254923272754,
+      0.00545710125003815,
+      0.004909008115318006,
+      0.0034725875146335056
+    ],
+    [
+      -0.004962788377527839,
+      -0.01076151787020088,
+      -0.007553107998269526,
+      -0.01219972562081304
+    ],
+    [
+      0.0021142925868347156,
+      0.008289045835005313,
+      -0.010068615643242343,
+      0.09542916916739781
+    ],
+    [
+      0.003545699898762732,
+      0.007277032743193748,
+      0.002832839101939028,
+      0.010693179872357352
+    ]
+  ],
+  "derivative_fields": [
+    "Vcos",
+    "Vsin",
+    "w1",
+    "V2",
+    "w2"
+  ],
+  "lambda_controls_eV_A": [
+    0.07336286635251937,
+    0.05491569715110211
+  ],
+  "lambda_function_degree": 1,
+  "shared_mass": true,
+  "shared_lambda": false,
+  "reference_type": "All17angles Heff eigenvalues and eigenvectors",
+  "source_frozen_function_sha256": "1b159301fcf781f6b29cb48a4ebd762b1f367037e9b5044e44ecea4babeee576"
+}

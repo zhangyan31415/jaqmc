@@ -1,0 +1,51 @@
+{
+  "id": "SnSe2_AA_M_seven_parameter_constant_mass_20261021",
+  "material": "SnSe2",
+  "stacking": "AA",
+  "valley": "M1",
+  "edge": "CBM",
+  "physical_parameters": 7,
+  "global_coefficients": 17,
+  "angles_deg": [
+    2.2810596097298803,
+    2.4499772766168695,
+    2.6459083811926885,
+    2.875894633632971,
+    3.149657426389616,
+    3.481006089466939,
+    3.8902381690076835,
+    4.408455007944072,
+    5.085847808123473,
+    6.008983197766148,
+    7.3409930166302155,
+    9.430007907896421
+  ],
+  "basis_description": "One envelope orbital per layer, component-major plane waves; spectator physical spin is not copied in the orbital matrix.",
+  "energy_unit": "eV",
+  "length_unit": "Angstrom",
+  "k_convention": "fractional B; reciprocal vectors are rows in inverse Angstrom",
+  "carrier_convention": "electron",
+  "status": "ARCHIVED_SMALL_ANGLE_CANDIDATE_WITH_Q_LIMITS",
+  "hf_scope": "Small-angle first-two-band comparison only; full three-band all-angle fit failed and enlarged model-Q sensitivity is material.",
+  "entrypoint": "model.py",
+  "reference_type": "Native TAPW pair centers and raw fixed-source wave projections",
+  "hf_api": {
+    "module": "hf_adapter.py",
+    "hamiltonian": "hamiltonian",
+    "reciprocal_basis": "reciprocal_basis",
+    "carrier": "electron"
+  },
+  "limitations": [
+    "Native SOC omitted; spectator spin approximation",
+    "Area-two periodic cell or layer-twisted primitive boundary required",
+    "Model-Q sensitivity is not negligible and native-Q convergence not established",
+    "No microscopic interaction density vertex or HF solver",
+    "Fixed-state external NQS timing is not a native training preset"
+  ],
+  "source_files": [
+    "COEFFICIENTS.json",
+    "CATALOG.json",
+    "reports/SOURCE_EXPORT_VERIFICATION.json"
+  ],
+  "hf_scan_recommendation": "EXPLORATORY_ONLY; explicit angle/cutoff selection required"
+}

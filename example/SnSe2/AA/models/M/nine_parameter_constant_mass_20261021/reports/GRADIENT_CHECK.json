@@ -1,0 +1,12 @@
+[
+  {
+    "eps": 2e-06,
+    "residual_relative": 8.117984229178659e-09,
+    "cost_relative": 2.639946283308894e-09
+  },
+  {
+    "eps": 2e-07,
+    "residual_relative": 6.086447547004222e-08,
+    "cost_relative": 7.933850885440466e-08
+  }
+]

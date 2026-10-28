@@ -1,0 +1,20 @@
+{
+  "covariance": {
+    "C2T": {
+      "max_h_covariance_residual": 4.851931596640351e-16,
+      "rms_h_covariance_residual": 3.6512104617285376e-16,
+      "unitarity_residual": 0.0
+    },
+    "C3z": {
+      "max_h_covariance_residual": 3.883387422952113e-16,
+      "rms_h_covariance_residual": 3.001460126980281e-16,
+      "unitarity_residual": 1.1102230246251565e-16
+    }
+  },
+  "dimension": 24,
+  "group_relations": {
+    "C2T_C3_relation": 0.0,
+    "C2T_squared_equals_identity": 0.0,
+    "C3_cubed_equals_minus_identity": 2.482534153247273e-16
+  }
+}

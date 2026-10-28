@@ -1,0 +1,7 @@
+{
+  "exit_status": 0,
+  "optimizer_converged": false,
+  "final_gradient_verified": true,
+  "finished": 1792774008.187915,
+  "node": "gpuh203"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "seven_parameter_joint_17angles_20261028",
+  "material": "WSe2",
+  "stacking": "AA",
+  "valley": "K",
+  "edge": "VBM",
+  "physical_parameters": 7,
+  "global_coefficients": 23,
+  "angles_deg": [
+    1.202855227481003,
+    1.4075774463457396,
+    1.4701297257779093,
+    1.538499818371707,
+    1.6135389011625705,
+    1.696272693519767,
+    1.787948610382325,
+    2.1339296665972505,
+    2.2810596097298803,
+    2.4499772766168695,
+    2.6459083811926885,
+    2.875894633632971,
+    3.149657426389616,
+    3.481006089466939,
+    3.8902381690076835,
+    4.408455007944072,
+    5.085847808123473
+  ],
+  "basis_description": "Two layer envelope fields, one selected spin-valley branch per layer; layer-major plane-wave basis with exp(i(k-Q).r). No independent spin index.",
+  "energy_unit": "eV",
+  "length_unit": "angstrom",
+  "k_convention": "hf_adapter uses fractional k_cartesian=k_fractional@reciprocal_basis(theta), B rows in inverse angstrom. Native AngleModel uses Cartesian k. Archived path fractional coordinates instead use source F=fractional_to_model(theta).",
+  "carrier_convention": "Electron valence Hamiltonian, negative quadratic dispersion. Hole Hamiltonian Etop(Gamma) I - H_e(-k).T; Kprime=H_K(-k).conj(). No extra spin degeneracy.",
+  "hf_scope": "Portable single-particle matrix only. Interactions, Coulomb form factors, filling and HF solver are not supplied or validated.",
+  "status": "candidate_known_large_angle_wavefunction_limit",
+  "entrypoint": "angle_model.AngleModel(FUNCTION.json).hamiltonian(theta_deg,k_model,valley=\"K\",nq=169)",
+  "reference_type": "Projected Heff energies and fixed layer/Q model-Heff wavefunction overlaps; not native TAPW wavefunction fidelity.",
+  "limitations": [
+    "Only top3 fitted; bands4-6 plotted as context.",
+    "At5.08585 degrees top3 energy RMS2.647meV and M-band3 overlap squared about0.440.",
+    "All17-angle reported overlaps use Heff reference; no native-wavefunction embedding.",
+    "Outside1.202855227481003..5.085847808123473 degrees is angle-law extrapolation.",
+    "Structure-response/reallocated-seven-term candidate in diagnostics was rejected; do not replace primary with it.",
+    "HF adapter default nq169 is a basis request; complete shells may contain more points."
+  ],
+  "source_files": [
+    {
+      "path": "wse2_newangles_q8_joint_20261028/joint_fit/models/primary/FUNCTION.json",
+      "sha256": "f757ce583c5added6bba75d364ccc973a675702b3b2faac81cce8aeaed5b2c60"
+    },
+    {
+      "path": "wse2_newangles_q8_joint_20261028/joint_fit/models/primary/model.py",
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "path": "wse2_newangles_q8_joint_20261028/joint_fit/models/primary/angle_model.py",
+      "sha256": "ca589f35bab0c1fcd492ddc461dab97266f95cec783e09e18d66ea0fc5952bd5"
+    },
+    {
+      "path": "wse2_newangles_q8_joint_20261028/joint_fit/models/primary/angle_model_base.py",
+      "sha256": "2ec0283cac18e1073a8bbd5fb88d0764df22744bcbc7b0e6e2c55fd82f453be1"
+    }
+  ],
+  "hf_api": {
+    "module": "hf_adapter.py",
+    "hamiltonian": "hamiltonian",
+    "reciprocal_basis": "reciprocal_basis",
+    "carrier": "electron",
+    "coordinates": "fractional reciprocal_basis rows; k_cartesian=k_fractional@B"
+  }
+}

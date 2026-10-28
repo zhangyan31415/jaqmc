@@ -1,0 +1,45 @@
+{
+  "state": "PASS",
+  "scope": "Portable evaluator replay at representative stored k and angles; not validation of fitted physics, HF, Q convergence or native overlap.",
+  "max_spectrum_replay_error_eV": 2.007283228522283e-13,
+  "max_Hermiticity_error_eV": 0.0,
+  "checks": [
+    {
+      "angle_deg": 3.8902381690076835,
+      "k_index": 0,
+      "dimension": 54,
+      "max_absolute_spectrum_error_eV": 6.394884621840902e-14
+    },
+    {
+      "angle_deg": 3.8902381690076835,
+      "k_index": 13,
+      "dimension": 54,
+      "max_absolute_spectrum_error_eV": 8.171241461241152e-14
+    },
+    {
+      "angle_deg": 3.8902381690076835,
+      "k_index": 20,
+      "dimension": 54,
+      "max_absolute_spectrum_error_eV": 1.0125233984581428e-13
+    },
+    {
+      "angle_deg": 3.8902381690076835,
+      "k_index": 40,
+      "dimension": 54,
+      "max_absolute_spectrum_error_eV": 2.007283228522283e-13
+    },
+    {
+      "angle_deg": 3.8902381690076835,
+      "k_index": 60,
+      "dimension": 54,
+      "max_absolute_spectrum_error_eV": 6.394884621840902e-14
+    }
+  ],
+  "hostname": "gpuh201",
+  "cwd": "/data/work/zy/software/research-lab/10_nqs/external/jaqmc",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "python_executable": "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+  "process_layout": "one Python process; BLAS/OpenMP 4 threads maximum",
+  "command": "python verify.py",
+  "returncode": 0
+}

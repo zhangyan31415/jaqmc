@@ -1,0 +1,90 @@
+{
+  "family": "orbital",
+  "records": [
+    {
+      "C3_covariance_relative": 8.425461646700901e-12,
+      "C2_covariance_relative": 1.4595322598443784e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 8.613695813007644e-17,
+      "case": "14_2.28"
+    },
+    {
+      "C3_covariance_relative": 8.432045022731959e-12,
+      "C2_covariance_relative": 1.458769862935707e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 8.453993016180796e-17,
+      "case": "13_2.45"
+    },
+    {
+      "C3_covariance_relative": 8.435607754558946e-12,
+      "C2_covariance_relative": 1.4578223911545004e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 0.0,
+      "case": "12_2.65"
+    },
+    {
+      "C3_covariance_relative": 8.436899822609064e-12,
+      "C2_covariance_relative": 1.4567765051015825e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 8.215986854206673e-17,
+      "case": "11_2.88"
+    },
+    {
+      "C3_covariance_relative": 8.435756254392736e-12,
+      "C2_covariance_relative": 1.4556502325936862e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 3.0877815039081575e-17,
+      "case": "10_3.15"
+    },
+    {
+      "C3_covariance_relative": 8.433444112090598e-12,
+      "C2_covariance_relative": 1.4544868948131971e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 7.72838461124283e-17,
+      "case": "9_3.48"
+    },
+    {
+      "C3_covariance_relative": 8.429153899565155e-12,
+      "C2_covariance_relative": 1.4532665464411294e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 1.0001214353496675e-16,
+      "case": "8_3.89"
+    },
+    {
+      "C3_covariance_relative": 8.425100790442583e-12,
+      "C2_covariance_relative": 1.45215239723895e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 0.0,
+      "case": "7_4.41"
+    },
+    {
+      "C3_covariance_relative": 8.420623180622053e-12,
+      "C2_covariance_relative": 1.451141023400911e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 1.1789769096929625e-16,
+      "case": "6_5.09"
+    },
+    {
+      "C3_covariance_relative": 8.415692378756977e-12,
+      "C2_covariance_relative": 1.4501538811120078e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 7.488601244341519e-17,
+      "case": "5_6.01"
+    },
+    {
+      "C3_covariance_relative": 8.411408193180019e-12,
+      "C2_covariance_relative": 1.4493031572219928e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 0.0,
+      "case": "4_7.34"
+    },
+    {
+      "C3_covariance_relative": 8.40821197188422e-12,
+      "C2_covariance_relative": 1.4486693804021285e-11,
+      "Hermiticity_max": 0.0,
+      "TR_covariance_relative_actual_parameters": 1.5623713847028964e-16,
+      "case": "3_9.43"
+    }
+  ],
+  "passed": true
+}

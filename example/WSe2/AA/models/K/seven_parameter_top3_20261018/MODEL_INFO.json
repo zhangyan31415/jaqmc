@@ -1,0 +1,52 @@
+{
+  "id": "WSe2_AA_K_seven_parameter_top3_20261018",
+  "material": "WSe2",
+  "stacking": "AA",
+  "valley": "K",
+  "edge": "VBM",
+  "physical_parameters": 7,
+  "global_coefficients": 12,
+  "angles_deg": [
+    2.1339296665972505,
+    2.2810596097298803,
+    2.4499772766168695,
+    2.6459083811926885,
+    2.875894633632971,
+    3.149657426389616,
+    3.481006089466939,
+    3.8902381690076835,
+    4.408455007944072,
+    5.085847808123473
+  ],
+  "basis_description": "One selected-spin envelope orbital per layer; opposite valley follows the documented time-reversal convention.",
+  "energy_unit": "eV",
+  "length_unit": "Angstrom",
+  "k_convention": "Source fractional-to-model transform; see archived README, not a uniform adapter.",
+  "carrier_convention": "Source electron/hole APIs; choose explicitly as documented",
+  "status": "HISTORICAL_ARCHIVE",
+  "hf_scope": "Historical ten-angle seven-term K model; latest seventeen-angle version is separate.",
+  "entrypoint": null,
+  "reference_type": "Archived Heff model overlap; not a newly certified native-TAPW embedding",
+  "limitations": [
+    "Use current version descriptors for a new scan",
+    "No uniform adapter added to this unchanged historical candidate hierarchy"
+  ],
+  "source_files": [
+    "README.md"
+  ],
+  "geometry_angles_deg_including_diagnostic_extrapolation": [
+    2.1339296665972505,
+    2.2810596097298803,
+    2.4499772766168695,
+    2.6459083811926885,
+    2.875894633632971,
+    3.149657426389616,
+    3.481006089466939,
+    3.8902381690076835,
+    4.408455007944072,
+    5.085847808123473,
+    6.008983197766148,
+    7.3409930166302155,
+    9.430007907896421
+  ]
+}

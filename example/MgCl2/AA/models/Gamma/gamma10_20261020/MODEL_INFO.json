@@ -1,0 +1,63 @@
+{
+  "energy_unit": "eV",
+  "length_unit": "angstrom",
+  "hf_scope": "DIAGNOSTIC_ONLY: explicitly opt in; excluded from default high-throughput HF list",
+  "status": "DIAGNOSTIC_NOT_VALIDATED_FOR_HF",
+  "reference_type": "native TAPW spectrum; source-only interpolated embeddings away from exact source-frame points; not all-k direct wavefunction validation",
+  "id": "MgCl2_gamma10_20261020",
+  "material": "MgCl2",
+  "stacking": "AA",
+  "valley": "Gamma",
+  "edge": "CBM",
+  "physical_parameters": 10,
+  "global_coefficients": 15,
+  "angles_deg": [
+    2.2810596097298803,
+    2.4499772766168695,
+    2.6459083811926885,
+    2.875894633632971,
+    3.149657426389616,
+    3.481006089466939,
+    3.8902381690076835,
+    4.408455007944072,
+    5.085847808123473,
+    6.008983197766148,
+    7.3409930166302155,
+    9.430007907896421
+  ],
+  "basis_description": "Two layers x two Kramers sectors; 4 N_Q basis states",
+  "k_convention": "fractional row k; Cartesian k=k_fractional@B; plane waves q+k",
+  "carrier_convention": "electron, increasing conduction energy",
+  "entrypoint": "hf_adapter.py",
+  "hf_api": {
+    "module": "hf_adapter.py",
+    "hamiltonian": "hamiltonian",
+    "reciprocal_basis": "reciprocal_basis",
+    "carrier": "electron"
+  },
+  "limitations": [
+    "Older comparison candidate, not an accepted production model.",
+    "Nonlocal Kane kinetic energy; spin-dependent first-order differential SOC.",
+    "Uses exact archived source Q for the uniform adapter; angle_model.hamiltonian uses Q91 instead.",
+    "Five kinetic/SOC/anisotropy constants are shared across angles; five potential coefficients have linear angle laws.",
+    "Independent fitted native-wavefunction gates failed; see reports and the newer gamma9 candidate."
+  ],
+  "source_files": [
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/gamma/MgCl2/model/angle_model.py",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/gamma/MgCl2/model/physical.py",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/gamma/MgCl2/model/COEFFICIENTS.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/gamma/MgCl2/model/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/gamma/MgCl2/model/BINDINGS.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/FINAL_BANDS_MgCl2.png",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/FINAL_PARAMETERS_MgCl2.png",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/FINAL_GAPS_MgCl2.png",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/gamma/MgCl2/joint/validation_full.npz"
+  ],
+  "fit_summary": {},
+  "verification": "VERIFICATION.json",
+  "default_hf_enabled": false,
+  "runtime_requirements": [
+    "Python>=3.11",
+    "NumPy"
+  ]
+}

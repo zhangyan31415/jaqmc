@@ -1,0 +1,1264 @@
+{
+  "material": "InSe",
+  "node": "gpuh203",
+  "pid": 439592,
+  "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/inse_fit9.py",
+    "--maxeval",
+    "160",
+    "--output-label",
+    "model9_low2",
+    "--prioritize-low2"
+  ],
+  "layout": "one fit process,4 angle threads,BLAS1",
+  "started": 1792772954.8990269,
+  "family": "Gamma",
+  "physical_parameter_count": 9,
+  "physical_parameter_names": [
+    "A1_eV_A2",
+    "A2_eV_A2",
+    "t0_eV",
+    "Ve_c_eV",
+    "Ve_s_eV",
+    "Vo_c_eV",
+    "Vo_s_eV",
+    "Tc_eV",
+    "Ts_eV"
+  ],
+  "global_coefficient_count": 23,
+  "global_controls": [
+    [
+      9.311740161077589,
+      9.311740161077589,
+      9.311740161077589
+    ],
+    [
+      36.06046376802834,
+      36.06046376802834,
+      36.06046376802834
+    ],
+    [
+      -0.3550659274940857,
+      -0.34875998666980623,
+      -0.3026463518457309
+    ],
+    [
+      -0.004630666013669817,
+      0.041374392869828254,
+      0.0974759954183926
+    ],
+    [
+      -0.0037517973686731266,
+      0.010978437336398781,
+      -0.0024718617846067703
+    ],
+    [
+      -0.0031370177359721267,
+      -0.03271232536514593,
+      -0.061961812820046695
+    ],
+    [
+      0.00022277430165567293,
+      -0.00113426879837743,
+      -0.0032407016452582955
+    ],
+    [
+      0.017641847870135296,
+      -0.02075656433853132,
+      -0.06174851827481717
+    ],
+    [
+      -0.0029615486939145773,
+      -0.022738587442929226,
+      -0.010784003845231538
+    ]
+  ],
+  "constant_mass_indices": [
+    0,
+    1
+  ],
+  "constant_mass_both": true,
+  "mass_coefficients_eV_A2": [
+    9.311740161077589,
+    36.06046376802834
+  ],
+  "effective_masses_m_e": [
+    0.40915898105493903,
+    0.10565538315491212
+  ],
+  "rho": 0.2,
+  "angle_endpoint_deg": [
+    2.2810596097298803,
+    9.430007907896421
+  ],
+  "angle_law": "Two constant positive masses; seven coupling amplitudes quadratic Bernstein in fixed rho=.2 warped sin\u00b2(theta/2). No fitted warp.",
+  "records": [
+    {
+      "case": "14_2.28",
+      "angle_deg": 2.2810596097298803,
+      "parameters": [
+        9.311740161077589,
+        36.06046376802834,
+        -0.3550659274940857,
+        -0.004630666013669817,
+        -0.0037517973686731266,
+        -0.0031370177359721267,
+        0.00022277430165567293,
+        0.017641847870135296,
+        -0.0029615486939145773
+      ],
+      "energy_pair_center_RMS_meV": 2.5009888422423074,
+      "energy_pair_center_RMS_over_window": 0.02614103366842832,
+      "window_meV": 95.67291309000004,
+      "gap_scale_meV": [
+        53.47309799198126,
+        26.2126782953515
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.6134777537229907,
+        4.998249917333007
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.030173635235514973,
+        0.19068062641349343
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.6577324822313757,
+        4.98868122979396
+      ],
+      "raw_six_state_energy_RMS_meV": 2.5027428578634403,
+      "group_min": 6.871418258906121e-05,
+      "principal_min": 6.871418208217663e-05,
+      "raw_pair_min": 6.871418258906121e-05,
+      "raw_pair_min_by_band": [
+        0.9898683464184497,
+        6.871418258906121e-05,
+        0.8513796623970287
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          3
+        ]
+      ],
+      "model_gap_min_meV": [
+        27.643719342144767,
+        7.854834090181006,
+        5.31225063937768e-09
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 6.871418258906121e-05,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.9898683464184497,
+        6.871418258906121e-05,
+        0.28505253748877457
+      ],
+      "arbitrary_basis_legacy_group_min": 6.871418258906121e-05,
+      "arbitrary_basis_legacy_principal_min": 6.871418208217663e-05,
+      "resolved_pair_min_by_band": [
+        0.9898683464184497,
+        6.871418258906121e-05,
+        0.8513796623970287
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9898683464184499,
+        6.871418258906043e-05,
+        0.8513796623970282
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [
+        {
+          "k_index": 0,
+          "band": 3,
+          "model_orbital_cluster": [
+            2,
+            4
+          ]
+        }
+      ],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "13_2.45",
+      "angle_deg": 2.4499772766168695,
+      "parameters": [
+        9.31174016107759,
+        36.06046376802834,
+        -0.3544004912063641,
+        -0.0003708028775056834,
+        -0.002454501703342173,
+        -0.0058610945793895666,
+        9.615995656510727e-05,
+        0.01409870503558635,
+        -0.004716270258615609
+      ],
+      "energy_pair_center_RMS_meV": 2.5557790814615107,
+      "energy_pair_center_RMS_over_window": 0.02308436458723522,
+      "window_meV": 110.71472518999981,
+      "gap_scale_meV": [
+        60.70525386997289,
+        29.698526974966814
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.8633868750832163,
+        5.0937251690988035
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.030695644220094725,
+        0.17151440451549518
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.9043731689848207,
+        5.084817023182861
+      ],
+      "raw_six_state_energy_RMS_meV": 2.5578931569207515,
+      "group_min": 8.644484336719902e-05,
+      "principal_min": 8.644484215028092e-05,
+      "raw_pair_min": 8.644484336719902e-05,
+      "raw_pair_min_by_band": [
+        0.9913167862076151,
+        8.644484336719902e-05,
+        0.8804413291121101
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          3
+        ]
+      ],
+      "model_gap_min_meV": [
+        29.1298163980806,
+        8.411296123312484,
+        5.909439604323552e-09
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 8.644484336719902e-05,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.9913167862076151,
+        8.644484336719902e-05,
+        0.30733638636396216
+      ],
+      "arbitrary_basis_legacy_group_min": 8.644484336719902e-05,
+      "arbitrary_basis_legacy_principal_min": 8.644484215028092e-05,
+      "resolved_pair_min_by_band": [
+        0.9913167862076151,
+        8.644484336719902e-05,
+        0.8804413291121101
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9913167862076151,
+        8.644484336719832e-05,
+        0.8804413291121098
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [
+        {
+          "k_index": 0,
+          "band": 3,
+          "model_orbital_cluster": [
+            2,
+            4
+          ]
+        }
+      ],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "12_2.65",
+      "angle_deg": 2.6459083811926885,
+      "parameters": [
+        9.311740161077589,
+        36.060463768028335,
+        -0.35342608761804745,
+        0.004582375746783149,
+        -0.0011101169656167007,
+        -0.00899293055052509,
+        -5.341980014706908e-05,
+        0.01000936214055984,
+        -0.0065681998893716235
+      ],
+      "energy_pair_center_RMS_meV": 2.606987814698211,
+      "energy_pair_center_RMS_over_window": 0.02012959146565703,
+      "window_meV": 129.51021977500022,
+      "gap_scale_meV": [
+        69.73110952398909,
+        33.87804822682654
+      ],
+      "pair_center_gap_RMS_meV": [
+        2.130288919359617,
+        5.071626132602279
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.030550050528405107,
+        0.14970242968679287
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        2.16453006579567,
+        5.069242081811163
+      ],
+      "raw_six_state_energy_RMS_meV": 2.6095505441277993,
+      "group_min": 0.00011229643372544798,
+      "principal_min": 0.0001122964312693959,
+      "raw_pair_min": 0.00011229643372544798,
+      "raw_pair_min_by_band": [
+        0.9927281629033449,
+        0.00011229643372544798,
+        0.9061123785495655
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          3
+        ]
+      ],
+      "model_gap_min_meV": [
+        30.755463119887636,
+        8.975728182777114,
+        6.847161726497575e-09
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 0.00011229643372544798,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.9927281629033449,
+        0.00011229643372544798,
+        0.335037154511525
+      ],
+      "arbitrary_basis_legacy_group_min": 0.00011229643372544798,
+      "arbitrary_basis_legacy_principal_min": 0.0001122964312693959,
+      "resolved_pair_min_by_band": [
+        0.9927281629033449,
+        0.00011229643372544798,
+        0.9061123785495655
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.992728162903344,
+        0.00011229643372544827,
+        0.9061123785495659
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [
+        {
+          "k_index": 0,
+          "band": 3,
+          "model_orbital_cluster": [
+            2,
+            4
+          ]
+        }
+      ],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "11_2.88",
+      "angle_deg": 2.875894633632971,
+      "parameters": [
+        9.311740161077589,
+        36.06046376802835,
+        -0.35202726207668916,
+        0.010355763227657244,
+        0.00024181652511312955,
+        -0.012596705053134795,
+        -0.0002308604695910993,
+        0.005282794777304187,
+        -0.008479828156959945
+      ],
+      "energy_pair_center_RMS_meV": 2.7013937808134054,
+      "energy_pair_center_RMS_over_window": 0.01768927158866535,
+      "window_meV": 152.71368112999983,
+      "gap_scale_meV": [
+        81.30205020800484,
+        38.41264102495454
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.9860375782720274,
+        5.032291514533263
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.024427890479894517,
+        0.13100613184248555
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.983459680239406,
+        5.071766322724604
+      ],
+      "raw_six_state_energy_RMS_meV": 2.704418198780804,
+      "group_min": 0.00013074038246461262,
+      "principal_min": 0.00013074037951026963,
+      "raw_pair_min": 0.00013074038246461262,
+      "raw_pair_min_by_band": [
+        0.9945728153696529,
+        0.00013074038246461262,
+        0.9173353445870286
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          3
+        ]
+      ],
+      "model_gap_min_meV": [
+        32.51336559217655,
+        9.511428935887134,
+        7.921607814154186e-09
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 0.00013074038246461262,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.9945728153696529,
+        0.00013074038246461262,
+        0.3870587403368111
+      ],
+      "arbitrary_basis_legacy_group_min": 0.00013074038246461262,
+      "arbitrary_basis_legacy_principal_min": 0.00013074037951026963,
+      "resolved_pair_min_by_band": [
+        0.9945728153696529,
+        0.00013074038246461262,
+        0.9173353445870286
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9945728153696534,
+        0.00013074038246461294,
+        0.9173353445870285
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [
+        {
+          "k_index": 0,
+          "band": 3,
+          "model_orbital_cluster": [
+            2,
+            4
+          ]
+        }
+      ],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "10_3.15",
+      "angle_deg": 3.149657426389616,
+      "parameters": [
+        9.311740161077589,
+        36.06046376802834,
+        -0.3500507964051291,
+        0.017092549980529656,
+        0.00153792928806635,
+        -0.01674077121868595,
+        -0.00044195583130466763,
+        -0.00018022967950671583,
+        -0.010387296476462879
+      ],
+      "energy_pair_center_RMS_meV": 2.7392126107241377,
+      "energy_pair_center_RMS_over_window": 0.014994288495460827,
+      "window_meV": 182.68373397999983,
+      "gap_scale_meV": [
+        95.77088903616404,
+        44.63440757191848
+      ],
+      "pair_center_gap_RMS_meV": [
+        2.06152355549521,
+        4.740856818700647
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.021525576051787076,
+        0.1062152961493172
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        2.036150278403581,
+        4.818110226653898
+      ],
+      "raw_six_state_energy_RMS_meV": 2.7428411000010504,
+      "group_min": 0.00021041235055979478,
+      "principal_min": 0.00021041235021043673,
+      "raw_pair_min": 0.00021041235055979478,
+      "raw_pair_min_by_band": [
+        0.9957510389923152,
+        0.00021041235055979478,
+        0.9236879729335432
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          3
+        ]
+      ],
+      "model_gap_min_meV": [
+        34.38496195529722,
+        9.952664252847798,
+        9.046680071733704e-09
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 0.00021041235055979478,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.9957510389923152,
+        0.00021041235055979478,
+        0.41500825184591683
+      ],
+      "arbitrary_basis_legacy_group_min": 0.00021041235055979478,
+      "arbitrary_basis_legacy_principal_min": 0.00021041235021043673,
+      "resolved_pair_min_by_band": [
+        0.9957510389923152,
+        0.00021041235055979478,
+        0.9236879729335432
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9957510389923152,
+        0.0002104123505597945,
+        0.9236879729335435
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [
+        {
+          "k_index": 0,
+          "band": 3,
+          "model_orbital_cluster": [
+            2,
+            4
+          ]
+        }
+      ],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "9_3.48",
+      "angle_deg": 3.481006089466939,
+      "parameters": [
+        9.311740161077589,
+        36.06046376802834,
+        -0.3472991465205174,
+        0.02494589247723851,
+        0.0026829210442421746,
+        -0.021492267742475177,
+        -0.0006932985147861898,
+        -0.006480739801881133,
+        -0.012190700082237976
+      ],
+      "energy_pair_center_RMS_meV": 2.7295158053968094,
+      "energy_pair_center_RMS_over_window": 0.012320243641875025,
+      "window_meV": 221.54722623500024,
+      "gap_scale_meV": [
+        114.62618406996874,
+        52.412029780058596
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.9923972566678645,
+        4.332133658933505
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.017381694006769772,
+        0.08265533079166815
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.9093711272550449,
+        4.486979015415422
+      ],
+      "raw_six_state_energy_RMS_meV": 2.7337795471889645,
+      "group_min": 0.0003908758593854909,
+      "principal_min": 0.0003908758480687784,
+      "raw_pair_min": 0.0003908758593854909,
+      "raw_pair_min_by_band": [
+        0.9966439154538567,
+        0.0003908758593854909,
+        0.9089681245932981
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        36.33764692241387,
+        10.199386464222526,
+        1.071162603061282e-08
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 0.0003908758593854909,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.9966439154538567,
+        0.0003908758593854909,
+        0.4304286444620089
+      ],
+      "arbitrary_basis_legacy_group_min": 0.0003908758593854909,
+      "arbitrary_basis_legacy_principal_min": 0.0003908758480687784,
+      "resolved_pair_min_by_band": [
+        0.9966439154538567,
+        0.0003908758593854909,
+        0.9089681245932981
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9966439154538559,
+        0.00039087585938549116,
+        0.9089681245932972
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [
+        {
+          "k_index": 0,
+          "band": 3,
+          "model_orbital_cluster": [
+            2,
+            4
+          ]
+        }
+      ],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "8_3.89",
+      "angle_deg": 3.8902381690076835,
+      "parameters": [
+        9.311740161077589,
+        36.06046376802834,
+        -0.34352961044315516,
+        0.034063635172583095,
+        0.003542276586457292,
+        -0.026906777938296284,
+        -0.0009918637205637807,
+        -0.01370836390956329,
+        -0.013744773093873053
+      ],
+      "energy_pair_center_RMS_meV": 2.634810025821785,
+      "energy_pair_center_RMS_over_window": 0.009693208802198006,
+      "window_meV": 271.8202072800002,
+      "gap_scale_meV": [
+        138.93018567260577,
+        63.09264733921281
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.7964144184999737,
+        3.7260412867755166
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.012930339146982012,
+        0.05905666419008763
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.6960992780120856,
+        3.907448060730451
+      ],
+      "raw_six_state_energy_RMS_meV": 2.640275776805306,
+      "group_min": 0.0008694884104534094,
+      "principal_min": 0.0008694884102169258,
+      "raw_pair_min": 0.0008694884104534094,
+      "raw_pair_min_by_band": [
+        0.9955003839055121,
+        0.0008694884104534094,
+        0.884148650771477
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        38.322938805595676,
+        10.138040160934544,
+        1.2093423484849097e-08
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 0.0008694884104534094,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.9955003839055121,
+        0.0008694884104534094,
+        0.44721594146726124
+      ],
+      "arbitrary_basis_legacy_group_min": 0.0008694884104534094,
+      "arbitrary_basis_legacy_principal_min": 0.0008694884102169258,
+      "resolved_pair_min_by_band": [
+        0.9955003839055121,
+        0.0008694884104534094,
+        0.884148650771477
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9955003839055117,
+        0.0008694884104534096,
+        0.8841486507714764
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [
+        {
+          "k_index": 0,
+          "band": 3,
+          "model_orbital_cluster": [
+            2,
+            4
+          ]
+        }
+      ],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "7_4.41",
+      "angle_deg": 4.408455007944072,
+      "parameters": [
+        9.311740161077589,
+        36.06046376802834,
+        -0.33846814865282293,
+        0.04455783067000377,
+        0.003940389717681775,
+        -0.03301044577250562,
+        -0.0013439968148588124,
+        -0.02191735383069396,
+        -0.014854837885622002
+      ],
+      "energy_pair_center_RMS_meV": 2.4014359217222387,
+      "energy_pair_center_RMS_over_window": 0.007095714284838563,
+      "window_meV": 338.4346980899999,
+      "gap_scale_meV": [
+        171.2853705095862,
+        77.5466995746024
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.7337044387112026,
+        2.852297475459303
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.010121730966008996,
+        0.036781674669665365
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.679692270778191,
+        2.936593770555219
+      ],
+      "raw_six_state_energy_RMS_meV": 2.4097820840493287,
+      "group_min": 0.0030648993437253306,
+      "principal_min": 0.0030648993149566556,
+      "raw_pair_min": 0.0030648993437253306,
+      "raw_pair_min_by_band": [
+        0.9932909403941863,
+        0.0030648993437253306,
+        0.8325725655180172
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        40.270108518282946,
+        9.728507256495085,
+        1.4437746137518914e-08
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 0.0030648993437253306,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.9932909403941863,
+        0.0030648993437253306,
+        0.4480237393809524
+      ],
+      "arbitrary_basis_legacy_group_min": 0.0030648993437253306,
+      "arbitrary_basis_legacy_principal_min": 0.0030648993149566556,
+      "resolved_pair_min_by_band": [
+        0.9932909403941863,
+        0.0030648993437253306,
+        0.8325725655180172
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9932909403941862,
+        0.0030648993437253306,
+        0.8325725655180173
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [
+        {
+          "k_index": 0,
+          "band": 3,
+          "model_orbital_cluster": [
+            2,
+            4
+          ]
+        }
+      ],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "6_5.09",
+      "angle_deg": 5.085847808123473,
+      "parameters": [
+        9.311740161077589,
+        36.06046376802834,
+        -0.3318529421287666,
+        0.056450995554876815,
+        0.0036729432249805365,
+        -0.03977184585209448,
+        -0.0017534026720490959,
+        -0.031087221658267845,
+        -0.015287677283357917
+      ],
+      "energy_pair_center_RMS_meV": 2.2657661842062864,
+      "energy_pair_center_RMS_over_window": 0.005284912764445303,
+      "window_meV": 428.7234785499998,
+      "gap_scale_meV": [
+        215.83366508275103,
+        96.68628943808956
+      ],
+      "pair_center_gap_RMS_meV": [
+        2.220759748302162,
+        2.7088357453353242
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.010289218539891442,
+        0.028016751507149874
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        2.1835480969925576,
+        2.6162192038228818
+      ],
+      "raw_six_state_energy_RMS_meV": 2.2769338690711702,
+      "group_min": 0.7391418873167996,
+      "principal_min": 0.7391418870990125,
+      "raw_pair_min": 0.7391418873167996,
+      "raw_pair_min_by_band": [
+        0.9850144342490752,
+        0.7391418873167996,
+        0.7962173284923034
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        41.75883875200825,
+        9.257186857569419,
+        1.748795552813931e-08
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 0.3436251095630336,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.9850144342490752,
+        0.7391418873167996,
+        0.3436251095630336
+      ],
+      "arbitrary_basis_legacy_group_min": 0.3436251095630336,
+      "arbitrary_basis_legacy_principal_min": 0.34362478068747876,
+      "resolved_pair_min_by_band": [
+        0.9850144342490752,
+        0.7391418873167996,
+        0.7962173284923034
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9850144342490752,
+        0.7391418873167996,
+        0.759461455557346
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [
+        {
+          "k_index": 0,
+          "band": 3,
+          "model_orbital_cluster": [
+            2,
+            4
+          ]
+        }
+      ],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "5_6.01",
+      "angle_deg": 6.008983197766148,
+      "parameters": [
+        9.311740161077589,
+        36.06046376802834,
+        -0.3235278133690263,
+        0.069592122824635,
+        0.0025469816147851085,
+        -0.04706252135746198,
+        -0.002217705623723253,
+        -0.041065074618192185,
+        -0.014812324809678834
+      ],
+      "energy_pair_center_RMS_meV": 3.6354404591846583,
+      "energy_pair_center_RMS_over_window": 0.006559241546459256,
+      "window_meV": 554.2470777200003,
+      "gap_scale_meV": [
+        278.1512798649387,
+        123.00744040721965
+      ],
+      "pair_center_gap_RMS_meV": [
+        5.043102883723029,
+        3.972888077667349
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.018130791582809894,
+        0.03229794933147938
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        5.059703994481452,
+        3.6247877232232204
+      ],
+      "raw_six_state_energy_RMS_meV": 3.6490234637887333,
+      "group_min": 0.7048522677773958,
+      "principal_min": 0.6931675592857268,
+      "raw_pair_min": 0.7048522677773958,
+      "raw_pair_min_by_band": [
+        0.971106866971134,
+        0.7264715339110138,
+        0.7048522677773958
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        40.13348150800561,
+        10.998742589031801,
+        2.0348056573027407e-08
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 0.25597587752737994,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.971106866971134,
+        0.7264715339110138,
+        0.25597587752737994
+      ],
+      "arbitrary_basis_legacy_group_min": 0.25597587752737994,
+      "arbitrary_basis_legacy_principal_min": 0.2559713455039515,
+      "resolved_pair_min_by_band": [
+        0.971106866971134,
+        0.7264715339110138,
+        0.7048522677773958
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9711068669711338,
+        0.7264715339110135,
+        0.7048522677773956
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [
+        {
+          "k_index": 0,
+          "band": 3,
+          "model_orbital_cluster": [
+            2,
+            4
+          ]
+        }
+      ],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "4_7.34",
+      "angle_deg": 7.3409930166302155,
+      "parameters": [
+        9.311740161077589,
+        36.06046376802834,
+        -0.3136003390054265,
+        0.08354491970755196,
+        0.00046186686973745546,
+        -0.05461046774887428,
+        -0.002723474591661608,
+        -0.051494011340310016,
+        -0.013286072992035505
+      ],
+      "energy_pair_center_RMS_meV": 5.54069969662355,
+      "energy_pair_center_RMS_over_window": 0.007708295377264751,
+      "window_meV": 718.7970135350001,
+      "gap_scale_meV": [
+        339.3991490712778,
+        159.95447405893768
+      ],
+      "pair_center_gap_RMS_meV": [
+        7.105494391021623,
+        6.5574532592099235
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.020935510328958972,
+        0.04099574768251703
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        7.105574252564121,
+        6.060050620373378
+      ],
+      "raw_six_state_energy_RMS_meV": 5.562143161888607,
+      "group_min": 0.08202634193384817,
+      "principal_min": 0.050073025937366934,
+      "raw_pair_min": 0.08202634193384817,
+      "raw_pair_min_by_band": [
+        0.9216970576930721,
+        0.5237550238193616,
+        0.08202634193384817
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        36.20246792060674,
+        0.008656209728175046,
+        2.1864498173004288
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 0.08202634193384817,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.9216970576930721,
+        0.5237550238193616,
+        0.08202634193384817
+      ],
+      "arbitrary_basis_legacy_group_min": 0.08202634193384817,
+      "arbitrary_basis_legacy_principal_min": 0.050073025937366934,
+      "resolved_pair_min_by_band": [
+        0.9216970576930721,
+        0.5237550238193616,
+        0.08202634193384817
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9216970576930725,
+        0.5237550238193615,
+        0.08202634193384817
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    },
+    {
+      "case": "3_9.43",
+      "angle_deg": 9.430007907896421,
+      "parameters": [
+        9.311740161077589,
+        36.06046376802834,
+        -0.3026463518457309,
+        0.0974759954183926,
+        -0.0024718617846067703,
+        -0.061961812820046695,
+        -0.0032407016452582955,
+        -0.06174851827481717,
+        -0.010784003845231538
+      ],
+      "energy_pair_center_RMS_meV": 23.12556431504893,
+      "energy_pair_center_RMS_over_window": 0.024019933259680607,
+      "window_meV": 962.7655524700001,
+      "gap_scale_meV": [
+        361.56621357993754,
+        237.62107007125684
+      ],
+      "pair_center_gap_RMS_meV": [
+        11.4494812974154,
+        42.86479031212005
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.03166634731727794,
+        0.1803913697521265
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        11.66847816205859,
+        43.16347832481474
+      ],
+      "raw_six_state_energy_RMS_meV": 23.14269708399862,
+      "group_min": 0.015875395577657513,
+      "principal_min": 0.013013954790687591,
+      "raw_pair_min": 0.015875395577657513,
+      "raw_pair_min_by_band": [
+        0.806166519665999,
+        0.018958678404203372,
+        0.015875395577657513
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        33.608601119922255,
+        11.548527831917704,
+        13.00613981567189
+      ],
+      "raw_pair_min_arbitrary_degenerate_basis": 0.015875395577657513,
+      "raw_pair_min_by_band_arbitrary_degenerate_basis": [
+        0.806166519665999,
+        0.018958678404203372,
+        0.015875395577657513
+      ],
+      "arbitrary_basis_legacy_group_min": 0.015875395577657513,
+      "arbitrary_basis_legacy_principal_min": 0.013013954790687591,
+      "resolved_pair_min_by_band": [
+        0.806166519665999,
+        0.018958678404203372,
+        0.015875395577657513
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.8061665196659986,
+        0.01895867840420336,
+        0.015875395577657506
+      ],
+      "pair_overlap_undefined_at_model_degeneracy": [],
+      "overlap_scope": "Pair P only where model pair is spectrally resolved; exact model degeneracies are NaN. Separate cluster coverage projects each original native pair into its full model-degenerate eigenspace. Original native energy gaps retained."
+    }
+  ],
+  "summary": {
+    "energy_RMS_meV": 7.293745768896959,
+    "energy_window_relative_RMS": 0.016234238059711758,
+    "gap_relative_RMS": [
+      0.022900985866410168,
+      0.11703051019800682
+    ],
+    "spinful_edge_gap_RMS_meV": [
+      4.523040981853158,
+      13.194680106103158
+    ],
+    "worst_pair_probability": 6.871418258906121e-05,
+    "worst_group_probability": 6.871418258906121e-05,
+    "worst_principal_probability": 6.871418208217663e-05,
+    "first_pair_min": 0.806166519665999,
+    "Q_change_max_meV": 0.003270367437135935,
+    "unresolved_boundaries": 5,
+    "passing_angles": 0,
+    "overlap_scope": "Minima exclude model-unresolved individual-pair overlaps. Protected model clusters reported separately; legacy arbitrary-basis minima retained only inside records.",
+    "model_cluster_coverage_min_by_band": [
+      0.8061665196659986,
+      6.871418258906043e-05,
+      0.015875395577657506
+    ]
+  },
+  "Q_checks": [
+    {
+      "case": "14_2.28",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "original_Q": 55,
+      "expanded_Q": 85,
+      "first3_max_change_meV": 3.0815300311459737e-07
+    },
+    {
+      "case": "13_2.45",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "original_Q": 55,
+      "expanded_Q": 85,
+      "first3_max_change_meV": 1.7310636257761303e-07
+    },
+    {
+      "case": "12_2.65",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "original_Q": 43,
+      "expanded_Q": 73,
+      "first3_max_change_meV": 9.891462871003398e-06
+    },
+    {
+      "case": "11_2.88",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "original_Q": 43,
+      "expanded_Q": 73,
+      "first3_max_change_meV": 5.673600922406763e-06
+    },
+    {
+      "case": "10_3.15",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "original_Q": 43,
+      "expanded_Q": 73,
+      "first3_max_change_meV": 3.4742219101602245e-06
+    },
+    {
+      "case": "9_3.48",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "original_Q": 43,
+      "expanded_Q": 73,
+      "first3_max_change_meV": 2.643836344295991e-06
+    },
+    {
+      "case": "8_3.89",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "original_Q": 37,
+      "expanded_Q": 61,
+      "first3_max_change_meV": 7.961527659361423e-06
+    },
+    {
+      "case": "7_4.41",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "original_Q": 31,
+      "expanded_Q": 55,
+      "first3_max_change_meV": 0.0002873213301446409
+    },
+    {
+      "case": "6_5.09",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "original_Q": 31,
+      "expanded_Q": 55,
+      "first3_max_change_meV": 0.0002653550273401528
+    },
+    {
+      "case": "5_6.01",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "original_Q": 19,
+      "expanded_Q": 37,
+      "first3_max_change_meV": 0.003270367437135935
+    },
+    {
+      "case": "4_7.34",
+      "rows": [
+        0,
+        20,
+        27,
+        40
+      ],
+      "original_Q": 19,
+      "expanded_Q": 37,
+      "first3_max_change_meV": 0.002419850290924508
+    },
+    {
+      "case": "3_9.43",
+      "rows": [
+        0,
+        20,
+        32,
+        40
+      ],
+      "original_Q": 19,
+      "expanded_Q": 37,
+      "first3_max_change_meV": 0.002143304603685614
+    }
+  ],
+  "optimizer_converged": false,
+  "optimizer_message": "The maximum number of function evaluations is exceeded.",
+  "nfev": 160,
+  "loss": 10.597298313095685,
+  "gradient_checks": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 1.0294545914732258e-08,
+      "cost_relative": 1.645102633354689e-08
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 1.1233535784566563e-07,
+      "cost_relative": 7.067946223612026e-08
+    }
+  ],
+  "status": "MEASURED_CANDIDATE",
+  "frame_scope": "Read each reference COMPLETE.json: native waves and source frame definitions are independently prepared; no fit alignment or C renormalization.",
+  "loss_definition": "Same verified dense residual: pair centers/(.01 native3pair window), pair gaps/(.05 native RMS gap), max(.96-P,0)/.04, equal-angle/sample weights; update curvature3 and prior.03 on dimensionless controls. Mass equality exact. At exact model degeneracies (<1e-9 eV), only the wave projector is enlarged to the full model cluster; normalization remains native rank. Energies and gaps are not merged. Scope matching the user priority: for theta>3.8903 degrees, third-pair wave penalty is zero; all three energies and both gaps, first-two-pair waves, and all small-angle waves are retained. Full overlap is still measured everywhere.",
+  "elapsed_seconds": 224.58199644088745,
+  "source_SHA256": {
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/fit_common.py": "276a5556324ada77c3543c3cc7fc629bcd2b29509b4cce00ec9e1854b71f562c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/local_models.py": "6fd13d9a2b7687f3b32d33b25654af01b2167077026fcb13ad2b4c109e8d2b16",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_spinfree_symmetry_fit_20261021/fit_spinfree.py": "7ba7a04a0cf4d80234def58e77d925a16fe5d15346f010d11b98ffa78a47189f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/14_2.28/reference.npz": "93dd29a50f44ceae99536ad68ecf735bed9fe3a74d8b6fd190cb6e3bd74c323b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/13_2.45/reference.npz": "ae55fb7c010ea67686f6af088a0f41784c41899f4978735fd933885efc737dbb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/12_2.65/reference.npz": "95ea8f22bb8c7b50ad09cb6bd7d92ba9c5aebb4dd4d38e4d39088238a8063521",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/11_2.88/reference.npz": "9d79ec8dd0dffeb7752801ef462116b56606531c5f597db4df167ed951908402",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/10_3.15/reference.npz": "c4442ae49dccbddbf0b388c09303781f9e38a194ecc97faa2114d3eb7dde7940",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/9_3.48/reference.npz": "1a69f4d1e1d006c000d886ce926808b9f7d2b3fa4272c7dc0e7c10508e5f8f0d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/8_3.89/reference.npz": "efeae1c1755194aed858a280fe15a5fc52a0bfb47d2adf2c4474c6985d174c76",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/7_4.41/reference.npz": "1360e6fdb2184178039c71641e0d47ff4b7d10ca2ec9d0e3dd31ca63d2696e6b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/6_5.09/reference.npz": "d0d1be862f67daa0e0edd27f500820ae2e7884757d337e2e0707937b82992412",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/5_6.01/reference.npz": "0c468ac5be0c65ec368acd6f817867cd530b207c9ef9fdad0fdd36e0e034ef81",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/4_7.34/reference.npz": "b48b7dfb786a38e95c90fd6dc962555d11b35ab28fb2aaab70c07c37dcf0da62",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/InSe/reference/3_9.43/reference.npz": "39be00609d57e3c067bc7e2eeb485a39a794d5c889af956c42a0a1b367814387",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/inse_fit9.py": "8025e73c015754f39a93cf70d6fb848349eee96ceb3e748b750fd5dd762cfe47",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_spinfree_symmetry_fit_20261021/kernel.py": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/fit_constant.py": "11eaf26779884380820619d19e909145acfc35cb3bf1ca0052da489f7474388e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/inse_prepare_dynamic.py": "a8c8993891b4b4ff151c6c3a6420adcbbf629ed1fd67141e5566c3443451cd2b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/inse_prepare_adaptive.py": "bc03d099abcf555b435737db8783aa4a75c5ef718679428eb051f348b222ce7d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/inse_assemble14.py": "c20e6aec88fd9a84cadaf7e0ce2f0142910cc8b81ca49f99ca64a9ef060c23e9"
+  },
+  "final_gradient_checks": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 8.787156777881223e-07,
+      "cost_relative": 1.3912019118933472e-06
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 1.8312965315168605e-06,
+      "cost_relative": 2.857843647952052e-06
+    }
+  ],
+  "prioritize_low2_at_larger_angles": true,
+  "overlap_scope": "Resolved pair overlap and degenerate-cluster coverage are separate. Native energy gaps retain their original meaning.",
+  "overlap_plot_label": "Native pair/group probability; squares: degenerate model subspace coverage",
+  "model_degeneracy_tolerance_eV": 1e-09,
+  "in_se_specific_driver": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/inse_fit9.py"
+}

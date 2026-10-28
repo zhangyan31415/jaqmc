@@ -1,0 +1,7 @@
+{
+  "node": "gpuh201",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "full10_realspace_Fourier_error_eV": 2.08744257386308e-16,
+  "kinetic_tensor_error_eV": 6.661338147750939e-16,
+  "status": "PASS"
+}

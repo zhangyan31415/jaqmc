@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "node": "gpuh204",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/research-lab/10_nqs/external/jaqmc/example/MgBr2/AB/models/Gamma/kane6_replacement10/verify.py"
+  ],
+  "process_thread_layout": "one process, BLAS up to4 threads",
+  "scope": "portable one-body exactness only; no claim of scientific quality, native source reproduction, HF convergence or interaction validity",
+  "rows": [
+    {
+      "case": "8_3.89",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 3.0184188481996443e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    }
+  ],
+  "final_process_state": "EXITED_SUCCESSFULLY"
+}

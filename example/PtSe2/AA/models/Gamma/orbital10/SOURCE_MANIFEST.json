@@ -1,0 +1,146 @@
+[
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/RESULT.json",
+    "sha256": "e4c1cf37e8eb779b4976770092c727ae813c4bf700ec4ac2d11d0aba258489f1"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/BANDS_OVERLAP.png",
+    "sha256": "791e27d54dd65699a09a7940ab20d251fe16d9ad4e450d17a935704f7265ba7e"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/PARAMETERS.png",
+    "sha256": "66f1156bc6096424bbc245456c0174fa3c2cd66eb8f6900e4ffb29a19ca5776e"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/PARAMETERS.csv",
+    "sha256": "129f4a3468aebf5105d879a919e5fb5362c71fb4b974739be7860f709beff955"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/ANGLE_CONTROLS.csv",
+    "sha256": "c3c9e21b8968af840c7e1a0e67e21073a13f484e5bab95d84b1630d50b5e391b"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/Q_CHECKS.json",
+    "sha256": "5d5d56bf100bc02bc1d0608439247c8f7c98e653a4e7aed165bb6e34a264e98a"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/RESULTS.md",
+    "sha256": "e76a81bf72e2e3b1bd031d6f551fe8a716ea48d6f7b97e6b1e20edf7add07295"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/ALL12_MODEL_SYMMETRY.json",
+    "sha256": "2751c194ae06ae820c82122bc8c4c5beb2caca3523299f82a696a098245dffef"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/COMPLETE.json",
+    "sha256": "97e744fb7fa515d7260418cf1bf6723ab65446bdc9149dc8f8aac5aa9bacd62a"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/ptse2_luttinger.py",
+    "sha256": "f2885927ad95495a5779254e5cef7f457a7386d78eaa0a5736538818f9713f6a"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/ptse2_kane.py",
+    "sha256": "bc12ef82c527fb370484b2d1d77af9d271be4081b395604bd4421f11f205f40d"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/ptse2_orbital_kane.py",
+    "sha256": "3db3ec323e2155b9a78ef20e3d203bec501d659cd60603a21281281ad9110109"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/14_2.28/reference.npz",
+    "sha256": "a1458bb8269c4d47ee00926809f22007a007d1f18c9ecd17096019f9870cc5c9"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/14_2.28.npz",
+    "sha256": "b6f546c796898fdc7ce0cf32eb1255e55204e0fbc43269471d6a9c10db23813c"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/13_2.45/reference.npz",
+    "sha256": "a5e53d125f433e290fa14dca9ada5c4283ac3a715f4b93e4f81dc476a6828f6d"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/13_2.45.npz",
+    "sha256": "242aefcc73e476947d39da42878a320a967d0c1a32fbfffbb8899ab7d46b375c"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/12_2.65/reference.npz",
+    "sha256": "ef05e4107d26c8e319d70402829c243f0da8ca76afadf19c59d37cb70ddffe4f"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/12_2.65.npz",
+    "sha256": "c197f0c2f95e7a844ba37dbcaaa94c7521ee904d023cec565d97e997054e8742"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/11_2.88/reference.npz",
+    "sha256": "285eaf6ed169b0ccb7436b9e25d10783f38c27182d78007b630eb79981def8d6"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/11_2.88.npz",
+    "sha256": "27b7a2a238e3ec08f9d2b2fa85f07cb77d7906733915b1b080556c87848379d5"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/10_3.15/reference.npz",
+    "sha256": "1107522ac73437baa8eef1ae1d32e4b0e49976833652bc8b31225e9c4142c2fa"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/10_3.15.npz",
+    "sha256": "11b3b74cd9bc4d05c5c3b4346ee58ea8a7696007c2bc113afb9471aa7e2e09bf"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/9_3.48/reference.npz",
+    "sha256": "765f35f8f3484c9af228664ad313d26043dbd1d9ed53d130adfb8e2581e7d667"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/9_3.48.npz",
+    "sha256": "db06f56db6e30d020b4f52390269f3c1a46087a711d4225c2b533708aae8368f"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/8_3.89/reference.npz",
+    "sha256": "282ee2dc32b43a72dbccc16ecbbad6ab93361163896296a21eeae4ee8a35e7f6"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/8_3.89.npz",
+    "sha256": "48e914460c3e62b4b46ca6cc70ec9f0aad9fcf44a658f64141c4c74bb536f42a"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/7_4.41/reference.npz",
+    "sha256": "d954f26c19858acbd2084ddd2ae47f5956d06f3e882fae64b5888cff79397d0c"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/7_4.41.npz",
+    "sha256": "1a1547ba46c9a523a3575c0ff1dd9a2a7409eed34106d35d52abb52baa0a2bd0"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/6_5.09/reference.npz",
+    "sha256": "dc69ba17680bb938eccb14bc59e036dd767adf5e420f3eb825e556043cecc8c7"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/6_5.09.npz",
+    "sha256": "a10b867f3e5171dd0e18dbab9b7d1fb77c3e25012d8dac3981a54d7863c445e0"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/5_6.01/reference.npz",
+    "sha256": "13919bd914d84ed56cd212491171361f5bd2b730380513cae99572ea55bc0a4a"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/5_6.01.npz",
+    "sha256": "2c6666d0e274f8aa2bb50837e508f5581e2b41c16dd703c72febd4fe3d25cd51"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/4_7.34/reference.npz",
+    "sha256": "f86d279ab9c8754b438e0f88ab7f910ca4d0f31833c327e70eacefe7cb1f2917"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/4_7.34.npz",
+    "sha256": "23e02799f7e8f7b91f8440f8feb6aeaf2a002a5899f79ff38d32304042a95c3b"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/3_9.43/reference.npz",
+    "sha256": "e092a7cb6cc2e1ab83550cf0f070f35090eadce245e589451013cd9c31b022cd"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/orbital_variant/kane10/predictions/3_9.43.npz",
+    "sha256": "37df0c69933a04fbee9bcd03b9327ee1196313a3bc1353f7c242c0f666551c46"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "energy_unit": "eV",
+  "length_unit": "angstrom",
+  "hf_scope": "DIAGNOSTIC_ONLY: explicitly opt in; excluded from default high-throughput HF list",
+  "status": "DIAGNOSTIC_NOT_VALIDATED_FOR_HF",
+  "reference_type": "fitted polynomial compared with projected Heff and native TAPW; see validation_audit.json",
+  "id": "WTe2_spectral_20261014",
+  "material": "WTe2",
+  "stacking": "AA",
+  "valley": "K1",
+  "edge": "VBM",
+  "physical_parameters": 282,
+  "global_coefficients": 282,
+  "angles_deg": [
+    3.8902381690076835
+  ],
+  "basis_description": "One selected spin-polarized effective orbital per layer, two layer sectors; 54 plane-wave states; remote spin/orbital effects already projected",
+  "k_convention": "adapter takes fractional row k and converts k@B; raw physical_model takes Cartesian k; z_Q=(kx-Qx)+i(ky-Qy)",
+  "carrier_convention": "hole H=-H_e; lowest hole bands correspond to highest valence electron bands",
+  "entrypoint": "hf_adapter.py",
+  "hf_api": {
+    "module": "hf_adapter.py",
+    "hamiltonian": "hamiltonian",
+    "reciprocal_basis": "reciprocal_basis",
+    "carrier": "hole"
+  },
+  "limitations": [
+    "Single-angle polynomial fit; no joint-angle law.",
+    "282 independent real fitted coefficients, not a <=10-parameter continuum model; expanded terms.csv has dependent symmetry-related routes.",
+    "Polynomial order 10: do not extrapolate to arbitrary momentum or assume positive continuum ultraviolet stability.",
+    "The highest-fidelity source Heff projection and the fitted spectral model are distinct; SOURCE_PROJECTION_REPORT.md acceptance does not certify this spectral fit.",
+    "No low-parameter model passed native wavefunction gates; this export is diagnostic only.",
+    "The explicit adapter negates the electron-energy matrix to obtain holes; no additional per-k shift is applied.",
+    "No interaction/form-factor implementation or HF self-consistency solver is included.",
+    "Material is trigonal-prismatic 2H-class WTe2, not distorted 1T-prime/Td WTe2."
+  ],
+  "source_files": [
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/physical_model.py",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/model.toml",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/terms.csv",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/q_points.csv",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/symmetry.toml",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/MODEL.md",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/validation_audit.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/symmetry_audit.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/band_comparison.pdf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/band_comparison_all.pdf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/band_comparison_vs_full_heff.pdf"
+  ],
+  "verification": "VERIFICATION.json",
+  "default_hf_enabled": false,
+  "runtime_requirements": [
+    "Python>=3.11",
+    "NumPy"
+  ]
+}

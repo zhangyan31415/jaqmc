@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "node": "gpuh204",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/research-lab/10_nqs/external/jaqmc/example/PtSe2/AA/models/Gamma/orbital10/verify.py"
+  ],
+  "process_thread_layout": "one process, BLAS up to4 threads",
+  "scope": "portable one-body exactness only; no claim of scientific quality, native source reproduction, HF convergence or interaction validity",
+  "rows": [
+    {
+      "case": "14_2.28",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 4.996003610813204e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 7.216449660063518e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 4.440892098500626e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 3.885780586188048e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 2.7755575615628914e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 5.551115123125783e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 4.996003610813204e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 5.551115123125783e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 6.106226635438361e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 4.996003610813204e-16,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 2.220446049250313e-15,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "hermiticity_max_eV": 0,
+      "frozen_spectrum_max_error_eV": 2.1649348980190553e-15,
+      "indices": [
+        0,
+        17,
+        20,
+        40
+      ]
+    }
+  ],
+  "final_process_state": "EXITED_SUCCESSFULLY"
+}

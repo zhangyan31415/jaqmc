@@ -1,0 +1,12 @@
+{
+  "angles": 12,
+  "path_rows": 61,
+  "independent_path_points": 60,
+  "hamiltonian_error_eV": 0.0,
+  "spectrum_error_eV": 2.220446049250313e-15,
+  "group_probability_error": 8.881784197001252e-15,
+  "principal_probability_error": 1.1435297153639112e-14,
+  "potential_periodicity_error_eV": 4.718447854656915e-16,
+  "parity_potential_error_eV": 0.0,
+  "scientific_status": "FAIL"
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "case": "14_2.28",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 3.5110811033651212,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "13_2.45",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 0.8043142186532903,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "12_2.65",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 3.177062737702574,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "11_2.88",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 1.3383766968152466,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "10_3.15",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 0.8633977616354649,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "9_3.48",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 0.25651573384238846,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "8_3.89",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 0.14488169552079322,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "7_4.41",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 0.10153200173340649,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "6_5.09",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 0.07586934921638422,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "5_6.01",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 0.04549585545388091,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "4_7.34",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 0.016710517752760445,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  },
+  {
+    "case": "3_9.43",
+    "original_Q": 37,
+    "expanded_Q": 61,
+    "sample_indices": [
+      0,
+      20,
+      40
+    ],
+    "max_first6_energy_change_meV": 0.004647121325473957,
+    "scope": "Model-only Q sensitivity. No expanded native C or all-BZ convergence certificate."
+  }
+]

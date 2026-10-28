@@ -1,0 +1,8 @@
+{
+  "node": "gpuh203",
+  "pid": 1911877,
+  "exit_status": 0,
+  "optimizer_converged": true,
+  "finished": 1792563553.2921278,
+  "elapsed_seconds": 15.09768557548523
+}

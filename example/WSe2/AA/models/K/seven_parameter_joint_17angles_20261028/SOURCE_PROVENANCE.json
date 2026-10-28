@@ -1,0 +1,37 @@
+{
+  "packaged_date": "2026-10-29",
+  "source_repository": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "current_source_commit": "e857d8bf9ba04e3dae8fdf093da7b34642e54469",
+  "fit_source_commit": "e857d8bf9ba04e3dae8fdf093da7b34642e54469",
+  "source_files": [
+    {
+      "path": "wse2_newangles_q8_joint_20261028/joint_fit/models/primary/FUNCTION.json",
+      "sha256": "f757ce583c5added6bba75d364ccc973a675702b3b2faac81cce8aeaed5b2c60"
+    },
+    {
+      "path": "wse2_newangles_q8_joint_20261028/joint_fit/models/primary/model.py",
+      "sha256": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c"
+    },
+    {
+      "path": "wse2_newangles_q8_joint_20261028/joint_fit/models/primary/angle_model.py",
+      "sha256": "ca589f35bab0c1fcd492ddc461dab97266f95cec783e09e18d66ea0fc5952bd5"
+    },
+    {
+      "path": "wse2_newangles_q8_joint_20261028/joint_fit/models/primary/angle_model_base.py",
+      "sha256": "2ec0283cac18e1073a8bbd5fb88d0764df22744bcbc7b0e6e2c55fd82f453be1"
+    }
+  ],
+  "verification": {
+    "hostname": "gpuh203",
+    "cwd": "/data/work/tmp/zy/codex/upload_k_latest/20261029",
+    "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+    "process_thread_layout": "one process;4 BLAS/OpenMP threads; sequential packages",
+    "exact_command": [
+      "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+      "-I",
+      "/data/work/zy/software/research-lab/10_nqs/external/jaqmc/example/WSe2/AA/models/K/seven_parameter_joint_17angles_20261028/verify.py"
+    ],
+    "final_process_state": "Exited successfully (exit0); expected spectra and artifacts inspected"
+  },
+  "note": "Source campaigns include untracked research artifacts; per-file SHA256 identifies exact numerical payloads. No refit or HF calculation was performed for this upload."
+}

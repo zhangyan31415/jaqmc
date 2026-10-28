@@ -1,0 +1,194 @@
+{
+  "label": "rank_hs_alternate",
+  "mode": "angle_dependent",
+  "case": "19_1.69627",
+  "angle_deg": 1.696272693519767,
+  "parameters": [
+    5.205417208358929,
+    0.0054837832210278825,
+    0.0053790066248800995,
+    -0.010909149224622213,
+    0.0018913902237825398,
+    0.012489977329567487
+  ],
+  "physical_parameters": {
+    "mass_over_me": 0.7319263696830831,
+    "V1_meV": 7.6815096618914005,
+    "phi_deg": 44.44737303438633,
+    "w1_meV": -10.909149224622213,
+    "V2_meV": 1.8913902237825397,
+    "w2_meV": 12.489977329567488
+  },
+  "source_selection": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/mote2_top3_overlap_hs_20261026/runs/rank_hs/angle_dependent/wide/RESULT.json",
+  "source_selection_sha256": "424b3472599520fd8e0438a29a72784a3b4c81b295ec0743b805fcf14b2f4e26",
+  "cutoff_checks": [
+    {
+      "requested_Q_per_layer": 169,
+      "actual_Q_per_layer": [
+        170,
+        170
+      ],
+      "top12_change_meV": 5.6988490232390276e-05
+    }
+  ],
+  "fit_Q91_to_final_top3_max_change_meV": 6.063489588897797e-07,
+  "Heff_path": {
+    "top3_RMS_meV": 0.5755118264251298,
+    "top3_max_meV": 1.7641672531906234,
+    "per_band_RMS_meV": [
+      0.06573722711295486,
+      0.1905087402895408,
+      0.9762308251178909
+    ],
+    "HS_gap_RMS_meV": 0.924859765351935,
+    "Gamma_gaps12_23_meV": [
+      0.5908440902578117,
+      4.949938035894542
+    ],
+    "Gamma_E2_E3_errors_meV": [
+      0.12287234117299914,
+      0.9024321967537121
+    ],
+    "bandwidth_top3_meV": [
+      3.1594900042893337,
+      4.500689212852349,
+      3.3259265087581933
+    ],
+    "path_min_direct_gaps12_23_meV": [
+      0.5908440902578117,
+      3.531638431077762
+    ]
+  },
+  "native_path": {
+    "top3_RMS_meV": 0.5839665992255992,
+    "top3_max_meV": 1.9291555741879403,
+    "per_band_RMS_meV": [
+      0.06023564552802509,
+      0.2361785780529375,
+      0.9816528476554477
+    ],
+    "HS_gap_RMS_meV": 0.9602464651902106,
+    "Gamma_gaps12_23_meV": [
+      0.5908440902578117,
+      4.949938035894542
+    ],
+    "Gamma_E2_E3_errors_meV": [
+      0.06242383974194507,
+      0.701948423847111
+    ],
+    "bandwidth_top3_meV": [
+      3.1594900042893337,
+      4.500689212852349,
+      3.3259265087581933
+    ],
+    "path_min_direct_gaps12_23_meV": [
+      0.5908440902578117,
+      3.531638431077762
+    ]
+  },
+  "Heff_HS_neighborhood_RMS_meV": 0.6222437755852264,
+  "HS_neighborhood_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    56,
+    57,
+    58,
+    59
+  ],
+  "Heff_bands4_to6_RMS_meV": 2.386243612712697,
+  "raw_overlap_mean_top6": [
+    0.8879053400211578,
+    0.8206945254936706,
+    0.8237667769917182,
+    0.38724290578238085,
+    0.11048152203206682,
+    0.23685653566010012
+  ],
+  "raw_overlap_min_top6": [
+    3.612543605406187e-11,
+    2.2649104615225614e-11,
+    0.6897404686759111,
+    8.611326726487786e-11,
+    9.101098310172195e-05,
+    0.005578945226164191
+  ],
+  "raw_overlap_HS_top6": [
+    [
+      3.612543605406187e-11,
+      2.2649104615225614e-11,
+      0.9523775484158219,
+      8.611326726487786e-11,
+      0.6697836314681263,
+      0.32902211741124965
+    ],
+    [
+      0.9416817898012441,
+      0.869954782013033,
+      0.7383209186628444,
+      0.10512421720095425,
+      0.16723162332334665,
+      0.7411763440843859
+    ],
+    [
+      0.9438987424255154,
+      0.8709601197005181,
+      0.8619900247904061,
+      0.6136751453189054,
+      0.0006946436101834343,
+      0.0066356691665835415
+    ]
+  ],
+  "top3_subspace_mean": 0.8884637651515335,
+  "top3_subspace_min": 0.8517527662422787,
+  "top4_subspace_mean": 0.7806576601522486,
+  "minimum_principal_top3_mean": 0.8153831479857596,
+  "minimum_principal_top3_min": 0.7194488204121441,
+  "cluster_gap_threshold_meV": 0.2,
+  "top3_clustered_state_fraction": 0.0,
+  "mean_band_weights": [
+    0.9999999422225173,
+    0.9999546021312969,
+    0.9655548043337897,
+    0.03444519566621112,
+    4.5397868702434456e-05,
+    5.777748185595364e-08,
+    7.352958060913156e-11,
+    9.357622968839299e-14,
+    1.190882729033973e-16,
+    1.5155576144004343e-19,
+    1.928749847963918e-22,
+    2.454592250847888e-25
+  ],
+  "neighborhood_peak_weight": 1.75,
+  "overlap_definition": "Same descending rank, fixed layer/Q embedding, raw absolute overlap squared. No permutation, unitary alignment, or capture renormalization.",
+  "cluster_definition": "Connected adjacent ranks with reference OR model gap below0.2meV. Trace overlap divided by group dimension. Displayed separately from individual overlap."
+}

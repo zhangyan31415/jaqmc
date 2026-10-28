@@ -1,0 +1,81 @@
+{
+  "target": "AB_CBM_Gamma",
+  "not_original_AB_VBM_repair": true,
+  "status": "PARAMETER_REMOVAL_ABLATION_NO_REFIT",
+  "physical_parameter_count": 3,
+  "names": [
+    "A_eVA2",
+    "C_even_eV",
+    "C_special_eV"
+  ],
+  "parameters": [
+    11.73151286388733,
+    0.005807784044520783,
+    0.00587056606669339
+  ],
+  "record": {
+    "case": "8_3.89",
+    "angle_deg": 3.8902381690076835,
+    "parameters": [
+      11.73151286388733,
+      0.005807784044520783,
+      0.00587056606669339
+    ],
+    "energy_pair_center_RMS_meV": 1.3771029979181921,
+    "energy_pair_center_RMS_over_window": 0.007539304496042638,
+    "window_meV": 182.65650348000005,
+    "gap_scale_meV": [
+      87.25435712631229,
+      43.47659374840465
+    ],
+    "pair_center_gap_RMS_meV": [
+      0.5756906211790771,
+      1.5519507518098408
+    ],
+    "pair_center_gap_relative_RMS": [
+      0.00659784382280977,
+      0.03569623602048605
+    ],
+    "spinful_edge_gap_RMS_meV": [
+      0.566069230068871,
+      1.6192142602787931
+    ],
+    "raw_six_state_energy_RMS_meV": 1.3776024032355887,
+    "group_min": 0.8345640138235687,
+    "principal_min": 0.8345640135899587,
+    "raw_pair_min": 0.8345640138235687,
+    "raw_pair_min_by_band": [
+      0.9574133131993294,
+      0.9562493578252387,
+      0.8345640138235687
+    ],
+    "group_min_by_band": [
+      0.9574133131993294,
+      0.9562493578252387,
+      0.8345640138235687
+    ],
+    "model_cluster_coverage_min_by_band": [
+      0.9574133131993294,
+      0.9562493578252387,
+      0.8345640138235687
+    ],
+    "model_unresolved_group_boundaries": [],
+    "model_gap_min_meV": [
+      0.08229736093492285,
+      5.6994842204422245
+    ],
+    "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling."
+  },
+  "raw_P_mean_by_pair": [
+    0.988545021173673,
+    0.9886015020214107,
+    0.9862378425097144
+  ],
+  "removed_approximations": "S_common=0 and C1=C3=(old_C1+old_C3)/2; G2 remains separately coupled as independently indicated by sourceH\u0393",
+  "source_model": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/AB_CBM_3.89_scalar5_source_origin/RESULT.json",
+  "source_origin_fraction": [
+    -0.00028783822255878944,
+    -0.00028970386481674826
+  ],
+  "scope": "Single3.89 target; no optimizer was run for this ablation. Three anisotropic terms differ physically from old C3-common-cos/common-sin three-term model. Source-only origin held fixed, no native/model alignment."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "node": "gpuh204",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/research-lab/10_nqs/external/jaqmc/example/MgBr2/AB/models/Gamma/cbm_scalar3_anisotropic/verify.py"
+  ],
+  "process_thread_layout": "one process BLAS<=4",
+  "scope": "one-body export exactness; not fit or HF validation",
+  "hermiticity_max_eV": 0.0,
+  "frozen_spectrum_max_error_eV": 2.0539125955565396e-15,
+  "indices": [
+    0,
+    17,
+    20,
+    40
+  ],
+  "final_process_state": "EXITED_SUCCESSFULLY"
+}

@@ -1,0 +1,849 @@
+{
+  "status": "passed",
+  "scope": "Fresh standalone imports, all calibration angles at3-4path points; frozen source top6 absolute eigenvalues, parameter identity, Hermiticity, K/Kprime time reversal, hole conversion. This is not an HF calculation.",
+  "hostname": "gpuh203",
+  "cwd": "/data/work/tmp/zy/codex/upload_k_latest/20261029",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "exact_command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "-I",
+    "/data/work/zy/software/research-lab/10_nqs/external/jaqmc/example/WSe2/AA/models/K/seven_parameter_joint_17angles_20261028/verify.py"
+  ],
+  "process_thread_layout": "one process;4 BLAS/OpenMP threads; sequential packages",
+  "reference": "Unmodified source AngleModel, nq169, top6 absolute electron eigenvalues ascending",
+  "reference_sha256": "f8b206abb0b438f8430751aa45c4cc7a588662b55f5472038226a658bf57bdcb",
+  "reference_records": 51,
+  "max_source_top6_error_eV": 2.55351295663786e-15,
+  "max_parameter_error": 0.0,
+  "max_Hermitian_error_eV": 0.0,
+  "max_time_reversal_error_eV": 0.0,
+  "hole_conversion_error_eV": 0.0,
+  "source_tree_imports": 0,
+  "checks": [
+    {
+      "theta_deg": 1.202855227481003,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.202855227481003,
+      "k_fractional_HF": [
+        5.276703453546378e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 1.0755285551056204e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.202855227481003,
+      "k_fractional_HF": [
+        0.33333333334085424,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 2.706168622523819e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.4075774463457396,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.4075774463457396,
+      "k_fractional_HF": [
+        5.276788929528371e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.4075774463457396,
+      "k_fractional_HF": [
+        0.3333333333408543,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 3.191891195797325e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.4701297257779093,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.4701297257779093,
+      "k_fractional_HF": [
+        5.276757669224949e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.4701297257779093,
+      "k_fractional_HF": [
+        0.3333333333408543,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.538499818371707,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.538499818371707,
+      "k_fractional_HF": [
+        5.2767913200681514e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.538499818371707,
+      "k_fractional_HF": [
+        0.33333333334085435,
+        -0.6666666666809815
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 3.2959746043559335e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.6135389011625705,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.6135389011625705,
+      "k_fractional_HF": [
+        5.276748888682125e-12,
+        -0.500000000010736
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 2.220446049250313e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.6135389011625705,
+      "k_fractional_HF": [
+        0.3333333333408543,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.696272693519767,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.696272693519767,
+      "k_fractional_HF": [
+        5.2767488819704594e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 3.191891195797325e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.696272693519767,
+      "k_fractional_HF": [
+        0.3333333333408543,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 4.215378046623641e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.787948610382325,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.787948610382325,
+      "k_fractional_HF": [
+        5.276768070280486e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 1.787948610382325,
+      "k_fractional_HF": [
+        0.33333333334085424,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 4.475586568020162e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.1339296665972505,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.1339296665972505,
+      "k_fractional_HF": [
+        5.276784574076912e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.1339296665972505,
+      "k_fractional_HF": [
+        0.3333333333408543,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 7.424616477180734e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.2810596097298803,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.2810596097298803,
+      "k_fractional_HF": [
+        5.276793150781826e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.2810596097298803,
+      "k_fractional_HF": [
+        0.33333333334085435,
+        -0.6666666666809815
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.4499772766168695,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.4499772766168695,
+      "k_fractional_HF": [
+        5.276802402120818e-12,
+        -0.500000000010736
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 9.71445146547012e-17,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.4499772766168695,
+      "k_fractional_HF": [
+        0.33333333334085424,
+        -0.6666666666809813
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 5.655198531684391e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.6459083811926885,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.6459083811926885,
+      "k_fractional_HF": [
+        5.2767858994579465e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.6459083811926885,
+      "k_fractional_HF": [
+        0.33333333334085435,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 3.469446951953614e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.875894633632971,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.875894633632971,
+      "k_fractional_HF": [
+        5.276718573618393e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 8.534839501805891e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 2.875894633632971,
+      "k_fractional_HF": [
+        0.3333333333408543,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 6.002143226879753e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 3.149657426389616,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 3.149657426389616,
+      "k_fractional_HF": [
+        5.276811484281065e-12,
+        -0.5000000000107362
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 2.55351295663786e-15,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 3.149657426389616,
+      "k_fractional_HF": [
+        0.3333333333408543,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 1.1102230246251565e-15,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 3.481006089466939,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 3.481006089466939,
+      "k_fractional_HF": [
+        5.276729967802875e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 1.8544193958192068e-15,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 3.481006089466939,
+      "k_fractional_HF": [
+        0.3333333333408543,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 6.938893903907228e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 3.8902381690076835,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 3.8902381690076835,
+      "k_fractional_HF": [
+        5.276754682724573e-12,
+        -0.5000000000107362
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 1.6375789613221059e-15,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 3.8902381690076835,
+      "k_fractional_HF": [
+        0.33333333334085435,
+        -0.6666666666809815
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 8.604228440844963e-16,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 4.408455007944072,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 4.408455007944072,
+      "k_fractional_HF": [
+        5.276762427923424e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 4.408455007944072,
+      "k_fractional_HF": [
+        0.33333333334085424,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 5.085847808123473,
+      "k_fractional_HF": [
+        0.0,
+        0.0
+      ],
+      "k_fractional_source": [
+        0.0,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 5.085847808123473,
+      "k_fractional_HF": [
+        5.276787662225843e-12,
+        -0.5000000000107361
+      ],
+      "k_fractional_source": [
+        0.5,
+        0.0
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    },
+    {
+      "theta_deg": 5.085847808123473,
+      "k_fractional_HF": [
+        0.3333333333408543,
+        -0.6666666666809814
+      ],
+      "k_fractional_source": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "n": 348,
+      "source_top6_max_error_eV": 0.0,
+      "Hermitian_max_eV": 0.0,
+      "time_reversal_max_eV": 0.0,
+      "parameter_max_error": 0.0
+    }
+  ],
+  "local_module_sha256": {
+    "verify.py": "267a28863640fab2d3a1ded0a4b0844dbf1076f1afa9f7c32d997837c11d3110",
+    "model.py": "cbb4f4b1918cc70119a1e44637af6c8dcc6e86e1275fc26d170dfff8b2ad8d4c",
+    "angle_model_base.py": "2ec0283cac18e1073a8bbd5fb88d0764df22744bcbc7b0e6e2c55fd82f453be1",
+    "angle_model.py": "ca589f35bab0c1fcd492ddc461dab97266f95cec783e09e18d66ea0fc5952bd5",
+    "hf_adapter.py": "7ed7f0147e510896c63a69e0fa6068bf205607837b7ecc92ac0821bb337392b0"
+  },
+  "finished_unix": 1793213323.2521424,
+  "exit_code": 0
+}

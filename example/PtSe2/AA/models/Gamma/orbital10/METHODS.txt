@@ -1,0 +1,7 @@
+p=-i grad, p=k+Q in Fourier; tau acts on effective hybrid orbitals and sigma on Kramers pseudospin. S=tau_y sigma_z. H0=p^2[(Aplus+Aminus)I+(Aplus-Aminus)S]/2+lambda S+v L(p).
+Chiral L=I_tau (px sigma_x+py sigma_y); orbital L=(px tau_z-py tau_x) sigma_z.
+G_j=(b1,b2-b1,-b2), M_j=(cos(2 phi_j) tau_z+sin(2 phi_j) tau_x) I_sigma, phi_j=arg G_j.
+V(r)=2 sum_j {cos(G_j.r)[Vc I+Wc M_j+SOCc S]+sin(G_j.r)[Vs I+Ws M_j+SOCs S]}.
+Fourier matrix element at Q-Q'=+G_j is Vc I+Wc M_j+SOCc S - i(Vs I+Ws M_j+SOCs S); at -G_j its Hermitian conjugate. All ten amplitudes independent, Aplus/Aminus positive and shared constant across all twelve angles.
+Angle law: s=sin(theta/2)^2, x=(s-s_min)/(s_max-s_min), u=x/(0.2+0.8x); p_i(theta)=(1-u)^2 c_i0+2u(1-u)c_i1+u^2 c_i2. First two mass controls are each repeated, so 2+8*3=26 global coefficients. Adapter uses fitted tabulated values, no unverified geometry interpolation.
+Loss: pair centers/(1% native three-pair window), adjacent pair gaps/(5% native RMS gap), positive overlap deficit max(0.96-P,0)/0.04, equal angle and k weights, control curvature weight3 and source prior0.03. No individual flat-band bandwidth denominators.

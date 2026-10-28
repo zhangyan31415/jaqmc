@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/AB_CBM_3.89_scalar3_anisotropic_ablation/RESULT.json",
+    "sha256": "99bbe1377ab9cc5c7d2181ccd8a1bf47a40cb6ee3fc42dc37d8ad22f14eb798c"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/cbm_ab_scalar_ablation.py",
+    "sha256": "7205038769ad155730fc44b9a2a7747322c5f34345930327cd9c4aa9c165412b"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/verify_cbm_pilots.py",
+    "sha256": "9f37bd9b086813ac7659b5790c38dcd57c30b7e961934766cbc7937859d1aaa4"
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "runtime_files": [
+    "angle_model.py",
+    "physical.py",
+    "COEFFICIENTS.json",
+    "geometry.npz"
+  ],
+  "runtime_SHA256": {
+    "angle_model.py": "07a5873d076afca83ea01a9515d2681841c03069fd4d073012472b58a6ec145c",
+    "physical.py": "d6004fd1ddaddd1365afcc092261b2c3ca11f6e39c5e4be46dcd1380b7b82dcf",
+    "COEFFICIENTS.json": "22859503a5123bf2ce93a0eb1f6ec1f0508ab3a3f44dc97523e11e1d906b3b51",
+    "geometry.npz": "3aae4c8b55b4414a5e88ad6ee8951896380c247cad7eca841e35bc2423739d6e"
+  },
+  "fit_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/gamma/Ga2S2/joint/fit_full.json",
+  "fit_SHA256": "5b5afff3e7e4748c6c1cd9e5cfe65e885ce96060007c0b7ad9a213bd6fefce8e",
+  "sourceQ_metrics": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/gamma/Ga2S2/joint/metrics_full.json",
+  "sourceQ_metrics_SHA256": "6725f92701b25006db19f671cb7046ca8bf791aa1979e1a38bb0009173de7107",
+  "sourceQ_predictions": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/gamma/Ga2S2/joint/validation_full.npz",
+  "sourceQ_predictions_SHA256": "574deeeea5f4a0dfe51093af4e998254af6cdbb756c184cfd2c559060a145172",
+  "source_inventory_SHA256": "69635998fd19dd3c60367e74d8c82192c741602bc5b37b1c98e32ee9689a00e7",
+  "angle_indices": [
+    {
+      "index": 0,
+      "case": "14_2.28",
+      "theta": 2.2810596097298803,
+      "prefix": "angle_00_",
+      "source_Q": 55
+    },
+    {
+      "index": 1,
+      "case": "13_2.45",
+      "theta": 2.4499772766168695,
+      "prefix": "angle_01_",
+      "source_Q": 55
+    },
+    {
+      "index": 2,
+      "case": "12_2.65",
+      "theta": 2.6459083811926885,
+      "prefix": "angle_02_",
+      "source_Q": 43
+    },
+    {
+      "index": 3,
+      "case": "11_2.88",
+      "theta": 2.875894633632971,
+      "prefix": "angle_03_",
+      "source_Q": 43
+    },
+    {
+      "index": 4,
+      "case": "10_3.15",
+      "theta": 3.149657426389616,
+      "prefix": "angle_04_",
+      "source_Q": 43
+    },
+    {
+      "index": 5,
+      "case": "9_3.48",
+      "theta": 3.481006089466939,
+      "prefix": "angle_05_",
+      "source_Q": 43
+    },
+    {
+      "index": 6,
+      "case": "8_3.89",
+      "theta": 3.8902381690076835,
+      "prefix": "angle_06_",
+      "source_Q": 37
+    },
+    {
+      "index": 7,
+      "case": "7_4.41",
+      "theta": 4.408455007944072,
+      "prefix": "angle_07_",
+      "source_Q": 31
+    },
+    {
+      "index": 8,
+      "case": "6_5.09",
+      "theta": 5.085847808123473,
+      "prefix": "angle_08_",
+      "source_Q": 31
+    },
+    {
+      "index": 9,
+      "case": "5_6.01",
+      "theta": 6.008983197766148,
+      "prefix": "angle_09_",
+      "source_Q": 19
+    },
+    {
+      "index": 10,
+      "case": "4_7.34",
+      "theta": 7.3409930166302155,
+      "prefix": "angle_10_",
+      "source_Q": 19
+    },
+    {
+      "index": 11,
+      "case": "3_9.43",
+      "theta": 9.430007907896421,
+      "prefix": "angle_11_",
+      "source_Q": 19
+    }
+  ]
+}

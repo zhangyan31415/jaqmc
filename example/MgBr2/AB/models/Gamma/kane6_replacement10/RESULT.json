@@ -1,0 +1,207 @@
+{
+  "status": "SINGLE_ANGLE_REPLACEMENT_FTOL_CUSP_STOP_QUALITY_FAILED",
+  "physical_parameter_count": 10,
+  "spinful_fields": 6,
+  "effective_orbital_count": 3,
+  "potential_indices": [
+    2,
+    29
+  ],
+  "names": [
+    "A_half_eV_A2",
+    "A_HH_shared_eV_A2",
+    "Delta_half_eV",
+    "Delta_lower_HH_eV",
+    "v_lower_eV_A",
+    "v_upper_eV_A",
+    "b_lower_eV_A2",
+    "b_upper_eV_A2",
+    "cos_diag_orbital2",
+    "sin_cross_12_imag_sigma_z"
+  ],
+  "parameters": [
+    2.090203713719373,
+    6.5671545698380145,
+    0.05326621130023174,
+    0.0010182376393110904,
+    0.5206619877544171,
+    0.27418197562114804,
+    0.6508244531442314,
+    -2.3891710224653986,
+    0.02037696185343897,
+    6.8073600425822e-06
+  ],
+  "record": {
+    "case": "8_3.89",
+    "angle_deg": 3.8902381690076835,
+    "parameters": [
+      2.090203713719373,
+      6.5671545698380145,
+      0.05326621130023174,
+      0.0010182376393110904,
+      0.5206619877544171,
+      0.27418197562114804,
+      0.6508244531442314,
+      -2.3891710224653986,
+      0.02037696185343897,
+      6.8073600425822e-06
+    ],
+    "energy_pair_center_RMS_meV": 0.9722633066591153,
+    "energy_pair_center_RMS_over_window": 0.036496814442063485,
+    "window_meV": 26.63967585999938,
+    "gap_scale_meV": [
+      12.982998632619832,
+      8.048326301764924
+    ],
+    "pair_center_gap_RMS_meV": [
+      0.9205277536065339,
+      2.224388775597018
+    ],
+    "pair_center_gap_relative_RMS": [
+      0.07090255338190551,
+      0.27637904977948397
+    ],
+    "spinful_edge_gap_RMS_meV": [
+      1.0771836478837407,
+      2.3103261774894075
+    ],
+    "raw_six_state_energy_RMS_meV": 1.1507132871631538,
+    "group_min": 0.12123352153879223,
+    "principal_min": 1.1549433350666297e-10,
+    "raw_pair_min": 0.12123352153879223,
+    "raw_pair_min_by_band": [
+      0.5821567718464522,
+      0.27342838119493296,
+      0.12123352153879223
+    ],
+    "group_min_by_band": [
+      0.5821567718464522,
+      0.27342838119493296,
+      0.12123352153879223
+    ],
+    "model_cluster_coverage_min_by_band": [
+      0.5821567718464522,
+      0.27342838119493296,
+      0.12123352153879223
+    ],
+    "model_unresolved_group_boundaries": [
+      [
+        51,
+        4,
+        6
+      ]
+    ],
+    "model_gap_min_meV": [
+      6.326755097407688,
+      1.118547734908066
+    ],
+    "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+    "raw_pair_mean_by_band": [
+      0.6529666605762402,
+      0.41465684268311087,
+      0.3052880013194882
+    ]
+  },
+  "Q_checks": [
+    {
+      "Q": 37,
+      "absolute_first3_change_meV": null,
+      "centered_first3_change_meV": null,
+      "lowest_eigenvalue": -0.022543120642672186
+    },
+    {
+      "Q": 61,
+      "absolute_first3_change_meV": 0.00894049001178357,
+      "centered_first3_change_meV": 0.00880811652074348,
+      "lowest_eigenvalue": -0.022543253016163223
+    },
+    {
+      "Q": 91,
+      "absolute_first3_change_meV": 4.4208097252362855e-05,
+      "centered_first3_change_meV": 4.3924510077786305e-05,
+      "lowest_eigenvalue": -0.0225432532997504
+    }
+  ],
+  "principal": 0.9906433592526578,
+  "optimizer_converged": true,
+  "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "nfev": 310,
+  "loss": 210.35984990885578,
+  "final_gradient": 0.004250233389376283,
+  "reference": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/pilot/reference_source_canonical.npz",
+  "scope": "Single3.89degree/full60k/all3nativepairs; no allanglefit or parameter-anglecurves",
+  "node": "gpuh204",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "elapsed_seconds": 264.0074052810669,
+  "pid": 1004741,
+  "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/refine_lbfgs.py"
+  ],
+  "layout": "4 k workers, BLAS1",
+  "method": "L-BFGS-B",
+  "warm_start": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/replacement_refined/BEST.json",
+  "warm_start_SHA256": "d9f40cfc3573faae037c73ae049ef66dda6ac5a93c86ac72d72f5644db17a292",
+  "initial_loss": 230.78170568017106,
+  "initial_source_evaluation": 755,
+  "selected_potentials": [
+    2,
+    29
+  ],
+  "source_reference": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/pilot/reference_source_canonical.npz",
+  "source_reference_SHA256": "4d36be3b25532121267659866e526df0d426829eebe53cecae09b107a0fb9669",
+  "fixed_coordinate_scaling": [
+    0.07137706232282724,
+    0.007519411131874899,
+    0.01791100749765909,
+    0.04736390879150865,
+    0.030891497867045134,
+    0.06675767910313869,
+    0.0062992747531999725,
+    0.013749712416495708,
+    0.018547343503188915,
+    0.023592568432236845
+  ],
+  "fixed_initial_J_column_norm": [
+    14.01010307032751,
+    132.98913737552994,
+    55.83158848717453,
+    21.113122322777524,
+    32.371366526282756,
+    14.979550119695276,
+    158.74843361801442,
+    72.72879386192012,
+    53.91607697501619,
+    42.38622864959466
+  ],
+  "coordinate_rule": "z=z_snapshot+scale*y, y_start=0. Scaling fixed once from initial analytic residual Jacobian; objective/model/native target unchanged.",
+  "maxfun": 800,
+  "maxiter": 800,
+  "maxls": 50,
+  "ftol": 1e-12,
+  "gtol_scaled_projected": 1e-06,
+  "source_code_SHA256": {
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/fit.py": "1c430a781f7a93232a4df1319f036f6164aecfd0e4bd7c6d1e40a9d2a311839f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/operators.py": "f8529df02993d88c5416ac8a26c2753d8d797519ec227e8f40bee468b5521328",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/refine_lbfgs.py": "0b909d0f848fc7e9f73e46de8f72f6e9ce3834bb3bef6f25b550841e12b69317"
+  },
+  "nit": 204,
+  "unscaled_projected_gradient_inf": 0.8237916277203349,
+  "scaled_gradient_inf": 0.010459617469407892,
+  "control": "Exactly same replacement AB/Gamma/VBM ten-coefficient family and native residual, warmstart from kane6/replacement_refined/BEST snapshot. Only numerical optimizer and one fixed coordinate preconditioner changed; no new seed or physical term.",
+  "inherited_original_pilot_initial_gradient": 8.642744067289238e-10,
+  "warm_start_gradient_check": null,
+  "warm_start_gradient_check_note": "Not separately evaluated at the frozen GN BEST; the inherited initial check belongs to the original replacement pilot and is explicitly relabeled.",
+  "smooth_stationary": false,
+  "optimizer_converged_meaning": "SciPy success=True from relative function tolerance only, not a projected-gradient certificate or physical quality approval.",
+  "optimizer_stop_classification": "RELATIVE_FUNCTION_TOLERANCE_AT_NONSMOOTH_THIRD_FOURTH_PAIR_BOUNDARY",
+  "scientific_quality_passed": false,
+  "raw_principal_min_by_band": [
+    0.5171746012118823,
+    2.088240123817566e-07,
+    1.1549433350666297e-10
+  ],
+  "source_commit": "e857d8bf9ba04e3dae8fdf093da7b34642e54469",
+  "source_worktree_note": "Kane6 candidate files are untracked; exact code SHA256 values are recorded in RUNNING.json."
+}

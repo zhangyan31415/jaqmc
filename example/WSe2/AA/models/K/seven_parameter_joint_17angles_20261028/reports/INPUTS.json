@@ -1,0 +1,129 @@
+{
+  "cases": {
+    "27_1.20286": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_joint_1p20_20261028/smallangle_heff/27_1.20286/reference.npz",
+      "reference_sha256": "a20e66a4c6004f86cac10f1fa4759421389fb92ea46124d20029dc65b6bb86a0",
+      "angle_deg": 1.202855227481003,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/27_1.20286/data.npz"
+    },
+    "23_1.40758": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/smallangle_heff/23_1.40758/reference.npz",
+      "reference_sha256": "8c1931af1e76b028b09e03baa3302692592d94f2b48b807b3b6953dd7a06d8e1",
+      "angle_deg": 1.4075774463457396,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/23_1.40758/data.npz"
+    },
+    "22_1.47013": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/smallangle_heff/22_1.47013/reference.npz",
+      "reference_sha256": "8ad523417eb9a65d1c22c3ca4b37a48d9c801f31beb2038852e3482905b2bf50",
+      "angle_deg": 1.4701297257779093,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/22_1.47013/data.npz"
+    },
+    "21_1.53850": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_joint_1p20_20261028/smallangle_heff/21_1.53850/reference.npz",
+      "reference_sha256": "ae1a027c58b487262c44e9613ad79f489cca2e4ae7f25625f6382c1c0ae584f2",
+      "angle_deg": 1.538499818371707,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/21_1.53850/data.npz"
+    },
+    "20_1.61354": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/smallangle_heff/20_1.61354/reference.npz",
+      "reference_sha256": "8dd8ee45eead5cf2493e0f63b373501bb90be8f1625e477fbc536225df4f871e",
+      "angle_deg": 1.6135389011625705,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/20_1.61354/data.npz"
+    },
+    "19_1.69627": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/smallangle_heff/19_1.69627/reference.npz",
+      "reference_sha256": "aff234d036df6824f93b245b3f6fddffa4fa923e646ecf2dc29b7a5dc0fda1b7",
+      "angle_deg": 1.696272693519767,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/19_1.69627/data.npz"
+    },
+    "18_1.78795": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_joint_1p20_20261028/smallangle_heff/18_1.78795/reference.npz",
+      "reference_sha256": "65697186e31e98b6b7b3f98b39aade463e48def8a8fec67e2d0f867724b41110",
+      "angle_deg": 1.787948610382325,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/18_1.78795/data.npz"
+    },
+    "15_2.13": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_angle_sweep_20261013/models/15_2.13/inputs/reference.npz",
+      "reference_sha256": "71593d3aa5315d44791983bd6746433dcfd12177b708643e442596823f904627",
+      "angle_deg": 2.1339296665972505,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/15_2.13/data.npz"
+    },
+    "14_2.28": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_angle_sweep_20261013/models/14_2.28/inputs/reference.npz",
+      "reference_sha256": "ea77613e95ecfa49e4e62166decb298117ce60f44dc42511d7608c43cb869fea",
+      "angle_deg": 2.2810596097298803,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/14_2.28/data.npz"
+    },
+    "13_2.45": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_angle_sweep_20261013/models/13_2.45/inputs/reference.npz",
+      "reference_sha256": "d22e2fb11783dbc469213e8646acf1239aaf1f03e10592a262625329bbd84d52",
+      "angle_deg": 2.4499772766168695,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/13_2.45/data.npz"
+    },
+    "12_2.65": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_angle_sweep_20261013/models/12_2.65/inputs/reference.npz",
+      "reference_sha256": "d5fcaa14544762e3a83ce7689806de776ebd2ee4a0ba5862810cfd7a7d486f18",
+      "angle_deg": 2.6459083811926885,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/12_2.65/data.npz"
+    },
+    "11_2.88": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_angle_sweep_20261013/models/11_2.88/inputs/reference.npz",
+      "reference_sha256": "706bd2879a84d246582d3eeb8691a306ead30e6934daa26adcf37ed00b7ba790",
+      "angle_deg": 2.875894633632971,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/11_2.88/data.npz"
+    },
+    "10_3.15": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_angle_sweep_20261013/models/10_3.15/inputs/reference.npz",
+      "reference_sha256": "ae9e007bec8d4b1393167a9466fbbfcf76bdae93ed04ac002a827e8e39d91a71",
+      "angle_deg": 3.149657426389616,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/10_3.15/data.npz"
+    },
+    "9_3.48": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_angle_sweep_20261013/models/9_3.48/inputs/reference.npz",
+      "reference_sha256": "d5f5a318e923c183ddc5a507c55bf1d3bd81c8a0abc74c9238bcb4e79c5caa20",
+      "angle_deg": 3.481006089466939,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/9_3.48/data.npz"
+    },
+    "8_3.89": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_angle_sweep_20261013/models/8_3.89/inputs/reference.npz",
+      "reference_sha256": "a12829a477936293033e3c49ec3840ea7526102097c623e9dbb122a3721b5268",
+      "angle_deg": 3.8902381690076835,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/8_3.89/data.npz"
+    },
+    "7_4.41": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_angle_sweep_20261013/models/7_4.41/inputs/reference.npz",
+      "reference_sha256": "50f9ff670fffc183c8cdab356d92502406bd6e9ee1d66d0f360cfe4c2b07d771",
+      "angle_deg": 4.408455007944072,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/7_4.41/data.npz"
+    },
+    "6_5.09": {
+      "source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_angle_sweep_20261013/models/6_5.09/inputs/reference.npz",
+      "reference_sha256": "6263ca30e1a0f5545f8937a0e2d7748fe64cb318889320c4e631ee920e686e21",
+      "angle_deg": 5.085847808123473,
+      "data_file": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/joint_fit/inputs/6_5.09/data.npz"
+    }
+  },
+  "physical_parameters": 7,
+  "shared_mass": true,
+  "quadratic_only": true,
+  "calibration_cases": [
+    "27_1.20286",
+    "23_1.40758",
+    "22_1.47013",
+    "21_1.53850",
+    "20_1.61354",
+    "19_1.69627",
+    "18_1.78795",
+    "15_2.13",
+    "14_2.28",
+    "13_2.45",
+    "12_2.65",
+    "11_2.88",
+    "10_3.15",
+    "9_3.48",
+    "8_3.89",
+    "7_4.41",
+    "6_5.09"
+  ],
+  "new_symmetry_averaging": false
+}

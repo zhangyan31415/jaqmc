@@ -1,0 +1,14 @@
+{
+  "exit_status": 0,
+  "optimizer_converged": true,
+  "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "nfev": 310,
+  "nit": 204,
+  "loss": 210.35984990885578,
+  "finished": 1792819289.665912,
+  "process_exit_code_verified": 0,
+  "verified_python_pid_absent": 1004741,
+  "scientific_quality_passed": false,
+  "smooth_stationary": false,
+  "optimizer_stop_classification": "RELATIVE_FUNCTION_TOLERANCE_AT_NONSMOOTH_THIRD_FOURTH_PAIR_BOUNDARY"
+}

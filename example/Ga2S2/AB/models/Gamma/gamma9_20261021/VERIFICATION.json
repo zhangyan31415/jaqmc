@@ -1,0 +1,87 @@
+{
+  "state": "PASS",
+  "scope": "Portable evaluator replay at representative stored k and angles; not validation of fitted physics, HF, Q convergence or native overlap.",
+  "max_spectrum_replay_error_eV": 3.9968028886505635e-15,
+  "max_Hermiticity_error_eV": 0.0,
+  "checks": [
+    {
+      "angle_deg": 2.2810596097298803,
+      "k_index": 0,
+      "dimension": 220,
+      "max_dispersion_error_eV": 1.762479051592436e-15
+    },
+    {
+      "angle_deg": 2.2810596097298803,
+      "k_index": 13,
+      "dimension": 220,
+      "max_dispersion_error_eV": 2.2065682614424986e-15
+    },
+    {
+      "angle_deg": 2.2810596097298803,
+      "k_index": 20,
+      "dimension": 220,
+      "max_dispersion_error_eV": 1.7763568394002505e-15
+    },
+    {
+      "angle_deg": 2.2810596097298803,
+      "k_index": 40,
+      "dimension": 220,
+      "max_dispersion_error_eV": 1.7121720707891086e-15
+    },
+    {
+      "angle_deg": 3.8902381690076835,
+      "k_index": 0,
+      "dimension": 148,
+      "max_dispersion_error_eV": 1.3877787807814457e-15
+    },
+    {
+      "angle_deg": 3.8902381690076835,
+      "k_index": 13,
+      "dimension": 148,
+      "max_dispersion_error_eV": 2.220446049250313e-15
+    },
+    {
+      "angle_deg": 3.8902381690076835,
+      "k_index": 20,
+      "dimension": 148,
+      "max_dispersion_error_eV": 1.1379786002407855e-15
+    },
+    {
+      "angle_deg": 3.8902381690076835,
+      "k_index": 40,
+      "dimension": 148,
+      "max_dispersion_error_eV": 3.816391647148976e-15
+    },
+    {
+      "angle_deg": 9.430007907896421,
+      "k_index": 0,
+      "dimension": 76,
+      "max_dispersion_error_eV": 2.6747809696303637e-15
+    },
+    {
+      "angle_deg": 9.430007907896421,
+      "k_index": 13,
+      "dimension": 76,
+      "max_dispersion_error_eV": 1.970645868709653e-15
+    },
+    {
+      "angle_deg": 9.430007907896421,
+      "k_index": 20,
+      "dimension": 76,
+      "max_dispersion_error_eV": 3.9968028886505635e-15
+    },
+    {
+      "angle_deg": 9.430007907896421,
+      "k_index": 40,
+      "dimension": 76,
+      "max_dispersion_error_eV": 3.83026943495679e-15
+    }
+  ],
+  "hostname": "gpuh201",
+  "cwd": "/data/work/zy/software/research-lab/10_nqs/external/jaqmc",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "python_executable": "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+  "process_layout": "one Python process; BLAS/OpenMP 4 threads maximum",
+  "command": "python verify.py",
+  "returncode": 0
+}

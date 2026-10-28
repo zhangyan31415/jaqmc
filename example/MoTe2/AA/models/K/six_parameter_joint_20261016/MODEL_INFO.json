@@ -1,0 +1,36 @@
+{
+  "id": "MoTe2_AA_K_six_parameter_joint_20261016",
+  "material": "MoTe2",
+  "stacking": "AA",
+  "valley": "K",
+  "edge": "VBM",
+  "physical_parameters": 6,
+  "global_coefficients": 16,
+  "angles_deg": [
+    2.13,
+    2.45,
+    2.65,
+    2.88,
+    3.15,
+    3.48,
+    3.89,
+    4.41,
+    5.09
+  ],
+  "basis_description": "One selected-spin envelope orbital per layer; opposite valley follows the documented time-reversal convention.",
+  "energy_unit": "eV",
+  "length_unit": "Angstrom",
+  "k_convention": "Source fractional-to-model transform; see archived README, not a uniform adapter.",
+  "carrier_convention": "Source electron/hole APIs; choose explicitly as documented",
+  "status": "HISTORICAL_ARCHIVE",
+  "hf_scope": "Historical nine-angle K-valley model; latest ten-angle variants are separate versions.",
+  "entrypoint": null,
+  "reference_type": "Archived Heff model overlap; not a newly certified native-TAPW embedding",
+  "limitations": [
+    "Use current version descriptors for a new scan",
+    "No uniform adapter added to this unchanged historical candidate hierarchy"
+  ],
+  "source_files": [
+    "README.md"
+  ]
+}

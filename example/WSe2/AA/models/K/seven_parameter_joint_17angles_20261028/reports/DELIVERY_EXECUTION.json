@@ -1,0 +1,15 @@
+{
+  "state": "completed",
+  "hostname": "gpuh2002",
+  "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "job_id": null,
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wse2_newangles_q8_joint_20261028/finalize.py"
+  ],
+  "layout": "figure/table/model packaging;1BLAS thread",
+  "start_unix": 1793170341.2864072,
+  "exit_code": 0,
+  "end_unix": 1793170342.482154
+}

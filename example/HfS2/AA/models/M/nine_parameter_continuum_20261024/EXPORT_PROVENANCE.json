@@ -1,0 +1,13 @@
+{
+  "export_date": "2026-10-29 Asia/Shanghai",
+  "source_repository": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "source_hashes": "SOURCE_HASHES.json",
+  "command": "/data/home/zy/mambaforge/envs/moirekp/bin/python /data/work/tmp/zy/codex/model-upload-20261029/m_valleys.py",
+  "verification_command": "/data/home/zy/mambaforge/envs/moirekp/bin/python /data/work/tmp/zy/codex/model-upload-20261029/verify_m.py",
+  "node": "gpuh202",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "layout": "one process, BLAS1",
+  "final_process_state": "EXITED_SUCCESSFULLY",
+  "result_path": "/data/work/zy/software/research-lab/10_nqs/external/jaqmc/example/HfS2/AA/models/M/nine_parameter_continuum_20261024",
+  "note": "Existing coefficients and predictions preserved without optimization. Archive is not an HF solver."
+}

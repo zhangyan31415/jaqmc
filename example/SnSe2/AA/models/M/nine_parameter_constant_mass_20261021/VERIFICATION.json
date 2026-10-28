@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "node": "gpuh202",
+  "cwd": "/data/work/zy/software/research-lab/10_nqs/external/jaqmc",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "command": [
+    "/data/work/tmp/zy/codex/model-upload-20261029/verify_m.py"
+  ],
+  "layout": "one process, BLAS1",
+  "exit_code": 0,
+  "checks_scope": "12 exact catalog angles times Gamma/M/K; saved source predictions and coefficient records. 31x31 area-two-cell Fourier quadrature at 3.89 degrees.",
+  "max_spectral_error_eV": 1.7486012637846216e-15,
+  "max_Hermiticity_error_eV": 0.0,
+  "max_parameter_error": 1.7763568394002505e-15,
+  "realspace_Fourier_error_eV": 7.171971422344404e-16,
+  "kinetic_tensor_error_eV": 2.220446049250313e-16,
+  "enlarged_cell_area_ratio": 2.0,
+  "checks": [
+    {
+      "case": "14_2.28",
+      "row": 0,
+      "spectral_error_eV": 1.1102230246251565e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "14_2.28",
+      "row": 20,
+      "spectral_error_eV": 1.1102230246251565e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "14_2.28",
+      "row": 40,
+      "spectral_error_eV": 7.216449660063518e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "13_2.45",
+      "row": 0,
+      "spectral_error_eV": 7.216449660063518e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "13_2.45",
+      "row": 20,
+      "spectral_error_eV": 7.771561172376096e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "13_2.45",
+      "row": 40,
+      "spectral_error_eV": 1.1102230246251565e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "12_2.65",
+      "row": 0,
+      "spectral_error_eV": 1.609823385706477e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "12_2.65",
+      "row": 20,
+      "spectral_error_eV": 1.2212453270876722e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "12_2.65",
+      "row": 40,
+      "spectral_error_eV": 1.1102230246251565e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "11_2.88",
+      "row": 0,
+      "spectral_error_eV": 8.049116928532385e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "11_2.88",
+      "row": 20,
+      "spectral_error_eV": 1.0547118733938987e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "11_2.88",
+      "row": 40,
+      "spectral_error_eV": 8.326672684688674e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "10_3.15",
+      "row": 0,
+      "spectral_error_eV": 1.4710455076283324e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "10_3.15",
+      "row": 20,
+      "spectral_error_eV": 1.3322676295501878e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "10_3.15",
+      "row": 40,
+      "spectral_error_eV": 3.3306690738754696e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "9_3.48",
+      "row": 0,
+      "spectral_error_eV": 1.7486012637846216e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "9_3.48",
+      "row": 20,
+      "spectral_error_eV": 1.6930901125533637e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "9_3.48",
+      "row": 40,
+      "spectral_error_eV": 1.5543122344752192e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "8_3.89",
+      "row": 0,
+      "spectral_error_eV": 1.1102230246251565e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "8_3.89",
+      "row": 20,
+      "spectral_error_eV": 3.0531133177191805e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "8_3.89",
+      "row": 40,
+      "spectral_error_eV": 3.3306690738754696e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "7_4.41",
+      "row": 0,
+      "spectral_error_eV": 4.996003610813204e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "7_4.41",
+      "row": 20,
+      "spectral_error_eV": 6.661338147750939e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "7_4.41",
+      "row": 40,
+      "spectral_error_eV": 6.938893903907228e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "6_5.09",
+      "row": 0,
+      "spectral_error_eV": 1.609823385706477e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "6_5.09",
+      "row": 20,
+      "spectral_error_eV": 1.0685896612017132e-15,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "6_5.09",
+      "row": 40,
+      "spectral_error_eV": 9.992007221626409e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "5_6.01",
+      "row": 0,
+      "spectral_error_eV": 1.1102230246251565e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "5_6.01",
+      "row": 20,
+      "spectral_error_eV": 2.498001805406602e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "5_6.01",
+      "row": 40,
+      "spectral_error_eV": 2.3592239273284576e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "4_7.34",
+      "row": 0,
+      "spectral_error_eV": 2.498001805406602e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "4_7.34",
+      "row": 20,
+      "spectral_error_eV": 2.7755575615628914e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "4_7.34",
+      "row": 40,
+      "spectral_error_eV": 2.914335439641036e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "3_9.43",
+      "row": 0,
+      "spectral_error_eV": 3.469446951953614e-17,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "3_9.43",
+      "row": 20,
+      "spectral_error_eV": 6.661338147750939e-16,
+      "hermiticity_error_eV": 0.0
+    },
+    {
+      "case": "3_9.43",
+      "row": 40,
+      "spectral_error_eV": 6.106226635438361e-16,
+      "hermiticity_error_eV": 0.0
+    }
+  ],
+  "source_hash_file": "SOURCE_HASHES.json",
+  "limitations": "Verifies export fidelity, not full model fit quality, source Q convergence, or HF interactions."
+}

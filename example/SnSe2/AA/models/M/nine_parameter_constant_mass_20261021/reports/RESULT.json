@@ -1,0 +1,1743 @@
+{
+  "node": "gpuh204",
+  "pid": 1970674,
+  "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/fit_constant.py",
+    "--material",
+    "snse2_m",
+    "--parameters",
+    "9",
+    "--maxeval",
+    "220"
+  ],
+  "layout": "one process, four angle threads, BLAS1",
+  "authorization": "user direct SSH gpuh201-204,gpuh2002",
+  "started": 1792563538.3476026,
+  "material": "snse2_m",
+  "physical_parameter_count": 9,
+  "physical_parameter_names": [
+    "A_parallel_eV_A2",
+    "A_perp_eV_A2",
+    "w_a_eV",
+    "w_b_eV",
+    "Sd_eV",
+    "Va_eV",
+    "Vd_eV",
+    "Sa_eV",
+    "Sl_eV"
+  ],
+  "global_coefficient_count": 23,
+  "global_controls": [
+    [
+      5.25749723352842,
+      5.25749723352842,
+      5.25749723352842
+    ],
+    [
+      13.781338410248354,
+      13.781338410248354,
+      13.781338410248354
+    ],
+    [
+      0.19795759685427206,
+      0.09775908339184014,
+      0.10448026812758193
+    ],
+    [
+      -0.02354343531575731,
+      -0.011452130715429797,
+      -0.008476842280115086
+    ],
+    [
+      0.014199749602653989,
+      -0.004610087219473558,
+      -8.926208439017173e-06
+    ],
+    [
+      0.015072256208146837,
+      -0.010751944418306899,
+      -0.002558074933171865
+    ],
+    [
+      0.030157246340813338,
+      0.0008381497688763071,
+      -0.005417099887373805
+    ],
+    [
+      0.03030348767360707,
+      -0.013571355500857267,
+      0.013169064789217538
+    ],
+    [
+      0.03836596763218322,
+      0.03598993695334753,
+      0.011845817231893149
+    ]
+  ],
+  "rho": 0.18945221891436223,
+  "angle_endpoint_deg": [
+    2.2810596097298803,
+    9.430007907896421
+  ],
+  "angle_coordinate": "fixed warped sin2 quadratic Bernstein",
+  "spin": "H_orbital tensor I2; native spin-pair centers fitted; spinful edge gaps reported separately",
+  "kinetic_axes": "actual layer-rotated axes",
+  "records": [
+    {
+      "case": "14_2.28",
+      "angle_deg": 2.2810596097298803,
+      "parameters": [
+        5.25749723352842,
+        13.781338410248354,
+        0.19795759685427206,
+        -0.02354343531575731,
+        0.014199749602653989,
+        0.015072256208146837,
+        0.030157246340813338,
+        0.03030348767360707,
+        0.03836596763218322
+      ],
+      "energy_pair_center_RMS_meV": 0.5743339846426401,
+      "energy_pair_center_RMS_over_window": 0.010113022704715771,
+      "window_meV": 56.79152528499954,
+      "gap_scale_meV": [
+        20.78804086536433,
+        28.102450132287156
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.880296857189568,
+        0.9243736016097227
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.04234631165538359,
+        0.03289298965956358
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.7925491879766571,
+        1.1739394598550048
+      ],
+      "raw_six_state_energy_RMS_meV": 0.58790649098136,
+      "group_min": 0.9222904223555131,
+      "principal_min": 0.9199454001857741,
+      "raw_pair_min": 0.9222904223555131,
+      "raw_pair_min_by_band": [
+        0.982521055154566,
+        0.9706256815676662,
+        0.9222904223555131
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        17.592515846538813,
+        24.24592298080963,
+        15.597810412648572
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "angle_deg": 2.4499772766168695,
+      "parameters": [
+        5.25749723352842,
+        13.781338410248354,
+        0.18848885683471966,
+        -0.02239190101961832,
+        0.012430080520149048,
+        0.012647076864259586,
+        0.027367253233368784,
+        0.026213312837017666,
+        0.038084253052074385
+      ],
+      "energy_pair_center_RMS_meV": 0.3560776830780645,
+      "energy_pair_center_RMS_over_window": 0.0055396043497876815,
+      "window_meV": 64.27854059499971,
+      "gap_scale_meV": [
+        23.18556361798658,
+        31.43405607249164
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.3367129962743385,
+        0.15655139392259457
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.014522527975689488,
+        0.004980311594582755
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.38651628204680405,
+        0.2300902783800779
+      ],
+      "raw_six_state_energy_RMS_meV": 0.3906114343969369,
+      "group_min": 0.9202288111394195,
+      "principal_min": 0.9199471408685062,
+      "raw_pair_min": 0.9202288111394195,
+      "raw_pair_min_by_band": [
+        0.9819628984270484,
+        0.9635897679982754,
+        0.9202288111394195
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        19.23227243164782,
+        24.857767711396363,
+        15.462369477604598
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "angle_deg": 2.6459083811926885,
+      "parameters": [
+        5.25749723352842,
+        13.781338410248354,
+        0.17827356728169363,
+        -0.021127145088065718,
+        0.01054066722478009,
+        0.010068966519738761,
+        0.024308579960122926,
+        0.021941630348219433,
+        0.03763635219517018
+      ],
+      "energy_pair_center_RMS_meV": 0.4369271222115526,
+      "energy_pair_center_RMS_over_window": 0.005713408984110009,
+      "window_meV": 76.4739796199998,
+      "gap_scale_meV": [
+        26.742046620951143,
+        34.77585267999665
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.5192426270744162,
+        0.831823444089143
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.019416712356922366,
+        0.023919570046016858
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.7805144791655663,
+        0.5546145002418377
+      ],
+      "raw_six_state_energy_RMS_meV": 0.498248521303284,
+      "group_min": 0.9368455126537213,
+      "principal_min": 0.9332490566860161,
+      "raw_pair_min": 0.9368455126537213,
+      "raw_pair_min_by_band": [
+        0.98032182416637,
+        0.9662630513081697,
+        0.9368455126537213
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        22.591001936716705,
+        25.13416348105546,
+        13.150594966023
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "angle_deg": 2.875894633632971,
+      "parameters": [
+        5.25749723352842,
+        13.781338410248352,
+        0.16739321441216665,
+        -0.019748911682627483,
+        0.008555704942444073,
+        0.0073761441630146645,
+        0.020983162175833178,
+        0.017587531359149467,
+        0.03695943865746178
+      ],
+      "energy_pair_center_RMS_meV": 1.022420166235038,
+      "energy_pair_center_RMS_over_window": 0.011802601348555755,
+      "window_meV": 86.62667966500015,
+      "gap_scale_meV": [
+        30.01528072944966,
+        38.60071999264952
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.0306375718778629,
+        1.1236842531345475
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.03433709586686114,
+        0.029110448026578858
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.3764922118506087,
+        0.678600702476518
+      ],
+      "raw_six_state_energy_RMS_meV": 1.0590464964815738,
+      "group_min": 0.9648484453317276,
+      "principal_min": 0.9631603209898523,
+      "raw_pair_min": 0.9648484453317276,
+      "raw_pair_min_by_band": [
+        0.9879783411406062,
+        0.9857661767547758,
+        0.9648484453317276
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        22.823102982871603,
+        24.894674749044665,
+        13.040364631164758
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "angle_deg": 3.149657426389616,
+      "parameters": [
+        5.2574972335284205,
+        13.781338410248356,
+        0.1560178205888703,
+        -0.018264284482527867,
+        0.006518959084686686,
+        0.004635354711967817,
+        0.017411579758386073,
+        0.013309895100699479,
+        0.035971318494922945
+      ],
+      "energy_pair_center_RMS_meV": 0.745117650293784,
+      "energy_pair_center_RMS_over_window": 0.007035879376335156,
+      "window_meV": 105.90256177500024,
+      "gap_scale_meV": [
+        35.94240511797752,
+        43.684273747208195
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.47533305874111925,
+        1.6547648519316587
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.013224853962356826,
+        0.037880104440042625
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.7605797322126937,
+        1.0882962362844437
+      ],
+      "raw_six_state_energy_RMS_meV": 0.8416974058071092,
+      "group_min": 0.9375722867062547,
+      "principal_min": 0.9296807301427806,
+      "raw_pair_min": 0.9375722867062547,
+      "raw_pair_min_by_band": [
+        0.9882600305490188,
+        0.9827434278447265,
+        0.9375722867062547
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        26.64578516764715,
+        24.107846714854773,
+        9.196886431149132
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "angle_deg": 3.481006089466939,
+      "parameters": [
+        5.25749723352842,
+        13.781338410248356,
+        0.1444406883444025,
+        -0.016691387535269622,
+        0.00450072137230546,
+        0.0019516629415709322,
+        0.013642155265470416,
+        0.009345693745462317,
+        0.03456809719232724
+      ],
+      "energy_pair_center_RMS_meV": 0.7370512873774862,
+      "energy_pair_center_RMS_over_window": 0.005965108919447067,
+      "window_meV": 123.56040724999984,
+      "gap_scale_meV": [
+        41.79186291109179,
+        50.231688101527205
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.7702658919137609,
+        1.3799389584135928
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.018431001593597975,
+        0.027471482854099786
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.864657431696988,
+        1.095322835667164
+      ],
+      "raw_six_state_energy_RMS_meV": 0.8595217845888801,
+      "group_min": 0.947643649226897,
+      "principal_min": 0.937243192081303,
+      "raw_pair_min": 0.947643649226897,
+      "raw_pair_min_by_band": [
+        0.9875764524019135,
+        0.9843579331343347,
+        0.947643649226897
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        23.837069102796484,
+        22.618626381225944,
+        9.983542492921993
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "angle_deg": 3.8902381690076835,
+      "parameters": [
+        5.25749723352842,
+        13.781338410248352,
+        0.13311298432617988,
+        -0.015063650855917961,
+        0.002604220784164882,
+        -0.000522790584818692,
+        0.009761273828431082,
+        0.006024556305151297,
+        0.03262559178202139
+      ],
+      "energy_pair_center_RMS_meV": 1.233532347014437,
+      "energy_pair_center_RMS_over_window": 0.007981126498552569,
+      "window_meV": 154.55617039000026,
+      "gap_scale_meV": [
+        51.517611427171424,
+        60.67197961996744
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.6936460142408423,
+        1.3812275475212785
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.03287508809749629,
+        0.022765493332719773
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.0466395346944697,
+        1.2140734138157487
+      ],
+      "raw_six_state_energy_RMS_meV": 1.37051430861108,
+      "group_min": 0.745659904575174,
+      "principal_min": 0.7456579626750364,
+      "raw_pair_min": 0.745659904575174,
+      "raw_pair_min_by_band": [
+        0.9927880061684677,
+        0.9873315023928868,
+        0.745659904575174
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        27.62036232765369,
+        20.576892505307754,
+        4.774679886681565
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "angle_deg": 4.408455007944072,
+      "parameters": [
+        5.2574972335284205,
+        13.781338410248356,
+        0.12266332600797575,
+        -0.013433630068444986,
+        0.000968016311132716,
+        -0.0025862262406482336,
+        0.005902276168999206,
+        0.0037681939668095694,
+        0.030009141224261855
+      ],
+      "energy_pair_center_RMS_meV": 1.0563149058075922,
+      "energy_pair_center_RMS_over_window": 0.005881926206519009,
+      "window_meV": 179.58656207499945,
+      "gap_scale_meV": [
+        63.06513901247496,
+        73.21335773830329
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.8397014907533045,
+        1.54593669474879
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.029171449069340702,
+        0.02111550053850347
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.9814977225144994,
+        2.2979109672537685
+      ],
+      "raw_six_state_energy_RMS_meV": 1.2797453693578196,
+      "group_min": 0.9097762512372426,
+      "principal_min": 0.8896475344398336,
+      "raw_pair_min": 0.9097762512372426,
+      "raw_pair_min_by_band": [
+        0.9833735905695768,
+        0.9676684103676652,
+        0.9097762512372426
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        21.97393248350732,
+        18.269087348282795,
+        13.938870197196085
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "angle_deg": 5.085847808123473,
+      "parameters": [
+        5.25749723352842,
+        13.781338410248356,
+        0.11387415250298175,
+        -0.011874195569520579,
+        -0.00024200248657248812,
+        -0.004000210756296953,
+        0.0022473184328320956,
+        0.0030546582119604397,
+        0.02659898136558791
+      ],
+      "energy_pair_center_RMS_meV": 1.7598020511675896,
+      "energy_pair_center_RMS_over_window": 0.008563625561530779,
+      "window_meV": 205.49731402000003,
+      "gap_scale_meV": [
+        81.97322746100674,
+        89.63815136659584
+      ],
+      "pair_center_gap_RMS_meV": [
+        2.646182283918203,
+        2.218900141952034
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.03228105524058994,
+        0.024753970358863512
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.519774257835553,
+        3.2200717355804827
+      ],
+      "raw_six_state_energy_RMS_meV": 1.9206221585034193,
+      "group_min": 0.9364896743336983,
+      "principal_min": 0.9206548299970901,
+      "raw_pair_min": 0.9364896743336983,
+      "raw_pair_min_by_band": [
+        0.9921007636236954,
+        0.9743833035798026,
+        0.9364896743336983
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        23.567559658526307,
+        15.501695798455618,
+        16.159295240173897
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "angle_deg": 6.008983197766148,
+      "parameters": [
+        5.25749723352842,
+        13.781338410248354,
+        0.10757346376136462,
+        -0.010473543799681307,
+        -0.0008600610789511558,
+        -0.0045313405445296,
+        -0.0009867704043712785,
+        0.0043201810620801025,
+        0.02233951183072406
+      ],
+      "energy_pair_center_RMS_meV": 1.8121046787955273,
+      "energy_pair_center_RMS_over_window": 0.00772785903081663,
+      "window_meV": 234.48987249500018,
+      "gap_scale_meV": [
+        108.8615699094542,
+        100.08906344725114
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.0380294605719231,
+        2.6772291090124667
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.009535315919431494,
+        0.02674846798245263
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.7126308994880168,
+        3.0252775462496526
+      ],
+      "raw_six_state_energy_RMS_meV": 2.0936524604954747,
+      "group_min": 0.91106324148029,
+      "principal_min": 0.8877498289859905,
+      "raw_pair_min": 0.91106324148029,
+      "raw_pair_min_by_band": [
+        0.9889153314038494,
+        0.9170227137241186,
+        0.91106324148029
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        21.030303346213447,
+        12.876762007373783,
+        16.047711576512995
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "angle_deg": 7.3409930166302155,
+      "parameters": [
+        5.25749723352842,
+        13.781338410248354,
+        0.10440376249906105,
+        -0.009320136708986702,
+        -0.000775184062422853,
+        -0.004032673881063406,
+        -0.0035882558487155378,
+        0.0077774126422656305,
+        0.01731611781365671
+      ],
+      "energy_pair_center_RMS_meV": 3.7812329210793614,
+      "energy_pair_center_RMS_over_window": 0.014607747843310209,
+      "window_meV": 258.8511905900006,
+      "gap_scale_meV": [
+        157.0927892344424,
+        86.94666722209668
+      ],
+      "pair_center_gap_RMS_meV": [
+        4.121281035581653,
+        6.521318962851611
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.026234692602160936,
+        0.07500366800941945
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        4.864754918070752,
+        7.631017265785135
+      ],
+      "raw_six_state_energy_RMS_meV": 3.9865331056436495,
+      "group_min": 0.7134989155296361,
+      "principal_min": 0.6305168292045307,
+      "raw_pair_min": 0.7134989155296361,
+      "raw_pair_min_by_band": [
+        0.8956523204993292,
+        0.8778510652001145,
+        0.7134989155296361
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        14.32730032628433,
+        10.518587435590698,
+        7.323857993893484
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "angle_deg": 9.430007907896421,
+      "parameters": [
+        5.25749723352842,
+        13.781338410248354,
+        0.10448026812758193,
+        -0.008476842280115086,
+        -8.926208439017173e-06,
+        -0.002558074933171865,
+        -0.005417099887373805,
+        0.013169064789217538,
+        0.011845817231893149
+      ],
+      "energy_pair_center_RMS_meV": 9.132004660431159,
+      "energy_pair_center_RMS_over_window": 0.023440254559388658,
+      "window_meV": 389.58641158499984,
+      "gap_scale_meV": [
+        223.4746387268054,
+        92.22399997349451
+      ],
+      "pair_center_gap_RMS_meV": [
+        9.014832779729018,
+        10.043376331828801
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.04033939972378487,
+        0.10890198142257225
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        11.246238837752818,
+        10.205942951452112
+      ],
+      "raw_six_state_energy_RMS_meV": 9.26937360546303,
+      "group_min": 0.0009585863382460985,
+      "principal_min": 0.0004079185977396407,
+      "raw_pair_min": 0.0009585863382460985,
+      "raw_pair_min_by_band": [
+        0.8645214088783204,
+        0.749571941126906,
+        0.0009585863382460985
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        24.29175767621091,
+        7.722658544889683,
+        2.6162188424777577
+      ]
+    }
+  ],
+  "summary": {
+    "energy_RMS_meV": 3.020769844494851,
+    "energy_window_relative_RMS": 0.010740009944579168,
+    "gap_relative_RMS": [
+      0.028069878999216324,
+      0.04517877855498854
+    ],
+    "spinful_edge_gap_RMS_meV": [
+      3.6748346404133683,
+      4.013025912386505
+    ],
+    "worst_pair_probability": 0.0009585863382460985,
+    "worst_group_probability": 0.0009585863382460985,
+    "worst_principal_probability": 0.0004079185977396407,
+    "first_pair_min": 0.8645214088783204,
+    "Q_change_max_meV": 1.753848189272364,
+    "unresolved_boundaries": 0,
+    "passing_angles": 9
+  },
+  "Q_checks": [
+    {
+      "case": "14_2.28",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.5489350905216739,
+      "original_Q": [
+        30,
+        30
+      ],
+      "expanded_Q": [
+        52,
+        52
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.35547413953113116,
+      "original_Q": [
+        30,
+        30
+      ],
+      "expanded_Q": [
+        52,
+        52
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.49496772793139465,
+      "original_Q": [
+        24,
+        24
+      ],
+      "expanded_Q": [
+        44,
+        44
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.35741666724425913,
+      "original_Q": [
+        24,
+        24
+      ],
+      "expanded_Q": [
+        44,
+        44
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.17442362839106829,
+      "original_Q": [
+        24,
+        24
+      ],
+      "expanded_Q": [
+        44,
+        44
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.11585782510106779,
+      "original_Q": [
+        24,
+        24
+      ],
+      "expanded_Q": [
+        44,
+        44
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.3077306744447561,
+      "original_Q": [
+        22,
+        22
+      ],
+      "expanded_Q": [
+        42,
+        42
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 1.3705436834203777,
+      "original_Q": [
+        18,
+        18
+      ],
+      "expanded_Q": [
+        38,
+        38
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.7040351479642298,
+      "original_Q": [
+        18,
+        18
+      ],
+      "expanded_Q": [
+        38,
+        38
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 1.753848189272364,
+      "original_Q": [
+        14,
+        14
+      ],
+      "expanded_Q": [
+        30,
+        30
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.686603187464857,
+      "original_Q": [
+        14,
+        14
+      ],
+      "expanded_Q": [
+        30,
+        30
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.33484301980094,
+      "original_Q": [
+        14,
+        14
+      ],
+      "expanded_Q": [
+        30,
+        30
+      ]
+    }
+  ],
+  "gradient_checks": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 8.117984229178659e-09,
+      "cost_relative": 2.639946283308894e-09
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 6.086447547004222e-08,
+      "cost_relative": 7.933850885440466e-08
+    }
+  ],
+  "optimizer_converged": true,
+  "optimizer_message": "`ftol` termination condition is satisfied.",
+  "nfev": 45,
+  "loss": 2.8615787730838282,
+  "loss_definition": "mean_angle[mean_3bands,k((Ecenter_model-Ecenter_native)/(.01*native_window))\u00b2 + mean_2gaps,k((gapcenter_model-gapcenter_native)/(.05*native_gap_RMS))\u00b2 + mean_groups,k(max(.96-P_native,0)/.04)\u00b2] +3||D(controls/scale-seed/scale)||\u00b2+.03||controls/scale-seed/scale||\u00b2; 60 independent path k, common Gamma energy zero, no bandwise shifts. Gap numerical floor=.01meV. Original regularization seed and weights preserved. Exact equality constraints c_j0=c_j1=c_j2 for j=0,1; analytic Jacobian is J_full @ equality_map.",
+  "elapsed_seconds": 38.935970067977905,
+  "status": "FAIL",
+  "gate": "every angle: energy/window<=2%, each pair-center gap relative RMS<=10%, native group P>=.9, principal>=.8; no unresolved group boundaries; expanded-Q sampled change<=1meV",
+  "source_SHA256": {
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_11.npz": "871f263a81fa5dee43b17c7d6b7d590b3c50a757928419403c2742341167777b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_18.npz": "61581206913873a0906205e89d11c05cef6769d1f85bfd77259378876992faf5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_59.npz": "e573fa254c8228c9d8fa5088a56caa9235117915b74672b6a17c386c78fcb135",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/14_2.28/reference_SU2.npz": "3034da8c6302704bc9efc73444c62be9b12989cb2f7ed11a2dc80c36be7c8d3a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_11.npz": "40f62a572dc8d834a76159ee3d0c0c01d7af8211ae5ff7bfc68f9523deed1bc3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_59.npz": "270a46a984131fde94b0822b9322f0ff669788c11337d470d60b31b85f68b7ff",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_13.npz": "8b25e1af3033a2142369d623166773b9ab773b8133bee776f97f34c1add3aa73",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_04.npz": "c98aaa72104ea8c779f0d24050ce210722474ae3b033f848a599ee206ad6226e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_02.npz": "1cc054e7a8354d6ade30b6927b3a3678168f06c7c2b149119781510e9845411e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_47.npz": "283e9a58a26c17f60f83b46178eec31df59a7bdfb91633740e445b896bd90c8b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_14.npz": "4d4a516af7e2e9b0c073b94281818884aaf3ba08ae92e4be48e60055d6645442",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_53.npz": "9beaaec8e26d2d078317929a5cbcdd124a0070abbb593f8f3852115a959b50f7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_54.npz": "e6ba18dedb7d3a673d668a6795887e2b14475658b70de222772c2a294b78873b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_03.npz": "d72933efbe2c21b00ff572d84d70e5e3269852650d470ca924238990c0bf8704",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_04.npz": "d7af1d893d7be4ddac7985238a73ba93d0e0c649b155879741daa7e7a58226c4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_55.npz": "4bbd14fd94f570831c4c0a182b0dc96afbf1c8e29967451fd240d3f3c05287ea",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_58.npz": "3c2bd4fb22943223786b539b1b10beab35cfde4a616cf99a6279211328d97ec1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_47.npz": "0da1d813483cc97b78a45fdc324a6a43b729bad41771ad75df1db9cddb4a897f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_36.npz": "db5ee9164896b85ff02e3da658cc584113ed85db04463fd265aac0b6a650186a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_50.npz": "c880f189d9bf1293bbd6964c3f9bf04095c80d202eac3df40893f18d018b4d41",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_03.npz": "9d924f8694a668e54241937a2f8f41a6931d2d4632dfc2284f4319d480c03d15",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_02.npz": "ff9702e24140fac656f6945678da88b9348b87f8405d7daf457f261346a2fb18",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_53.npz": "90702cb019533bfc7e664642b66c7d80298eeaf0340533a8f7d500573833b71a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_00.npz": "1ab6711646ab547acab4bde862744e67dff220ee56c9ea128a07c02447f1fac4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_09.npz": "9389ac8d9a77ea2acff889bbaa1354e54331f538662bbffa06acb288a92e1944",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_23.npz": "95d499009d9018e7e9f69964a9fea3d7a0473fa53cca96b29b26c80107ffbbb6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_47.npz": "b12e4f282b3f7afb139258553ec0871d9157e568d547d546af2c1788fac650d3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_14.npz": "07b99cf7593c617d4f5b9fcb18eb96bd54fe061bfbbee796a8b8e2b2253510d7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_15.npz": "14df125d7f2f131016bd7c9e6aa34773bfbc56a4fdd5bb676305a770bec9b307",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_45.npz": "eb3b70a75b5213f2a753958393b3ae7314fc5cf8b63cbe91ca536d1e7232fcfe",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_47.npz": "e4b90c758a91e50c6a35f7cc76d990b7f9593e7b0ceaa0bf1f5c8a48d8f54e78",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_50.npz": "0ca8d67253605b60d5b00c8969b615dc27ea220fa2d47c8fa33b4409103bafd4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_38.npz": "88b36ab52fd01825367a7f67d6316c1004941d2b9d4f90ecb5d6b3e3adb4a992",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_35.npz": "e51596ec183648eecb256241d6b1c42de6c893e5930d7158cf59393884f8b601",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_14.npz": "c3145774551229892160e796d36ce2291bf08d1e7f35b457ee19346f081aa7da",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_13.npz": "25137fd05537daea2a0fca282a3f6671990477a9e8f5e74233ceb39950fa612c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_00.npz": "d4145af25f935bb188c6d66aad9682038bcbf1d4fa9ed8a1a27d296f41ecc90b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_08.npz": "66553ab7492f84e9fc0da9ec586adc81c1902fb562ea52ff938aa2a72cbdc26e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_19.npz": "a3fd8fe87345519cba9b3eb0232be4cc7f19c481b43500c0a27eeaaba93b800b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_29.npz": "586989d96e1fb18e38f02ab69b6bea02e3e5d5f7e8dc01b71224794b740f7e68",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_35.npz": "cc648565f73d1c9aec8a8854b5bbff12e7cd1f220d4f0660abbfc48d0f4bda0c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_06.npz": "10f81bda25e0e45dc916acf71fe7e5fc3bdd41b3c20e8c86f4b6972df6422e48",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_57.npz": "5464a67fb28775dc13156da9e36ddfc03072a0e9d4e90a12e547c99de9ee2ff1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_00.npz": "16ff3b4ea87b234bca6ae67f6db1cb3e97fb02d05c0d69f12ca90ad16c3fd246",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_58.npz": "e014b7c3f6169e7eebca8cb2f7aeea3a81ede87283665867124a1e7837638da9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_54.npz": "2668ce147acd6e3fcb30748cb002494621ff8c23b19b2893dc7e8dc19342e597",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_35.npz": "301342d16b157c8c77f494996ee5b3ffd4da07144ce824b39adcbf849cc73305",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_34.npz": "1c646705502cc5019b0b4932ea48d044e943e7d722688e24ac941d3f63ace12f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_24.npz": "7f4fe0ecee75af86eef8751a37159227e1a0f2fc92796494e0a562eee8608cfb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_30.npz": "6525bc95508e9b3f844412d9270fbec50f499cfac9ff1758ae7980b83aad8bfe",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_35.npz": "787e9f20a18d95dec8f788871509e705e29f80bcd589bc91359da36bd3861d59",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_58.npz": "2405005cc1bd93349be3d7734621c777da593dc9be41e247e456953cf135da9e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_06.npz": "130a18653f84cbf4c680363d1aa43f553bf52ceb36ba83665d0424b9554b99d6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_54.npz": "1317df5a436c217dde0dd404e754a7a27e6bdab91ebd4441bfe31c00b0dbb016",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_01.npz": "e9a12f52fae30ef6946f93788ab40ec248a6b05c1e9856d38de0b87aaa017af5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_45.npz": "c561d1bdd2e0a8c5e5c5094bdc06ca10ebf915d812f7849c5e51e1a1e2735b32",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_55.npz": "199aecd0756d4a8b48c57bf8043ab7a4d42360f0b80fa953c4bcca0df7f9c6b8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_56.npz": "0173f59e8091556509923990f76638bbf09529c2aed53c774df43d472deb2663",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_40.npz": "66510124a825266e09980a620e2d0088d058bec0b1e1b37089913f144cd63c89",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_33.npz": "b54e563b695834d2f66a8e6b3bec1db64f37fe8643b796cec9a3f523378b3b77",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_46.npz": "7633172a929ff9aa9c690238ae5039ff5fa4b5d5903c3411593745bb18ca3116",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_02.npz": "31b08a2acc625c3275319ba11a236867463528eb64cc183f1e3c538e4fe947e3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_31.npz": "b421460ddbc0b31b314090e4b6c71e4599d9474d2cd3f233675a166ce5a7d973",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_49.npz": "1ef2221d0ec6ee87183893bae71fc56ddc11fc75979bb4d6d7965788445f308e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_30.npz": "29a4d64880592275def45f2f2bbd5b92be9a2c87f5b7cedd1438517758b75ce6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_45.npz": "84a7596b36af59bd6a0e2b42c3b767bfe0aa8b95b0eba77457d70f119c38933a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_27.npz": "0c9dbf6c94a30b0f509062e63dad6f515ce26ddc86193901c93251e84cf343dc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_26.npz": "878b414f342a3745f742bca3e6ea3f552d2b9d0562c8750df37eef8bd0c71fa0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_48.npz": "99ac06b385cca01aed0397350fdc8079a3ae995bc6281bdb02fa8c725998d6be",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_56.npz": "1fb1f377d104cd3646c97c74ba08f343fa5cb1085ba73d10c0766eaf69009b3b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_41.npz": "9b121303b81a03c6bef21e842675c254c0636a033a2a6a514d7d129de367c5c1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_40.npz": "2c5ce56a515610064356342609f593f8f72425cefe63fd257d8d29eedd810441",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_17.npz": "94f2a87f36bbc26b44f61bf6e16b1f264ca4d1fd45bc0ce3133dddb99167389f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_52.npz": "ebc0b81f14a7ebc06201a1234bea28af297bc6fe13940a4d4b3fa13b880af427",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_16.npz": "898e2bc99547c17e379702db13cd373c2a1fcf6e531e6caa47a47b450103d751",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_57.npz": "d5e4cd3f60e38cf733be7b1cd4c513426a5cb275a8ce042d3e83feca2c1b2a05",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_23.npz": "9e6a29a256a3dfec385574389c1c7aacba85a998ef48e1d295b3c6af5f78dfd3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_50.npz": "f6a1bf93a39c8a638a0cc9bba9a2b72796e178e614788f11b53033434da91ab6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_27.npz": "f262e0f4078dc1bd39ade9f63f843a51402140253b0f402569c3013c7c086a11",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_52.npz": "eb9cbd1cec82a9a274fbbd097550ecc895c693796d254799358e591499d6c3ff",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_42.npz": "655670cb8f95ccde0af1aefa4c815b4f3b2af4216b31cd7cbcc395005aa306ea",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_41.npz": "a6165b2d7f9eccd6c61f72b862d66359549b85b3daa5b107a864f76f558e75d0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_09.npz": "d963b1c8b27119e77c3cb788b7f7720f1b76cec38f6be6875eb28f7bd478712e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_32.npz": "1b74a35afd2204c72db8f7bad2aab02eef97fe3ea4a70ef58c15a8ea3794beba",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_57.npz": "2c9f3a8abca3fce83e5874b6b8108b5685fbf6cb3a8c478df791895194d10b54",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_23.npz": "85a9e2acddd43ffce6a5f9fef2d9be49cc000f2fec60d2845d8ce7dbb1b1f09d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_34.npz": "46b8100a540e17cd25ceb7f545ec7b3800e8ff8188bccea21dded9684354124a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_21.npz": "cdad60427e37c2137ae3994c2ca3add45d97b4616177850cd18b23253889bc14",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_27.npz": "15e4ad7ce7549de4a15d9e1ac9b415bae0c97770f9324b8336a1aaa318ab122d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_22.npz": "e4955d9a3d808919523ef19ada4b5d29f42009c2d51a0ba214aee3fac078b9ad",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_20.npz": "d35b5119c6ea3807affda40c70f3a3bb738140aa643e0338737202bd3f904991",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_59.npz": "e47bbb74d5a456075a92cdfd8cc500f38e0664fa506b3e18aa7e25437bfe0288",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_18.npz": "fa328cdd2b3dcab8139a10c875a914af17a99a7dc872bd698f9ccf0f81913b10",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_07.npz": "f2ab78adf90087129c01de6500c609f9c8e2394613252475e7888badff95a2a1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_37.npz": "31637d9f80685b9686cb604d18663196c698a2aa9f259f0f4d5f625f78cbf2ae",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_27.npz": "dd3685c1858d42dfadba505e04f59aa6d9e3e02ff90ff69b8791486db0412d59",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_23.npz": "9bd5fb16fdf8791431eace55245214a56e788de29fa72f0b9035a2c66134fa77",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_11.npz": "89e0e0c237e047715bd6d0e707dde946bebfa19102024fb0f8e33a3ad3560d87",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_25.npz": "8db498f23f3afcf771a7edbd3dc1eac74f302d1b17b90d3782d4f370d283494f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_39.npz": "2b903ff09388471c615276555fd14bcaf4e084bdc5fca74ca1bbe150169dd88e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_33.npz": "f5ed919391660e672b1b763487343e2cb2ee24596456a904642701c46e4332d7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_34.npz": "52411876e352c09591e9c514ecc3c8e8e78eb106c4b99d1f61a342b63fc2e23c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_11.npz": "d9a2201b196c7e41582b79179e7367c1a14e05b9e41f151449dba87942aa9d4d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_23.npz": "ea512b76d9bf0bafadaade914961270c44edcbadb5c70f9fba760e62232a142f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_26.npz": "6f9448595a78adcc912f21e68d1eb174180b376f02a70dc6f132284e94976e5b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_31.npz": "47a94b8837c3e70485e83edf7966f27a17d1a784ce690849a55e8ff0c731d56d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_04.npz": "f9dc942b7bec0d7934bbb9c5b6e91fcee581e570abb31207ef3152d408d1202c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_06.npz": "8afe011216c6e9b48b5d7bc6d7bbff94cefc5d268b66dbe4d9cc761dcb08164c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_07.npz": "eb1d8dd34789b15456a887e11603f2d02a8784ef8f1e1444c1d1f2418e933898",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_36.npz": "3937b30b76c3838f6de810eec3723d2395af15f5df49857e0b38f06540ec6c19",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_08.npz": "40afc11c2777702507c0e40b83441f8ed77fef82fa46103d8c2bd07d2e606993",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_17.npz": "db50e2564d379b448a4367e735b269596c9028e3bd2ed4d26c77d4174c038ca6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_28.npz": "ed2b0d2aa9d852046018bd1ca9dd22ff0483ee20359413b761afff15902878c4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_04.npz": "9b880530abcf8568d91b36570bb8ab4a80e7e2f80da0ce0aae98a7cda55129d4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_26.npz": "8250e975a2e583b6c7de363e4a950a1e58110153de4c057847bda6379c38eb82",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_31.npz": "e9a9575ef9eb200bb6a18191279215ffcfbffbaa0bc87d79f7051504992182ab",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_49.npz": "b7cf32115937ebad444d8831a7d3e6867cdfecb6bff53dbf52f1d773e1c4d493",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_30.npz": "dd0209a4a8a37d33317f667baebc2fd90955497b6ac08e7ca2107987969cf184",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_05.npz": "ffd5ba4635c402e69be9dccd57f0f8c78d76f8bd26ebdeae2482c38112ff8abc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_08.npz": "5890181fa38ef30197aef6b131cf2c175a2260663333a0cc54baea0364cb94b5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_53.npz": "8678c6452f517c58916d85056ea901dfa94dbd8223eb5dc98d34da83e0049bef",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_48.npz": "f7c16eecb6ecd6ae296ac77e120e3cb22e9e68e2f28649171eb79b92a54ad0e3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_36.npz": "6ede6701b9ef933e4204818e755e304dddff645733a39aeadbe37ce95db7b656",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_15.npz": "360ad19982f6d3ff347e4be1e6b1eeb983675882ae82ee045e1eea9d95585d02",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_02.npz": "b60fec483c4ba179b75788ef66ceb07648dfa83419a71b3551d6497c304f9c91",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_22.npz": "e5ad6fa802578b9bad469764a6b63fd309524d59e16829c0538a4d06810c2c76",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_04.npz": "fe7dd0a6359da55b93e8b460fdc37494091f6cc14f9a979a63b475f8b0e2accd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_17.npz": "9e909a7385f95213a556a19e79c9ea3cc562d07c5657cd679578be9144754c32",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_53.npz": "baf6b75a8b6e6fa49f6ed8647818a2f1ed9f7c376cac6e1a5033babdba7892f1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_37.npz": "08d2a46babec8c72d0e557f885d38e41eea3021ae0f02ce49827d6f9c500ec7b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_43.npz": "a586bc63a450a5c5966a3393fd490bd507238b146fc5517149ff6722a6b8fba2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_59.npz": "f23be48b35d695a32c7b3a0248c558967e1f7fbb6827e18d577c82e299b02a0c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_04.npz": "323b1ffb47487fce3c891d9d3f0fde95f942509ad8a242f28cbe15f3c1809857",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_51.npz": "ce909c284066bbf1a3df7115a21c86be056bd272cbca423c85de13f502527197",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_25.npz": "7d75211849b2b6b8c824e277b8e49e3f0c6e1a522b639d8f683400a39a0d659e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_03.npz": "ab2dca354ace281e4af83ba8ffb0e0c622fa7941627531a24d515751ece88a38",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_15.npz": "ef72f2a5670dae4198f03890f0b8df056d3c379176f89791b2c369c700997c47",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_50.npz": "7e455a670d845e7af426c94e4a4e81a3c158a263ddf661b17b08f685b8995db3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_47.npz": "e063bde82eb175d3df3bb3a9f8ba13bf8b6e8a394d7617f3b5b44dd8ebfb64d4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/7_4.41.npz": "d03e3866fb68a650a57cba859a3af6df3fabb7f69445f49e235bb24062fd992f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_13.npz": "d387ecb285ddfae8bb3d0e4c43444e6aad989680eb545ee2021dd1f53ccee3cf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_37.npz": "4ae454868cad788d03279ebe521b808ee347ae39186f5d5799ab49133cd4e9a9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_20.npz": "edcc8ff86c7533d37092ab30d4b79ef98f5e42684cbae3f605f3a105902946ac",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_59.npz": "4a4b975408cd13f57afdbe8843834b2d41c3fc3a0477b2a1e6ed7df05c960170",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_09.npz": "b0aee83c95c038643ef627c6bc038e6c971638e011a18770cf647b8de49fdd26",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_16.npz": "c8a6f7df18e197e62214e0ba1b7bc23692712e546d590b3778b5d0b064e7965e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_02.npz": "fbbf6335e5c41f037dbee103c17e43b57bc2fa0a684185ae665218cee01bd806",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_42.npz": "455a92a8e43f1e48f735222132d43f36203e6dd6cdac02b96e577053ac86f681",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_28.npz": "452d553d146f392754b54e68721cbe77e1ed8fd49f4488afffe624553ae96998",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_02.npz": "afda2f6197d962526bf816d9d76ab8a61db86798dd706a183068290da26cac5b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_58.npz": "203538b6bd2f4a18e726deadc5a100716b5080dcabb96a70ad2971afffce93c0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_21.npz": "01bbd90dbee83345a4cdb8e00fcb6a1d6c5db15623d57677f041c1ad75ae89c9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_05.npz": "86bc3a50d188a3596f1d27fb08ec8a006d4ce340fff438eef3aa1fbb544ea5a7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_50.npz": "e75ee85fd8c20da308bd94bbad6b7e8ddbef70391fbaa54f088dbc993bd84294",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_10.npz": "42c59a8b141cb1d47489f0fb96dbbf7b3d7a14c393b79c2abc9150820c320b1f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_18.npz": "68e4566650a0ec3eb8bdd5a7a68c479060bf6917e36530b92b7d8574d20ab904",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_07.npz": "bc9d36ddb33f99c0b21e00eeb002fa86381ba98c7f580865fd717094927d3084",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_28.npz": "436c139ab2fbc9188caa0f80a58ef09c3cc9c45b878f6af036cb8cdb39c59d15",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_09.npz": "ebcfc913d30e1974dae50e8ad54a342c6a5ac695f4dc87c652616b9c2142f8eb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_50.npz": "419e61aeb18e37cd17d3dcf2b921758fbc4cc800a0eb03d18045a857ce9c0397",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_55.npz": "f4368563251aa2a5b20d5dc9171ba0ae7ca687b42a92028fd29f94e4b3766afc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_35.npz": "f3eede4dfd34dab7ce7fcfe183b90a1f30bc499fdffd849eb8ca840f376631a9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_06.npz": "6bc4dbbd01b4ea680af0b685aa3fb414cbb7a25a7ec8a8f13862de8f2d72d4e2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_43.npz": "25c4acaf50cb828fed2ff34a53a2c6e81800db774226de091ee265e6a969819f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_05.npz": "6c04a421720e2e424e750b3d4a194ea767980b6d12059771af28cf883eedc1b6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_54.npz": "753dddfc66da7862bdde1e7244bd9c168c58ef16a953bc7217fa74ff0b0911b7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_39.npz": "40d62b81ac6b83f6c268199380cc79d6c734910f1a563b84a32631724530176a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_51.npz": "31d719dca275da90f35ccc9bdf4d22e3e5cc3812afe0b7a20d5555f26b48b974",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_45.npz": "0a937b0e5237c7b31b13d3df93d74949a26d45b610dcecc575dc9c204195a52d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_09.npz": "ac376db0b11ec9d83f0b37131bbef7d8088b98d96b762cc41105efbc42b41700",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_38.npz": "45a25746914df8a9f87be7533cf4444840a5bc912dda253b96809eafb2c72690",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_55.npz": "70bad68566dd7b836efb17b8d1e710c697b3888748c5467a330aa87def94a56a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_06.npz": "457a5b0c64b613ed0ad3f264f360e3fecee70c1db4640a937d9ec91ffa9f9e95",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_30.npz": "59105b83c96e134f38f6ffd0f48002c30050a071511f5869e3e59e728df0854f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_51.npz": "f137e5f8ae961c37d1b61702aced4616db4743e33c2db504a75ae30e8aafecdd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_13.npz": "d12f33d3642ca0fd9011ca1040d246aa096da605b427c669008a9b61f1879678",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_29.npz": "445f794c73ef75b7f529ad1efcd04bc4015ae96ad0c505df0ba899b593a01066",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_06.npz": "d34778e8b493de7307fd3393128b5f79e53cc281774134be8d278d8aa11cdb59",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_30.npz": "0540c5979d92b1ff0a3a989b9930d3f974e6caff0bada0c5a7efd872c42921c4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_13.npz": "c2f62d23f56ab446c3f2fe36ebc7b63183e35262d3fc3d716eeb7c41aa9b121c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_06.npz": "addbce1a8a17aca37bee4beecfd061d9219bcb9fcb0284b70d9f186cf84e8d4e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_58.npz": "32638e9baac0b5d9dbe8c66c288f1a6b9f977034ba84a42bc6faa2c1d55290a5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_10.npz": "1be8130dccdd8fe18c25846cff4bf64558c77c348e8d6e34357f52f034c964db",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_40.npz": "9efc8df9657b99db7c234a3e42164a9b05bdf4ec86e2673ddcc6709870e8c84d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_30.npz": "9010826c03d989b1d709936ef583d640133138c32b565fc99c3c658bc62b6a8e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_01.npz": "95783c5d0ae4b9acbb0b0a6a9f696f3850e4a0cdfff2a4298d45cddb48f7f056",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_03.npz": "88a04f5622ebccdaa8e9ee707bbc927af184089ba8866cc42f00952f715c2601",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_12.npz": "f8a23076c7e635bcafb4cf6026f3886d47eb9e020b34a0535f90717a12186c49",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_10.npz": "241a462e06293702f74a33b4b7c990d99bfdcac8686878e1a7f8b26b19b815fa",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_52.npz": "603abcc000aebc5353936d958f81bd4b04c6c343bbb964b0a28ea75b00a23316",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_46.npz": "4c6de1b7926854e166630d8bdc5015998478a4cef6ee356ef0ade89faf03c0f3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_58.npz": "2ada7f6931f69a448d8360c151a0399e92d4108a85433254c83fd340b4eb7818",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_30.npz": "fc79984fb35d11a080c610b0e1db83f209840ae11501e6b71d5ea7ea4e27468d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_24.npz": "674318be62211a60a9c30b6c58f4fabb0ec59e3c892a43cfe89b68ab2e4aa6b6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_27.npz": "2c23875c0067a7b62c7337ac80dad6a78f4ac641bf227ccfc735cb6763a6b6c1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_34.npz": "02de1fd3614c736dd1abd3c09cd16ae5309f605eb5d04cceb6468f455b37b1ec",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_33.npz": "b8e12b494e517fce86d3948e0af2389eb026400f71b64369024211ce5f7e6e5e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_45.npz": "b6ac23622808e465d94183309394d90442ecbdca8b6153e1b704fdd9b139f697",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_56.npz": "fd3dbbfcd6df4fc0af3bc68e2ddd23a9a9a0842aa6362e8099d6c07cbf4434cd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_40.npz": "710a7b5e9752f31ad232a8383a5a3b5aa7bed7f5afb9d27fba9a3a23c1690729",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_34.npz": "b88f6577b971e2cfd0b95049a0bbbf476e60ab987882ad29d48eb6758059466e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_26.npz": "ab0be748900d6afaa1b0b4c27ddb4ebaacd1630ff1b9880523a1f58bfff4783d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_23.npz": "b77f9d1b37743cc9403db8391afbf2e84fc0e65206609f5629ff628fa3ecd116",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_24.npz": "f88341534aff558c8fc150201e2ce4a24a9a2d3eff4daa6e35f12f74561e559a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_31.npz": "62eea8925639d90d430396b2715ca2207108d05db2b6103e0e09844ccc2cfd7f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_07.npz": "405c7f414b5cd1809333753604bd38d686d7221fcbb0131e4f794a832d7b47de",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_45.npz": "43682fb344cd9bd3e447c5b8a206cc8e0a97c48021c2b1386b385478e9504951",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_41.npz": "5ee879f27f330cf24834be27cc6dda18f6588fc2f73df72f036d27bec11b6064",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_49.npz": "34900edca7069c414003f4af749aae41c58a4bd66b42335544dbef9428f95490",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_38.npz": "b91f6401ff67bc921417a65cf16ce39c1c39fd2302bbaaf786075dc5656829f3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_11.npz": "b8984327c131a35fd31601b8a6d7c85f34791353f4d055f75ba48a3aae2e22c0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_39.npz": "64edb9bbb1ac076b0b1dd8962deb49b4468f53c0a1bf137b799a841c44b3661a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_32.npz": "2bbc7ddef85b56b194fce45a33ac4bdf0b975dd272525eae3e0fca474ab85e65",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_31.npz": "164c01d17390c1ad8e619ab254f9706438c6df0fb3f1a2c032510c29b9f8ef22",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_57.npz": "ed89d4d4e1c986121f67dd36a35f85a4f141db3b40222757c6b0da249921abab",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_07.npz": "0431bc31cee1218060d782f5566004a38d0f851b12107004cd90d9e030348055",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_49.npz": "f1e48cd392ba530dce08038ce93126c7b81910b17fa3086d547d37d636772e37",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_35.npz": "f8e22f6e261c6c869635ee8f6edef4f97baaae19e00ad70f5f00919a64725391",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_22.npz": "0a3f933e39137775e8d38f0d81be31d5d05551c90df01c4d9e1031170244c9f3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_17.npz": "3bdecb9e46116a78b41880364112a236887d257b670745719789065b25592ea3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_31.npz": "450f8451bef7dee2b7b62b344a885b658e2a2c605846ce6e7a935cba39cecf0e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_48.npz": "f15373d1985a004e6558bd3ee0b1bc7e5fdf45c798decc34230e6c81e2242aa9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_57.npz": "147a3976244fed044a43ca4a1b3adf36b6a6245c6a8d25fcedc25856ed43c212",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_12.npz": "749f440a3d12ff93ec89d5b230cbfaba5ccc78de377832e332abb6e55d4d7514",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_07.npz": "0b9e2ca28c1d5442b1542531a022427cb195c204dba4dc9fd555f4fb4bfe0bed",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/10_3.15/reference_SU2.npz": "e543a4c905d56c49e30312c2b38fdea4c285758b2168bae71b9c3ce0d87859a0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_59.npz": "3e1abf2498f26d91e9c32a90930a0b13982d0d5135e2c77fbd77da73b104ca24",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_17.npz": "e8e7376e41a42b2a55a99c8cfd9835eac2a8ae68784ead6b1786c6bd0dd9a8f3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_25.npz": "69244576dca8520804d025f4207307c49886187bbeff436cb901c015f9290655",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_31.npz": "7321f7457057b6e9b1c4335f48ea26fbfd6867dae9190cf1c4f7a5ce9a72c663",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_04.npz": "0714cb4a1cf21f2c19492d7505585750ab5ea17ee3bc13db3abb06ff6abe7b27",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_07.npz": "4374c1272645010d019eac044e8a4030f4f20a8f39d2c34056d5cafe5c596c16",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_39.npz": "4d57579540a9091f9acdbbbc385979bae878dda59e4b29dd560dbe8c1dabc1af",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_20.npz": "933b31533942bed485681909047e8c731237d7ef93a118d6382c852f4b7040e2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_33.npz": "83f480c2feae127b85acefbe63325f44e8b72efe466a703cc9f910f5cadf990d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_59.npz": "c0758a81363e922d28b69c2ec25e9fffc4dba45c5ea22288399c167270438d70",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/10_3.15.npz": "12c943cb8540018ba4f9cd1bc1e73863726351ee67fa7b1ac46527057a91cc9e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_53.npz": "f19dc7c379faa7e324e83a81b0a267e99942aeab38565ed8188c6a4df0cadcc1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_39.npz": "d476d6b40267537f0e5ee09f341818b928bd77416774ff4b25f8ecea694ef042",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_19.npz": "bb7ec5a11e1d424c4bfda1ef11e560f7e9f64a55b271c0d7d97b73585b06408d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_26.npz": "11c0559a808f39b05d79dafc5c7309111ada033aea0c82fd8f03420c31fd5df2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_20.npz": "2118503d8064baa3d2de466e9c13ef8a7b4a73939ea884efdb49a64deb1abd60",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_28.npz": "80efb82e9c23c8d06ef7e3cc4a1de79c5b05dc9083bcd26c0b1cebdcf79032e9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_33.npz": "202111591a6f841b9ef1ed26cb369ca5416cd972c178e89df0126a959dfe8b25",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_03.npz": "d08efbae1692d9157fb41f5b4d7a9ba5a8c4601146b895dd48b5ad4688d2dfa7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_56.npz": "2458ff8f1841f13d4fe72d9ac43d2446696ee8b3353a8e6a064962df19cf866b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_36.npz": "9413a4b3fe502fc048899956f5ceb95fbc56e7a5a8359621e01f4231c48eda19",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_40.npz": "64483a0038d51acff55778bb457c890b8c7df55ab16d86b1cab491f48a2c3428",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_05.npz": "8e4605c12f66f7da8901228c47172329b8bc5739a805fc69afa0fc9a2193d095",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_26.npz": "bfe79e593990fc3c2c459b779997f148e83b4696374058c6b3e407b2cebf73c3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_59.npz": "a556904f27ae62a04eed40694ce13de3991f3892121f37e9cc6c9df38743c4b9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_52.npz": "cc40e1effe4a0ee2238170212f3e7770f03e7450719bd1e609c2c5fc214898d1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_41.npz": "36e18a9b81a2133bf2f545e1f2bd867ba258350294c9483d739431e781105c32",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_15.npz": "2726caa8001f617fbee8b468d32474fc9db9bd32d4d6a61b3dfa967fc30a3d11",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_22.npz": "44dad9bd3fdde230506d0e95aebe6161f28f39ce5afc773ecd2179109fe78691",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_43.npz": "b8b3f887394187eb6ea38674ce961dd246d3d807e716641f76bc64eb7d4ab210",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_27.npz": "6383847c82bef20f0a1e0809987c5a3abd45387d4cdc46244dd447812252d826",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_47.npz": "e811aaa762c9a30f8e5bfcfcf801204227d6f630ec4071128e09bbdbbcf6ff80",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_51.npz": "3611053a4d3df12e0a08dae8c91813f9c0ac22c6f80581cc91149fb4a3de0e7e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_37.npz": "2c23427e5846f28c2068602eb6d9a2f4186ed38787d7b5a9eddc34841b2e7d49",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_14.npz": "c732bc3e29a68a4ff2b97ba0d7802efc38a5c1421ac903a0c21602e41bd7d8a6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_03.npz": "bc6f58b0c79f647a4c8b070a5d60eea4c169c04e5c8fdbeb4ea8fdb1839fa2d1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_25.npz": "8be16f16ede2a1506bda27503a5fa643c4bf113429a492e888102dcbd11b6bfd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_22.npz": "d69f84df977c175f8b328575e03051e6961600090dd432174c5fdfffc2d9af9a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_03.npz": "f0e17fef493d7d25be308ccbe5a7c14ae0b00334cdf76a62dc27d44f9ad3e64a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_37.npz": "1eb7114cad77d923a3cf4cec9dfb7b4102049a6bda6236beda04f2b0541941a8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_00.npz": "c1483c749d102a52fc40563b10f6d750070ecd8fad8e36c281a5a1900897dee0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_11.npz": "64b7134f37e2f54b6214ebef9da73927a37a6f7e289d99f92ac9b40fb6a5d7f9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_25.npz": "4c54115e853d9d58614938f5024b79c1989901d9898cf47cc5824b2e05e2969e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_54.npz": "9083861c29b0d91eed0bf918a84aa937c6176955b15657cd119c83d67b65074b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_28.npz": "07e4d049cf4adb1864ab819b254dd72179f7318d7fdea3e05a9f30c04e93ca42",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_13.npz": "ffd1fc796f57fb532182a9d45fad7d1947cd0135d8dfbb3fa778649ac4350d66",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_10.npz": "2147236bf999d95505faa4583a166d7b7d91b77043513011135cfbadc4334d45",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_58.npz": "5ed7310cfe0c00f08e23d18254d0bda83e3a958f11420c45a926a634ff27f528",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_05.npz": "e0f3f1a33f454b99ad8324f5417a74db6122c299458a0312e58a80727bcde348",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_13.npz": "1078fee249f4af5671785d40a67b3e6eea142028ea38c9913ccb2d802a491e08",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_04.npz": "75128ed64ecf5a24edbe7da271be653bc9dcd232de5cfa66b3fa37d597c83fc9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_28.npz": "4d7dc6b92a0b7a39cb7555d477c805652a702e625a3f3d92e4a8c7467a484cdd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_55.npz": "eaa9929d42700cb3627c8a400022254a1b5efc31f34a146b815f7e16b8d8d2b4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_58.npz": "73beb9055bac3617aa3d17f5d508aa90df314445ed48dc6518d11deffc3a5dbe",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_44.npz": "405c067a8e94fd7a0446bc6fa306901aee92090b2a71e2848449663cbba1908f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_36.npz": "3bd41b129b87087ab437d849ee2cddddcaf9e39eac87e917e5bd03a1e4bfa1f9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_43.npz": "1aa12fecb9ab8783c73df79df6b74153b418b49f3fc398b929567ca452231ccf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_14.npz": "895abc947f4986b9d83ad6ebffd95e395159cc4e4dc170d9f7c189a1ddda1132",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_05.npz": "2bae06c6abd8fe48fbb2a8daa614daee66f9dfcbc5e23e7a63495e0573d2bb59",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_51.npz": "b535813fc6ef5f684dcf490c34328b5a7012733c58f24f4fadf24c5740ea6360",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_53.npz": "1e161ac671de9c17dbd058f5a43387181feeabeb0e55290edd3d90de16c7c4f9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_45.npz": "e0c1bd82e71bd550b732c12b0c9a02ff00faec091434449496397d4f8e7fa94d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_56.npz": "22b4ae76823e94febc55d2741e56b5e9328301cc687f2b191df67f5feb914f08",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_40.npz": "5007b52395b10bfde286973b624cd9af226679fe8c926b1019a11a47cc52b3e1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_15.npz": "95bdcb646b92f6a71b4d05d4487e3a15b8c4905bd18c30c68f6f7309ee1dfcc4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_38.npz": "cc97103e07c3037e18789f0782450bd3d1d2bf427f6c8ac685ef597c4d641c84",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_43.npz": "f6dfe13001da50ef7a2abcf8190de8b044e86d60e2899bbd9eb23180eedab91b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_00.npz": "e4f5962a2632ea5550b545863106979a61d4581c8ad973f334b73d3c2a48fa6c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_45.npz": "ece2a4ec90fcaec55767db65af2413de51bcc879f48b8af94c17150c89a1ec5d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_58.npz": "41a03809f99cf1c00f05ae9501727b40cec41a7b6143148bdb6d0774d198621d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_51.npz": "2f896dc5676dacbc367661efe824a5e7ea11e1342f81ea9b124956552aba3c75",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_52.npz": "0a485641f08e86bfb7b6d39e5501ce96f6feb1c09fdf223a0b198cc9bf235953",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_56.npz": "8933b578af432362ad6b7effb1e9831f959f58aa05d04aa2fc10b97cd4334872",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_41.npz": "19f9beba1af5ad593a336f591b832003e491eee600cbfe9ec2e76d5759447453",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_40.npz": "b28ee43356fe87ec26646d40d26d506b8eea9f1a97dbdde24cd3fea52b5712e8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_57.npz": "70f91051dfdccb3b766f1e542f7c7188b9d8e8bc63d08b6f7c6912430c5f0b55",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_34.npz": "deee9c3bfaca0e6a2719924eb5a9f3a9f858aa55849dae9827c4f0297bb945b8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_38.npz": "29a46afe718bf3cd51662a5afbf4d945254b520122853d56df38c1b4a0a14304",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_29.npz": "ca68556373f7c69eaaa0b4f197c0e8233583bc52dca1438d9bb00ee065d97bad",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_56.npz": "808b50d65a9bf7750015fed200f36669e314f91a5e42101c9eabd970bc2d8daf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_41.npz": "1078e29bb8b930d0d2f0b0aa6a564003495b6ac1a40d131370d57f50db99a04a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_40.npz": "0370deb30b27aa85f34992f7cb1f590b2223dda8e1dda86a0b6c3b64092868cb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_10.npz": "b7f4b35bf2bbc04775e939ca763cf1f7eb3592c47df92476cbafbf81f1d6e741",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_01.npz": "21aaef95f24b6df5e6f6b76017ff559353c898555d2e64a7494c0098308c6a51",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_45.npz": "fb3953b81cdbae764c41450850456cea3da00ffe765414db46dced85be18ac54",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_57.npz": "af4027bb09371dc4095f8f2147ea108d2ceda096ba99ee3e16bfdffb22e95e96",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_12.npz": "83071013e5db57b4c80b7b9c7a76e3897cacb98edad4659a1c07430ef677600d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_56.npz": "7d2ee8d3dbd62b89224fb5512411dbe23a5d3ed00f107b1ab63b05d82d4fa1a6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_29.npz": "2781e1e949a1b32afebce60e56071df16b5897c10f4998370502edb7136a45e2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_44.npz": "37e7662eb2ea0b8a7c537e2a42f1604242e52ba3fbb68ddb144227394a0e1f6d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_40.npz": "c2a5202a08fbfcbeabf2f3346a7749d59df5e057dff82dbcddedf3a896e1d1fe",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_46.npz": "77e2fc29602e588caa8f6771c3d1810c16fa05d387392b30b6f699d6867b89b4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_52.npz": "9656c875ab7b4143a4e3ed20cb52c162399dfbf796524794cd86f65a008bfec2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_41.npz": "67dea5e7d932c6d479f8729eba6c18ecef8cd2ec94faa1b83560605b3d19edb4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_11.npz": "d49be7209e97bdb9c546b907fd49d478b867aeab7e926e82a74e652f2b023edc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_10.npz": "86b3357aacb8aa41a99af1b9e4a61e34a3a0370a15435eb4c62b7380a7748028",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_31.npz": "859bcb42af852e6ac0a03468d2c9401405b83a688eb7e02250467b5bb027e381",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_23.npz": "0b64afff77b79e2a09c50df1e1ea04f197d037a7bd5e1d288a29678db250e1c3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_24.npz": "77b18209c8ac45458555dedd48203bf00de72a4bd0c59f6d1e5ef6c3f46fbc03",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_57.npz": "5524caf8d224bc395cfefe61b3e895966a644c69de20fbbf8b5bdbdd39a63336",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_52.npz": "33e29c64f3fbdfe412af78dd248a06d92d227c885dd48b65e3cb40c2427ff9c0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_41.npz": "f48fe5be53cf25bd638526be1da95763b3890ea9a8332d7e1721256d6e6637a5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_44.npz": "0056e66d71b2691231be6867a32e15ab6121f5b72c405f63b1a39ace620f2ca7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_48.npz": "fb607816ae6aef8c2c34c89ebc6634840b760c23a3b7aef2a07f8e6c819804c0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_16.npz": "f19546e272569b7b1680277e2a7676a5e64b6a0681ac822b215c9dbcf5dbefb2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_54.npz": "81ae578826d40f41809c6bea0e6057727b4d6c037a29f06e342f7b31bf0aa4f6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_57.npz": "40fb71bade40ccde2d5d0c4d97ef681246b460e549fb61fc55cc0472e4188864",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_17.npz": "ac582e4b6ab5e23e840b100ed7873fa67af111aeb37df44d47272da1a8ce30f6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_55.npz": "7cdfcb28f9921fb42ad21e1d83f653ddd59f479c7bcd1ecc9b80564019c1c98e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_26.npz": "08f0907cdaa9ab20c987957090a6d64d2a88e03c33c4b72bb5f63acf0c6d83f1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_24.npz": "57eeb57aeb45db4566d2852181f1e7eca56e6fbc31cfe28d3aa4e9d3b34d0b45",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_33.npz": "ce6447fa886af191c8b7d04db6c8ad1dd29e0fece1bf629758ae5e29c3cb4c18",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_49.npz": "0a2ffed261e6c8434ee5c79f420b54c9d74bb1bea0156ec87288382d8e40dd13",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_32.npz": "104c179b8360898f47a1ce9dd4ca6e56f24550d9d0523d1937b9b5987b86ff06",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_11.npz": "b95fae799072d7d15fdb7975d33038769b355a3ca2f12d6f302f8596ec53af5a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_08.npz": "a5920ea5feeb1a158229c966f97e72a55923edcd30493716f70ad70d0d81df82",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_19.npz": "00ad3bb8dd257b34e2257348055f00660524399bf07cec826a1c403d761d657e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_36.npz": "ec587bcac5e66ed747fd622a3c29cb2f21f8ee3160bb85ad38422407e1cc347d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_18.npz": "86f4f83488a5365c5185e7de270cdfd766d1ba5828150cc1fee743120345d2b6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_33.npz": "adb7ba7b87abc3b69d3808f44cdb328a955f0a35ef6cd4d96288638bb0bf1bdb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_26.npz": "86760272db51197e64fee49a3cceaa96a979381cb210509c121647024c453743",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_48.npz": "0dd7787f1a653b2783972e3e85f927b7163ca3cf115b249c2c2c2fefef2428a4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_53.npz": "5ab7f8416608ca6203d31ee81a81771ca6e56d59f98f5d484097e26e125ffe0b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_11.npz": "70ce073eae0fc00e39697450e00b7dee3ed685c3109587a6be3f8c847e52f83a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_59.npz": "3e24d01877d96111ae9747b88dc402ddda5722b77667b037c4d44019fb38d84f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_36.npz": "dcb060fcc65486ad113fcefe923adb79f201caecd53d3e39af227e06ea7390b4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_15.npz": "9be280c8bce58ba162f8be2db141cba5d2125f3f9123657375679dbc40ae6a20",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_26.npz": "6935b4fbf94d9abe02bf6cf9177ae2e2b22015b26290f5bced0df8e577d40e4f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/13_2.45/reference_SU2.npz": "7c75594fa731cb2974e0b0fa11ac515149d8d560f55232e8d6c51e717e65256a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_12.npz": "508fc222fb8ccea4bea3ce74a721059bb089db053385b242af5f4d9bcd9263c9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_37.npz": "b2ca114472d10da15d249c302c7af8157dc644a41a95258abf21762f02ace319",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_26.npz": "336a44a64418e0abc06eb81c50cc69bafd17adffeee19cc9346cf1445d144d2a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_36.npz": "3cbedd26ad2aac26b5267859a6d0415f855e8abf9062df33d374546678e1b2fc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_15.npz": "4f60268728862528b3eb794f773cf6c3b8b71ee5cec0708e14249f739313bb18",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_22.npz": "5e72fbd86f325a855e6057ebbefa120f359c51ab9c718d8835eb716876466879",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_01.npz": "cc348798a743ada5c83f4658905e2b5e68c8b1bf04df2b2e873b9dde658064c6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_20.npz": "8a28cdef67685a2897b89634bd4890e4945a4480236045a4f3c74b62c269cd33",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_53.npz": "7645119813aa929dd9c5970e061dc75a9547106b27546c46c8f77891624fe65e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_12.npz": "1801081e1906668df85ae9f6069a049a5fade9b37c942927b2b917aacd1dbe3c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_37.npz": "86b09ca4cfa652ceb4ec4c5a5cb84f1fecd03e6a32d6b7f67632bafda76e584f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_36.npz": "46566ededa615d9257e55a1bd70fc9b2baee6d5f8a190ed503dae9779d2c99e8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_22.npz": "323594ebe191ff869352c0066319ee4d71674ddf588ad218b04115a8c47b9afa",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_46.npz": "1e2b7944956d2a7e74ff8b2f2835d2bbf8120bf973821fb8f8d8eb8f5acb0ca2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_25.npz": "3d4506cad5e6a5d2edfe1f941710d655dbd36f4a37cf04423bb85d0d08b10a66",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_02.npz": "ecb57bdc73f4faba67246e31045047fef9769cc7a04dcface390263f589d78c9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_34.npz": "e65a15b011ae002620f0b1c20de750b14895d87f8e7d6038a7688da889034647",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_53.npz": "f11f9b613588e8fbb60449b2215c0066777fc3c1e4fb2ec9747b8f493f682b53",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_15.npz": "b28901eb020098903c06b292d1c88344a3cbecb6b6eb02d4e2787011e648d641",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_08.npz": "f66907fc0832e8b3bc5d42dbf1dc47d005858399da0210cce6c0aaded23db3cf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_19.npz": "147d8926d1867fb7bfeae909a345d5a48184824e5cd1f3e69c482d5284b8208d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_25.npz": "6b7c6bf7948c7d780c87f2f79c57c88b1b122dcaeb4fa7a95d3bf2b860081884",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_37.npz": "3783bcd4db247705f293c5d12c0698f73c77903eb3cf2f74cb0ec49fda3d3814",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_15.npz": "37e41a77e8d7e40c2872e7d28cc67c5156a7d98b3172a20f82ff6f652e45ddbc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_50.npz": "47cec005665a674b88e2f5bf6527ecf634671ed055e360d3a3d33db8aa4c34c6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_37.npz": "3665bd5ad2f162da62f4b4f6cce18b395c885f7d151c341fd9e62da4b22fa7b0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_05.npz": "c53829f859f50e3deda5fb936e00656f7676a745365cf3fe69c800a16126e6a5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_08.npz": "b2425eb0c004e22abc2a0c10895f3eb384748abc55f5cf3077fd2e983c08268c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_19.npz": "2bad62d1fe34dc2ca4de94afb71721fcad775a424c21ca7a6812b184b7acefae",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_28.npz": "e3c7826771838c99119f0da1f68de37f3c3c6891a7b649601bbe252045f5ee74",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_09.npz": "286326b6a488a5925a6f8212d0766662bdd71f33bfb0ff3b259d234040a48c08",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_47.npz": "cf0ddbae2376da1d6fc4fe644de923700c52eaf02a711074f961e692ed6d6e57",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_54.npz": "a2de91f51c5f83d27928c75e0e69f44a7d4d19bbdf685df914b5248eb02e2c66",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_31.npz": "68a6fe372c9f5703da0aaa40d5c2056330727b2206a8d27d614405f43d309fe3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_32.npz": "81c7110f856ee33c849a9fb7025db456f243e6c13dde877d1bc9e4087d536833",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_55.npz": "abb0f980dd609589583ca5854cf8d9c9bd02351f928fe50b390672a90c8536e3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_49.npz": "55207af359c8cb72676f8270c3f0dc6dd40e467f6feeae160b5bca6299eb3dbc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_14.npz": "be47ccd748c2f5b4d4d497b095f77d7dc292dc9a56ac8da39619c39b69ed31c0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_05.npz": "99dd1aeadbd635192eec77a58aeda3c5d0c040bbc503621afa903a7868174bf5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/5_6.01.npz": "46cd18cae4a32cfc0d7c0d09d772d1d09dc89ca7a6423d41027697ec4a5d6f29",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_48.npz": "4123cd5fcd6e6684e463b668ef191b051a5a21d37f8bec63b8ec028ab0ef434d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/13_2.45.npz": "3604c117b9a9f9744d275cb3c6adcd0a94a73a65d11f468046ae3aae644324fe",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_51.npz": "4f85a15255bbcba06259f380aa694d22bfcb75de5f8a55b8e6c2ef3f90523460",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_13.npz": "44022e205d54e2b21235476ffcfce77e637d064b4acfc220a3c1d8992e0ce9ac",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_17.npz": "e2f13b0f0a5c86cb4b8767f6dbb78db2abfd4dd7945c19f8422004466738476d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_55.npz": "f421efb4918144da15a76a2dfd13f93310ee6f4b27e5ff5650c81b66d16d6d4f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_43.npz": "a81499316b2e37b02992b1c85e70a8f24fa7567f686a78dca9ff7177a0bd26cb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_05.npz": "fb2b24aaba3439a3534fce30898aa2bdb1b72302279da6ab8e3413a0dcd2941e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_00.npz": "4e0e7838dc5d48ea3d65931bdbba9a7c7fe5bc98c8cbd7f5e6fa528eabcce2b9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/11_2.88/reference_SU2.npz": "be9225c31ac4dab94f02b25d4a58b48a27803c785601b93c4977153f154c39d0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_51.npz": "381553372e0b3c9dc1f651f83916f86a0fc138a18fac0f35d530631aa5af2a4c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_02.npz": "bc57fdaa013b59f713d50a909e51371f3b1bdf1acf8256d96ae8e7790fedff40",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_43.npz": "f5a17d2563fe645b0430e0d58cef3835d4aa13f2c3e47a095ddab60c4946614a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_58.npz": "98d3365c29fb790b4ab840425a361869d4f67a1e640503305a1982e4317c135d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_54.npz": "94fd85b0db44f25877ec549c036076569fe7fcd41237e392a71d3e042d1735fa",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_05.npz": "64a94cbe2a818a85012e6771e4636724b33edd9635f706c2fc0d30bbc743b781",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_55.npz": "7fce79391cd81c47f65c33e6860188f024044182694dd28902be8f86b0768d07",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_06.npz": "0df2d47f3dc9afca4bad7e1d7dfdaa61c3f55c34ddbb2b89fb8ce1bd9c24fd58",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_20.npz": "6eaa14e404a1300ee54770b6d27f83c86f4defa7290b8eb81796c501b263fa1c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_59.npz": "92a89bad6e65c8587202f2654837bccc4851839bf3822493da04b7c605b27e52",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_54.npz": "b115654147ea74355deedc8fdb41d91bf55cc01011f19ecd5ee18df48aaaecb5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_55.npz": "798debb674f7a38f34e26b4312c337c521bb17efa14f51abe5eb81d5976b2259",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_35.npz": "5e70d9755fd2a78741eb1661df6b436e0106b229fe79210ce815c4546945f445",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_50.npz": "b1bb440b262994be4161e2582c22ca3e97c0d489ab4faef113aa9beb9fbf6b0b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_10.npz": "f7be820a845ae10473234e8f6c542799c5eda5f3a93ef1adeed6229110549386",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_51.npz": "f1e373d13c0cc52447f99f2745ebd184659d0927964919a88a8cb0eeb508bf7b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_30.npz": "ed1bb89d565d2d18f14255e8a4d56d2b69b2ed9c15345164d36a1892dec0e349",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/4_7.34.npz": "f3ee25f4ccef8552530c9216a69b602f00208e31bea181afcac597edd6a52e89",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_09.npz": "637045084da602f8eaa50af4a89a0513e0ce262c73be28ad897db4f7278f27b5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_45.npz": "5fd4841fce9145232fd434ba1f62920ad8d77c43016d01a2c646ed9487f7a742",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_44.npz": "f541d5031a490a8309b9ec2f2ece8d756707ce7ba4b3a2d0aac369adddb6651d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_56.npz": "87a6b5b3df64ca0e0f57a9ab353615680fd9038e8f9bcc5a298c2ec17a7ff824",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_10.npz": "f1c8f44f98979c89ed34758e4a378e92a50cc473d1fd3cf849cac15d4b02b4bc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_34.npz": "a9f37fcb6880fce8100bea206508c29d66bb1e45a91caaf276acc04403081ecc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_14.npz": "c0d14f14d396dace0c6583ffe7ec68594d861ae02af48b7512629ab50c8ad1d6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_24.npz": "0a1979a3a5335a285d861d1e59fdb417d3c2cb3116f37ea58a485ebbe0a125ce",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_41.npz": "7593e0a97279713acd57cff3984d657373075550cd293e5f9c055e25847a9b3d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_10.npz": "31959a4dc6c06f0138173e9699f20fbebe003110631aab21102d3e91606e1df3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_47.npz": "20f5ecf9025dfd55c9e8985585de63112b3fb87bc2054bac4347f54c9f3a36b4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_57.npz": "f70b4edbbf37a6599b17cc6dc028dd8e26446e51ef6218edaa1635887d4dfafd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_24.npz": "2e84b732a7e6d95a581b6e9cf403b1c527370e0013f96a1e1171deff7fc2435f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_38.npz": "720066b845909af83fbe5009f3ff01eb73897abcaec2bb26ed2b92d04e41eb64",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_14.npz": "097ead2f749bfe7c5deb56b156a516a885975b541866c84a2b8d2a4e543ab79d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_00.npz": "4db923b14d35aea7eee9de0b4b67d382e7764fbc04deeaee6daf85428aceb5ea",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_10.npz": "a4b742c6985ca264e41ce8a8267fa869b09a3bbc0f14d6ddeb77d582d5985128",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_06.npz": "10ab1d7ac5b9667257808b4ec2f0babe812551020c0ffda19798e41bab0b50e4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_16.npz": "d1ca5206b5a98a072aa6ce0e11bfdd221f06038d349fb82d3c550c6404cfa886",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_49.npz": "f970c856406f53340a4276e27ca15ce6c27c2c6ab58ca756e2b243ab5a35375b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_34.npz": "9b593058d69a4b9d1b57859424fb9368ae65df6b08729e3f3c0f74a4a74810d0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_24.npz": "b10873be1011097767cce05da8cffe778fcf7aac5ff846ab120e2f4961629d71",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_42.npz": "538724ceeef54392a1ce776df1d4c9d94816d1cba213605bc65b01b55307b052",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_29.npz": "33582e6cb6036803c80ff26a187d71060b94b99913d1ab7aceb767731b714e74",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_48.npz": "998425f517ad2569ae126090f4cc22134735574d14a6319b49904e35d8cc537d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/11_2.88.npz": "b52c2c5aedaac0e9c78ec0baf97b27ace633990757b279b0bbc6ade0437dd544",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_00.npz": "89d37c66775ff83bc20f331f1429bdfb47a5797158ce812b70a46aa788a6cac9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_34.npz": "0806c37e40252a0d9198d686ef4c3aa2fb3cbc7b7458bd947c5fd41f343c26d0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_17.npz": "d0632acce6b41e1c76eb4c1eec9d0134a083c6e6887704900aa5b9f4b6d5b64b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_49.npz": "9bda523699ef33ea56d50b9e89b3aef97f795d213151e79c9ab8a31a1bcc428f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_24.npz": "f4c00316425742f3499ebdf7e88bf756c7642a23d43ef87535522557703ff475",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_27.npz": "576d23e67bd6edeab3068e43ed0a21b093e4fadd18b2bde2f7e1b41c0c601f7b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_21.npz": "26279a3f4e6ac012509e9835e9d9b60ed98bad38f5fef642ac3ac7416b6b2fcc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_18.npz": "864f4aee6c822a3fd6300da1140fea49e282749d7403639b3822ee24e63af3f4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_13.npz": "c8e9350215dad7a3438ff1ffc9abf7cad809d4771d8bd680d880ddb804c2bf14",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_48.npz": "b89d6afffbdcf5303ce66537f6bbd82280512bdcfe0e95998cadb913d5158f12",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_07.npz": "c7c121a87789de618703b4b435af7910f4c76cc33d5c71dcf6084e9614324459",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_33.npz": "007eb549619d1a8b140367bd224a920fde890c073f9e79e7f647639cb99ff31a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_29.npz": "5917d86c738d6d1dfbe6a77d49f89d5ee8a845af15b525a66c9440e07fe9ad1d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_44.npz": "1b67ab036816f26150b7546f5d231b27b44d3b839c267c1460446662e95265d8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_01.npz": "53f482450d3ea228e68005a71a6548c4cda6b8c93097a073cb760eccb0cd1353",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_23.npz": "6b6602ed75dde0e94b2449752794b646f175462fec3339277d070a2ec2c0c7ab",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_49.npz": "de36652ab028ce29406ca2b944ac560a5e6c6c71cd2e39f4cd556af4d109711f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_39.npz": "d18e0b6074552e6e0251ccd4c2207e53c3d676c9b7d7987e9b03ab3f3c46e1d8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_26.npz": "211fdaa42075a53fd1bb167090fc4260ee47fcf98430e53c932f1946de3f3bd5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_46.npz": "7816d2c2aaa16a293284a33261a5d0c1de33e086c6ea43a45113722d22c4a58e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_20.npz": "0ccf80ae3e8e005a8ecf3dafd5f8f5d8914d71aa21a34c44cfdb732a043fbdae",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_48.npz": "d936e4fe1b76a0321c570d0ce03cd55754bc8c3433ebe209b272cc3d61496065",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_12.npz": "6bda0c29d61cfbdf4c0d810cce6df36d27a370c200fd31f698cc2de485d8bb05",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_49.npz": "d1804f79fb54b4decd0711af2fbd5248f3f5a7184acb3e32e2b13090727975ae",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_58.npz": "b4fae861dc195734bd75cd21dce8eae967f1bb7a3357fc171aa7876ffe2a2acb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_01.npz": "c01677225434b08578b918bb8f6dab3e7f9c1bb8e7148a2f3b56c7ba071dd74e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_44.npz": "a6ab20202f44733f677baad56bf640862e44b63efd650dfb9e2c830a4162248e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_17.npz": "d36d679d7e9971ce07e9fbb9dc347a2557cd761932fe93f9b91871ff2fbf8eb9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_36.npz": "5f1882666713136d5c8abb3c107a2445da4cd9b9b0d2bc93b493a1b71ce21861",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_12.npz": "72a10dddaff2729bdf427d562167299fa61cbdb90ee139ec11836bdb81bfdaa9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_48.npz": "8ca59cd6a3250fa4d24015133bb09b6fa8df91f2bfe5f1f2dbac7f93c7a1dd7c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_46.npz": "d21851a9a78104f6420498031fe6b0870b46e43d59c6722a5c20cbb1e5cf5b65",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_20.npz": "407869dae20981f2511c3507cb01444fd41ea3b4125c0c3f3dae354bb27b74bd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_16.npz": "c1cee65718f569cece365fd33189e8ee910db801e94b1ff993b9a9ab8ab217fb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_17.npz": "4ffe9a165edd48fe2c9d5cb3989bbb7457b694b35b1429397f591eb7e53c0308",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_08.npz": "2daecdbd400fa879d54154ee3408d6a4af19c538699012e1ac0aadfa11507ef0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_42.npz": "6f7ac9d6644ea31c8531097c44094e803b8271e05d37261795b9d7491fd1da78",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_15.npz": "b8c256d7e93eddbd986d207bc15ba9149e970075043e643baa9da2759391e24a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_22.npz": "f870a179693297d8db746dfdaaa4974e28da52fa7dbfc1799835c864aa517b49",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_45.npz": "90a6ef6c2bb39276d509d29c050eea38bd609198cd36247d42e4936c94220240",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_20.npz": "cd3a69e08d5e01218448a652ef306de13f81cce64868219abde418e09a197e54",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_59.npz": "ef0fd8df21ac037b572ca6679f3f5cda8367b45a354918002df8819c8ae2f932",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_32.npz": "6218da936374f87d915d01e780edc9e2493c07d14602f98aafc8524a42a7ed4b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_16.npz": "b3305ea8639a4d354e79ffd5589b9aa7129886595baaef980aa131e70495f98a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_38.npz": "fd71dae6581b114e1962d0102c3e002d5fb0d2cb5090a9aba473be129791a2fc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_37.npz": "52b9914a181372e46e738581c445e63508d4569746916062685f946560a39201",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_21.npz": "7ab484453b5f0b76e9c884509def07fb6a4ff2953a43eafd74e539c0682f3aef",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_04.npz": "f6629c7bac997a07d7313ca50cc7217acc365978f5bcb2328c56c9567d2f36e5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_18.npz": "e82517a86bd6fc932a5a0a7c0a0d77872d1cdae5a43240e53efb292b28faa6f1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_25.npz": "d100b26ac09ab1274b8641a766c1f92af1fd153d7174d944016f014e9138e23f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_42.npz": "0dc94526599f18857157bec8786b7e150ff7f9c11ea957ff7c37fc0b55a09b8a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_20.npz": "98358e77238f25344c446f83729aaed2062632af9590153aceac80fbf8e2d170",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_32.npz": "a641db06af6afa9db15c16621f233f1184b340623addc8f44874d516ff6adfa1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_21.npz": "03903fd3179463ae98d83a1e50a847f6f837f696ad73e9057a8ce2d15c116d63",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_39.npz": "50069601f05eb74604a862eee69559761e5c885e91645beef61ff8166b63e311",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_03.npz": "39a9369ad50d645c14ea4ff67cf5d1ad8564d21ca68fba425e50ba11c7eb0033",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_18.npz": "b8d54518d916ec249b1373e916a6863f94a5d813b3730f34a2a5541cc11444a5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/4_7.34/reference_SU2.npz": "15f39facbc69a1510d81f19f89f549abd1611b944f95802cf2869d438d843650",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_57.npz": "a9d1be56766dbb4668c32ec2e06931a1855fa1171a5efee175cf1960ed80dcd2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_02.npz": "ce13678d95339eb67b8a256a6d0e8744f583cf672df5020610f6b34d8b54aa12",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_28.npz": "4eadd881b2944565754300a478afdc452f974239f13c9f084c96225e2e528011",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/7_4.41/reference_SU2.npz": "f80d9005dc297cea91122eb53891b7f53e9cbda76e08243fbb4ec26be926d4ba",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_23.npz": "6849f62ffdcc25b67fc8979226f128f316be341f3fe10ba5009e019178cbf363",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_05.npz": "27c5ec40f204a16cff67a4f5bc40accd6ce0b2028a7e5267af12bcb950531597",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_13.npz": "0eb072131e35fb1de68ae72a4bcff5e76f8d95f23d403d8ac4d38f7c1693f698",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_08.npz": "a5c62cec6b0971599a6a37a313b458dd63218ea65088926ddc8db1ddcbff388a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_19.npz": "3fec7a3c2746b20afeb5c0861b9ec6fcbe566b52312e964139fc012f2423ebbe",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_50.npz": "6d9ad5bf1221c493a22878c5846e665401c8038a91ab41169441b788bda022b8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_55.npz": "4c9aacba8a96e66d75405854bd05d62da70e9e7ccaf4d105bac79cd15dd28222",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_43.npz": "1b4d710fb9b954d8c5b05672960e287d9c34656101fc76819b2c43351f1b0a7b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_33.npz": "e6d2ddd37a61ac9b43dd0d7b51b40c944c59091863f3c3683367436ad6fc448f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_09.npz": "be3bb249cacf6db3438a065215f98e4c846136b4b4046d50705eb41151bca297",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_51.npz": "8da35a64a03150e58f985fff738342ebfb650ad156f23ff6057c55b536feb837",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/8_3.89.npz": "4acf2e2a37a21bc53841905691eaafc870a973dcfce246bf4922e1916f88feb0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_08.npz": "8a7fa8c6b1b43495ad414bc0e3e0fb8249011661f2d3d3457db0dd71122365f8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_19.npz": "1a4564eb41eaac2a743b976f7f0e82af56fa911d14fe6636402f3457626109bb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_35.npz": "960b1d81646381ac852af355f9b96f39db0ae052ab1379dfbde333f17e9a0725",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_26.npz": "96fb59a9eaaeb02435dc0557e67fb7e4a065ac608475f7e20deea95106b0d1f0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_03.npz": "eea73fe777a124e8130c015c3da2ffd288a6fa15528ea4664fa203fd67a8f976",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_13.npz": "2d387b3c217e8af6b164ee229c1b1191c1f5b9bfd110776596c5bfb6301a5633",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_47.npz": "6d742a5bb94f6bcd847673f3858e95ab11e390c29266619f5ce202671c01cb63",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_13.npz": "92aad607ca3f87b685ee520e58880b5b43fdcab1c379e0040f8122b0dcad3151",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_14.npz": "c89a7c953a5dd9291e48a7250b74795dcb1349458578c539cfa440a9f3ede72d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_38.npz": "79f3c35f6129488b798a5d78463e1c06293c160d35307ff4ba379c543565c2b7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_58.npz": "a1c25c3fee69bb161ed716ece75bbd16845cb46ba62a3d52d34aef697dba9d08",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_47.npz": "278b74547bff5f843a31856583cb822de0f2a1132527b9706432031099347a99",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_06.npz": "c340b314fc5d6e166fb77acdd22f7872030014790c89dbfa9601e9df66178a8c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_22.npz": "d25adb982679b3a4c7c2c04ecd53540f8598e7b3447288cfe287bcf6070d92b0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_14.npz": "bcce57c0a70a3080ad30e2d78a5e869f9373950d22c3bdceb07dd7ae5677cecc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_10.npz": "214bc636ebee8725817908980c57df600ac405c8f9d49974f560f10755ad6d8d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_37.npz": "23026b970693655f3c276bdaa5ef2c5d47daea5b9d0dfa4fc69af6f973fee443",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_38.npz": "23906d986613ce160242deaecaebedefccb0114b54ab939583b9655b9b316abe",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_29.npz": "2288847606df188b5d7a108865dd5b5442048b16dee43951a077712a5946809d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_00.npz": "b75fe0663b721ef54b56308560c48e119be8f406348d52032956f2c1d57aad50",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_25.npz": "fafa124fcafc612806b8561188d7b203ba5acf9d07bed2a43ab05da4f30a13ac",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_56.npz": "fc7666597296ec77c3827ee8593dba6c92cac14fb72a0f360b61e311a575a4db",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_02.npz": "3743ba8309267512534780fb626a3e84704e72002af54e6fdcae89fb5359c46a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_40.npz": "2f709e9243ac8302bdee30565c2b325caf23179efa529c0f1782daa0a0254f9f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_30.npz": "aadf6664fd10acea2a75d9c200f0a5eb003bd3018d013b5ee577efc0d07c0346",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_00.npz": "5baf872f33279c7f41ca06c0bae52f974e3f70ed1608bce634169518227f9027",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_45.npz": "be861a43f6b0ea2e6a5b70cde5980705de8e50040c137011179a67039ccaeb7f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_24.npz": "f26e18f73a09ab4bb3485224ab4ef563126619797b6b5f940f62d2a0eb13a538",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_35.npz": "054eda5574258038ea7ed458c116bbd28f6c31fd7c07f5f77f8c95e89819fafd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_09.npz": "b5ad0413f892182cf9c05d23fc56d5f9a02710f25f1d4cf9026f9d805c36fc68",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_38.npz": "a026c53e263f6d3efccbbd6f0ecaf10b8b867dbf68ca09edac4ac330dbaafea3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_29.npz": "2ab005dc38e6ffc3515c9789b945e1974386d209cb9af7b4b66d80e80803c180",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_52.npz": "b579a67bbbf7ea043d3774bddf9294b1021fade8f225cab9e2bbfebecb2bd6d6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_44.npz": "8aee344a30b87072434876cd538dfabdd22044322a4fc6d9bba5d612e624e325",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_41.npz": "36d19b906d4f0cd98cd249b094c51dfde7a829fd2115a5aaf6377117321d4317",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_50.npz": "b745e71f07861e6ce9c91b7890ed431645b2a4d5ec104a834b32436bd45c7f7c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_27.npz": "c17d2fa82cdf0c28c013372f96128028fab8bbea203ef82d739d1524697cbc23",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_38.npz": "169056f7aa03272491bc0d9465e054c40b2bb0cd9f3b2a1727c9ccc4053ac97a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_35.npz": "29e24814fc10bbda0b3ac7ea8fe4d8d36ecea2ee694ba35fa14bf7ce5db54b78",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_29.npz": "611059ca98cb5cfb3b4854ec3165f7639407f15204899125d25e11fec543781d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/3_9.43.npz": "ce76a6cb658881a5789d276336caa51a168c307bc6a8b329770909c2d0f33670",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_28.npz": "0281aec13c3d024c3425f8f5564d2e92edf1c4aac84c6ea6008e6adbd65933cb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_09.npz": "b1baab43501c7f0f58c6ee10ebdd002b66a59cc60926b8026d0bb623e634a34e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_44.npz": "8d511c8c8256cc468cade46696eab7e5f47b1a3c2dd0212bfd1192469af8694e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_49.npz": "79a2a8c51bf26ac218ed32202452c01270035cbe02391b7087ff4278ad51be62",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_05.npz": "195199c9369f9789a3fd84aa4cdd91019ca1fb798bfd5cdb9e14c5f6bfbc8673",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_29.npz": "25bb63c5de3ef1d5ee989e2111309cccb1a83146875366548136fc1182a4cd50",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_33.npz": "1d6cdb778835b15de5f702a5b906b01915d0a36b814ceb071718773ff4684225",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_44.npz": "efa0d35535fe5fa2cf2364af5029ae92e45c406bbf2d3625d0d4cbf436db1070",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_11.npz": "b0968c4fc4506d0d23a1da89dd65de250612e94a8efba70abe84e0db1b9d9fbe",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_42.npz": "5235dec78867b3748a13486c06deaba7f765069ba2d99b2cfee3519bc4d1d37a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_43.npz": "3bcf66743418dfc114f2b850f857c45d1f4d639c49c10880531bf09daf7a472b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/reference_SU2_389.npz": "9a6c3561b7b81c0f371298fed5c1e7ea7546b04418ebd7c0a551ba9234e1dccd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_51.npz": "2cfc09d663b594496a053ea49bc2be89430d4d47ad5ba681ca246839ceba18d3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_44.npz": "ea273d460961d6f841c91596ec586fb21dc4be491d25028bbf37266f7dec1077",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_12.npz": "117cdc6392288e4e7f6492a80fd1f1056676309f85e1a89be49f1036a3799175",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_21.npz": "0872a2436ddc49b477c9c353e2cc7b13c49206256a1daa33254e3aa1b9d0c34e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/12_2.65.npz": "7e04d54b6a0bb88d5362fc96b97cc1ca1280d65fd3a7b3accf00d81bb069edde",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_06.npz": "ebdcc8340f614205642c774da92f3b1f6d50169174bce64654eb72b39ec6c4c6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_07.npz": "81a3a7e410f9124e3a58a4af8abe6f5e182ae773965245267835cb268a2e5770",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_52.npz": "3ca60f41f00a8722d681866ecb46e6fcf4471e4efc799db6f0b351e14fa888dd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_33.npz": "e8fa429424be9d73f89fd2e741af9baa50c2b843d7509bd6a0e6fc34515dd4e3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_20.npz": "be306a56f899f600db8be5984752c1e18d75e3ea92c078ad83e28501c648887e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_01.npz": "e72e51956703744ca51b722e0b94cdbe49e3740a1811155c4c4572a94c602ab8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_27.npz": "62525700e20f6bcc013d7848a5950a24cff5e5e1f1f0b2065b1bc04f581b2c04",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_39.npz": "44da91783a898cc74afcfa35191e5673e705ea45507be5383a0859269f722cc5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_04.npz": "1f25c44b1f5dfec4f67162644bb57ea5bf517a1920b1b42e2a219d4b0bbb7301",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_22.npz": "bf2408d8a9bc911885bd0db9dcd4c767ff9ed37b3a2fd53b5de7c3df9480a13c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_33.npz": "94c2992fb5d89a6c28ee2ce1e64b8a2b3c86da49288e97ae137d6e49a46ffd2d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/14_2.28.npz": "7b54942f396fadcf2bcc36aea85460ab1d004174d00e82dca079f2a6314297eb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_36.npz": "849f90bcf8653532c64ebc56398e3d30033ef201321d420f565a2a8b8d60d22c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_30.npz": "28d0af918f92495f2aa3f5b2c33772df4d7dd2599bdaeea57e57194804df3d8e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_46.npz": "ac264305806a38309902c572218d409a47072b58ddcb3f58993033eba73a8e17",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_23.npz": "b4f12b97785d330b6d42af3ada43c444030bbe7d5f562b901d56144902d813e1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_53.npz": "f22e95ae0b16035fda6e861ea23998fa2ac599dc338cade5f599f0c348a199fe",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_10.npz": "4e80b24ba0f57bf04c9b38ed7688be5f9f2644dd1db4109b3883814a43337de2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_25.npz": "03515728aefe256513bbd05ea6ab027118bba519324c9dc14767aa613d4d49d1",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_27.npz": "a49217a57797e6d95be640125bdf146e7d2babab112bad82b37a03150e75c563",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_15.npz": "ab6255c6822903b522986ea8d3999d27af68d3d419ddd96ba1a2aa139bdfc290",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_16.npz": "0789449348706d1075f8a6ad410e3fd9e9aedd12aabd934190d8791dda6b89c8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_23.npz": "be1506835c1c8459fed14c14e784315bf57959936d7cae815f8c2934c9faf0b2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_11.npz": "f891e4111a458b695e296b5ce22e8b17ae6f7410bd7da766ff8f2fc0051ad42c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_08.npz": "2070feccbbd50f2ed006a09b3e6b8ed17402fc2d3bea7d4c3730dcb06bd06c95",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_19.npz": "f599d30b41ce252f59cbf4971a2e63d010ef64fe491da600163f93411a60e135",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_22.npz": "7b2f5926a4d62a07c253e9ceb2463261ddcabbdf1455eba9ecda2d097a9d2bd6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_42.npz": "0d6174834eb1472c579dd1f15d834888fe13e9e8b65f73ab9d73bea1a248db7d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_24.npz": "2249b251e23c541e53943b10e4089beb53bfc3c3d92cf1352543cd68e098c6e5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/6_5.09/reference_SU2.npz": "e64f36a769fce39ea613de65c68c76a6cbcdea152519f9f75c6d36a6ae621943",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_28.npz": "3008c8370a75bdfed7372cf254d02056efe02fb6bfab4a0bb915165584256a52",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_22.npz": "c74da5fe78457c94af8ff5030f6aeb5d9dac39386426ccd08a493e4756b529eb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_32.npz": "92bf8d32e00b2a638d938f72b9125d0c2a8b5e1c0ba049d6398b2b0dd3104d49",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_21.npz": "b50cd950898d761fc875b3d1747de40f113adc9996d85c011c66b0feb55ab2bb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_25.npz": "5626ba50123dc56b628b84805133ed5ac6dc3bcb786d665271a0d04e7537e4fa",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_08.npz": "f15d0b2b7a5065949b34d57ff5b74d0e2c88db3e2da5566dd7ba1e3562d31725",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_19.npz": "b89deee65e0800668f3434134b44c8f771455760c25226525aedc53b7f6da70b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_16.npz": "ad632c14e1396d01f948ef2a5bc4d9eb459aa3ac8387ab2eba408bc3aa3df700",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_18.npz": "badafa9c8ab199ea85f711e7c024a9cba656e0df4c72f2555663b2fa38088730",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_42.npz": "ffa551cc8398c9ad16aac02601c9f68d86ca62189277d041fd23a9ebc749e929",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_03.npz": "2ed07278202dbe591956a37eeaa2a7e37ef2ca0c65e1cf52a564d262a958e435",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_25.npz": "bf4b2e16571bd2354850dcf4e307aa59d5e05be3760810a8731bd1a7614fa075",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_04.npz": "bd05e4145562e2dd608dc4915ba16762ae2e09df8394bc31be1523161922e346",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_19.npz": "8021c25596dc21477a863f29b1a68ccfef66e9e5e44a71b4a70f23c9675e0495",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_39.npz": "0ab7a81f67c192d09142c83321da889f8e095610468c033d44b9f2392cc66b3c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_21.npz": "779fb38869480ba67f0ba930c14b709a47272d31aa7ded6d3cacfa1ae756a098",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/5_6.01/reference_SU2.npz": "d9e047d851ff2c69c17157c1bfe281240e36f6ccf79123f53cb59077a4241b99",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_43.npz": "9d49b703b87d26217402c385b2b2a7c32fe7747aeaaf5027e6137c0593053e16",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_18.npz": "e88942fec2a73b9293e2b0fc8bd3db219bbebdc83d7675c7764d574a7a256dc4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_53.npz": "2f7eb8dbaa56d1448b184b4a1db150db89b7942058c3e5d4663deee5c81f741e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_07.npz": "5e6b4627d64b87c1ce63eb518dc443a2c624b2b05f75bbc93b8cc097378ea311",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_19.npz": "cd254d4a28259722f0c046576b285c17a4109895a0845960f4c1e963a05322dc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_04.npz": "b0c6159ba0a71dea0c5d43a0f30bc9423e42150e2957c387c1d59ea042a092ec",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_28.npz": "d7b73b55912fcc57cf3933609f11d0b8eeeaef897f337bc79f81adfe47a2030b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_01.npz": "36045be2c09289f9320967831a2eec4e61874b242811eb90cc8e167cee113685",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_54.npz": "c9f72165ee8bcf8fcb051f64c3a4b1c20177cbe25f1c707fb9abbd076537346e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_39.npz": "4ee96d6cf8eae5967df27bbe4ef93be24ca064f6df810dc538f3baf16b4198f0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_55.npz": "a17ad2f2b46637e923a1c2bb4e247a9eb4e2992702df7b699bd8c6a89fab5bb9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_28.npz": "6c834816e0f11738aae1469a860d407c0be24e3ac64739845be87fb6400e9a62",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_12.npz": "e40507b31eeb8907020d584846e9becad8e3d52ef768b1350f0039764fb061d4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_46.npz": "97646b86cd5bc61a75a8c08cd277597105effbf8b86c8781e894e315b057cf8a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_39.npz": "d123c6df0c02f817834100b3a3758590330505f958be865e58562d0fb28046cd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_02.npz": "e9d6fc8e63cc4603635067528e247ea658ffb1b3be26b5f838bf19855fca1050",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_43.npz": "4f4db3501207edbdd0bc46b57e671b90ab3b20309db083ccece2f3a6d5191252",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_51.npz": "c90ecdd96c7ef24a6b6011a32ca393d6a1c8e986aad884fd165ea72901d7124d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_14.npz": "46e92033e910755982a1cc461eed0df4e9b1898b574ab8abcae186bf1ea9e474",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_02.npz": "d142d0a412484227fd073cfeb38c83d0ac6ffe135c14c0c078b85d1e2e8cd76f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_43.npz": "44c962b8faf355e7a5d3d1ed384dabbab9be5417fbf67633d85a3a7675356918",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_50.npz": "43d2e6d2f88312b3b46f153acbd80580a15d7be2606df1770c4fa65cb1a08444",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_03.npz": "28e3c8ec0b6eb764031918bab3ded6ebf987e2227293647bdaf6ee6c36a4afe9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_38.npz": "5dd8ee710ab860c982becc8e9d837ef1f4793ffdc7f555711470ca836b6f3e89",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_50.npz": "68a9a9436287e078ca623c23d281e3ca271ee1d98152770900580b2dca9b81d9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_00.npz": "ccd457d5bd4a8ab3f4d8d71012a48c853d77baf7267d92440efdc6a13a22f242",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_09.npz": "fe3725d22d63dba9fe994829e3886b2b908bf1c7ea7ec6d8f8ca492bd6686734",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_47.npz": "8d274721111990f3409177336c5846bdcdc305a71b3dc6cb76ccd59f5052a861",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_32.npz": "6b935976e4a3b5b719bff163db55e529b449d7deef83b241e97092732fe8f61f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_09.npz": "680bd359cc0589917357f7f18b8adfbc7cb9c5b1655fb6f6945e795f6cb65fd4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_29.npz": "11d2825edec9bc216c3ecc9f6b81e90d95664eefe2c715300a0bcf6399ae8f96",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_54.npz": "1c9c64192c785114309faaf32d97f261a13294b9843e5cd83897bb884741822a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_03.npz": "334b6446038f4808108437567aab9026ac41ad51c35f58bb9bf07d4949394724",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_34.npz": "92b3417976fb62bda1ef3d0bb323c95c49be5bb471bccd61c22cae22031da64a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/3_9.43/reference_SU2.npz": "b59f612377a9b6b0e5c3db086d2a6245ccdbe4b823e013b600f5392f5dc2d479",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_56.npz": "6a9e4a6a7163035e5ae1c7b4c553f66107363252faf785ed15eab75edbfc0303",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_24.npz": "0fa4ec49117814d35d2cb26c0384c42db54f1b1b385e10418a830bdc228b4a3c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_40.npz": "083423458be2c019eec4e9c962e548ba2297a58ea857113c1a4ccc825f2218bc",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_54.npz": "98fedd26599be2c2e963bbf8a3d671eae88c7fe8ce3e9e948cd5378c5f26c5cf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_44.npz": "30323dea0e527ed403472a990d4439f6eff99446dc4de86c3c0a4ca87f3f320e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_52.npz": "1b4eeca9f406feec87c338a564ba4c83b7092a85800ca4f49a6fee3e5950fc28",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_06.npz": "117646bd5c0b9c9f9e7d89e9db7f234963161bf18f43d7d7c18ff092187e6f63",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_41.npz": "3d491dce62744bbfb7da1430a9abee4a6022890f35627e025826a6a808766753",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_35.npz": "36fdcd450390e8126d8663aec9854a6f8403309db84293b0b5a7c8e8a2371e10",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_30.npz": "86a5e4fabdb68eebe862f5724ad4bf8c719d79e41e68ac2bd652f82191f8f1dd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_01.npz": "15885d2ad7022143cf8d3123b3c2d4dcb15a902be40e7ec6ea480530cbf02c19",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_57.npz": "189106763c0a979edd05b9746f92246216df822b641bf31eb1461bb44139fe60",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_31.npz": "fbb27c8102b95742b392b49e0ea4941526ee85463295f2e0bab72bfeb27d4260",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_49.npz": "acf0f2c214718aafbe73721342f15c9bb25cddd4306bd9e01036f3495647323e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_12.npz": "7fbb17991d76871e1675b0973bb16b25c2b5e99525131896d8b2300df44cd0e5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_46.npz": "54e64e9c83b2aa2749f85929ec651fd605c19785babcd9b53098764fd39fd432",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_48.npz": "5ac1dd135ed2be32099deb85d4bd130e56783c014e7499654e0d91b7a4da70f2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_30.npz": "cc7d067e19ec5a359c35e6eee61700e8cee3fc9b2f62004bf8c00bd30bdde14c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_35.npz": "f186d4a7440a4569d5ed9de0f8840d59bc608a8fc4c01d25ea14456a45095da7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_01.npz": "bff59f5b15e49e17f65ed985d47e9fd7f0c8832f4a61db3ed1d898c33d323760",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_17.npz": "089c9b6c4554beb8e8c7110b845b3b25ea7faeff8f7f40637f640efaf4dee34f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_46.npz": "7703989c9e3ca638cc83034cbcaffbffc8380b8df431fc9248880af3b41ed131",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_11.npz": "ebeb68c71ba1c509424183f6d9843c86da307e7da6e28857f003524e4c17d219",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_16.npz": "cf0a999d9f22e36ea7bb583bde772a7dea700eda4d4e03d94fb22cd767dbb99f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_34.npz": "4d9e344b789415b351cea407bab1279debcb1d118bc44f209ba95da232d5236d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_47.npz": "7135193b93dee3e9bebabdb39833fd5e85b36bdf492e75b0a0e91c671a14cf1c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_01.npz": "78fd789988adc8ac010fa113d06cd115261b5832a4e890ea3d08480c6ceb8caf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_14.npz": "20b145d9711d0e2f2e1c44a4598eeac63986790e8b987847086713571ba16ca7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_42.npz": "dcb45d2a5a9b594dadc610568de30963a1b24059a35b48900f8ec8f4b6f5d003",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_12.npz": "90d1c0744086d45a87758131cf4f5e8d9bddba4f7949d6e351cb1da905cdd0ee",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_20.npz": "a01da22d1d9ee35751d9646377e60bcbe90edd0dbdfc13239bb266aa28b6446a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_46.npz": "62135fab895111a5e1c693b2b78e450e7ecb5af5337b93a23214d51a8ebf587c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/10_3.15/point_59.npz": "f99f9e38c225091d8bb739a9f58458af6a91856db92c1e057c543569755056d6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_01.npz": "9413463114bc692b5de7197ed6e1840f87fc37fa94cb62959597454d245829c0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/9_3.48.npz": "ed6ce7c09289cd2518756f97e4b029481a486eea856e9d725e8f8295b9d10c17",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_16.npz": "f4fdacc24a749bd7ca436473e87fca660e26aff4684414d70e286233a212ef2f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_32.npz": "7536f6766c0273312e9f950fc62a167beff66f1fe61831d46dd245d4a8ccbcc4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_21.npz": "63f3a3f44a385c47a07ccd0a2284381c22728b5dbe346fb7076f4f52329f06a7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_12.npz": "87093112344381b99a2a19bc40066be9a5d276b8cddde968a266da9064321509",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/9_3.48/point_18.npz": "4c53b31b8d09e6971d2261074eb21d27102e876b9fa0927e5d970d603c007540",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_46.npz": "b9019d9b8f93e914ac40ff2a92f636841afd4400fa57ec926bd79d3190ae4716",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_42.npz": "efeaeccc2d2a11a75324140ebd4127288f4ca2afa05aab0b5a039fc36b7840a5",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_52.npz": "7bc91af219ecba806e6d67c3cdef6174aab049875eaf4c06eeba5c46fff2786c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_00.npz": "3c9b33386a7eb4fb22328be1fb730fedacedc272d1ae9e823fc178e8dc443dcb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_31.npz": "df6c792a4067a60daf6817dd91793df92ee99e3c7b3f7356d43cb4c01deae87b",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_16.npz": "afe5ec6504f0afd0777c4c0c1eb9d4b2f1eb4784306a4761992864419d8ce5c2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_36.npz": "ee51c477f06a33d9107bb88415cb6e071773fa792651c0633c2df708b9e603b3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_32.npz": "24fa0c0f787a3a8d5e2cf5e543370a344ddf73e2ba5e0f0eb3a8291f9d3ddb4e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_40.npz": "03dcbe442fcdc4123398db5d940c61e4946de6adff4cefa28b7eb0770190c9ec",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_56.npz": "758dd7e98b8be8e45960182d4592198327f3dc3f8160fabd7a412fc6950bc22a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_21.npz": "33211d3157d66244b2bf51fe79f187c52423331b3aea89a6c389e226bfe0fd98",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_models_20261020/m/snse2_m/inputs/6_5.09.npz": "dca7ca4b5597a31d1b6989c2cbcd091a501296eea614e9098068ba17fdfc0cb9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_27.npz": "342e0fe0fb9f9884f7d24945b07505888a6c34b2bd6c58f1a66fc9a742f6c949",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_07.npz": "b447ee70da5782d4cc90765f164282a38d26783b92267a906d54dfddd64ca8b2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_18.npz": "67443728266caeee42e8f10cfb1cd70ac28519b3952fed870ced06a5b16edffb",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_48.npz": "a5742e20dc08f92382626df538057949977547e58a6bcc542d0ca7970937bd64",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_42.npz": "5dbfaefd07c33e27592d7e707d49208e2cf5f7f656c552f5c6e7b7a633695d43",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_53.npz": "d61b9198c573bdbe675908fd172c553b7a43bbb018d1bb72a6f52a116ad6f92c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/9_3.48/reference_SU2.npz": "89cfa666d60a9e4dc9ad7d54553878ba461307cc09a549759abc170c18d285b4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_29.npz": "7b5cf798ad7d192c9bf9bc015ac29a1e111d40df01503f1dc145e93f7bd25ef8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_16.npz": "d38d2f93f2911340fc4b41fc12a311480cfd19e0aab72da5a85dc43f39180944",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/4_7.34/point_17.npz": "502d0542b4a46238f82c7601dc5f651c348d6b4670099fb9df760d363689406f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/5_6.01/point_23.npz": "6866fc9e37b8c84b019dde9a6176fd0936f44f9f7beb183d0fc630c18a28084c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_52.npz": "1ef7c0386cba54e95de4acdda3689a7fd240f365c5cfc9fb958a833dcf2a862f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_31.npz": "3354d0306e4de1253684ad9362cf8d2ae2e5347299f0765b7e001d7d3329cb8e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_08.npz": "bcc5768907d2b0732ae91d644c3bd9e38cfa014c1621f641e026eb5ef710564f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_32.npz": "5c5fb1f2e3956f0208188c3493afad0291bd23f3fba841bdd62d1f4b0d41cca8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_41.npz": "7be5811667922d229a6f6ffb1be18f0c9096c42b26a92c83d8e52b1ec11c3791",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/6_5.09/point_19.npz": "db13215561bc424d7bf905850acf88d3c90b0aec9eb584598f9675ba2b1ccbf6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_42.npz": "70726d15d84f2b758969720a7297723ee45e65ff4a7f46ca34b3ef8b053b0e23",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_21.npz": "7641cc135adbd6e9fa7697c57bc91537b17133314947eafde2eeabf528439cc0",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_15.npz": "99a21eb357befed53bb4579274ccb325fd7558f649b901e673f0067a861bd72f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/7_4.41/point_07.npz": "8854d67f8e8197d9705dec44aa425f58ce7df384cdfd1619a5058ea33022e9e9",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/12_2.65/point_39.npz": "21a5948b4b4d22c7885e01964eabf2baeb9a4b444557e40a3601bddec5686bbf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/14_2.28/point_18.npz": "7f2b14e5f6aceb694e4052c01c4a1a164d59a0a9ba9f5c56304f4f4d0f65d9e6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/11_2.88/point_27.npz": "ef3c56d08ba58353777496616509acb77492739bee41a6f1e445774dbf1a99b6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_joint_gap_overlap_20261020/m/snse2_m/sparse_waves/12_2.65/reference_SU2.npz": "035ec8f5c2e3facfbbc2a50e70b67da0ff3db0cbf39ce402d46effbd6c4aa3ef",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/13_2.45/point_37.npz": "64ad518242f97f85acbb182fdaf8dd67af2ac3be34e6ed3d35561f125a30dbfd",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_32.npz": "8637e3b0d6f76b69c943fec0f94935e597b12b6af585f901f3d4425a89c35523",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/3_9.43/point_44.npz": "9a26dfa72a34dd5101ba9c4d2a9329acb0b0031b30876b12e2a7efeebf5689fe",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/waves/snse2_m/8_3.89/point_21.npz": "afbb75e075bcc33beb9879a314ca47eb930bd35ac79af096b6700e94334d2dd7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/fit_constant.py": "43418e74cd85b15b59077a5f0be2875cea1343c2fc1d59afc4e7441eaf9d4cb3",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/constraints.py": "872030eef8f1290234e635149b9d6a17e5bac56c29c5d2b19b40f0bb243fdb8f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_spinfree_symmetry_fit_20261021/fit_spinfree.py": "7ba7a04a0cf4d80234def58e77d925a16fe5d15346f010d11b98ffa78a47189f",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_spinfree_symmetry_fit_20261021/kernel.py": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/physical.py": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_dense_smooth_20261021/fit_dense.py": "896c6edf2c8d1c8db5c7726d46972d519add443148e9fb8694a9baaccfadfdbb"
+  },
+  "source_commit": "e857d8bf9ba04e3dae8fdf093da7b34642e54469",
+  "constant_mass": true,
+  "constant_mass_coefficients_eV_A2": [
+    5.25749723352842,
+    13.781338410248354
+  ],
+  "effective_masses_in_electron_mass": [
+    0.7246760096910025,
+    0.27645951378144845
+  ],
+  "independent_global_variables": [
+    0.525749723352842,
+    1.3781338410248354,
+    1.9795759685427203,
+    0.9775908339184014,
+    1.0448026812758193,
+    -0.47086870631514616,
+    -0.2290426143085959,
+    -0.1695368456023017,
+    0.7099874801326994,
+    -0.2305043609736779,
+    -0.00044631042195085864,
+    0.7536128104073418,
+    -0.5375972209153449,
+    -0.12790374665859325,
+    1.5078623170406669,
+    0.04190748844381535,
+    -0.27085499436869026,
+    1.5151743836803535,
+    -0.6785677750428634,
+    0.6584532394608769,
+    1.9182983816091612,
+    1.7994968476673767,
+    0.5922908615946574
+  ],
+  "mass_constraint": "both A_parallel and A_perp fitted as material-specific constants across all twelve angles; each mass has one independent control; no externally selected numerical mass",
+  "final_gradient_checks": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 9.19972145400953e-09,
+      "cost_relative": 2.5570179681966287e-08
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 7.751218253385973e-08,
+      "cost_relative": 7.323966950967264e-08
+    }
+  ],
+  "baseline_path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_spinfree_symmetry_fit_20261021/snse2_m_9p/RESULT.json",
+  "baseline_summary": {
+    "energy_RMS_meV": 2.539324717357356,
+    "energy_window_relative_RMS": 0.008571514542934644,
+    "gap_relative_RMS": [
+      0.02004450595445369,
+      0.04112051858392726
+    ],
+    "spinful_edge_gap_RMS_meV": [
+      1.9054900091664093,
+      3.6167886949816435
+    ],
+    "worst_pair_probability": 0.6690105696453543,
+    "worst_group_probability": 0.6690105696453543,
+    "worst_principal_probability": 0.6415347200246926,
+    "Q_change_max_meV": 1.7101623659944583,
+    "unresolved_boundaries": 0,
+    "passing_angles": 8
+  },
+  "initialization": "seed_angle_mean"
+}

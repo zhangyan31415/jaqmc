@@ -1,0 +1,20 @@
+[
+  {
+    "Q": 37,
+    "absolute_first3_change_meV": null,
+    "centered_first3_change_meV": null,
+    "lowest_eigenvalue": -0.022543120642672186
+  },
+  {
+    "Q": 61,
+    "absolute_first3_change_meV": 0.00894049001178357,
+    "centered_first3_change_meV": 0.00880811652074348,
+    "lowest_eigenvalue": -0.022543253016163223
+  },
+  {
+    "Q": 91,
+    "absolute_first3_change_meV": 4.4208097252362855e-05,
+    "centered_first3_change_meV": 4.3924510077786305e-05,
+    "lowest_eigenvalue": -0.0225432532997504
+  }
+]

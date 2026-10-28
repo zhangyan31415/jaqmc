@@ -1,0 +1,126 @@
+{
+  "status": "VERIFIED_DISTINCT_TARGET_PILOTS",
+  "checks": [
+    {
+      "folder": "AB_CBM_3.89_scalar3_warm",
+      "independent_rows": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50
+      ],
+      "saved_energy_error_eV": 5.967448757360216e-16,
+      "saved_raw_pair_P_error": 4.440892098500626e-16,
+      "spinless_TR_relative": 2.282085297431141e-16,
+      "independent_realspace_Fourier_max_error_eV": 9.185837023029762e-18,
+      "lowest_two_native_pairs_combined_rank4_P_at_K": 0.9776071319579283,
+      "model_Q37_to61_all60_max_change_meV": null,
+      "positive_Laplacian_coefficient_eVA2": 11.732352819800662
+    },
+    {
+      "folder": "AB_CBM_3.89_scalar7",
+      "independent_rows": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50
+      ],
+      "saved_energy_error_eV": 4.3021142204224816e-16,
+      "saved_raw_pair_P_error": 4.440892098500626e-16,
+      "spinless_TR_relative": 2.0036773195333394e-16,
+      "independent_realspace_Fourier_max_error_eV": 1.0115089139279588e-17,
+      "lowest_two_native_pairs_combined_rank4_P_at_K": 0.9707767143842672,
+      "model_Q37_to61_all60_max_change_meV": null,
+      "positive_Laplacian_coefficient_eVA2": 11.731953034923029
+    },
+    {
+      "folder": "AB_CBM_3.89_scalar3_source_origin",
+      "independent_rows": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50
+      ],
+      "saved_energy_error_eV": 5.967448757360216e-16,
+      "saved_raw_pair_P_error": 4.440892098500626e-16,
+      "spinless_TR_relative": 2.352319681692239e-16,
+      "independent_realspace_Fourier_max_error_eV": 1.0111901887245e-17,
+      "lowest_two_native_pairs_combined_rank4_P_at_K": 0.9776075580734991,
+      "model_Q37_to61_all60_max_change_meV": null,
+      "positive_Laplacian_coefficient_eVA2": 11.732352821051267
+    },
+    {
+      "folder": "AB_CBM_3.89_scalar5_source_origin",
+      "independent_rows": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50
+      ],
+      "saved_energy_error_eV": 1.3921155894713877e-16,
+      "saved_raw_pair_P_error": 4.440892098500626e-16,
+      "spinless_TR_relative": 2.160122749445082e-16,
+      "independent_realspace_Fourier_max_error_eV": 9.582855285285906e-18,
+      "lowest_two_native_pairs_combined_rank4_P_at_K": 0.9776173836773525,
+      "model_Q37_to61_all60_max_change_meV": 1.922163817003053e-08,
+      "positive_Laplacian_coefficient_eVA2": 11.73151286388733
+    },
+    {
+      "folder": "AB_CBM_3.89_scalar4_ablation",
+      "independent_rows": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50
+      ],
+      "saved_energy_error_eV": 2.220446049250313e-16,
+      "saved_raw_pair_P_error": 4.440892098500626e-16,
+      "spinless_TR_relative": 2.1601227494476514e-16,
+      "independent_realspace_Fourier_max_error_eV": 9.140795285775096e-18,
+      "lowest_two_native_pairs_combined_rank4_P_at_K": 0.9776173837342305,
+      "model_Q37_to61_all60_max_change_meV": null,
+      "positive_Laplacian_coefficient_eVA2": 11.73151286388733
+    },
+    {
+      "folder": "AB_CBM_3.89_scalar3_anisotropic_ablation",
+      "independent_rows": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50
+      ],
+      "saved_energy_error_eV": 2.220446049250313e-16,
+      "saved_raw_pair_P_error": 3.3306690738754696e-16,
+      "spinless_TR_relative": 2.1601227496125792e-16,
+      "independent_realspace_Fourier_max_error_eV": 8.848046324741094e-18,
+      "lowest_two_native_pairs_combined_rank4_P_at_K": 0.9776174751524164,
+      "model_Q37_to61_all60_max_change_meV": 1.9221624292242723e-08,
+      "positive_Laplacian_coefficient_eVA2": 11.73151286388733
+    }
+  ],
+  "source_gauge_C_equal_rawC_times_source_phase_max": 0.0,
+  "source_gauge_L_equal_rawL_times_source_phase_max": 0.0,
+  "hashes": {
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/audit_alternatives.py": "40482eaf2c92e9afbf44f9301e07cb22a2884c4b5e2e62a99cea43b06a3a4431",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/composite_channels.py": "2af9b18abcee3b60a75b7f7b76caaf7d80a02c3fcc094e2943639767419882e8",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/cbm_ab_scalar_pilot.py": "f918b87bd90dc7ea4e18d194ce5f74cd360efedb1ac13defa801d636e9a31256",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/cbm_ab_scalar_seven.py": "9a6b2cca8edebc1602c86a3e47c16dc42280eb25df4fa00d6da6c4459aa0901a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/cbm_ab_scalar_warmstart.py": "75194d264ccf5d08e92cb4d10982ab388b5a7eed7ff2aa5221daa7c7cfc69f22",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/cbm_ab_source_origin.py": "16867c8c571ae08bb7b8475bdae070c9d92bb1aa23ddf98cef63ba29aa977b05",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/cbm_ab_scalar_five.py": "759bdee7f5e634515d6878cb0f64f59cae738328433d041490cfe8e11ea8be15",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/alternative_targets/cbm_ab_scalar_ablation.py": "7205038769ad155730fc44b9a2a7747322c5f34345930327cd9c4aa9c165412b"
+  },
+  "scope": "These are AB conduction models at3.89 only, not AB valence repairs or all-angle fits. Rank4 combined P is separately named, never substituted for individual raw pair P."
+}

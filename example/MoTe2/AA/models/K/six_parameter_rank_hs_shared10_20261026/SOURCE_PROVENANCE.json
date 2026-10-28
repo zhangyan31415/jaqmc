@@ -1,0 +1,33 @@
+{
+  "packaged_date": "2026-10-29",
+  "source_repository": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "current_source_commit": "e857d8bf9ba04e3dae8fdf093da7b34642e54469",
+  "fit_source_commit": "e857d8bf9ba04e3dae8fdf093da7b34642e54469",
+  "source_files": [
+    {
+      "path": "mote2_top3_overlap_hs_20261026/models/rank_hs/shared_V1_phi_w1/FUNCTION.json",
+      "sha256": "efd4be14bd24a63e092927e64a62ca7bc9a8693410f5673111658240faec08bb"
+    },
+    {
+      "path": "mote2_top3_overlap_hs_20261026/models/rank_hs/shared_V1_phi_w1/angle_parameters.py",
+      "sha256": "0b456fa4036398335062369307ed6730aaf5ba06b65bfeeede2db3e0903186ea"
+    },
+    {
+      "path": "mote2_top3_overlap_hs_20261026/models/rank_hs/shared_V1_phi_w1/10_3.15/model.py",
+      "sha256": "e160be3307807d73328a94b4b1ed83bffe6ac4b6ef6b5e1f7c7ff972de911368"
+    }
+  ],
+  "verification": {
+    "hostname": "gpuh203",
+    "cwd": "/data/work/tmp/zy/codex/upload_k_latest/20261029",
+    "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+    "process_thread_layout": "one process;4 BLAS/OpenMP threads; sequential packages",
+    "exact_command": [
+      "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+      "-I",
+      "/data/work/zy/software/research-lab/10_nqs/external/jaqmc/example/MoTe2/AA/models/K/six_parameter_rank_hs_shared10_20261026/verify.py"
+    ],
+    "final_process_state": "Exited successfully (exit0); expected spectra and artifacts inspected"
+  },
+  "note": "Source campaigns include untracked research artifacts; per-file SHA256 identifies exact numerical payloads. No refit or HF calculation was performed for this upload."
+}

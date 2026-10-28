@@ -1,0 +1,315 @@
+{
+  "physical_parameters": 5,
+  "global_coefficients": 13,
+  "source_state_action_seed": [
+    [
+      5.80623355967338,
+      5.80623355967338,
+      5.80623355967338
+    ],
+    [
+      0.003043605085679484,
+      -0.0007380530477215913,
+      -0.0012149756973656523
+    ],
+    [
+      -0.003064363080666872,
+      -0.010505405416989657,
+      -0.008643002297838983
+    ],
+    [
+      0.002531968820473422,
+      -0.00010395519302576111,
+      -0.002335705469410525
+    ],
+    [
+      -7.480084606823868e-05,
+      0.000458128714291933,
+      -0.0009003256904482393
+    ]
+  ],
+  "seed_info": {
+    "converged": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  },
+  "capacity_threshold": 0.98,
+  "per_angle": [
+    {
+      "case": "14_2.28",
+      "origin_cell_fraction": [
+        0.0012798697828784178,
+        0.0015054769865731066
+      ],
+      "principal_capture_min": [
+        0.9995558184435437,
+        0.9975277429379095,
+        0.9980116337727839
+      ],
+      "active_bands": [
+        true,
+        true,
+        true
+      ],
+      "energy_weights": [
+        0.6666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "origin_cell_fraction": [
+        0.0013368149254350259,
+        0.000996277788717248
+      ],
+      "principal_capture_min": [
+        0.9994792855385364,
+        0.9975000944101308,
+        0.9976380871524382
+      ],
+      "active_bands": [
+        true,
+        true,
+        true
+      ],
+      "energy_weights": [
+        0.6666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "origin_cell_fraction": [
+        0.0015216638784937286,
+        0.0009884360381136048
+      ],
+      "principal_capture_min": [
+        0.9993761902040693,
+        0.9964204969823118,
+        0.9972333462652893
+      ],
+      "active_bands": [
+        true,
+        true,
+        true
+      ],
+      "energy_weights": [
+        0.6666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "origin_cell_fraction": [
+        0.0014040120296680003,
+        0.0004686656728561944
+      ],
+      "principal_capture_min": [
+        0.9992373168876998,
+        0.996431154032616,
+        0.996613564463517
+      ],
+      "active_bands": [
+        true,
+        true,
+        true
+      ],
+      "energy_weights": [
+        0.6666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "origin_cell_fraction": [
+        0.0012176874545462013,
+        0.00017626496669087555
+      ],
+      "principal_capture_min": [
+        0.9990378492587961,
+        0.9958408360251354,
+        0.995905971597536
+      ],
+      "active_bands": [
+        true,
+        true,
+        true
+      ],
+      "energy_weights": [
+        0.6666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "origin_cell_fraction": [
+        0.0010435894394545953,
+        7.230476837938316e-05
+      ],
+      "principal_capture_min": [
+        0.998753049441147,
+        0.9952507752294009,
+        0.9950430968885738
+      ],
+      "active_bands": [
+        true,
+        true,
+        true
+      ],
+      "energy_weights": [
+        0.6666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "origin_cell_fraction": [
+        0.00042027981022640937,
+        -0.00022382972100626342
+      ],
+      "principal_capture_min": [
+        0.9983197478778907,
+        0.9943116866406316,
+        0.9939778432260566
+      ],
+      "active_bands": [
+        true,
+        true,
+        true
+      ],
+      "energy_weights": [
+        0.6666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "origin_cell_fraction": [
+        0.0005130343472881105,
+        -0.00058206741279343
+      ],
+      "principal_capture_min": [
+        0.9976517106480852,
+        0.9927966451390567,
+        0.9924986397349168
+      ],
+      "active_bands": [
+        true,
+        true,
+        true
+      ],
+      "energy_weights": [
+        0.6666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "origin_cell_fraction": [
+        0.0006520213798765218,
+        -0.00042294085586930263
+      ],
+      "principal_capture_min": [
+        0.9965053154918345,
+        0.9905421365913171,
+        0.9906126607687035
+      ],
+      "active_bands": [
+        true,
+        true,
+        true
+      ],
+      "energy_weights": [
+        0.6666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "origin_cell_fraction": [
+        0.00030594702285480224,
+        -0.0004614600251788281
+      ],
+      "principal_capture_min": [
+        0.9944203490722762,
+        0.9865906590167124,
+        0.988746330282339
+      ],
+      "active_bands": [
+        true,
+        true,
+        true
+      ],
+      "energy_weights": [
+        0.6666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "origin_cell_fraction": [
+        0.0024375600513957263,
+        0.0007392784721758083
+      ],
+      "principal_capture_min": [
+        0.9906605603168871,
+        0.0003552562355809561,
+        0.0011617057127759345
+      ],
+      "active_bands": [
+        true,
+        false,
+        false
+      ],
+      "energy_weights": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "origin_cell_fraction": [
+        0.003637215796305271,
+        -0.0025971904662540624
+      ],
+      "principal_capture_min": [
+        0.983241278292778,
+        0.0020266734934879455,
+        0.00556230001510839
+      ],
+      "active_bands": [
+        true,
+        false,
+        false
+      ],
+      "energy_weights": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "source_frame": "First2N source columns are the CBM Kramers pair; fixed source-derived origin phase only, no C normalization.",
+  "layout": "4 angle workers; BLAS1",
+  "node": "gpuh201",
+  "pid": 2289543,
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "examples/nonlinear_fit/material_next5_models_20261023/cdcl2_scalar_fit.py",
+    "--parameters",
+    "5",
+    "--origin",
+    "schur"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "status": "COMPLETED_WITH_DOCUMENTED_FIDELITY_LIMITS",
+  "main_model": "MODEL.json",
+  "main_figures": "figures",
+  "models": [
+    {
+      "label": "9p",
+      "fit": "fit_warped_continuum9",
+      "figures": "figures",
+      "physical_parameter_count": 9,
+      "global_coefficient_count": 23,
+      "energy_RMS_meV": 3.292547188391912,
+      "gap_relative_RMS": [
+        0.028608405818230685,
+        0.08707165256317657
+      ],
+      "low_first_two_RMS_meV": 0.9065479196173392,
+      "low_first_two_group_Pmin": 0.8943185772993877,
+      "third_star_all720_pair_max_change_meV": [
+        0.0014967322894271495,
+        0.013225620967213803,
+        0.024567127738087113
+      ],
+      "optimizer_evaluations": 57
+    },
+    {
+      "label": "10p",
+      "fit": "fit_warped_10p_continuum10",
+      "figures": "figures10",
+      "physical_parameter_count": 10,
+      "global_coefficient_count": 26,
+      "energy_RMS_meV": 3.1597607075179597,
+      "gap_relative_RMS": [
+        0.03147493171803856,
+        0.08070039992036694
+      ],
+      "low_first_two_RMS_meV": 0.8248539394146702,
+      "low_first_two_group_Pmin": 0.8871775050550668,
+      "third_star_all720_pair_max_change_meV": [
+        0.0018284560016068596,
+        0.015416098454623661,
+        0.027185716631045187
+      ],
+      "optimizer_evaluations": 26
+    },
+    {
+      "label": "9p native-ceiling wave target",
+      "fit": "fit_warped_ceiling9",
+      "figures": "figures9_ceiling",
+      "physical_parameter_count": 9,
+      "global_coefficient_count": 23,
+      "energy_RMS_meV": 3.263604614740016,
+      "gap_relative_RMS": [
+        0.0285137834820373,
+        0.08721096566111929
+      ],
+      "low_first_two_RMS_meV": 0.9055431380930196,
+      "low_first_two_group_Pmin": 0.8944185174216451,
+      "third_star_all720_pair_max_change_meV": [
+        0.0014861277043420884,
+        0.013129048146071076,
+        0.024417029546225377
+      ],
+      "optimizer_evaluations": 12
+    }
+  ],
+  "source_native_points": 720,
+  "source_max_viewer_error_meV": 2.091304907025915e-08,
+  "source_min_six_state_capture": 0.9997969203679254,
+  "mass_coefficients": [
+    1.931301673237583,
+    19.871206850848257
+  ],
+  "effective_masses": [
+    1.9727534900168688,
+    0.19173380584039468
+  ],
+  "fixed_masses": true,
+  "source_Q_convergence": "not established: native source stays at database viewer Q",
+  "node": "gpuh202",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "finished": 1792780743.2090464,
+  "all_task_processes_exited_successfully": true
+}

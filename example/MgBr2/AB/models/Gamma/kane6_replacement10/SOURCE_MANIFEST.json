@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/replacement_lbfgs/RESULT.json",
+    "sha256": "9534b30b233d5db8cb80873db420bfc57605ddae160cbd09d33789053cb5189e"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/replacement_lbfgs/BANDS_OVERLAP.png",
+    "sha256": "b3942b0baba3411aa97299ddec7dd9ab09dfe47a1a98065c334aae8964786602"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/replacement_lbfgs/PARAMETERS_PILOT.png",
+    "sha256": "c15b08db5c80bb2849079ec4a817fdcedaabad5f8dbf8a9af15719a55530ce5f"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/replacement_lbfgs/Q_CHECK.json",
+    "sha256": "ea2dff0c7871b4a3638d397ff9f1a2a12e3d497a2fdfb035a91abd697d8db3ff"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/replacement_lbfgs/REPORT.md",
+    "sha256": "fba7eb3a5c0384a38e9ef2916394df6f31b6a385e57a5d6d5c74ecff84889394"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/replacement_lbfgs/FINAL_AUDIT.json",
+    "sha256": "6dbf37f1564a2e04516bf987b6b196c22c655cefa26a67af0ca068db47698c1e"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/replacement_lbfgs/COMPLETE.json",
+    "sha256": "fee028278913708a05c48b8ac4d0ea3d62dcab71a493d1b1f6c7a797a0911d8f"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/operators.py",
+    "sha256": "f8529df02993d88c5416ac8a26c2753d8d797519ec227e8f40bee468b5521328"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/pilot/reference_source_canonical.npz",
+    "sha256": "4d36be3b25532121267659866e526df0d426829eebe53cecae09b107a0fb9669"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/replacement_lbfgs/8_3.89.npz",
+    "sha256": "e1e8a34d20e993df0ee422dcb26b08e4344510aeb8df6d582616e5ff88d57bde"
+  }
+]

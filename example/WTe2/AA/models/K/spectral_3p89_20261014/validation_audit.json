@@ -1,0 +1,226 @@
+{
+  "dimension": 54,
+  "energy_vs_native_tapw": {
+    "top_3": {
+      "full_heff": {
+        "configured_top_edge_alignment": {
+          "max_mev": 1.5786579513452637,
+          "rms_mev": 0.7204200718205941,
+          "shift_mev": 0.5139867018391087
+        },
+        "count": 3,
+        "diagnostic_best_common_shift": {
+          "max_mev": 0.9524133915546074,
+          "rms_mev": 0.3561219330719223,
+          "shift_mev": 1.140231261629537
+        }
+      },
+      "model": {
+        "configured_top_edge_alignment": {
+          "max_mev": 2.8887466103855175,
+          "rms_mev": 0.7637318415941232,
+          "shift_mev": 0.9357785337993363
+        },
+        "count": 3,
+        "diagnostic_best_common_shift": {
+          "max_mev": 2.8058662598500206,
+          "rms_mev": 0.7592214257776915,
+          "shift_mev": 1.0186588843345517
+        }
+      },
+      "support_heff": {
+        "configured_top_edge_alignment": {
+          "max_mev": 1.5724433042265673,
+          "rms_mev": 0.7193227118380418,
+          "shift_mev": 0.5139957456377076
+        },
+        "count": 3,
+        "diagnostic_best_common_shift": {
+          "max_mev": 0.9469527938517075,
+          "rms_mev": 0.3552277933911532,
+          "shift_mev": 1.1394862560121548
+        }
+      }
+    },
+    "top_8": {
+      "full_heff": {
+        "configured_top_edge_alignment": {
+          "max_mev": 3.3982625622330787,
+          "rms_mev": 1.8403255014996156,
+          "shift_mev": 0.5139867018391087
+        },
+        "count": 8,
+        "diagnostic_best_common_shift": {
+          "max_mev": 1.8065023430349214,
+          "rms_mev": 0.9236326954199229,
+          "shift_mev": 2.1057469210370696
+        }
+      },
+      "model": {
+        "configured_top_edge_alignment": {
+          "max_mev": 10.525639242863427,
+          "rms_mev": 3.444137187489929,
+          "shift_mev": 0.9357785337993363
+        },
+        "count": 8,
+        "diagnostic_best_common_shift": {
+          "max_mev": 8.40094858527518,
+          "rms_mev": 2.710677143410824,
+          "shift_mev": 3.0604691913872055
+        }
+      },
+      "support_heff": {
+        "configured_top_edge_alignment": {
+          "max_mev": 3.4004108371537,
+          "rms_mev": 1.8409332853017137,
+          "shift_mev": 0.5139957456377076
+        },
+        "count": 8,
+        "diagnostic_best_common_shift": {
+          "max_mev": 1.8081527528073238,
+          "rms_mev": 0.9239856891557604,
+          "shift_mev": 2.1062538299843117
+        }
+      }
+    }
+  },
+  "full_heff_vs_support": {
+    "top_3": {
+      "bands": {
+        "configured_top_edge_alignment": {
+          "max_mev": 0.007918369560933058,
+          "rms_mev": 0.001497804952347011,
+          "shift_mev": -9.043798598895592e-06
+        },
+        "count": 3,
+        "diagnostic_best_common_shift": {
+          "max_mev": 0.007164320145136571,
+          "rms_mev": 0.0012941519051232237,
+          "shift_mev": 0.0007450056173820221
+        }
+      },
+      "subspace": {
+        "count": 3,
+        "mean_capture_squared": 0.9999994814688423,
+        "minimum_capture_squared": 0.9999992934535457,
+        "minimum_singular_value": 0.9999993379253456,
+        "minimum_singular_value_squared": 0.9999986758511294
+      }
+    },
+    "top_8": {
+      "bands": {
+        "configured_top_edge_alignment": {
+          "max_mev": 0.018176413981940698,
+          "rms_mev": 0.003897104472812826,
+          "shift_mev": -9.043798598895592e-06
+        },
+        "count": 8,
+        "diagnostic_best_common_shift": {
+          "max_mev": 0.017678548833721663,
+          "rms_mev": 0.0038651718675609126,
+          "shift_mev": -0.0005069089472419988
+        }
+      },
+      "subspace": {
+        "count": 8,
+        "mean_capture_squared": 0.9999968311902953,
+        "minimum_capture_squared": 0.9999210842482582,
+        "minimum_singular_value": 0.9996867663090393,
+        "minimum_singular_value_squared": 0.9993736307334238
+      }
+    }
+  },
+  "kpoints": 61,
+  "model_vs_full_heff": {
+    "top_3": {
+      "bands": {
+        "configured_top_edge_alignment": {
+          "max_mev": 2.256963622135011,
+          "rms_mev": 0.9629561618841604,
+          "shift_mev": 0.4217918319602276
+        },
+        "count": 3,
+        "diagnostic_best_common_shift": {
+          "max_mev": 1.8534528682954132,
+          "rms_mev": 0.7950093746687086,
+          "shift_mev": -0.12157237729498514
+        }
+      },
+      "subspace": {
+        "count": 3,
+        "mean_capture_squared": 0.9941474795761716,
+        "minimum_capture_squared": 0.9583761422641907,
+        "minimum_singular_value": 0.9355855201208774,
+        "minimum_singular_value_squared": 0.8753202654598526
+      }
+    },
+    "top_8": {
+      "bands": {
+        "configured_top_edge_alignment": {
+          "max_mev": 8.623259648964599,
+          "rms_mev": 2.2681948564258376,
+          "shift_mev": 0.4217918319602276
+        },
+        "count": 8,
+        "diagnostic_best_common_shift": {
+          "max_mev": 8.09032921057451,
+          "rms_mev": 2.204697950866324,
+          "shift_mev": 0.9547222703501365
+        }
+      },
+      "subspace": {
+        "count": 8,
+        "mean_capture_squared": 0.9883514369941122,
+        "minimum_capture_squared": 0.8965857388438676,
+        "minimum_singular_value": 0.4170577031102166,
+        "minimum_singular_value_squared": 0.1739371277235696
+      }
+    }
+  },
+  "model_vs_support": {
+    "top_3": {
+      "bands": {
+        "configured_top_edge_alignment": {
+          "max_mev": 2.2565512382239916,
+          "rms_mev": 0.9623997468410181,
+          "shift_mev": 0.42178278816162873
+        },
+        "count": 3,
+        "diagnostic_best_common_shift": {
+          "max_mev": 1.858913465998313,
+          "rms_mev": 0.7948506068179721,
+          "shift_mev": -0.12082737167760313
+        }
+      },
+      "subspace": {
+        "count": 3,
+        "mean_capture_squared": 0.994151951757098,
+        "minimum_capture_squared": 0.9584056134066148,
+        "minimum_singular_value": 0.9356322756523117,
+        "minimum_singular_value_squared": 0.8754077552423233
+      }
+    },
+    "top_8": {
+      "bands": {
+        "configured_top_edge_alignment": {
+          "max_mev": 8.609445266524851,
+          "rms_mev": 2.2676770049863393,
+          "shift_mev": 0.42178278816162873
+        },
+        "count": 8,
+        "diagnostic_best_common_shift": {
+          "max_mev": 8.07701269328387,
+          "rms_mev": 2.204285497365415,
+          "shift_mev": 0.9542153614028945
+        }
+      },
+      "subspace": {
+        "count": 8,
+        "mean_capture_squared": 0.9883810310932352,
+        "minimum_capture_squared": 0.8967797432398865,
+        "minimum_singular_value": 0.41891041134432394,
+        "minimum_singular_value_squared": 0.17548593273267069
+      }
+    }
+  }
+}

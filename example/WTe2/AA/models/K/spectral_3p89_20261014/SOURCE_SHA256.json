@@ -1,0 +1,13 @@
+{
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/physical_model.py": "eb0d93a160e0d149314467f7b1fb0c8218784366810a577e5ece70d72fc31333",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/model.toml": "12e841292bf7f0c2221fe2622e70837623f9388828fa0135771d0ea4dd9eaac4",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/terms.csv": "1771b779285e79489f10406cf5cdc6e107408290862660f1f03e8df6d35f8ed8",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/q_points.csv": "ba8a730aeeb6cb0fe028953a061d337d301ab4bad6034739980fed93bf3ef75e",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/symmetry.toml": "2b3a290d4de0499031da05a29e5ca61821b9c5671da0f0024db9b95440a696ad",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/MODEL.md": "dee3eb03a265ea068a34643c48864e14e7622c0e27dbe3489bb01a436447674d",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/validation_audit.json": "3a163cad53df350d1100331bcf68a2d15129c4661b8ac9a90aeeac0242fd9dd3",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/symmetry_audit.json": "5d58b5f4bbecd88ee6004519c4265ed8be5b7e7bad3fbcadebdf1af2fb4ec3a1",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/band_comparison.pdf": "63fa95374cb1f2a728742dddea7faf9316e7971f3e9849af8820357f80abd206",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/band_comparison_all.pdf": "15b6184ea9a4e044c378f874b5b4713ee5d2c313d754e652e7ebae177723d21f",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/wte2_3.89/kp_spectral_p300_model/K/K1/q06/model/band_comparison_vs_full_heff.pdf": "305755670412dd46247f9156f6564eec94dece81e5b030f015f5b5869b446867"
+}

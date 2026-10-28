@@ -1,0 +1,22 @@
+{
+  "verify.py": "6c32a3b25d7f6c33761db6a3240f81f793e10a83c4821c560ff8cbd464c8c178",
+  "band_comparison_all.pdf": "919cc891277f61767f974d17e6aea82a9745f653d4146fab0c40611677c712a4",
+  "MODEL_INFO.json": "e3bebf39598597fb045716ee525d48826a89dc2c1d7f1d502ba934255b4e2721",
+  "FROZEN_SPECTRA.npz": "da1de899f25120fe59bf17c65ce0e2ab669c01f1457baba72b8b0b69ad1534e0",
+  "SOURCE_SHA256.json": "c730211fb0b34b67d1a123b9f02622dd280d21c2c810ddaab7219a0d9ffc370c",
+  "band_comparison_vs_full_heff.pdf": "bccfd9197876c67abccb299ef2ded5b35cbad05d4338041a1f0076f6010a00e2",
+  "q_points.csv": "bda07887ef145ce3106c436ae27b3179f0182214a3f19e546875e8100f2cd26d",
+  "validation_audit.json": "5bca4b31abf71c726b856fed302b7aa832295de5f270fd44d50ea59c9e25ffe8",
+  "VERIFICATION.json": "5042bf28dbc939492865e146fcfe8d66ef066c39233ed22bdd7d523e3a7763da",
+  "physical_model.py": "eb0d93a160e0d149314467f7b1fb0c8218784366810a577e5ece70d72fc31333",
+  "symmetry.toml": "8626ab682398e84ece9425a7baeb0c281fc17565db1a9b5266f3d440adb1ad20",
+  "model.toml": "fd6240f63105391d969a1ea0031158f7361c85711fecff59e90ef7114fcd0d6d",
+  "hf_adapter.py": "28c12bacbb94a15d58517959444fc0f8d49b1b187e6ec2c5b60b714867aebedb",
+  "FITTED_INDEPENDENT_COEFFICIENTS.npy": "d9bceebdda94413a1e856487b0c575364121c29b469f3b5605cd27b6451e6865",
+  "MODEL.md": "037294a33cb5389ff6e10e429f35a2001bb77f6aa78aaad3c64a6f46b9f28f37",
+  "symmetry_audit.json": "eef53abdbe019a45765e3a67e7492866234eca721fa3646900ad3ac3e99df118",
+  "README.md": "c849810635df71b9851817473ef38737b57c2c7a1bdafdf6d51e83558b3a49fe",
+  "SOURCE_PROJECTION_REPORT.md": "37a58cc2840b1f451ecbfa44e17af0f563564032ab8baacaff0eb30f208dd972",
+  "terms.csv": "a085ba9be49e38e23c0e18d3837b0e310f3d147847f4c429ec042074812d1895",
+  "band_comparison.pdf": "b0e3a8b65fcb6bc0a4cfe69f677bc177a7851349545a3c49e016fac0bbcd69c6"
+}

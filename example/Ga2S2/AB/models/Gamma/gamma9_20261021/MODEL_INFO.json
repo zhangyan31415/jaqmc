@@ -1,0 +1,84 @@
+{
+  "energy_unit": "eV",
+  "length_unit": "angstrom",
+  "hf_scope": "DIAGNOSTIC_ONLY: explicitly opt in; excluded from default high-throughput HF list",
+  "status": "DIAGNOSTIC_NOT_VALIDATED_FOR_HF",
+  "reference_type": "native TAPW spectrum; source-only interpolated embeddings away from exact source-frame points; not all-k direct wavefunction validation",
+  "id": "Ga2S2_gamma9_20261021",
+  "material": "Ga2S2",
+  "stacking": "AB",
+  "valley": "Gamma",
+  "edge": "CBM",
+  "physical_parameters": 9,
+  "global_coefficients": 27,
+  "angles_deg": [
+    2.2810596097298803,
+    2.4499772766168695,
+    2.6459083811926885,
+    2.875894633632971,
+    3.149657426389616,
+    3.481006089466939,
+    3.8902381690076835,
+    4.408455007944072,
+    5.085847808123473,
+    6.008983197766148,
+    7.3409930166302155,
+    9.430007907896421
+  ],
+  "basis_description": "Two parity branches x two Kramers sectors; 4 N_Q basis states",
+  "k_convention": "fractional row k; Cartesian k=k_fractional@B; plane waves q+k",
+  "carrier_convention": "electron, increasing conduction energy",
+  "entrypoint": "hf_adapter.py",
+  "hf_api": {
+    "module": "hf_adapter.py",
+    "hamiltonian": "hamiltonian",
+    "reciprocal_basis": "reciprocal_basis",
+    "carrier": "electron"
+  },
+  "limitations": [
+    "No full-angle wavefunction acceptance: the three-pair worst overlap is very low.",
+    "Kane square-root kinetic energy is nonlocal in real space; this is not a Laplacian NQS preset.",
+    "Both inverse masses and all other physical parameters vary with angle; no fixed-mass approximation is implied.",
+    "The reported energy RMS is for all six raw spin branches, not only pair centers.",
+    "Original source Q controls only finite-basis comparisons; source TAPW cutoff convergence is not certified."
+  ],
+  "source_files": [
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/portable/model.py",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/portable/physical.py",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/portable/physical_soc.py",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/portable/COEFFICIENTS.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/portable/CATALOG.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/portable/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/BANDS_ALL_ANGLES.png",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/14_2.28.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/13_2.45.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/12_2.65.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/11_2.88.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/10_3.15.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/9_3.48.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/8_3.89.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/7_4.41.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/6_5.09.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/5_6.01.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/4_7.34.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/Ga2S2_9p_deg2/predictions/3_9.43.npz"
+  ],
+  "fit_summary": {
+    "energy_RMS_meV": 8.217380193473355,
+    "edge_gap_RMS_meV": [
+      9.770342654954222,
+      13.468130295367981
+    ],
+    "worst_pair_probability": 3.587069751286838e-08,
+    "worst_group_probability": 3.587069751286838e-08,
+    "worst_principal_probability": 2.5756409295355443e-08,
+    "passing_angles": 0,
+    "Q_change_max_meV": 0.002501209535432647
+  },
+  "verification": "VERIFICATION.json",
+  "default_hf_enabled": false,
+  "runtime_requirements": [
+    "Python>=3.11",
+    "NumPy"
+  ]
+}

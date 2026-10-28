@@ -1,0 +1,21 @@
+{
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/portable/model.py": "eef0a7e3d535232d694e19f5400179b2c0fd23cf19abfe10aebce6e50380f241",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/portable/physical.py": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/portable/physical_soc.py": "5111f57c73ae766468707c8ca4f8ae9f06bc95a61c0d88eb8649fda90646eb4e",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/portable/COEFFICIENTS.json": "bc1fa0e1cac0aec1bb2fbe09560d311bb47eb3696fee397bf04c6622424935fd",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/portable/CATALOG.json": "4b0482de529ba02eed3d093e2f513e0c452ac6bd698cbb9dc0abd3250cd3e554",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/portable/geometry.npz": "d87dd657ee4abcc3fc747625afb3fe6d191c95f2b4adbf6f406270a6442d86e0",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/BANDS_ALL_ANGLES.png": "73a813a938fa9f2e1a581212ed96e99616454404cb9847948ce1f71f0b34e125",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/14_2.28.npz": "a8b4d21a5447849461d0c4e908d8f2e33c843730d0bbf47516cad355f8b8c93a",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/13_2.45.npz": "99e3533a2e00662cf6f91e771b364ff083fb0e52d0eff7dc9403129ae9667620",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/12_2.65.npz": "6763c14ba980522803179ddf27263fba5315afc5f8a0ba5ff4af5074552e73e6",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/11_2.88.npz": "ccb904d3ca6bb87f23ed5f35dfa280c909a987b2f6cf48e66b92728c40b440e2",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/10_3.15.npz": "9b3b919a2d0c52959750bf5d3bced5b68bc1e482caf3ce6ae70bebce44a8fac5",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/9_3.48.npz": "37dbaa343cd145a24e99a27add23ee9284c756334d58ab691c01757de354bdc7",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/8_3.89.npz": "afba01e245391ec8c231a7bcb5c631e486d50c71236e664d2ac16a2a1765d5f7",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/7_4.41.npz": "39b1d3616a2178a4ea3f18421e84115f2cddc239d65cf96f26aeb2cb4e10504a",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/6_5.09.npz": "b742ae7113ff62090affad97e52d3a0871674e3983ad03de063414daf9fc0854",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/5_6.01.npz": "00ae0129cce2ca58586495b599e4c5e8f35a05ccb9d919ae288233b5fcd28375",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/4_7.34.npz": "a00da5a166940e15fcdd2f49f3fa18d34c145a11190095941a738d695b566008",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/simple_expanded_nqs_20261021/MgCl2_9p_deg2/predictions/3_9.43.npz": "79e9262770742b40178b02ecf9c34c7ba27d5edfc572c3b28b8428d8959be6be"
+}

@@ -1,0 +1,713 @@
+{
+  "physical_parameters": 6,
+  "global_coefficients": 16,
+  "optimizer_converged": true,
+  "fixed_positive_mass_verified": true,
+  "all720_saved_spectra_freshly_recomputed": true,
+  "initial_Jacobian": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 2.826006299887355e-08,
+      "cost_relative": 1.3605903970571705e-08
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 1.934794468216396e-07,
+      "cost_relative": 4.735040073379413e-08
+    }
+  ],
+  "final_Jacobian": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 1.8351118447163507e-08,
+      "cost_relative": 1.4998649211506176e-08
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 2.145198538400658e-07,
+      "cost_relative": 1.8153210290527966e-07
+    }
+  ],
+  "constraint_Jacobian_relative_error": 4.1787348731215274e-08,
+  "maximum_smallangle_first3_model_Q_change_meV": 0.004135178766129233,
+  "maximum_smallangle_lowest_model_Q_change_meV": 0.0018912716160356113,
+  "maximum_second_expansion_increment_meV": 3.684269389570005e-05,
+  "expanded_Gamma_orders_preserved": true,
+  "records": [
+    {
+      "case": "14_2.28",
+      "theta": 2.2810596097298803,
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 121,
+          "from_original_max_meV_by_band": [
+            0.0009974232626566715,
+            0.0022351947303461683,
+            0.001436149195205294
+          ],
+          "incremental_max_meV_by_band": [
+            0.0009974232626566715,
+            0.0022351947303461683,
+            0.001436149195205294
+          ],
+          "raw_group_P_min_by_band": [
+            0.9947866096060828,
+            0.9540635533930606,
+            0.9588735430375955
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            129.3653143199304,
+            17.825450972210945
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 163,
+          "from_original_max_meV_by_band": [
+            0.0009974510228258349,
+            0.0022352500168437706,
+            0.0014362016265700994
+          ],
+          "incremental_max_meV_by_band": [
+            2.77601691633933e-08,
+            5.5286497602224927e-08,
+            5.243136480537203e-08
+          ],
+          "raw_group_P_min_by_band": [
+            0.9947866095858733,
+            0.9540635533693578,
+            0.958873543017927
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            129.36531430739797,
+            17.82545097162526
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "theta": 2.4499772766168695,
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 121,
+          "from_original_max_meV_by_band": [
+            0.0004417640673791412,
+            0.0008918372189359314,
+            0.0005642724528048815
+          ],
+          "incremental_max_meV_by_band": [
+            0.0004417640673791412,
+            0.0008918372189359314,
+            0.0005642724528048815
+          ],
+          "raw_group_P_min_by_band": [
+            0.9960687700539638,
+            0.9741746008922549,
+            0.988185760955211
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            147.3682124566222,
+            12.982060223747371
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 163,
+          "from_original_max_meV_by_band": [
+            0.0004417697789978192,
+            0.0008918477124725266,
+            0.0005642813454415085
+          ],
+          "incremental_max_meV_by_band": [
+            5.711618678017061e-09,
+            1.0493536595213016e-08,
+            8.892636627066963e-09
+          ],
+          "raw_group_P_min_by_band": [
+            0.996068770049772,
+            0.9741746008886566,
+            0.9881857609528015
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            147.36821245427893,
+            12.98206022372675
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "theta": 2.6459083811926885,
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 109,
+          "from_original_max_meV_by_band": [
+            0.001891259310903004,
+            0.0016027416919472959,
+            0.0041351495551344986
+          ],
+          "incremental_max_meV_by_band": [
+            0.001891259310903004,
+            0.0016027416919472959,
+            0.0041351495551344986
+          ],
+          "raw_group_P_min_by_band": [
+            0.9971164120095791,
+            0.959725936896752,
+            0.9951126148319859
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            170.34912750264897,
+            8.235552364656535
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 151,
+          "from_original_max_meV_by_band": [
+            0.0018912716160356113,
+            0.0016027508003002566,
+            0.004135178766129233
+          ],
+          "incremental_max_meV_by_band": [
+            1.2305132607304259e-08,
+            9.237555165242384e-09,
+            2.9210994734185647e-08
+          ],
+          "raw_group_P_min_by_band": [
+            0.9971164120034085,
+            0.9597259368987864,
+            0.9951126148289282
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            170.3491274969871,
+            8.235552365406074
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "theta": 2.875894633632971,
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 109,
+          "from_original_max_meV_by_band": [
+            0.000580362697434611,
+            0.0006413607374217145,
+            0.0011111600657920384
+          ],
+          "incremental_max_meV_by_band": [
+            0.000580362697434611,
+            0.0006413607374217145,
+            0.0011111600657920384
+          ],
+          "raw_group_P_min_by_band": [
+            0.9976592705767403,
+            0.9530562085861813,
+            0.9939710481800735
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            200.34987633656064,
+            3.9592204941525377
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 151,
+          "from_original_max_meV_by_band": [
+            0.0005803640622525919,
+            0.000641362522993405,
+            0.0011111625141113635
+          ],
+          "incremental_max_meV_by_band": [
+            1.3648179808534167e-09,
+            1.9229479120141946e-09,
+            2.4483193250546265e-09
+          ],
+          "raw_group_P_min_by_band": [
+            0.9976592705760811,
+            0.9530562085827,
+            0.9939710481800353
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            200.34987633587573,
+            3.959220493938348
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "theta": 3.149657426389616,
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 109,
+          "from_original_max_meV_by_band": [
+            0.00015958709468494314,
+            0.000303551341895858,
+            0.00047957523474639885
+          ],
+          "incremental_max_meV_by_band": [
+            0.00015958709468494314,
+            0.000303551341895858,
+            0.00047957523474639885
+          ],
+          "raw_group_P_min_by_band": [
+            0.9979708047324006,
+            0.9728701668960532,
+            0.9903147496658307
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            240.33115855003703,
+            0.5596682558328681
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 151,
+          "from_original_max_meV_by_band": [
+            0.00015958732629828276,
+            0.00030355284019734086,
+            0.0004795764423914939
+          ],
+          "incremental_max_meV_by_band": [
+            2.3602647614140437e-10,
+            1.49830148288288e-09,
+            1.3421763700449674e-09
+          ],
+          "raw_group_P_min_by_band": [
+            0.997970804732263,
+            0.9728701668958016,
+            0.9903147496649481
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            240.33115854986465,
+            0.5596682558071386
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "theta": 3.481006089466939,
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 109,
+          "from_original_max_meV_by_band": [
+            0.0001337819967861531,
+            0.0002980872589319894,
+            0.0008204144237577982
+          ],
+          "incremental_max_meV_by_band": [
+            0.0001337819967861531,
+            0.0002980872589319894,
+            0.0008204144237577982
+          ],
+          "raw_group_P_min_by_band": [
+            0.9979874277384152,
+            0.8986214862843015,
+            0.9871734102868197
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            294.74285680983184
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 151,
+          "from_original_max_meV_by_band": [
+            0.00013378236964761703,
+            0.00029808975288148076,
+            0.0008204182531945658
+          ],
+          "incremental_max_meV_by_band": [
+            6.829675713859729e-10,
+            2.4939494913667204e-09,
+            4.199141034888498e-09
+          ],
+          "raw_group_P_min_by_band": [
+            0.9979874277379995,
+            0.8986214862840274,
+            0.9871734102840007
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            294.7428568096317
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "theta": 3.890238169007683,
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 91,
+          "from_original_max_meV_by_band": [
+            0.0002638589911424516,
+            0.0007483046237655167,
+            0.002278423846729938
+          ],
+          "incremental_max_meV_by_band": [
+            0.0002638589911424516,
+            0.0007483046237655167,
+            0.002278423846729938
+          ],
+          "raw_group_P_min_by_band": [
+            0.9971806550994059,
+            0.9750543826793758,
+            0.9791320247898342
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            370.65170815888314,
+            2.1655709831095438
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 127,
+          "from_original_max_meV_by_band": [
+            0.00026386574114578565,
+            0.0007483225467064258,
+            0.002278493001578452
+          ],
+          "incremental_max_meV_by_band": [
+            6.750003334055066e-09,
+            1.7922940909187446e-08,
+            6.915484851433007e-08
+          ],
+          "raw_group_P_min_by_band": [
+            0.9971806550960983,
+            0.9750543826887887,
+            0.9791320248591034
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            370.6517081562468,
+            2.1655709881819862
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "theta": 4.408455007944072,
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 85,
+          "from_original_max_meV_by_band": [
+            0.029364429055073193,
+            0.04033016043278326,
+            0.04851353275145409
+          ],
+          "incremental_max_meV_by_band": [
+            0.029364429055073193,
+            0.04033016043278326,
+            0.04851353275145409
+          ],
+          "raw_group_P_min_by_band": [
+            0.9870722186936414,
+            0.9352802253291378,
+            0.9017788151870616
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            480.04916530542755,
+            0.9938818574911079
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 121,
+          "from_original_max_meV_by_band": [
+            0.02936459081998022,
+            0.04033038154946378,
+            0.04851390884716422
+          ],
+          "incremental_max_meV_by_band": [
+            1.7037277144638097e-07,
+            2.9593785755288593e-07,
+            3.909094714593664e-07
+          ],
+          "raw_group_P_min_by_band": [
+            0.9870722184244224,
+            0.935280225016777,
+            0.9017788155517379
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            480.0491651888115,
+            0.9938818268957483
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "theta": 5.085847808123473,
+      "training_active_bands": [
+        true,
+        false,
+        false
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 85,
+          "from_original_max_meV_by_band": [
+            0.03932777952750377,
+            0.053877156919235336,
+            0.05954758338017063
+          ],
+          "incremental_max_meV_by_band": [
+            0.03932777952750377,
+            0.053877156919235336,
+            0.05954758338017063
+          ],
+          "raw_group_P_min_by_band": [
+            0.9813005697958647,
+            0.00015873892595406815,
+            2.012034182367752e-05
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            644.8473031350533
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 121,
+          "from_original_max_meV_by_band": [
+            0.039327974921982145,
+            0.05387742145379626,
+            0.059547953724370384
+          ],
+          "incremental_max_meV_by_band": [
+            1.9539447837502166e-07,
+            3.1238031605873573e-07,
+            3.838627193886168e-07
+          ],
+          "raw_group_P_min_by_band": [
+            0.9813005694229769,
+            0.00015873892598722124,
+            2.01203418232392e-05
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            644.8473029943242
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "theta": 6.008983197766148,
+      "training_active_bands": [
+        true,
+        false,
+        false
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 61,
+          "from_original_max_meV_by_band": [
+            0.23544600571454022,
+            0.4262968328926364,
+            0.6928860410172488
+          ],
+          "incremental_max_meV_by_band": [
+            0.23544600571454022,
+            0.4262968328926364,
+            0.6928860410172488
+          ],
+          "raw_group_P_min_by_band": [
+            0.9822984387482449,
+            2.5221548532114314e-05,
+            2.413527930752928e-06
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            908.7250473537579
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 91,
+          "from_original_max_meV_by_band": [
+            0.2354582566395369,
+            0.42631703100642904,
+            0.6929225020295693
+          ],
+          "incremental_max_meV_by_band": [
+            1.2250924996681789e-05,
+            2.3580460417615967e-05,
+            3.684269389570005e-05
+          ],
+          "raw_group_P_min_by_band": [
+            0.982298406424125,
+            2.5221546987473383e-05,
+            2.413527896918214e-06
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            908.7250392873486
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "theta": 7.3409930166302155,
+      "training_active_bands": [
+        true,
+        false,
+        false
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 61,
+          "from_original_max_meV_by_band": [
+            0.23863382309080583,
+            0.43327632030581986,
+            0.6790968111420881
+          ],
+          "incremental_max_meV_by_band": [
+            0.23863382309080583,
+            0.43327632030581986,
+            0.6790968111420881
+          ],
+          "raw_group_P_min_by_band": [
+            0.9800696560349516,
+            7.937857497167464e-06,
+            2.9079971379458063e-06
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            1369.1361199307776
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 91,
+          "from_original_max_meV_by_band": [
+            0.23864158331965424,
+            0.43328915298573856,
+            0.6791190886055176
+          ],
+          "incremental_max_meV_by_band": [
+            7.76022884840799e-06,
+            1.3377070673392666e-05,
+            2.2797036591803987e-05
+          ],
+          "raw_group_P_min_by_band": [
+            0.980069641116939,
+            7.937857059799062e-06,
+            2.907997084108174e-06
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            1369.13611509731
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "theta": 9.430007907896421,
+      "training_active_bands": [
+        true,
+        false,
+        false
+      ],
+      "levels": [
+        {
+          "Q_per_layer": 61,
+          "from_original_max_meV_by_band": [
+            0.19893308682750188,
+            0.3666272473922261,
+            0.5599691038716825
+          ],
+          "incremental_max_meV_by_band": [
+            0.19893308682750188,
+            0.3666272473922261,
+            0.5599691038716825
+          ],
+          "raw_group_P_min_by_band": [
+            0.9660434452591589,
+            6.931803405855704e-06,
+            3.671915836300491e-08
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            2281.3752443938606
+          ],
+          "Gamma_order_preserved": true
+        },
+        {
+          "Q_per_layer": 91,
+          "from_original_max_meV_by_band": [
+            0.19893614937027682,
+            0.36663252938728963,
+            0.5599780816973876
+          ],
+          "incremental_max_meV_by_band": [
+            3.0626251534826565e-06,
+            5.2819950635552004e-06,
+            8.977825705080988e-06
+          ],
+          "raw_group_P_min_by_band": [
+            0.9660434433492072,
+            6.931803225728826e-06,
+            3.671915880164398e-08
+          ],
+          "Gamma_correct_order_gaps_meV": [
+            2281.3752424713507
+          ],
+          "Gamma_order_preserved": true
+        }
+      ]
+    }
+  ],
+  "expanded_overlap_scope": "Expanded scalar model eigenvectors projected into original finite-Q native source rows, without renormalization; original TAPW cutoff is not re-converged."
+}

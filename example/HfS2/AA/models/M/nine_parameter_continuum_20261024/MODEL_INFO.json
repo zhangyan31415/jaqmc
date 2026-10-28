@@ -1,0 +1,114 @@
+{
+  "id": "HfS2_AA_M_nine_parameter_continuum_20261024",
+  "material": "HfS2",
+  "stacking": "AA",
+  "valley": "M1",
+  "edge": "CBM",
+  "physical_parameters": 9,
+  "global_coefficients": 23,
+  "angles_deg": [
+    2.2810596097298803,
+    2.4499772766168695,
+    2.6459083811926885,
+    2.875894633632971,
+    3.149657426389616,
+    3.481006089466939,
+    3.8902381690076835,
+    4.408455007944072,
+    5.085847808123473,
+    6.008983197766148,
+    7.3409930166302155,
+    9.430007907896421
+  ],
+  "basis_description": "One effective conduction orbital per layer, q-major within layer, no explicit spin copy; psi_l=sum_q c_lq exp(i(k-q).r)",
+  "energy_unit": "eV",
+  "length_unit": "Angstrom",
+  "k_convention": "fractional B; B rows in inverse Angstrom",
+  "carrier_convention": "electron; ascending conduction spectrum; common angle energy zero is arbitrary",
+  "hf_scope": "one_body_input_only; small-angle first-two-band candidate; inspect per-angle quality before scanning",
+  "status": "ARCHIVED_CANDIDATE_WITH_FIDELITY_LIMITS",
+  "entrypoint": "model.py",
+  "reference_type": "original database finite-Q native TAPW; raw spin pair centers and absolute finite-Q projections",
+  "limitations": [
+    "Native TAPW source Q convergence not established",
+    "Only M1 one-body valley; spin spectator, native SOC omitted",
+    "Large-angle third-band overlap may be low; not all-angle automatic scan acceptance",
+    "No microscopic density form factors or interaction/HF solver",
+    "Original primitive cell requires layer-twisted boundary; area-two cell available"
+  ],
+  "source_files": [
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/RESULT.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p/portable/physical.py",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p/portable/kernel.py",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/14_2.28/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/13_2.45/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/12_2.65/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/11_2.88/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/10_3.15/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/9_3.48/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/8_3.89/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/7_4.41/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/6_5.09/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/5_6.01/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/4_7.34/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/3_9.43/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/13_2.45.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/4_7.34.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/9_3.48.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/8_3.89.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/7_4.41.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/3_9.43.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/14_2.28.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/10_3.15.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/11_2.88.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/12_2.65.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/5_6.01.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_warped_continuum9/predictions/6_5.09.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/figures/PARAMETERS.csv",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/figures/OVERLAP.png",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/figures/PARAMETERS.png",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/figures/RESULTS.md",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/figures/LOWEST_BAND.png",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/figures/ALL_ANGLES_BANDS.png"
+  ],
+  "constant_mass_indices": [
+    0,
+    1
+  ],
+  "hf_api": {
+    "module": "hf_adapter.py",
+    "hamiltonian": "hamiltonian",
+    "reciprocal_basis": "reciprocal_basis",
+    "k_convention": "fractional B"
+  },
+  "summary": {
+    "energy_RMS_meV": 3.292547188391912,
+    "gap_relative_RMS": [
+      0.028608405818230685,
+      0.08707165256317657
+    ],
+    "pair_probability_min_by_band": [
+      0.8943185772993877,
+      0.4193184884770902,
+      0.270454687091627
+    ],
+    "Q_sensitivity_max_meV": 0.02456712773811487
+  },
+  "quality_by_scope": {
+    "first_two_pairs_all_angles_RMS_meV": 2.7726209419313026,
+    "first_two_pairs_small_angle_RMS_meV": 0.9065479196173392,
+    "small_angle_max_deg": 3.8902381690076835,
+    "small_angle_pair_probability_min": [
+      0.8943185772993877,
+      0.9348885235204656,
+      0.5108123207377216
+    ],
+    "all_angle_pair_probability_min": [
+      0.8943185772993877,
+      0.4193184884770902,
+      0.270454687091627
+    ],
+    "scope": "In-sample existing fit data, 60 independent k per angle; not independent holdout nor HF validity threshold"
+  },
+  "hf_scan_recommendation": "CANDIDATE_ONLY: restrict initial low-energy exploration to first two spin pairs and theta<=3.890238169 degrees; preserve per-case fidelity flags; do not automatically accept all angles."
+}

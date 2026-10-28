@@ -1,0 +1,48 @@
+{
+  "id": "MgBr2_kane6_order10",
+  "material": "MgBr2",
+  "stacking": "AB",
+  "valley": "Gamma",
+  "edge": "VBM",
+  "physical_parameters": 10,
+  "global_coefficients": 10,
+  "angles_deg": [
+    3.8902381690076835
+  ],
+  "basis_description": "three source doublets 38/39,40/41,42/43; Q-major then doublet then Kramers",
+  "energy_unit": "eV",
+  "length_unit": "angstrom",
+  "k_convention": "fractional k row times reciprocal_basis; B vectors are rows in inverse angstrom; p=k+Q",
+  "carrier_convention": "hole: H_hole=-H_electron, top valence gives lowest hole levels; constant energy reference arbitrary",
+  "hf_scope": "diagnostic envelope one-body Hamiltonian only; microscopic density/form factors and interaction projection not supplied",
+  "status": "DIAGNOSTIC_ONLY",
+  "hf_default": false,
+  "entrypoint": "hf_adapter.py:hamiltonian",
+  "hf_api": {
+    "module": "hf_adapter",
+    "hamiltonian": "hamiltonian",
+    "reciprocal_basis": "reciprocal_basis",
+    "carrier": "hole"
+  },
+  "reference_type": "actual native full-atomic TAPW generalized H/S, not only effective-H eigenstates; stored P and PP use source lift without capture normalization",
+  "limitations": [
+    "Fit quality failed; exclude from production screening by default",
+    "Pseudospin is not laboratory spin; effective orbitals are not physical layers",
+    "No microscopic density or interaction form factors supplied",
+    "Finite Q convergence is model-only; consult Q checks",
+    "Only 3.890238 degrees; no all-angle fit or parameter-angle curve",
+    "The separate kane6_replacement10 version has an unresolved third-pair crossing at k index51; that mask does not belong to this order10 model"
+  ],
+  "source_files": [
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/RESULT.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/BANDS_OVERLAP.png",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/PARAMETERS_PILOT.png",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/Q_CHECK.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/REPORT.md",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/operators.py",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/kane6/pilot/reference_source_canonical.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/MgBr2_redo_20261024/order_lbfgs/refined/8_3.89.npz"
+  ],
+  "principal_symbol_min_eV_A2": 1.1622352601395156
+}

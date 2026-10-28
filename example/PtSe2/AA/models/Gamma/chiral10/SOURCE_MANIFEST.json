@@ -1,0 +1,142 @@
+[
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/RESULT.json",
+    "sha256": "fb307ec60a054b954033f55f22b7f45efcd0323edff109f678b38ec9c85b0cf4"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/BANDS_OVERLAP.png",
+    "sha256": "79dd3c8ed84fd35f2604b3498d9d4bdb92a7963a1831215582ae0289daf8fe00"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/PARAMETERS.png",
+    "sha256": "0e77e45a031ee717475828e8aed6a5017f9cdfe820160a89bd03fcfc66c3a5c1"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/PARAMETERS.csv",
+    "sha256": "cfd94a024e0e7ce377ca146ad75783d66c288811da97f01c9f14add9a36cdb53"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/ANGLE_CONTROLS.csv",
+    "sha256": "c59828162ec66bcecab2605e4ca2d1ff274df420bf8d940328fbd7272b80c5b5"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/Q_CHECKS.json",
+    "sha256": "583ef2aa02ef05b0a1512f3a8a2b567e274fcb7c25a523a43727e302bc845475"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/RESULTS.md",
+    "sha256": "c285538207f352f8453b84fff7c980810101b341275cb92f97ed063588678e69"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/ALL12_MODEL_SYMMETRY.json",
+    "sha256": "c3753d78fbf25ef14878f4c702da8fbbd6100b4717765de869a0d7a073a91b9c"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/COMPLETE.json",
+    "sha256": "97e744fb7fa515d7260418cf1bf6723ab65446bdc9149dc8f8aac5aa9bacd62a"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/ptse2_luttinger.py",
+    "sha256": "f2885927ad95495a5779254e5cef7f457a7386d78eaa0a5736538818f9713f6a"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/ptse2_kane.py",
+    "sha256": "bc12ef82c527fb370484b2d1d77af9d271be4081b395604bd4421f11f205f40d"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/14_2.28/reference.npz",
+    "sha256": "a1458bb8269c4d47ee00926809f22007a007d1f18c9ecd17096019f9870cc5c9"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/14_2.28.npz",
+    "sha256": "47434b72a3d6e4560307c6c140f9f168e15ca7e3428d5bdce2c38d8cca417e76"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/13_2.45/reference.npz",
+    "sha256": "a5e53d125f433e290fa14dca9ada5c4283ac3a715f4b93e4f81dc476a6828f6d"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/13_2.45.npz",
+    "sha256": "8ba9361790fa843a6d41b23a82714ae2159fff8a934095e60f3caf5ab2027706"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/12_2.65/reference.npz",
+    "sha256": "ef05e4107d26c8e319d70402829c243f0da8ca76afadf19c59d37cb70ddffe4f"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/12_2.65.npz",
+    "sha256": "5b23b50090fa7854036c2d74e13da83b28c47b852ae8c6742b3058fa3599592f"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/11_2.88/reference.npz",
+    "sha256": "285eaf6ed169b0ccb7436b9e25d10783f38c27182d78007b630eb79981def8d6"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/11_2.88.npz",
+    "sha256": "64d3d80a19cfa8c9e3f4878484878c5f06840e01855801cd194570200e83a365"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/10_3.15/reference.npz",
+    "sha256": "1107522ac73437baa8eef1ae1d32e4b0e49976833652bc8b31225e9c4142c2fa"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/10_3.15.npz",
+    "sha256": "0b843f9cebe8aa39f7c0eed4ffcdf6dd2bb554d7c05e2478ebc5511b5aba1f73"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/9_3.48/reference.npz",
+    "sha256": "765f35f8f3484c9af228664ad313d26043dbd1d9ed53d130adfb8e2581e7d667"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/9_3.48.npz",
+    "sha256": "09266fe99a41b406bd547d4cd7622c61e6686e01c8cc87bf8e4dd7c0e6e1d119"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/8_3.89/reference.npz",
+    "sha256": "282ee2dc32b43a72dbccc16ecbbad6ab93361163896296a21eeae4ee8a35e7f6"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/8_3.89.npz",
+    "sha256": "53cea7d41da20d52f850a3ee13729820da7e0701cecd4befc232ab9b1d46a7b6"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/7_4.41/reference.npz",
+    "sha256": "d954f26c19858acbd2084ddd2ae47f5956d06f3e882fae64b5888cff79397d0c"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/7_4.41.npz",
+    "sha256": "b8938adc44c2b17a997b0b66346e6aafd5ad9ed300dab45f8b8140b40d705d02"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/6_5.09/reference.npz",
+    "sha256": "dc69ba17680bb938eccb14bc59e036dd767adf5e420f3eb825e556043cecc8c7"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/6_5.09.npz",
+    "sha256": "4f9c2b734aaf5a6698f942790ac1094ef09bcb893143f4d0c44b6ac837cc3fd8"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/5_6.01/reference.npz",
+    "sha256": "13919bd914d84ed56cd212491171361f5bd2b730380513cae99572ea55bc0a4a"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/5_6.01.npz",
+    "sha256": "ef81811a83c5813ad5d82c45a9d89dbe0e1b2f6f5703a5a8422e060404eb1c32"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/4_7.34/reference.npz",
+    "sha256": "f86d279ab9c8754b438e0f88ab7f910ca4d0f31833c327e70eacefe7cb1f2917"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/4_7.34.npz",
+    "sha256": "d5df39b7540427614e9374c47241a4d40a02d7748018161f7eff6b042734b8df"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/reference/3_9.43/reference.npz",
+    "sha256": "e092a7cb6cc2e1ab83550cf0f070f35090eadce245e589451013cd9c31b022cd"
+  },
+  {
+    "path": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_next5_models_20261023/PtSe2/kane10/predictions/3_9.43.npz",
+    "sha256": "02151411b4b3fa51d4eafa0f372cc7128b780319ab7d2b5cb6b2b891eae476f4"
+  }
+]

@@ -1,0 +1,309 @@
+{
+  "scope": "Model basis expanded by two reciprocal stars. Native reference remains the original database finite-Q TAPW. C is embedded by exact original Q indices with zero added columns, without renormalization. Overlap is projection against the original finite-Q target, not validation of an expanded-Q native source.",
+  "actual_native_points": 720,
+  "validated": "all predicted energies and native overlaps recomputed independently; exact masses; third-star model-Q checks at all60k",
+  "low_angle_first_two_energy_RMS_meV": 0.5148378089104404,
+  "low_angle_first_two_group_Pmin": 0.9174445311710335,
+  "records": [
+    {
+      "case": "14_2.28",
+      "Q_per_layer": [
+        [
+          24,
+          24
+        ],
+        [
+          70,
+          70
+        ],
+        [
+          102,
+          102
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        0.0030162079575069,
+        0.014982380688172148,
+        0.006067941699106072
+      ],
+      "absolute_Gamma_shift_meV": -0.0007375136112930392,
+      "first_two_energy_RMS_meV": 0.4635003394817394,
+      "first_two_group_Pmin": 0.9174445311710335
+    },
+    {
+      "case": "13_2.45",
+      "Q_per_layer": [
+        [
+          24,
+          24
+        ],
+        [
+          70,
+          70
+        ],
+        [
+          102,
+          102
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        0.0015520259319390384,
+        0.00713947696313888,
+        0.0033073226741869854
+      ],
+      "absolute_Gamma_shift_meV": -0.00031865391231233886,
+      "first_two_energy_RMS_meV": 0.19876277777262452,
+      "first_two_group_Pmin": 0.948788764619738
+    },
+    {
+      "case": "12_2.65",
+      "Q_per_layer": [
+        [
+          22,
+          22
+        ],
+        [
+          68,
+          68
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        0.0007172912520059249,
+        0.003608240939104168,
+        0.002577010024762405
+      ],
+      "absolute_Gamma_shift_meV": -0.00011353448739481742,
+      "first_two_energy_RMS_meV": 0.2777141475528004,
+      "first_two_group_Pmin": 0.9567948061212838
+    },
+    {
+      "case": "11_2.88",
+      "Q_per_layer": [
+        [
+          22,
+          22
+        ],
+        [
+          68,
+          68
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        0.00028439068493202324,
+        0.0012904319220408134,
+        0.0008904359255906824
+      ],
+      "absolute_Gamma_shift_meV": -3.779581364549145e-05,
+      "first_two_energy_RMS_meV": 0.46894675150519816,
+      "first_two_group_Pmin": 0.9667264868333307
+    },
+    {
+      "case": "10_3.15",
+      "Q_per_layer": [
+        [
+          22,
+          22
+        ],
+        [
+          68,
+          68
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        9.537839101847467e-05,
+        0.0005433740423999023,
+        0.00045552721533032026
+      ],
+      "absolute_Gamma_shift_meV": -8.804721896016332e-06,
+      "first_two_energy_RMS_meV": 0.3424114012977724,
+      "first_two_group_Pmin": 0.9696579886627748
+    },
+    {
+      "case": "9_3.48",
+      "Q_per_layer": [
+        [
+          22,
+          22
+        ],
+        [
+          68,
+          68
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        2.603542591239627e-05,
+        0.00012424054085524716,
+        8.509346469121049e-05
+      ],
+      "absolute_Gamma_shift_meV": -2.1025669261209856e-06,
+      "first_two_energy_RMS_meV": 0.8023881348057416,
+      "first_two_group_Pmin": 0.9725600967671227
+    },
+    {
+      "case": "8_3.89",
+      "Q_per_layer": [
+        [
+          18,
+          18
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          96,
+          96
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        5.7134420805571295e-06,
+        4.2037528874550034e-05,
+        2.8784525388236837e-05
+      ],
+      "absolute_Gamma_shift_meV": -2.9294426606707447e-07,
+      "first_two_energy_RMS_meV": 0.7368568990953042,
+      "first_two_group_Pmin": 0.9695976343651945
+    },
+    {
+      "case": "7_4.41",
+      "Q_per_layer": [
+        [
+          14,
+          14
+        ],
+        [
+          52,
+          52
+        ],
+        [
+          80,
+          80
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        0.00020078231623144038,
+        0.0009954066140932527,
+        0.0007800098684729306
+      ],
+      "absolute_Gamma_shift_meV": -1.5057213365032851e-05,
+      "first_two_energy_RMS_meV": 0.7840401800709839,
+      "first_two_group_Pmin": 0.9450791094494756
+    },
+    {
+      "case": "6_5.09",
+      "Q_per_layer": [
+        [
+          14,
+          14
+        ],
+        [
+          52,
+          52
+        ],
+        [
+          80,
+          80
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        3.683585392960653e-05,
+        0.00048459652679522236,
+        0.00034138047703968777
+      ],
+      "absolute_Gamma_shift_meV": -1.2457389425568621e-06,
+      "first_two_energy_RMS_meV": 2.3661666577908704,
+      "first_two_group_Pmin": 0.8454195944513959
+    },
+    {
+      "case": "5_6.01",
+      "Q_per_layer": [
+        [
+          10,
+          10
+        ],
+        [
+          44,
+          44
+        ],
+        [
+          70,
+          70
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        7.544172120343973e-06,
+        7.590084661474039e-05,
+        0.00011435081281874204
+      ],
+      "absolute_Gamma_shift_meV": -1.8818475250315103e-07,
+      "first_two_energy_RMS_meV": 1.4318533982080497,
+      "first_two_group_Pmin": 0.9179694233392294
+    },
+    {
+      "case": "4_7.34",
+      "Q_per_layer": [
+        [
+          10,
+          10
+        ],
+        [
+          44,
+          44
+        ],
+        [
+          70,
+          70
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        1.0107774547907233e-06,
+        2.3910334642773812e-05,
+        2.0331225744629755e-05
+      ],
+      "absolute_Gamma_shift_meV": -4.928571439855034e-09,
+      "first_two_energy_RMS_meV": 2.5215482418265918,
+      "first_two_group_Pmin": 0.4537785987935495
+    },
+    {
+      "case": "3_9.43",
+      "Q_per_layer": [
+        [
+          10,
+          10
+        ],
+        [
+          44,
+          44
+        ],
+        [
+          70,
+          70
+        ]
+      ],
+      "expanded_two_to_three_stars_pair_shape_max_meV": [
+        1.1249694231718621e-07,
+        2.800921633516751e-06,
+        2.391645270716225e-06
+      ],
+      "absolute_Gamma_shift_meV": -5.923872503643679e-10,
+      "first_two_energy_RMS_meV": 4.458785269719605,
+      "first_two_group_Pmin": 0.7157031350028764
+    }
+  ]
+}

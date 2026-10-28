@@ -1,0 +1,21 @@
+{
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/RESULT.json": "bdd3163b0d9ddcc44683e496114df81b027a887871d9a7a953441ea56bd8c014",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/portable/physical.py": "234c0d0a6468c8dc19436522009d810ef242da47153ed4c17ca8bd225de14648",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/portable/kernel.py": "c48155d8b2c060c412f347351fa3fa40f53233d9d5850dbed27e6da35520820a",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/portable/CATALOG.json": "1952fb8f64930228b502898bba30ddb78861f73920fc91e3adbeff1b2c7c453f",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/portable/geometry.npz": "d46dc03bc1216ffb213a146e94d1b4bd5f78d67f89833b391d97965087914e00",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/13_2.45.npz": "148b481433698d63d2c2d3822450703f6736e95e6f18cc94715e52dd645fa3d7",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/4_7.34.npz": "c3f1fc8a10a70f3b8ab62e1e056f22d9a02999dfea46f508ba4585e3547302be",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/9_3.48.npz": "2d5004b63c0f947d6e7d4e8aed56fb4d720240de7f2d911cc5c63a9a434c1935",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/8_3.89.npz": "7013b643e47b6405cec65ad354ed8e43e104d526e131228ffc2de5f17806c305",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/7_4.41.npz": "505b59d8acff8cf73c7fb64a6f509c4452bd651fd5c27cf061576fed42ef83f1",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/3_9.43.npz": "50bd022ec6bcee269a0cf9e773545445e7decfd4110889f38270b7736b785558",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/14_2.28.npz": "e98c7c4d7b538527d3b5e0a94cae4ca5744e42db3166f32e732faf4268c31b56",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/10_3.15.npz": "0b13702868c9aae40e8cf7c67a51aaeaf7ababfd612032285f9fb72d0b1b38cf",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/11_2.88.npz": "2552d629e9707de81c2aa3d006616dcf3d90de4a72521a9e8f375c7cfa6e3d8f",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/12_2.65.npz": "4229c167e283d5c243331aae79bd2ac44d1adecd6935314cf434e5c30f3637ac",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/5_6.01.npz": "1337a1ff13fc6a8c0aee3bc4b8b3e5aad5e4b2b0117637c4509e7f2ca35a91e9",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/snse2_m_9p_parallel_only/predictions/6_5.09.npz": "07465d998ef9044be5fbf6ae4d0f23bd4016fae08bdcff85c7b04a869f3dc076",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/full_views/snse2_m_9p_parallel_only_ALL_BANDS.png": "c3d625456ecf28c15bfbaef7fb738cc62dc42906b99e3889d3e6d29ba6936f1f",
+  "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/m_constant_mass_20261021/full_views/snse2_m_9p_parallel_only_PARAMETERS.png": "94eb8fe04e08fbecc1cf6cb507f623f6e223e9ceaeece553e3fde817c9358d17"
+}

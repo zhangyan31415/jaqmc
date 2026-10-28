@@ -1,0 +1,511 @@
+{
+  "status": "PASSED",
+  "scope": "Portable one-body archive and uniform export interfaces only; no new fit, HF or NQS validation",
+  "material_count": 16,
+  "model_version_count": 37,
+  "uniform_matrix_adapter_count": 34,
+  "hashed_files_verified": 1407,
+  "local_index_links_checked": 265,
+  "fresh_processes": true,
+  "isolated_python": true,
+  "source_repository_on_PYTHONPATH": false,
+  "process_layout": "4 independent package subprocesses; BLAS/OMP1 each",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "cwd": "/data/work/zy/software/research-lab/10_nqs/external/jaqmc",
+  "output_dir": "/data/work/tmp/zy/codex/model-upload-20261029/integration-verify-3",
+  "checks": [
+    {
+      "id": "CdCl2_AA_Gamma_scalar3_schur",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        37,
+        37
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "CdCl2_AA_Gamma_scalar5_schur",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        37,
+        37
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "CdCl2_AA_Gamma_scalar7_schur",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        37,
+        37
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "Ga2S2_gamma10_20261020",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        148,
+        148
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "Ga2S2_gamma9_20261021",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        148,
+        148
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "GaSe_AB_Gamma_model10_sourceprior",
+      "uniform_adapter": true,
+      "angle_deg": 3.890238169007683,
+      "shape": [
+        2,
+        74,
+        74
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "GaSe_AB_Gamma_model4_bonding",
+      "uniform_adapter": true,
+      "angle_deg": 3.890238169007683,
+      "shape": [
+        2,
+        37,
+        37
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "GaSe_AB_Gamma_model6_bonding",
+      "uniform_adapter": true,
+      "angle_deg": 3.890238169007683,
+      "shape": [
+        2,
+        37,
+        37
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "HfS2_AA_M_nine_parameter_continuum_20261024",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron; ascending conduction spectrum; common angle energy zero is arbitrary"
+    },
+    {
+      "id": "HfS2_AA_M_ten_parameter_continuum_20261024",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron; ascending conduction spectrum; common angle energy zero is arbitrary"
+    },
+    {
+      "id": "HfSe2_AA_M_nine_parameter_continuum_20261023",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron; ascending conduction spectrum; common angle energy zero is arbitrary"
+    },
+    {
+      "id": "InSe_AB_Gamma_model10_continued",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        74,
+        74
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "InSe_AB_Gamma_model9_low2",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        74,
+        74
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "MgBr2_cbm_scalar3_anisotropic",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        37,
+        37
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "MgBr2_kane6_order10",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        222,
+        222
+      ],
+      "Hermitian_max_eV": 3.3568927149996933e-18,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "hole"
+    },
+    {
+      "id": "MgBr2_kane6_replacement10",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        222,
+        222
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "hole"
+    },
+    {
+      "id": "MgCl2_gamma10_20261020",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        148,
+        148
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "MgCl2_gamma9_20261021",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        148,
+        148
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "MoTe2_AA_K_six_parameter_joint_20261016",
+      "scope": "Historical hierarchy; documented APIs, no uniform adapter",
+      "uniform_adapter": false
+    },
+    {
+      "id": "six_parameter_rank_hs_10angles_20261026",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        348,
+        348
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "six_parameter_rank_hs_shared10_20261026",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        348,
+        348
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "six_parameter_rank_hs_shared6_20261026",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        348,
+        348
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "six_parameter_rank_hs_wide_seed_20261026",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        348,
+        348
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "PtSe2_chiral10",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        148,
+        148
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "hole"
+    },
+    {
+      "id": "PtSe2_orbital10",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        148,
+        148
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "hole"
+    },
+    {
+      "id": "SnS2_AA_M_nine_parameter_constant_mass_20261021",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        36,
+        36
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron; ascending conduction spectrum; common angle energy zero is arbitrary"
+    },
+    {
+      "id": "SnS2_AA_M_nine_parameter_parallel_mass_only_20261021",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        36,
+        36
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron; ascending conduction spectrum; common angle energy zero is arbitrary"
+    },
+    {
+      "id": "SnS2_AA_M_seven_parameter_constant_mass_20261021",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        36,
+        36
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "SnSe2_AA_M_nine_parameter_constant_mass_20261021",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        44,
+        44
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron; ascending conduction spectrum; common angle energy zero is arbitrary"
+    },
+    {
+      "id": "SnSe2_AA_M_nine_parameter_parallel_mass_only_20261021",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        44,
+        44
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron; ascending conduction spectrum; common angle energy zero is arbitrary"
+    },
+    {
+      "id": "SnSe2_AA_M_seven_parameter_constant_mass_20261021",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        44,
+        44
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "WS2_spectral_20261014",
+      "uniform_adapter": true,
+      "angle_deg": 9.430007907896421,
+      "shape": [
+        2,
+        24,
+        24
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "hole"
+    },
+    {
+      "id": "seven_parameter_joint_17angles_20261028",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        348,
+        348
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron"
+    },
+    {
+      "id": "WSe2_AA_K_seven_parameter_top3_20261018",
+      "scope": "Historical hierarchy; documented APIs, no uniform adapter",
+      "uniform_adapter": false
+    },
+    {
+      "id": "WTe2_spectral_20261014",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        54,
+        54
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "hole"
+    },
+    {
+      "id": "ZrS2_AA_M_ten_parameter_continuum_20261024",
+      "uniform_adapter": true,
+      "angle_deg": 3.8902381690076835,
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "Hermitian_max_eV": 0.0,
+      "subprocess_exit": 0,
+      "existing_output_preserved": true,
+      "carrier": "electron; ascending conduction spectrum; common angle energy zero is arbitrary"
+    },
+    {
+      "id": "ZrS2_AB_Gamma_six_parameter_20261014",
+      "scope": "Historical hierarchy; documented APIs, no uniform adapter",
+      "uniform_adapter": false
+    }
+  ],
+  "post_check_documentation_revision": "Clarified replacement-only k51 mask attribution in order10 descriptor; runtime code unchanged, full archive hashes freshly rebuilt and rechecked.",
+  "code_review": "No remaining P1/P2 issues; minor metadata attribution fixed."
+}

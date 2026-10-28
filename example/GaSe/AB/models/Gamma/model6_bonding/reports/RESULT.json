@@ -1,0 +1,2373 @@
+{
+  "material": "GaSe single-bonding field",
+  "node": "gpuh203",
+  "pid": 557799,
+  "cwd": "/data/work/zy/software/1.tapw_code/moirekp-release",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "command": [
+    "examples/nonlinear_fit/material_nextbatch_20261024/GaSe/fit_bonding6.py"
+  ],
+  "layout": "one fit process,4 angle threads,BLAS1",
+  "started": 1792781051.470842,
+  "family": "Gamma single-bonding scalar",
+  "physical_parameter_count": 6,
+  "physical_parameter_names": [
+    "A_b_eV_A2",
+    "V1c_eV",
+    "V1s_eV",
+    "V2c_eV",
+    "V3c_eV",
+    "V3s_eV"
+  ],
+  "global_coefficient_count": 16,
+  "global_controls": [
+    [
+      23.62930232923815,
+      23.62930232923815,
+      23.62930232923815
+    ],
+    [
+      0.027043295106128844,
+      0.021802505582889774,
+      0.030918660522724892
+    ],
+    [
+      0.018773472085438683,
+      0.0217389123173742,
+      0.01599081205995228
+    ],
+    [
+      -0.0015955063459301003,
+      0.01738886353971341,
+      0.03625223769903662
+    ],
+    [
+      -0.010394359500983377,
+      0.01368785622772099,
+      0.022875706586470455
+    ],
+    [
+      -0.0005797596708021438,
+      -0.010035956543463556,
+      -0.014468671739632556
+    ]
+  ],
+  "constant_mass_indices": [
+    0
+  ],
+  "constant_mass_both": false,
+  "mass_coefficients_eV_A2": [
+    23.62930232923815
+  ],
+  "effective_masses_m_e": [
+    0.16123972104925455
+  ],
+  "rho": 0.2,
+  "angle_endpoint_deg": [
+    2.2810596097298803,
+    9.430007907896421
+  ],
+  "angle_law": "One constant positive mass and three quadratic Bernstein potential coefficients, all12 angles jointly.",
+  "records": [
+    {
+      "case": "14_2.28",
+      "angle_deg": 2.2810596097298803,
+      "parameters": [
+        23.62930232923815,
+        0.027043295106128844,
+        0.018773472085438683,
+        -0.0015955063459301003,
+        -0.010394359500983377,
+        -0.0005797596708021438
+      ],
+      "energy_pair_center_RMS_meV": 1.970154990214455,
+      "energy_pair_center_RMS_over_window": 0.015173260508633869,
+      "window_meV": 129.843878255,
+      "gap_scale_meV": [
+        89.8547426446213,
+        26.777473538532732
+      ],
+      "pair_center_gap_RMS_meV": [
+        3.826931225947374,
+        1.045650190834658
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.04259019739317514,
+        0.03904962091849216
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        3.8326626818576197,
+        1.0516245756827898
+      ],
+      "raw_six_state_energy_RMS_meV": 1.9702078288078624,
+      "group_min": 0.9540644235661944,
+      "principal_min": 0.9514954739219759,
+      "raw_pair_min": 0.9540644235661944,
+      "raw_pair_min_by_band": [
+        0.9947874293557653,
+        0.9540644235661944,
+        0.9588739372938682
+      ],
+      "group_min_by_band": [
+        0.9947874293557653,
+        0.9540644235661944,
+        0.9588739372938682
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9947874293557653,
+        0.9540644235661944,
+        0.9588739372938682
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        75.2801292149929,
+        2.0626000907242314e-09
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.9998677696136924,
+        0.9996076217211645,
+        0.9996103166697914
+      ],
+      "lowest_band_RMS_meV": 3.171053626380495,
+      "eligible_band_RMS_meV": 1.9701549902144553
+    },
+    {
+      "case": "13_2.45",
+      "angle_deg": 2.4499772766168695,
+      "parameters": [
+        23.629302329238154,
+        0.026590927130420574,
+        0.019028187676713108,
+        0.00015326377826636411,
+        -0.008207274423324877,
+        -0.0014402978221682993
+      ],
+      "energy_pair_center_RMS_meV": 2.5908300028093754,
+      "energy_pair_center_RMS_over_window": 0.017481554963862635,
+      "window_meV": 148.20363566999984,
+      "gap_scale_meV": [
+        96.69406042691449,
+        32.76821938469806
+      ],
+      "pair_center_gap_RMS_meV": [
+        3.8689735079078527,
+        1.572209887975529
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.04001252497646625,
+        0.04797971685668437
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        3.8724847746331568,
+        1.567072577687643
+      ],
+      "raw_six_state_energy_RMS_meV": 2.59092451613964,
+      "group_min": 0.974174941285335,
+      "principal_min": 0.9728484035732285,
+      "raw_pair_min": 0.974174941285335,
+      "raw_pair_min_by_band": [
+        0.99606912313318,
+        0.974174941285335,
+        0.9881858146560285
+      ],
+      "group_min_by_band": [
+        0.99606912313318,
+        0.974174941285335,
+        0.9881858146560285
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.99606912313318,
+        0.974174941285335,
+        0.9881858146560285
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        75.96472107337851,
+        2.3116786262988853e-09
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.9998633009869291,
+        0.999594626734046,
+        0.9995979580880234
+      ],
+      "lowest_band_RMS_meV": 3.8895575000412426,
+      "eligible_band_RMS_meV": 2.5908300028093754
+    },
+    {
+      "case": "12_2.65",
+      "angle_deg": 2.6459083811926885,
+      "parameters": [
+        23.62930232923815,
+        0.02614591813722643,
+        0.01927545524667538,
+        0.0021642649964560847,
+        -0.005769615341912029,
+        -0.002403820451856229
+      ],
+      "energy_pair_center_RMS_meV": 3.6258180598516097,
+      "energy_pair_center_RMS_over_window": 0.021196944247202632,
+      "window_meV": 171.05380934000004,
+      "gap_scale_meV": [
+        105.33200862172274,
+        39.343917842164345
+      ],
+      "pair_center_gap_RMS_meV": [
+        3.791776510104044,
+        2.1371918366113065
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.03599833098902912,
+        0.05432076808377499
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        3.7899597765839226,
+        2.1262950461522734
+      ],
+      "raw_six_state_energy_RMS_meV": 3.6259664618373337,
+      "group_min": 0.9597244792600677,
+      "principal_min": 0.95896848812718,
+      "raw_pair_min": 0.9597244792600677,
+      "raw_pair_min_by_band": [
+        0.9971174596985253,
+        0.9597244792600677,
+        0.9951119394076116
+      ],
+      "group_min_by_band": [
+        0.9971174596985253,
+        0.9597244792600677,
+        0.9951119394076116
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9971174596985253,
+        0.9597244792600677,
+        0.9951119394076116
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        75.59503272754534,
+        2.7489954756987345e-09
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.9998560983793424,
+        0.9995541146848669,
+        0.9995744534784243
+      ],
+      "lowest_band_RMS_meV": 4.664360717476085,
+      "eligible_band_RMS_meV": 3.6258180598516097
+    },
+    {
+      "case": "11_2.88",
+      "angle_deg": 2.875894633632971,
+      "parameters": [
+        23.62930232923815,
+        0.025733388463151177,
+        0.019499555439108668,
+        0.004478918986988278,
+        -0.0030664578856118806,
+        -0.003478293255959026
+      ],
+      "energy_pair_center_RMS_meV": 4.746316043758656,
+      "energy_pair_center_RMS_over_window": 0.02367969319455441,
+      "window_meV": 200.43824068000004,
+      "gap_scale_meV": [
+        116.19834181189442,
+        47.149422286133195
+      ],
+      "pair_center_gap_RMS_meV": [
+        4.006510406944288,
+        2.3760996385012194
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.03447992754862332,
+        0.05039509549197675
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        4.001145015094425,
+        2.3580728498186687
+      ],
+      "raw_six_state_energy_RMS_meV": 4.746551236712579,
+      "group_min": 0.9530576655744416,
+      "principal_min": 0.952398129113099,
+      "raw_pair_min": 0.9530576655744416,
+      "raw_pair_min_by_band": [
+        0.9976595726101558,
+        0.9530576655744416,
+        0.9939707918140696
+      ],
+      "group_min_by_band": [
+        0.9976595726101558,
+        0.9530576655744416,
+        0.9939707918140696
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9976595726101558,
+        0.9530576655744416,
+        0.9939707918140696
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        74.19990835259837,
+        3.217093258456316e-09
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.999846825502012,
+        0.9994938829869562,
+        0.9995470369150591
+      ],
+      "lowest_band_RMS_meV": 5.713980759498375,
+      "eligible_band_RMS_meV": 4.746316043758656
+    },
+    {
+      "case": "10_3.15",
+      "angle_deg": 3.149657426389616,
+      "parameters": [
+        23.62930232923815,
+        0.025390941046597292,
+        0.019677160358379877,
+        0.007141408049912141,
+        -9.300635208896036e-05,
+        -0.004668467624071732
+      ],
+      "energy_pair_center_RMS_meV": 5.700921038388829,
+      "energy_pair_center_RMS_over_window": 0.023995752741884334,
+      "window_meV": 237.5804209900001,
+      "gap_scale_meV": [
+        130.7509292752997,
+        56.528129173073275
+      ],
+      "pair_center_gap_RMS_meV": [
+        3.9143282339248326,
+        2.462423337195774
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.029937288060745675,
+        0.04356102657592868
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        3.9141264856512,
+        2.430837310823983
+      ],
+      "raw_six_state_energy_RMS_meV": 5.7012924224855945,
+      "group_min": 0.9728708826093961,
+      "principal_min": 0.9726250459648611,
+      "raw_pair_min": 0.9728708826093961,
+      "raw_pair_min_by_band": [
+        0.9979708649777845,
+        0.9728708826093961,
+        0.9903148312181755
+      ],
+      "group_min_by_band": [
+        0.9979708649777845,
+        0.9728708826093961,
+        0.9903148312181755
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9979708649777845,
+        0.9728708826093961,
+        0.9903148312181755
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        72.1367310470846,
+        3.911454493632505e-09
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.9998299222293858,
+        0.9993750051703305,
+        0.9994940009582278
+      ],
+      "lowest_band_RMS_meV": 6.788858951050899,
+      "eligible_band_RMS_meV": 5.700921038388828
+    },
+    {
+      "case": "9_3.48",
+      "angle_deg": 3.481006089466939,
+      "parameters": [
+        23.62930232923815,
+        0.025172381320648616,
+        0.01977511465308203,
+        0.010195233493817693,
+        0.003138189997759955,
+        -0.005973206598097701
+      ],
+      "energy_pair_center_RMS_meV": 6.45926918581141,
+      "energy_pair_center_RMS_over_window": 0.022556396867743248,
+      "window_meV": 286.36085912499976,
+      "gap_scale_meV": [
+        151.04253700846402,
+        67.50605686831804
+      ],
+      "pair_center_gap_RMS_meV": [
+        4.1977486630840914,
+        1.9148020869562237
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.027791831004857003,
+        0.02836489310420498
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        4.22421973471893,
+        1.979929461841529
+      ],
+      "raw_six_state_energy_RMS_meV": 6.4598744038051565,
+      "group_min": 0.8986219178084914,
+      "principal_min": 0.8986218898152349,
+      "raw_pair_min": 0.8986219178084914,
+      "raw_pair_min_by_band": [
+        0.9979874821369952,
+        0.8986219178084914,
+        0.9871737986411644
+      ],
+      "group_min_by_band": [
+        0.9979874821369952,
+        0.8986219178084914,
+        0.9871737986411644
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9979874821369952,
+        0.8986219178084914,
+        0.9052243147937991
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        69.63857940224169,
+        1.5830252653292187
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.9997933010858421,
+        0.9994900954788779,
+        0.9992473310706381
+      ],
+      "lowest_band_RMS_meV": 8.148022646280369,
+      "eligible_band_RMS_meV": 6.45926918581141
+    },
+    {
+      "case": "8_3.89",
+      "angle_deg": 3.890238169007683,
+      "parameters": [
+        23.629302329238154,
+        0.02515063860232105,
+        0.019748737563142577,
+        0.013676584502972043,
+        0.006587702564817505,
+        -0.007381803902132871
+      ],
+      "energy_pair_center_RMS_meV": 8.332569421844513,
+      "energy_pair_center_RMS_over_window": 0.02375748807213132,
+      "window_meV": 350.73444619000014,
+      "gap_scale_meV": [
+        178.61435741147196,
+        81.6952081813635
+      ],
+      "pair_center_gap_RMS_meV": [
+        8.500430374438126,
+        3.9326220652635664
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.04759096915627995,
+        0.04813773234451082
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        8.568028203565891,
+        4.1283530891747215
+      ],
+      "raw_six_state_energy_RMS_meV": 8.333453839168849,
+      "group_min": 0.9750532627551938,
+      "principal_min": 0.974770829613801,
+      "raw_pair_min": 0.9750532627551938,
+      "raw_pair_min_by_band": [
+        0.997180775997826,
+        0.9750532627551938,
+        0.9791290930826122
+      ],
+      "group_min_by_band": [
+        0.997180775997826,
+        0.9750532627551938,
+        0.9791290930826122
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.997180775997826,
+        0.9750532627551938,
+        0.9791290930826122
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        67.0162282478351,
+        2.1652048168291915
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.9997775548009995,
+        0.9993875607330001,
+        0.999020595019902
+      ],
+      "lowest_band_RMS_meV": 9.988183673665409,
+      "eligible_band_RMS_meV": 8.332569421844513
+    },
+    {
+      "case": "7_4.41",
+      "angle_deg": 4.408455007944072,
+      "parameters": [
+        23.62930232923815,
+        0.02541734676245126,
+        0.01954220821097602,
+        0.017602836310923176,
+        0.010178332249796062,
+        -0.00886950035462658
+      ],
+      "energy_pair_center_RMS_meV": 16.35379161436213,
+      "energy_pair_center_RMS_over_window": 0.03741635573222144,
+      "window_meV": 437.07601380000006,
+      "gap_scale_meV": [
+        217.1817933915725,
+        100.33246720279716
+      ],
+      "pair_center_gap_RMS_meV": [
+        20.936207164269362,
+        10.521463580569657
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.09639945797170016,
+        0.10486599077946654
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        21.039790957073162,
+        10.811959996090925
+      ],
+      "raw_six_state_energy_RMS_meV": 16.354710228418856,
+      "group_min": 0.9017871513398545,
+      "principal_min": 0.8964092499732663,
+      "raw_pair_min": 0.9017871513398545,
+      "raw_pair_min_by_band": [
+        0.9871200492360062,
+        0.9353299657999017,
+        0.9017871513398545
+      ],
+      "group_min_by_band": [
+        0.9871200492360062,
+        0.9353299657999017,
+        0.9017871513398545
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9871200492360062,
+        0.9353299657999017,
+        0.9017871513398545
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        64.62386924585806,
+        0.9999999951696981
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        true,
+        true
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.9995954723972361,
+        0.9977384283930019,
+        0.99143261388518
+      ],
+      "lowest_band_RMS_meV": 14.251938344546167,
+      "eligible_band_RMS_meV": 16.353791614362127
+    },
+    {
+      "case": "6_5.09",
+      "angle_deg": 5.085847808123473,
+      "parameters": [
+        23.62930232923815,
+        0.02607436049673041,
+        0.019093921581120388,
+        0.021954410538412326,
+        0.013785983192089787,
+        -0.010393123269508288
+      ],
+      "energy_pair_center_RMS_meV": 48.35442752851535,
+      "energy_pair_center_RMS_over_window": 0.09029763568841341,
+      "window_meV": 535.5004830400003,
+      "gap_scale_meV": [
+        259.19141470203914,
+        123.95138403789458
+      ],
+      "pair_center_gap_RMS_meV": [
+        59.074488392572164,
+        33.65422142276643
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.22791838402704395,
+        0.27151146140068605
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        59.149527002886636,
+        33.965462109223694
+      ],
+      "raw_six_state_energy_RMS_meV": 48.35510797526517,
+      "group_min": 2.012040838943384e-05,
+      "principal_min": 1.584396308439107e-08,
+      "raw_pair_min": 2.012040838943384e-05,
+      "raw_pair_min_by_band": [
+        0.9813766374904258,
+        0.0001587364927393361,
+        2.012040838943384e-05
+      ],
+      "group_min_by_band": [
+        0.9813766374904258,
+        0.0001587364927393361,
+        2.012040838943384e-05
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9813766374904258,
+        0.0001587364927393361,
+        2.012040838943384e-05
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        62.85604469073616,
+        1.0293876862021989e-08
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        false,
+        false
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.9971469868670796,
+        0.0018134273062022455,
+        0.0033117451893481887
+      ],
+      "lowest_band_RMS_meV": 14.503842923191085,
+      "eligible_band_RMS_meV": 14.503842923191085
+    },
+    {
+      "case": "5_6.01",
+      "angle_deg": 6.008983197766148,
+      "parameters": [
+        23.62930232923815,
+        0.027210266115366765,
+        0.018351036971116817,
+        0.02664925661206872,
+        0.017238715187262672,
+        -0.01188895573487941
+      ],
+      "energy_pair_center_RMS_meV": 126.34815151262671,
+      "energy_pair_center_RMS_over_window": 0.18399732712055142,
+      "window_meV": 686.6847116200004,
+      "gap_scale_meV": [
+        283.75517456395824,
+        165.38263871632086
+      ],
+      "pair_center_gap_RMS_meV": [
+        166.054518056605,
+        101.20762998373691
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.5852034885770035,
+        0.6119604256486517
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        166.11494087055712,
+        101.4612237539859
+      ],
+      "raw_six_state_energy_RMS_meV": 126.34879486872283,
+      "group_min": 2.4141375058956957e-06,
+      "principal_min": 3.1449805648683336e-11,
+      "raw_pair_min": 2.4141375058956957e-06,
+      "raw_pair_min_by_band": [
+        0.9829041352888868,
+        2.5267438056584774e-05,
+        2.4141375058956957e-06
+      ],
+      "group_min_by_band": [
+        0.9829041352888868,
+        2.5267438056584774e-05,
+        2.4141375058956957e-06
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9829041352888868,
+        2.5267438056584774e-05,
+        2.4141375058956957e-06
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        62.137003275637234,
+        1.3019807454384136e-08
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        false,
+        false
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.9987745698219979,
+        0.00010266705571042645,
+        0.0010828327835095432
+      ],
+      "lowest_band_RMS_meV": 10.56443279915891,
+      "eligible_band_RMS_meV": 10.56443279915891
+    },
+    {
+      "case": "4_7.34",
+      "angle_deg": 7.3409930166302155,
+      "parameters": [
+        23.62930232923815,
+        0.02885548448457484,
+        0.017297074442354055,
+        0.031512665404724645,
+        0.020333232612350576,
+        -0.013276145330227425
+      ],
+      "energy_pair_center_RMS_meV": 284.0910695861178,
+      "energy_pair_center_RMS_over_window": 0.31724380089691184,
+      "window_meV": 895.4976229099998,
+      "gap_scale_meV": [
+        296.9633871945122,
+        241.04677214017738
+      ],
+      "pair_center_gap_RMS_meV": [
+        374.2830149172742,
+        229.50160930241196
+      ],
+      "pair_center_gap_relative_RMS": [
+        1.260367543801342,
+        0.9521040554276682
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        374.36617961666377,
+        229.71940470280882
+      ],
+      "raw_six_state_energy_RMS_meV": 284.09182357700644,
+      "group_min": 2.9097429910907723e-06,
+      "principal_min": 4.095014247506402e-09,
+      "raw_pair_min": 2.9097429910907723e-06,
+      "raw_pair_min_by_band": [
+        0.9805241666912005,
+        7.957768647101218e-06,
+        2.9097429910907723e-06
+      ],
+      "group_min_by_band": [
+        0.9805241666912005,
+        7.957768647101218e-06,
+        2.9097429910907723e-06
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9805241666912005,
+        7.957768647101218e-06,
+        2.9097429910907723e-06
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        58.789198043519896,
+        1.903699420324756e-08
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        false,
+        false
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.9972180398755733,
+        7.162438967696973e-05,
+        0.0010390493871769856
+      ],
+      "lowest_band_RMS_meV": 7.9975441892788295,
+      "eligible_band_RMS_meV": 7.9975441892788295
+    },
+    {
+      "case": "3_9.43",
+      "angle_deg": 9.430007907896421,
+      "parameters": [
+        23.62930232923815,
+        0.030918660522724892,
+        0.01599081205995228,
+        0.03625223769903662,
+        0.022875706586470455,
+        -0.014468671739632556
+      ],
+      "energy_pair_center_RMS_meV": 675.029983154615,
+      "energy_pair_center_RMS_over_window": 0.728996848261122,
+      "window_meV": 925.9710583999996,
+      "gap_scale_meV": [
+        294.15829894220144,
+        258.70845822317995
+      ],
+      "pair_center_gap_RMS_meV": [
+        808.0649017554293,
+        447.1411004416633
+      ],
+      "pair_center_gap_relative_RMS": [
+        2.747040979844,
+        1.7283590320650752
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        808.296996474718,
+        448.72577542538085
+      ],
+      "raw_six_state_energy_RMS_meV": 675.0489454233632,
+      "group_min": 3.67087886729006e-08,
+      "principal_min": 2.268322088038368e-09,
+      "raw_pair_min": 3.67087886729006e-08,
+      "raw_pair_min_by_band": [
+        0.9661243593917683,
+        6.94869158591654e-06,
+        3.67087886729006e-08
+      ],
+      "group_min_by_band": [
+        0.9661243593917683,
+        6.94869158591654e-06,
+        3.67087886729006e-08
+      ],
+      "model_cluster_coverage_min_by_band": [
+        0.9661243593917683,
+        4.666462688923612e-06,
+        3.67087886729006e-08
+      ],
+      "model_unresolved_group_boundaries": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          6
+        ]
+      ],
+      "model_gap_min_meV": [
+        54.44961287055905,
+        3.118794111856005e-08
+      ],
+      "overlap_definition": "Direct native pair/group overlap on resolved model boundaries only. Unresolved entries are NaN and masked; full model-cluster coverage is a separate quantity, not a raw pair overlap. No normalization to capture or representability ceiling.",
+      "training_active_bands": [
+        true,
+        false,
+        false
+      ],
+      "source_bonding_principal_capture_min_by_pair": [
+        0.982765243182726,
+        0.009711108133869762,
+        0.011353612012018989
+      ],
+      "lowest_band_RMS_meV": 57.523820206819444,
+      "eligible_band_RMS_meV": 57.523820206819444
+    }
+  ],
+  "summary": {
+    "energy_RMS_meV": 215.08381871656226,
+    "energy_window_relative_RMS": 0.23781708191368783,
+    "gap_relative_RMS": [
+      0.8920153426589024,
+      0.6032740323592399
+    ],
+    "spinful_edge_gap_RMS_meV": [
+      262.233391244541,
+      148.80951837496357
+    ],
+    "worst_pair_probability": 3.67087886729006e-08,
+    "worst_group_probability": 3.67087886729006e-08,
+    "worst_principal_probability": 3.1449805648683336e-11,
+    "first_pair_min": 0.9661243593917683,
+    "Q_change_max_meV": 0.692886041013252,
+    "unresolved_boundaries": 21,
+    "passing_angles": 0
+  },
+  "Q_checks": [
+    {
+      "case": "14_2.28",
+      "original_Q": 55,
+      "expanded_Q": 121,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.002235194727959189,
+      "max_change_meV_by_pair": [
+        0.0009974232605403088,
+        0.002235194727959189,
+        0.0014361491927072922
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "original_Q": 55,
+      "expanded_Q": 121,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.0008918372168542632,
+      "max_change_meV_by_pair": [
+        0.0004417640654189037,
+        0.0008918372168542632,
+        0.0005642724508342356
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "original_Q": 43,
+      "expanded_Q": 109,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.00413514955568961,
+      "max_change_meV_by_pair": [
+        0.0018912593115795462,
+        0.001602741692335874,
+        0.00413514955568961
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "original_Q": 43,
+      "expanded_Q": 109,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.0011111600626279028,
+      "max_change_meV_by_pair": [
+        0.0005803626943988449,
+        0.0006413607342298233,
+        0.0011111600626279028
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "original_Q": 43,
+      "expanded_Q": 109,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.0004795752306940848,
+      "max_change_meV_by_pair": [
+        0.00015958709066038468,
+        0.0003035513378990551,
+        0.0004795752306940848
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "original_Q": 43,
+      "expanded_Q": 109,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.0008204144224810417,
+      "max_change_meV_by_pair": [
+        0.00013378199524571865,
+        0.00029808725759972177,
+        0.0008204144224810417
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "original_Q": 37,
+      "expanded_Q": 91,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.0022784238410678004,
+      "max_change_meV_by_pair": [
+        0.00026385898559133647,
+        0.0007483046183531794,
+        0.0022784238410678004
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "original_Q": 31,
+      "expanded_Q": 85,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.04851353275070469,
+      "max_change_meV_by_pair": [
+        0.029364429055114827,
+        0.0403301604325057,
+        0.04851353275070469
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "original_Q": 31,
+      "expanded_Q": 85,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.059547583375896274,
+      "max_change_meV_by_pair": [
+        0.039327779523840034,
+        0.05387715691501649,
+        0.059547583375896274
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "original_Q": 19,
+      "expanded_Q": 61,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.692886041013252,
+      "max_change_meV_by_pair": [
+        0.23544600570959973,
+        0.42629683288730735,
+        0.692886041013252
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "original_Q": 19,
+      "expanded_Q": 61,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.6790968111404228,
+      "max_change_meV_by_pair": [
+        0.23863382308747516,
+        0.43327632030287777,
+        0.6790968111404228
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "original_Q": 19,
+      "expanded_Q": 61,
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "first3_max_change_meV": 0.5599691038693511,
+      "max_change_meV_by_pair": [
+        0.19893308682539246,
+        0.3666272473907828,
+        0.5599691038693511
+      ]
+    }
+  ],
+  "optimizer_converged": true,
+  "optimizer_message": "Optimization terminated successfully",
+  "nfev": 47,
+  "loss": 9.046674936854753,
+  "gradient_checks": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 2.826006299887355e-08,
+      "cost_relative": 1.3605903970571705e-08
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 1.934794468216396e-07,
+      "cost_relative": 4.735040073379413e-08
+    }
+  ],
+  "status": "CONVERGED_SCOPED_SINGLE_BONDING_CANDIDATE; measured errors remain",
+  "frame_scope": "Read each reference COMPLETE.json: native waves and source frame definitions are independently prepared; no fit alignment or C renormalization.",
+  "loss_definition": "Same native3pair-window/gap RMS normalizers and fixed Gamma C3/TR training density; band energy/wave weights[1,1,.5] normalized on source-capacity-eligible bands. Lowest always active. All12 angles retained. Positive constant mass. Regularization center from sourceGamma Fourier coefficients. Native C projected by fixed plus layer combination and never renormalized.",
+  "elapsed_seconds": 41.48578214645386,
+  "source_SHA256": {
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/fit_bonding6.py": "372b708195dee295a2fb6d059a62d344c8fd231c69119572b4cbf7f558dce44c",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/gamma_symmetry.py": "1d1aed1b194839ac628e1d9d89a50ecab9281c651c7c0d8c7c0075e9d80da4cf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/bonding_driver6.py": "e04f5b7c3c1b677b0071bcac1dd6618ebc19dfeef0d97a3e5351f66525e6f14a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/project_bonding.py": "cc82efb704a8da30d770532b3545bcfa69e600a530a61e80ab453b7a896cd14a",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/inse_fit9.py": "57a5634fd8a89061e860228cf3aa916e9ee1abfa0772f9076f3e797ad64f998d",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/inse_common10.py": "44e9aa545f4e50f7809cc3f5ee1a8e06025f37d65cd654d935f3b5906a8e7207",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/inse_model10.py": "44ff0850fa5aeeb1c7307e581208b2d782aceeee46693aba984caec1bc8a507e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/local_models.py": "6fd13d9a2b7687f3b32d33b25654af01b2167077026fcb13ad2b4c109e8d2b16",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/SOURCE_PHYSICAL_PRIOR.json": "86724ef956b8f375a8353441d0c24cd07e5128469ffdd0fbeb947049883d9e77",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/14_2.28/reference.npz": "f2cddc0ac7b4c9052acc2065b56e0718247a1c944336a5538348fc01e43087e4",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/13_2.45/reference.npz": "d605401304ddc6ee0e3a34d8edf9afbb3411efaffaed97e091b59f8a68566a00",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/12_2.65/reference.npz": "9e86f0e7e1559bbf515a7bdcc6bed5a04bb846c6e270ff05255ed230c3372186",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/11_2.88/reference.npz": "817200e6abed7968110038b2d8cc735c81301e565e962f826edf0c478d295325",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/10_3.15/reference.npz": "d9adc9c3a7d13b360290b0bc478ebc862b6e2984206b8cd3eabb41bb11caad60",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/9_3.48/reference.npz": "e3a0ad5e22b2478af7e0f59f33970335c62a82c17e3ce7ac6a8f366edf63a6cf",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/8_3.89/reference.npz": "bd66ffe32c107df8ba39f08348d244bb85b0a26c501b82eef03007a1672715e7",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/7_4.41/reference.npz": "d3bed4a049c873001dba7a99791544bbacdcad037a703d0e8a0ef9dc02256b48",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/6_5.09/reference.npz": "51cacba0b4313056b1a3ec987602091b4bf3e7bf751bce2f7e8a9ac07286d0b6",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/5_6.01/reference.npz": "b7ca26f0033382fe0b4af2053f7a9b12188cbc6e50d5a8fcba6112d1d0a2c83e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/4_7.34/reference.npz": "019fd0ff8019de31f1ba38195de00f649192805107b46485074aab25843dc591",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/reference/3_9.43/reference.npz": "eddebd3405e446b3842b46cae24b4ea04eba317445431e4bbf7ff00fd3d280b5"
+  },
+  "final_gradient_checks": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 1.8351118447163507e-08,
+      "cost_relative": 1.4998649211506176e-08
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 2.145198538400658e-07,
+      "cost_relative": 1.8153210290527966e-07
+    }
+  ],
+  "prioritize_low2_at_larger_angles": true,
+  "overlap_scope": "Resolved pair overlap and degenerate-cluster coverage are separate. Native energy gaps retain their original meaning.",
+  "overlap_plot_label": "Native pair/group probability; squares: degenerate model subspace coverage",
+  "model_degeneracy_tolerance_eV": 1e-09,
+  "GaSe_driver": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/inse_fit9.py",
+  "nit": 32,
+  "constraint_Jacobian_relative_error": 4.1787348731215274e-08,
+  "minimum_order_constraint_meV": -1.274590676059173e-09,
+  "source_irrep_constraints": "IRREP_CONSTRAINTS.json: fixed-source Gamma A/E order; no added Hamiltonian coefficients.",
+  "regularization_prior_source": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/GaSe/bonding6_seed/INITIALIZATION.json",
+  "source_orbital_count": 1,
+  "plot_calibration_label": "all12-angle joint fit with source-capacity target scope",
+  "plot_scope_note": "Open grey higher bands: outside retained bonding sector; lowest pair fitted at every angle.",
+  "scope": "First pair all12 angles; higher pairs only if full-path fixed bonding principal capture>=.98, determined before fitting. Full three-band diagnostics retained; not the same target scope as the two-component9/10p baselines.",
+  "extra_Hamiltonian": "h=-A_b laplacian+V1c c1+V1s s1+V2c c2+V3c c3+V3s s3; second-star sine omitted because measured source magnitude <0.0001meV. No extra derivatives.",
+  "Gamma_fixed_wave_bounds": [
+    {
+      "case": "14_2.28",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.9999301307701007,
+          "A": 0.9999301307701007,
+          "conjugate_E": 5.987661657370932e-06
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 0.9995861919905026,
+          "A": 2.7146598637004412e-05,
+          "conjugate_E": 0.9995861919905026
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.9996084259288548,
+          "A": 1.0224323575721063e-06,
+          "conjugate_E": 0.9996084259288548
+        }
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.9999398690921935,
+          "A": 0.9999398690921935,
+          "conjugate_E": 5.0291860909033405e-06
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 0.9995686706076089,
+          "A": 2.399656585509275e-05,
+          "conjugate_E": 0.9995686706076089
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.9996013968725818,
+          "A": 2.314907992235336e-06,
+          "conjugate_E": 0.9996013968725818
+        }
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.9999493248094189,
+          "A": 0.9999493248094189,
+          "conjugate_E": 3.337148124291623e-06
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 0.9995244230938957,
+          "A": 2.6075192378019148e-05,
+          "conjugate_E": 0.9995244230938957
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.9995948264696618,
+          "A": 5.3264974518508e-06,
+          "conjugate_E": 0.9995948264696618
+        }
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.9999584127029897,
+          "A": 0.9999584127029897,
+          "conjugate_E": 1.999106254353836e-06
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 0.9994214372616405,
+          "A": 6.725763873423805e-05,
+          "conjugate_E": 0.9994214372616405
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.999598529232058,
+          "A": 1.5973596456117652e-05,
+          "conjugate_E": 0.999598529232058
+        }
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.9999639845832162,
+          "A": 0.9999639845832162,
+          "conjugate_E": 1.145942017775457e-06
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 0.9990900762571137,
+          "A": 0.00027941943742695576,
+          "conjugate_E": 0.9990900762571137
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.9996128775135616,
+          "A": 3.4054305975971e-05,
+          "conjugate_E": 0.9996128775135616
+        }
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.9999640947281705,
+          "A": 0.9999640947281705,
+          "conjugate_E": 6.400098643315811e-07
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 0.9047434865137354,
+          "A": 0.9047434865137354,
+          "conjugate_E": 0.09481712305048227
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.9067500256737581,
+          "A": 0.09249391870832004,
+          "conjugate_E": 0.9067500256737581
+        }
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.999957727274483,
+          "A": 0.999957727274483,
+          "conjugate_E": 3.2992108932761166e-07
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 0.9990049910919241,
+          "A": 0.9990049910919241,
+          "conjugate_E": 0.00040865920096885795
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.9986211441567036,
+          "A": 0.00039588112523170283,
+          "conjugate_E": 0.9986211441567036
+        }
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.9999500110354255,
+          "A": 0.9999500110354255,
+          "conjugate_E": 1.1506634952647688e-07
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 0.9976227757741695,
+          "A": 0.9976227757741695,
+          "conjugate_E": 0.00012464011251377656
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.991364026010661,
+          "A": 5.505595127492413e-05,
+          "conjugate_E": 0.991364026010661
+        }
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.998519167142809,
+          "A": 0.998519167142809,
+          "conjugate_E": 8.264829893233575e-08
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 0.0015401183782531398,
+          "A": 0.0015401183782531398,
+          "conjugate_E": 0.00029217474206516043
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.9969549133500094,
+          "A": 0.9969549133500094,
+          "conjugate_E": 0.00032947487876553615
+        }
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.9999298769988,
+          "A": 0.9999298769988,
+          "conjugate_E": 7.765385595744854e-08
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 5.607523432554105e-05,
+          "A": 4.315232830595568e-05,
+          "conjugate_E": 5.607523432554105e-05
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.9971981578426071,
+          "A": 0.9971981578426071,
+          "conjugate_E": 0.0004417555546470357
+        }
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.9998573922683653,
+          "A": 0.9998573922683653,
+          "conjugate_E": 1.17577304208928e-06
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 9.033361987939084e-05,
+          "A": 9.033361987939084e-05,
+          "conjugate_E": 1.7450426481202778e-05
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.9879427145126104,
+          "A": 0.9879427145126104,
+          "conjugate_E": 0.0014790771069412123
+        }
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "bounds": [
+        {
+          "native_interval": [
+            0,
+            2
+          ],
+          "selected": 0.9881874215382106,
+          "A": 0.9881874215382106,
+          "conjugate_E": 1.1170215083544305e-06
+        },
+        {
+          "native_interval": [
+            2,
+            4
+          ],
+          "selected": 0.011788326570084872,
+          "A": 0.011788326570084872,
+          "conjugate_E": 5.6168422665292024e-06
+        },
+        {
+          "native_interval": [
+            4,
+            6
+          ],
+          "selected": 0.3130178381082532,
+          "A": 0.17638459145235172,
+          "conjugate_E": 0.3130178381082532
+        }
+      ]
+    }
+  ],
+  "spin": "Fixed bonding spatial envelope with spectator spin; native SOC states retained as the reference.",
+  "summary_scope": "Existing summary is a full3-pair diagnostic, including high-angle target states outside the retained bonding orbital; it is not the fitted-window RMS.",
+  "fit_scope_summary": {
+    "all12_lowest_RMS_meV": 18.685711605399288,
+    "all12_lowest_P_min": 0.9661243593917683,
+    "small_angle_first2_RMS_meV": 5.592420867063215,
+    "small_angle_P_min_by_pair": [
+      0.9947874293557653,
+      0.8986219178084914,
+      0.9588739372938682
+    ],
+    "scope": "First pair at all12 angles. Higher pairs trained only if source fixed-bonding principal capture>=.98 at every path point; all3 pairs active through4.41deg, only first at5.09deg and above. Small-angle statistic is2.28\u20133.89deg."
+  },
+  "plot_bands_caption": "All three pairs shown; source-capacity-ineligible high-angle higher bands are not trained."
+}

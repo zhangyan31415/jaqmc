@@ -1,0 +1,7 @@
+{
+  "exit_status": 0,
+  "all12_angles": true,
+  "final_Jacobian_passed": true,
+  "order_constraints_passed": true,
+  "optimizer_converged": true
+}

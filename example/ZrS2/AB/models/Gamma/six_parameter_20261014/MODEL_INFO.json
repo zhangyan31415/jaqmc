@@ -1,0 +1,42 @@
+{
+  "id": "ZrS2_AB_Gamma_six_parameter_20261014",
+  "material": "ZrS2",
+  "stacking": "AB",
+  "valley": "Gamma",
+  "edge": "Source upper eight-state Gamma window; inspect source energy and carrier convention",
+  "physical_parameters": 6,
+  "global_coefficients": null,
+  "angles_deg": [
+    2.28,
+    2.45,
+    2.65,
+    2.88,
+    3.15,
+    3.48,
+    3.89,
+    4.41,
+    5.09,
+    6.01,
+    7.34,
+    9.43
+  ],
+  "basis_description": "Q-major, layer x two orbital labels x physical spin: eight internal components per Q; two physical layers.",
+  "energy_unit": "eV",
+  "length_unit": "Angstrom",
+  "k_convention": "Cartesian inverse Angstrom with the saved coordinate rotation; read each case model.py",
+  "carrier_convention": "Electron Hamiltonian; a1,a2 are matrix kinetic coefficients, not one scalar mass",
+  "status": "HISTORICAL_ARCHIVE_WITH_LARGE_ANGLE_FAILURES",
+  "hf_scope": "Independent case-by-case archive and joint diagnostics; 3.15-degree gap candidate is distinct. Not the new ZrS2 AA/M model.",
+  "entrypoint": null,
+  "reference_type": "Native TAPW with frozen transported source basis",
+  "limitations": [
+    "Not an analytic global angle law or a common scalar mass",
+    "Large-angle wavefunction failures retained",
+    "No uniform adapter added to nested independent/joint case archives",
+    "No microscopic interaction vertex supplied"
+  ],
+  "source_files": [
+    "README.md",
+    "candidates/independent/parameters.csv"
+  ]
+}

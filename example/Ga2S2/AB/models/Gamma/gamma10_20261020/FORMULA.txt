@@ -1,0 +1,11 @@
+Two physical layers (rho) and two Kramers spins (sigma); basis spin-major,layer-major,Q-major.
+For layer parity tau=+/- and spin s=+/-:
+  h_(tau,s)=(1+tau eta) f[p^2+epsilon(2(p.e)^2-p^2)] + tau t0
+            + 2 sum_G [(Vc+tau tc)cos(G.r) - (Vs+tau ts)sin(G.r)]
+            + lambda s [grad V_tau cross p]_z,
+  f(x)=[sqrt(1+4 b a x)-1]/(2b), e=(B2-B1)/|B2-B1|.
+SOC authoritative matrix kernel: i lambda s V_tau(q-q') [(q-q') cross ((q+q')/2+k@B)]_z.
+The sine sign above follows physical.py (the old10 convention differs from gamma9).
+Parameters: a,b,eta,lambda,Vc,Vs,t0,tc,ts,epsilon; 10 per angle.
+a,b,eta,lambda,epsilon are 5 global constants; Vc,Vs,t0,tc,ts each have two endpoint controls, giving 15 independent global coefficients.
+See physical.py and angle_model.py for exact normalizations and angle coordinates.

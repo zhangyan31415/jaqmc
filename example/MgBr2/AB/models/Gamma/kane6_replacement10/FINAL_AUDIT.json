@@ -1,0 +1,50 @@
+{
+  "native_data_unchanged": true,
+  "physical_coefficients": 10,
+  "effective_spatial_fields": 3,
+  "spinful_fields": 6,
+  "principal_eV_A2": 0.9906433592526578,
+  "source_capture_min_by_pair": [
+    0.999881,
+    0.999798,
+    0.999726
+  ],
+  "model_unresolved_group_boundaries": [
+    [
+      51,
+      4,
+      6
+    ]
+  ],
+  "k51_pair3_rawP_masked": true,
+  "k51_pair3_principalP_masked": true,
+  "k51_separate_cluster_coverage": 0.28893370405354957,
+  "meanP_min_by_pair": [
+    0.5821567718464522,
+    0.27342838119493296,
+    0.12123352153879223
+  ],
+  "principalP_min_by_pair": [
+    0.5171746012118823,
+    2.088240123817566e-07,
+    1.1549433350666297e-10
+  ],
+  "optimizer_success_raw": true,
+  "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "smooth_stationary": false,
+  "quality_passed": false,
+  "process_exit_code": 0,
+  "python_pid_absent": 1004741,
+  "checked_at": 1792819573.7232258,
+  "artifacts_exist": {
+    "RESULT.json": true,
+    "OPTIMIZATION.json": true,
+    "8_3.89.npz": true,
+    "BANDS_OVERLAP.png": true,
+    "PARAMETERS_PILOT.png": true,
+    "Q_CHECK.json": true,
+    "HOMOGENEOUS_GLOBAL_SCAN.json": true,
+    "FIXED_FRAME_DIAGNOSTICS.json": true,
+    "GRADIENT_AUDIT.json": true
+  }
+}

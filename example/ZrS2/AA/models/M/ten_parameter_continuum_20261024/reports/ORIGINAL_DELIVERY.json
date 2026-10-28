@@ -1,0 +1,59 @@
+{
+  "status": "VALIDATED_LOW_ENERGY_CANDIDATE",
+  "material": "ZrS2",
+  "stacking": "AA",
+  "valley": "M1",
+  "edge": "CBM",
+  "orbital_count": "one spatial orbital per physical layer; two coupled components with spectator pseudospin approximation",
+  "physical_parameter_count": 10,
+  "global_coefficient_count": 26,
+  "selected_result": "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/fit_warped_10p_continuum10/RESULT.json",
+  "source_process_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "selected_fit_process_state": "EXITED_SUCCESSFULLY",
+  "selected_fit_export_independent_verification_chain_exit_code": 0,
+  "three_angle_layer_audit_exit_code": 0,
+  "source_native_points": 720,
+  "low_angle_first_two_RMS_meV": 0.5148378089104404,
+  "low_angle_first_two_Pmin": 0.9174445311710335,
+  "all_angle_energy_RMS_meV": 2.205669512839437,
+  "gap_relative_RMS": [
+    0.02460705793856052,
+    0.08375209352079435
+  ],
+  "model_further_Q_max_change_meV": 0.014982380688172148,
+  "physical_mass_coefficients_eV_A2": [
+    1.8207807697006397,
+    15.82728485091937
+  ],
+  "model9_rejection": "Expanded model9 reached a 5.53e-8 eV second/third gap at 7.34deg,k44, stopped by xtol with gradient norm25; final production derivative gate failed. Smaller-step independent checks confirm the analytic derivative locally, but that does not establish optimizer convergence. Preserved as diagnostic, not accepted production.",
+  "limitations": [
+    "Native source remains database finite Q; model Q convergence does not establish native source Q convergence.",
+    "7.34 degree second/third native pairs near SOC crossing have spin-scalar pair ceiling about0.5356.",
+    "Large-angle higher-band errors are larger; low-angle first two bands are the NQS priority.",
+    "No JAQMC integration or many-body calculation performed."
+  ],
+  "manual_visual_review": [
+    "ALL_ANGLES_BANDS.png",
+    "PARAMETERS.png"
+  ],
+  "artifact_sha256": {
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/figures_continuum10/ALL_ANGLES_BANDS.png": "8e5abecf285ccc55ee0bc2ec3e4268b3c7759bd339f3f5421bbe1fed2a677a99",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/figures_continuum10/LOWEST_BAND.png": "4895802c7235042684cda8cf92689fb1208de974702a3339ba90361edcb849e2",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/figures_continuum10/PARAMETERS.png": "33cc7e73f05a5e757869e9665d974dede8dd95477c9dd50731bc72941ad7bb13",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/figures_continuum10/OVERLAP.png": "57c8fcd9ede8b647a6c047768519f58728a99ed099b8f8b4d5ca66436ee16a85",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/figures_continuum10/PARAMETERS.csv": "9c9e454b154bce83d2a70ebafcda48fc94cfc84466447710b8c762baf81f077e",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/OVERLAP_CEILING_10p.png": "04acbc70a12dfd766912631f52578932314d8eaff09d0a6cb11dfa3467e61851",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/GLOBAL_CONTROLS.csv": "3a770a900d181f1c2bdcf680b8eba39f5498cb04025f09261f657e90f5ef9765",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/METHOD.md": "dfc4ce19a1935857a2f22a88d7bc9f66920e9713305f797b4c4e27c3e1d53219",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/continuum_model.py": "f073b67f4279c8a86b707b06b2f374e108d0a591a17f1a8aabb1ec53217a8779",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/fit_warped_10p_continuum10/RESULT.json": "da29fd81966f0ab84c5782c790491712e390182903d63182ff95af9a5e700848",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/fit_warped_10p_continuum10/VERIFICATION.json": "cbd4cb2904715ae6a06fc9f3ef5b4408740030f84c63c9304f1e3eebc54a0595",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/ZrS2/SOURCE_VERIFICATION.json": "0f4f5bc68c046ee90254407f3c344fc51fbe8b1c5eb58970c43f399480b0fec8"
+  },
+  "completed_unix": 1792779211.9196181
+}

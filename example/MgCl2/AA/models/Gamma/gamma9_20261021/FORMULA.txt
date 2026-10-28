@@ -1,0 +1,13 @@
+p=-i nabla (angstrom^-1), q+k@B in the supplied plane-wave convention.
+For each parity branch s=+,- and spin sigma=+1,-1:
+  h_s,sigma = (A_s/Abar) f(p^2) + delta_(s,-) Delta + V_s(r)
+              + lambda sigma [d_x V_s p_y - d_y V_s p_x],
+  Abar=(A_+ + A_-)/2,
+  f(x)=[sqrt(1+4 b Abar x)-1]/(2 b),
+  V_s(r)=2 sum_(G in {B1,B2-B1,-B2})[Vc_s cos(G.r)+Vs_s sin(G.r)].
+This formula has the SOC sign fixed by the authoritative matrix element
+  H_SOC(q,q')= i lambda sigma V_s(q-q') [(q-q') x ((q+q')/2+k@B)]_z.
+The exported basis is parity-major, Q-major, spin-fast (4 N_Q fields).
+The two branches are the even/odd layer combinations; not two separate atomic orbitals.
+The nine parameters are A_+,A_-,Delta,Vc_+,Vs_+,Vc_-,Vs_-,b,lambda.
+Each is a quadratic Bernstein curve in normalized sin^2(theta/2): 27 independent controls.

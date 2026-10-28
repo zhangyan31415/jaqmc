@@ -1,0 +1,745 @@
+{
+  "node": "gpuh201",
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "model": "model10_sourceprior",
+  "all12_reference_targets_match_database": true,
+  "constant_positive_masses_verified": true,
+  "all720_saved_spectra_freshly_recomputed": true,
+  "small_angle_first2_RMS_meV": 2.012695423119057,
+  "small_angle_group_P_min_by_pair": [
+    0.9558777188217613,
+    0.8017905865398884,
+    0.8120628779554409
+  ],
+  "allangle_lowest_RMS_meV": 7.174654858274359,
+  "allangle_first_pair_P_min": 0.6593082337358306,
+  "expanded_model_Q_small_angle_lowest_change_meV": 0.001464258595818002,
+  "expanded_model_Q_small_angle_first3_change_meV": 0.0023249401216451915,
+  "all_expanded_Gamma_orders_preserved": true,
+  "records": [
+    {
+      "case": "14_2.28",
+      "angle_deg": 2.2810596097298803,
+      "fresh_spectrum_check_eV": 1.7208456881689926e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 85,
+          "max_energy_change_meV_by_pair": [
+            5.393248564411479e-05,
+            0.00010315252740866754,
+            0.00018317674244094917
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9846955686195785,
+            0.9344034414732654,
+            0.9352851324425928
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9846955686195785,
+            0.9344034414732654,
+            0.9352851324425928
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            130.7754837238489,
+            23.540769946015978
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 109,
+          "max_energy_change_meV_by_pair": [
+            5.423336563170622e-05,
+            0.00010394618921161225,
+            0.0001844308712417586
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9846955686290205,
+            0.9344034413012752,
+            0.9352851323025552
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9846955686290205,
+            0.9344034413012752,
+            0.9352851323025552
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            130.77548347301826,
+            23.54076988284415
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "angle_deg": 2.4499772766168695,
+      "fresh_spectrum_check_eV": 1.609823385706477e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 85,
+          "max_energy_change_meV_by_pair": [
+            4.5440053664247415e-05,
+            8.65658789650503e-05,
+            9.93466535148535e-05
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9818455354165485,
+            0.9565569032368615,
+            0.962354457694028
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9818455354165485,
+            0.9565569032368615,
+            0.962354457694028
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            149.47157657375828,
+            17.784540580360638
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 109,
+          "max_energy_change_meV_by_pair": [
+            4.5587486341425176e-05,
+            8.689670943917704e-05,
+            9.990152871619529e-05
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9818455354236216,
+            0.9565569031316431,
+            0.9623544576061805
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9818455354236216,
+            0.9565569031316431,
+            0.9623544576061805
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            149.4715764646146,
+            17.784540545631167
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "angle_deg": 2.6459083811926885,
+      "fresh_spectrum_check_eV": 2.1094237467877974e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 73,
+          "max_energy_change_meV_by_pair": [
+            0.0006790940063616802,
+            0.0019252752017084873,
+            0.001982984252413278
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9782448548287742,
+            0.9565612827425835,
+            0.9641779276093083
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9782448548287742,
+            0.9565612827425835,
+            0.9641779276093083
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            172.9902364474159,
+            11.881328243957128
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 91,
+          "max_energy_change_meV_by_pair": [
+            0.0006799974598958869,
+            0.0019280264169641015,
+            0.0019865726981760368
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9782448545426857,
+            0.9565612699290615,
+            0.9641779249512006
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9782448545426857,
+            0.9565612699290615,
+            0.9641779249512006
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            172.9902361513556,
+            11.881328153582837
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "angle_deg": 2.875894633632971,
+      "fresh_spectrum_check_eV": 1.27675647831893e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 73,
+          "max_energy_change_meV_by_pair": [
+            0.0005758674397338126,
+            0.0016285366437607252,
+            0.0013877575272269738
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9737053794018095,
+            0.9451080737980845,
+            0.9561585972884558
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9737053794018095,
+            0.9451080737980845,
+            0.9561585972884558
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            202.85800499676927,
+            6.063822907597855
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 91,
+          "max_energy_change_meV_by_pair": [
+            0.0005766799112127963,
+            0.0016308370172080089,
+            0.001390077059099104
+          ],
+          "raw_group_P_min_by_pair": [
+            0.973705379169975,
+            0.9451080739942066,
+            0.9561585953094981
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.973705379169975,
+            0.9451080739942066,
+            0.9561585953094981
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            202.85800479125564,
+            6.063822977611988
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "angle_deg": 3.149657426389616,
+      "fresh_spectrum_check_eV": 1.4155343563970746e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 73,
+          "max_energy_change_meV_by_pair": [
+            0.0005622645513625457,
+            0.0014891482676415713,
+            0.0010050113066761845
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9684085000336563,
+            0.9256092639604099,
+            0.9326256160078389
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9684085000336563,
+            0.9256092639604099,
+            0.9326256160078389
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            241.02802834843928,
+            0.5597943550966211
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 91,
+          "max_energy_change_meV_by_pair": [
+            0.0005630318200000595,
+            0.0014911717913790312,
+            0.0010064774564333412
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9684084998188461,
+            0.9256092644696666,
+            0.9326256147847418
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9684084998188461,
+            0.9256092644696666,
+            0.9326256147847418
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            241.02802821016982,
+            0.5597944215712802
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "angle_deg": 3.481006089466939,
+      "fresh_spectrum_check_eV": 1.6653345369377348e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 73,
+          "max_energy_change_meV_by_pair": [
+            0.0006039166138283036,
+            0.0013535770967409988,
+            0.0007461666234609421
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9624559905869315,
+            0.8017906952840922,
+            0.8914807691607538
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9624559905869315,
+            0.8017906952840922,
+            0.8431202786499373
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            289.8965296106248
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 91,
+          "max_energy_change_meV_by_pair": [
+            0.000604644303570101,
+            0.0013552881624745439,
+            0.0007471137329628785
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9624559903906221,
+            0.8017906953198196,
+            0.8914807686840818
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9624559903906221,
+            0.8017906953198196,
+            0.8431202786810563
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            289.8965295384554
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "angle_deg": 3.890238169007683,
+      "fresh_spectrum_check_eV": 2.220446049250313e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 61,
+          "max_energy_change_meV_by_pair": [
+            0.0014604728066913708,
+            0.002318520933353163,
+            0.0015470173569120949
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9558771139336923,
+            0.8063499542780962,
+            0.812062169782194
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9558771139336923,
+            0.8063499542780962,
+            0.812062169782194
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            352.22665657825115,
+            9.632641843583704
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 85,
+          "max_energy_change_meV_by_pair": [
+            0.001464258595818002,
+            0.0023249401216451915,
+            0.001551614629086151
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9558771129017062,
+            0.8063499514376489,
+            0.8120621681176281
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9558771129017062,
+            0.8063499514376489,
+            0.8120621681176281
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            352.22665658880004,
+            9.632641800492134
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "angle_deg": 4.408455007944072,
+      "fresh_spectrum_check_eV": 1.7208456881689926e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 55,
+          "max_energy_change_meV_by_pair": [
+            0.012692683157761175,
+            0.01641854160333578,
+            0.004711829500070319
+          ],
+          "raw_group_P_min_by_pair": [
+            0.948393866032842,
+            0.6618930451075189,
+            0.0036878489827593722
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.948393866032842,
+            0.6618930451075189,
+            0.0036878489827593722
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            431.23441529511257,
+            16.591673629132586
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 73,
+          "max_energy_change_meV_by_pair": [
+            0.012707331176836645,
+            0.016436852659090784,
+            0.004718061514308314
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9483938650357188,
+            0.6618930457176027,
+            0.0036878489998675157
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9483938650357188,
+            0.6618930457176027,
+            0.0036878489998675157
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            431.23441515939277,
+            16.59167374586691
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "angle_deg": 5.085847808123473,
+      "fresh_spectrum_check_eV": 1.0547118733938987e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 55,
+          "max_energy_change_meV_by_pair": [
+            0.011089876719910796,
+            0.01083332279977478,
+            0.0031670272738204552
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9410898367306854,
+            0.42415893346805855,
+            0.011102692015363465
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9410898367306854,
+            0.42415893346805855,
+            0.011102692015363465
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            532.0551756284738,
+            78.22522386730985,
+            7.9467160117145665
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 73,
+          "max_energy_change_meV_by_pair": [
+            0.011100229945215645,
+            0.010841964036223395,
+            0.003170081085857035
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9410898361209403,
+            0.42415896099669115,
+            0.011102692461372401
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9410898361209403,
+            0.42415896099669115,
+            0.011102692461372401
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            532.0551757835113,
+            78.22522502872368,
+            7.946716017482314
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "angle_deg": 6.008983197766148,
+      "fresh_spectrum_check_eV": 1.1657341758564144e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 37,
+          "max_energy_change_meV_by_pair": [
+            0.10983979542333877,
+            0.14489300933151483,
+            0.40976011331872453
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9386424290215376,
+            0.2674034199314232,
+            0.07454566934359996
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9386424290215376,
+            0.2674034199314232,
+            0.07454566934359996
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            664.3469289956286,
+            220.71334394418062,
+            23.54936730740348
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 55,
+          "max_energy_change_meV_by_pair": [
+            0.11042777907571688,
+            0.14548138674141953,
+            0.4119161449304132
+          ],
+          "raw_group_P_min_by_pair": [
+            0.9386422121035515,
+            0.26280948015393274,
+            0.07453138949682993
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.9386422121035515,
+            0.26280948015393274,
+            0.07453138949682993
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            664.3469118660046,
+            220.7136373806797,
+            23.54934304918449
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "angle_deg": 7.3409930166302155,
+      "fresh_spectrum_check_eV": 1.5543122344752192e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 37,
+          "max_energy_change_meV_by_pair": [
+            0.017114431206999292,
+            0.13739539123791555,
+            0.6787513060325656
+          ],
+          "raw_group_P_min_by_pair": [
+            0.8700431402747869,
+            0.4668781608440115,
+            0.3158981514897168
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.8700431402747869,
+            0.4668781608440115,
+            0.3158981514897168
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            862.7726725830931,
+            427.1510656920275,
+            43.14915687402038
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 55,
+          "max_energy_change_meV_by_pair": [
+            0.01716822392833217,
+            0.1378349608793794,
+            0.6816058136629444
+          ],
+          "raw_group_P_min_by_pair": [
+            0.870043262315169,
+            0.46688129065133277,
+            0.3158952383048303
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.870043262315169,
+            0.46688129065133277,
+            0.3158952383048303
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            862.7725834388036,
+            427.15109865452854,
+            43.149115961287286
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "angle_deg": 9.430007907896421,
+      "fresh_spectrum_check_eV": 2.6645352591003757e-15,
+      "expanded": [
+        {
+          "expansion": "first_star_expansion",
+          "Q_per_layer": 37,
+          "max_energy_change_meV_by_pair": [
+            0.06317430606839203,
+            0.10615355923249137,
+            0.32539273882226105
+          ],
+          "raw_group_P_min_by_pair": [
+            0.6590474017971323,
+            0.12919239475567096,
+            7.490680218212105e-07
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.6590474017971323,
+            0.12919239475567096,
+            7.490680218212105e-07
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            1234.2489290418196,
+            790.6029185579072
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        },
+        {
+          "expansion": "first_plus_second_star_expansion",
+          "Q_per_layer": 55,
+          "max_energy_change_meV_by_pair": [
+            0.06329207623134714,
+            0.10634552207766657,
+            0.32628149304048115
+          ],
+          "raw_group_P_min_by_pair": [
+            0.6590467213184429,
+            0.1291928058743245,
+            7.490697352314912e-07
+          ],
+          "cluster_coverage_min_by_pair": [
+            0.6590467213184429,
+            0.1291928058743245,
+            7.490697352314912e-07
+          ],
+          "Gamma_correctly_signed_order_gaps_meV": [
+            1234.2488713401433,
+            790.6028888765934
+          ],
+          "Gamma_order_preserved": true,
+          "native_overlap_scope": "Expanded model eigenvectors projected onto original native/database Q rows; no renormalization. Native TAPW cutoff itself is unchanged."
+        }
+      ]
+    }
+  ],
+  "optimizer_converged": true,
+  "initial_Jacobian": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 9.201949396870938e-07,
+      "cost_relative": 3.6660968925418306e-08
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 1.9546435470771e-06,
+      "cost_relative": 9.036270340660274e-09
+    }
+  ],
+  "final_Jacobian": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 0.0035290496245749007,
+      "cost_relative": 0.0014603777972341803
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 0.0030172900610513195,
+      "cost_relative": 0.0012487923813795376
+    },
+    {
+      "eps": 2e-08,
+      "residual_relative": 1.0437898424656687e-05,
+      "cost_relative": 7.030132796792543e-06
+    },
+    {
+      "eps": 2e-09,
+      "residual_relative": 0.00010991107452849209,
+      "cost_relative": 3.98327960748901e-06
+    }
+  ],
+  "constraint_Jacobian_relative_error": 5.488777576825987e-08
+}

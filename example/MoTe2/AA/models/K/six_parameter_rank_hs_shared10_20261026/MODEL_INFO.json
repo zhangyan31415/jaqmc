@@ -1,0 +1,59 @@
+{
+  "id": "six_parameter_rank_hs_shared10_20261026",
+  "material": "MoTe2",
+  "stacking": "AA",
+  "valley": "K",
+  "edge": "VBM",
+  "physical_parameters": 6,
+  "global_coefficients": 10,
+  "angles_deg": [
+    1.696272693519767,
+    2.1339296665972505,
+    2.4499772766168695,
+    2.6459083811926885,
+    2.875894633632971,
+    3.149657426389616,
+    3.481006089466939,
+    3.8902381690076835,
+    4.408455007944072,
+    5.085847808123473
+  ],
+  "basis_description": "Two layer envelope fields, one selected spin-valley branch per layer; layer-major plane-wave basis with exp(i(k-Q).r). No independent spin index.",
+  "energy_unit": "eV",
+  "length_unit": "angstrom",
+  "k_convention": "hf_adapter uses fractional k_cartesian=k_fractional@reciprocal_basis(theta), B rows in inverse angstrom. Native AngleModel uses Cartesian k. Archived path fractional coordinates instead use source F=fractional_to_model(theta).",
+  "carrier_convention": "Electron valence Hamiltonian, negative quadratic dispersion. Hole Hamiltonian Etop(Gamma) I - H_e(-k).T; Kprime=H_K(-k).conj(). No extra spin degeneracy.",
+  "hf_scope": "Portable single-particle matrix only. Interactions, Coulomb form factors, filling and HF solver are not supplied or validated.",
+  "status": "energy_fit_candidate_wavefunction_not_qualified",
+  "entrypoint": "angle_model.AngleModel().hamiltonian(theta_deg,k_model,valley=\"K\")",
+  "reference_type": "Projected Heff energies and fixed layer/Q model-Heff wavefunction overlaps; not native TAPW wavefunction fidelity.",
+  "limitations": [
+    "All10angles trained; no held-out angle or endpoint transfer test.",
+    "Default rank_hs minimum energy-loss branch has poor small-angle third-state wavefunction correspondence.",
+    "Wide-seed branch improves wavefunctions but has higher training loss; no unique fully qualified branch.",
+    "Reports contain multiple modes/branches; MODEL_INFO and FIT_RESULT identify this directory.",
+    "Arbitrary-angle geometry interpolates source B,kappa,F divided by sin(theta/2); exact calibration geometry retained.",
+    "No Coulomb interaction/form factors or actual HF solver supplied."
+  ],
+  "source_files": [
+    {
+      "path": "mote2_top3_overlap_hs_20261026/models/rank_hs/shared_V1_phi_w1/FUNCTION.json",
+      "sha256": "efd4be14bd24a63e092927e64a62ca7bc9a8693410f5673111658240faec08bb"
+    },
+    {
+      "path": "mote2_top3_overlap_hs_20261026/models/rank_hs/shared_V1_phi_w1/angle_parameters.py",
+      "sha256": "0b456fa4036398335062369307ed6730aaf5ba06b65bfeeede2db3e0903186ea"
+    },
+    {
+      "path": "mote2_top3_overlap_hs_20261026/models/rank_hs/shared_V1_phi_w1/10_3.15/model.py",
+      "sha256": "e160be3307807d73328a94b4b1ed83bffe6ac4b6ef6b5e1f7c7ff972de911368"
+    }
+  ],
+  "hf_api": {
+    "module": "hf_adapter.py",
+    "hamiltonian": "hamiltonian",
+    "reciprocal_basis": "reciprocal_basis",
+    "carrier": "electron",
+    "coordinates": "fractional reciprocal_basis rows; k_cartesian=k_fractional@B"
+  }
+}

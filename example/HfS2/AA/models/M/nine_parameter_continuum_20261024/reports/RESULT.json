@@ -1,0 +1,1003 @@
+{
+  "material": "HfS2",
+  "stacking": "AA",
+  "valley": "M1",
+  "target": "conduction",
+  "physical_parameter_count": 9,
+  "physical_parameter_names": [
+    "A_parallel_eV_A2",
+    "A_perp_eV_A2",
+    "w_a_eV",
+    "w_b_eV",
+    "Sd_eV",
+    "Va_eV",
+    "Vd_eV",
+    "Sa_eV",
+    "Sl_eV"
+  ],
+  "global_coefficient_count": 23,
+  "global_controls": [
+    [
+      1.931301673237583,
+      1.931301673237583,
+      1.931301673237583
+    ],
+    [
+      19.871206850848257,
+      19.871206850848257,
+      19.871206850848257
+    ],
+    [
+      0.048796580569182485,
+      0.05750961385442051,
+      0.052243845051916975
+    ],
+    [
+      -0.017879819997405212,
+      -0.02285532550331861,
+      -0.020782827211397903
+    ],
+    [
+      -0.021092231031751507,
+      -0.008078619788732625,
+      0.0012463471748655574
+    ],
+    [
+      -0.007239084964892724,
+      0.02391975483797141,
+      0.047940422878194264
+    ],
+    [
+      -0.00010023529139251152,
+      0.0025128993156871638,
+      0.004498402888727247
+    ],
+    [
+      0.00469667510825041,
+      0.004127487489611207,
+      0.004902581407941084
+    ],
+    [
+      -0.0033585403625272783,
+      -0.005928422856702772,
+      -0.0054791135206937545
+    ]
+  ],
+  "regularization_seed_controls": [
+    [
+      1.4101490621638906,
+      1.4101490621638906,
+      1.4101490621638906
+    ],
+    [
+      9.040375637322054,
+      9.040375637322054,
+      9.040375637322054
+    ],
+    [
+      0.0036651706802688076,
+      0.026883814503882858,
+      0.033211212221061805
+    ],
+    [
+      -0.018222798046423305,
+      -0.01685401522427962,
+      -0.01203201713912507
+    ],
+    [
+      -0.0012587247606584229,
+      -0.001945406824723795,
+      -0.0011587676132224073
+    ],
+    [
+      -0.006225884580429864,
+      0.0007590601564697104,
+      -0.0001136309223477822
+    ],
+    [
+      0.000332744859232723,
+      0.00269561551655149,
+      0.0020448222615407335
+    ],
+    [
+      0.005324618113221481,
+      0.0049428215723370935,
+      0.0058380375473155305
+    ],
+    [
+      0.0001907894119734631,
+      -0.0004018562608354148,
+      0.0011450330493212439
+    ]
+  ],
+  "initialization_source": "native projected action",
+  "constant_masses": true,
+  "mass_coefficients": [
+    1.931301673237583,
+    19.871206850848257
+  ],
+  "effective_masses": [
+    1.9727534900168688,
+    0.19173380584039468
+  ],
+  "coordinate": "warped",
+  "rho": 0.18,
+  "angle_endpoint_deg": [
+    2.2810596097298803,
+    9.430007907896421
+  ],
+  "records": [
+    {
+      "case": "14_2.28",
+      "angle_deg": 2.2810596097298803,
+      "parameters": [
+        1.931301673237583,
+        19.871206850848257,
+        0.048796580569182485,
+        -0.017879819997405212,
+        -0.021092231031751507,
+        -0.007239084964892724,
+        -0.00010023529139251152,
+        0.00469667510825041,
+        -0.0033585403625272783
+      ],
+      "energy_pair_center_RMS_meV": 1.2278468562590248,
+      "energy_pair_center_RMS_over_window": 0.02141596825505976,
+      "window_meV": 57.33324039499976,
+      "gap_scale_meV": [
+        34.205251119968274,
+        21.70211938409973
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.8236776958057872,
+        1.5731987176447961
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.05331572305695379,
+        0.07249055678854184
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.7558809269537972,
+        1.6776514299828371
+      ],
+      "raw_six_state_energy_RMS_meV": 1.2288781540576856,
+      "group_min": 0.7837853153080627,
+      "principal_min": 0.7752514872317502,
+      "raw_pair_min": 0.7837853153080627,
+      "raw_pair_min_by_band": [
+        0.9264753587211507,
+        0.9348885235204656,
+        0.7837853153080627
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        32.21381765810362,
+        22.68424213098292,
+        7.876999308825683
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "angle_deg": 2.4499772766168695,
+      "parameters": [
+        1.9313016732375832,
+        19.87120685084826,
+        0.049647712655261356,
+        -0.018368275125930054,
+        -0.019776422165911856,
+        -0.004084216548389425,
+        0.00016427242651421666,
+        0.004642191949343443,
+        -0.003612441476112206
+      ],
+      "energy_pair_center_RMS_meV": 0.581355000393138,
+      "energy_pair_center_RMS_over_window": 0.00996776977943175,
+      "window_meV": 58.32347789500014,
+      "gap_scale_meV": [
+        34.469705558406154,
+        22.060157203221255
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.7754587739326472,
+        1.3409092752378242
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.022496820363570973,
+        0.06078421213798162
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.7157400764924022,
+        1.457067183542319
+      ],
+      "raw_six_state_energy_RMS_meV": 0.5838914460111027,
+      "group_min": 0.8165426007052015,
+      "principal_min": 0.8164930086598395,
+      "raw_pair_min": 0.8165426007052015,
+      "raw_pair_min_by_band": [
+        0.8943185772993877,
+        0.9349111070270282,
+        0.8165426007052015
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        33.44083800023788,
+        22.363149492266558,
+        7.882401424745514
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "angle_deg": 2.6459083811926885,
+      "parameters": [
+        1.9313016732375825,
+        19.871206850848257,
+        0.0505279544518809,
+        -0.01887958111289929,
+        -0.018302570650228955,
+        -0.0005396546981322342,
+        0.000461268565201388,
+        0.004588680337550043,
+        -0.003882284994027201
+      ],
+      "energy_pair_center_RMS_meV": 0.5015403231704011,
+      "energy_pair_center_RMS_over_window": 0.007911212905808492,
+      "window_meV": 63.396135225000094,
+      "gap_scale_meV": [
+        36.388143366638964,
+        22.440681946773452
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.5493220944591024,
+        0.7180516615298987
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.015096183636638266,
+        0.03199776473963801
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.4548805922400084,
+        0.9048263895653103
+      ],
+      "raw_six_state_energy_RMS_meV": 0.5098153906900975,
+      "group_min": 0.863540372835888,
+      "principal_min": 0.8555282760659928,
+      "raw_pair_min": 0.863540372835888,
+      "raw_pair_min_by_band": [
+        0.9242247951676608,
+        0.9496346526647811,
+        0.863540372835888
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        35.33428700446304,
+        21.715620346238918,
+        5.017126406091601
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "angle_deg": 2.875894633632971,
+      "parameters": [
+        1.9313016732375832,
+        19.87120685084826,
+        0.05141483039308722,
+        -0.0194034844789309,
+        -0.016656767541229526,
+        0.0034325809746810795,
+        0.000793858282091053,
+        0.00453879920955095,
+        -0.004164490531357108
+      ],
+      "energy_pair_center_RMS_meV": 0.47953189572019717,
+      "energy_pair_center_RMS_over_window": 0.007452068787715071,
+      "window_meV": 64.34882841000045,
+      "gap_scale_meV": [
+        37.02283740321538,
+        22.95456946587848
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.6693533269379618,
+        0.6214786805460573
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.018079471317879854,
+        0.027074290435717963
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.6717024947249596,
+        0.708956048261234
+      ],
+      "raw_six_state_energy_RMS_meV": 0.4902918826820152,
+      "group_min": 0.8387112149647435,
+      "principal_min": 0.8377161916196002,
+      "raw_pair_min": 0.8387112149647435,
+      "raw_pair_min_by_band": [
+        0.9301385446671855,
+        0.9603994360208489,
+        0.8387112149647435
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        35.792994032090704,
+        20.746501094148066,
+        6.686423889539897
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "angle_deg": 3.149657426389616,
+      "parameters": [
+        1.9313016732375827,
+        19.871206850848253,
+        0.05227399267069632,
+        -0.019923729446141132,
+        -0.014828538461598784,
+        0.007863656071760615,
+        0.0011645511016296396,
+        0.004496341636186373,
+        -0.004452894114903047
+      ],
+      "energy_pair_center_RMS_meV": 0.7193462823414905,
+      "energy_pair_center_RMS_over_window": 0.00973695501788808,
+      "window_meV": 73.87795065500002,
+      "gap_scale_meV": [
+        39.488158939656664,
+        23.891263399862886
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.4232389631191665,
+        1.0147541757980691
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.010718123470023858,
+        0.042473859955178966
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.6294229654956889,
+        0.7610543878601219
+      ],
+      "raw_six_state_energy_RMS_meV": 0.7346444261845726,
+      "group_min": 0.8919645484764265,
+      "principal_min": 0.8829960399648932,
+      "raw_pair_min": 0.8919645484764265,
+      "raw_pair_min_by_band": [
+        0.9429859373676461,
+        0.9599204728254409,
+        0.8919645484764265
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        38.43038610710329,
+        19.53200598591627,
+        2.386180620261233
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "angle_deg": 3.481006089466939,
+      "parameters": [
+        1.931301673237583,
+        19.871206850848257,
+        0.053056283658453,
+        -0.020416443180281386,
+        -0.012814077351540679,
+        0.012770292424757836,
+        0.0015746191653283862,
+        0.004466455657435706,
+        -0.004737955840350499
+      ],
+      "energy_pair_center_RMS_meV": 1.1977857727040726,
+      "energy_pair_center_RMS_over_window": 0.016541189420215128,
+      "window_meV": 72.412312215,
+      "gap_scale_meV": [
+        39.79801370590413,
+        24.1000336065458
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.1580287391991824,
+        0.9756858444918184
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.029097651650574357,
+        0.04048483335835734
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.348979047046662,
+        0.6194074028950685
+      ],
+      "raw_six_state_energy_RMS_meV": 1.216531606741541,
+      "group_min": 0.7967160786739553,
+      "principal_min": 0.788692872089128,
+      "raw_pair_min": 0.7967160786739553,
+      "raw_pair_min_by_band": [
+        0.9478895481948209,
+        0.9609683320172113,
+        0.7967160786739553
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        36.70148883538752,
+        18.123322355656683,
+        7.480401985032165
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "angle_deg": 3.8902381690076835,
+      "parameters": [
+        1.9313016732375827,
+        19.871206850848253,
+        0.0536960279449161,
+        -0.02084905142422733,
+        -0.010620803372081086,
+        0.018143659743328468,
+        0.002023169013105469,
+        0.004455705550781263,
+        -0.005006127306169822
+      ],
+      "energy_pair_center_RMS_meV": 1.5901302663102712,
+      "energy_pair_center_RMS_over_window": 0.018005287563939095,
+      "window_meV": 88.31462761499998,
+      "gap_scale_meV": [
+        44.484888235711,
+        27.971643531241654
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.23547277013069096,
+        2.3611314934110506
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.005293320484093319,
+        0.0844116110222087
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.6542620440889307,
+        2.1351459061748637
+      ],
+      "raw_six_state_energy_RMS_meV": 1.6110857636411393,
+      "group_min": 0.5108123207377216,
+      "principal_min": 0.4852013556520971,
+      "raw_pair_min": 0.5108123207377216,
+      "raw_pair_min_by_band": [
+        0.9711043311859393,
+        0.9505317344280801,
+        0.5108123207377216
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        42.39808980784199,
+        16.650777040209704,
+        3.0437778328041287
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "angle_deg": 4.408455007944072,
+      "parameters": [
+        1.931301673237583,
+        19.871206850848257,
+        0.054112809044241775,
+        -0.021180829877649084,
+        -0.008273227810477263,
+        0.023934488825879348,
+        0.002505907472350535,
+        0.004471742079060218,
+        -0.005239828516219829
+      ],
+      "energy_pair_center_RMS_meV": 1.2617046903087326,
+      "energy_pair_center_RMS_over_window": 0.014044532724688282,
+      "window_meV": 89.83600344999986,
+      "gap_scale_meV": [
+        46.48186429461027,
+        27.516261918338486
+      ],
+      "pair_center_gap_RMS_meV": [
+        0.9414731876791181,
+        1.7630654668787868
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.020254634833747086,
+        0.06407358209160578
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        0.9816943453963449,
+        1.7842614769825325
+      ],
+      "raw_six_state_energy_RMS_meV": 1.3271082567086645,
+      "group_min": 0.7054327262350576,
+      "principal_min": 0.6441778440878488,
+      "raw_pair_min": 0.7054327262350576,
+      "raw_pair_min_by_band": [
+        0.9722609978944398,
+        0.934741070305293,
+        0.7054327262350576
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        35.85529026364927,
+        15.038702607787252,
+        13.873360487213965
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "angle_deg": 5.085847808123473,
+      "parameters": [
+        1.931301673237583,
+        19.871206850848257,
+        0.0542202889620264,
+        -0.021366865415031522,
+        -0.00581955838329058,
+        0.030035310141552793,
+        0.003013685449090767,
+        0.004522230356565676,
+        -0.00541877923721106
+      ],
+      "energy_pair_center_RMS_meV": 3.1626862821057578,
+      "energy_pair_center_RMS_over_window": 0.02924640432327499,
+      "window_meV": 108.13932020999984,
+      "gap_scale_meV": [
+        54.499349294558385,
+        34.78851918529325
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.7144691506654344,
+        3.3070045071201144
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.03145852515410894,
+        0.09506022632081854
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        1.6549036482238912,
+        3.2283300205153256
+      ],
+      "raw_six_state_energy_RMS_meV": 3.2109261400758213,
+      "group_min": 0.478521218578857,
+      "principal_min": 0.4261187252229036,
+      "raw_pair_min": 0.478521218578857,
+      "raw_pair_min_by_band": [
+        0.960063370788286,
+        0.7645192738029003,
+        0.478521218578857
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        47.465429929921136,
+        13.369193413140842,
+        6.19425014868806
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "angle_deg": 6.008983197766148,
+      "parameters": [
+        1.931301673237583,
+        19.871206850848257,
+        0.05394627464789374,
+        -0.021367569763768374,
+        -0.0033375088539279126,
+        0.0362630183897549,
+        0.0035310960451670646,
+        0.004612641651743629,
+        -0.00552361995887955
+      ],
+      "energy_pair_center_RMS_meV": 3.45047465366775,
+      "energy_pair_center_RMS_over_window": 0.02801811155392317,
+      "window_meV": 123.15157811499988,
+      "gap_scale_meV": [
+        59.91302274345215,
+        35.18610878341306
+      ],
+      "pair_center_gap_RMS_meV": [
+        1.4096122149044423,
+        2.851805438217909
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.02352764307920848,
+        0.08104918494318607
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        2.523099152001592,
+        3.693011352605291
+      ],
+      "raw_six_state_energy_RMS_meV": 3.5502954787138883,
+      "group_min": 0.6939995112541153,
+      "principal_min": 0.6644002629383017,
+      "raw_pair_min": 0.6939995112541153,
+      "raw_pair_min_by_band": [
+        0.9666785464490434,
+        0.7820480537031069,
+        0.6939995112541153
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        34.212028073763655,
+        11.393470433506351,
+        2.8774232371520796
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "angle_deg": 7.3409930166302155,
+      "parameters": [
+        1.931301673237583,
+        19.871206850848257,
+        0.05326613182492438,
+        -0.02116492164053681,
+        -0.0009366084355984876,
+        0.042348198422448614,
+        0.00403566743273978,
+        0.004742761082770333,
+        -0.0055424142678241126
+      ],
+      "energy_pair_center_RMS_meV": 4.868149042299191,
+      "energy_pair_center_RMS_over_window": 0.02711241770247576,
+      "window_meV": 179.55422108499963,
+      "gap_scale_meV": [
+        79.6460071229109,
+        46.46790832993021
+      ],
+      "pair_center_gap_RMS_meV": [
+        2.5403886320966267,
+        5.0262761194436205
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.03189599483846391,
+        0.10816661003452507
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        4.4411931302409124,
+        5.9467411822954945
+      ],
+      "raw_six_state_energy_RMS_meV": 5.005206709320099,
+      "group_min": 0.270454687091627,
+      "principal_min": 0.0011306007634704883,
+      "raw_pair_min": 0.270454687091627,
+      "raw_pair_min_by_band": [
+        0.9571894204774484,
+        0.4193184884770902,
+        0.270454687091627
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        49.79481464772039,
+        9.266823083812021,
+        3.4027358440456847
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "angle_deg": 9.430007907896421,
+      "parameters": [
+        1.931301673237583,
+        19.871206850848257,
+        0.052243845051916975,
+        -0.020782827211397903,
+        0.0012463471748655574,
+        0.047940422878194264,
+        0.004498402888727247,
+        0.004902581407941084,
+        -0.0054791135206937545
+      ],
+      "energy_pair_center_RMS_meV": 8.722587403202551,
+      "energy_pair_center_RMS_over_window": 0.03362014615029014,
+      "window_meV": 259.4452553600002,
+      "gap_scale_meV": [
+        105.87407681155614,
+        56.59304485621897
+      ],
+      "pair_center_gap_RMS_meV": [
+        4.684244213152148,
+        11.07431605910314
+      ],
+      "pair_center_gap_relative_RMS": [
+        0.04424354246308633,
+        0.19568334036874482
+      ],
+      "spinful_edge_gap_RMS_meV": [
+        7.102635583916236,
+        13.243119862316686
+      ],
+      "raw_six_state_energy_RMS_meV": 8.882828684085537,
+      "group_min": 0.4383195278052574,
+      "principal_min": 0.0007093828028721878,
+      "raw_pair_min": 0.4383195278052574,
+      "raw_pair_min_by_band": [
+        0.9659358220823562,
+        0.4383195278052574,
+        0.44211503510573186
+      ],
+      "model_unresolved_group_boundaries": [],
+      "model_gap_min_meV": [
+        31.972666667013065,
+        5.607513287643501,
+        4.929991084140467
+      ]
+    }
+  ],
+  "Q_checks": [
+    {
+      "case": "14_2.28",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.02456712773811487,
+      "original_Q": [
+        70,
+        70
+      ],
+      "expanded_Q": [
+        102,
+        102
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.009127446749163104,
+      "original_Q": [
+        70,
+        70
+      ],
+      "expanded_Q": [
+        102,
+        102
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.003771007866019971,
+      "original_Q": [
+        68,
+        68
+      ],
+      "expanded_Q": [
+        100,
+        100
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.0011178232251149445,
+      "original_Q": [
+        68,
+        68
+      ],
+      "expanded_Q": [
+        100,
+        100
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.0004139387324159083,
+      "original_Q": [
+        68,
+        68
+      ],
+      "expanded_Q": [
+        100,
+        100
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 7.557783298500764e-05,
+      "original_Q": [
+        68,
+        68
+      ],
+      "expanded_Q": [
+        100,
+        100
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 2.0982150503168207e-05,
+      "original_Q": [
+        64,
+        64
+      ],
+      "expanded_Q": [
+        96,
+        96
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.0005126134859437248,
+      "original_Q": [
+        52,
+        52
+      ],
+      "expanded_Q": [
+        80,
+        80
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 0.0002236579130648897,
+      "original_Q": [
+        52,
+        52
+      ],
+      "expanded_Q": [
+        80,
+        80
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 7.100920691727186e-06,
+      "original_Q": [
+        44,
+        44
+      ],
+      "expanded_Q": [
+        70,
+        70
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 2.9615030705532064e-06,
+      "original_Q": [
+        44,
+        44
+      ],
+      "expanded_Q": [
+        70,
+        70
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "rows": [
+        0,
+        20,
+        40
+      ],
+      "first3_max_change_meV": 2.9984403848715147e-08,
+      "original_Q": [
+        44,
+        44
+      ],
+      "expanded_Q": [
+        70,
+        70
+      ]
+    }
+  ],
+  "summary": {
+    "energy_RMS_meV": 3.292547188391912,
+    "gap_relative_RMS": [
+      0.028608405818230685,
+      0.08707165256317657
+    ],
+    "pair_probability_min_by_band": [
+      0.8943185772993877,
+      0.4193184884770902,
+      0.270454687091627
+    ],
+    "Q_sensitivity_max_meV": 0.02456712773811487
+  },
+  "optimizer_success": true,
+  "optimizer_message": "`ftol` termination condition is satisfied.",
+  "nfev": 57,
+  "loss": 10.505266906256056,
+  "gradient_checks": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 4.4411936929191054e-08,
+      "cost_relative": 3.17299117392215e-09
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 1.5369389349371708e-08,
+      "cost_relative": 1.3287435372613634e-09
+    }
+  ],
+  "final_gradient_checks": [
+    {
+      "eps": 2e-06,
+      "residual_relative": 8.063311386537046e-09,
+      "cost_relative": 3.135103598950195e-08
+    },
+    {
+      "eps": 2e-07,
+      "residual_relative": 8.104271154400387e-08,
+      "cost_relative": 6.681749629144917e-07
+    }
+  ],
+  "node": "gpuh202",
+  "command": [
+    "/data/home/zy/mambaforge/envs/moirekp/bin/python",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/fit_continuum.py"
+  ],
+  "environment_prefix": "/data/home/zy/mambaforge/envs/moirekp",
+  "threads": "4 angle threads xBLAS1",
+  "elapsed": 168.59454870224,
+  "source_mapping": "Model basis expanded by two reciprocal stars. Native reference remains the original database finite-Q TAPW. C is embedded by exact original Q indices with zero added columns, without renormalization. Overlap is projection against the original finite-Q target, not validation of an expanded-Q native source.",
+  "loss_definition": "mean angle {mean energy[(model-native)/(.01*3band window)]^2 +mean gap[(model-native)/(.05*native rms gap)]^2 +mean nativegroup[max(.96-P,0)/.04]^2} +3||D(control/scale-seed)||^2+.03||control/scale-seed||^2. Native spin-pair centers and common Gamma energy zero.",
+  "scientific_status": "EXPANDED_MODEL_Q_REFIT_TO_ORIGINAL_FINITE_Q_NATIVE_TARGET",
+  "source_files": [
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/14_2.28/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/14_2.28/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/13_2.45/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/13_2.45/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/12_2.65/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/12_2.65/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/11_2.88/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/11_2.88/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/10_3.15/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/10_3.15/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/9_3.48/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/9_3.48/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/8_3.89/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/8_3.89/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/7_4.41/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/7_4.41/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/6_5.09/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/6_5.09/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/5_6.01/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/5_6.01/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/4_7.34/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/4_7.34/geometry.npz",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/3_9.43/COMPLETE.json",
+    "/data/work/zy/software/1.tapw_code/moirekp-release/examples/nonlinear_fit/material_nextbatch_20261024/HfS2/reference/3_9.43/geometry.npz"
+  ]
+}

@@ -1,0 +1,583 @@
+{
+  "small_angle_first2_RMS_meV": 5.592420867063215,
+  "small_angle_raw_P_min_by_pair": [
+    0.9947874293557653,
+    0.8986219178084914,
+    0.9588739372938682
+  ],
+  "independent_true_lift_controls": 33,
+  "independent_true_lift_max_probability_error": 0.003081673537369767,
+  "records": [
+    {
+      "case": "14_2.28",
+      "angle_deg": 2.2810596097298803,
+      "RMS_meV_by_pair": [
+        3.1710536263804956,
+        1.2186533634373127,
+        0.32223428557928924
+      ],
+      "P_min_by_pair": [
+        0.9947874293557653,
+        0.9540644235661944,
+        0.9588739372938682
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.999867969537539,
+        0.9992631989561268,
+        0.9992566371624937
+      ]
+    },
+    {
+      "case": "13_2.45",
+      "angle_deg": 2.4499772766168695,
+      "RMS_meV_by_pair": [
+        3.889557500041244,
+        1.8361977520698303,
+        1.2794219708674321
+      ],
+      "P_min_by_pair": [
+        0.99606912313318,
+        0.974174941285335,
+        0.9881858146560285
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.9998636418378511,
+        0.9964327113441033,
+        0.9964336003414702
+      ]
+    },
+    {
+      "case": "12_2.65",
+      "angle_deg": 2.6459083811926885,
+      "RMS_meV_by_pair": [
+        4.664360717476084,
+        3.026410750662533,
+        2.919631290930159
+      ],
+      "P_min_by_pair": [
+        0.9971174596985253,
+        0.9597244792600677,
+        0.9951119394076116
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.9998567935120143,
+        0.9808651798719442,
+        0.9808864427302459
+      ]
+    },
+    {
+      "case": "11_2.88",
+      "angle_deg": 2.875894633632971,
+      "RMS_meV_by_pair": [
+        5.713980759498375,
+        4.051870084415914,
+        4.302943255589155
+      ],
+      "P_min_by_pair": [
+        0.9976595726101558,
+        0.9530576655744416,
+        0.9939707918140696
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.9998478880667118,
+        0.9276230614646627,
+        0.9276934381792603
+      ]
+    },
+    {
+      "case": "10_3.15",
+      "angle_deg": 3.149657426389616,
+      "RMS_meV_by_pair": [
+        6.7888589510509,
+        4.688083190579149,
+        5.425382216837667
+      ],
+      "P_min_by_pair": [
+        0.9979708649777845,
+        0.9728708826093961,
+        0.9903148312181755
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.999831612075979,
+        0.728577399783254,
+        0.7288352150416618
+      ]
+    },
+    {
+      "case": "9_3.48",
+      "angle_deg": 3.481006089466939,
+      "RMS_meV_by_pair": [
+        8.148022646280369,
+        5.5055534562814765,
+        5.33526787893989
+      ],
+      "P_min_by_pair": [
+        0.9979874821369952,
+        0.8986219178084914,
+        0.9871737986411644
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.9997996117819083,
+        0.9063771511279252,
+        0.483717832714542
+      ]
+    },
+    {
+      "case": "8_3.89",
+      "angle_deg": 3.890238169007683,
+      "RMS_meV_by_pair": [
+        9.988183673665409,
+        7.955930757058041,
+        6.725659239033462
+      ],
+      "P_min_by_pair": [
+        0.997180775997826,
+        0.9750532627551938,
+        0.9791290930826122
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.9997797461928402,
+        0.999007140152047,
+        0.6169825970166755
+      ]
+    },
+    {
+      "case": "7_4.41",
+      "angle_deg": 4.408455007944072,
+      "RMS_meV_by_pair": [
+        14.251938344546167,
+        15.556643351908408,
+        18.900068823756218
+      ],
+      "P_min_by_pair": [
+        0.9871200492360062,
+        0.9353299657999017,
+        0.9017871513398545
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.9996206136151168,
+        0.9976308775575122,
+        0.7190947880580595
+      ]
+    },
+    {
+      "case": "6_5.09",
+      "angle_deg": 5.085847808123473,
+      "RMS_meV_by_pair": [
+        14.503842923191085,
+        55.99763912612687,
+        60.56694591599279
+      ],
+      "P_min_by_pair": [
+        0.9813766374904258,
+        0.0001587364927393361,
+        2.012040838943384e-05
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.9979506495947877,
+        0.0015401246130240162,
+        0.002272870469153681
+      ]
+    },
+    {
+      "case": "5_6.01",
+      "angle_deg": 6.008983197766148,
+      "RMS_meV_by_pair": [
+        10.56443279915891,
+        163.90471708203634,
+        144.62089285391207
+      ],
+      "P_min_by_pair": [
+        0.9829041352888868,
+        2.5267438056584774e-05,
+        2.4141375058956957e-06
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.9988346243245038,
+        4.315318528609078e-05,
+        0.0009965934586007488
+      ]
+    },
+    {
+      "case": "4_7.34",
+      "angle_deg": 7.3409930166302155,
+      "RMS_meV_by_pair": [
+        7.9975441892788295,
+        372.47099093403216,
+        321.4414529199897
+      ],
+      "P_min_by_pair": [
+        0.9805241666912005,
+        7.957768647101218e-06,
+        2.9097429910907723e-06
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.9974221588775231,
+        9.033736032953528e-05,
+        0.0010104762302711008
+      ]
+    },
+    {
+      "case": "3_9.43",
+      "angle_deg": 9.430007907896421,
+      "RMS_meV_by_pair": [
+        57.523820206819444,
+        810.746727660523,
+        840.462484689071
+      ],
+      "P_min_by_pair": [
+        0.9661243593917683,
+        6.94869158591654e-06,
+        3.67087886729006e-08
+      ],
+      "source_scalar_ceiling_min_by_pair": [
+        0.9849629518416202,
+        0.011788326932029896,
+        0.012145274269905406
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "case": "14_2.28",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -7.78470755646854e-06,
+        -8.340177870214127e-06,
+        1.0925639845060786e-06
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "14_2.28",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -1.1683205747292646e-07,
+        9.277035635246733e-07,
+        -2.2516163411534507e-07
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "14_2.28",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -1.4753664318911675e-05,
+        -1.5017053510257838e-05,
+        -4.398263449334472e-06
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "13_2.45",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -1.0582152441096504e-05,
+        -1.0935214060481258e-05,
+        -9.414828483489401e-08
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "13_2.45",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -2.0335633654777752e-07,
+        9.457422891490097e-07,
+        -2.51848549126521e-07
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "13_2.45",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -2.0116054557317575e-05,
+        -1.9647701180902644e-05,
+        -8.110792371729403e-06
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "12_2.65",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -1.4577619964706301e-05,
+        -1.520652382602794e-05,
+        -2.0268225726649547e-06
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "12_2.65",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -3.4958985162258926e-07,
+        9.146331619858117e-07,
+        -5.140937825443004e-07
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "12_2.65",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -2.7887876895782426e-05,
+        -2.7065986901275707e-05,
+        -1.3991193399398583e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "11_2.88",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -2.072471864655867e-05,
+        -2.2251700758757487e-05,
+        -5.970970744839654e-06
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "11_2.88",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -6.532914870183149e-07,
+        7.223454485671965e-07,
+        -1.178199687035253e-06
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "11_2.88",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -3.980450317631057e-05,
+        -3.942461580508372e-05,
+        -2.4104436578409327e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "10_3.15",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -3.0127704650606546e-05,
+        -3.33773766232337e-05,
+        -1.25350246427125e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "10_3.15",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -1.0528054141811793e-06,
+        4.6214132276567454e-07,
+        -2.3090960477034628e-06
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "10_3.15",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -5.84506605103563e-05,
+        -5.837538454012137e-05,
+        -3.9597916311251424e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "9_3.48",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -4.6020159386261916e-05,
+        -5.136711774689218e-05,
+        -2.4216325715364917e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "9_3.48",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -2.2176529841377857e-06,
+        -3.062937125042353e-07,
+        -4.184264947637573e-06
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "9_3.48",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -8.981527184881433e-05,
+        -9.325094735423978e-05,
+        -6.8997665445103e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "7_4.41",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -0.0001287393417370719,
+        -0.00012029742295427415,
+        -8.304361263933302e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "7_4.41",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -1.020488794278851e-05,
+        -4.8073560633410395e-06,
+        -1.5041599613851986e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "7_4.41",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -0.0002522894757883698,
+        -0.0002500316390405821,
+        -0.0002192138387123732
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "6_5.09",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -0.00023850772164057954,
+        -0.00018204276610700454,
+        -0.0001748940517152242
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "6_5.09",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -2.4230961867655054e-05,
+        -1.729296469743513e-05,
+        -2.8689892154210028e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "6_5.09",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -0.00047169157392223937,
+        -0.00043183403539004406,
+        -0.00040393963613161166
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "5_6.01",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -0.00048518394264795983,
+        -0.0002769078416463566,
+        -1.4148817657815547e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "5_6.01",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -6.414157512335539e-05,
+        -5.7367679270781125e-05,
+        -6.543206582865224e-05
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "5_6.01",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -0.0009700476070507724,
+        -0.0008015961284838502,
+        -0.000841435312757155
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "4_7.34",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -0.0011311633440354019,
+        -5.737196188047405e-07,
+        2.863983203869265e-07
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "4_7.34",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -0.0001524669722032801,
+        -0.0001468643116430135,
+        -0.00020614463636214886
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "4_7.34",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -0.0022613456807069054,
+        -2.2174277664845944e-05,
+        0.00016795472351200844
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "3_9.43",
+      "index": 10,
+      "interpolated_minus_true_model_probability": [
+        -0.003081673537369767,
+        1.0573922146808181e-08,
+        1.460413246713763e-06
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "3_9.43",
+      "index": 30,
+      "interpolated_minus_true_model_probability": [
+        -0.0005660073028206369,
+        -0.0005908075547897962,
+        2.2737697748869985e-07
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    },
+    {
+      "case": "3_9.43",
+      "index": 50,
+      "interpolated_minus_true_model_probability": [
+        -0.0015151048975685644,
+        -1.0305157935832547e-05,
+        -9.085592997015498e-09
+      ],
+      "scope": "Full model cluster at exact degeneracy, otherwise native group probability; no C normalization"
+    }
+  ],
+  "optimizer_converged": true,
+  "final_driver_complete": {
+    "exit_status": 0,
+    "all12_angles": true,
+    "final_Jacobian_passed": true,
+    "order_constraints_passed": true,
+    "optimizer_converged": true
+  },
+  "small_angle_range": "2.28 through3.89deg",
+  "physical_parameters": 6,
+  "global_coefficients": 16
+}
